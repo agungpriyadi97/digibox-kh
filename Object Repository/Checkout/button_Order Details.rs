@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Order Details</name>
+   <tag></tag>
+   <elementGuidId>cc573cb3-51e5-4d3b-b404-7b0bd121960f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@type='button'])[4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.el-button.el-button--default.el-button--small.gt-button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Order Details&quot;i] >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>98b5a864-6b54-474d-81fc-12adf732eba6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>59649095-dfc6-4368-98f4-7727b0dbbbd0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>el-button el-button--default el-button--small gt-button</value>
+      <webElementGuid>c96249f4-213d-4adf-a87b-ec5e91aeeca9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>size</name>
+      <type>Main</type>
+      <value>small</value>
+      <webElementGuid>03022e67-48a3-4153-a1ef-4066f1f73186</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Order Details</value>
+      <webElementGuid>1a9fb951-f924-4d67-a28c-2880f6d57cca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;page-view&quot;)/div[@class=&quot;gt-layout page-layout_pc&quot;]/div[@class=&quot;gt-order-page page-view__child&quot;]/div[@class=&quot;sp-order&quot;]/div[@class=&quot;sp-order-right&quot;]/div[1]/section[@class=&quot;sp-order__child&quot;]/div[@class=&quot;sp-order-page&quot;]/div[@class=&quot;sp-lazy-scroll&quot;]/div[@class=&quot;sp-scroll-loading&quot;]/div[@class=&quot;gt-skeleton&quot;]/div[@class=&quot;sp-order-list&quot;]/div[@class=&quot;sp-order-list-item&quot;]/div[@class=&quot;sp-order-list-item__btn&quot;]/div[@class=&quot;btns&quot;]/button[@class=&quot;el-button el-button--default el-button--small gt-button&quot;]</value>
+      <webElementGuid>def7851c-2aa0-4fbe-8679-56d7ddeec1b9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@type='button'])[4]</value>
+      <webElementGuid>7af3cb7d-641a-4323-ba51-12ea10bcc381</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='page-view']/div/div[3]/div/div[2]/div/section/div/div/div/div[2]/div/div/div[2]/div/button</value>
+      <webElementGuid>ce3b04e3-4b12-433b-a54c-9e07429eb0a9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Payment Status: Paid'])[1]/following::button[1]</value>
+      <webElementGuid>40ebb09d-0f6a-4678-a9c2-bb5e35fb2e6d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Order Status: PROCESSING'])[1]/following::button[1]</value>
+      <webElementGuid>77127177-5b66-408c-9c39-289cc6b59cfa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$ 430'])[1]/preceding::button[1]</value>
+      <webElementGuid>eedde8c0-dc40-4966-b190-989be7a4a139</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div[2]/div/div/div[2]/div/button</value>
+      <webElementGuid>a282a6af-db7a-4822-a4aa-511de8aac87f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Order Details' or . = 'Order Details')]</value>
+      <webElementGuid>44038c5b-0a19-4f58-b5e9-91d62a559b26</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
