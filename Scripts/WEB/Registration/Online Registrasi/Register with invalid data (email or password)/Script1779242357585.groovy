@@ -27,9 +27,27 @@ WebUI.click(findTestObject('Registration/btn-create-new-account'))
 
 WebUI.setText(findTestObject('Registration/field-Email'), 'salahemailgmail.com')
 
-WebUI.click(findTestObject('Registration/field-account'))
+WebUI.setText(findTestObject('Registration/field-account'), '')
+
+WebUI.setText(findTestObject('Registration/field-Password'), '')
+
+WebUI.click(findTestObject('Registration/btn-sign-up'))
 
 WebUI.verifyElementText(findTestObject('Registration/verify-Email'), 'Please enter a valid email address')
+
+WebUI.verifyElementText(findTestObject('Registration/verify-required'), 'Required')
+
+WebUI.takeScreenshot()
+
+WebUI.setText(findTestObject('Registration/field-Email'), 'agung.priyadi@gtech.digital')
+
+WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+
+WebUI.setText(findTestObject('Registration/field-Password'), 'Las')
+
+WebUI.click(findTestObject('Registration/btn-sign-up'))
+
+WebUI.verifyElementText(findTestObject('Registration/verify-length'), 'Password length is 6-20 digits')
 
 WebUI.takeScreenshot()
 
