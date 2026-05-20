@@ -17,3 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser(GlobalVariable.URL)
+
+WebUI.click(findTestObject('Home Page/Facebook/i_iconfont icon-account'))
+
+WebUI.click(findTestObject('Home Page/Facebook/button_Sign in with Facebook'))
+
+WebUI.takeScreenshot()
+

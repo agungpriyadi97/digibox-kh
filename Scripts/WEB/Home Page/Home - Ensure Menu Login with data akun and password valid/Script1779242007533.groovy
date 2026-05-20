@@ -17,3 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser(GlobalVariable.URL)
+
+WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+
+WebUI.click(findTestObject('Registration/icon-acount'))
+
+WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+
+WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+
+WebUI.click(findTestObject('Login/btn-sign in'))
+
+WebUI.click(findTestObject('Registration/icon-acount'))
+
+WebUI.verifyElementVisible(findTestObject('Home Page/verify-succes-acount-login'))
+
+WebUI.takeScreenshot()
+

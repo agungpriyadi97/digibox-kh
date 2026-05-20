@@ -17,3 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser(GlobalVariable.URL)
+
+WebUI.click(findTestObject('Registration/icon-acount'))
+
+WebUI.click(findTestObject('Home Page/Google/button-sign in with google'))
+
+WebUI.switchToWindowTitle('Sign in - Google Accounts')
+
+WebUI.setText(findTestObject('Home Page/Google/input_email'), 'agungpriyadi97@gmail.com')
+
+WebUI.sendKeys(findTestObject('Home Page/Google/input_email'), Keys.chord(Keys.ENTER))
+
+WebUI.takeScreenshot()
+

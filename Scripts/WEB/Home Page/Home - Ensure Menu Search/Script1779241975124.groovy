@@ -17,3 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser(GlobalVariable.URL)
+
+WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+
+WebUI.click(findTestObject('Home Page/Search/icon-search'))
+
+WebUI.click(findTestObject('Home Page/Search/field-search'))
+
+WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord('IPHONE 11 PRO 128 GB DEEP PURPLE', Keys.ENTER))
+
+WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-11-pro'))
+
+WebUI.takeScreenshot()
+
