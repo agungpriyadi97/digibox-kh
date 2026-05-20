@@ -17,3 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser(GlobalVariable.URL)
+
+WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+
+WebUI.click(findTestObject('Registration/icon-acount'))
+
+WebUI.click(findTestObject('Registration/btn-create-new-account'))
+
+WebUI.setText(findTestObject('Registration/field-Email'), 'agungpriyadi@gmail.com')
+
+WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+
+WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+
+WebUI.click(findTestObject('Registration/btn-sign-up'))
+
+WebUI.verifyElementText(findTestObject('Registration/verify-duplicate-account'), 'The account has already exist.')
+
+WebUI.takeScreenshot()
+

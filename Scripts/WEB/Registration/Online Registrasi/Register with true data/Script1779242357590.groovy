@@ -17,3 +17,33 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+import custom.RandomData as RandomData
+
+// generate random data
+String randomEmail = CustomKeywords.'custom.RandomData.generateRandomEmail'()
+String randomUsername = CustomKeywords.'custom.RandomData.generateRandomUsername'()
+
+WebUI.openBrowser(GlobalVariable.URL)
+
+WebUI.maximizeWindow()
+
+WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+
+WebUI.click(findTestObject('Registration/icon-acount'))
+
+WebUI.click(findTestObject('Registration/btn-create-new-account'))
+
+WebUI.setText(findTestObject('Registration/field-Email'), randomEmail)
+
+WebUI.setText(findTestObject('Registration/field-account'), randomUsername)
+
+WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+
+WebUI.click(findTestObject('Registration/btn-sign-up'))
+
+WebUI.comment("Email used: " + randomEmail)
+WebUI.comment("Username used: " + randomUsername)
+
+WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
