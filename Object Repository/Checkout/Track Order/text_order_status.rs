@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>sub-menu-AirPods 2nd Generation</name>
+   <name>text_order_status</name>
    <tag></tag>
-   <elementGuidId>9d0a8d83-813f-48a5-88d8-ec099a5b9c74</elementGuidId>
+   <elementGuidId>8844e7e7-37ea-47b8-8c7a-d2bc9e5619d5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()='AirPods 2nd Generation']</value>
+         <value>//span[normalize-space()='Order Status']/following-sibling::span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

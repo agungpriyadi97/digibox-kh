@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>sub-menu-AirPods 2nd Generation</name>
+   <name>Billing address same as shipping</name>
    <tag></tag>
-   <elementGuidId>9d0a8d83-813f-48a5-88d8-ec099a5b9c74</elementGuidId>
+   <elementGuidId>e67d8f98-7088-4e93-87c0-9414990b1d2f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()='AirPods 2nd Generation']</value>
+         <value>(//span[@class='el-checkbox__inner'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -17,3 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser(GlobalVariable.URL)
+
+WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+
+WebUI.click(findTestObject('Registration/icon-acount'))
+

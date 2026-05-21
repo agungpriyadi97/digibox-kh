@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>sub-menu-AirPods 2nd Generation</name>
+   <name>field_Last Name</name>
    <tag></tag>
-   <elementGuidId>9d0a8d83-813f-48a5-88d8-ec099a5b9c74</elementGuidId>
+   <elementGuidId>5cf0818f-4284-4bcc-ad3b-35bf16c8581c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()='AirPods 2nd Generation']</value>
+         <value>(//input[@placeholder='Your Last Name'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

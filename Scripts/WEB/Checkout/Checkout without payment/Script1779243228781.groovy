@@ -17,8 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.URL)
+// Open browser
+WebUI.openBrowser('')
 
+WebUI.navigateToUrl(GlobalVariable.URL)
+
+WebUI.maximizeWindow()
+
+// Verify homepage
 WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
 WebUI.click(findTestObject('Registration/icon-acount'))
@@ -33,53 +39,73 @@ WebUI.click(findTestObject('Registration/icon-acount'))
 
 WebUI.verifyElementVisible(findTestObject('Home Page/verify-succes-acount-login'))
 
+// Search product
 WebUI.click(findTestObject('Home Page/Search/icon-search'))
 
-WebUI.click(findTestObject('Home Page/Search/field-search'))
+WebUI.setText(findTestObject('Home Page/Search/field-search'), 'IPHONE 11 PRO 128 GB DEEP PURPLE')
 
-WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord('IPHONE 11 PRO 128 GB DEEP PURPLE', Keys.ENTER))
+WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord(Keys.ENTER))
 
+// Verify product
 WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-11-pro'))
 
+// Add to cart
 WebUI.click(findTestObject('Product and Cart/Add to cart/btn-product'))
 
 WebUI.click(findTestObject('Product and Cart/Add to cart/button_Add to Cart'))
 
-WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-cart'), 7)
+WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-cart'), 10)
 
+// Open cart
 WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
 
-WebUI.verifyElementVisible(findTestObject('Checkout/btn_checkout'), FailureHandling.STOP_ON_FAILURE)
+// Checkout
+WebUI.verifyElementVisible(findTestObject('Checkout/btn_checkout'))
 
 WebUI.click(findTestObject('Checkout/btn_checkout'))
 
-WebUI.click(findTestObject('Checkout/Online Payment - WeChat'))
+WebUI.click(findTestObject('Checkout/Online Payment - Cradit Card'))
 
 WebUI.check(findTestObject('Checkout/Checkbox__I accept'))
 
-WebUI.click(findTestObject('Checkout/button_Checkout_Payment'))
+WebUI.click(findTestObject('Checkout/btn_checkout'))
 
-WebUI.waitForElementPresent(findTestObject('Checkout/iframe_payment_online'), 10)
+WebUI.waitForElementPresent(findTestObject('Checkout/iframe_payment_online'), 8)
 
+// Payment iframe
 WebUI.click(findTestObject('Checkout/iframe_payment_online'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(10)
 
-WebUI.click(findTestObject('Checkout/button_Approve'))
+WebUI.setText(findTestObject('Checkout/input_Card number'), '5156 8399 3770 6777')
 
-WebUI.waitForElementPresent(findTestObject('Checkout/button_Continue shopping'), 10)
+WebUI.setText(findTestObject('Checkout/input_Expiry date'), '01/30')
 
-WebUI.verifyElementPresent(findTestObject('Checkout/button_Continue shopping'), 0)
+WebUI.setText(findTestObject('Checkout/input_CVV'), '993')
 
-WebUI.click(findTestObject('Checkout/button_Continue shopping'))
+WebUI.click(findTestObject('Checkout/btn-closed-pay'))
+
+WebUI.waitForAlert(10)
+
+String alertText = WebUI.getAlertText()
+
+WebUI.comment(alertText)
+
+WebUI.acceptAlert()
 
 WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/track your order'), 0)
 
 WebUI.click(findTestObject('Checkout/Track Order/track your order'))
 
-WebUI.click(findTestObject('Checkout/button_Order Details'))
+WebUI.click(findTestObject('Checkout/Track Order/sp-order-list-item'))
 
-WebUI.scrollToElement(findTestObject('Checkout/Track Order/verify-order list'), 7)
+WebUI.scrollToElement(findTestObject('Checkout/Track Order/text_order_status'), 7)
 
+WebUI.verifyElementText(findTestObject('Checkout/Track Order/text_order_status'), 'WAIT')
+
+// Screenshot
 WebUI.takeScreenshot()
+
+// Close browser
+WebUI.closeBrowser()
 

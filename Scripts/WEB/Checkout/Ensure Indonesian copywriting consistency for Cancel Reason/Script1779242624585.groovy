@@ -81,13 +81,27 @@ WebUI.comment(alertText)
 
 WebUI.acceptAlert()
 
-WebUI.waitForElementVisible(findTestObject('Checkout/track your order'), 7)
+WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/track your order'), 7)
 
-WebUI.click(findTestObject('Checkout/track your order'))
+WebUI.click(findTestObject('Checkout/Track Order/track your order'))
 
-WebUI.click(findTestObject('Checkout/button_Order Details'))
+WebUI.click(findTestObject('Checkout/Track Order/sp-order-list-item'))
 
-WebUI.scrollToElement(findTestObject('Checkout/verify-order list'), 7)
+WebUI.scrollToElement(findTestObject('Checkout/Track Order/btn-cencel'), 10)
+
+WebUI.click(findTestObject('Checkout/Track Order/btn-cencel'))
+
+WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/button_OK'), 7)
+
+WebUI.click(findTestObject('Checkout/Track Order/button_OK'))
+
+WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/Message_Success'), 10)
+
+WebUI.verifyElementVisible(findTestObject('Checkout/Track Order/Message_Success'))
+
+WebUI.scrollToElement(findTestObject('Checkout/Track Order/text_order_status'), 5)
+
+WebUI.verifyElementText(findTestObject('Checkout/Track Order/text_order_status'), 'CANCEL')
 
 WebUI.takeScreenshot()
 

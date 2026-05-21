@@ -123,13 +123,13 @@ WebUI.verifyElementPresent(findTestObject('Checkout/button_Continue shopping'), 
 
 WebUI.click(findTestObject('Checkout/button_Continue shopping'))
 
-WebUI.waitForElementVisible(findTestObject('Checkout/track your order'), 0)
+WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/track your order'), 0)
 
-WebUI.click(findTestObject('Checkout/track your order'))
+WebUI.click(findTestObject('Checkout/Track Order/track your order'))
 
 WebUI.click(findTestObject('Checkout/button_Order Details'))
 
-WebUI.scrollToElement(findTestObject('Checkout/verify-order list'), 7)
+WebUI.scrollToElement(findTestObject('Checkout/Track Order/verify-order list'), 7)
 
 WebUI.takeScreenshot()
 

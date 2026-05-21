@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Select Province</name>
+   <tag></tag>
+   <elementGuidId>aee3f39b-b686-45c3-bf5b-ffa497805f2d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.billing-address_container [prop=&quot;city&quot;] [placeholder=&quot;Select&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' billing-address_container ')]//*[@prop = 'city']//*[@placeholder = 'Select']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=textbox[name=&quot;Select&quot;i] >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>d27d73a7-3b84-4f4b-b642-fd7615ded3bd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>8702821c-cff9-49be-aa06-405ecd69a7f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>readonly</name>
+      <type>Main</type>
+      <value>readonly</value>
+      <webElementGuid>c05ce2ac-8e27-4ab6-a12b-7db72b48964f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocomplete</name>
+      <type>Main</type>
+      <value>off</value>
+      <webElementGuid>14e802c1-b925-4ab2-a160-b2d779a48f0e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Select</value>
+      <webElementGuid>7712a6b9-953f-4e53-a81f-65f7284dfec9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>el-input__inner</value>
+      <webElementGuid>117b63af-2aeb-4c5e-9d5e-ab721f6e5b0b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-23fa9d3044fc3cfe0bc10227c5f00175</value>
+      <webElementGuid>79701c7a-950b-4037-91ff-74ca63879712</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' billing-address_container ')]//*[@prop = 'city']//*[@placeholder = 'Select']</value>
+      <webElementGuid>356fae8c-d935-4de2-bf7e-d6ff60e9abe7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' billing-address_container ')]//*[@prop = 'city']//*[@placeholder = 'Select']</value>
+      <webElementGuid>5cdf1e02-9435-4426-9d19-db20f010e023</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text' and @placeholder = 'Select']</value>
+      <webElementGuid>2adaa4b2-d388-4f21-8e4c-c9093aeb408d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>sub-menu-AirPods 2nd Generation</name>
+   <name>sp-order-list-item</name>
    <tag></tag>
-   <elementGuidId>9d0a8d83-813f-48a5-88d8-ec099a5b9c74</elementGuidId>
+   <elementGuidId>1aaad554-d2a8-4a30-95bf-0b916ee15402</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()='AirPods 2nd Generation']</value>
+         <value>//div[contains(@class,'sp-order-list-item')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
