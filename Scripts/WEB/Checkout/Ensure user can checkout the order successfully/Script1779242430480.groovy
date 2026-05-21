@@ -45,11 +45,13 @@ WebUI.click(findTestObject('Product and Cart/Add to cart/btn-product'))
 
 WebUI.click(findTestObject('Product and Cart/Add to cart/button_Add to Cart'))
 
+WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-cart'), 7)
+
 WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
 
-WebUI.verifyElementVisible(findTestObject('Checkout/button_Checkout'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Checkout/btn_checkout'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Checkout/button_Checkout'))
+WebUI.click(findTestObject('Checkout/btn_checkout'))
 
 WebUI.click(findTestObject('Checkout/Online Payment - WeChat'))
 
@@ -57,14 +59,13 @@ WebUI.check(findTestObject('Checkout/Checkbox__I accept'))
 
 WebUI.click(findTestObject('Checkout/button_Checkout_Payment'))
 
+WebUI.waitForElementPresent(findTestObject('Checkout/iframe_payment_online'), 10)
+
 WebUI.click(findTestObject('Checkout/iframe_payment_online'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.delay(10)
 
 WebUI.click(findTestObject('Checkout/button_Approve'))
-
-// Balik ke default content (keluar dari iframe)
-WebUI.switchToDefaultContent()
 
 WebUI.waitForElementPresent(findTestObject('Checkout/button_Continue shopping'), 10)
 
@@ -72,15 +73,13 @@ WebUI.verifyElementPresent(findTestObject('Checkout/button_Continue shopping'), 
 
 WebUI.click(findTestObject('Checkout/button_Continue shopping'))
 
-WebUI.waitForElementVisible(findTestObject('Registration/icon-acount'), 0)
+WebUI.waitForElementVisible(findTestObject('Checkout/track your order'), 0)
 
-WebUI.click(findTestObject('Registration/icon-acount'))
-
-WebUI.waitForElementVisible(findTestObject('Checkout/div_My Orders'), 0)
-
-WebUI.click(findTestObject('Checkout/div_My Orders'))
+WebUI.click(findTestObject('Checkout/track your order'))
 
 WebUI.click(findTestObject('Checkout/button_Order Details'))
+
+WebUI.scrollToElement(findTestObject('Checkout/verify-order list'), 7)
 
 WebUI.takeScreenshot()
 

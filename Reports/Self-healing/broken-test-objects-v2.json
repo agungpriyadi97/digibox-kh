@@ -39,6 +39,56 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/Product and Cart/Add to cart/IPHONE 11 PRO 128 GB DEEP PURPLE_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Checkout/div_My Orders",
+      "brokenLocator": "//ul[@id\u003d\u0027dropdown-menu-4440\u0027]/div/div/div/div/div",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//ul[@id\u003d\u0027dropdown-menu-6353\u0027]/div/div/div/div",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Checkout/div_My Orders_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Checkout/button_Order Details",
+      "brokenLocator": "//div[contains(@class,\u0027order-item\u0027)][last()]//button[.//span\u003d\u0027Order Details\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "xpath\u003d(//button[@type\u003d\u0027button\u0027])[4]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Checkout/button_Order Details_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Checkout/Checkout guest/field_email",
+      "brokenLocator": "//input[@placeholder\u003d\u0027Email\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "xpath\u003d(//input[@type\u003d\u0027text\u0027])[4]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Checkout/Checkout guest/field_email_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Checkout/btn_checkout",
+      "brokenLocator": "//*[@class \u003d \u0027el-button el-button--primary el-button--large gt-button\u0027]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "xpath\u003d(//button[@type\u003d\u0027primary\u0027])[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Checkout/btn_checkout_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Checkout/iframe_payment_online",
+      "brokenLocator": "//iframe[@id\u003d\u0027aba_webservice\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[@id\u003d\u0027aba-checkout\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
     }
   ]
 }

@@ -45,5 +45,49 @@ WebUI.click(findTestObject('Product and Cart/Add to cart/btn-product'))
 
 WebUI.click(findTestObject('Product and Cart/Add to cart/button_Add to Cart'))
 
+WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-cart'), 7)
+
 WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
+
+WebUI.verifyElementVisible(findTestObject('Checkout/btn_checkout'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Checkout/btn_checkout'))
+
+WebUI.click(findTestObject('Checkout/Online Payment - Cradit Card'))
+
+WebUI.check(findTestObject('Checkout/Checkbox__I accept'))
+
+WebUI.click(findTestObject('Checkout/button_Checkout_Payment'))
+
+WebUI.waitForElementPresent(findTestObject('Checkout/iframe_payment_online'), 10)
+
+WebUI.click(findTestObject('Checkout/iframe_payment_online'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
+
+WebUI.setText(findTestObject('Checkout/input_Card number'), '5156 8399 3770 6777')
+
+WebUI.setText(findTestObject('Checkout/input_Expiry date'), '01/30')
+
+WebUI.setText(findTestObject('Checkout/input_CVV'), '993')
+
+WebUI.click(findTestObject('Checkout/btn-closed-pay'))
+
+WebUI.waitForAlert(10)
+
+String alertText = WebUI.getAlertText()
+
+WebUI.comment(alertText)
+
+WebUI.acceptAlert()
+
+WebUI.waitForElementVisible(findTestObject('Checkout/track your order'), 7)
+
+WebUI.click(findTestObject('Checkout/track your order'))
+
+WebUI.click(findTestObject('Checkout/button_Order Details'))
+
+WebUI.scrollToElement(findTestObject('Checkout/verify-order list'), 7)
+
+WebUI.takeScreenshot()
 
