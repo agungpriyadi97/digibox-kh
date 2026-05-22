@@ -63,13 +63,11 @@ WebUI.waitForElementPresent(findTestObject('Checkout/iframe_payment_online'), 10
 
 WebUI.click(findTestObject('Checkout/iframe_payment_online'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(10)
+WebUI.waitForElementPresent(findTestObject('Checkout/button_Approve'), 10)
 
 WebUI.click(findTestObject('Checkout/button_Approve'))
 
 WebUI.waitForElementPresent(findTestObject('Checkout/button_Continue shopping'), 10)
-
-WebUI.verifyElementPresent(findTestObject('Checkout/button_Continue shopping'), 0)
 
 WebUI.click(findTestObject('Checkout/button_Continue shopping'))
 

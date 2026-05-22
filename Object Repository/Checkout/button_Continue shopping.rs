@@ -6,12 +6,11 @@
    <elementGuidId>4465f81e-4194-4e15-b183-617eb418038b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@type='primary']</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[.//span[contains(text(),'Continue shopping')]]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>ac4665f9-cfb0-408e-9117-656a2946c69d</webElementGuid>
+      <webElementGuid>47f7da70-7ee4-4f43-80d5-fb67df633ad5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +36,7 @@
       <name>type</name>
       <type>Main</type>
       <value>primary</value>
-      <webElementGuid>1fac756b-0319-4d72-8c3c-7cd099952058</webElementGuid>
+      <webElementGuid>9f8b01df-c4a9-413c-a251-b7fd55410d1f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +44,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-full btn flex justify-center items-center w-full text-white text-s14 h-[56px] -tracking-[0.28px] leading-[18px] btn-primary w-full</value>
-      <webElementGuid>d401bfc5-174b-4bec-bda3-aeafa5ea2953</webElementGuid>
+      <webElementGuid>2e0416e7-552a-4189-aeb4-d05407f5c7d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +52,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Continue shopping</value>
-      <webElementGuid>a0fe4119-c105-42fd-aba3-bcbed388ac4d</webElementGuid>
+      <webElementGuid>9391e4fb-5354-49ca-8ba7-88555c954e7c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +60,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;container&quot;)/div[@class=&quot;flex flex-col right-side w-full iframe_view&quot;]/div[@class=&quot;st-success-screen&quot;]/div[1]/div[1]/div[@class=&quot;custom-btn space-y-2&quot;]/button[@class=&quot;w-full btn flex justify-center items-center w-full text-white text-s14 h-[56px] -tracking-[0.28px] leading-[18px] btn-primary w-full&quot;]</value>
-      <webElementGuid>8cc987df-2f8d-4fc7-897a-bb811f30233b</webElementGuid>
+      <webElementGuid>587c9d4e-1cf5-40fc-8f75-bc8d48a8156e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -69,7 +68,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Checkout/iframe_Copyright 2023 Digibox. All rights reserved_aba_webservice</value>
-      <webElementGuid>726b4a1a-8491-471e-954b-fd5410cc52cf</webElementGuid>
+      <webElementGuid>d9364b2e-4fce-4452-830d-731a7b1e37e2</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@type='primary']</value>
-      <webElementGuid>6a6ad9d9-e572-4378-b2d0-e5b810d012ad</webElementGuid>
+      <webElementGuid>75934b6a-a0bd-4178-9477-e1f33802563e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//main[@id='container']/div[2]/div/div/div/div[3]/button[2]</value>
-      <webElementGuid>bd699ecb-51b5-4a15-94cd-45934bfc407d</webElementGuid>
+      <webElementGuid>aab03cef-91a9-432f-a391-f26a8d15ef37</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Download Receipt'])[1]/following::button[1]</value>
-      <webElementGuid>bd40a7a1-a73c-49a1-8c9c-8348cba5cb7a</webElementGuid>
+      <webElementGuid>801b8f7d-9b0c-44ff-9c70-05d0bad3a8d6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +100,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Success'])[1]/following::button[2]</value>
-      <webElementGuid>5d2dbda9-c49e-4657-912c-b3b685a03726</webElementGuid>
+      <webElementGuid>fd0a9fd0-8c95-450a-a157-790056c9e22a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +108,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[2]</value>
-      <webElementGuid>623d1aa0-01ee-40ff-80d5-b65b029494d7</webElementGuid>
+      <webElementGuid>da1c1995-2fb6-410d-a716-03ae11c34d73</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +116,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'primary' and (text() = 'Continue shopping' or . = 'Continue shopping')]</value>
-      <webElementGuid>5e2c776f-9d00-4164-bc6f-4f5b89ba9750</webElementGuid>
+      <webElementGuid>4ad231b5-66d0-4bcd-a849-798f368cc36a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

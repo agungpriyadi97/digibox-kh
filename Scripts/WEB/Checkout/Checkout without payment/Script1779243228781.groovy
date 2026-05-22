@@ -60,7 +60,7 @@ WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-
 WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
 
 // Checkout
-WebUI.verifyElementVisible(findTestObject('Checkout/btn_checkout'))
+WebUI.waitForElementVisible(findTestObject('Checkout/btn_checkout'), 10)
 
 WebUI.click(findTestObject('Checkout/btn_checkout'))
 
@@ -68,7 +68,7 @@ WebUI.click(findTestObject('Checkout/Online Payment - Cradit Card'))
 
 WebUI.check(findTestObject('Checkout/Checkbox__I accept'))
 
-WebUI.click(findTestObject('Checkout/btn_checkout'))
+WebUI.click(findTestObject('Checkout/button_Checkout_Payment'))
 
 WebUI.waitForElementPresent(findTestObject('Checkout/iframe_payment_online'), 8)
 

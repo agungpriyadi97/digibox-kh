@@ -38,7 +38,7 @@ WebUI.enableSmartWait()
 WebUI.waitForElementVisible(findTestObject('Home Page/header_digibox'), 10)
 WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
-// Menu iPhone
+//Menu iPhone
 clickWhenReady('Home Page/Page Iphone/menu-iphone')
 clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max')
 clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max')
@@ -56,7 +56,6 @@ clickWhenReady('Home Page/Page Ipad/sub-menu-iPad Mini')
 clickWhenReady('Home Page/Page Ipad/sub-menu-iPad (Gen 10th)')
 clickWhenReady('Home Page/Page Ipad/sub-menu-iPad')
 
-
 // Menu Apple Watch
 clickWhenReady('Home Page/Page Apple Watch/menu-Apple Watch')
 clickWhenReady('Home Page/Page Apple Watch/sub-menu-Apple Watch 7')
@@ -65,7 +64,7 @@ clickWhenReady('Home Page/Page Apple Watch/sub-menu-Apple Watch 3')
 clickWhenReady('Home Page/Page Apple Watch/sub-menu-Apple Watch SE')
 clickWhenReady('Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra')
 
-// Menu Apple Mac
+//Menu Apple Mac
 clickWhenReady('Home Page/Page Mac/menu-Mac')
 clickWhenReady('Home Page/Page Mac/sub-menu-MacBook Pro')
 clickWhenReady('Home Page/Page Mac/sub-menu-MacBook Air')
@@ -75,7 +74,7 @@ clickWhenReady('Home Page/Page Airpods/menu-AirPods')
 clickWhenReady('Home Page/Page Airpods/sub-menu-AirPods Max')
 clickWhenReady('Home Page/Page Airpods/sub-menu-AirPods Pro')
 clickWhenReady('Home Page/Page Airpods/sub-menu-AirPods 3rd Generation')
-//clickWhenReady('Home Page/Page Airpods/sub-menu-AirPods 2rd Generation')
+clickWhenReady('Home Page/Page Airpods/sub-menu-AirPods 2nd Generation')
 
 // Menu Apple accessoris
 clickWhenReady('Home Page/Page Accessoris/menu-accessoris')

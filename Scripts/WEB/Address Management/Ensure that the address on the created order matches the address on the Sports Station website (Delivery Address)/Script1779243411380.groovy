@@ -17,3 +17,169 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+String randomEmail = CustomKeywords.'custom.RandomData.generateRandomEmail'()
+
+String randomFirstName = CustomKeywords.'custom.RandomData.generateRandomFirstName'()
+
+String randomLastName = CustomKeywords.'custom.RandomData.generateRandomLastName'()
+
+String randomPhone = CustomKeywords.'custom.RandomData.generateRandomPhone'()
+
+String randomAddress = CustomKeywords.'custom.RandomData.generateRandomAddress'()
+
+String randomCode = CustomKeywords.'custom.RandomData.generateRandomCode'()
+
+// Open browser
+WebUI.openBrowser(GlobalVariable.URL)
+
+// Verify homepage
+WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+
+// Search product
+WebUI.click(findTestObject('Home Page/Search/icon-search'))
+
+WebUI.setText(findTestObject('Home Page/Search/field-search'), 'IPHONE 11 PRO 128 GB DEEP PURPLE')
+
+WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord(Keys.ENTER))
+
+// Verify product
+WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-11-pro'))
+
+// Add to cart
+WebUI.click(findTestObject('Product and Cart/Add to cart/btn-product'))
+
+WebUI.click(findTestObject('Product and Cart/Add to cart/button_Add to Cart'))
+
+WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-cart'), 10)
+
+// Open cart
+WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
+
+// Checkout
+WebUI.verifyElementVisible(findTestObject('Checkout/btn_checkout'))
+
+WebUI.click(findTestObject('Checkout/btn_checkout'))
+
+// Input guest email
+WebUI.waitForElementVisible(findTestObject('Checkout/Checkout guest/field_email'), 10)
+
+WebUI.setText(findTestObject('Checkout/Checkout guest/field_email'), randomEmail)
+
+// Continue
+WebUI.click(findTestObject('Checkout/Checkout guest/btn_continue'))
+
+WebUI.waitForElementVisible(findTestObject('Checkout/Address/field_First Name'), 10)
+
+WebUI.setText(findTestObject('Checkout/Address/field_First Name'), randomFirstName)
+
+WebUI.setText(findTestObject('Checkout/Address/field_Last Name'), randomLastName)
+
+WebUI.setText(findTestObject('Checkout/Address/field_mobile phone'), randomPhone)
+
+WebUI.setText(findTestObject('Checkout/Address/field_Address'), randomAddress)
+
+WebUI.setText(findTestObject('Checkout/Address/input_ZipPostal Code'), randomCode)
+
+WebUI.click(findTestObject('Checkout/Address/input_Province'))
+
+WebUI.click(findTestObject('Checkout/Address/li_Phnom Penh Capital_Province'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Checkout/Address/input_Select Province'))
+
+WebUI.click(findTestObject('Checkout/Address/li_Khan Chamkar Mon_Select_Province'))
+
+WebUI.click(findTestObject('Checkout/Address/input_Districts'))
+
+WebUI.click(findTestObject('Checkout/Address/li_Sangkat Tonle Basak_Districts'))
+
+WebUI.click(findTestObject('Checkout/Address/btn-save'))
+
+//<-- Add New Address -->
+WebUI.check(findTestObject('Checkout/Address/Billing address same as shipping'))
+
+WebUI.waitForElementVisible(findTestObject('Checkout/Address/Billing/field_First Name'), 10)
+
+WebUI.setText(findTestObject('Checkout/Address/Billing/field_First Name'), randomFirstName)
+
+WebUI.setText(findTestObject('Checkout/Address/Billing/field_Last Name'), randomLastName)
+
+WebUI.setText(findTestObject('Checkout/Address/Billing/field_mobile phone'), randomPhone)
+
+WebUI.setText(findTestObject('Checkout/Address/Billing/field_Address'), randomAddress)
+
+WebUI.setText(findTestObject('Checkout/Address/Billing/input_ZipPostal Code'), randomCode)
+
+// Province
+WebUI.scrollToElement(findTestObject('Checkout/Address/Billing/input_Province'), 5)
+
+WebUI.waitForElementClickable(findTestObject('Checkout/Address/Billing/input_Province'), 10)
+
+WebUI.click(findTestObject('Checkout/Address/Billing/input_Province'))
+
+WebUI.waitForElementVisible(findTestObject('Checkout/Address/li_Phnom Penh Capital_Province'), 10)
+
+WebUI.click(findTestObject('Checkout/Address/li_Phnom Penh Capital_Province'))
+
+// City
+WebUI.waitForElementClickable(findTestObject('Checkout/Address/Billing/input_Select Province'), 10)
+
+WebUI.click(findTestObject('Checkout/Address/Billing/input_Select Province'))
+
+WebUI.waitForElementClickable(findTestObject('Checkout/Address/Billing/li_Khan Mean Chey_1'), 10)
+
+WebUI.mouseOver(findTestObject('Checkout/Address/Billing/li_Khan Mean Chey'))
+
+WebUI.click(findTestObject('Checkout/Address/Billing/li_Khan Mean Chey_1'))
+
+// District
+WebUI.waitForElementClickable(findTestObject('Checkout/Address/Billing/input_Districts'), 10)
+
+WebUI.click(findTestObject('Checkout/Address/Billing/input_Districts'))
+
+WebUI.waitForElementClickable(findTestObject('Checkout/Address/Billing/li_Sangkat Chak Angrae Kraom'), 10)
+
+WebUI.mouseOver(findTestObject('Checkout/Address/Billing/li_Sangkat Chak Angrae Kraom'))
+
+WebUI.click(findTestObject('Checkout/Address/Billing/li_Sangkat Chak Angrae Kraom_1'))
+
+WebUI.click(findTestObject('Checkout/Online Payment - WeChat'))
+
+WebUI.check(findTestObject('Checkout/Checkbox__I accept'))
+
+// Final checkout
+WebUI.click(findTestObject('Checkout/btn_checkout'))
+
+WebUI.waitForElementPresent(findTestObject('Checkout/iframe_payment_online'), 10)
+
+// Payment iframe
+WebUI.click(findTestObject('Checkout/iframe_payment_online'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
+
+WebUI.click(findTestObject('Checkout/button_Approve'))
+
+WebUI.waitForElementPresent(findTestObject('Checkout/button_Continue shopping'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Checkout/button_Continue shopping'), 0)
+
+WebUI.click(findTestObject('Checkout/button_Continue shopping'))
+
+// Screenshot
+WebUI.takeScreenshot()
+
+// Logs for report
+WebUI.comment('Email      : ' + randomEmail)
+
+WebUI.comment('First Name : ' + randomFirstName)
+
+WebUI.comment('Last Name  : ' + randomLastName)
+
+WebUI.comment('Phone      : ' + randomPhone)
+
+WebUI.comment('Address    : ' + randomAddress)
+
+WebUI.comment('Code    : ' + randomCode)
+
+// Close browser
+not_run: WebUI.closeBrowser()
+

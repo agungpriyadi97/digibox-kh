@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btn_Reset Password</name>
+   <tag></tag>
+   <elementGuidId>fd45541a-6b06-4ddd-b9a0-c70dee6ade49</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='primary']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.el-button.change_button.el-button--primary.gt-button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Reset Password&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>1d309211-0f82-478e-a2d6-23bd216abc79</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>primary</value>
+      <webElementGuid>efea5488-9dca-4658-9d9b-d93272713bf3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>el-button change_button el-button--primary gt-button</value>
+      <webElementGuid>d1dcb73d-43e9-4241-8c7a-387dfd4f8bb5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Reset Password</value>
+      <webElementGuid>b84de956-2426-46f0-a6e9-45f98222e0b2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;page-view&quot;)/div[@class=&quot;gt-layout page-layout_pc&quot;]/div[@class=&quot;digibox-reset-pwd-container page-view__child&quot;]/section[@class=&quot;reset-password-pages&quot;]/div[@class=&quot;reset-password-pages__right&quot;]/form[@class=&quot;el-form&quot;]/div[1]/button[@class=&quot;el-button change_button el-button--primary gt-button&quot;]</value>
+      <webElementGuid>0ccbb829-a931-4750-a77a-afe156532432</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@type='primary']</value>
+      <webElementGuid>f39b8caa-505c-4db2-b687-2f500ae33e6e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='page-view']/div/div[3]/section/div[2]/form[2]/div/button</value>
+      <webElementGuid>cf210224-7f3c-4b3e-9af8-7f4a40e9f14d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Required'])[3]/following::button[1]</value>
+      <webElementGuid>98e79e92-e1c0-4a02-a23f-85505b234596</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Required'])[2]/following::button[1]</value>
+      <webElementGuid>9f5e7b5f-3480-40d9-be42-a8f5b10e9cf4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='MAPPLE MITRA ADIPERKASA (CAMBODIA) CO., LTD'])[1]/preceding::button[1]</value>
+      <webElementGuid>ca3f499b-b3ff-49c6-a219-ea762bae17c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/button</value>
+      <webElementGuid>53de5460-bda8-4a7d-82ff-daf088f703b2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'primary' and (text() = 'Reset Password' or . = 'Reset Password')]</value>
+      <webElementGuid>5321f521-7d57-4797-9dad-941176ba73bc</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
