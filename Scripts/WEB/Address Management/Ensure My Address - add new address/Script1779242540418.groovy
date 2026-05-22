@@ -71,15 +71,15 @@ WebUI.click(findTestObject('Address Management/Add New Address/Dropdown Province
 
 WebUI.click(findTestObject('Address Management/Add New Address/field_Select Province'))
 
-WebUI.mouseOver(findTestObject('Address Management/Add New Address/Dropdown Select Province/li_Mongkol Borei'))
+WebUI.mouseOver(findTestObject('Address Management/Add New Address/Dropdown Select Province/li_Ou Chrov District'))
 
-WebUI.click(findTestObject('Address Management/Add New Address/Dropdown Select Province/li_Mongkol Borei'))
+WebUI.click(findTestObject('Address Management/Add New Address/Dropdown Select Province/li_Ou Chrov District'))
 
 WebUI.click(findTestObject('Address Management/Add New Address/field_Districts'))
 
-WebUI.mouseOver(findTestObject('Address Management/Add New Address/Dropdown District/li_Kouk Ballangk Commune'), FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Address Management/Add New Address/Dropdown District/li_Koub Commune'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Address Management/Add New Address/Dropdown District/li_Kouk Ballangk Commune'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Address Management/Add New Address/Dropdown District/li_Koub Commune'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Address Management/Add New Address/field_ZipPostal Code'), randomCode)
 

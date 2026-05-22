@@ -6,12 +6,12 @@
    <elementGuidId>8e29baac-12d8-442b-8b44-642b5327e33e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='primary'])[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.address-edit_container.add-new_item > section > div > button.el-button.el-button--primary.el-button--small.gt-button</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@type='primary'])[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>1e9a3223-03c1-4e90-9735-7dfb61af320b</webElementGuid>
+      <webElementGuid>334c1db4-d923-4cf4-9b2a-f9c32c4819d4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>primary</value>
-      <webElementGuid>2af990e8-2cf4-4345-a4ea-f8b780013174</webElementGuid>
+      <webElementGuid>9dcfa903-47e9-4016-9899-d8230b6b9d2d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>el-button el-button--primary el-button--small gt-button</value>
-      <webElementGuid>1a398ecf-b037-410d-b4fe-cffe24abaa81</webElementGuid>
+      <webElementGuid>cf9c8468-fb6e-4f06-a85b-4d62f0308c94</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>size</name>
       <type>Main</type>
       <value>small</value>
-      <webElementGuid>fb10482d-86ec-4b97-a7dd-8b619ba7d578</webElementGuid>
+      <webElementGuid>483a5cc0-d8cd-4b10-b16c-ae2d1c6ef956</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <type>Main</type>
       <value>Save
     </value>
-      <webElementGuid>2ed76aae-96fd-4d3e-abc9-c2bf9930f770</webElementGuid>
+      <webElementGuid>52f78c81-9054-4dcb-b5cd-cca101d17fcc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;el-collapse-content-2737&quot;)/div[@class=&quot;el-collapse-item__content&quot;]/div[@class=&quot;address-edit_container add-new_item&quot;]/section[1]/div[1]/button[@class=&quot;el-button el-button--primary el-button--small gt-button&quot;]</value>
-      <webElementGuid>854f8057-ea2b-4269-b5ea-3cc93b207b00</webElementGuid>
+      <webElementGuid>3fa1b6c9-e695-4675-9f57-674c37bb012c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='primary'])[2]</value>
-      <webElementGuid>294063d0-e99c-4630-b68a-57cb2a4a2f64</webElementGuid>
+      <webElementGuid>9d618c4f-d47b-4a00-90b5-d1396a766fce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='el-collapse-content-2737']/div/div/section/div/button</value>
-      <webElementGuid>e4882da4-ecad-46da-a9ac-894c02f4ba1a</webElementGuid>
+      <webElementGuid>94d547a9-f9f9-4d2e-8a31-7de7be72d055</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Please enter a valid postal code, must be 4-6 digit number'])[1]/following::button[1]</value>
-      <webElementGuid>b19fc479-ef17-4af1-a560-91f24b14fe3f</webElementGuid>
+      <webElementGuid>ae864b2a-a250-49c1-9b60-ee2661606379</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Zip/Postal Code'])[2]/following::button[1]</value>
-      <webElementGuid>6c757535-9617-4e68-a9e9-55f7635e5960</webElementGuid>
+      <webElementGuid>d303215f-3769-4c9b-b319-0384a1dfa327</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[2]/preceding::button[1]</value>
-      <webElementGuid>5f79686c-5a16-4902-93aa-7193947f1313</webElementGuid>
+      <webElementGuid>26cfc00f-8756-4e81-a2f9-6997e789ce8b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[2]/div/div/section/div/button</value>
-      <webElementGuid>86cd7f47-1047-4f1b-aafa-892fb47e7340</webElementGuid>
+      <webElementGuid>a4032226-bc58-4b96-ae09-ed515485e3fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -128,6 +128,6 @@
       <value>//button[@type = 'primary' and (text() = 'Save
     ' or . = 'Save
     ')]</value>
-      <webElementGuid>63fc228d-6662-4eba-9abb-9d4d1f8f3b38</webElementGuid>
+      <webElementGuid>46fda862-00c2-4657-afab-e056849a86b3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

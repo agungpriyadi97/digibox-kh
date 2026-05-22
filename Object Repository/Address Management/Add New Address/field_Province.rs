@@ -6,19 +6,19 @@
    <elementGuidId>e6aefbcb-bb1f-4b06-99eb-abd0ae840b84</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@type='text'])[19]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@type='text'])[29]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:label=&quot;Add New Address&quot;i >> form div >> internal:has-text=&quot;Province Phnom Penh CapitalBanteay Meanchey ProvinceBattambang ProvinceKampong C&quot;i >> internal:attr=[placeholder=&quot;Select&quot;s]</value>
+         <value>div >> internal:has-text=/^Province$/ >> internal:attr=[placeholder=&quot;Select&quot;s]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>a4339f44-7712-4663-8f19-c921f919307f</webElementGuid>
+      <webElementGuid>0ceff4c5-cba0-4717-9011-338d23a3d64e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>853f1b7c-017a-4ccc-824a-35b7bd57efcf</webElementGuid>
+      <webElementGuid>1c593ed4-4bd0-432a-8da6-e60408bd03aa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>readonly</name>
       <type>Main</type>
       <value>readonly</value>
-      <webElementGuid>5842dba2-f872-4fbb-a99d-7ef871f52543</webElementGuid>
+      <webElementGuid>6353f1a1-d960-449e-8616-9a69e97a540c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>8bd8f81c-32e7-4202-afab-2a4ba839e6aa</webElementGuid>
+      <webElementGuid>7447a836-b692-406c-9696-c983537e3519</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Select</value>
-      <webElementGuid>41a80714-133b-4d7a-b6f0-d29bff4b412e</webElementGuid>
+      <webElementGuid>e6140ab1-4ed3-43f3-9f87-2476b0443de3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,16 +69,48 @@
       <name>class</name>
       <type>Main</type>
       <value>el-input__inner</value>
-      <webElementGuid>46c367f6-aef6-4b19-bace-885726ab09f2</webElementGuid>
+      <webElementGuid>08a628f0-d6fd-4ee2-97cd-d7742b294036</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;el-collapse-content-2737&quot;)/div[@class=&quot;el-collapse-item__content&quot;]/div[@class=&quot;address-edit_container add-new_item&quot;]/section[1]/form[@class=&quot;el-form gt-simple-form checkout-form el-form--label-top&quot;]/div[@class=&quot;el-form-item gt-form-item is-required el-form-item--small&quot;]/div[@class=&quot;el-form-item__content&quot;]/div[@class=&quot;el-select gt-select width_fill el-select--small&quot;]/div[@class=&quot;el-input el-input--small el-input--suffix&quot;]/input[@class=&quot;el-input__inner&quot;]</value>
-      <webElementGuid>4949efeb-8f66-42d1-b2d3-1226c6d2f48b</webElementGuid>
+      <value>id(&quot;el-collapse-content-4735&quot;)/div[@class=&quot;el-collapse-item__content&quot;]/div[@class=&quot;address-edit_container add-new_item&quot;]/section[1]/form[@class=&quot;el-form gt-simple-form checkout-form el-form--label-top&quot;]/div[@class=&quot;el-form-item gt-form-item is-required el-form-item--small&quot;]/div[@class=&quot;el-form-item__content&quot;]/div[@class=&quot;el-select gt-select width_fill el-select--small&quot;]/div[@class=&quot;el-input el-input--small el-input--suffix&quot;]/input[@class=&quot;el-input__inner&quot;]</value>
+      <webElementGuid>2bc568d6-e7d9-4918-9b8c-7dc9fcc704fa</webElementGuid>
    </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//input[@type='text'])[29]</value>
+      <webElementGuid>47d34c11-72d3-4975-8fe8-34fac6d71ae7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='el-collapse-content-4735']/div/div/section/form/div[8]/div/div/div/input</value>
+      <webElementGuid>5160c90a-2e45-4049-baf6-f19e1b2e07b6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[2]/div/div/section/form/div[8]/div/div/div/input</value>
+      <webElementGuid>902f447f-596d-42dd-a376-7b3a8d058fbc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text' and @placeholder = 'Select']</value>
+      <webElementGuid>cdebd415-7e4a-4d84-a1e3-656127f2a5a2</webElementGuid>
+   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
@@ -102,13 +134,5 @@
       <type>Main</type>
       <value>//div[2]/div[2]/div/div/section/form/div[8]/div/div/div/input</value>
       <webElementGuid>cef533b1-325e-49a6-8b73-849af9acabb3</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//input[@type = 'text' and @placeholder = 'Select']</value>
-      <webElementGuid>5fe22ffe-b755-45a1-a5e5-a64ee8e9e25e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

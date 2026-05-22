@@ -6,12 +6,12 @@
    <elementGuidId>c6c5a50f-08c7-4bf7-bd03-b6b5ebd3dab3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@type='text'])[15]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@type='text'])[25]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>133ecc3a-d72e-48d8-bfc5-17173f902784</webElementGuid>
+      <webElementGuid>d038a87f-cac3-48bd-94a1-9d691edbc0e8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>87f9f7e3-9b72-42b0-b32c-86086477a7d0</webElementGuid>
+      <webElementGuid>67738cab-8a94-40e5-b4fc-e075e00f4034</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>1c06661b-fb0c-4028-a65d-31588db1efb1</webElementGuid>
+      <webElementGuid>c11da337-501c-418f-a8eb-61c1b6c28527</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Your mobile phone</value>
-      <webElementGuid>4f75a257-a56b-447b-950b-3ca2aa606e18</webElementGuid>
+      <webElementGuid>43f3021e-5043-41af-b823-89ffc54011aa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,16 +61,48 @@
       <name>class</name>
       <type>Main</type>
       <value>el-input__inner</value>
-      <webElementGuid>bfc9ba41-8217-4905-8f83-ad6ca9a48ba1</webElementGuid>
+      <webElementGuid>3d6131b9-dcbd-4692-b847-41f280783032</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;el-collapse-content-2737&quot;)/div[@class=&quot;el-collapse-item__content&quot;]/div[@class=&quot;address-edit_container add-new_item&quot;]/section[1]/form[@class=&quot;el-form gt-simple-form checkout-form el-form--label-top&quot;]/div[@class=&quot;el-form-item gt-form-item is-required el-form-item--small&quot;]/div[@class=&quot;el-form-item__content&quot;]/div[@class=&quot;width_fill el-input el-input--small el-input--suffix gt-input gt-radius-undefined gt-border-undefined gt-borderColor-undefined&quot;]/input[@class=&quot;el-input__inner&quot;]</value>
-      <webElementGuid>06862a45-d5bd-4ffa-9fa3-ea3666cc6829</webElementGuid>
+      <value>id(&quot;el-collapse-content-4735&quot;)/div[@class=&quot;el-collapse-item__content&quot;]/div[@class=&quot;address-edit_container add-new_item&quot;]/section[1]/form[@class=&quot;el-form gt-simple-form checkout-form el-form--label-top&quot;]/div[@class=&quot;el-form-item gt-form-item is-required el-form-item--small&quot;]/div[@class=&quot;el-form-item__content&quot;]/div[@class=&quot;width_fill el-input el-input--small el-input--suffix gt-input gt-radius-undefined gt-border-undefined gt-borderColor-undefined&quot;]/input[@class=&quot;el-input__inner&quot;]</value>
+      <webElementGuid>9125a36b-d0fd-4c36-b23b-5391631d4b40</webElementGuid>
    </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//input[@type='text'])[25]</value>
+      <webElementGuid>1a7d2f45-7984-4123-a4ed-690ce5bf40a9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='el-collapse-content-4735']/div/div/section/form/div[4]/div/div/input</value>
+      <webElementGuid>5cd78d56-12dd-4e0a-ad55-a08ae1f218dd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[2]/div/div/section/form/div[4]/div/div/input</value>
+      <webElementGuid>a361e490-52ed-47e0-9652-528d13384689</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text' and @placeholder = 'Your mobile phone']</value>
+      <webElementGuid>c2c9561a-1035-4cb8-a673-1049a39bc505</webElementGuid>
+   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
@@ -94,13 +126,5 @@
       <type>Main</type>
       <value>//div[2]/div[2]/div/div/section/form/div[4]/div/div/input</value>
       <webElementGuid>62f54aa9-8331-4600-a545-d44c78f402f2</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//input[@type = 'text' and @placeholder = 'Your mobile phone']</value>
-      <webElementGuid>071c39c4-e1a2-426f-928e-4ef3c56946a8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

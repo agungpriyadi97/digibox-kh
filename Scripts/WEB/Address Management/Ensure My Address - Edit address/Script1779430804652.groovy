@@ -78,25 +78,6 @@ WebUI.clearText(findTestObject('Address Management/Edit Address/Field_Address'),
 
 WebUI.setText(findTestObject('Address Management/Edit Address/Field_Address'), randomAddress)
 
-not_run: WebUI.click(findTestObject('Address Management/Add New Address/field_Province'))
-
-not_run: WebUI.mouseOver(findTestObject('Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province'))
-
-not_run: WebUI.click(findTestObject('Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province'))
-
-not_run: WebUI.click(findTestObject('Address Management/Add New Address/field_Select Province'))
-
-not_run: WebUI.mouseOver(findTestObject('Address Management/Add New Address/Dropdown Select Province/li_Mongkol Borei'))
-
-not_run: WebUI.click(findTestObject('Address Management/Add New Address/Dropdown Select Province/li_Mongkol Borei'))
-
-not_run: WebUI.click(findTestObject('Address Management/Add New Address/field_Districts'))
-
-not_run: WebUI.mouseOver(findTestObject('Address Management/Add New Address/Dropdown District/li_Kouk Ballangk Commune'), 
-    FailureHandling.STOP_ON_FAILURE)
-
-not_run: WebUI.click(findTestObject('Address Management/Add New Address/Dropdown District/li_Kouk Ballangk Commune'), FailureHandling.STOP_ON_FAILURE)
-
 WebUI.clearText(findTestObject('Address Management/Edit Address/Field_ZipPostal Code'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Address Management/Edit Address/Field_ZipPostal Code'), randomCode)

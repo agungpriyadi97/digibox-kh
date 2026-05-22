@@ -6,12 +6,12 @@
    <elementGuidId>75c3dfec-408c-45df-8a84-64ad38ef8557</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@type='text'])[13]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.address-edit_container.add-new_item > section > form.el-form.gt-simple-form.checkout-form.el-form--label-top > div.el-form-item.gt-form-item.is-required.el-form-item--small > div.el-form-item__content > div.width_fill.el-input.el-input--small.el-input--suffix.gt-input.gt-radius-undefined.gt-border-undefined.gt-borderColor-undefined > input.el-input__inner</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@type='text'])[23]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>5b8748aa-88f2-4c89-b489-50fac77dc6d3</webElementGuid>
+      <webElementGuid>8805d072-b9b4-4b16-a5c1-57e68fae17ec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>0a49b023-ff72-4e39-98d0-072ac24cf288</webElementGuid>
+      <webElementGuid>d5510ec0-1d6f-4914-adad-34706d785fd7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>6ef4902b-358b-48dc-94a5-2e7ff2a0e40e</webElementGuid>
+      <webElementGuid>d3f7d428-f1ef-447c-bf37-bf13898d26bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Your First Name</value>
-      <webElementGuid>f9caab9a-3dda-4ae7-8ad0-4436938d0c5f</webElementGuid>
+      <webElementGuid>a180c525-2aac-497c-82de-b25db1a1c8b3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,16 +61,48 @@
       <name>class</name>
       <type>Main</type>
       <value>el-input__inner</value>
-      <webElementGuid>337fd5dd-3c2d-49d7-b338-805c17bd78b7</webElementGuid>
+      <webElementGuid>f0ccb6d9-22ec-4131-9e1a-b7bcf20f9ab4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;el-collapse-content-2737&quot;)/div[@class=&quot;el-collapse-item__content&quot;]/div[@class=&quot;address-edit_container add-new_item&quot;]/section[1]/form[@class=&quot;el-form gt-simple-form checkout-form el-form--label-top&quot;]/div[@class=&quot;el-form-item gt-form-item is-required el-form-item--small&quot;]/div[@class=&quot;el-form-item__content&quot;]/div[@class=&quot;width_fill el-input el-input--small el-input--suffix gt-input gt-radius-undefined gt-border-undefined gt-borderColor-undefined&quot;]/input[@class=&quot;el-input__inner&quot;]</value>
-      <webElementGuid>81f47eaa-ff1c-4005-9924-395b419bce90</webElementGuid>
+      <value>id(&quot;el-collapse-content-8834&quot;)/div[@class=&quot;el-collapse-item__content&quot;]/div[@class=&quot;address-edit_container add-new_item&quot;]/section[1]/form[@class=&quot;el-form gt-simple-form checkout-form el-form--label-top&quot;]/div[@class=&quot;el-form-item gt-form-item is-required el-form-item--small&quot;]/div[@class=&quot;el-form-item__content&quot;]/div[@class=&quot;width_fill el-input el-input--small el-input--suffix gt-input gt-radius-undefined gt-border-undefined gt-borderColor-undefined&quot;]/input[@class=&quot;el-input__inner&quot;]</value>
+      <webElementGuid>c0c9f985-6f76-4270-8854-9d736ab3dff0</webElementGuid>
    </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//input[@type='text'])[23]</value>
+      <webElementGuid>cf0c809d-d946-4e01-9bc4-20a689b6b120</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='el-collapse-content-8834']/div/div/section/form/div[2]/div/div/input</value>
+      <webElementGuid>2efaf875-dd29-42e0-b137-15d515548240</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[2]/div/div/section/form/div[2]/div/div/input</value>
+      <webElementGuid>b3dafc1d-7b74-42ed-b5a3-07619e2f688f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text' and @placeholder = 'Your First Name']</value>
+      <webElementGuid>7da9c516-907e-4330-9614-045c94862a44</webElementGuid>
+   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
@@ -94,13 +126,5 @@
       <type>Main</type>
       <value>//div[2]/div[2]/div/div/section/form/div[2]/div/div/input</value>
       <webElementGuid>24b480bb-6396-4d3b-a735-541fb7e9adb2</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//input[@type = 'text' and @placeholder = 'Your First Name']</value>
-      <webElementGuid>4bcd7f85-fd66-4434-9cfb-33620831a806</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

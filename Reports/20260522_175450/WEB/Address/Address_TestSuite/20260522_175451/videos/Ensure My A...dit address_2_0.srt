@@ -1,0 +1,180 @@
+1
+00:00:00,115 --> 00:00:00,119
+1. randomEmail = custom.RandomData.generateRandomEmail()
+
+2
+00:00:00,121 --> 00:00:00,123
+5. randomFirstName = custom.RandomData.generateRandomFirstName()
+
+3
+00:00:00,125 --> 00:00:00,128
+9. randomLastName = custom.RandomData.generateRandomLastName()
+
+4
+00:00:00,130 --> 00:00:00,132
+13. randomPhone = custom.RandomData.generateRandomPhone()
+
+5
+00:00:00,134 --> 00:00:00,136
+17. randomAddress = custom.RandomData.generateRandomAddress()
+
+6
+00:00:00,138 --> 00:00:00,140
+21. randomCode = custom.RandomData.generateRandomCode()
+
+7
+00:00:00,140 --> 00:00:03,213
+25. openBrowser(URL)
+
+8
+00:00:03,223 --> 00:00:03,689
+29. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+9
+00:00:03,697 --> 00:00:04,574
+33. click(findTestObject("Registration/icon-acount"))
+
+10
+00:00:04,581 --> 00:00:06,291
+37. setText(findTestObject("Registration/field-account"), "agungpriyadi")
+
+11
+00:00:06,297 --> 00:00:07,806
+41. setText(findTestObject("Registration/field-Password"), "Laskar123456")
+
+12
+00:00:07,811 --> 00:00:08,709
+45. click(findTestObject("Login/btn-sign in"))
+
+13
+00:00:08,718 --> 00:00:09,481
+49. click(findTestObject("Registration/icon-acount"))
+
+14
+00:00:09,497 --> 00:00:12,248
+53. waitForElementVisible(findTestObject("Address Management/Shipping Address/btn_My Address"), 4)
+
+15
+00:00:12,248 --> 00:00:13,198
+57. click(findTestObject("Address Management/Shipping Address/btn_My Address"))
+
+16
+00:00:13,206 --> 00:00:13,210
+61. editBtn = new com.kms.katalon.core.testobject.TestObject()
+
+17
+00:00:13,215 --> 00:00:13,256
+65. editBtn.addProperty("xpath", EQUALS, "(//button[contains(.,'Edit')])[1]")
+
+18
+00:00:13,263 --> 00:00:42,164
+69. click(findTestObject("Address Management/Shipping Address/btn_Edit"))
+
+19
+00:00:42,181 --> 00:00:42,546
+73. waitForElementVisible(findTestObject("Address Management/Edit Address/Field_First Name"), 10)
+
+20
+00:00:42,558 --> 00:00:43,036
+77. clearText(findTestObject("Address Management/Edit Address/Field_First Name"), STOP_ON_FAILURE)
+
+21
+00:00:43,036 --> 00:00:44,462
+81. setText(findTestObject("Address Management/Edit Address/Field_First Name"), randomFirstName)
+
+22
+00:00:44,462 --> 00:00:45,020
+85. clearText(findTestObject("Address Management/Edit Address/Field_Last Name"), STOP_ON_FAILURE)
+
+23
+00:00:45,032 --> 00:00:46,463
+89. setText(findTestObject("Address Management/Edit Address/Field_Last Name"), randomLastName)
+
+24
+00:00:46,463 --> 00:00:46,920
+93. clearText(findTestObject("Address Management/Edit Address/Field_Mobile Phone"), STOP_ON_FAILURE)
+
+25
+00:00:47,049 --> 00:00:48,399
+97. setText(findTestObject("Address Management/Edit Address/Field_Mobile Phone"), randomPhone)
+
+26
+00:00:48,404 --> 00:00:48,962
+101. clearText(findTestObject("Address Management/Edit Address/Field_E-mail"), STOP_ON_FAILURE)
+
+27
+00:00:48,964 --> 00:00:50,602
+105. setText(findTestObject("Address Management/Edit Address/Field_E-mail"), randomEmail)
+
+28
+00:00:50,619 --> 00:00:51,139
+109. clearText(findTestObject("Address Management/Edit Address/Field_Address"), STOP_ON_FAILURE)
+
+29
+00:00:51,147 --> 00:00:52,641
+113. setText(findTestObject("Address Management/Edit Address/Field_Address"), randomAddress)
+
+30
+00:00:52,644 --> 00:00:53,044
+117. clearText(findTestObject("Address Management/Edit Address/Field_ZipPostal Code"), STOP_ON_FAILURE)
+
+31
+00:00:53,044 --> 00:00:54,432
+121. setText(findTestObject("Address Management/Edit Address/Field_ZipPostal Code"), randomCode)
+
+32
+00:00:54,441 --> 00:00:55,145
+125. click(findTestObject("Address Management/Edit Address/button_Save"))
+
+33
+00:00:55,145 --> 00:00:55,670
+129. scrollToElement(findTestObject("Address Management/Shipping Address/lbl_Shipping Address"), 10)
+
+34
+00:00:55,679 --> 00:00:55,688
+133. verifyName = new com.kms.katalon.core.testobject.TestObject()
+
+35
+00:00:55,695 --> 00:00:55,851
+137. verifyName.addProperty("xpath", EQUALS, //*[contains(text(),'$randomFirstName')])
+
+36
+00:00:55,855 --> 00:00:56,270
+141. verifyElementPresent(verifyName, 10)
+
+37
+00:00:56,270 --> 00:00:56,719
+145. takeScreenshot()
+
+38
+00:00:56,719 --> 00:00:56,735
+149. comment("Email      : " + randomEmail)
+
+39
+00:00:56,751 --> 00:00:56,767
+153. comment("First Name : " + randomFirstName)
+
+40
+00:00:56,767 --> 00:00:56,783
+157. comment("Last Name  : " + randomLastName)
+
+41
+00:00:56,799 --> 00:00:56,815
+161. comment("Phone      : " + randomPhone)
+
+42
+00:00:56,831 --> 00:00:56,841
+165. comment("Address    : " + randomAddress)
+
+43
+00:00:56,850 --> 00:00:56,850
+169. comment("Code    : " + randomCode)
+
+44
+00:00:56,871 --> 00:00:57,644
+173. closeBrowser()
+
+45
+00:00:57,650 --> 00:00:57,652
+177. closeBrowser()
+

@@ -1,0 +1,84 @@
+1
+00:00:00,069 --> 00:00:03,226
+1. openBrowser(URL)
+
+2
+00:00:03,242 --> 00:00:03,636
+5. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+3
+00:00:03,645 --> 00:00:04,590
+9. click(findTestObject("Registration/icon-acount"))
+
+4
+00:00:04,591 --> 00:00:06,191
+13. setText(findTestObject("Registration/field-account"), "agungpriyadi")
+
+5
+00:00:06,204 --> 00:00:07,700
+17. setText(findTestObject("Registration/field-Password"), "Laskar123456")
+
+6
+00:00:07,707 --> 00:00:08,402
+21. click(findTestObject("Login/btn-sign in"))
+
+7
+00:00:08,408 --> 00:00:09,190
+25. click(findTestObject("Registration/icon-acount"))
+
+8
+00:00:09,190 --> 00:00:11,965
+29. click(findTestObject("Address Management/Shipping Address/btn_My Address"))
+
+9
+00:00:11,969 --> 00:00:37,062
+33. click(findTestObject("Address Management/Shipping Address/btn_Delete"))
+
+10
+00:00:37,062 --> 00:00:37,610
+37. waitForElementClickable(findTestObject("Address Management/Shipping Address/button_OK"), 10)
+
+11
+00:00:37,617 --> 00:00:37,634
+41. btnOK = new com.kms.katalon.core.testobject.TestObject()
+
+12
+00:00:37,639 --> 00:00:37,639
+45. btnOK.addProperty("xpath", EQUALS, "//div[contains(@class,'el-message-box')]//span[normalize-space()='OK']")
+
+13
+00:00:37,652 --> 00:00:37,983
+49. waitForElementVisible(btnOK, 10)
+
+14
+00:00:37,983 --> 00:00:38,350
+53. okElement = findWebElement(btnOK, 10)
+
+15
+00:00:38,350 --> 00:00:38,639
+57. executeJavaScript("arguments[0].click();", Arrays.asList(okElement))
+
+16
+00:00:38,661 --> 00:00:39,998
+61. refresh()
+
+17
+00:00:40,008 --> 00:00:40,207
+65. waitForPageLoad(10)
+
+18
+00:00:40,207 --> 00:00:40,227
+69. deletedEmail = new com.kms.katalon.core.testobject.TestObject()
+
+19
+00:00:40,236 --> 00:00:40,241
+73. deletedEmail.addProperty("xpath", EQUALS, "//*[contains(text(),'agung.priyadi@gtech.digital')]")
+
+20
+00:00:40,253 --> 00:00:41,410
+77. takeScreenshot()
+
+21
+00:00:41,426 --> 00:00:42,148
+81. closeBrowser()
+
