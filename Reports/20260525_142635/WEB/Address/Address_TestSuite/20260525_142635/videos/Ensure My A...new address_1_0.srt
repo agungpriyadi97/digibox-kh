@@ -1,0 +1,168 @@
+1
+00:00:00,128 --> 00:00:00,157
+1. randomFirstName = custom.RandomData.generateRandomFirstName()
+
+2
+00:00:00,168 --> 00:00:00,203
+5. randomEmail = custom.RandomData.generateRandomEmail()
+
+3
+00:00:00,204 --> 00:00:00,208
+9. randomLastName = custom.RandomData.generateRandomLastName()
+
+4
+00:00:00,209 --> 00:00:00,220
+13. randomPhone = custom.RandomData.generateRandomPhone()
+
+5
+00:00:00,221 --> 00:00:00,224
+17. randomAddress = custom.RandomData.generateRandomAddress()
+
+6
+00:00:00,226 --> 00:00:00,229
+21. randomCode = custom.RandomData.generateRandomCode()
+
+7
+00:00:00,230 --> 00:00:06,621
+25. openBrowser(URL)
+
+8
+00:00:06,624 --> 00:00:07,615
+29. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+9
+00:00:07,615 --> 00:00:08,181
+33. click(findTestObject("Registration/icon-acount"))
+
+10
+00:00:08,186 --> 00:00:09,784
+37. setText(findTestObject("Registration/field-account"), "agungpriyadi")
+
+11
+00:00:09,784 --> 00:00:10,950
+41. setText(findTestObject("Registration/field-Password"), "Laskar123456")
+
+12
+00:00:10,974 --> 00:00:11,604
+45. click(findTestObject("Login/btn-sign in"))
+
+13
+00:00:11,621 --> 00:00:12,255
+49. click(findTestObject("Registration/icon-acount"))
+
+14
+00:00:12,256 --> 00:00:16,480
+53. waitForElementVisible(findTestObject("Address Management/Shipping Address/btn_My Address"), 4)
+
+15
+00:00:16,481 --> 00:00:27,144
+57. click(findTestObject("Address Management/Shipping Address/btn_My Address"))
+
+16
+00:00:27,145 --> 00:00:37,685
+61. click(findTestObject("Address Management/Add New Address/radiobtn_Add New Address"))
+
+17
+00:00:37,686 --> 00:00:37,688
+65. waitForElementVisible(findTestObject("Address Management/Add New Address/field_First Name"), 10)
+
+18
+00:00:37,688 --> 00:00:38,426
+69. setText(findTestObject("Address Management/Add New Address/field_First Name"), randomFirstName)
+
+19
+00:00:38,427 --> 00:00:39,140
+73. setText(findTestObject("Address Management/Add New Address/field_Last Name"), randomLastName)
+
+20
+00:00:39,141 --> 00:00:40,157
+77. setText(findTestObject("Address Management/Add New Address/field_Mobile Phone"), randomPhone)
+
+21
+00:00:40,159 --> 00:00:41,170
+81. setText(findTestObject("Address Management/Add New Address/field_E-mail"), randomEmail)
+
+22
+00:00:41,171 --> 00:00:42,044
+85. setText(findTestObject("Address Management/Add New Address/field_Address"), randomAddress)
+
+23
+00:00:42,045 --> 00:00:42,524
+89. click(findTestObject("Address Management/Add New Address/field_Province"))
+
+24
+00:00:42,525 --> 00:00:43,153
+93. mouseOver(findTestObject("Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province"))
+
+25
+00:00:43,154 --> 00:00:43,512
+97. click(findTestObject("Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province"))
+
+26
+00:00:43,513 --> 00:00:43,896
+101. click(findTestObject("Address Management/Add New Address/field_Select Province"))
+
+27
+00:00:43,898 --> 00:00:45,196
+105. mouseOver(findTestObject("Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality"))
+
+28
+00:00:45,198 --> 00:00:45,548
+109. click(findTestObject("Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality"))
+
+29
+00:00:45,549 --> 00:00:45,903
+113. click(findTestObject("Address Management/Add New Address/field_Districts"))
+
+30
+00:00:45,904 --> 00:00:46,942
+117. waitForElementVisible(findTestObject("Address Management/Add New Address/Dropdown District/li_Sangkat Phsar Kandal"), 10)
+
+31
+00:00:46,943 --> 00:00:47,302
+121. click(findTestObject("Address Management/Add New Address/Dropdown District/li_Sangkat Phsar Kandal"))
+
+32
+00:00:47,303 --> 00:00:48,058
+125. setText(findTestObject("Address Management/Add New Address/field_ZipPostal Code"), randomCode)
+
+33
+00:00:48,058 --> 00:00:58,593
+129. click(findTestObject("Address Management/Add New Address/button_Save"))
+
+34
+00:00:58,594 --> 00:00:59,060
+133. scrollToElement(findTestObject("Address Management/Shipping Address/lbl_Shipping Address"), 3)
+
+35
+00:00:59,062 --> 00:00:59,862
+137. takeScreenshot()
+
+36
+00:00:59,863 --> 00:00:59,880
+141. comment("Email      : " + randomEmail)
+
+37
+00:00:59,883 --> 00:00:59,888
+145. comment("First Name : " + randomFirstName)
+
+38
+00:00:59,889 --> 00:00:59,892
+149. comment("Last Name  : " + randomLastName)
+
+39
+00:00:59,893 --> 00:00:59,896
+153. comment("Phone      : " + randomPhone)
+
+40
+00:00:59,897 --> 00:00:59,901
+157. comment("Address    : " + randomAddress)
+
+41
+00:00:59,903 --> 00:00:59,905
+161. comment("Code    : " + randomCode)
+
+42
+00:00:59,906 --> 00:01:00,326
+165. closeBrowser()
+

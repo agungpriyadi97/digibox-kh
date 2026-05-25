@@ -6,12 +6,11 @@
    <elementGuidId>ad2fd88e-b49b-4945-8408-1adf623fcdab</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;container&quot;]/div[2]/div/div/div[3]/div/div[2]/div/div/div/div/button/span</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[@type='primary']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>90a8c3fd-518e-4866-825c-07282daba58f</webElementGuid>
+      <webElementGuid>975a0c88-c68e-44a9-af77-244dd67a82ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +36,7 @@
       <name>type</name>
       <type>Main</type>
       <value>primary</value>
-      <webElementGuid>b14f4c5d-2d76-4f6f-9543-419e3bfca3b5</webElementGuid>
+      <webElementGuid>274542c3-0a6e-4c27-8ec0-566f9c6e73fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +44,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-full btn-approve btn flex justify-center items-center w-full text-white text-s14 h-[56px] -tracking-[0.28px] leading-[18px] btn-primary w-full btn-approve</value>
-      <webElementGuid>248e4ffe-1ced-4cb5-bfdf-8e18fa115a73</webElementGuid>
+      <webElementGuid>198cc82f-f8d5-4a0a-9c9a-716703ddbd9e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +52,7 @@
       <name>text</name>
       <type>Main</type>
       <value> Approve </value>
-      <webElementGuid>da7a0896-96ff-45fb-a009-6ce19d30af59</webElementGuid>
+      <webElementGuid>2939dbdf-8bf1-4f97-9675-f1228001dc53</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,15 +60,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;container&quot;)/div[@class=&quot;flex flex-col right-side w-full iframe_view&quot;]/div[1]/div[@class=&quot;h-full payment-option-qr-container mt-[7px]&quot;]/div[@class=&quot;flex items-center justify-center pt-[38px] bg-[#f6f6f6] pb-7&quot;]/div[@class=&quot;w-[177px] text-center mt-[4px]&quot;]/div[@class=&quot;relative flex justify-center items-center&quot;]/div[@class=&quot;pw-sandbox-simulator&quot;]/div[@class=&quot;sandbox-simulator-content&quot;]/div[1]/div[@class=&quot;flex justify-center items-center&quot;]/button[@class=&quot;w-full btn-approve btn flex justify-center items-center w-full text-white text-s14 h-[56px] -tracking-[0.28px] leading-[18px] btn-primary w-full btn-approve&quot;]</value>
-      <webElementGuid>04eb97d6-d66d-46a1-a219-5c76d349f6ac</webElementGuid>
+      <webElementGuid>da6ed58e-866a-4295-b659-7aca1837d99d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Checkout/iframe_payment_online</value>
-      <webElementGuid>8ccbc9ad-e729-422c-813f-8783bd05afa9</webElementGuid>
+      <value>Object Repository/Checkout/iframe</value>
+      <webElementGuid>ed776e0a-da76-40cc-9afd-9514e50a3bdb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@type='primary']</value>
-      <webElementGuid>798c2f41-abaa-4d8b-ab96-211ca97fac16</webElementGuid>
+      <webElementGuid>fb025194-db85-408d-9b99-14eddf1a38d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//main[@id='container']/div[2]/div/div/div[3]/div/div[2]/div/div/div/div/button</value>
-      <webElementGuid>c105d4c2-cf8e-4c87-a4e7-520151df51d2</webElementGuid>
+      <webElementGuid>ba9fb761-7df2-4bfe-b9c3-d5da6c49d08a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Scan to pay'])[1]/following::button[1]</value>
-      <webElementGuid>206f95c7-5c98-4143-abb5-01da301a2a42</webElementGuid>
+      <webElementGuid>e5144701-52f4-41ad-83ce-e435b204f3a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +100,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='USD'])[1]/following::button[1]</value>
-      <webElementGuid>cd27cd66-d460-4d99-87f2-5585ede40eb2</webElementGuid>
+      <webElementGuid>7b1b4fce-42d1-4982-a141-7e24fd1c616a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +108,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button</value>
-      <webElementGuid>9262acc4-d552-402d-bb1a-86b32b8df88d</webElementGuid>
+      <webElementGuid>3c677855-5cd7-4417-92a4-77d90bdb3dff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +116,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'primary' and (text() = ' Approve ' or . = ' Approve ')]</value>
-      <webElementGuid>b68994c4-23ed-437d-be59-fa5a9310f570</webElementGuid>
+      <webElementGuid>62cd833f-2fe4-42b1-9f4f-38ccb7cca914</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,433 @@
+2026-05-25 17:42:07.820 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\AgungPriyadi\.katalon\packages\KS-11.1.3\configuration\org.eclipse.osgi\150\0\.cp\resources\logback\logback-execution.xml
+2026-05-25 17:42:07.822 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\AgungPriyadi\git\digibox-kh\Include\config\log.properties
+2026-05-25 17:42:08.556 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/WEB/Guest User/GuestUser_TestSuite
+2026-05-25 17:42:08.621 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Agung Priyadi
+2026-05-25 17:42:08.622 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = digibox-kh
+2026-05-25 17:42:08.622 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = AgungPriyadi - NB-GDA-55026
+2026-05-25 17:42:08.623 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-05-25 17:42:08.623 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.110.9
+2026-05-25 17:42:08.624 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.1.3.0
+2026-05-25 17:42:08.750 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-25 17:42:08.750 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty
+2026-05-25 17:42:08.976 DEBUG ed when Verification Code field is empty - 1: openBrowser(URL)
+2026-05-25 17:42:09.435 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-05-25 17:42:09.440 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--start-maximized]']
+2026-05-25 17:42:09.479 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-25 17:42:13.409 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 81fa3f4792847b6ed43034b0265f161f
+2026-05-25 17:42:13.413 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-25 17:42:13.415 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-25 17:42:13.417 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-25 17:42:13.440 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-25 17:42:15.346 DEBUG ed when Verification Code field is empty - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-25 17:42:16.054 DEBUG ed when Verification Code field is empty - 3: click(findTestObject("Checkout/Track Order/track your order"))
+2026-05-25 17:42:16.667 DEBUG ed when Verification Code field is empty - 4: setText(findTestObject("Guest User/Track Your Order/txtField_Email"), "agung.priyadi@gtech.digital")
+2026-05-25 17:42:18.276 DEBUG ed when Verification Code field is empty - 5: setText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), "")
+2026-05-25 17:42:19.336 DEBUG ed when Verification Code field is empty - 6: click(findTestObject("Guest User/Track Your Order/btn_Send"))
+2026-05-25 17:42:20.009 DEBUG ed when Verification Code field is empty - 7: verifyTextPresent("The verification code has been sent, please check in the mailbox.", false)
+2026-05-25 17:42:20.698 DEBUG ed when Verification Code field is empty - 8: verifyElementHasAttribute(findTestObject("Guest User/Track Your Order/btn_Continue"), "disabled", 5)
+2026-05-25 17:42:21.079 DEBUG ed when Verification Code field is empty - 9: takeScreenshot()
+2026-05-25 17:42:21.583 DEBUG ed when Verification Code field is empty - 10: closeBrowser()
+2026-05-25 17:42:24.237 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty' .
+2026-05-25 17:42:24.239 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty
+2026-05-25 17:42:24.242 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-25 17:42:24.242 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code
+2026-05-25 17:42:24.289 DEBUG or message for invalid verification code - 1: openBrowser(URL)
+2026-05-25 17:42:24.291 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-05-25 17:42:24.291 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--start-maximized]']
+2026-05-25 17:42:24.293 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-25 17:42:26.393 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 9d7e7c4cfa6e879e28366f0ca6a49f2f
+2026-05-25 17:42:26.393 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-25 17:42:26.393 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-25 17:42:26.393 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-25 17:42:26.409 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-25 17:42:28.432 DEBUG or message for invalid verification code - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-25 17:42:29.009 DEBUG or message for invalid verification code - 3: click(findTestObject("Checkout/Track Order/track your order"))
+2026-05-25 17:42:29.630 DEBUG or message for invalid verification code - 4: setText(findTestObject("Guest User/Track Your Order/txtField_Email"), "agung.priyadi@gtech.digital")
+2026-05-25 17:42:31.148 DEBUG or message for invalid verification code - 5: setText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), "")
+2026-05-25 17:42:32.284 DEBUG or message for invalid verification code - 6: click(findTestObject("Guest User/Track Your Order/btn_Send"))
+2026-05-25 17:42:32.963 DEBUG or message for invalid verification code - 7: verifyTextPresent("The verification code has been sent, please check in the mailbox.", false)
+2026-05-25 17:42:33.654 DEBUG or message for invalid verification code - 8: setText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), "999999")
+2026-05-25 17:42:34.694 DEBUG or message for invalid verification code - 9: waitForElementPresent(findTestObject("Guest User/Track Your Order/btn_Continue"), 10)
+2026-05-25 17:42:35.166 DEBUG or message for invalid verification code - 10: click(findTestObject("Guest User/Track Your Order/btn_Continue"))
+2026-05-25 17:42:35.705 DEBUG or message for invalid verification code - 11: verifyTextPresent("Verification code error.", false)
+2026-05-25 17:42:36.354 DEBUG or message for invalid verification code - 12: takeScreenshot()
+2026-05-25 17:42:36.799 DEBUG or message for invalid verification code - 13: closeBrowser()
+2026-05-25 17:42:39.248 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code' .
+2026-05-25 17:42:39.249 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code
+2026-05-25 17:42:39.252 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-25 17:42:39.252 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure user can access track order page as a guest
+2026-05-25 17:42:39.366 DEBUG r can access track order page as a guest - 1: randomEmail = custom.RandomData.generateRandomEmail()
+2026-05-25 17:42:39.398 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomEmail is PASSED
+2026-05-25 17:42:39.402 DEBUG r can access track order page as a guest - 2: randomFirstName = custom.RandomData.generateRandomFirstName()
+2026-05-25 17:42:39.405 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomFirstName is PASSED
+2026-05-25 17:42:39.408 DEBUG r can access track order page as a guest - 3: randomLastName = custom.RandomData.generateRandomLastName()
+2026-05-25 17:42:39.409 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomLastName is PASSED
+2026-05-25 17:42:39.411 DEBUG r can access track order page as a guest - 4: randomPhone = custom.RandomData.generateRandomPhone()
+2026-05-25 17:42:39.420 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomPhone is PASSED
+2026-05-25 17:42:39.423 DEBUG r can access track order page as a guest - 5: randomAddress = custom.RandomData.generateRandomAddress()
+2026-05-25 17:42:39.424 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomAddress is PASSED
+2026-05-25 17:42:39.427 DEBUG r can access track order page as a guest - 6: randomCode = custom.RandomData.generateRandomCode()
+2026-05-25 17:42:39.428 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomCode is PASSED
+2026-05-25 17:42:39.429 DEBUG r can access track order page as a guest - 7: openBrowser("")
+2026-05-25 17:42:39.431 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-05-25 17:42:39.432 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--start-maximized]']
+2026-05-25 17:42:39.435 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-25 17:42:41.100 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 08b74ae5148ac7aa3ab9eee1310593f9
+2026-05-25 17:42:41.100 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-25 17:42:41.100 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-25 17:42:41.100 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-25 17:42:41.116 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-25 17:42:41.180 DEBUG r can access track order page as a guest - 8: navigateToUrl(URL)
+2026-05-25 17:42:43.068 DEBUG r can access track order page as a guest - 9: maximizeWindow()
+2026-05-25 17:42:43.235 DEBUG r can access track order page as a guest - 10: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-25 17:42:43.781 DEBUG r can access track order page as a guest - 11: click(findTestObject("Home Page/Search/icon-search"))
+2026-05-25 17:42:44.370 DEBUG r can access track order page as a guest - 12: setText(findTestObject("Home Page/Search/field-search"), "IPHONE 11 PRO 128 GB DEEP PURPLE")
+2026-05-25 17:42:45.459 DEBUG r can access track order page as a guest - 13: sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord(ENTER))
+2026-05-25 17:42:47.131 DEBUG r can access track order page as a guest - 14: verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-11-pro"))
+2026-05-25 17:42:49.719 DEBUG r can access track order page as a guest - 15: click(findTestObject("Product and Cart/Add to cart/btn-product"))
+2026-05-25 17:42:59.832 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Product and Cart/Add to cart/btn-product'. Try using Self-healing.
+2026-05-25 17:43:00.222 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Web element with id: 'Object Repository/Product and Cart/Add to cart/btn-product' located by 'By.xpath: //div[@id='waterfallWrapper1779689225939']/div/section/div/div/div/div[2]/p' not found
+2026-05-25 17:43:00.506 ERROR c.k.s.e.healers.SelfHealingPipeline      - ❌ Failed to execute candidate self-healer, trigger AI-SelfHealing: Web element with id: 'Object Repository/Product and Cart/Add to cart/btn-product' located by 'By.xpath: //div[@id='waterfallWrapper1779689225939']/div/section/div/div/div/div[2]/p' not found
+2026-05-25 17:43:00.506 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Recovering element locator by using AI Self-Healing...
+> Remove hidden elements: 160,650 -> 41,896 (-74.17%)
+> Remove next siblings: 41,896 -> 41,896 (-0%)
+> Remove redundant parents: 41,896 -> 41,739 (-0.1%)
+> Remove event handler attributes: 41,739 -> 41,739 (-0%)
+> Trim long attributes: 41,739 -> 37,557 (-2.61%)
+> Trim long text: 37,557 -> 34,020 (-2.21%)
+> Minify HTML syntax: 34,020 -> 31,124 (-1.81%)
+>>> Total: 160,116 -> 34,020 (-78.75%)
+2026-05-25 17:43:11.468 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Found "3" possible locators:\n [\n  {\n    "type": "CSS",\n    "value": "#waterfallWrapper1779705768486 .waterfall__item:nth-of-type(1) .sp-plp-card__name \u003e p.product-name",\n    "semanticLocator": "First product name in the product grid (first card product-name \u003cp\u003e)",\n    "confidence": 0.72,\n    "reason": "Matched original locator\u0027s waterfall container pattern id (original XPath used an element with id starting with \u0027waterfallWrapper...\u0027) and tag p for product name. The element structure .sp-plp-card__name \u003e p.product-name matches the recorded object (p element used for product title)."\n  },\n  {\n    "type": "CSS",\n    "value": "#waterfallWrapper1779705768486 .waterfall__item:nth-of-type(2) .sp-plp-card__name \u003e p.product-name",\n    "semanticLocator": "Second product name in the product grid (second card product-name \u003cp\u003e)",\n    "confidence": 0.6,\n    "reason": "Matched original locator\u0027s waterfall container pattern (id waterfallWrapper...) and the same tag/structure p.product-name for a product card. Uses the same DOM card structure as the broken object but targets the second item (index used because multiple product-name \u003cp\u003e elements exist)."\n  },\n  {\n    "type": "CSS",\n    "value": "#waterfallWrapper1779705768486 .waterfall__item:nth-of-type(3) .sp-plp-card__name \u003e p.product-name",\n    "semanticLocator": "Third product name in the product grid (third card product-name \u003cp\u003e)",\n    "confidence": 0.5,\n    "reason": "Matched the recorded XPath\u0027s waterfall container pattern and element tag p (product-name). This locator follows the same card structure (.sp-plp-card__name \u003e p.product-name) and selects the third matching card (indexing used because many identical product-name \u003cp\u003e elements exist)."\n  }\n]
+2026-05-25 17:43:11.468 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Verifying locator: "#waterfallWrapper1779705768486 .waterfall__item:nth-of-type(1) .sp-plp-card__name > p.product-name"
+2026-05-25 17:43:11.756 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Found valid locator: "#waterfallWrapper1779705768486 .waterfall__item:nth-of-type(1) .sp-plp-card__name > p.product-name"
+2026-05-25 17:43:12.300 INFO  .c.w.m.WebUiElementFinderWithSelfHealing - [AI Self-Healing] Screenshot: C:/Users/AgungPriyadi/git/digibox-kh/Reports/Self-healing/Object Repository/Product and Cart/Add to cart/btn-product_XPATH.png
+2026-05-25 17:43:12.416 WARN  c.k.k.c.w.keyword.builtin.ClickKeyword   - Waiting for element timed out
+2026-05-25 17:43:12.658 DEBUG r can access track order page as a guest - 16: click(findTestObject("Product and Cart/Add to cart/button_Add to Cart"))
+2026-05-25 17:43:23.020 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Product and Cart/Add to cart/button_Add to Cart'. Try using Self-healing.
+2026-05-25 17:43:23.337 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] The current locator of test object 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' was broken. Propose an alternative one: '//button[@type='primary']'.
+2026-05-25 17:43:23.369 WARN  c.k.k.c.w.keyword.builtin.ClickKeyword   - Waiting for element timed out
+2026-05-25 17:43:23.500 DEBUG r can access track order page as a guest - 17: waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 10)
+2026-05-25 17:43:23.982 DEBUG r can access track order page as a guest - 18: click(findTestObject("Product and Cart/Add to cart/i_icon-cart"))
+2026-05-25 17:43:24.462 DEBUG r can access track order page as a guest - 19: verifyElementVisible(findTestObject("Checkout/Address/btn_checkout"))
+2026-05-25 17:43:26.293 DEBUG r can access track order page as a guest - 20: click(findTestObject("Checkout/Address/btn_checkout"))
+2026-05-25 17:43:26.749 DEBUG r can access track order page as a guest - 21: waitForElementVisible(findTestObject("Checkout/Checkout guest/field_email"), 10)
+2026-05-25 17:43:28.025 DEBUG r can access track order page as a guest - 22: setText(findTestObject("Checkout/Checkout guest/field_email"), randomEmail)
+2026-05-25 17:43:28.958 DEBUG r can access track order page as a guest - 23: click(findTestObject("Checkout/Checkout guest/btn_continue"))
+2026-05-25 17:43:29.569 DEBUG r can access track order page as a guest - 24: waitForElementVisible(findTestObject("Checkout/Address/field_First Name"), 10)
+2026-05-25 17:43:31.812 DEBUG r can access track order page as a guest - 25: setText(findTestObject("Checkout/Address/field_First Name"), randomFirstName)
+2026-05-25 17:43:32.965 DEBUG r can access track order page as a guest - 26: setText(findTestObject("Checkout/Address/field_Last Name"), randomLastName)
+2026-05-25 17:43:33.904 DEBUG r can access track order page as a guest - 27: setText(findTestObject("Checkout/Address/field_mobile phone"), randomPhone)
+2026-05-25 17:43:35.105 DEBUG r can access track order page as a guest - 28: setText(findTestObject("Checkout/Address/field_Address"), randomAddress)
+2026-05-25 17:43:36.266 DEBUG r can access track order page as a guest - 29: setText(findTestObject("Checkout/Address/input_ZipPostal Code"), randomCode)
+2026-05-25 17:43:37.617 DEBUG r can access track order page as a guest - 30: click(findTestObject("Checkout/Address/input_Province"))
+2026-05-25 17:43:38.366 DEBUG r can access track order page as a guest - 31: click(findTestObject("Checkout/Address/li_Phnom Penh Capital_Province"), STOP_ON_FAILURE)
+2026-05-25 17:43:39.467 DEBUG r can access track order page as a guest - 32: click(findTestObject("Checkout/Address/input_Select Province"))
+2026-05-25 17:43:39.932 DEBUG r can access track order page as a guest - 33: click(findTestObject("Checkout/Address/li_Khan Chamkar Mon_Select_Province"))
+2026-05-25 17:43:41.264 DEBUG r can access track order page as a guest - 34: click(findTestObject("Checkout/Address/input_Districts"))
+2026-05-25 17:43:41.700 DEBUG r can access track order page as a guest - 35: click(findTestObject("Checkout/Address/li_Sangkat Tonle Basak_Districts"))
+2026-05-25 17:43:42.848 DEBUG r can access track order page as a guest - 36: click(findTestObject("Checkout/Address/btn-save"))
+2026-05-25 17:43:43.343 DEBUG r can access track order page as a guest - 37: click(findTestObject("Checkout/Online Payment - WeChat"))
+2026-05-25 17:43:44.202 DEBUG r can access track order page as a guest - 38: check(findTestObject("Checkout/Checkbox__I accept"))
+2026-05-25 17:43:44.898 DEBUG r can access track order page as a guest - 39: click(findTestObject("Checkout/Address/btn_checkout"))
+2026-05-25 17:43:55.067 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Checkout/Address/btn_checkout'. Try using Self-healing.
+2026-05-25 17:43:55.364 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] invalid selector: Unable to locate an element with the xpath expression xpath=(//button[@type='primary'])[2] because of the following error:\nTypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.\n  (Session info: chrome=148.0.7778.179)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: com.kms.katalon.selenium.driver.CChromeDriver\nCommand: [08b74ae5148ac7aa3ab9eee1310593f9, findElements {value=xpath=(//button[@type='primary'])[2], using=xpath}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\AGUNGP~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64146}, goog:processID: 17356, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64146/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: {alert: ignore, beforeUnload: ignore, confirm: ignore, default: ignore, file: ignore, prompt: ignore}, webSocketUrl: ws://localhost:43541/sessio..., webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 08b74ae5148ac7aa3ab9eee1310593f9
+2026-05-25 17:43:55.657 ERROR c.k.s.e.healers.SelfHealingPipeline      - ❌ Failed to execute candidate self-healer, trigger AI-SelfHealing: invalid selector: Unable to locate an element with the xpath expression xpath=(//button[@type='primary'])[2] because of the following error:\nTypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.\n  (Session info: chrome=148.0.7778.179)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: com.kms.katalon.selenium.driver.CChromeDriver\nCommand: [08b74ae5148ac7aa3ab9eee1310593f9, findElements {value=xpath=(//button[@type='primary'])[2], using=xpath}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\AGUNGP~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64146}, goog:processID: 17356, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64146/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: {alert: ignore, beforeUnload: ignore, confirm: ignore, default: ignore, file: ignore, prompt: ignore}, webSocketUrl: ws://localhost:43541/sessio..., webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 08b74ae5148ac7aa3ab9eee1310593f9
+2026-05-25 17:43:55.657 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Recovering element locator by using AI Self-Healing...
+> Remove hidden elements: 191,367 -> 31,160 (-84.07%)
+> Remove next siblings: 31,160 -> 31,160 (-0%)
+> Remove redundant parents: 31,160 -> 31,003 (-0.08%)
+> Remove event handler attributes: 31,003 -> 31,003 (-0%)
+> Trim long attributes: 31,003 -> 27,378 (-1.9%)
+> Trim long text: 27,378 -> 26,108 (-0.67%)
+> Minify HTML syntax: 26,108 -> 23,915 (-1.15%)
+>>> Total: 190,557 -> 26,108 (-86.3%)
+2026-05-25 17:44:06.587 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Found "3" possible locators:\n [\n  {\n    "type": "CSS",\n    "value": "button.el-button.action-btn--onpage.el-button--primary.el-button--large.gt-button",\n    "semanticLocator": "Primary Checkout button in order summary (right column, large)",\n    "confidence": 0.92,\n    "reason": "Matched class\u003d\u0027el-button el-button--primary el-button--large gt-button\u0027 from broken object and matched visible text \u0027Checkout\u0027 inside this button in the right-column order summary."\n  },\n  {\n    "type": "XPATH",\n    "value": "//button[contains(@class,\u0027action-btn--onpage\u0027) and normalize-space(.//span)\u003d\u0027Checkout\u0027]",\n    "semanticLocator": "Primary Checkout button in order summary (XPath using action-btn--onpage and text)",\n    "confidence": 0.86,\n    "reason": "Matched broken object class pattern \u0027el-button ... el-button--primary ... gt-button\u0027 and matched visible text \u0027Checkout\u0027 (text similarity to recorded object). XPath targets the same element via class fragment and exact visible label."\n  },\n  {\n    "type": "CSS",\n    "value": "button.action-btn.el-button--primary.gt-button",\n    "semanticLocator": "Inline Checkout button (action-btn, primary) near acceptance checkbox",\n    "confidence": 0.52,\n    "reason": "Matched class fragment \u0027el-button\u0027 and \u0027el-button--primary\u0027 from broken object; visible text also \u0027Checkout\u0027 on this separate primary button. Lower confidence because there are two Checkout buttons on page (uses shorter class chain)."\n  }\n]
+2026-05-25 17:44:06.587 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Verifying locator: "button.el-button.action-btn--onpage.el-button--primary.el-button--large.gt-button"
+2026-05-25 17:44:06.872 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Found valid locator: "button.el-button.action-btn--onpage.el-button--primary.el-button--large.gt-button"
+2026-05-25 17:44:07.255 INFO  .c.w.m.WebUiElementFinderWithSelfHealing - [AI Self-Healing] Screenshot: C:/Users/AgungPriyadi/git/digibox-kh/Reports/Self-healing/Object Repository/Checkout/Address/btn_checkout_XPATH.png
+2026-05-25 17:44:07.330 WARN  c.k.k.c.w.keyword.builtin.ClickKeyword   - Waiting for element timed out
+2026-05-25 17:44:07.465 DEBUG r can access track order page as a guest - 40: waitForElementPresent(findTestObject("Checkout/iframe_payment_online"), 7)
+2026-05-25 17:44:07.964 DEBUG r can access track order page as a guest - 41: click(findTestObject("Checkout/iframe_payment_online"), STOP_ON_FAILURE)
+2026-05-25 17:44:11.729 DEBUG r can access track order page as a guest - 42: delay(10)
+2026-05-25 17:44:21.813 DEBUG r can access track order page as a guest - 43: click(findTestObject("Checkout/button_Approve"))
+2026-05-25 17:44:22.529 DEBUG r can access track order page as a guest - 44: waitForElementPresent(findTestObject("Checkout/button_Continue shopping"), 10)
+2026-05-25 17:44:24.347 DEBUG r can access track order page as a guest - 45: verifyElementPresent(findTestObject("Checkout/button_Continue shopping"), 0)
+2026-05-25 17:44:24.379 WARN  c.k.k.c.webui.common.WebUiCommonHelper   - Timeout '0' is invalid. Using default page load timeout: '10'
+2026-05-25 17:44:24.807 DEBUG r can access track order page as a guest - 46: click(findTestObject("Checkout/button_Continue shopping"))
+2026-05-25 17:44:25.481 DEBUG r can access track order page as a guest - 47: takeScreenshot()
+2026-05-25 17:44:27.114 DEBUG r can access track order page as a guest - 48: comment("Email      : " + randomEmail)
+2026-05-25 17:44:27.146 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Email      : agungpriyadirra@gmail.com
+2026-05-25 17:44:27.146 DEBUG r can access track order page as a guest - 49: comment("First Name : " + randomFirstName)
+2026-05-25 17:44:27.163 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - First Name : Sinta
+2026-05-25 17:44:27.163 DEBUG r can access track order page as a guest - 50: comment("Last Name  : " + randomLastName)
+2026-05-25 17:44:27.163 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Last Name  : Putri
+2026-05-25 17:44:27.180 DEBUG r can access track order page as a guest - 51: comment("Phone      : " + randomPhone)
+2026-05-25 17:44:27.180 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Phone      : 08868284676
+2026-05-25 17:44:27.180 DEBUG r can access track order page as a guest - 52: comment("Address    : " + randomAddress)
+2026-05-25 17:44:27.197 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Address    : Jakarta Testing 3723
+2026-05-25 17:44:27.197 DEBUG r can access track order page as a guest - 53: comment("Code    : " + randomCode)
+2026-05-25 17:44:27.197 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Code    : 158105
+2026-05-25 17:44:27.214 DEBUG r can access track order page as a guest - 54: takeScreenshot()
+2026-05-25 17:44:27.613 DEBUG r can access track order page as a guest - 55: closeBrowser()
+2026-05-25 17:44:30.171 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Guest User/Ensure user can access track order page as a guest' .
+2026-05-25 17:44:30.172 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure user can access track order page as a guest
+2026-05-25 17:44:30.172 INFO  c.k.katalon.core.main.TestCaseExecutor   - 
+2026-05-25 17:44:30.173 INFO  c.k.katalon.core.main.TestCaseExecutor   - ===================== Self-healing Report ====================
+2026-05-25 17:44:30.173 INFO  c.k.katalon.core.main.TestCaseExecutor   - One of the failed test object locators has been recovered by Self-healing. Please refer to the Self-healing Insights tab for more details.
+2026-05-25 17:44:30.173 INFO  c.k.katalon.core.main.TestCaseExecutor   - To learn more about Self-healing, please read https://docs.katalon.com/katalon-studio/maintain-tests/self-healing-tests-in-katalon-studio
+2026-05-25 17:44:30.173 INFO  c.k.katalon.core.main.TestCaseExecutor   - ==============================================================
+2026-05-25 17:44:30.175 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-25 17:44:30.175 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest
+2026-05-25 17:44:30.237 DEBUG  explore the website commerce as a guest - 1: openBrowser(URL)
+2026-05-25 17:44:30.238 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-05-25 17:44:30.238 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--start-maximized]']
+2026-05-25 17:44:30.239 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-25 17:44:31.373 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = c8a26c4ebaf115fbba46ffb749351b9b
+2026-05-25 17:44:31.373 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-25 17:44:31.385 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-25 17:44:31.385 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-25 17:44:31.385 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-25 17:44:33.234 DEBUG  explore the website commerce as a guest - 2: maximizeWindow()
+2026-05-25 17:44:33.261 DEBUG  explore the website commerce as a guest - 3: enableSmartWait()
+2026-05-25 17:44:33.312 DEBUG  explore the website commerce as a guest - 4: waitForElementVisible(findTestObject("Home Page/header_digibox"), 10)
+2026-05-25 17:44:33.637 DEBUG  explore the website commerce as a guest - 5: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-25 17:44:34.259 DEBUG  explore the website commerce as a guest - 6: clickWhenReady("Home Page/Page Iphone/menu-iphone")
+2026-05-25 17:44:34.271 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:44:34.278 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:44:34.577 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:44:35.003 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:44:35.489 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:44:35.653 DEBUG  explore the website commerce as a guest - 7: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max")
+2026-05-25 17:44:35.659 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:44:35.674 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:44:36.159 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:44:37.273 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:44:37.715 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:44:37.744 DEBUG  explore the website commerce as a guest - 8: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max")
+2026-05-25 17:44:37.745 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:44:37.761 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:44:39.776 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:44:40.115 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:44:40.518 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:44:40.541 DEBUG  explore the website commerce as a guest - 9: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 Pro")
+2026-05-25 17:44:40.549 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:44:40.560 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:44:42.039 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:44:42.388 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:44:42.854 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:44:42.891 DEBUG  explore the website commerce as a guest - 10: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13")
+2026-05-25 17:44:42.904 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:44:42.927 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:44:44.366 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:44:44.744 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:44:45.171 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:44:45.189 DEBUG  explore the website commerce as a guest - 11: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 mini")
+2026-05-25 17:44:45.192 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:44:45.204 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:44:46.656 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:44:47.029 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:44:47.490 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:44:47.509 DEBUG  explore the website commerce as a guest - 12: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 12")
+2026-05-25 17:44:47.509 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:44:47.526 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:44:48.989 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:44:49.328 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:44:49.706 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:44:49.722 DEBUG  explore the website commerce as a guest - 13: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 11")
+2026-05-25 17:44:49.726 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:44:49.741 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:44:51.221 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:44:51.573 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:44:51.955 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:44:51.976 DEBUG  explore the website commerce as a guest - 14: clickWhenReady("Home Page/Page Ipad/menu-ipad")
+2026-05-25 17:44:51.988 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:44:52.001 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:44:53.474 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:44:53.824 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:44:54.234 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:44:54.244 DEBUG  explore the website commerce as a guest - 15: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad pro")
+2026-05-25 17:44:54.244 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:44:54.260 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:44:55.616 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:44:55.955 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:44:56.392 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:44:56.421 DEBUG  explore the website commerce as a guest - 16: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad Air")
+2026-05-25 17:44:56.425 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:44:56.428 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:44:57.902 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:44:58.232 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:44:58.638 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:44:58.666 DEBUG  explore the website commerce as a guest - 17: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad Mini")
+2026-05-25 17:44:58.672 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:44:58.678 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:00.167 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:00.561 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:00.947 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:00.970 DEBUG  explore the website commerce as a guest - 18: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad (Gen 10th)")
+2026-05-25 17:45:00.976 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:00.993 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:02.469 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:02.761 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:03.186 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:03.207 DEBUG  explore the website commerce as a guest - 19: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad")
+2026-05-25 17:45:03.217 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:03.227 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:04.735 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:05.067 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:05.511 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:05.531 DEBUG  explore the website commerce as a guest - 20: clickWhenReady("Home Page/Page Apple Watch/menu-Apple Watch")
+2026-05-25 17:45:05.543 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:05.559 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:06.975 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:07.305 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:07.714 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:07.733 DEBUG  explore the website commerce as a guest - 21: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 7")
+2026-05-25 17:45:07.738 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:07.744 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:09.272 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:09.617 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:10.034 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:10.057 DEBUG  explore the website commerce as a guest - 22: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 6")
+2026-05-25 17:45:10.066 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:10.076 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:11.521 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:11.842 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:12.331 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:12.351 DEBUG  explore the website commerce as a guest - 23: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 3")
+2026-05-25 17:45:12.360 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:12.377 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:13.838 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:14.128 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:14.564 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:14.594 DEBUG  explore the website commerce as a guest - 24: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch SE")
+2026-05-25 17:45:14.594 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:14.610 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:16.054 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:16.391 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:16.793 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:16.816 DEBUG  explore the website commerce as a guest - 25: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra")
+2026-05-25 17:45:16.822 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:16.833 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:18.255 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:18.577 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:19.037 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:19.066 DEBUG  explore the website commerce as a guest - 26: clickWhenReady("Home Page/Page Mac/menu-Mac")
+2026-05-25 17:45:19.071 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:19.077 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:20.549 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:20.848 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:21.183 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:21.193 DEBUG  explore the website commerce as a guest - 27: clickWhenReady("Home Page/Page Mac/sub-menu-MacBook Pro")
+2026-05-25 17:45:21.210 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:21.225 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:22.704 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:23.069 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:23.550 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:23.577 DEBUG  explore the website commerce as a guest - 28: clickWhenReady("Home Page/Page Mac/sub-menu-MacBook Air")
+2026-05-25 17:45:23.592 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:23.608 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:25.083 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:25.386 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:25.796 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:25.819 DEBUG  explore the website commerce as a guest - 29: clickWhenReady("Home Page/Page Airpods/menu-AirPods")
+2026-05-25 17:45:25.826 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:25.842 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:27.333 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:27.685 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:28.118 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:28.136 DEBUG  explore the website commerce as a guest - 30: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods Max")
+2026-05-25 17:45:28.141 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:28.159 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:29.579 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:29.910 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:30.367 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:30.377 DEBUG  explore the website commerce as a guest - 31: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods Pro")
+2026-05-25 17:45:30.393 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:30.415 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:31.856 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:32.217 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:32.753 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:32.771 DEBUG  explore the website commerce as a guest - 32: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods 3rd Generation")
+2026-05-25 17:45:32.783 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:32.792 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:34.261 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:34.606 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:34.999 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:35.033 DEBUG  explore the website commerce as a guest - 33: clickWhenReady("Home Page/Page Accessoris/menu-accessoris")
+2026-05-25 17:45:35.041 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:35.043 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:36.429 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:36.776 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:37.212 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:37.224 DEBUG  explore the website commerce as a guest - 34: clickWhenReady("Home Page/Page Accessoris/sub-menu-Aksesoris iPhone")
+2026-05-25 17:45:37.231 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:37.242 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:38.723 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:39.071 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:39.470 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:39.493 DEBUG  explore the website commerce as a guest - 35: clickWhenReady("Home Page/Page Accessoris/sub-menu-Aksesoris iPad")
+2026-05-25 17:45:39.493 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:39.509 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:41.001 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:41.366 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:41.808 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:41.830 DEBUG  explore the website commerce as a guest - 36: clickWhenReady("Home Page/Page Accessoris/sub-menu-MacBook Accessories")
+2026-05-25 17:45:41.836 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:41.849 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:43.354 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:43.727 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:44.151 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:44.173 DEBUG  explore the website commerce as a guest - 37: clickWhenReady("Home Page/Page Accessoris/sub-menu-Watch accessories")
+2026-05-25 17:45:44.178 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:44.195 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:45.635 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:45.998 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:46.487 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:46.503 DEBUG  explore the website commerce as a guest - 38: clickWhenReady("Home Page/Page Promotion/menu-Promotion")
+2026-05-25 17:45:46.504 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:46.520 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:48.068 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:48.426 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:48.842 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:48.942 DEBUG  explore the website commerce as a guest - 39: clickWhenReady("Home Page/Page Promotion/sub-menu-Digimania August 2022")
+2026-05-25 17:45:48.959 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:48.976 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:49.293 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:49.593 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:50.007 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:50.028 DEBUG  explore the website commerce as a guest - 40: clickWhenReady("Home Page/Page Promotion/sub-menu-Flash Sale")
+2026-05-25 17:45:50.034 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:50.053 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:50.658 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:51.670 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:52.066 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:52.087 DEBUG  explore the website commerce as a guest - 41: clickWhenReady("Home Page/Page Enterprice and Education/menu-Enterprise and Education")
+2026-05-25 17:45:52.097 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-25 17:45:52.109 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 10)
+2026-05-25 17:45:52.723 DEBUG  explore the website commerce as a guest - 3: waitForElementClickable(obj, 10)
+2026-05-25 17:45:53.815 DEBUG  explore the website commerce as a guest - 4: click(obj)
+2026-05-25 17:45:54.237 DEBUG  explore the website commerce as a guest - 5: waitForPageLoad(10)
+2026-05-25 17:45:54.253 DEBUG  explore the website commerce as a guest - 42: takeScreenshot()
+2026-05-25 17:45:55.774 DEBUG  explore the website commerce as a guest - 43: closeBrowser()
+2026-05-25 17:45:58.343 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest' .
+2026-05-25 17:45:58.343 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest
+2026-05-25 17:45:58.345 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-25 17:45:58.345 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest
+2026-05-25 17:45:58.445 DEBUG r can not access profile page as a guest - 1: openBrowser(URL)
+2026-05-25 17:45:58.446 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-05-25 17:45:58.447 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--start-maximized]']
+2026-05-25 17:45:58.448 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-25 17:46:00.373 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 18992805d8e0fb2b47785f873dc42d6e
+2026-05-25 17:46:00.383 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-25 17:46:00.384 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-25 17:46:00.384 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-25 17:46:00.399 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-25 17:46:02.483 DEBUG r can not access profile page as a guest - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-25 17:46:02.845 DEBUG r can not access profile page as a guest - 3: click(findTestObject("Registration/icon-acount"))
+2026-05-25 17:46:03.713 DEBUG r can not access profile page as a guest - 4: takeScreenshot()
+2026-05-25 17:46:04.522 DEBUG r can not access profile page as a guest - 5: closeBrowser()
+2026-05-25 17:46:07.013 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest' .
+2026-05-25 17:46:07.014 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest
+2026-05-25 17:46:07.043 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-05-25 17:46:07.044 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/WEB/Guest User/GuestUser_TestSuite
+2026-05-25 17:46:07.044 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

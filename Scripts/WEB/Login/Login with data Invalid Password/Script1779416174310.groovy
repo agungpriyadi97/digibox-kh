@@ -31,3 +31,5 @@ WebUI.click(findTestObject('Login/btn-sign in'))
 
 WebUI.takeScreenshot()
 
+WebUI.closeBrowser()
+

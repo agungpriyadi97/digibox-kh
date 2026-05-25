@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 String randomFirstName = CustomKeywords.'custom.RandomData.generateRandomFirstName'()
 
@@ -45,41 +46,54 @@ WebUI.click(findTestObject('Login/btn-sign in'))
 
 WebUI.click(findTestObject('Registration/icon-acount'))
 
-WebUI.waitForElementVisible(findTestObject('Address Management/Shipping Address/btn_My Address'), 4)
+not_run: WebUI.waitForElementVisible(findTestObject('Address Management/Shipping Address/btn_My Address'), 4)
 
 WebUI.click(findTestObject('Address Management/Shipping Address/btn_My Address'))
 
 WebUI.click(findTestObject('Address Management/Add New Address/radiobtn_Add New Address'))
 
-WebUI.waitForElementVisible(findTestObject('Address Management/Add New Address/field_First Name'), 10)
+not_run: WebUI.waitForElementVisible(findTestObject('Address Management/Add New Address/field_First Name'), 10)
+
+WebUI.waitForElementVisible(findTestObject('Address Management/Add New Address/field_First Name'), 0)
 
 WebUI.setText(findTestObject('Address Management/Add New Address/field_First Name'), randomFirstName)
 
+WebUI.waitForElementVisible(findTestObject('Address Management/Add New Address/field_Last Name'), 0)
+
 WebUI.setText(findTestObject('Address Management/Add New Address/field_Last Name'), randomLastName)
+
+WebUI.waitForElementVisible(findTestObject('Address Management/Add New Address/field_Mobile Phone'), 0)
 
 WebUI.setText(findTestObject('Address Management/Add New Address/field_Mobile Phone'), randomPhone)
 
+WebUI.waitForElementVisible(findTestObject('Address Management/Add New Address/field_E-mail'), 0)
+
 WebUI.setText(findTestObject('Address Management/Add New Address/field_E-mail'), randomEmail)
+
+WebUI.waitForElementVisible(findTestObject('Address Management/Add New Address/field_Address'), 0)
 
 WebUI.setText(findTestObject('Address Management/Add New Address/field_Address'), randomAddress)
 
-WebUI.click(findTestObject('Address Management/Add New Address/field_Province'))
+WebUI.click(findTestObject('Address Management/Add New Address/dropdown_Province'))
 
-WebUI.mouseOver(findTestObject('Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province'))
+WebUI.waitForElementVisible(findTestObject('Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province'), 
+    0)
 
 WebUI.click(findTestObject('Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province'))
 
-WebUI.click(findTestObject('Address Management/Add New Address/field_Select Province'))
+WebUI.click(findTestObject('Address Management/Add New Address/dropdown_Select Province'))
 
-WebUI.mouseOver(findTestObject('Address Management/Add New Address/Dropdown Select Province/li_Ou Chrov District'))
+WebUI.waitForElementVisible(findTestObject('Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality'), 
+    0)
 
-WebUI.click(findTestObject('Address Management/Add New Address/Dropdown Select Province/li_Ou Chrov District'))
+WebUI.click(findTestObject('Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality'))
 
-WebUI.click(findTestObject('Address Management/Add New Address/field_Districts'))
+// ================= DISTRICT =================
+WebUI.click(findTestObject('Address Management/Add New Address/dropdown_Districts'))
 
-WebUI.mouseOver(findTestObject('Address Management/Add New Address/Dropdown District/li_Koub Commune'), FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementVisible(findTestObject('Address Management/Add New Address/Dropdown District/li_Sangkat Kandal'), 10)
 
-WebUI.click(findTestObject('Address Management/Add New Address/Dropdown District/li_Koub Commune'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Address Management/Add New Address/Dropdown District/li_Sangkat Kandal'))
 
 WebUI.setText(findTestObject('Address Management/Add New Address/field_ZipPostal Code'), randomCode)
 

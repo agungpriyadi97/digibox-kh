@@ -6,12 +6,12 @@
    <elementGuidId>8d311d4d-88d5-43b2-95cc-1815dfdba46b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='el-collapse-head-7117']/section/div/div[3]/button/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.el-button.el-button--text.gt-button > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Shipping Address'])[1]/following::span[5]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

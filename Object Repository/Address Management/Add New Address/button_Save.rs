@@ -11,7 +11,13 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='primary'])[3]</value>
+         <value>(//button[@type='primary'])[2]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'primary' and (text() = 'Save
+    ' or . = 'Save
+    ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +35,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>334c1db4-d923-4cf4-9b2a-f9c32c4819d4</webElementGuid>
+      <webElementGuid>2056fce0-cded-473b-86a7-5859d7b5a9dd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +43,7 @@
       <name>type</name>
       <type>Main</type>
       <value>primary</value>
-      <webElementGuid>9dcfa903-47e9-4016-9899-d8230b6b9d2d</webElementGuid>
+      <webElementGuid>e033cd64-ba0a-4375-a659-16e46f1d9d47</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +51,7 @@
       <name>class</name>
       <type>Main</type>
       <value>el-button el-button--primary el-button--small gt-button</value>
-      <webElementGuid>cf9c8468-fb6e-4f06-a85b-4d62f0308c94</webElementGuid>
+      <webElementGuid>c43d0374-9bdc-4886-9877-7835afd1fc95</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +59,7 @@
       <name>size</name>
       <type>Main</type>
       <value>small</value>
-      <webElementGuid>483a5cc0-d8cd-4b10-b16c-ae2d1c6ef956</webElementGuid>
+      <webElementGuid>d6daf510-e79d-452f-b4cc-a09f2f79161f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,63 +68,63 @@
       <type>Main</type>
       <value>Save
     </value>
-      <webElementGuid>52f78c81-9054-4dcb-b5cd-cca101d17fcc</webElementGuid>
+      <webElementGuid>7e805129-43c8-4916-a692-524a88328c84</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;el-collapse-content-2737&quot;)/div[@class=&quot;el-collapse-item__content&quot;]/div[@class=&quot;address-edit_container add-new_item&quot;]/section[1]/div[1]/button[@class=&quot;el-button el-button--primary el-button--small gt-button&quot;]</value>
-      <webElementGuid>3fa1b6c9-e695-4675-9f57-674c37bb012c</webElementGuid>
+      <value>id(&quot;el-collapse-content-7034&quot;)/div[@class=&quot;el-collapse-item__content&quot;]/div[@class=&quot;address-edit_container add-new_item&quot;]/section[1]/div[1]/button[@class=&quot;el-button el-button--primary el-button--small gt-button&quot;]</value>
+      <webElementGuid>d7a3ec7f-69d1-43d0-b665-4dc9af8da289</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//button[@type='primary'])[2]</value>
-      <webElementGuid>9d618c4f-d47b-4a00-90b5-d1396a766fce</webElementGuid>
+      <value>(//button[@type='primary'])[4]</value>
+      <webElementGuid>bd52ed2a-6b9e-4dcf-b6bd-71ba9740e95a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='el-collapse-content-2737']/div/div/section/div/button</value>
-      <webElementGuid>94d547a9-f9f9-4d2e-8a31-7de7be72d055</webElementGuid>
+      <value>//div[@id='el-collapse-content-7034']/div/div/section/div/button</value>
+      <webElementGuid>426c8b3e-e166-4293-a5a5-c1437dc97e13</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Please enter a valid postal code, must be 4-6 digit number'])[1]/following::button[1]</value>
-      <webElementGuid>ae864b2a-a250-49c1-9b60-ee2661606379</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Zip/Postal Code'])[4]/following::button[1]</value>
+      <webElementGuid>b4f04d57-846a-48b6-bf63-5022c447583c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Zip/Postal Code'])[2]/following::button[1]</value>
-      <webElementGuid>d303215f-3769-4c9b-b319-0384a1dfa327</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Districts'])[4]/following::button[1]</value>
+      <webElementGuid>5ccb5781-2a04-4f20-82d5-6273f8a4d9d9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[2]/preceding::button[1]</value>
-      <webElementGuid>26cfc00f-8756-4e81-a2f9-6997e789ce8b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[4]/preceding::button[1]</value>
+      <webElementGuid>71567c03-6438-4ed5-b0a6-2911e0ce61db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div[2]/div/div/section/div/button</value>
-      <webElementGuid>a4032226-bc58-4b96-ae09-ed515485e3fb</webElementGuid>
+      <value>//div[4]/div[2]/div/div/section/div/button</value>
+      <webElementGuid>0ee628c3-4159-479a-86fb-baee444095a7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -128,6 +134,150 @@
       <value>//button[@type = 'primary' and (text() = 'Save
     ' or . = 'Save
     ')]</value>
-      <webElementGuid>46fda862-00c2-4657-afab-e056849a86b3</webElementGuid>
+      <webElementGuid>9fe6dbc1-f45d-4ee7-9711-0fa02dab07e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@type='primary'])[3]</value>
+      <webElementGuid>2acfbd6e-9f34-4f74-a892-cc7889694d3c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='el-collapse-content-4195']/div/div/section/div/button</value>
+      <webElementGuid>8616a364-66ce-43e7-bebf-2cd1f5b14f07</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Zip/Postal Code'])[3]/following::button[1]</value>
+      <webElementGuid>327cabb6-562f-41c5-a889-37339654d05c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Districts'])[3]/following::button[1]</value>
+      <webElementGuid>ddfa1597-9663-4cb4-8a1e-84acb64e550e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[3]/preceding::button[1]</value>
+      <webElementGuid>4a94b1b3-9205-415b-bd22-3c6b5097e572</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[2]/div/div/section/div/button</value>
+      <webElementGuid>9c8cea57-5c4b-41e1-af4a-13f421f7a49f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@type='primary'])[2]</value>
+      <webElementGuid>8520dcd9-f8c7-430d-ac85-075b83310368</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='el-collapse-content-3041']/div/div/section/div/button</value>
+      <webElementGuid>86a7123b-93b1-406c-bad6-4fc1cb466faa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Zip/Postal Code'])[2]/following::button[1]</value>
+      <webElementGuid>f52ef269-880c-44e0-ae41-9535f41489c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Required'])[5]/following::button[1]</value>
+      <webElementGuid>a801db1c-99ff-4550-9f69-72c96fa18f6e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[2]/preceding::button[1]</value>
+      <webElementGuid>7d4549f2-5531-4253-abd2-72ce100fa909</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/div/section/div/button</value>
+      <webElementGuid>c39a16ed-9824-4d6b-b576-aa2764e5b9a3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='el-collapse-content-7120']/div/div/section/div/button</value>
+      <webElementGuid>3214188d-cafd-4e78-b725-8c238480e965</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sangkat Phsar Kandal'])[1]/following::button[1]</value>
+      <webElementGuid>6b0a9cae-0566-4dea-a8a5-7ef820f22642</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section[2]/section/ul/div/div/div[2]/div/div/section/div/button</value>
+      <webElementGuid>b5c6923b-d202-4c36-b0f6-7f7994dca001</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='el-collapse-content-988']/div/div/section/div/button</value>
+      <webElementGuid>878d211e-85ea-4597-a97a-f14397d0eac5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='el-collapse-content-2737']/div/div/section/div/button</value>
+      <webElementGuid>468535b5-5bcd-4d98-84b9-98712bb3dbfa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Please enter a valid postal code, must be 4-6 digit number'])[1]/following::button[1]</value>
+      <webElementGuid>9ab9a711-0f34-4c8a-8fe6-960b4203bff2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

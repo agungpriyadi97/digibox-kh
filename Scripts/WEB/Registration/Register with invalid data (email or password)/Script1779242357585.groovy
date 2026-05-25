@@ -51,3 +51,5 @@ WebUI.verifyElementText(findTestObject('Registration/verify-length'), 'Password 
 
 WebUI.takeScreenshot()
 
+WebUI.closeBrowser()
+

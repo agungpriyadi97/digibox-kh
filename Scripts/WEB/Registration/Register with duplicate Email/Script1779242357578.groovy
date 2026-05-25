@@ -37,3 +37,5 @@ WebUI.verifyElementText(findTestObject('Registration/verify-duplicate-email'), '
 
 WebUI.takeScreenshot()
 
+WebUI.closeBrowser()
+

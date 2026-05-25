@@ -37,3 +37,5 @@ WebUI.verifyElementText(findTestObject('Registration/verify-duplicate-account'),
 
 WebUI.takeScreenshot()
 
+WebUI.closeBrowser()
+

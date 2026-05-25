@@ -35,3 +35,7 @@ WebUI.verifyTextPresent('The verification code has been sent, please check in th
 // Verify Continue button disabled
 WebUI.verifyElementHasAttribute(findTestObject('Guest User/Track Your Order/btn_Continue'), 'disabled', 5)
 
+WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
+

@@ -6,12 +6,12 @@
    <elementGuidId>aee3f39b-b686-45c3-bf5b-ffa497805f2d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>.billing-address_container [prop=&quot;city&quot;] [placeholder=&quot;Select&quot;]</value>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'billing-address_container')]//label[normalize-space()='Select Province']/following::input[@placeholder='Select'][1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' billing-address_container ')]//*[@prop = 'city']//*[@placeholder = 'Select']</value>
+         <key>CSS</key>
+         <value>.billing-address_container [prop=&quot;city&quot;] [placeholder=&quot;Select&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>d27d73a7-3b84-4f4b-b642-fd7615ded3bd</webElementGuid>
+      <webElementGuid>3070f179-424f-4c0e-9eaf-a4a8464138b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>8702821c-cff9-49be-aa06-405ecd69a7f9</webElementGuid>
+      <webElementGuid>f8878cd1-74b2-4a29-82ec-1e56cc44c78a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>readonly</name>
       <type>Main</type>
       <value>readonly</value>
-      <webElementGuid>c05ce2ac-8e27-4ab6-a12b-7db72b48964f</webElementGuid>
+      <webElementGuid>895a925b-ca34-4b20-8ac9-2e976dc9cd7a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>14e802c1-b925-4ab2-a160-b2d779a48f0e</webElementGuid>
+      <webElementGuid>e62e9b8d-73e8-446a-ada7-0bc6390d1fe6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Select</value>
-      <webElementGuid>7712a6b9-953f-4e53-a81f-65f7284dfec9</webElementGuid>
+      <webElementGuid>adfdc8d3-0200-4c58-943a-bd0483cfd00b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>class</name>
       <type>Main</type>
       <value>el-input__inner</value>
-      <webElementGuid>117b63af-2aeb-4c5e-9d5e-ab721f6e5b0b</webElementGuid>
+      <webElementGuid>9f86ef18-3330-45da-b95a-e5cf786c5071</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-23fa9d3044fc3cfe0bc10227c5f00175</value>
-      <webElementGuid>79701c7a-950b-4037-91ff-74ca63879712</webElementGuid>
+      <webElementGuid>9665de73-dfea-41e1-915e-ae5044cafc50</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' billing-address_container ')]//*[@prop = 'city']//*[@placeholder = 'Select']</value>
-      <webElementGuid>356fae8c-d935-4de2-bf7e-d6ff60e9abe7</webElementGuid>
+      <webElementGuid>8a89254f-9d8f-4240-a519-6c65e3846894</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' billing-address_container ')]//*[@prop = 'city']//*[@placeholder = 'Select']</value>
-      <webElementGuid>5cdf1e02-9435-4426-9d19-db20f010e023</webElementGuid>
+      <webElementGuid>dd38c8c2-de88-40c1-b7fb-3f2c8d0e3f16</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @placeholder = 'Select']</value>
-      <webElementGuid>2adaa4b2-d388-4f21-8e4c-c9093aeb408d</webElementGuid>
+      <webElementGuid>565f0a91-a989-4e26-a9ca-4ecc8dfaf979</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

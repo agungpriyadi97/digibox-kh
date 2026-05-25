@@ -1,0 +1,52 @@
+1
+00:00:00,266 --> 00:00:03,837
+1. openBrowser(URL)
+
+2
+00:00:03,839 --> 00:00:04,229
+5. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+3
+00:00:04,233 --> 00:00:04,893
+9. click(findTestObject("Registration/icon-acount"))
+
+4
+00:00:04,897 --> 00:00:05,794
+13. click(findTestObject("Password/Page_Forgot Password/btn_Forgot passwords"))
+
+5
+00:00:05,796 --> 00:00:06,988
+17. setText(findTestObject("Password/Page_Forgot Password/txtField_Email"), "agungpriyadi")
+
+6
+00:00:06,992 --> 00:00:07,601
+21. click(findTestObject("Password/Page_Forgot Password/btn_Send validation code to email"), STOP_ON_FAILURE)
+
+7
+00:00:07,601 --> 00:00:08,355
+25. waitForElementVisible(findTestObject("Password/Page_Forgot Password/msg_ValidationCodeSuccess"), 10)
+
+8
+00:00:08,355 --> 00:00:08,658
+29. verifyElementText(findTestObject("Password/Page_Forgot Password/msg_ValidationCodeSuccess"), "Validation code sent successfully!")
+
+9
+00:00:08,662 --> 00:00:09,722
+33. setText(findTestObject("Password/Page_Forgot Password/txtField_Validation Code"), "123456")
+
+10
+00:00:09,725 --> 00:00:10,926
+37. setText(findTestObject("Password/Page_Forgot Password/txtField_New Password"), "Laskar123456")
+
+11
+00:00:10,926 --> 00:00:11,553
+41. click(findTestObject("Password/Page_Forgot Password/btn_Reset Password"))
+
+12
+00:00:11,553 --> 00:00:12,265
+45. verifyTextPresent("Invalid code", false)
+
+13
+00:00:12,265 --> 00:00:12,694
+49. takeScreenshot()
+

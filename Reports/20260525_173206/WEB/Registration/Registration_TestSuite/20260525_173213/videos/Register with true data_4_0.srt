@@ -1,0 +1,60 @@
+1
+00:00:00,049 --> 00:00:00,078
+1. randomEmail = custom.RandomData.generateRandomEmail()
+
+2
+00:00:00,080 --> 00:00:00,089
+5. randomUsername = custom.RandomData.generateRandomUsername()
+
+3
+00:00:00,090 --> 00:00:04,171
+9. openBrowser(URL)
+
+4
+00:00:04,174 --> 00:00:04,296
+13. maximizeWindow()
+
+5
+00:00:04,309 --> 00:00:04,795
+17. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+6
+00:00:04,823 --> 00:00:05,584
+21. click(findTestObject("Registration/icon-acount"))
+
+7
+00:00:05,591 --> 00:00:06,520
+25. click(findTestObject("Registration/btn-create-new-account"))
+
+8
+00:00:06,522 --> 00:00:10,276
+29. setText(findTestObject("Registration/field-Email"), randomEmail)
+
+9
+00:00:10,276 --> 00:00:12,413
+33. setText(findTestObject("Registration/field-account"), randomUsername)
+
+10
+00:00:12,416 --> 00:00:13,799
+37. setText(findTestObject("Registration/field-Password"), "Laskar123456")
+
+11
+00:00:13,817 --> 00:00:14,472
+41. click(findTestObject("Registration/btn-sign-up"))
+
+12
+00:00:14,476 --> 00:00:14,529
+45. comment("Email used: " + randomEmail)
+
+13
+00:00:14,529 --> 00:00:14,529
+49. comment("Username used: " + randomUsername)
+
+14
+00:00:14,529 --> 00:00:15,065
+53. takeScreenshot()
+
+15
+00:00:15,065 --> 00:00:15,556
+57. closeBrowser()
+

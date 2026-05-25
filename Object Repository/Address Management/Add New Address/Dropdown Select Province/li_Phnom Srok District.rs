@@ -3,7 +3,7 @@
    <description></description>
    <name>li_Phnom Srok District</name>
    <tag></tag>
-   <elementGuidId>facd4175-b405-4d25-81bd-bb03ab7af974</elementGuidId>
+   <elementGuidId>c4b2aff3-875a-4aad-857a-c649ed65be35</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,14 +11,14 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//li[@value='B00000017'])[2]</value>
+         <value>(//li[@value='B00000017'])[4]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:text=&quot;Phnom Srok District&quot;i >> nth=1</value>
+         <value>internal:text=&quot;Phnom Srok District&quot;i >> nth=3</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>li</value>
-      <webElementGuid>823e48a4-db5e-4771-b4e7-b41c1d5c00bf</webElementGuid>
+      <webElementGuid>81777b20-0035-4985-b38f-a48db411228a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>el-select-dropdown__item hover</value>
-      <webElementGuid>946e30bf-6605-43e3-b164-0f67556ec876</webElementGuid>
+      <webElementGuid>72f08cc9-aa82-4530-8453-7bd545036cf6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>value</name>
       <type>Main</type>
       <value>B00000017</value>
-      <webElementGuid>4393aa6f-f888-4b9c-ac5a-ba46394d8536</webElementGuid>
+      <webElementGuid>2cc690fa-d81c-4791-8d2d-ab2307bada81</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>label</name>
       <type>Main</type>
       <value>Phnom Srok District</value>
-      <webElementGuid>8c93787f-a759-4666-9dbc-877449e00664</webElementGuid>
+      <webElementGuid>24625d1a-82a5-45e9-b503-c4bf7219e420</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Phnom Srok District</value>
-      <webElementGuid>2a93de4f-5ce5-4036-86b9-60e06ea12efc</webElementGuid>
+      <webElementGuid>2ea9f989-616b-4d08-b74f-fe150e9d2b1a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,55 +69,55 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;el-select-dropdown el-popper&quot;]/div[@class=&quot;el-scrollbar&quot;]/div[@class=&quot;el-select-dropdown__wrap el-scrollbar__wrap&quot;]/ul[@class=&quot;el-scrollbar__view el-select-dropdown__list&quot;]/li[@class=&quot;el-select-dropdown__item hover&quot;]</value>
-      <webElementGuid>8a78df87-4140-4cfd-951c-a78b0bcb9638</webElementGuid>
+      <webElementGuid>801936ae-a822-4516-8b06-f340550189d5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//li[@value='B00000017'])[2]</value>
-      <webElementGuid>439ebd7c-9e5b-47f4-95aa-1c4cdf18aac4</webElementGuid>
+      <value>(//li[@value='B00000017'])[4]</value>
+      <webElementGuid>abdb8082-8761-4b24-b182-74910da1672b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Paoy Paet Municipality'])[2]/following::li[1]</value>
-      <webElementGuid>9d719b9c-1ffa-4b62-951c-72e1e0bd20b9</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Paoy Paet Municipality'])[4]/following::li[1]</value>
+      <webElementGuid>11b6e19e-5813-4d74-8cb9-592d5abe55b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ou Chrov District'])[2]/following::li[2]</value>
-      <webElementGuid>4c5b5c4f-0ffc-459e-a400-051685aed85d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ou Chrov District'])[4]/following::li[2]</value>
+      <webElementGuid>1abde198-0d0d-405d-92af-ebe265e9892f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Prea Netr Preah District'])[2]/preceding::li[1]</value>
-      <webElementGuid>cf43a45f-a276-4969-bbe3-5375e86ff397</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Prea Netr Preah District'])[4]/preceding::li[1]</value>
+      <webElementGuid>e4833512-8d09-422c-a4be-f5f7a2f4d0bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Serei Saophoan Municipality'])[2]/preceding::li[2]</value>
-      <webElementGuid>811503d0-635a-44a0-b751-d0101b18fbf7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Serei Saophoan Municipality'])[4]/preceding::li[2]</value>
+      <webElementGuid>ee114c0f-0a8e-4d7f-be8f-2a92306523f4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/ul/li[5]</value>
-      <webElementGuid>a441e360-4420-4445-a56a-3b199aad7875</webElementGuid>
+      <value>//div[4]/div/div/ul/li[5]</value>
+      <webElementGuid>5a68c3a8-326e-46a1-bdd6-dc0f9cd4c368</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +125,102 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//li[(text() = 'Phnom Srok District' or . = 'Phnom Srok District')]</value>
-      <webElementGuid>d41c9eda-103f-4ba7-824f-78704ad08c67</webElementGuid>
+      <webElementGuid>56947d0c-1a5a-4b15-81b5-8b8183ca9576</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//li[@value='B00000017'])[3]</value>
+      <webElementGuid>83a58ac9-7acb-4b11-9943-6ea8c0d2d119</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Paoy Paet Municipality'])[3]/following::li[1]</value>
+      <webElementGuid>34d9de85-c45d-4242-8056-b31ecf63b852</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ou Chrov District'])[3]/following::li[2]</value>
+      <webElementGuid>cedf823f-192b-425b-b3f7-c5a91e368a5e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Prea Netr Preah District'])[3]/preceding::li[1]</value>
+      <webElementGuid>501c09bb-87c8-43ef-8f2d-42608d6240e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Serei Saophoan Municipality'])[3]/preceding::li[2]</value>
+      <webElementGuid>8974b134-29a7-492c-999b-8ef097f1bb0a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/div/div/ul/li[5]</value>
+      <webElementGuid>07cccdfa-3a6f-453f-b601-3b382b082fe6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//li[@value='B00000017'])[2]</value>
+      <webElementGuid>a9d1a3c2-a06c-42e7-a69f-617f6b3e1433</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Paoy Paet Municipality'])[2]/following::li[1]</value>
+      <webElementGuid>a34d1bb5-26d0-4fdf-a1c9-df0d7fe661e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ou Chrov District'])[2]/following::li[2]</value>
+      <webElementGuid>c2073a73-15d9-4e99-b722-d7b245569ed1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Prea Netr Preah District'])[2]/preceding::li[1]</value>
+      <webElementGuid>b5f39254-7cd4-4ee5-96a8-920c745c2473</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Serei Saophoan Municipality'])[2]/preceding::li[2]</value>
+      <webElementGuid>585212be-46ec-432b-8709-d4c6665f7b57</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/ul/li[5]</value>
+      <webElementGuid>4f558a70-37f4-48bc-92c2-09bc1b53f688</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

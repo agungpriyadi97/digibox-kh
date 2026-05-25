@@ -42,15 +42,11 @@ WebUI.verifyElementVisible(findTestObject('Home Page/verify-succes-acount-login'
 // Search product
 WebUI.click(findTestObject('Home Page/Search/icon-search'))
 
-WebUI.setText(findTestObject('Home Page/Search/field-search'), 'IPHONE 11 PRO 128 GB DEEP PURPLE')
+WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord('IPHONE 12 PRO MAX 128GB GOLD', Keys.ENTER))
 
-WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord(Keys.ENTER))
+WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-12 -pro'))
 
-// Verify product
-WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-11-pro'))
-
-// Add to cart
-WebUI.click(findTestObject('Product and Cart/Add to cart/btn-product'))
+WebUI.click(findTestObject('Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD'))
 
 WebUI.click(findTestObject('Product and Cart/Add to cart/button_Add to Cart'))
 
@@ -60,9 +56,9 @@ WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-
 WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
 
 // Checkout
-WebUI.waitForElementVisible(findTestObject('Checkout/btn_checkout'), 10)
+WebUI.waitForElementVisible(findTestObject('Checkout/Address/btn_checkout'), 10)
 
-WebUI.click(findTestObject('Checkout/btn_checkout'))
+WebUI.click(findTestObject('Checkout/Address/btn_checkout'))
 
 WebUI.click(findTestObject('Checkout/Online Payment - Cradit Card'))
 
@@ -70,18 +66,18 @@ WebUI.check(findTestObject('Checkout/Checkbox__I accept'))
 
 WebUI.click(findTestObject('Checkout/button_Checkout_Payment'))
 
-WebUI.waitForElementPresent(findTestObject('Checkout/iframe_payment_online'), 8)
+WebUI.waitForElementPresent(findTestObject('Checkout/Page Checkout/iframe_Credit Card'), 10)
 
 // Payment iframe
-WebUI.click(findTestObject('Checkout/iframe_payment_online'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Checkout/Page Checkout/iframe_Credit Card'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(10)
 
-WebUI.setText(findTestObject('Checkout/input_Card number'), '5156 8399 3770 6777')
+WebUI.setText(findTestObject('Checkout/Page Checkout/field_cardNumber'), '5156 8399 3770 6777')
 
-WebUI.setText(findTestObject('Checkout/input_Expiry date'), '01/30')
+WebUI.setText(findTestObject('Checkout/Page Checkout/field_cardExp'), '0130')
 
-WebUI.setText(findTestObject('Checkout/input_CVV'), '993')
+WebUI.setText(findTestObject('Checkout/Page Checkout/field_cvv2'), '993')
 
 WebUI.click(findTestObject('Checkout/btn-closed-pay'))
 

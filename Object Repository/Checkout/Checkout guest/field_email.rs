@@ -6,12 +6,11 @@
    <elementGuidId>15035e83-d462-4288-8e83-498a913d52fe</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class='sp-guest-login__form']//input[@placeholder='Email']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@placeholder='Email']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -57,3 +57,5 @@ WebUI.click(findTestObject('Product and Cart/Add to cart/btn-confrim-yes'))
 
 WebUI.takeScreenshot()
 
+WebUI.closeBrowser()
+

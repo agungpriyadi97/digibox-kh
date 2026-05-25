@@ -6,12 +6,12 @@
    <elementGuidId>d4f1854f-11fe-4240-b259-12740e94f737</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>[title=&quot;Tombol\ Login\ dengan\ Google&quot;]</value>
+         <key>XPATH</key>
+         <value>//button[@id='g_id_onload']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@title = 'Tombol Login dengan Google']</value>
+         <key>CSS</key>
+         <value>[title=&quot;Tombol\ Login\ dengan\ Google&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,12 +6,12 @@
    <elementGuidId>59d9ee6d-53d7-4601-85d2-964040f86a95</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@name='add']//input[@placeholder='Your Last Name']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@type='text'])[24]</value>
+         <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -22,7 +22,7 @@
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:label=&quot;Add New Address&quot;i >> internal:role=textbox[name=&quot;Your Last Name&quot;i]</value>
+         <value>internal:role=textbox[name=&quot;Your Last Name&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -33,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>ae908354-fa86-41fb-8c5c-88342c76cf78</webElementGuid>
+      <webElementGuid>3a3e0485-fd70-44e0-abe0-551224488edb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -41,7 +41,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>798def18-da03-40dd-92e5-b23939485205</webElementGuid>
+      <webElementGuid>297cc2a5-14ac-4d3f-b442-600b4d364293</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -49,7 +49,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>d085f70d-6767-41e2-8e06-18e3c02379e3</webElementGuid>
+      <webElementGuid>b6902b07-1406-4ca7-b7aa-50f369299b48</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -57,7 +57,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Your Last Name</value>
-      <webElementGuid>7d5051c5-f6d3-453c-bcb7-bcc3f1789ddc</webElementGuid>
+      <webElementGuid>242ddac7-14a1-4d2a-adc0-c3335d73c136</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -65,71 +65,31 @@
       <name>class</name>
       <type>Main</type>
       <value>el-input__inner</value>
-      <webElementGuid>9b175b01-049a-44d2-92ba-3441620b19d8</webElementGuid>
+      <webElementGuid>9d4bb155-1aa1-44a9-a9bc-f2801e0c8ba8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;el-collapse-content-4735&quot;)/div[@class=&quot;el-collapse-item__content&quot;]/div[@class=&quot;address-edit_container add-new_item&quot;]/section[1]/form[@class=&quot;el-form gt-simple-form checkout-form el-form--label-top&quot;]/div[@class=&quot;el-form-item gt-form-item is-required el-form-item--small&quot;]/div[@class=&quot;el-form-item__content&quot;]/div[@class=&quot;width_fill el-input el-input--small el-input--suffix gt-input gt-radius-undefined gt-border-undefined gt-borderColor-undefined&quot;]/input[@class=&quot;el-input__inner&quot;]</value>
-      <webElementGuid>2960f11a-f417-48cb-bd33-cd8d2ef0a0b6</webElementGuid>
+      <value>id(&quot;el-collapse-content-5362&quot;)/div[@class=&quot;el-collapse-item__content&quot;]/div[@class=&quot;address-edit_container add-new_item&quot;]/section[1]/form[@class=&quot;el-form gt-simple-form checkout-form el-form--label-top&quot;]/div[@class=&quot;el-form-item gt-form-item is-error is-required el-form-item--small&quot;]/div[@class=&quot;el-form-item__content&quot;]/div[@class=&quot;width_fill el-input el-input--small el-input--suffix gt-input gt-radius-undefined gt-border-undefined gt-borderColor-undefined&quot;]/input[@class=&quot;el-input__inner&quot;]</value>
+      <webElementGuid>df4dd51c-2733-4799-9068-f5fb418260a2</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//input[@type='text'])[24]</value>
-      <webElementGuid>b12dd72a-ceae-4248-8956-c0d82a2db914</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='el-collapse-content-4735']/div/div/section/form/div[3]/div/div/input</value>
-      <webElementGuid>b2e0b1ae-8bc3-4ad0-8a35-92dbb5ddb0a0</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[3]/div[2]/div/div/section/form/div[3]/div/div/input</value>
-      <webElementGuid>47731e25-669d-4120-92fc-6df497f9fbba</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//input[@type = 'text' and @placeholder = 'Your Last Name']</value>
-      <webElementGuid>d633df7a-0598-45b9-ab01-4dc296c0e382</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='el-collapse-content-3406']/div/div/section/form/div[3]/div/div/input</value>
-      <webElementGuid>3ce05173-e1ef-42e9-8be5-cd6953c87639</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
       <value>(//input[@type='text'])[14]</value>
-      <webElementGuid>0eb80188-962d-42a7-98d0-4d44019330d3</webElementGuid>
+      <webElementGuid>dc0dcfa0-daa0-4d5a-828f-4aea79d7b76a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='el-collapse-content-2737']/div/div/section/form/div[3]/div/div/input</value>
-      <webElementGuid>62ce857e-0942-4fef-accf-138049e3bb5d</webElementGuid>
+      <value>//div[@id='el-collapse-content-5362']/div/div/section/form/div[3]/div/div/input</value>
+      <webElementGuid>7da92b87-a286-44cd-9557-a8000645b960</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -137,6 +97,54 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[2]/div/div/section/form/div[3]/div/div/input</value>
-      <webElementGuid>c32a038f-7208-4d10-869d-97c78726f69e</webElementGuid>
+      <webElementGuid>c43bf171-c881-49a2-92c0-d17299ae7c7d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text' and @placeholder = 'Your Last Name']</value>
+      <webElementGuid>fe5ec071-9a61-4937-b473-8f61243d9e60</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//input[@type='text'])[24]</value>
+      <webElementGuid>32f329f5-a364-4572-a302-6fe2e43f98d5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='el-collapse-content-4735']/div/div/section/form/div[3]/div/div/input</value>
+      <webElementGuid>ad176813-575a-456e-9bd0-c2c5dbc303db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[2]/div/div/section/form/div[3]/div/div/input</value>
+      <webElementGuid>cebd6938-352f-419e-aea1-95c86c223ac5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='el-collapse-content-3406']/div/div/section/form/div[3]/div/div/input</value>
+      <webElementGuid>71764ef4-5ed1-4b46-8d69-6ded9a05514a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='el-collapse-content-2737']/div/div/section/form/div[3]/div/div/input</value>
+      <webElementGuid>215595a5-e4ff-467f-af93-3906d8e272c8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@placeholder='Postal Code'])[2]</value>
+         <value>xpath=(//input[@type='text'])[12]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,12 +6,11 @@
    <elementGuidId>c45eb8e6-2f6c-45c7-a949-b68a73b48c34</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//li[@value='B00000001']</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Tboung Khmum Province'])[2]/following::li[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

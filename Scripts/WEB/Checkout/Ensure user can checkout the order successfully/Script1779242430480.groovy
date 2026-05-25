@@ -37,11 +37,11 @@ WebUI.click(findTestObject('Home Page/Search/icon-search'))
 
 WebUI.click(findTestObject('Home Page/Search/field-search'))
 
-WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord('IPHONE 11 PRO 128 GB DEEP PURPLE', Keys.ENTER))
+WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord('IPHONE 12 PRO MAX 128GB GOLD', Keys.ENTER))
 
-WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-11-pro'))
+WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-12 -pro'))
 
-WebUI.click(findTestObject('Product and Cart/Add to cart/btn-product'))
+WebUI.click(findTestObject('Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD'))
 
 WebUI.click(findTestObject('Product and Cart/Add to cart/button_Add to Cart'))
 
@@ -49,9 +49,9 @@ WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-
 
 WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
 
-WebUI.verifyElementVisible(findTestObject('Checkout/btn_checkout'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Checkout/Address/btn_checkout'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Checkout/btn_checkout'))
+WebUI.click(findTestObject('Checkout/Address/btn_checkout'))
 
 WebUI.click(findTestObject('Checkout/Online Payment - WeChat'))
 
@@ -80,4 +80,6 @@ WebUI.click(findTestObject('Checkout/button_Order Details'))
 WebUI.scrollToElement(findTestObject('Checkout/Track Order/verify-order list'), 7)
 
 WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
 

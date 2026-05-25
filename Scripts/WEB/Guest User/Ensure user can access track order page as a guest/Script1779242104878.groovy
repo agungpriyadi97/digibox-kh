@@ -60,9 +60,9 @@ WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-
 WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
 
 // Checkout
-WebUI.verifyElementVisible(findTestObject('Checkout/btn_checkout'))
+WebUI.verifyElementVisible(findTestObject('Checkout/Address/btn_checkout'))
 
-WebUI.click(findTestObject('Checkout/btn_checkout'))
+WebUI.click(findTestObject('Checkout/Address/btn_checkout'))
 
 // Input guest email
 WebUI.waitForElementVisible(findTestObject('Checkout/Checkout guest/field_email'), 10)
@@ -106,7 +106,7 @@ WebUI.click(findTestObject('Checkout/Online Payment - WeChat'))
 WebUI.check(findTestObject('Checkout/Checkbox__I accept'))
 
 // Final checkout
-WebUI.click(findTestObject('Checkout/btn_checkout'))
+WebUI.click(findTestObject('Checkout/Address/btn_checkout'))
 
 WebUI.waitForElementPresent(findTestObject('Checkout/iframe_payment_online'), 7)
 

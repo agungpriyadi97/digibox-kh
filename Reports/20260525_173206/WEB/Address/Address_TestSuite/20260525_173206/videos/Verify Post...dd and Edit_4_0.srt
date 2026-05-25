@@ -1,0 +1,76 @@
+1
+00:00:00,164 --> 00:00:00,166
+1. randomEmail = custom.RandomData.generateRandomEmail()
+
+2
+00:00:00,168 --> 00:00:00,171
+5. randomFirstName = custom.RandomData.generateRandomFirstName()
+
+3
+00:00:00,172 --> 00:00:00,174
+9. randomLastName = custom.RandomData.generateRandomLastName()
+
+4
+00:00:00,175 --> 00:00:00,177
+13. randomPhone = custom.RandomData.generateRandomPhone()
+
+5
+00:00:00,178 --> 00:00:00,180
+17. randomAddress = custom.RandomData.generateRandomAddress()
+
+6
+00:00:00,182 --> 00:00:00,184
+21. randomCode = custom.RandomData.generateRandomCode()
+
+7
+00:00:00,186 --> 00:00:03,412
+25. openBrowser(URL)
+
+8
+00:00:03,413 --> 00:00:04,070
+29. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+9
+00:00:04,070 --> 00:00:04,577
+33. click(findTestObject("Home Page/Search/icon-search"))
+
+10
+00:00:04,579 --> 00:00:05,121
+37. sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 12 PRO MAX 128GB GOLD", ENTER))
+
+11
+00:00:05,121 --> 00:00:07,842
+41. verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-12 -pro"))
+
+12
+00:00:07,857 --> 00:00:08,273
+45. click(findTestObject("Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD"))
+
+13
+00:00:08,274 --> 00:00:18,890
+49. click(findTestObject("Product and Cart/Add to cart/button_Add to Cart"))
+
+14
+00:00:18,890 --> 00:00:19,384
+53. waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 10)
+
+15
+00:00:19,400 --> 00:00:19,875
+57. click(findTestObject("Product and Cart/Add to cart/i_icon-cart"))
+
+16
+00:00:19,877 --> 00:00:20,396
+61. verifyElementVisible(findTestObject("Checkout/Address/btn_checkout"))
+
+17
+00:00:20,397 --> 00:00:30,517
+65. click(findTestObject("Checkout/Address/btn_checkout"))
+
+18
+00:00:30,517 --> 00:00:40,703
+69. waitForElementVisible(findTestObject("Checkout/Checkout guest/field_email"), 10)
+
+19
+00:00:40,706 --> 00:00:58,447
+73. setText(findTestObject("Checkout/Checkout guest/field_email"), randomEmail)
+

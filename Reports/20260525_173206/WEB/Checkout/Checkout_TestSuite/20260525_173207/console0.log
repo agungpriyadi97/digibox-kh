@@ -1,0 +1,289 @@
+2026-05-25 17:38:01.388 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\AgungPriyadi\.katalon\packages\KS-11.1.3\configuration\org.eclipse.osgi\150\0\.cp\resources\logback\logback-execution.xml
+2026-05-25 17:38:01.391 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\AgungPriyadi\git\digibox-kh\Include\config\log.properties
+2026-05-25 17:38:02.126 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/WEB/Checkout/Checkout_TestSuite
+2026-05-25 17:38:02.208 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Agung Priyadi
+2026-05-25 17:38:02.209 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = digibox-kh
+2026-05-25 17:38:02.209 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = AgungPriyadi - NB-GDA-55026
+2026-05-25 17:38:02.210 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-05-25 17:38:02.210 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.110.9
+2026-05-25 17:38:02.126 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/WEB/Checkout/Checkout_TestSuite
+2026-05-25 17:38:02.208 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Agung Priyadi
+2026-05-25 17:38:02.209 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = digibox-kh
+2026-05-25 17:38:02.209 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = AgungPriyadi - NB-GDA-55026
+2026-05-25 17:38:02.210 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-05-25 17:38:02.210 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.110.9
+2026-05-25 17:38:02.211 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.1.3.0
+2026-05-25 17:38:02.357 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-25 17:38:02.357 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Checkout/Checkout without payment
+2026-05-25 17:38:02.690 DEBUG testcase.Checkout without payment        - 1: openBrowser("")
+2026-05-25 17:38:02.992 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-05-25 17:38:02.998 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--start-maximized]']
+2026-05-25 17:38:03.044 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-25 17:38:07.352 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 991cc037c32111164b9c1f5ee4ae212a
+2026-05-25 17:38:07.354 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-25 17:38:07.369 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-25 17:38:07.373 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-25 17:38:07.394 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-25 17:38:07.622 DEBUG testcase.Checkout without payment        - 2: navigateToUrl(URL)
+2026-05-25 17:38:09.721 DEBUG testcase.Checkout without payment        - 3: maximizeWindow()
+2026-05-25 17:38:09.798 DEBUG testcase.Checkout without payment        - 4: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-25 17:38:10.920 DEBUG testcase.Checkout without payment        - 5: click(findTestObject("Registration/icon-acount"))
+2026-05-25 17:38:11.646 DEBUG testcase.Checkout without payment        - 6: setText(findTestObject("Registration/field-account"), "agungpriyadi")
+2026-05-25 17:38:13.114 DEBUG testcase.Checkout without payment        - 7: setText(findTestObject("Registration/field-Password"), "Laskar123456")
+2026-05-25 17:38:14.249 DEBUG testcase.Checkout without payment        - 8: click(findTestObject("Login/btn-sign in"))
+2026-05-25 17:38:14.896 DEBUG testcase.Checkout without payment        - 9: click(findTestObject("Registration/icon-acount"))
+2026-05-25 17:38:15.564 DEBUG testcase.Checkout without payment        - 10: verifyElementVisible(findTestObject("Home Page/verify-succes-acount-login"))
+2026-05-25 17:38:17.953 DEBUG testcase.Checkout without payment        - 11: click(findTestObject("Home Page/Search/icon-search"))
+2026-05-25 17:38:18.631 DEBUG testcase.Checkout without payment        - 12: sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 12 PRO MAX 128GB GOLD", ENTER))
+2026-05-25 17:38:19.262 DEBUG testcase.Checkout without payment        - 13: verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-12 -pro"))
+2026-05-25 17:38:22.223 DEBUG testcase.Checkout without payment        - 14: click(findTestObject("Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD"))
+2026-05-25 17:38:22.654 DEBUG testcase.Checkout without payment        - 15: click(findTestObject("Product and Cart/Add to cart/button_Add to Cart"))
+2026-05-25 17:38:32.734 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Product and Cart/Add to cart/button_Add to Cart'. Try using Self-healing.
+2026-05-25 17:38:33.116 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] The current locator of test object 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' was broken. Propose an alternative one: '//button[@type='primary']'.
+2026-05-25 17:38:33.147 WARN  c.k.k.c.w.keyword.builtin.ClickKeyword   - Waiting for element timed out
+2026-05-25 17:38:33.261 DEBUG testcase.Checkout without payment        - 16: waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 10)
+2026-05-25 17:38:33.906 DEBUG testcase.Checkout without payment        - 17: click(findTestObject("Product and Cart/Add to cart/i_icon-cart"))
+2026-05-25 17:38:34.853 DEBUG testcase.Checkout without payment        - 18: waitForElementVisible(findTestObject("Checkout/Address/btn_checkout"), 10)
+2026-05-25 17:38:36.065 DEBUG testcase.Checkout without payment        - 19: click(findTestObject("Checkout/Address/btn_checkout"))
+2026-05-25 17:38:36.562 DEBUG testcase.Checkout without payment        - 20: click(findTestObject("Checkout/Online Payment - Cradit Card"))
+2026-05-25 17:38:38.227 DEBUG testcase.Checkout without payment        - 21: check(findTestObject("Checkout/Checkbox__I accept"))
+2026-05-25 17:38:39.699 DEBUG testcase.Checkout without payment        - 22: click(findTestObject("Checkout/button_Checkout_Payment"))
+2026-05-25 17:38:40.513 DEBUG testcase.Checkout without payment        - 23: waitForElementPresent(findTestObject("Checkout/Page Checkout/iframe_Credit Card"), 10)
+2026-05-25 17:38:43.544 DEBUG testcase.Checkout without payment        - 24: click(findTestObject("Checkout/Page Checkout/iframe_Credit Card"), STOP_ON_FAILURE)
+2026-05-25 17:38:44.779 DEBUG testcase.Checkout without payment        - 25: delay(10)
+2026-05-25 17:38:54.961 DEBUG testcase.Checkout without payment        - 26: setText(findTestObject("Checkout/Page Checkout/field_cardNumber"), "5156 8399 3770 6777")
+2026-05-25 17:38:55.972 DEBUG testcase.Checkout without payment        - 27: setText(findTestObject("Checkout/Page Checkout/field_cardExp"), "0130")
+2026-05-25 17:38:56.695 DEBUG testcase.Checkout without payment        - 28: setText(findTestObject("Checkout/Page Checkout/field_cvv2"), "993")
+2026-05-25 17:38:57.546 DEBUG testcase.Checkout without payment        - 29: click(findTestObject("Checkout/btn-closed-pay"))
+2026-05-25 17:38:58.052 DEBUG testcase.Checkout without payment        - 30: waitForAlert(10)
+2026-05-25 17:38:58.129 DEBUG testcase.Checkout without payment        - 31: alertText = getAlertText()
+2026-05-25 17:38:58.196 DEBUG testcase.Checkout without payment        - 32: comment(alertText)
+2026-05-25 17:38:58.212 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Are you sure you want to close?
+2026-05-25 17:38:58.228 DEBUG testcase.Checkout without payment        - 33: acceptAlert()
+2026-05-25 17:38:58.288 DEBUG testcase.Checkout without payment        - 34: waitForElementVisible(findTestObject("Checkout/Track Order/track your order"), 0)
+2026-05-25 17:38:58.304 WARN  c.k.k.c.webui.common.WebUiCommonHelper   - Timeout '0' is invalid. Using default page load timeout: '10'
+2026-05-25 17:38:59.567 DEBUG testcase.Checkout without payment        - 35: click(findTestObject("Checkout/Track Order/track your order"))
+2026-05-25 17:39:00.188 DEBUG testcase.Checkout without payment        - 36: click(findTestObject("Checkout/Track Order/sp-order-list-item"))
+2026-05-25 17:39:01.327 DEBUG testcase.Checkout without payment        - 37: scrollToElement(findTestObject("Checkout/Track Order/text_order_status"), 7)
+2026-05-25 17:39:01.817 DEBUG testcase.Checkout without payment        - 38: verifyElementText(findTestObject("Checkout/Track Order/text_order_status"), "WAIT")
+2026-05-25 17:39:02.438 DEBUG testcase.Checkout without payment        - 39: takeScreenshot()
+2026-05-25 17:39:02.925 DEBUG testcase.Checkout without payment        - 40: closeBrowser()
+2026-05-25 17:39:05.598 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Checkout/Checkout without payment' .
+2026-05-25 17:39:05.599 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Checkout/Checkout without payment
+2026-05-25 17:39:05.600 INFO  c.k.katalon.core.main.TestCaseExecutor   - 
+2026-05-25 17:39:05.602 INFO  c.k.katalon.core.main.TestCaseExecutor   - ===================== Self-healing Report ====================
+2026-05-25 17:39:05.602 INFO  c.k.katalon.core.main.TestCaseExecutor   - One of the failed test object locators has been recovered by Self-healing. Please refer to the Self-healing Insights tab for more details.
+2026-05-25 17:39:05.603 INFO  c.k.katalon.core.main.TestCaseExecutor   - To learn more about Self-healing, please read https://docs.katalon.com/katalon-studio/maintain-tests/self-healing-tests-in-katalon-studio
+2026-05-25 17:39:05.603 INFO  c.k.katalon.core.main.TestCaseExecutor   - ==============================================================
+2026-05-25 17:39:05.606 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-25 17:39:05.606 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Checkout/Ensure Indonesian copywriting consistency for Cancel Reason
+2026-05-25 17:39:05.693 DEBUG opywriting consistency for Cancel Reason - 1: openBrowser(URL)
+2026-05-25 17:39:05.696 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-05-25 17:39:05.696 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--start-maximized]']
+2026-05-25 17:39:05.698 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-25 17:39:07.123 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 5ed89fb9af6fe8f74007da477c974bdc
+2026-05-25 17:39:07.137 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-25 17:39:07.139 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-25 17:39:07.147 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-25 17:39:07.151 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-25 17:39:09.020 DEBUG opywriting consistency for Cancel Reason - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-25 17:39:09.347 DEBUG opywriting consistency for Cancel Reason - 3: click(findTestObject("Registration/icon-acount"))
+2026-05-25 17:39:10.240 DEBUG opywriting consistency for Cancel Reason - 4: setText(findTestObject("Registration/field-account"), "agungpriyadi")
+2026-05-25 17:39:11.726 DEBUG opywriting consistency for Cancel Reason - 5: setText(findTestObject("Registration/field-Password"), "Laskar123456")
+2026-05-25 17:39:12.715 DEBUG opywriting consistency for Cancel Reason - 6: click(findTestObject("Login/btn-sign in"))
+2026-05-25 17:39:13.367 DEBUG opywriting consistency for Cancel Reason - 7: click(findTestObject("Registration/icon-acount"))
+2026-05-25 17:39:13.987 DEBUG opywriting consistency for Cancel Reason - 8: verifyElementVisible(findTestObject("Home Page/verify-succes-acount-login"))
+2026-05-25 17:39:16.971 DEBUG opywriting consistency for Cancel Reason - 9: click(findTestObject("Home Page/Search/icon-search"))
+2026-05-25 17:39:17.461 DEBUG opywriting consistency for Cancel Reason - 10: click(findTestObject("Home Page/Search/field-search"))
+2026-05-25 17:39:17.971 DEBUG opywriting consistency for Cancel Reason - 11: sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 12 PRO MAX 128GB GOLD", ENTER))
+2026-05-25 17:39:18.477 DEBUG opywriting consistency for Cancel Reason - 12: verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-12 -pro"))
+2026-05-25 17:39:21.189 DEBUG opywriting consistency for Cancel Reason - 13: click(findTestObject("Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD"))
+2026-05-25 17:39:21.656 DEBUG opywriting consistency for Cancel Reason - 14: click(findTestObject("Product and Cart/Add to cart/button_Add to Cart"))
+2026-05-25 17:39:31.899 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Product and Cart/Add to cart/button_Add to Cart'. Try using Self-healing.
+2026-05-25 17:39:32.231 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] The current locator of test object 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' was broken. Propose an alternative one: '//button[@type='primary']'.
+2026-05-25 17:39:32.284 WARN  c.k.k.c.w.keyword.builtin.ClickKeyword   - Waiting for element timed out
+2026-05-25 17:39:32.452 DEBUG opywriting consistency for Cancel Reason - 15: waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 7)
+2026-05-25 17:39:32.927 DEBUG opywriting consistency for Cancel Reason - 16: click(findTestObject("Product and Cart/Add to cart/i_icon-cart"))
+2026-05-25 17:39:33.808 DEBUG opywriting consistency for Cancel Reason - 17: verifyElementVisible(findTestObject("Checkout/Address/btn_checkout"), STOP_ON_FAILURE)
+2026-05-25 17:39:35.026 DEBUG opywriting consistency for Cancel Reason - 18: click(findTestObject("Checkout/Address/btn_checkout"))
+2026-05-25 17:39:35.417 DEBUG opywriting consistency for Cancel Reason - 19: click(findTestObject("Checkout/Online Payment - Cradit Card"))
+2026-05-25 17:39:36.964 DEBUG opywriting consistency for Cancel Reason - 20: check(findTestObject("Checkout/Checkbox__I accept"))
+2026-05-25 17:39:38.374 DEBUG opywriting consistency for Cancel Reason - 21: click(findTestObject("Checkout/button_Checkout_Payment"))
+2026-05-25 17:39:38.835 DEBUG opywriting consistency for Cancel Reason - 22: waitForElementPresent(findTestObject("Checkout/Page Checkout/iframe_Credit Card"), 10)
+2026-05-25 17:39:43.923 DEBUG opywriting consistency for Cancel Reason - 23: click(findTestObject("Checkout/Page Checkout/iframe_Credit Card"), STOP_ON_FAILURE)
+2026-05-25 17:39:44.695 DEBUG opywriting consistency for Cancel Reason - 24: delay(10)
+2026-05-25 17:39:54.709 DEBUG opywriting consistency for Cancel Reason - 25: setText(findTestObject("Checkout/Page Checkout/field_cardNumber"), "5156 8399 3770 6777")
+2026-05-25 17:39:55.657 DEBUG opywriting consistency for Cancel Reason - 26: setText(findTestObject("Checkout/Page Checkout/field_cardExp"), "01/30")
+2026-05-25 17:39:56.359 DEBUG opywriting consistency for Cancel Reason - 27: setText(findTestObject("Checkout/Page Checkout/field_cvv2"), "993")
+2026-05-25 17:39:57.128 DEBUG opywriting consistency for Cancel Reason - 28: click(findTestObject("Checkout/btn-closed-pay"))
+2026-05-25 17:39:57.570 DEBUG opywriting consistency for Cancel Reason - 29: waitForAlert(10)
+2026-05-25 17:39:57.593 DEBUG opywriting consistency for Cancel Reason - 30: alertText = getAlertText()
+2026-05-25 17:39:57.618 DEBUG opywriting consistency for Cancel Reason - 31: comment(alertText)
+2026-05-25 17:39:57.623 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Are you sure you want to close?
+2026-05-25 17:39:57.625 DEBUG opywriting consistency for Cancel Reason - 32: acceptAlert()
+2026-05-25 17:39:57.662 DEBUG opywriting consistency for Cancel Reason - 33: waitForElementVisible(findTestObject("Checkout/Track Order/track your order"), 7)
+2026-05-25 17:39:58.988 DEBUG opywriting consistency for Cancel Reason - 34: click(findTestObject("Checkout/Track Order/track your order"))
+2026-05-25 17:39:59.456 DEBUG opywriting consistency for Cancel Reason - 35: click(findTestObject("Checkout/Track Order/sp-order-list-item"))
+2026-05-25 17:40:00.467 DEBUG opywriting consistency for Cancel Reason - 36: scrollToElement(findTestObject("Checkout/Track Order/btn-cencel"), 10)
+2026-05-25 17:40:01.204 DEBUG opywriting consistency for Cancel Reason - 37: click(findTestObject("Checkout/Track Order/btn-cencel"))
+2026-05-25 17:40:02.091 DEBUG opywriting consistency for Cancel Reason - 38: waitForElementVisible(findTestObject("Checkout/Track Order/button_OK"), 7)
+2026-05-25 17:40:02.649 DEBUG opywriting consistency for Cancel Reason - 39: click(findTestObject("Checkout/Track Order/button_OK"))
+2026-05-25 17:40:03.057 DEBUG opywriting consistency for Cancel Reason - 40: waitForElementVisible(findTestObject("Checkout/Track Order/Message_Success"), 10)
+2026-05-25 17:40:03.828 DEBUG opywriting consistency for Cancel Reason - 41: verifyElementVisible(findTestObject("Checkout/Track Order/Message_Success"))
+2026-05-25 17:40:04.513 DEBUG opywriting consistency for Cancel Reason - 42: scrollToElement(findTestObject("Checkout/Track Order/text_order_status"), 5)
+2026-05-25 17:40:04.853 DEBUG opywriting consistency for Cancel Reason - 43: verifyElementText(findTestObject("Checkout/Track Order/text_order_status"), "CANCEL")
+2026-05-25 17:40:05.211 DEBUG opywriting consistency for Cancel Reason - 44: takeScreenshot()
+2026-05-25 17:40:05.655 DEBUG opywriting consistency for Cancel Reason - 45: closeBrowser()
+2026-05-25 17:40:08.293 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Checkout/Ensure Indonesian copywriting consistency for Cancel Reason' .
+2026-05-25 17:40:08.293 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Checkout/Ensure Indonesian copywriting consistency for Cancel Reason
+2026-05-25 17:40:08.294 INFO  c.k.katalon.core.main.TestCaseExecutor   - 
+2026-05-25 17:40:08.294 INFO  c.k.katalon.core.main.TestCaseExecutor   - ===================== Self-healing Report ====================
+2026-05-25 17:40:08.294 INFO  c.k.katalon.core.main.TestCaseExecutor   - One of the failed test object locators has been recovered by Self-healing. Please refer to the Self-healing Insights tab for more details.
+2026-05-25 17:40:08.294 INFO  c.k.katalon.core.main.TestCaseExecutor   - To learn more about Self-healing, please read https://docs.katalon.com/katalon-studio/maintain-tests/self-healing-tests-in-katalon-studio
+2026-05-25 17:40:08.294 INFO  c.k.katalon.core.main.TestCaseExecutor   - ==============================================================
+2026-05-25 17:40:08.296 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-25 17:40:08.296 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Checkout/Ensure user can checkout the order successfully
+2026-05-25 17:40:08.355 DEBUG user can checkout the order successfully - 1: openBrowser(URL)
+2026-05-25 17:40:08.356 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-05-25 17:40:08.356 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--start-maximized]']
+2026-05-25 17:40:08.358 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-25 17:40:09.567 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 6d69cd134201418731146ecd9ebda434
+2026-05-25 17:40:09.568 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-25 17:40:09.569 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-25 17:40:09.571 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-25 17:40:09.572 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-25 17:40:11.265 DEBUG user can checkout the order successfully - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-25 17:40:11.563 DEBUG user can checkout the order successfully - 3: click(findTestObject("Registration/icon-acount"))
+2026-05-25 17:40:12.428 DEBUG user can checkout the order successfully - 4: setText(findTestObject("Registration/field-account"), "agungpriyadi")
+2026-05-25 17:40:13.948 DEBUG user can checkout the order successfully - 5: setText(findTestObject("Registration/field-Password"), "Laskar123456")
+2026-05-25 17:40:15.098 DEBUG user can checkout the order successfully - 6: click(findTestObject("Login/btn-sign in"))
+2026-05-25 17:40:15.692 DEBUG user can checkout the order successfully - 7: click(findTestObject("Registration/icon-acount"))
+2026-05-25 17:40:16.258 DEBUG user can checkout the order successfully - 8: verifyElementVisible(findTestObject("Home Page/verify-succes-acount-login"))
+2026-05-25 17:40:18.885 DEBUG user can checkout the order successfully - 9: click(findTestObject("Home Page/Search/icon-search"))
+2026-05-25 17:40:19.660 DEBUG user can checkout the order successfully - 10: click(findTestObject("Home Page/Search/field-search"))
+2026-05-25 17:40:20.116 DEBUG user can checkout the order successfully - 11: sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 12 PRO MAX 128GB GOLD", ENTER))
+2026-05-25 17:40:20.624 DEBUG user can checkout the order successfully - 12: verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-12 -pro"))
+2026-05-25 17:40:23.378 DEBUG user can checkout the order successfully - 13: click(findTestObject("Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD"))
+2026-05-25 17:40:23.750 DEBUG user can checkout the order successfully - 14: click(findTestObject("Product and Cart/Add to cart/button_Add to Cart"))
+2026-05-25 17:40:33.818 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Product and Cart/Add to cart/button_Add to Cart'. Try using Self-healing.
+2026-05-25 17:40:34.090 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] The current locator of test object 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' was broken. Propose an alternative one: '//button[@type='primary']'.
+2026-05-25 17:40:34.148 WARN  c.k.k.c.w.keyword.builtin.ClickKeyword   - Waiting for element timed out
+2026-05-25 17:40:34.262 DEBUG user can checkout the order successfully - 15: waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 7)
+2026-05-25 17:40:34.739 DEBUG user can checkout the order successfully - 16: click(findTestObject("Product and Cart/Add to cart/i_icon-cart"))
+2026-05-25 17:40:35.220 DEBUG user can checkout the order successfully - 17: verifyElementVisible(findTestObject("Checkout/Address/btn_checkout"), STOP_ON_FAILURE)
+2026-05-25 17:40:36.265 DEBUG user can checkout the order successfully - 18: click(findTestObject("Checkout/Address/btn_checkout"))
+2026-05-25 17:40:36.710 DEBUG user can checkout the order successfully - 19: click(findTestObject("Checkout/Online Payment - WeChat"))
+2026-05-25 17:40:39.126 DEBUG user can checkout the order successfully - 20: check(findTestObject("Checkout/Checkbox__I accept"))
+2026-05-25 17:40:40.211 DEBUG user can checkout the order successfully - 21: click(findTestObject("Checkout/button_Checkout_Payment"))
+2026-05-25 17:40:41.107 DEBUG user can checkout the order successfully - 22: waitForElementPresent(findTestObject("Checkout/iframe_payment_online"), 10)
+2026-05-25 17:40:41.889 DEBUG user can checkout the order successfully - 23: click(findTestObject("Checkout/iframe_payment_online"), STOP_ON_FAILURE)
+2026-05-25 17:40:44.173 DEBUG user can checkout the order successfully - 24: waitForElementPresent(findTestObject("Checkout/button_Approve"), 10)
+2026-05-25 17:40:44.972 DEBUG user can checkout the order successfully - 25: click(findTestObject("Checkout/button_Approve"))
+2026-05-25 17:40:45.566 DEBUG user can checkout the order successfully - 26: waitForElementPresent(findTestObject("Checkout/button_Continue shopping"), 10)
+2026-05-25 17:40:47.767 DEBUG user can checkout the order successfully - 27: click(findTestObject("Checkout/button_Continue shopping"))
+2026-05-25 17:40:48.341 DEBUG user can checkout the order successfully - 28: waitForElementVisible(findTestObject("Checkout/Track Order/track your order"), 0)
+2026-05-25 17:40:48.341 WARN  c.k.k.c.webui.common.WebUiCommonHelper   - Timeout '0' is invalid. Using default page load timeout: '10'
+2026-05-25 17:40:49.656 DEBUG user can checkout the order successfully - 29: click(findTestObject("Checkout/Track Order/track your order"))
+2026-05-25 17:40:50.217 DEBUG user can checkout the order successfully - 30: click(findTestObject("Checkout/button_Order Details"))
+2026-05-25 17:41:00.289 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Checkout/button_Order Details'. Try using Self-healing.
+2026-05-25 17:41:00.604 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] The current locator of test object 'Object Repository/Checkout/button_Order Details' was broken. Propose an alternative one: '(//button[@type='button'])[4]'.
+2026-05-25 17:41:00.620 WARN  c.k.k.c.w.keyword.builtin.ClickKeyword   - Waiting for element timed out
+2026-05-25 17:41:00.735 DEBUG user can checkout the order successfully - 31: scrollToElement(findTestObject("Checkout/Track Order/verify-order list"), 7)
+2026-05-25 17:41:01.923 DEBUG user can checkout the order successfully - 32: takeScreenshot()
+2026-05-25 17:41:02.760 DEBUG user can checkout the order successfully - 33: closeBrowser()
+2026-05-25 17:41:05.298 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Checkout/Ensure user can checkout the order successfully' .
+2026-05-25 17:41:05.298 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Checkout/Ensure user can checkout the order successfully
+2026-05-25 17:41:05.299 INFO  c.k.katalon.core.main.TestCaseExecutor   - 
+2026-05-25 17:41:05.299 INFO  c.k.katalon.core.main.TestCaseExecutor   - ===================== Self-healing Report ====================
+2026-05-25 17:41:05.299 INFO  c.k.katalon.core.main.TestCaseExecutor   - One of the failed test object locators has been recovered by Self-healing. Please refer to the Self-healing Insights tab for more details.
+2026-05-25 17:41:05.299 INFO  c.k.katalon.core.main.TestCaseExecutor   - To learn more about Self-healing, please read https://docs.katalon.com/katalon-studio/maintain-tests/self-healing-tests-in-katalon-studio
+2026-05-25 17:41:05.299 INFO  c.k.katalon.core.main.TestCaseExecutor   - ==============================================================
+2026-05-25 17:41:05.301 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-25 17:41:05.301 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Checkout/Guest Checkout
+2026-05-25 17:41:05.424 DEBUG testcase.Guest Checkout                  - 1: randomEmail = custom.RandomData.generateRandomEmail()
+2026-05-25 17:41:05.468 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomEmail is PASSED
+2026-05-25 17:41:05.471 DEBUG testcase.Guest Checkout                  - 2: randomFirstName = custom.RandomData.generateRandomFirstName()
+2026-05-25 17:41:05.475 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomFirstName is PASSED
+2026-05-25 17:41:05.476 DEBUG testcase.Guest Checkout                  - 3: randomLastName = custom.RandomData.generateRandomLastName()
+2026-05-25 17:41:05.477 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomLastName is PASSED
+2026-05-25 17:41:05.479 DEBUG testcase.Guest Checkout                  - 4: randomPhone = custom.RandomData.generateRandomPhone()
+2026-05-25 17:41:05.485 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomPhone is PASSED
+2026-05-25 17:41:05.489 DEBUG testcase.Guest Checkout                  - 5: randomAddress = custom.RandomData.generateRandomAddress()
+2026-05-25 17:41:05.491 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomAddress is PASSED
+2026-05-25 17:41:05.494 DEBUG testcase.Guest Checkout                  - 6: randomCode = custom.RandomData.generateRandomCode()
+2026-05-25 17:41:05.495 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomCode is PASSED
+2026-05-25 17:41:05.497 DEBUG testcase.Guest Checkout                  - 7: openBrowser("")
+2026-05-25 17:41:05.498 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-05-25 17:41:05.499 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--start-maximized]']
+2026-05-25 17:41:05.500 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-25 17:41:06.843 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 796d24c1c8b2731589ac83dbd4e41cd0
+2026-05-25 17:41:06.843 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-25 17:41:06.843 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-25 17:41:06.843 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-25 17:41:06.843 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-25 17:41:06.877 DEBUG testcase.Guest Checkout                  - 8: navigateToUrl(URL)
+2026-05-25 17:41:08.617 DEBUG testcase.Guest Checkout                  - 9: maximizeWindow()
+2026-05-25 17:41:08.667 DEBUG testcase.Guest Checkout                  - 10: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-25 17:41:08.986 DEBUG testcase.Guest Checkout                  - 11: click(findTestObject("Home Page/Search/icon-search"))
+2026-05-25 17:41:09.366 DEBUG testcase.Guest Checkout                  - 12: sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 12 PRO MAX 128GB GOLD", ENTER))
+2026-05-25 17:41:09.941 DEBUG testcase.Guest Checkout                  - 13: verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-12 -pro"))
+2026-05-25 17:41:12.729 DEBUG testcase.Guest Checkout                  - 14: click(findTestObject("Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD"))
+2026-05-25 17:41:13.175 DEBUG testcase.Guest Checkout                  - 15: click(findTestObject("Product and Cart/Add to cart/button_Add to Cart"))
+2026-05-25 17:41:23.435 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Product and Cart/Add to cart/button_Add to Cart'. Try using Self-healing.
+2026-05-25 17:41:23.704 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] The current locator of test object 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' was broken. Propose an alternative one: '//button[@type='primary']'.
+2026-05-25 17:41:23.736 WARN  c.k.k.c.w.keyword.builtin.ClickKeyword   - Waiting for element timed out
+2026-05-25 17:41:23.830 DEBUG testcase.Guest Checkout                  - 16: waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 10)
+2026-05-25 17:41:24.304 DEBUG testcase.Guest Checkout                  - 17: click(findTestObject("Product and Cart/Add to cart/i_icon-cart"))
+2026-05-25 17:41:25.088 DEBUG testcase.Guest Checkout                  - 18: verifyElementVisible(findTestObject("Checkout/Address/btn_checkout"))
+2026-05-25 17:41:26.454 DEBUG testcase.Guest Checkout                  - 19: click(findTestObject("Checkout/Address/btn_checkout"))
+2026-05-25 17:41:26.871 DEBUG testcase.Guest Checkout                  - 20: waitForElementVisible(findTestObject("Checkout/Checkout guest/field_email"), 10)
+2026-05-25 17:41:28.068 DEBUG testcase.Guest Checkout                  - 21: setText(findTestObject("Checkout/Checkout guest/field_email"), randomEmail)
+2026-05-25 17:41:28.915 DEBUG testcase.Guest Checkout                  - 22: click(findTestObject("Checkout/Checkout guest/btn_continue"))
+2026-05-25 17:41:29.559 DEBUG testcase.Guest Checkout                  - 23: waitForElementVisible(findTestObject("Checkout/Address/field_First Name"), 10)
+2026-05-25 17:41:30.671 DEBUG testcase.Guest Checkout                  - 24: setText(findTestObject("Checkout/Address/field_First Name"), randomFirstName)
+2026-05-25 17:41:32.363 DEBUG testcase.Guest Checkout                  - 25: setText(findTestObject("Checkout/Address/field_Last Name"), randomLastName)
+2026-05-25 17:41:33.387 DEBUG testcase.Guest Checkout                  - 26: setText(findTestObject("Checkout/Address/field_mobile phone"), randomPhone)
+2026-05-25 17:41:34.892 DEBUG testcase.Guest Checkout                  - 27: setText(findTestObject("Checkout/Address/field_Address"), randomAddress)
+2026-05-25 17:41:35.971 DEBUG testcase.Guest Checkout                  - 28: setText(findTestObject("Checkout/Address/input_ZipPostal Code"), randomCode)
+2026-05-25 17:41:37.293 DEBUG testcase.Guest Checkout                  - 29: click(findTestObject("Checkout/Address/input_Province"))
+2026-05-25 17:41:38.039 DEBUG testcase.Guest Checkout                  - 30: click(findTestObject("Checkout/Address/li_Phnom Penh Capital_Province"), STOP_ON_FAILURE)
+2026-05-25 17:41:38.837 DEBUG testcase.Guest Checkout                  - 31: click(findTestObject("Checkout/Address/input_Select Province"))
+2026-05-25 17:41:39.338 DEBUG testcase.Guest Checkout                  - 32: click(findTestObject("Checkout/Address/li_Khan Chamkar Mon_Select_Province"))
+2026-05-25 17:41:39.990 DEBUG testcase.Guest Checkout                  - 33: click(findTestObject("Checkout/Address/input_Districts"))
+2026-05-25 17:41:40.428 DEBUG testcase.Guest Checkout                  - 34: click(findTestObject("Checkout/Address/li_Sangkat Tonle Basak_Districts"))
+2026-05-25 17:41:41.603 DEBUG testcase.Guest Checkout                  - 35: click(findTestObject("Checkout/Address/btn-save"))
+2026-05-25 17:41:42.026 DEBUG testcase.Guest Checkout                  - 36: click(findTestObject("Checkout/Online Payment - WeChat"))
+2026-05-25 17:41:42.898 DEBUG testcase.Guest Checkout                  - 37: check(findTestObject("Checkout/Checkbox__I accept"))
+2026-05-25 17:41:43.597 DEBUG testcase.Guest Checkout                  - 38: click(findTestObject("Checkout/button_Checkout_Payment"))
+2026-05-25 17:41:44.204 DEBUG testcase.Guest Checkout                  - 39: waitForElementPresent(findTestObject("Checkout/iframe_payment_online"), 7)
+2026-05-25 17:41:44.720 DEBUG testcase.Guest Checkout                  - 40: click(findTestObject("Checkout/iframe_payment_online"), STOP_ON_FAILURE)
+2026-05-25 17:41:47.403 DEBUG testcase.Guest Checkout                  - 41: delay(10)
+2026-05-25 17:41:57.438 DEBUG testcase.Guest Checkout                  - 42: click(findTestObject("Checkout/button_Approve"))
+2026-05-25 17:41:58.062 DEBUG testcase.Guest Checkout                  - 43: waitForElementPresent(findTestObject("Checkout/button_Continue shopping"), 10)
+2026-05-25 17:42:00.033 DEBUG testcase.Guest Checkout                  - 44: verifyElementPresent(findTestObject("Checkout/button_Continue shopping"), 0)
+2026-05-25 17:42:00.103 WARN  c.k.k.c.webui.common.WebUiCommonHelper   - Timeout '0' is invalid. Using default page load timeout: '10'
+2026-05-25 17:42:00.470 DEBUG testcase.Guest Checkout                  - 45: click(findTestObject("Checkout/button_Continue shopping"))
+2026-05-25 17:42:01.054 DEBUG testcase.Guest Checkout                  - 46: comment("Email      : " + randomEmail)
+2026-05-25 17:42:01.054 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Email      : agungpriyadihud@gmail.com
+2026-05-25 17:42:01.054 DEBUG testcase.Guest Checkout                  - 47: comment("First Name : " + randomFirstName)
+2026-05-25 17:42:01.072 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - First Name : Budi
+2026-05-25 17:42:01.072 DEBUG testcase.Guest Checkout                  - 48: comment("Last Name  : " + randomLastName)
+2026-05-25 17:42:01.089 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Last Name  : Saputra
+2026-05-25 17:42:01.089 DEBUG testcase.Guest Checkout                  - 49: comment("Phone      : " + randomPhone)
+2026-05-25 17:42:01.089 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Phone      : 08115928574
+2026-05-25 17:42:01.114 DEBUG testcase.Guest Checkout                  - 50: comment("Address    : " + randomAddress)
+2026-05-25 17:42:01.117 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Address    : Jakarta Testing 5343
+2026-05-25 17:42:01.131 DEBUG testcase.Guest Checkout                  - 51: comment("Code    : " + randomCode)
+2026-05-25 17:42:01.144 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Code    : 158100
+2026-05-25 17:42:01.163 DEBUG testcase.Guest Checkout                  - 52: takeScreenshot()
+2026-05-25 17:42:02.486 DEBUG testcase.Guest Checkout                  - 53: closeBrowser()
+2026-05-25 17:42:05.166 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Checkout/Guest Checkout' .
+2026-05-25 17:42:05.167 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Checkout/Guest Checkout
+2026-05-25 17:42:05.167 INFO  c.k.katalon.core.main.TestCaseExecutor   - 
+2026-05-25 17:42:05.167 INFO  c.k.katalon.core.main.TestCaseExecutor   - ===================== Self-healing Report ====================
+2026-05-25 17:42:05.167 INFO  c.k.katalon.core.main.TestCaseExecutor   - One of the failed test object locators has been recovered by Self-healing. Please refer to the Self-healing Insights tab for more details.
+2026-05-25 17:42:05.168 INFO  c.k.katalon.core.main.TestCaseExecutor   - To learn more about Self-healing, please read https://docs.katalon.com/katalon-studio/maintain-tests/self-healing-tests-in-katalon-studio
+2026-05-25 17:42:05.168 INFO  c.k.katalon.core.main.TestCaseExecutor   - ==============================================================
+2026-05-25 17:42:05.188 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-05-25 17:42:05.188 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/WEB/Checkout/Checkout_TestSuite
+2026-05-25 17:42:05.188 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

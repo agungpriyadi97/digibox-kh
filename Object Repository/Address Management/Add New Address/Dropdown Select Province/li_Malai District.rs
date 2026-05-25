@@ -3,7 +3,7 @@
    <description></description>
    <name>li_Malai District</name>
    <tag></tag>
-   <elementGuidId>7aa9d286-163d-4b27-bc8b-ac1112278324</elementGuidId>
+   <elementGuidId>c2c69992-6c9a-4860-a6db-fb9f85ad09a2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,14 +11,14 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//li[@value='B00000013'])[2]</value>
+         <value>(//li[@value='B00000013'])[4]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:text=&quot;Malai District&quot;i >> nth=1</value>
+         <value>internal:text=&quot;Malai District&quot;i >> nth=3</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>li</value>
-      <webElementGuid>1fae46b0-4682-4191-8417-5e23e1a720b8</webElementGuid>
+      <webElementGuid>12c3cbd9-c44c-488b-bb8c-8d897a40d216</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>el-select-dropdown__item hover</value>
-      <webElementGuid>70c1d159-7ef3-4a02-93e5-7ee88b9d0690</webElementGuid>
+      <webElementGuid>db849a69-5270-4644-b2f6-725eb17aadd0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>value</name>
       <type>Main</type>
       <value>B00000013</value>
-      <webElementGuid>824f21ca-fbf9-4fb1-bbd5-640f6514209c</webElementGuid>
+      <webElementGuid>4242f5ef-0797-43df-86f7-a911cde3b53a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>label</name>
       <type>Main</type>
       <value>Malai District</value>
-      <webElementGuid>4a7bd6a1-d8b9-4005-b91c-c9a91d318270</webElementGuid>
+      <webElementGuid>a755db44-9fd3-4dfc-ac95-74e03fe0db5f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Malai District</value>
-      <webElementGuid>7d838816-81c1-4532-a163-2f71bc0c381e</webElementGuid>
+      <webElementGuid>b116a821-24c3-4380-a6d3-7a20f238a1a3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,55 +69,47 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;el-select-dropdown el-popper&quot;]/div[@class=&quot;el-scrollbar&quot;]/div[@class=&quot;el-select-dropdown__wrap el-scrollbar__wrap&quot;]/ul[@class=&quot;el-scrollbar__view el-select-dropdown__list&quot;]/li[@class=&quot;el-select-dropdown__item hover&quot;]</value>
-      <webElementGuid>ee5b663a-b992-4989-91bb-e8abf8516cb2</webElementGuid>
+      <webElementGuid>feae75a1-0c7e-4047-b525-8f9396b318f6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//li[@value='B00000013'])[2]</value>
-      <webElementGuid>aa468b30-9c5d-436d-8b2f-c8401e1aebf6</webElementGuid>
+      <value>(//li[@value='B00000013'])[4]</value>
+      <webElementGuid>c94a1299-aa10-4703-afd5-44c50d752ef3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tboung Khmum Province'])[4]/following::li[1]</value>
-      <webElementGuid>598bf390-049e-419f-8a3c-ae955a7dee30</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[1]/following::li[1]</value>
+      <webElementGuid>ca9794f9-e431-4fc8-8be8-963643ade855</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Takeo Province'])[4]/following::li[2]</value>
-      <webElementGuid>ce8cf86e-09cf-427e-b82f-771c90590626</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mongkol Borei District'])[4]/preceding::li[1]</value>
+      <webElementGuid>ecf136d6-ba91-402d-bf4a-432866893b61</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mongkol Borei District'])[3]/preceding::li[1]</value>
-      <webElementGuid>34916547-cf62-4248-b777-f8aefaf2b825</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ou Chrov District'])[2]/preceding::li[2]</value>
-      <webElementGuid>01852371-25ac-49e7-92ba-4b2d8fd57a93</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ou Chrov District'])[4]/preceding::li[2]</value>
+      <webElementGuid>ec936c48-1151-4cda-9427-b47aa21651a8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/ul/li</value>
-      <webElementGuid>391cb00d-3435-46d3-81b2-9545fbf1aeaf</webElementGuid>
+      <value>//div[4]/div/div/ul/li</value>
+      <webElementGuid>7cfa9947-9912-428d-8396-94917f915c57</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +117,70 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//li[(text() = 'Malai District' or . = 'Malai District')]</value>
-      <webElementGuid>26341351-fb48-4a9d-abfa-3ea2b5c693ff</webElementGuid>
+      <webElementGuid>9c1d2cbb-cbdd-47a0-9349-584a437e3090</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//li[@value='B00000013'])[3]</value>
+      <webElementGuid>292f9fca-acea-46b6-b066-9f3da2fdeef7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mongkol Borei District'])[3]/preceding::li[1]</value>
+      <webElementGuid>32efa238-a548-461c-a509-1c4a06645dc7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ou Chrov District'])[3]/preceding::li[2]</value>
+      <webElementGuid>d46deb43-6d72-4dcb-a957-cada308e1b7d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/div/div/ul/li</value>
+      <webElementGuid>7f3b46a8-ee1a-49af-a914-30c097795849</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//li[@value='B00000013'])[2]</value>
+      <webElementGuid>ae3104f6-a98a-4fd5-b228-8c94756fb95c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mongkol Borei District'])[2]/preceding::li[1]</value>
+      <webElementGuid>0198bd9e-c888-4ba8-b93d-ab14d1a6e744</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ou Chrov District'])[2]/preceding::li[2]</value>
+      <webElementGuid>72bfad41-d90d-467b-95f1-ad6475ef1512</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/ul/li</value>
+      <webElementGuid>b2680417-2454-429a-960b-a87ba825ad76</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,84 @@
+1
+00:00:00,096 --> 00:00:06,534
+1. openBrowser(URL)
+
+2
+00:00:06,569 --> 00:00:07,643
+5. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+3
+00:00:07,643 --> 00:00:08,321
+9. click(findTestObject("Registration/icon-acount"))
+
+4
+00:00:08,321 --> 00:00:09,793
+13. setText(findTestObject("Registration/field-account"), "agungpriyadi")
+
+5
+00:00:09,810 --> 00:00:10,928
+17. setText(findTestObject("Registration/field-Password"), "Laskar123456")
+
+6
+00:00:10,941 --> 00:00:11,571
+21. click(findTestObject("Login/btn-sign in"))
+
+7
+00:00:11,571 --> 00:00:12,292
+25. click(findTestObject("Registration/icon-acount"))
+
+8
+00:00:12,294 --> 00:00:13,784
+29. verifyElementVisible(findTestObject("Home Page/verify-succes-acount-login"))
+
+9
+00:00:13,784 --> 00:00:15,459
+33. click(findTestObject("Home Page/Search/icon-search"))
+
+10
+00:00:15,461 --> 00:00:16,048
+37. click(findTestObject("Home Page/Search/field-search"))
+
+11
+00:00:16,052 --> 00:00:16,591
+41. sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 11 PRO 128 GB DEEP PURPLE", ENTER))
+
+12
+00:00:16,600 --> 00:00:19,405
+45. verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-11-pro"))
+
+13
+00:00:19,417 --> 00:00:48,543
+49. click(findTestObject("Product and Cart/Add to cart/btn-product"))
+
+14
+00:00:48,547 --> 00:00:59,109
+53. click(findTestObject("Product and Cart/Add to cart/button_Add to Cart"))
+
+15
+00:00:59,117 --> 00:00:59,778
+57. click(findTestObject("Product and Cart/Add to cart/i_icon-cart"))
+
+16
+00:00:59,780 --> 00:01:00,368
+61. takeScreenshot()
+
+17
+00:01:00,368 --> 00:01:01,393
+65. click(findTestObject("Product and Cart/Add to cart/btn-trash"))
+
+18
+00:01:01,397 --> 00:01:02,002
+69. takeScreenshot()
+
+19
+00:01:02,002 --> 00:01:02,535
+73. click(findTestObject("Product and Cart/Add to cart/btn-confrim-yes"))
+
+20
+00:01:02,535 --> 00:01:02,951
+77. takeScreenshot()
+
+21
+00:01:02,967 --> 00:01:03,489
+81. closeBrowser()
+

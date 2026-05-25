@@ -3,7 +3,7 @@
    <description></description>
    <name>li_Thma Puok District</name>
    <tag></tag>
-   <elementGuidId>3fd46cdf-95e7-4c27-a04b-ef955879d431</elementGuidId>
+   <elementGuidId>83f738ca-a17a-43a8-b792-9eba0d58f396</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,14 +11,14 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//li[@value='B00000021'])[2]</value>
+         <value>(//li[@value='B00000021'])[4]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:text=&quot;Thma Puok District&quot;i >> nth=1</value>
+         <value>internal:text=&quot;Thma Puok District&quot;i >> nth=3</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>li</value>
-      <webElementGuid>92192735-b0e6-4409-a43c-f52e8b9ea0b7</webElementGuid>
+      <webElementGuid>44a84a6e-ffe9-4ffb-acc2-ad88139eaf9a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>el-select-dropdown__item hover</value>
-      <webElementGuid>25106121-97be-43e6-bedb-4ce387d19eef</webElementGuid>
+      <webElementGuid>3ba9c399-b716-4e28-b577-84d859f64f3d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>value</name>
       <type>Main</type>
       <value>B00000021</value>
-      <webElementGuid>5364355a-a7de-49a1-8d1a-f487a41539e1</webElementGuid>
+      <webElementGuid>00a97b12-fc19-441e-87a7-1e7e10581d74</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>label</name>
       <type>Main</type>
       <value>Thma Puok District</value>
-      <webElementGuid>453b4629-a122-410e-8900-cda89e3562fd</webElementGuid>
+      <webElementGuid>cc6e39bf-ece4-44b3-8b74-4950e068d40c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Thma Puok District</value>
-      <webElementGuid>c7af4380-a047-4bf7-bb2f-d707750a30a3</webElementGuid>
+      <webElementGuid>be452e60-0586-477e-a102-11b6756f60e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,39 +69,39 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;el-select-dropdown el-popper&quot;]/div[@class=&quot;el-scrollbar&quot;]/div[@class=&quot;el-select-dropdown__wrap el-scrollbar__wrap&quot;]/ul[@class=&quot;el-scrollbar__view el-select-dropdown__list&quot;]/li[@class=&quot;el-select-dropdown__item hover&quot;]</value>
-      <webElementGuid>8b0fb2f8-66d2-4bad-8431-0bec46279263</webElementGuid>
+      <webElementGuid>58cceea5-a042-4577-a3b7-a89e8cdaeb77</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//li[@value='B00000021'])[2]</value>
-      <webElementGuid>220fb49e-f406-4647-affa-faeaddf02e09</webElementGuid>
+      <value>(//li[@value='B00000021'])[4]</value>
+      <webElementGuid>26d3142d-0e3f-473b-b5b6-8224b97eafc0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Svay Check District'])[2]/following::li[1]</value>
-      <webElementGuid>a37537d9-bc49-4b6e-9a1e-a8eef4217888</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Svay Check District'])[4]/following::li[1]</value>
+      <webElementGuid>e88c486e-0888-47a8-87b2-fe4df147018d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Serei Saophoan Municipality'])[2]/following::li[2]</value>
-      <webElementGuid>ef061990-07d9-4fbd-a6f1-7088134d765b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Serei Saophoan Municipality'])[4]/following::li[2]</value>
+      <webElementGuid>175b8c9f-a453-4b58-adcc-9bbaa6eaeaf8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/ul/li[9]</value>
-      <webElementGuid>582fb38f-7be3-4056-9662-d33bf39ec51b</webElementGuid>
+      <value>//div[4]/div/div/ul/li[9]</value>
+      <webElementGuid>26e7e3bd-74a0-400f-ad9d-9f6c1c9984d0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,70 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//li[(text() = 'Thma Puok District' or . = 'Thma Puok District')]</value>
-      <webElementGuid>dc78a902-e567-4e65-b5ce-d491253cdb64</webElementGuid>
+      <webElementGuid>c14bcb0b-d671-4229-a03a-4a63c20e7f6d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//li[@value='B00000021'])[3]</value>
+      <webElementGuid>6d3c6a45-bfdb-4af5-adda-7c55901e0819</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Svay Check District'])[3]/following::li[1]</value>
+      <webElementGuid>d25a6b17-fd00-4383-a6c6-13aad1e09971</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Serei Saophoan Municipality'])[3]/following::li[2]</value>
+      <webElementGuid>7d119bd2-80ba-46f2-a691-b879c1e06e5e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/div/div/ul/li[9]</value>
+      <webElementGuid>975d3128-e704-4ae0-8ce0-982f87789afe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//li[@value='B00000021'])[2]</value>
+      <webElementGuid>a097d4a8-f8dd-4ee0-9399-ceb0944c4bb1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Svay Check District'])[2]/following::li[1]</value>
+      <webElementGuid>81f14018-5277-43b9-84a0-a1b0115a1b36</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Serei Saophoan Municipality'])[2]/following::li[2]</value>
+      <webElementGuid>9450802e-d752-4127-a340-f9444277e34b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/ul/li[9]</value>
+      <webElementGuid>e6d6debd-c1b2-4a56-9329-715238e17556</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

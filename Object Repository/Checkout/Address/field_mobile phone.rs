@@ -6,12 +6,11 @@
    <elementGuidId>eeda1c16-fb0c-4182-91a1-25f3d4c7f57c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//section[contains(@class,'page-checkout_address')]//input[@placeholder='Your mobile phone'])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@placeholder='Your mobile phone']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

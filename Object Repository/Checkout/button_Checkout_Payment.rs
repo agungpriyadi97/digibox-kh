@@ -6,12 +6,12 @@
    <elementGuidId>9975ca66-b31d-45cb-9126-d709e7542fc7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='primary'])[4]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.el-button.action-btn--onpage.el-button--primary.el-button--large.gt-button</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'page-checkout_right_top_custom')]//button[.//span[contains(text(),'Checkout')]]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>7b6dd034-8536-4a32-81e7-ce9d89eb17d7</webElementGuid>
+      <webElementGuid>796a4ae6-6957-47c2-957d-8ecfb09ecafe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>primary</value>
-      <webElementGuid>4867c8b8-af1e-4942-9c53-97a8a83d0ca4</webElementGuid>
+      <webElementGuid>f65665fc-8e94-4df4-85d3-625491270cd4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>el-button action-btn--onpage el-button--primary el-button--large gt-button</value>
-      <webElementGuid>9824ea42-7a6e-414c-bcc3-3dc55e037123</webElementGuid>
+      <webElementGuid>1da4380f-38c9-428d-91d8-6ec975b0bc46</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>size</name>
       <type>Main</type>
       <value>large</value>
-      <webElementGuid>b29fd505-0bd9-46f3-9cc8-af639ba841a7</webElementGuid>
+      <webElementGuid>d43faaf5-971a-43cd-bffb-8949ac667ef3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <value>
           Checkout
         </value>
-      <webElementGuid>2acc51e9-8423-4d82-bbe8-41b1ce32d2f5</webElementGuid>
+      <webElementGuid>6a4de8ab-1de6-4bbc-a8de-313c29d2dfba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;page-view&quot;)/div[@class=&quot;gt-layout page-layout_pc&quot;]/div[@class=&quot;page-view__child&quot;]/section[@class=&quot;page-checkout&quot;]/div[@class=&quot;right&quot;]/section[@class=&quot;right-container&quot;]/div[@class=&quot;page-checkout_right_top_custom&quot;]/button[@class=&quot;el-button action-btn--onpage el-button--primary el-button--large gt-button&quot;]</value>
-      <webElementGuid>d12b1c44-33c6-4489-ba03-c057b9cf8a18</webElementGuid>
+      <webElementGuid>eb796817-1dfb-46d1-9fdc-7dd4e78bd33a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='primary'])[4]</value>
-      <webElementGuid>52e0de3d-7b2b-47b1-8871-e6d6a18cf7db</webElementGuid>
+      <webElementGuid>068f87b4-5544-449b-9af5-783e660db728</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='page-view']/div/div[3]/section/div[2]/section/div/button</value>
-      <webElementGuid>caaf71f0-d9b6-40bc-86bf-7911cdf220fd</webElementGuid>
+      <webElementGuid>13b975cf-b6ed-450b-bc66-024af970c9cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='About 3-7 working days'])[1]/following::button[1]</value>
-      <webElementGuid>69222d47-fa00-43b1-bbba-2c92d1abe065</webElementGuid>
+      <webElementGuid>8a9233c9-4c16-4770-b111-72468df25e4a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +103,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Coupon (0 available)'])[1]/preceding::button[1]</value>
-      <webElementGuid>553f80d5-1995-45ec-bffd-b24068f243c7</webElementGuid>
+      <webElementGuid>37ece9ea-a378-411f-b094-05f53829d352</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +111,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/section/div/button</value>
-      <webElementGuid>64fe0c7f-ab7d-463b-8e2c-e5bb6b2dd4bb</webElementGuid>
+      <webElementGuid>05a3f9a4-f2a8-4e47-8738-2208c9ba4350</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -123,6 +123,6 @@
         ' or . = '
           Checkout
         ')]</value>
-      <webElementGuid>6956e225-3fff-4925-8995-b9ce528dd87d</webElementGuid>
+      <webElementGuid>cbf2dca1-3edc-481b-8239-e8322bd15c81</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

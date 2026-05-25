@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//iframe[@id='aba_webservice']</value>
+         <value>//div[@id='aba-checkout']</value>
       </entry>
       <entry>
          <key>CSS</key>

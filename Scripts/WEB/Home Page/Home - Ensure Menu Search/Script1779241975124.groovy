@@ -31,3 +31,5 @@ WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphon
 
 WebUI.takeScreenshot()
 
+WebUI.closeBrowser()
+

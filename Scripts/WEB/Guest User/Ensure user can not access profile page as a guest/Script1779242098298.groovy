@@ -23,3 +23,7 @@ WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
 WebUI.click(findTestObject('Registration/icon-acount'))
 
+WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
+

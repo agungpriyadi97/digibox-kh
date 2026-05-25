@@ -41,3 +41,7 @@ WebUI.click(findTestObject('Guest User/Track Your Order/btn_Continue'))
 
 WebUI.verifyTextPresent('Verification code error.', false)
 
+WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
+

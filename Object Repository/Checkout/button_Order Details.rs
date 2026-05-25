@@ -10,12 +10,12 @@
          <value>//*[@type = 'button' and (text() = 'Order Details' or . = 'Order Details')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[contains(@class,'order-item')][last()]//button[.//span='Order Details']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.el-button.el-button--default.el-button--small.gt-button</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@type='button'])[4]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

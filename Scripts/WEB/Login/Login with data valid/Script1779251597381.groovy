@@ -35,3 +35,5 @@ WebUI.verifyElementVisible(findTestObject('Home Page/verify-succes-acount-login'
 
 WebUI.takeScreenshot()
 
+WebUI.closeBrowser()
+

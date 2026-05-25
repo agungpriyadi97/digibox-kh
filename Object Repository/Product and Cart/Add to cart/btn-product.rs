@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//p[normalize-space()='IPHONE 11 PRO 128 GB DEEP PURPLE']</value>
+         <value>//div[@id='waterfallWrapper1779689114862']/div/section/div/div/div/div[2]/p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

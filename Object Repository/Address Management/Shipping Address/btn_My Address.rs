@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[normalize-space()='My Address']</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='My Orders'])[1]/following::div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

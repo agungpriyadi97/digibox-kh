@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>f9974756-9883-453b-89c1-a08e2ba89ead</webElementGuid>
+      <webElementGuid>1deb2319-5cad-47f9-8735-20b31098e1d0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>primary</value>
-      <webElementGuid>dd268a35-8256-4a3b-8bfb-22b9f5b9e577</webElementGuid>
+      <webElementGuid>2a18b6f3-222f-4456-b6db-f623b51856b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>el-button el-button--primary el-button--large gt-button</value>
-      <webElementGuid>fd5bc3e8-49bd-4fb2-87aa-c0175a1fb4f0</webElementGuid>
+      <webElementGuid>f592e925-d454-485f-8cb3-b459dd929c64</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>size</name>
       <type>Main</type>
       <value>large</value>
-      <webElementGuid>52635389-0def-42ed-92bc-38d27d2b1731</webElementGuid>
+      <webElementGuid>42245f7b-85e8-4825-9f18-0fd10bc0fe33</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <value>
                   Checkout
                 </value>
-      <webElementGuid>b22101fd-fa0c-4fb7-b48a-bc83af60bcc6</webElementGuid>
+      <webElementGuid>49a37eb6-f668-4b01-8d84-f92e7298053c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;page-view&quot;)/div[@class=&quot;gt-layout page-layout_pc&quot;]/section[@class=&quot;page-shop-cart page-view__child&quot;]/section[@class=&quot;page-shopcart_tab&quot;]/section[@class=&quot;gt-page-shop-cart&quot;]/section[@class=&quot;gt-page_shopcart&quot;]/section[@class=&quot;page-shopCart_container&quot;]/div[@class=&quot;page-shopCart_container_right&quot;]/div[@class=&quot;gt-skeleton&quot;]/div[@class=&quot;page-shopCart_container_right_content&quot;]/div[@class=&quot;checkout-btn&quot;]/button[@class=&quot;el-button el-button--primary el-button--large gt-button&quot;]</value>
-      <webElementGuid>164ce5d5-ef50-46f6-8fef-f105ccf5c1d5</webElementGuid>
+      <webElementGuid>1b852fcc-9650-45c1-a7b3-abf8bfc22329</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@type='primary']</value>
-      <webElementGuid>085b07f0-76d7-4e8c-a5b7-d24453d45f30</webElementGuid>
+      <webElementGuid>1be202d4-6ae0-43b4-9f05-5462fbfe6fc6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='page-view']/div/section/section/section/section/section/div[2]/div/div/div/button</value>
-      <webElementGuid>259ec708-cd68-4adf-8608-356a44f997b9</webElementGuid>
+      <webElementGuid>06bcd230-ea75-4bc6-8db6-5e1f4dc62e90</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='$ 430'])[3]/following::button[1]</value>
-      <webElementGuid>396edf58-ef10-4cef-8b84-391c0317e253</webElementGuid>
+      <webElementGuid>ac369840-84dc-4b4e-9aa3-cbeb33f1d3f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +103,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Total'])[1]/following::button[1]</value>
-      <webElementGuid>ab538739-d10f-466e-a185-f1c44760183d</webElementGuid>
+      <webElementGuid>007b31f2-0445-4981-897b-300270406989</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +111,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='MAPPLE MITRA ADIPERKASA (CAMBODIA) CO., LTD'])[1]/preceding::button[1]</value>
-      <webElementGuid>6023807d-1bcc-441b-b155-3e992ed581a3</webElementGuid>
+      <webElementGuid>f76e69a1-ce92-472e-b446-5175a191556b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -119,7 +119,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/button</value>
-      <webElementGuid>74c26aaf-001c-4cea-8934-3e054c01342f</webElementGuid>
+      <webElementGuid>bbc8a367-392f-490a-92a8-d503d17755a2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -131,6 +131,6 @@
                 ' or . = '
                   Checkout
                 ')]</value>
-      <webElementGuid>080cf1dd-a2ec-41d3-aa47-7c93daaf77fc</webElementGuid>
+      <webElementGuid>cb465cf2-9ef8-4e79-92f1-5abc8c19be54</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

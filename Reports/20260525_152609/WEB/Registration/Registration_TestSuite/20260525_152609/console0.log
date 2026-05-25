@@ -1,0 +1,119 @@
+2026-05-25 15:26:12.974 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\AgungPriyadi\.katalon\packages\KS-11.1.3\configuration\org.eclipse.osgi\150\0\.cp\resources\logback\logback-execution.xml
+2026-05-25 15:26:12.977 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\AgungPriyadi\git\digibox-kh\Include\config\log.properties
+2026-05-25 15:26:13.668 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/WEB/Registration/Registration_TestSuite
+2026-05-25 15:26:13.739 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Agung Priyadi
+2026-05-25 15:26:13.740 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = digibox-kh
+2026-05-25 15:26:13.740 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = AgungPriyadi - NB-GDA-55026
+2026-05-25 15:26:13.741 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-05-25 15:26:13.741 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.110.9
+2026-05-25 15:26:13.742 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.1.3.0
+2026-05-25 15:26:13.864 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-25 15:26:13.864 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Registration/Register with duplicate Account
+2026-05-25 15:26:14.070 DEBUG t.Register with duplicate Account        - 1: openBrowser(URL)
+2026-05-25 15:26:14.458 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-05-25 15:26:14.463 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--start-maximized]']
+2026-05-25 15:26:14.505 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-25 15:26:18.474 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 8fa7759dea4f35fa0f42a4cb29cfee23
+2026-05-25 15:26:18.489 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-25 15:26:18.489 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-25 15:26:18.489 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-25 15:26:18.489 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-25 15:26:20.339 DEBUG t.Register with duplicate Account        - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-25 15:26:21.006 DEBUG t.Register with duplicate Account        - 3: click(findTestObject("Registration/icon-acount"))
+2026-05-25 15:26:21.648 DEBUG t.Register with duplicate Account        - 4: click(findTestObject("Registration/btn-create-new-account"))
+2026-05-25 15:26:22.549 DEBUG t.Register with duplicate Account        - 5: setText(findTestObject("Registration/field-Email"), "agungpriyadi@gmail.com")
+2026-05-25 15:26:24.174 DEBUG t.Register with duplicate Account        - 6: setText(findTestObject("Registration/field-account"), "agungpriyadi")
+2026-05-25 15:26:25.344 DEBUG t.Register with duplicate Account        - 7: setText(findTestObject("Registration/field-Password"), "Laskar123456")
+2026-05-25 15:26:26.646 DEBUG t.Register with duplicate Account        - 8: click(findTestObject("Registration/btn-sign-up"))
+2026-05-25 15:26:27.254 DEBUG t.Register with duplicate Account        - 9: verifyElementText(findTestObject("Registration/verify-duplicate-account"), "The account has already exist.")
+2026-05-25 15:26:28.185 DEBUG t.Register with duplicate Account        - 10: takeScreenshot()
+2026-05-25 15:26:28.649 DEBUG t.Register with duplicate Account        - 11: closeBrowser()
+2026-05-25 15:26:31.235 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Registration/Register with duplicate Account' .
+2026-05-25 15:26:31.236 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Registration/Register with duplicate Account
+2026-05-25 15:26:31.241 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-25 15:26:31.241 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Registration/Register with duplicate Email
+2026-05-25 15:26:31.290 DEBUG testcase.Register with duplicate Email   - 1: openBrowser(URL)
+2026-05-25 15:26:31.291 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-05-25 15:26:31.292 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--start-maximized]']
+2026-05-25 15:26:31.293 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-25 15:26:32.571 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 45db56f844d3d5d5a842875a1195bc49
+2026-05-25 15:26:32.571 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-25 15:26:32.587 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-25 15:26:32.587 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-25 15:26:32.587 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-25 15:26:34.566 DEBUG testcase.Register with duplicate Email   - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-25 15:26:34.918 DEBUG testcase.Register with duplicate Email   - 3: click(findTestObject("Registration/icon-acount"))
+2026-05-25 15:26:35.778 DEBUG testcase.Register with duplicate Email   - 4: click(findTestObject("Registration/btn-create-new-account"))
+2026-05-25 15:26:36.674 DEBUG testcase.Register with duplicate Email   - 5: setText(findTestObject("Registration/field-Email"), "agung.priyadi@gtech.digital")
+2026-05-25 15:26:38.261 DEBUG testcase.Register with duplicate Email   - 6: setText(findTestObject("Registration/field-account"), "agungpriyadi")
+2026-05-25 15:26:39.380 DEBUG testcase.Register with duplicate Email   - 7: setText(findTestObject("Registration/field-Password"), "Laskar123456")
+2026-05-25 15:26:40.744 DEBUG testcase.Register with duplicate Email   - 8: click(findTestObject("Registration/btn-sign-up"))
+2026-05-25 15:26:41.403 DEBUG testcase.Register with duplicate Email   - 9: verifyElementText(findTestObject("Registration/verify-duplicate-email"), "The mobile or email already exist.")
+2026-05-25 15:26:42.187 DEBUG testcase.Register with duplicate Email   - 10: takeScreenshot()
+2026-05-25 15:26:42.631 DEBUG testcase.Register with duplicate Email   - 11: closeBrowser()
+2026-05-25 15:26:45.079 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Registration/Register with duplicate Email' .
+2026-05-25 15:26:45.079 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Registration/Register with duplicate Email
+2026-05-25 15:26:45.082 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-25 15:26:45.082 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Registration/Register with invalid data (email or password)
+2026-05-25 15:26:45.130 DEBUG er with invalid data (email or password) - 1: openBrowser(URL)
+2026-05-25 15:26:45.132 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-05-25 15:26:45.133 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--start-maximized]']
+2026-05-25 15:26:45.134 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-25 15:26:46.408 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 9ad8c98f7616d3e59628f0f94bdbfb7a
+2026-05-25 15:26:46.408 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-25 15:26:46.408 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-25 15:26:46.425 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-25 15:26:46.425 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-25 15:26:48.347 DEBUG er with invalid data (email or password) - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-25 15:26:48.686 DEBUG er with invalid data (email or password) - 3: click(findTestObject("Registration/icon-acount"))
+2026-05-25 15:26:49.642 DEBUG er with invalid data (email or password) - 4: click(findTestObject("Registration/btn-create-new-account"))
+2026-05-25 15:26:50.508 DEBUG er with invalid data (email or password) - 5: setText(findTestObject("Registration/field-Email"), "salahemailgmail.com")
+2026-05-25 15:26:51.929 DEBUG er with invalid data (email or password) - 6: setText(findTestObject("Registration/field-account"), "")
+2026-05-25 15:26:53.053 DEBUG er with invalid data (email or password) - 7: setText(findTestObject("Registration/field-Password"), "")
+2026-05-25 15:26:54.506 DEBUG er with invalid data (email or password) - 8: click(findTestObject("Registration/btn-sign-up"))
+2026-05-25 15:26:55.221 DEBUG er with invalid data (email or password) - 9: verifyElementText(findTestObject("Registration/verify-Email"), "Please enter a valid email address")
+2026-05-25 15:26:55.651 DEBUG er with invalid data (email or password) - 10: verifyElementText(findTestObject("Registration/verify-required"), "Required")
+2026-05-25 15:26:55.948 DEBUG er with invalid data (email or password) - 11: takeScreenshot()
+2026-05-25 15:26:56.445 DEBUG er with invalid data (email or password) - 12: setText(findTestObject("Registration/field-Email"), "agung.priyadi@gtech.digital")
+2026-05-25 15:26:57.455 DEBUG er with invalid data (email or password) - 13: setText(findTestObject("Registration/field-account"), "agungpriyadi")
+2026-05-25 15:26:58.343 DEBUG er with invalid data (email or password) - 14: setText(findTestObject("Registration/field-Password"), "Las")
+2026-05-25 15:26:59.312 DEBUG er with invalid data (email or password) - 15: click(findTestObject("Registration/btn-sign-up"))
+2026-05-25 15:26:59.950 DEBUG er with invalid data (email or password) - 16: verifyElementText(findTestObject("Registration/verify-length"), "Password length is 6-20 digits")
+2026-05-25 15:27:00.367 DEBUG er with invalid data (email or password) - 17: takeScreenshot()
+2026-05-25 15:27:00.782 DEBUG er with invalid data (email or password) - 18: closeBrowser()
+2026-05-25 15:27:03.266 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Registration/Register with invalid data (email or password)' .
+2026-05-25 15:27:03.267 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Registration/Register with invalid data (email or password)
+2026-05-25 15:27:03.270 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-25 15:27:03.271 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Registration/Register with true data
+2026-05-25 15:27:03.339 DEBUG testcase.Register with true data         - 1: randomEmail = custom.RandomData.generateRandomEmail()
+2026-05-25 15:27:03.377 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomEmail is PASSED
+2026-05-25 15:27:03.381 DEBUG testcase.Register with true data         - 2: randomUsername = custom.RandomData.generateRandomUsername()
+2026-05-25 15:27:03.393 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomUsername is PASSED
+2026-05-25 15:27:03.395 DEBUG testcase.Register with true data         - 3: openBrowser(URL)
+2026-05-25 15:27:03.397 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-05-25 15:27:03.397 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--start-maximized]']
+2026-05-25 15:27:03.399 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-25 15:27:04.672 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 4cffa89f5d6510ee6ab35db1d3850933
+2026-05-25 15:27:04.672 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-25 15:27:04.672 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-25 15:27:04.681 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-25 15:27:04.681 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-25 15:27:06.431 DEBUG testcase.Register with true data         - 4: maximizeWindow()
+2026-05-25 15:27:06.536 DEBUG testcase.Register with true data         - 5: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-25 15:27:06.871 DEBUG testcase.Register with true data         - 6: click(findTestObject("Registration/icon-acount"))
+2026-05-25 15:27:07.629 DEBUG testcase.Register with true data         - 7: click(findTestObject("Registration/btn-create-new-account"))
+2026-05-25 15:27:08.548 DEBUG testcase.Register with true data         - 8: setText(findTestObject("Registration/field-Email"), randomEmail)
+2026-05-25 15:27:10.056 DEBUG testcase.Register with true data         - 9: setText(findTestObject("Registration/field-account"), randomUsername)
+2026-05-25 15:27:10.994 DEBUG testcase.Register with true data         - 10: setText(findTestObject("Registration/field-Password"), "Laskar123456")
+2026-05-25 15:27:12.374 DEBUG testcase.Register with true data         - 11: click(findTestObject("Registration/btn-sign-up"))
+2026-05-25 15:27:13.119 DEBUG testcase.Register with true data         - 12: comment("Email used: " + randomEmail)
+2026-05-25 15:27:13.169 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Email used: agungpriyadijto@gmail.com
+2026-05-25 15:27:13.169 DEBUG testcase.Register with true data         - 13: comment("Username used: " + randomUsername)
+2026-05-25 15:27:13.185 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Username used: agung6233884318
+2026-05-25 15:27:13.194 DEBUG testcase.Register with true data         - 14: takeScreenshot()
+2026-05-25 15:27:13.752 DEBUG testcase.Register with true data         - 15: closeBrowser()
+2026-05-25 15:27:16.160 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Registration/Register with true data' .
+2026-05-25 15:27:16.160 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Registration/Register with true data
+2026-05-25 15:27:16.180 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-05-25 15:27:16.180 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/WEB/Registration/Registration_TestSuite
+2026-05-25 15:27:16.180 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

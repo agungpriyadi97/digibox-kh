@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='dropdown-menu-4440']/div/div/div/div/div</value>
+         <value>//ul[@id='dropdown-menu-6353']/div/div/div/div</value>
       </entry>
       <entry>
          <key>CSS</key>

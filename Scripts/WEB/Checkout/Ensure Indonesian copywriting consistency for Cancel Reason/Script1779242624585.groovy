@@ -37,11 +37,11 @@ WebUI.click(findTestObject('Home Page/Search/icon-search'))
 
 WebUI.click(findTestObject('Home Page/Search/field-search'))
 
-WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord('IPHONE 11 PRO 128 GB DEEP PURPLE', Keys.ENTER))
+WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord('IPHONE 12 PRO MAX 128GB GOLD', Keys.ENTER))
 
-WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-11-pro'))
+WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-12 -pro'))
 
-WebUI.click(findTestObject('Product and Cart/Add to cart/btn-product'))
+WebUI.click(findTestObject('Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD'))
 
 WebUI.click(findTestObject('Product and Cart/Add to cart/button_Add to Cart'))
 
@@ -49,9 +49,9 @@ WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-
 
 WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
 
-WebUI.verifyElementVisible(findTestObject('Checkout/btn_checkout'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Checkout/Address/btn_checkout'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Checkout/btn_checkout'))
+WebUI.click(findTestObject('Checkout/Address/btn_checkout'))
 
 WebUI.click(findTestObject('Checkout/Online Payment - Cradit Card'))
 
@@ -59,17 +59,17 @@ WebUI.check(findTestObject('Checkout/Checkbox__I accept'))
 
 WebUI.click(findTestObject('Checkout/button_Checkout_Payment'))
 
-WebUI.waitForElementPresent(findTestObject('Checkout/iframe_payment_online'), 10)
+WebUI.waitForElementPresent(findTestObject('Checkout/Page Checkout/iframe_Credit Card'), 10)
 
-WebUI.click(findTestObject('Checkout/iframe_payment_online'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Checkout/Page Checkout/iframe_Credit Card'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(10)
 
-WebUI.setText(findTestObject('Checkout/input_Card number'), '5156 8399 3770 6777')
+WebUI.setText(findTestObject('Checkout/Page Checkout/field_cardNumber'), '5156 8399 3770 6777')
 
-WebUI.setText(findTestObject('Checkout/input_Expiry date'), '01/30')
+WebUI.setText(findTestObject('Checkout/Page Checkout/field_cardExp'), '01/30')
 
-WebUI.setText(findTestObject('Checkout/input_CVV'), '993')
+WebUI.setText(findTestObject('Checkout/Page Checkout/field_cvv2'), '993')
 
 WebUI.click(findTestObject('Checkout/btn-closed-pay'))
 
@@ -104,4 +104,6 @@ WebUI.scrollToElement(findTestObject('Checkout/Track Order/text_order_status'), 
 WebUI.verifyElementText(findTestObject('Checkout/Track Order/text_order_status'), 'CANCEL')
 
 WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
 

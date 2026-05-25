@@ -33,17 +33,17 @@
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7ceae291-eda3-46cc-9128-0d55e08eb373</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address)</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>3a3f4476-acc9-48ec-8437-fd6224b4be7d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7ceae291-eda3-46cc-9128-0d55e08eb373</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

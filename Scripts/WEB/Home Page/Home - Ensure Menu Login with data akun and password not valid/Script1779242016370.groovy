@@ -35,3 +35,5 @@ WebUI.verifyElementVisible(findTestObject('Home Page/verify-login-not-valid'))
 
 WebUI.takeScreenshot()
 
+WebUI.closeBrowser()
+
