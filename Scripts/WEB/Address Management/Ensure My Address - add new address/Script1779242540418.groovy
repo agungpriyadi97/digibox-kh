@@ -46,13 +46,9 @@ WebUI.click(findTestObject('Login/btn-sign in'))
 
 WebUI.click(findTestObject('Registration/icon-acount'))
 
-not_run: WebUI.waitForElementVisible(findTestObject('Address Management/Shipping Address/btn_My Address'), 4)
-
 WebUI.click(findTestObject('Address Management/Shipping Address/btn_My Address'))
 
-WebUI.click(findTestObject('Address Management/Add New Address/radiobtn_Add New Address'))
-
-not_run: WebUI.waitForElementVisible(findTestObject('Address Management/Add New Address/field_First Name'), 10)
+WebUI.click(findTestObject('Address Management/Add New Address/div_Add New Address'))
 
 WebUI.waitForElementVisible(findTestObject('Address Management/Add New Address/field_First Name'), 0)
 
@@ -86,7 +82,7 @@ WebUI.click(findTestObject('Address Management/Add New Address/dropdown_Select P
 WebUI.waitForElementVisible(findTestObject('Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality'), 
     0)
 
-WebUI.click(findTestObject('Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality'))
+WebUI.click(findTestObject('Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality'), FailureHandling.STOP_ON_FAILURE)
 
 // ================= DISTRICT =================
 WebUI.click(findTestObject('Address Management/Add New Address/dropdown_Districts'))

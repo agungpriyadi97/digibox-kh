@@ -1,0 +1,88 @@
+1
+00:00:00,097 --> 00:00:00,132
+1. randomEmail = custom.RandomData.generateRandomEmail()
+
+2
+00:00:00,133 --> 00:00:00,139
+5. randomFirstName = custom.RandomData.generateRandomFirstName()
+
+3
+00:00:00,140 --> 00:00:00,143
+9. randomLastName = custom.RandomData.generateRandomLastName()
+
+4
+00:00:00,145 --> 00:00:00,155
+13. randomPhone = custom.RandomData.generateRandomPhone()
+
+5
+00:00:00,156 --> 00:00:00,158
+17. randomAddress = custom.RandomData.generateRandomAddress()
+
+6
+00:00:00,159 --> 00:00:00,162
+21. randomCode = custom.RandomData.generateRandomCode()
+
+7
+00:00:00,163 --> 00:00:01,147
+25. openBrowser("")
+
+8
+00:00:01,149 --> 00:00:03,085
+29. navigateToUrl(URL)
+
+9
+00:00:03,087 --> 00:00:03,142
+33. maximizeWindow()
+
+10
+00:00:03,144 --> 00:00:03,412
+37. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+11
+00:00:03,413 --> 00:00:03,802
+41. click(findTestObject("Home Page/Search/icon-search"))
+
+12
+00:00:03,805 --> 00:00:04,638
+45. setText(findTestObject("Home Page/Search/field-search"), "IPHONE 11 PRO 128 GB DEEP PURPLE")
+
+13
+00:00:04,639 --> 00:00:05,993
+49. sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord(ENTER))
+
+14
+00:00:05,994 --> 00:00:08,417
+53. verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-11-pro"))
+
+15
+00:00:08,419 --> 00:00:30,854
+57. click(findTestObject("Product and Cart/Add to cart/btn-product"))
+
+16
+00:00:30,856 --> 00:00:33,388
+61. click(findTestObject("Product and Cart/Add to cart/button_Add to Cart"))
+
+17
+00:00:33,389 --> 00:00:33,850
+65. waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 10)
+
+18
+00:00:33,851 --> 00:00:34,552
+69. click(findTestObject("Product and Cart/Add to cart/i_icon-cart"))
+
+19
+00:00:34,553 --> 00:00:35,782
+73. verifyElementVisible(findTestObject("Checkout/Address/Address Ship To/btn_checkout"))
+
+20
+00:00:35,784 --> 00:00:45,838
+77. click(findTestObject("Checkout/Address/Address Ship To/btn_checkout"))
+
+21
+00:00:45,839 --> 00:00:55,914
+81. waitForElementVisible(findTestObject("Checkout/Checkout guest/field_email"), 10)
+
+22
+00:00:55,915 --> 00:01:10,310
+85. setText(findTestObject("Checkout/Checkout guest/field_email"), randomEmail)
+

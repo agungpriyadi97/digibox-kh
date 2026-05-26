@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Regresstion_Digiboxkh_Web" time="407.76" testsuitescount="2" testsuitespassed="2" testsuitesfailures="0" testsuiteserrors="0" testsuitesincompleted="0" testsuitesskipped="0" tests="8" passed="8" failures="0" errors="0" incompleted="0" skipped="0">
+   <testsuite name="Checkout_TestSuite" tests="4" passed="4" failures="0" errors="0" incompleted="0" skipped="0" time="300.049" timestamp="2026-05-26T05:52:59.878Z" hostname="AgungPriyadi - NB-GDA-55026" id="Test Suites/WEB/Checkout/Checkout_TestSuite" status="PASSED">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Checkout\\Checkout_TestSuite\\20260526_125252"/>
+         <property name="logFiles" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Checkout\\Checkout_TestSuite\\20260526_125252\\console0.log, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Checkout\\Checkout_TestSuite\\20260526_125252\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Checkout\\Checkout_TestSuite\\20260526_125252\\1779774842160.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Checkout\\Checkout_TestSuite\\20260526_125252\\1779774911125.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Checkout\\Checkout_TestSuite\\20260526_125252\\1779774965597.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Checkout\\Checkout_TestSuite\\20260526_125252\\1779775025880.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Checkout\\Checkout_TestSuite\\20260526_125252\\1779775076648.png"/>
+         <property name="executionBindingVariables" value="[]"/>
+         <property name="hostName" value="AgungPriyadi - NB-GDA-55026"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="11.1.3.0"/>
+         <property name="browser" value="Firefox 151.0.1"/>
+         <property name="userFullName" value="Agung Priyadi"/>
+         <property name="hostAddress" value="192.168.110.65"/>
+         <property name="sessionId" value="8cc932e2-6046-4e37-b385-5a908f3d879a"/>
+         <property name="projectName" value="digibox-kh"/>
+         <property name="seleniumVersion" value="4.39.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/WEB/Checkout/Checkout without payment" time="65.387" classname="Test Cases/WEB/Checkout/Checkout without payment" status="PASSED">
+         <system-out><![CDATA[26-05-2026T12:53:00 - [TEST_CASE][PASSED] - Test Cases/WEB/Checkout/Checkout without payment: Test Cases/WEB/Checkout/Checkout without payment
+
+26-05-2026T12:53:00 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+26-05-2026T12:53:00 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+26-05-2026T12:53:00 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T12:53:06 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+26-05-2026T12:53:07 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+26-05-2026T12:53:09 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+26-05-2026T12:53:09 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+26-05-2026T12:53:09 - [MESSAGE][PASSED] - Current window maximized
+
+26-05-2026T12:53:09 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:53:10 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:53:10 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:53:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:53:10 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:53:20 - [MESSAGE][WARNING] - Waiting for element timed out
+
+26-05-2026T12:53:21 - [MESSAGE][WARNING] - Waiting for element timed out
+
+26-05-2026T12:53:21 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:53:21 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:53:22 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:53:22 - [TEST_STEP][PASSED] - click(findTestObject("Login/btn-sign in")): Object: 'Object Repository/Login/btn-sign in' is clicked on
+
+26-05-2026T12:53:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/btn-sign in' is clicked on
+
+26-05-2026T12:53:22 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:53:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:53:23 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/verify-succes-acount-login")): Object 'Object Repository/Home Page/verify-succes-acount-login' is visible
+
+26-05-2026T12:53:25 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/verify-succes-acount-login' is visible
+
+26-05-2026T12:53:25 - [TEST_STEP][PASSED] - click(findTestObject("Home Page/Search/icon-search")): Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+26-05-2026T12:53:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+26-05-2026T12:53:26 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 12 PRO MAX 128GB GOLD", ENTER)): Keys 'ENTER + IPHONE 12 PRO MAX 128GB GOLD' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T12:53:26 - [MESSAGE][PASSED] - Keys 'ENTER + IPHONE 12 PRO MAX 128GB GOLD' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T12:53:26 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-12 -pro")): Object 'Object Repository/Home Page/Search/verify-product-iphone-12 -pro' is visible
+
+26-05-2026T12:53:29 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/verify-product-iphone-12 -pro' is visible
+
+26-05-2026T12:53:29 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD")): Object: 'Object Repository/Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD' is clicked on
+
+26-05-2026T12:53:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD' is clicked on
+
+26-05-2026T12:53:30 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/button_Add to Cart")): Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+26-05-2026T12:53:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+26-05-2026T12:53:32 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 10): Object 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is present
+
+26-05-2026T12:53:32 - [MESSAGE][PASSED] - Object 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is present
+
+26-05-2026T12:53:32 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/i_icon-cart")): Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+26-05-2026T12:53:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+26-05-2026T12:53:33 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Address/Address Ship To/btn_checkout"), 10): Object 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+26-05-2026T12:53:34 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+26-05-2026T12:53:34 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn_checkout")): Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T12:53:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T12:53:35 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/Online Payment - Cradit Card")): Object: 'Object Repository/Checkout/Order Summary/Online Payment - Cradit Card' is clicked on
+
+26-05-2026T12:53:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/Online Payment - Cradit Card' is clicked on
+
+26-05-2026T12:53:38 - [TEST_STEP][PASSED] - check(findTestObject("Checkout/Order Summary/Checkbox__I accept")): Object 'Object Repository/Checkout/Order Summary/Checkbox__I accept' is checked
+
+26-05-2026T12:53:39 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/Checkbox__I accept' is checked
+
+26-05-2026T12:53:39 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/button_Checkout_Payment")): Object: 'Object Repository/Checkout/Order Summary/button_Checkout_Payment' is clicked on
+
+26-05-2026T12:53:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/button_Checkout_Payment' is clicked on
+
+26-05-2026T12:53:40 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Checkout/Page Checkout/iframe_Credit Card"), 10): Object 'Object Repository/Checkout/Page Checkout/iframe_Credit Card' is present
+
+26-05-2026T12:53:45 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Page Checkout/iframe_Credit Card' is present
+
+26-05-2026T12:53:45 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Page Checkout/iframe_Credit Card"), STOP_ON_FAILURE): Object: 'Object Repository/Checkout/Page Checkout/iframe_Credit Card' is clicked on
+
+26-05-2026T12:53:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Page Checkout/iframe_Credit Card' is clicked on
+
+26-05-2026T12:53:46 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+26-05-2026T12:53:56 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+26-05-2026T12:53:56 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Page Checkout/field_cardNumber"), "5156 8399 3770 6777"): Text '5156 8399 3770 6777' is set on object 'Object Repository/Checkout/Page Checkout/field_cardNumber'
+
+26-05-2026T12:53:56 - [MESSAGE][PASSED] - Text '5156 8399 3770 6777' is set on object 'Object Repository/Checkout/Page Checkout/field_cardNumber'
+
+26-05-2026T12:53:56 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Page Checkout/field_cardExp"), "0130"): Text '0130' is set on object 'Object Repository/Checkout/Page Checkout/field_cardExp'
+
+26-05-2026T12:53:57 - [MESSAGE][PASSED] - Text '0130' is set on object 'Object Repository/Checkout/Page Checkout/field_cardExp'
+
+26-05-2026T12:53:57 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Page Checkout/field_cvv2"), "993"): Text '993' is set on object 'Object Repository/Checkout/Page Checkout/field_cvv2'
+
+26-05-2026T12:53:57 - [MESSAGE][PASSED] - Text '993' is set on object 'Object Repository/Checkout/Page Checkout/field_cvv2'
+
+26-05-2026T12:53:58 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/btn-closed-pay")): Object: 'Object Repository/Checkout/Order Summary/btn-closed-pay' is clicked on
+
+26-05-2026T12:53:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/btn-closed-pay' is clicked on
+
+26-05-2026T12:53:58 - [TEST_STEP][PASSED] - waitForAlert(10): Alert is present after 10 second(s).
+
+26-05-2026T12:53:58 - [MESSAGE][PASSED] - Alert is present after 10 second(s).
+
+26-05-2026T12:53:58 - [TEST_STEP][PASSED] - alertText = getAlertText(): Get alert text successfully: 'Are you sure you want to close?'
+
+26-05-2026T12:53:58 - [MESSAGE][PASSED] - Get alert text successfully: 'Are you sure you want to close?'
+
+26-05-2026T12:53:58 - [TEST_STEP][PASSED] - comment(alertText): Are you sure you want to close?
+
+26-05-2026T12:53:58 - [MESSAGE][INFO] - Are you sure you want to close?
+
+26-05-2026T12:53:58 - [TEST_STEP][PASSED] - acceptAlert(): Alert accepted
+
+26-05-2026T12:53:58 - [MESSAGE][PASSED] - Alert accepted
+
+26-05-2026T12:53:58 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Track Order/track your order"), 0): Object 'Object Repository/Checkout/Track Order/track your order' is visible
+
+26-05-2026T12:53:58 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+26-05-2026T12:53:58 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Track Order/track your order' is visible
+
+26-05-2026T12:53:58 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Track Order/track your order")): Object: 'Object Repository/Checkout/Track Order/track your order' is clicked on
+
+26-05-2026T12:54:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Track Order/track your order' is clicked on
+
+26-05-2026T12:54:00 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Track Order/sp-order-list-item")): Object: 'Object Repository/Checkout/Track Order/sp-order-list-item' is clicked on
+
+26-05-2026T12:54:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Track Order/sp-order-list-item' is clicked on
+
+26-05-2026T12:54:01 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Checkout/Track Order/text_order_status"), 7): Scroll to object 'Object Repository/Checkout/Track Order/text_order_status' successfully
+
+26-05-2026T12:54:01 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Checkout/Track Order/text_order_status' successfully
+
+26-05-2026T12:54:01 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Checkout/Track Order/text_order_status"), "WAIT"): Actual text and expected text of test object 'Object Repository/Checkout/Track Order/text_order_status' are matched.
+
+26-05-2026T12:54:02 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Checkout/Track Order/text_order_status' are matched.
+
+26-05-2026T12:54:02 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T12:54:02 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Checkout\\Checkout_TestSuite\\20260526_125252\\1779774842160.png]]
+
+26-05-2026T12:54:02 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T12:54:03 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T12:54:05 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Checkout/Checkout without payment' .
+
+26-05-2026T12:54:05 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Checkout/Checkout without payment' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Checkout/Ensure Indonesian copywriting consistency for Cancel Reason" time="55.05" classname="Test Cases/WEB/Checkout/Ensure Indonesian copywriting consistency for Cancel Reason" status="PASSED">
+         <system-out><![CDATA[26-05-2026T12:55:13 - [TEST_CASE][PASSED] - Test Cases/WEB/Checkout/Ensure Indonesian copywriting consistency for Cancel Reason: Test Cases/WEB/Checkout/Ensure Indonesian copywriting consistency for Cancel Reason
+
+26-05-2026T12:55:14 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T12:55:14 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+26-05-2026T12:55:14 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+26-05-2026T12:55:14 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T12:55:21 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T12:55:21 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:55:21 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:55:21 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:55:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:55:22 - [TEST_STEP][PASSED] - custom.BrowserHelper.closeFirefoxPopup(): custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T12:55:23 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T12:55:23 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+26-05-2026T12:55:23 - [MESSAGE][PASSED] - Keys 'ESCAPE + ' sent to object: 'tempBody'
+
+26-05-2026T12:55:23 - [MESSAGE][PASSED] - Execute JavaScript 'document.body.click();' successfully
+
+26-05-2026T12:55:24 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T12:55:24 - [MESSAGE][PASSED] - custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T12:55:24 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:55:25 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:55:25 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:55:26 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:55:26 - [TEST_STEP][PASSED] - click(findTestObject("Login/btn-sign in")): Object: 'Object Repository/Login/btn-sign in' is clicked on
+
+26-05-2026T12:55:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/btn-sign in' is clicked on
+
+26-05-2026T12:55:26 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:55:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:55:27 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/verify-succes-acount-login")): Object 'Object Repository/Home Page/verify-succes-acount-login' is visible
+
+26-05-2026T12:55:28 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/verify-succes-acount-login' is visible
+
+26-05-2026T12:55:28 - [TEST_STEP][PASSED] - click(findTestObject("Home Page/Search/icon-search")): Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+26-05-2026T12:55:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+26-05-2026T12:55:29 - [TEST_STEP][PASSED] - click(findTestObject("Home Page/Search/field-search")): Object: 'Object Repository/Home Page/Search/field-search' is clicked on
+
+26-05-2026T12:55:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Search/field-search' is clicked on
+
+26-05-2026T12:55:30 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 12 PRO MAX 128GB GOLD", ENTER)): Keys 'ENTER + IPHONE 12 PRO MAX 128GB GOLD' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T12:55:30 - [MESSAGE][PASSED] - Keys 'ENTER + IPHONE 12 PRO MAX 128GB GOLD' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T12:55:30 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-12 -pro")): Object 'Object Repository/Home Page/Search/verify-product-iphone-12 -pro' is visible
+
+26-05-2026T12:55:33 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/verify-product-iphone-12 -pro' is visible
+
+26-05-2026T12:55:33 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD")): Object: 'Object Repository/Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD' is clicked on
+
+26-05-2026T12:55:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD' is clicked on
+
+26-05-2026T12:55:33 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/button_Add to Cart")): Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+26-05-2026T12:55:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+26-05-2026T12:55:36 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 7): Object 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is present
+
+26-05-2026T12:55:36 - [MESSAGE][PASSED] - Object 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is present
+
+26-05-2026T12:55:36 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/i_icon-cart")): Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+26-05-2026T12:55:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+26-05-2026T12:55:37 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Checkout/Address/Address Ship To/btn_checkout"), STOP_ON_FAILURE): Object 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+26-05-2026T12:55:38 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+26-05-2026T12:55:38 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn_checkout")): Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T12:55:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T12:55:38 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/Online Payment - Cradit Card")): Object: 'Object Repository/Checkout/Order Summary/Online Payment - Cradit Card' is clicked on
+
+26-05-2026T12:55:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/Online Payment - Cradit Card' is clicked on
+
+26-05-2026T12:55:40 - [TEST_STEP][PASSED] - check(findTestObject("Checkout/Order Summary/Checkbox__I accept")): Object 'Object Repository/Checkout/Order Summary/Checkbox__I accept' is checked
+
+26-05-2026T12:55:41 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/Checkbox__I accept' is checked
+
+26-05-2026T12:55:41 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/button_Checkout_Payment")): Object: 'Object Repository/Checkout/Order Summary/button_Checkout_Payment' is clicked on
+
+26-05-2026T12:55:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/button_Checkout_Payment' is clicked on
+
+26-05-2026T12:55:42 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Checkout/Page Checkout/iframe_Credit Card"), 10): Object 'Object Repository/Checkout/Page Checkout/iframe_Credit Card' is present
+
+26-05-2026T12:55:46 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Page Checkout/iframe_Credit Card' is present
+
+26-05-2026T12:55:46 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Page Checkout/iframe_Credit Card"), STOP_ON_FAILURE): Object: 'Object Repository/Checkout/Page Checkout/iframe_Credit Card' is clicked on
+
+26-05-2026T12:55:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Page Checkout/iframe_Credit Card' is clicked on
+
+26-05-2026T12:55:47 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+26-05-2026T12:55:57 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+26-05-2026T12:55:57 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Page Checkout/field_cardNumber"), "5156 8399 3770 6777"): Text '5156 8399 3770 6777' is set on object 'Object Repository/Checkout/Page Checkout/field_cardNumber'
+
+26-05-2026T12:55:58 - [MESSAGE][PASSED] - Text '5156 8399 3770 6777' is set on object 'Object Repository/Checkout/Page Checkout/field_cardNumber'
+
+26-05-2026T12:55:58 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Page Checkout/field_cardExp"), "01/30"): Text '01/30' is set on object 'Object Repository/Checkout/Page Checkout/field_cardExp'
+
+26-05-2026T12:55:58 - [MESSAGE][PASSED] - Text '01/30' is set on object 'Object Repository/Checkout/Page Checkout/field_cardExp'
+
+26-05-2026T12:55:58 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Page Checkout/field_cvv2"), "993"): Text '993' is set on object 'Object Repository/Checkout/Page Checkout/field_cvv2'
+
+26-05-2026T12:55:58 - [MESSAGE][PASSED] - Text '993' is set on object 'Object Repository/Checkout/Page Checkout/field_cvv2'
+
+26-05-2026T12:55:58 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/btn-closed-pay")): Object: 'Object Repository/Checkout/Order Summary/btn-closed-pay' is clicked on
+
+26-05-2026T12:55:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/btn-closed-pay' is clicked on
+
+26-05-2026T12:55:59 - [TEST_STEP][PASSED] - waitForAlert(10): Alert is present after 10 second(s).
+
+26-05-2026T12:55:59 - [MESSAGE][PASSED] - Alert is present after 10 second(s).
+
+26-05-2026T12:55:59 - [TEST_STEP][PASSED] - alertText = getAlertText(): Get alert text successfully: 'Are you sure you want to close?'
+
+26-05-2026T12:55:59 - [MESSAGE][PASSED] - Get alert text successfully: 'Are you sure you want to close?'
+
+26-05-2026T12:55:59 - [TEST_STEP][PASSED] - comment(alertText): Are you sure you want to close?
+
+26-05-2026T12:55:59 - [MESSAGE][INFO] - Are you sure you want to close?
+
+26-05-2026T12:55:59 - [TEST_STEP][PASSED] - acceptAlert(): Alert accepted
+
+26-05-2026T12:55:59 - [MESSAGE][PASSED] - Alert accepted
+
+26-05-2026T12:55:59 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Track Order/track your order"), 7): Object 'Object Repository/Checkout/Track Order/track your order' is visible
+
+26-05-2026T12:55:59 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Track Order/track your order' is visible
+
+26-05-2026T12:55:59 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Track Order/track your order")): Object: 'Object Repository/Checkout/Track Order/track your order' is clicked on
+
+26-05-2026T12:56:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Track Order/track your order' is clicked on
+
+26-05-2026T12:56:00 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Track Order/sp-order-list-item")): Object: 'Object Repository/Checkout/Track Order/sp-order-list-item' is clicked on
+
+26-05-2026T12:56:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Track Order/sp-order-list-item' is clicked on
+
+26-05-2026T12:56:01 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Checkout/Track Order/btn-cencel"), 10): Scroll to object 'Object Repository/Checkout/Track Order/btn-cencel' successfully
+
+26-05-2026T12:56:02 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Checkout/Track Order/btn-cencel' successfully
+
+26-05-2026T12:56:02 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Track Order/btn-cencel")): Object: 'Object Repository/Checkout/Track Order/btn-cencel' is clicked on
+
+26-05-2026T12:56:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Track Order/btn-cencel' is clicked on
+
+26-05-2026T12:56:02 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Track Order/button_OK"), 7): Object 'Object Repository/Checkout/Track Order/button_OK' is visible
+
+26-05-2026T12:56:03 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Track Order/button_OK' is visible
+
+26-05-2026T12:56:03 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Track Order/button_OK")): Object: 'Object Repository/Checkout/Track Order/button_OK' is clicked on
+
+26-05-2026T12:56:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Track Order/button_OK' is clicked on
+
+26-05-2026T12:56:03 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Track Order/Message_Success"), 10): Object 'Object Repository/Checkout/Track Order/Message_Success' is visible
+
+26-05-2026T12:56:04 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Track Order/Message_Success' is visible
+
+26-05-2026T12:56:04 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Checkout/Track Order/Message_Success")): Object 'Object Repository/Checkout/Track Order/Message_Success' is visible
+
+26-05-2026T12:56:05 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Track Order/Message_Success' is visible
+
+26-05-2026T12:56:05 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Checkout/Track Order/text_order_status"), 5): Scroll to object 'Object Repository/Checkout/Track Order/text_order_status' successfully
+
+26-05-2026T12:56:05 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Checkout/Track Order/text_order_status' successfully
+
+26-05-2026T12:56:05 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Checkout/Track Order/text_order_status"), "CANCEL"): Actual text and expected text of test object 'Object Repository/Checkout/Track Order/text_order_status' are matched.
+
+26-05-2026T12:56:05 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Checkout/Track Order/text_order_status' are matched.
+
+26-05-2026T12:56:05 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T12:56:05 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Checkout\\Checkout_TestSuite\\20260526_125252\\1779774965597.png]]
+
+26-05-2026T12:56:05 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T12:56:06 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T12:56:08 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Checkout/Ensure Indonesian copywriting consistency for Cancel Reason' .
+
+26-05-2026T12:56:08 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Checkout/Ensure Indonesian copywriting consistency for Cancel Reason' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Checkout/Ensure user can checkout the order successfully" time="61.769" classname="Test Cases/WEB/Checkout/Ensure user can checkout the order successfully" status="PASSED">
+         <system-out><![CDATA[26-05-2026T12:56:08 - [TEST_CASE][PASSED] - Test Cases/WEB/Checkout/Ensure user can checkout the order successfully: Test Cases/WEB/Checkout/Ensure user can checkout the order successfully
+
+26-05-2026T12:56:09 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T12:56:09 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+26-05-2026T12:56:09 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T12:56:14 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T12:56:14 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:56:14 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:56:14 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:56:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:56:15 - [TEST_STEP][PASSED] - custom.BrowserHelper.closeFirefoxPopup(): custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T12:56:16 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T12:56:16 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+26-05-2026T12:56:16 - [MESSAGE][PASSED] - Keys 'ESCAPE + ' sent to object: 'tempBody'
+
+26-05-2026T12:56:16 - [MESSAGE][PASSED] - Execute JavaScript 'document.body.click();' successfully
+
+26-05-2026T12:56:17 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T12:56:17 - [MESSAGE][PASSED] - custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T12:56:17 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:56:18 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:56:18 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:56:19 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:56:19 - [TEST_STEP][PASSED] - click(findTestObject("Login/btn-sign in")): Object: 'Object Repository/Login/btn-sign in' is clicked on
+
+26-05-2026T12:56:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/btn-sign in' is clicked on
+
+26-05-2026T12:56:20 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:56:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:56:20 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/verify-succes-acount-login")): Object 'Object Repository/Home Page/verify-succes-acount-login' is visible
+
+26-05-2026T12:56:23 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/verify-succes-acount-login' is visible
+
+26-05-2026T12:56:23 - [TEST_STEP][PASSED] - click(findTestObject("Home Page/Search/icon-search")): Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+26-05-2026T12:56:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+26-05-2026T12:56:23 - [TEST_STEP][PASSED] - click(findTestObject("Home Page/Search/field-search")): Object: 'Object Repository/Home Page/Search/field-search' is clicked on
+
+26-05-2026T12:56:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Search/field-search' is clicked on
+
+26-05-2026T12:56:24 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 12 PRO MAX 128GB GOLD", ENTER)): Keys 'ENTER + IPHONE 12 PRO MAX 128GB GOLD' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T12:56:24 - [MESSAGE][PASSED] - Keys 'ENTER + IPHONE 12 PRO MAX 128GB GOLD' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T12:56:24 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-12 -pro")): Object 'Object Repository/Home Page/Search/verify-product-iphone-12 -pro' is visible
+
+26-05-2026T12:56:27 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/verify-product-iphone-12 -pro' is visible
+
+26-05-2026T12:56:27 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD")): Object: 'Object Repository/Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD' is clicked on
+
+26-05-2026T12:56:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD' is clicked on
+
+26-05-2026T12:56:27 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/button_Add to Cart")): Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+26-05-2026T12:56:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+26-05-2026T12:56:30 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 7): Object 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is present
+
+26-05-2026T12:56:30 - [MESSAGE][PASSED] - Object 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is present
+
+26-05-2026T12:56:30 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/i_icon-cart")): Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+26-05-2026T12:56:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+26-05-2026T12:56:31 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Checkout/Address/Address Ship To/btn_checkout"), STOP_ON_FAILURE): Object 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+26-05-2026T12:56:32 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+26-05-2026T12:56:32 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn_checkout")): Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T12:56:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T12:56:32 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/Online Payment - Cradit Card")): Object: 'Object Repository/Checkout/Order Summary/Online Payment - Cradit Card' is clicked on
+
+26-05-2026T12:56:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/Online Payment - Cradit Card' is clicked on
+
+26-05-2026T12:56:35 - [TEST_STEP][PASSED] - check(findTestObject("Checkout/Order Summary/Checkbox__I accept")): Object 'Object Repository/Checkout/Order Summary/Checkbox__I accept' is checked
+
+26-05-2026T12:56:36 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/Checkbox__I accept' is checked
+
+26-05-2026T12:56:36 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/button_Checkout_Payment")): Object: 'Object Repository/Checkout/Order Summary/button_Checkout_Payment' is clicked on
+
+26-05-2026T12:56:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/button_Checkout_Payment' is clicked on
+
+26-05-2026T12:56:37 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Checkout/Page Checkout/iframe_Credit Card"), 10): Object 'Object Repository/Checkout/Page Checkout/iframe_Credit Card' is present
+
+26-05-2026T12:56:42 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Page Checkout/iframe_Credit Card' is present
+
+26-05-2026T12:56:42 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Page Checkout/iframe_Credit Card"), STOP_ON_FAILURE): Object: 'Object Repository/Checkout/Page Checkout/iframe_Credit Card' is clicked on
+
+26-05-2026T12:56:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Page Checkout/iframe_Credit Card' is clicked on
+
+26-05-2026T12:56:43 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+26-05-2026T12:56:53 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+26-05-2026T12:56:53 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Page Checkout/field_cardNumber"), "5156 8399 3770 6777"): Text '5156 8399 3770 6777' is set on object 'Object Repository/Checkout/Page Checkout/field_cardNumber'
+
+26-05-2026T12:56:53 - [MESSAGE][PASSED] - Text '5156 8399 3770 6777' is set on object 'Object Repository/Checkout/Page Checkout/field_cardNumber'
+
+26-05-2026T12:56:53 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+26-05-2026T12:56:58 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+26-05-2026T12:56:58 - [TEST_STEP][PASSED] - expiry = findTestObject("Checkout/Page Checkout/field_cardExp"): null
+
+26-05-2026T12:56:58 - [TEST_STEP][PASSED] - click(expiry): Object: 'Object Repository/Checkout/Page Checkout/field_cardExp' is clicked on
+
+26-05-2026T12:56:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Page Checkout/field_cardExp' is clicked on
+
+26-05-2026T12:56:59 - [TEST_STEP][PASSED] - sendKeys(expiry, "0"): Keys '0' sent to object: 'Object Repository/Checkout/Page Checkout/field_cardExp'
+
+26-05-2026T12:56:59 - [MESSAGE][PASSED] - Keys '0' sent to object: 'Object Repository/Checkout/Page Checkout/field_cardExp'
+
+26-05-2026T12:56:59 - [TEST_STEP][PASSED] - sendKeys(expiry, "1"): Keys '1' sent to object: 'Object Repository/Checkout/Page Checkout/field_cardExp'
+
+26-05-2026T12:56:59 - [MESSAGE][PASSED] - Keys '1' sent to object: 'Object Repository/Checkout/Page Checkout/field_cardExp'
+
+26-05-2026T12:56:59 - [TEST_STEP][PASSED] - sendKeys(expiry, "3"): Keys '3' sent to object: 'Object Repository/Checkout/Page Checkout/field_cardExp'
+
+26-05-2026T12:57:00 - [MESSAGE][PASSED] - Keys '3' sent to object: 'Object Repository/Checkout/Page Checkout/field_cardExp'
+
+26-05-2026T12:57:00 - [TEST_STEP][PASSED] - sendKeys(expiry, "0"): Keys '0' sent to object: 'Object Repository/Checkout/Page Checkout/field_cardExp'
+
+26-05-2026T12:57:00 - [MESSAGE][PASSED] - Keys '0' sent to object: 'Object Repository/Checkout/Page Checkout/field_cardExp'
+
+26-05-2026T12:57:00 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Page Checkout/field_cvv2"), "993"): Text '993' is set on object 'Object Repository/Checkout/Page Checkout/field_cvv2'
+
+26-05-2026T12:57:00 - [MESSAGE][PASSED] - Text '993' is set on object 'Object Repository/Checkout/Page Checkout/field_cvv2'
+
+26-05-2026T12:57:01 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/button_Pay (1)")): Object: 'Object Repository/Checkout/Order Summary/button_Pay (1)' is clicked on
+
+26-05-2026T12:57:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/button_Pay (1)' is clicked on
+
+26-05-2026T12:57:01 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Checkout/Order Summary/button_Continue shopping"), 10): Object 'Object Repository/Checkout/Order Summary/button_Continue shopping' is present
+
+26-05-2026T12:57:01 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/button_Continue shopping' is present
+
+26-05-2026T12:57:01 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/button_Continue shopping")): Object: 'Object Repository/Checkout/Order Summary/button_Continue shopping' is clicked on
+
+26-05-2026T12:57:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/button_Continue shopping' is clicked on
+
+26-05-2026T12:57:02 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Track Order/track your order"), 0): Object 'Object Repository/Checkout/Track Order/track your order' is visible
+
+26-05-2026T12:57:02 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+26-05-2026T12:57:02 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Track Order/track your order' is visible
+
+26-05-2026T12:57:02 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Track Order/track your order")): Object: 'Object Repository/Checkout/Track Order/track your order' is clicked on
+
+26-05-2026T12:57:03 - [MESSAGE][WARNING] - Error executing waiting script: Document was unloaded
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: com.kms.katalon.selenium.driver.CFirefoxDriver
+Command: [a90dc9fc-42e7-4cbd-bfbb-ff9135a9b6fa, executeAsyncScript {script=async function waitWithDOMMutation(validator, timeout) {
+    return new Promise((resolve, reject) => {
+        try {
+            if (timeout <= 0) {
+                resolve(false);
+                return;
+            }
+
+            if (validator()) {
+                resolve(true);
+                return;
+            }
+
+            const observer = new MutationObserver((mutations) => {
+                if (validator()) {
+                    observer.disconnect();
+                    resolve(true);
+                }
+            });
+
+            observer.observe(document.body, { childList: true, attributes: true, subtree: true });
+
+            setTimeout(() => {
+                resolve(false);
+                observer.disconnect();
+            }, timeout);
+        } catch (error) {
+            reject(error);
+        }
+    });
+}
+const notifyWaitingResult = arguments[arguments.length - 1];
+const element = arguments[0];
+const timeout = arguments[1];
+
+const ElementWaitingInteractableState = {
+    DONE: 'DONE',
+    ELEMENT_DETACHED: 'ELEMENT_DETACHED',
+    TIMED_OUT: 'TIMED_OUT',
+    ERROR: 'ERROR',
+};
+
+function notifyWaitingError(error) {
+    notifyWaitingResult({ result: ElementWaitingInteractableState.ERROR, error: error.message });
+}
+
+
+// Wait for detached
+waitWithDOMMutation(() => {
+    if (!element || !element.isConnected) {
+        return true;
+    }
+    return false;
+}, timeout).then((isDetached) => {
+    notifyWaitingResult({ result: isDetached
+        ? ElementWaitingInteractableState.ELEMENT_DETACHED
+        : ElementWaitingInteractableState.TIMED_OUT });
+}).catch(notifyWaitingError);
+const positions = [
+    {
+        block: 'start',
+        inline: 'start'
+    },
+    {
+        block: 'center',
+        inline: 'center'
+    },
+    {
+        block: 'end',
+        inline: 'end'
+    },
+    {
+        block: 'start',
+        inline: 'center'
+    },
+    {
+        block: 'start',
+        inline: 'end'
+    },
+    {
+        block: 'center',
+        inline: 'start'
+    },
+    {
+        block: 'center',
+        inline: 'end'
+    },
+    {
+        block: 'end',
+        inline: 'start'
+    },
+    {
+        block: 'end',
+        inline: 'center'
+    }
+];
+function isShadowRoot(element) {
+    return element.shadowRoot != null;
+}
+
+function checkTopMost(element) {
+    var { left, top, width, height } = element.getBoundingClientRect();
+    var centerX = width / 2 + left;
+    var centerY = height / 2 + top;
+    var scopedDocument = element.getRootNode();
+    var elementAtPoint = scopedDocument.elementFromPoint(centerX, centerY);
+    var isTopMost = element === elementAtPoint || element.contains(elementAtPoint);
+    return isTopMost;
+}
+
+function checkAllTopMostPositions(element) {
+    if (checkTopMost(element)) {
+        return true;
+    }
+    return positions.some(position => {
+        element.scrollIntoView({
+            behavior: 'instant',
+            block: position.block,
+            inline: position.inline
+        });
+        return checkTopMost(element);
+    });
+}
+
+waitWithDOMMutation(() => checkAllTopMostPositions(element), timeout).then((waited) => {
+    notifyWaitingResult({ result: waited
+        ? ElementWaitingInteractableState.DONE
+        : ElementWaitingInteractableState.TIMED_OUT });
+}).catch(notifyWaitingError);
+, args=[{element-6066-11e4-a52e-4f735466cecf=f0b99c16-eab7-486d-b148-aea366a9089e}, 9755]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 151.0.1, moz:accessibilityChecks: false, moz:buildID: 20260520211922, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17004, moz:profile: C:\Users\AGUNGP~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: {alert: ignore, beforeUnload: ignore, confirm: ignore, default: ignore, prompt: ignore}, userAgent: Mozilla/5.0 (Windows NT 10...., webSocketUrl: ws://127.0.0.1:49889/sessio...}
+Session ID: a90dc9fc-42e7-4cbd-bfbb-ff9135a9b6fa
+
+26-05-2026T12:57:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Track Order/track your order' is clicked on
+
+26-05-2026T12:57:03 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/button_Order Details")): Object: 'Object Repository/Checkout/button_Order Details' is clicked on
+
+26-05-2026T12:57:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/button_Order Details' is clicked on
+
+26-05-2026T12:57:04 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Checkout/Track Order/verify-order list"), 7): Scroll to object 'Object Repository/Checkout/Track Order/verify-order list' successfully
+
+26-05-2026T12:57:05 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Checkout/Track Order/verify-order list' successfully
+
+26-05-2026T12:57:05 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T12:57:06 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Checkout\\Checkout_TestSuite\\20260526_125252\\1779775025880.png]]
+
+26-05-2026T12:57:06 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T12:57:08 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T12:57:10 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Checkout/Ensure user can checkout the order successfully' .
+
+26-05-2026T12:57:10 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Checkout/Ensure user can checkout the order successfully' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Checkout/Guest Checkout" time="49.269" classname="Test Cases/WEB/Checkout/Guest Checkout" status="PASSED">
+         <system-out><![CDATA[26-05-2026T12:57:10 - [TEST_CASE][PASSED] - Test Cases/WEB/Checkout/Guest Checkout: Test Cases/WEB/Checkout/Guest Checkout
+
+26-05-2026T12:57:10 - [TEST_STEP][PASSED] - randomEmail = custom.RandomData.generateRandomEmail(): custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T12:57:10 - [MESSAGE][PASSED] - custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T12:57:10 - [TEST_STEP][PASSED] - randomFirstName = custom.RandomData.generateRandomFirstName(): custom.RandomData.generateRandomFirstName is PASSED
+
+26-05-2026T12:57:10 - [MESSAGE][PASSED] - custom.RandomData.generateRandomFirstName is PASSED
+
+26-05-2026T12:57:10 - [TEST_STEP][PASSED] - randomLastName = custom.RandomData.generateRandomLastName(): custom.RandomData.generateRandomLastName is PASSED
+
+26-05-2026T12:57:10 - [MESSAGE][PASSED] - custom.RandomData.generateRandomLastName is PASSED
+
+26-05-2026T12:57:10 - [TEST_STEP][PASSED] - randomPhone = custom.RandomData.generateRandomPhone(): custom.RandomData.generateRandomPhone is PASSED
+
+26-05-2026T12:57:10 - [MESSAGE][PASSED] - custom.RandomData.generateRandomPhone is PASSED
+
+26-05-2026T12:57:10 - [TEST_STEP][PASSED] - randomAddress = custom.RandomData.generateRandomAddress(): custom.RandomData.generateRandomAddress is PASSED
+
+26-05-2026T12:57:10 - [MESSAGE][PASSED] - custom.RandomData.generateRandomAddress is PASSED
+
+26-05-2026T12:57:10 - [TEST_STEP][PASSED] - randomCode = custom.RandomData.generateRandomCode(): custom.RandomData.generateRandomCode is PASSED
+
+26-05-2026T12:57:10 - [MESSAGE][PASSED] - custom.RandomData.generateRandomCode is PASSED
+
+26-05-2026T12:57:10 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+26-05-2026T12:57:10 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+26-05-2026T12:57:10 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T12:57:14 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+26-05-2026T12:57:14 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+26-05-2026T12:57:16 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+26-05-2026T12:57:16 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+26-05-2026T12:57:16 - [MESSAGE][PASSED] - Current window maximized
+
+26-05-2026T12:57:16 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:57:16 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:57:16 - [TEST_STEP][PASSED] - click(findTestObject("Home Page/Search/icon-search")): Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+26-05-2026T12:57:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+26-05-2026T12:57:17 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 12 PRO MAX 128GB GOLD", ENTER)): Keys 'ENTER + IPHONE 12 PRO MAX 128GB GOLD' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T12:57:17 - [MESSAGE][PASSED] - Keys 'ENTER + IPHONE 12 PRO MAX 128GB GOLD' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T12:57:17 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-12 -pro")): Object 'Object Repository/Home Page/Search/verify-product-iphone-12 -pro' is visible
+
+26-05-2026T12:57:20 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/verify-product-iphone-12 -pro' is visible
+
+26-05-2026T12:57:20 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD")): Object: 'Object Repository/Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD' is clicked on
+
+26-05-2026T12:57:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD' is clicked on
+
+26-05-2026T12:57:20 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/button_Add to Cart")): Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+26-05-2026T12:57:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+26-05-2026T12:57:23 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 10): Object 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is present
+
+26-05-2026T12:57:23 - [MESSAGE][PASSED] - Object 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is present
+
+26-05-2026T12:57:23 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/i_icon-cart")): Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+26-05-2026T12:57:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+26-05-2026T12:57:24 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Checkout/Address/Address Ship To/btn_checkout")): Object 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+26-05-2026T12:57:25 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+26-05-2026T12:57:25 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn_checkout")): Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T12:57:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T12:57:26 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Checkout guest/field_email"), 10): Object 'Object Repository/Checkout/Checkout guest/field_email' is visible
+
+26-05-2026T12:57:27 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Checkout guest/field_email' is visible
+
+26-05-2026T12:57:27 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Checkout guest/field_email"), randomEmail): Text 'agungpriyadiuog@gmail.com' is set on object 'Object Repository/Checkout/Checkout guest/field_email'
+
+26-05-2026T12:57:27 - [MESSAGE][PASSED] - Text 'agungpriyadiuog@gmail.com' is set on object 'Object Repository/Checkout/Checkout guest/field_email'
+
+26-05-2026T12:57:27 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Checkout guest/btn_continue")): Object: 'Object Repository/Checkout/Checkout guest/btn_continue' is clicked on
+
+26-05-2026T12:57:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Checkout guest/btn_continue' is clicked on
+
+26-05-2026T12:57:28 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Address/Address Ship To/field_First Name"), 10): Object 'Object Repository/Checkout/Address/Address Ship To/field_First Name' is visible
+
+26-05-2026T12:57:29 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/field_First Name' is visible
+
+26-05-2026T12:57:29 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_First Name"), randomFirstName): Text 'Budi' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_First Name'
+
+26-05-2026T12:57:31 - [MESSAGE][PASSED] - Text 'Budi' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_First Name'
+
+26-05-2026T12:57:31 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_Last Name"), randomLastName): Text 'Wijaya' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Last Name'
+
+26-05-2026T12:57:32 - [MESSAGE][PASSED] - Text 'Wijaya' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Last Name'
+
+26-05-2026T12:57:32 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_mobile phone"), randomPhone): Text '08172587063' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_mobile phone'
+
+26-05-2026T12:57:33 - [MESSAGE][PASSED] - Text '08172587063' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_mobile phone'
+
+26-05-2026T12:57:33 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_Address"), randomAddress): Text 'Jakarta Testing 7242' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Address'
+
+26-05-2026T12:57:33 - [MESSAGE][PASSED] - Text 'Jakarta Testing 7242' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Address'
+
+26-05-2026T12:57:33 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/input_ZipPostal Code"), randomCode): Text '158103' is set on object 'Object Repository/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+26-05-2026T12:57:35 - [MESSAGE][PASSED] - Text '158103' is set on object 'Object Repository/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+26-05-2026T12:57:35 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/input_Province")): Object: 'Object Repository/Checkout/Address/Address Ship To/input_Province' is clicked on
+
+26-05-2026T12:57:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/input_Province' is clicked on
+
+26-05-2026T12:57:35 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province"), STOP_ON_FAILURE): Object: 'Object Repository/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is clicked on
+
+26-05-2026T12:57:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is clicked on
+
+26-05-2026T12:57:36 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/input_Select Province")): Object: 'Object Repository/Checkout/Address/Address Ship To/input_Select Province' is clicked on
+
+26-05-2026T12:57:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/input_Select Province' is clicked on
+
+26-05-2026T12:57:36 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province")): Object: 'Object Repository/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is clicked on
+
+26-05-2026T12:57:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is clicked on
+
+26-05-2026T12:57:38 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/input_Districts")): Object: 'Object Repository/Checkout/Address/Address Ship To/input_Districts' is clicked on
+
+26-05-2026T12:57:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/input_Districts' is clicked on
+
+26-05-2026T12:57:39 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts")): Object: 'Object Repository/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is clicked on
+
+26-05-2026T12:57:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is clicked on
+
+26-05-2026T12:57:40 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn-save")): Object: 'Object Repository/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+26-05-2026T12:57:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+26-05-2026T12:57:40 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/Online Payment - WeChat")): Object: 'Object Repository/Checkout/Order Summary/Online Payment - WeChat' is clicked on
+
+26-05-2026T12:57:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/Online Payment - WeChat' is clicked on
+
+26-05-2026T12:57:41 - [TEST_STEP][PASSED] - check(findTestObject("Checkout/Order Summary/Checkbox__I accept")): Object 'Object Repository/Checkout/Order Summary/Checkbox__I accept' is checked
+
+26-05-2026T12:57:41 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/Checkbox__I accept' is checked
+
+26-05-2026T12:57:41 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/button_Checkout_Payment")): Object: 'Object Repository/Checkout/Order Summary/button_Checkout_Payment' is clicked on
+
+26-05-2026T12:57:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/button_Checkout_Payment' is clicked on
+
+26-05-2026T12:57:42 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Checkout/Order Summary/iframe_payment_online"), 7): Object 'Object Repository/Checkout/Order Summary/iframe_payment_online' is present
+
+26-05-2026T12:57:42 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/iframe_payment_online' is present
+
+26-05-2026T12:57:42 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/iframe_payment_online"), STOP_ON_FAILURE): Object: 'Object Repository/Checkout/Order Summary/iframe_payment_online' is clicked on
+
+26-05-2026T12:57:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/iframe_payment_online' is clicked on
+
+26-05-2026T12:57:44 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+26-05-2026T12:57:54 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+26-05-2026T12:57:54 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/button_Approve")): Object: 'Object Repository/Checkout/Order Summary/button_Approve' is clicked on
+
+26-05-2026T12:57:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/button_Approve' is clicked on
+
+26-05-2026T12:57:55 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Checkout/Order Summary/button_Continue shopping"), 10): Object 'Object Repository/Checkout/Order Summary/button_Continue shopping' is present
+
+26-05-2026T12:57:55 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/button_Continue shopping' is present
+
+26-05-2026T12:57:55 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Checkout/Order Summary/button_Continue shopping"), 0): Object 'Object Repository/Checkout/Order Summary/button_Continue shopping' is present
+
+26-05-2026T12:57:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+26-05-2026T12:57:55 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/button_Continue shopping' is present
+
+26-05-2026T12:57:55 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/button_Continue shopping")): Object: 'Object Repository/Checkout/Order Summary/button_Continue shopping' is clicked on
+
+26-05-2026T12:57:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/button_Continue shopping' is clicked on
+
+26-05-2026T12:57:56 - [TEST_STEP][PASSED] - comment("Email      : " + randomEmail): Email      : agungpriyadiuog@gmail.com
+
+26-05-2026T12:57:56 - [MESSAGE][INFO] - Email      : agungpriyadiuog@gmail.com
+
+26-05-2026T12:57:56 - [TEST_STEP][PASSED] - comment("First Name : " + randomFirstName): First Name : Budi
+
+26-05-2026T12:57:56 - [MESSAGE][INFO] - First Name : Budi
+
+26-05-2026T12:57:56 - [TEST_STEP][PASSED] - comment("Last Name  : " + randomLastName): Last Name  : Wijaya
+
+26-05-2026T12:57:56 - [MESSAGE][INFO] - Last Name  : Wijaya
+
+26-05-2026T12:57:56 - [TEST_STEP][PASSED] - comment("Phone      : " + randomPhone): Phone      : 08172587063
+
+26-05-2026T12:57:56 - [MESSAGE][INFO] - Phone      : 08172587063
+
+26-05-2026T12:57:56 - [TEST_STEP][PASSED] - comment("Address    : " + randomAddress): Address    : Jakarta Testing 7242
+
+26-05-2026T12:57:56 - [MESSAGE][INFO] - Address    : Jakarta Testing 7242
+
+26-05-2026T12:57:56 - [TEST_STEP][PASSED] - comment("Code    : " + randomCode): Code    : 158103
+
+26-05-2026T12:57:56 - [MESSAGE][INFO] - Code    : 158103
+
+26-05-2026T12:57:56 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T12:57:56 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Checkout\\Checkout_TestSuite\\20260526_125252\\1779775076648.png]]
+
+26-05-2026T12:57:56 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T12:57:57 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T12:57:59 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Checkout/Guest Checkout' .
+
+26-05-2026T12:57:59 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Checkout/Guest Checkout' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[26-05-2026T12:52:59 - [TEST_SUITE][PASSED] - Checkout_TestSuite: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+   <testsuite name="Registration_TestSuite" tests="4" passed="4" failures="0" errors="0" incompleted="0" skipped="0" time="101.513" timestamp="2026-05-26T05:58:03.172Z" hostname="AgungPriyadi - NB-GDA-55026" id="Test Suites/WEB/Registration/Registration_TestSuite" status="PASSED">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Registration\\Registration_TestSuite\\20260526_125253"/>
+         <property name="logFiles" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Registration\\Registration_TestSuite\\20260526_125253\\console0.log, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Registration\\Registration_TestSuite\\20260526_125253\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Registration\\Registration_TestSuite\\20260526_125253\\1779775102000.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Registration\\Registration_TestSuite\\20260526_125253\\1779775127093.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Registration\\Registration_TestSuite\\20260526_125253\\1779775143645.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Registration\\Registration_TestSuite\\20260526_125253\\1779775161061.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Registration\\Registration_TestSuite\\20260526_125253\\1779775164767.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Registration\\Registration_TestSuite\\20260526_125253\\1779775181406.png"/>
+         <property name="executionBindingVariables" value="[]"/>
+         <property name="hostName" value="AgungPriyadi - NB-GDA-55026"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="11.1.3.0"/>
+         <property name="browser" value="Firefox 151.0.1"/>
+         <property name="userFullName" value="Agung Priyadi"/>
+         <property name="hostAddress" value="192.168.110.65"/>
+         <property name="sessionId" value="38af4159-6229-4e89-907f-ab112c05d98f"/>
+         <property name="projectName" value="digibox-kh"/>
+         <property name="seleniumVersion" value="4.39.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/WEB/Registration/Register with duplicate Account" time="22.067" classname="Test Cases/WEB/Registration/Register with duplicate Account" status="PASSED">
+         <system-out><![CDATA[26-05-2026T12:58:03 - [TEST_CASE][PASSED] - Test Cases/WEB/Registration/Register with duplicate Account: Test Cases/WEB/Registration/Register with duplicate Account
+
+26-05-2026T12:58:03 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T12:58:03 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+26-05-2026T12:58:04 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T12:58:12 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T12:58:13 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:58:14 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:58:14 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:58:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:58:14 - [TEST_STEP][PASSED] - custom.BrowserHelper.closeFirefoxPopup(): custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T12:58:15 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T12:58:15 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+26-05-2026T12:58:16 - [MESSAGE][PASSED] - Keys 'ESCAPE + ' sent to object: 'tempBody'
+
+26-05-2026T12:58:16 - [MESSAGE][PASSED] - Execute JavaScript 'document.body.click();' successfully
+
+26-05-2026T12:58:17 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T12:58:17 - [MESSAGE][PASSED] - custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T12:58:17 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-create-new-account")): Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T12:58:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T12:58:17 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Email"), "agungpriyadi@gmail.com"): Text 'agungpriyadi@gmail.com' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T12:58:18 - [MESSAGE][PASSED] - Text 'agungpriyadi@gmail.com' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T12:58:18 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:58:19 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:58:19 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:58:20 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:58:20 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-sign-up")): Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T12:58:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T12:58:21 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Registration/verify-duplicate-account"), "The account has already exist."): Actual text and expected text of test object 'Object Repository/Registration/verify-duplicate-account' are matched.
+
+26-05-2026T12:58:21 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Registration/verify-duplicate-account' are matched.
+
+26-05-2026T12:58:21 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T12:58:22 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Registration\\Registration_TestSuite\\20260526_125253\\1779775102000.png]]
+
+26-05-2026T12:58:22 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T12:58:23 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T12:58:25 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Registration/Register with duplicate Account' .
+
+26-05-2026T12:58:25 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Registration/Register with duplicate Account' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Registration/Register with duplicate Email" time="17.18" classname="Test Cases/WEB/Registration/Register with duplicate Email" status="PASSED">
+         <system-out><![CDATA[26-05-2026T12:58:49 - [TEST_CASE][PASSED] - Test Cases/WEB/Registration/Register with duplicate Email: Test Cases/WEB/Registration/Register with duplicate Email
+
+26-05-2026T12:58:49 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T12:58:49 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+26-05-2026T12:58:50 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+26-05-2026T12:58:50 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T12:58:55 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T12:58:55 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:58:56 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:58:56 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:58:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:58:56 - [TEST_STEP][PASSED] - custom.BrowserHelper.closeFirefoxPopup(): custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T12:58:57 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T12:58:57 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+26-05-2026T12:58:58 - [MESSAGE][PASSED] - Keys 'ESCAPE + ' sent to object: 'tempBody'
+
+26-05-2026T12:58:58 - [MESSAGE][PASSED] - Execute JavaScript 'document.body.click();' successfully
+
+26-05-2026T12:58:59 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T12:58:59 - [MESSAGE][PASSED] - custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T12:58:59 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-create-new-account")): Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T12:58:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T12:58:59 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Email"), "agung.priyadi@gtech.digital"): Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T12:59:00 - [MESSAGE][PASSED] - Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T12:59:00 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:59:01 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:59:01 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:59:02 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:59:02 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-sign-up")): Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T12:59:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T12:59:02 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Registration/verify-duplicate-email"), "The mobile or email already exist."): Actual text and expected text of test object 'Object Repository/Registration/verify-duplicate-email' are matched.
+
+26-05-2026T12:59:03 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Registration/verify-duplicate-email' are matched.
+
+26-05-2026T12:59:03 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T12:59:04 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Registration\\Registration_TestSuite\\20260526_125253\\1779775143645.png]]
+
+26-05-2026T12:59:04 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T12:59:04 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T12:59:06 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Registration/Register with duplicate Email' .
+
+26-05-2026T12:59:06 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Registration/Register with duplicate Email' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Registration/Register with invalid data (email or password)" time="21.1" classname="Test Cases/WEB/Registration/Register with invalid data (email or password)" status="PASSED">
+         <system-out><![CDATA[26-05-2026T12:59:06 - [TEST_CASE][PASSED] - Test Cases/WEB/Registration/Register with invalid data (email or password): Test Cases/WEB/Registration/Register with invalid data (email or password)
+
+26-05-2026T12:59:06 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T12:59:06 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+26-05-2026T12:59:06 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T12:59:13 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T12:59:13 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:59:13 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:59:13 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:59:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:59:14 - [TEST_STEP][PASSED] - custom.BrowserHelper.closeFirefoxPopup(): custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T12:59:15 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T12:59:15 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+26-05-2026T12:59:15 - [MESSAGE][PASSED] - Keys 'ESCAPE + ' sent to object: 'tempBody'
+
+26-05-2026T12:59:15 - [MESSAGE][PASSED] - Execute JavaScript 'document.body.click();' successfully
+
+26-05-2026T12:59:16 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T12:59:16 - [MESSAGE][PASSED] - custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T12:59:16 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-create-new-account")): Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T12:59:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T12:59:17 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Email"), "salahemailgmail.com"): Text 'salahemailgmail.com' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T12:59:18 - [MESSAGE][PASSED] - Text 'salahemailgmail.com' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T12:59:18 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), ""): Text '' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:59:18 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:59:18 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), ""): Text '' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:59:19 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:59:19 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-sign-up")): Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T12:59:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T12:59:20 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Registration/verify-Email"), "Please enter a valid email address"): Actual text and expected text of test object 'Object Repository/Registration/verify-Email' are matched.
+
+26-05-2026T12:59:20 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Registration/verify-Email' are matched.
+
+26-05-2026T12:59:20 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Registration/verify-required"), "Required"): Actual text and expected text of test object 'Object Repository/Registration/verify-required' are matched.
+
+26-05-2026T12:59:21 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Registration/verify-required' are matched.
+
+26-05-2026T12:59:21 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T12:59:21 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Registration\\Registration_TestSuite\\20260526_125253\\1779775161061.png]]
+
+26-05-2026T12:59:21 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Email"), "agung.priyadi@gtech.digital"): Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T12:59:22 - [MESSAGE][PASSED] - Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T12:59:22 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:59:22 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:59:22 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Las"): Text 'Las' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:59:23 - [MESSAGE][PASSED] - Text 'Las' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:59:23 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-sign-up")): Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T12:59:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T12:59:24 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Registration/verify-length"), "Password length is 6-20 digits"): Actual text and expected text of test object 'Object Repository/Registration/verify-length' are matched.
+
+26-05-2026T12:59:24 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Registration/verify-length' are matched.
+
+26-05-2026T12:59:24 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T12:59:25 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Registration\\Registration_TestSuite\\20260526_125253\\1779775164767.png]]
+
+26-05-2026T12:59:25 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T12:59:25 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T12:59:27 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Registration/Register with invalid data (email or password)' .
+
+26-05-2026T12:59:27 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Registration/Register with invalid data (email or password)' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Registration/Register with true data" time="16.831" classname="Test Cases/WEB/Registration/Register with true data" status="PASSED">
+         <system-out><![CDATA[26-05-2026T12:59:27 - [TEST_CASE][PASSED] - Test Cases/WEB/Registration/Register with true data: Test Cases/WEB/Registration/Register with true data
+
+26-05-2026T12:59:27 - [TEST_STEP][PASSED] - randomEmail = custom.RandomData.generateRandomEmail(): custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T12:59:27 - [MESSAGE][PASSED] - custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T12:59:27 - [TEST_STEP][PASSED] - randomUsername = custom.RandomData.generateRandomUsername(): custom.RandomData.generateRandomUsername is PASSED
+
+26-05-2026T12:59:27 - [MESSAGE][PASSED] - custom.RandomData.generateRandomUsername is PASSED
+
+26-05-2026T12:59:27 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T12:59:27 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+26-05-2026T12:59:27 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T12:59:33 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T12:59:33 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+26-05-2026T12:59:34 - [MESSAGE][PASSED] - Current window maximized
+
+26-05-2026T12:59:34 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:59:34 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T12:59:34 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:59:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T12:59:35 - [TEST_STEP][PASSED] - custom.BrowserHelper.closeFirefoxPopup(): custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T12:59:36 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T12:59:36 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+26-05-2026T12:59:36 - [MESSAGE][PASSED] - Keys 'ESCAPE + ' sent to object: 'tempBody'
+
+26-05-2026T12:59:36 - [MESSAGE][PASSED] - Execute JavaScript 'document.body.click();' successfully
+
+26-05-2026T12:59:37 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T12:59:37 - [MESSAGE][PASSED] - custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T12:59:37 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-create-new-account")): Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T12:59:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T12:59:38 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Email"), randomEmail): Text 'agungpriyadiszq@gmail.com' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T12:59:39 - [MESSAGE][PASSED] - Text 'agungpriyadiszq@gmail.com' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T12:59:39 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), randomUsername): Text 'agung1679597339' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:59:39 - [MESSAGE][PASSED] - Text 'agung1679597339' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T12:59:39 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:59:40 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T12:59:40 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-sign-up")): Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T12:59:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T12:59:41 - [TEST_STEP][PASSED] - comment("Email used: " + randomEmail): Email used: agungpriyadiszq@gmail.com
+
+26-05-2026T12:59:41 - [MESSAGE][INFO] - Email used: agungpriyadiszq@gmail.com
+
+26-05-2026T12:59:41 - [TEST_STEP][PASSED] - comment("Username used: " + randomUsername): Username used: agung1679597339
+
+26-05-2026T12:59:41 - [MESSAGE][INFO] - Username used: agung1679597339
+
+26-05-2026T12:59:41 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T12:59:41 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_125252\\WEB\\Registration\\Registration_TestSuite\\20260526_125253\\1779775181406.png]]
+
+26-05-2026T12:59:41 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T12:59:42 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T12:59:44 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Registration/Register with true data' .
+
+26-05-2026T12:59:44 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Registration/Register with true data' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[26-05-2026T12:58:03 - [TEST_SUITE][PASSED] - Registration_TestSuite: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

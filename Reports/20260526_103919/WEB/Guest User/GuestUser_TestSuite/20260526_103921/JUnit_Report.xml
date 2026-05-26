@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="GuestUser_TestSuite" time="251.401" tests="5" passed="5" failures="0" errors="0" incompleted="0" skipped="0">
+   <testsuite name="GuestUser_TestSuite" tests="5" passed="5" failures="0" errors="0" incompleted="0" skipped="0" time="251.401" timestamp="2026-05-26T03:50:31.017Z" hostname="AgungPriyadi - NB-GDA-55026" id="Test Suites/WEB/Guest User/GuestUser_TestSuite" status="PASSED">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921"/>
+         <property name="logFiles" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\console0.log, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\1779767444440.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\1779767457760.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\1779767475265.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\1779767585868.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\1779767586264.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\1779767667498.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\1779767678326.png"/>
+         <property name="executionBindingVariables" value="[]"/>
+         <property name="hostName" value="AgungPriyadi - NB-GDA-55026"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="11.1.3.0"/>
+         <property name="browser" value="Firefox 151.0.1"/>
+         <property name="userFullName" value="Agung Priyadi"/>
+         <property name="hostAddress" value="192.168.110.65"/>
+         <property name="sessionId" value="6a600c97-066e-4074-b0ff-e5d2f3d8b5ce"/>
+         <property name="projectName" value="digibox-kh"/>
+         <property name="seleniumVersion" value="4.39.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty" time="14.216" classname="Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty" status="PASSED">
+         <system-out><![CDATA[26-05-2026T10:50:46 - [TEST_CASE][PASSED] - Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty: Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty
+
+26-05-2026T10:50:46 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T10:50:46 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+26-05-2026T10:50:47 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+26-05-2026T10:50:47 - [MESSAGE][INFO] - User set preference: ['moz:firefoxOptions', '{prefs={identity.fxaccounts.enabled=false, dom.security.credentialmanagement.identity.enabled=false, signon.rememberSignons=false, network.http.phishy-userpass-length=255, privacy.trackingprotection.enabled=false}}']
+
+26-05-2026T10:50:47 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T10:50:52 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T10:50:52 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T10:50:53 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T10:50:53 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Track Order/track your order")): Object: 'Object Repository/Checkout/Track Order/track your order' is clicked on
+
+26-05-2026T10:50:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Track Order/track your order' is clicked on
+
+26-05-2026T10:50:54 - [TEST_STEP][PASSED] - setText(findTestObject("Guest User/Track Your Order/txtField_Email"), "agung.priyadi@gtech.digital"): Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/Guest User/Track Your Order/txtField_Email'
+
+26-05-2026T10:50:55 - [MESSAGE][PASSED] - Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/Guest User/Track Your Order/txtField_Email'
+
+26-05-2026T10:50:55 - [TEST_STEP][PASSED] - setText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), ""): Text '' is set on object 'Object Repository/Guest User/Track Your Order/txtField_Verification Code'
+
+26-05-2026T10:50:56 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Guest User/Track Your Order/txtField_Verification Code'
+
+26-05-2026T10:50:56 - [TEST_STEP][PASSED] - click(findTestObject("Guest User/Track Your Order/btn_Send")): Object: 'Object Repository/Guest User/Track Your Order/btn_Send' is clicked on
+
+26-05-2026T10:50:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Guest User/Track Your Order/btn_Send' is clicked on
+
+26-05-2026T10:50:56 - [TEST_STEP][PASSED] - verifyTextPresent("The verification code has been sent, please check in the mailbox.", false): Text 'The verification code has been sent, please check in the mailbox.' is present on page 
+
+26-05-2026T10:50:57 - [MESSAGE][PASSED] - Text 'The verification code has been sent, please check in the mailbox.' is present on page 
+
+26-05-2026T10:50:57 - [TEST_STEP][PASSED] - verifyElementHasAttribute(findTestObject("Guest User/Track Your Order/btn_Continue"), "disabled", 5): Object 'Object Repository/Guest User/Track Your Order/btn_Continue' has attribute 'disabled'
+
+26-05-2026T10:50:57 - [MESSAGE][PASSED] - Object 'Object Repository/Guest User/Track Your Order/btn_Continue' has attribute 'disabled'
+
+26-05-2026T10:50:57 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T10:50:58 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\1779767457760.png]]
+
+26-05-2026T10:50:58 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T10:50:58 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T10:51:00 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty' .
+
+26-05-2026T10:51:00 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code" time="17.449" classname="Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code" status="PASSED">
+         <system-out><![CDATA[26-05-2026T10:51:00 - [TEST_CASE][PASSED] - Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code: Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code
+
+26-05-2026T10:51:01 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T10:51:01 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+26-05-2026T10:51:01 - [MESSAGE][INFO] - User set preference: ['moz:firefoxOptions', '{prefs={identity.fxaccounts.enabled=false, dom.security.credentialmanagement.identity.enabled=false, signon.rememberSignons=false, network.http.phishy-userpass-length=255, privacy.trackingprotection.enabled=false}}']
+
+26-05-2026T10:51:01 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T10:51:08 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T10:51:08 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T10:51:09 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T10:51:09 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Track Order/track your order")): Object: 'Object Repository/Checkout/Track Order/track your order' is clicked on
+
+26-05-2026T10:51:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Track Order/track your order' is clicked on
+
+26-05-2026T10:51:09 - [TEST_STEP][PASSED] - setText(findTestObject("Guest User/Track Your Order/txtField_Email"), "agung.priyadi@gtech.digital"): Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/Guest User/Track Your Order/txtField_Email'
+
+26-05-2026T10:51:10 - [MESSAGE][PASSED] - Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/Guest User/Track Your Order/txtField_Email'
+
+26-05-2026T10:51:10 - [TEST_STEP][PASSED] - setText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), ""): Text '' is set on object 'Object Repository/Guest User/Track Your Order/txtField_Verification Code'
+
+26-05-2026T10:51:11 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Guest User/Track Your Order/txtField_Verification Code'
+
+26-05-2026T10:51:11 - [TEST_STEP][PASSED] - click(findTestObject("Guest User/Track Your Order/btn_Send")): Object: 'Object Repository/Guest User/Track Your Order/btn_Send' is clicked on
+
+26-05-2026T10:51:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Guest User/Track Your Order/btn_Send' is clicked on
+
+26-05-2026T10:51:12 - [TEST_STEP][PASSED] - verifyTextPresent("The verification code has been sent, please check in the mailbox.", false): Text 'The verification code has been sent, please check in the mailbox.' is present on page 
+
+26-05-2026T10:51:13 - [MESSAGE][PASSED] - Text 'The verification code has been sent, please check in the mailbox.' is present on page 
+
+26-05-2026T10:51:13 - [TEST_STEP][PASSED] - setText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), "999999"): Text '999999' is set on object 'Object Repository/Guest User/Track Your Order/txtField_Verification Code'
+
+26-05-2026T10:51:13 - [MESSAGE][PASSED] - Text '999999' is set on object 'Object Repository/Guest User/Track Your Order/txtField_Verification Code'
+
+26-05-2026T10:51:13 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Guest User/Track Your Order/btn_Continue"), 10): Object 'Object Repository/Guest User/Track Your Order/btn_Continue' is present
+
+26-05-2026T10:51:14 - [MESSAGE][PASSED] - Object 'Object Repository/Guest User/Track Your Order/btn_Continue' is present
+
+26-05-2026T10:51:14 - [TEST_STEP][PASSED] - click(findTestObject("Guest User/Track Your Order/btn_Continue")): Object: 'Object Repository/Guest User/Track Your Order/btn_Continue' is clicked on
+
+26-05-2026T10:51:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Guest User/Track Your Order/btn_Continue' is clicked on
+
+26-05-2026T10:51:14 - [TEST_STEP][PASSED] - verifyTextPresent("Verification code error.", false): Text 'Verification code error.' is present on page 
+
+26-05-2026T10:51:15 - [MESSAGE][PASSED] - Text 'Verification code error.' is present on page 
+
+26-05-2026T10:51:15 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T10:51:15 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\1779767475265.png]]
+
+26-05-2026T10:51:15 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T10:51:16 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T10:51:18 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code' .
+
+26-05-2026T10:51:18 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Guest User/Ensure user can access track order page as a guest" time="110.967" classname="Test Cases/WEB/Guest User/Ensure user can access track order page as a guest" status="PASSED">
+         <system-out><![CDATA[26-05-2026T10:51:18 - [TEST_CASE][PASSED] - Test Cases/WEB/Guest User/Ensure user can access track order page as a guest: Test Cases/WEB/Guest User/Ensure user can access track order page as a guest
+
+26-05-2026T10:51:18 - [TEST_STEP][PASSED] - randomEmail = custom.RandomData.generateRandomEmail(): custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T10:51:18 - [MESSAGE][PASSED] - custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T10:51:18 - [TEST_STEP][PASSED] - randomFirstName = custom.RandomData.generateRandomFirstName(): custom.RandomData.generateRandomFirstName is PASSED
+
+26-05-2026T10:51:18 - [MESSAGE][PASSED] - custom.RandomData.generateRandomFirstName is PASSED
+
+26-05-2026T10:51:18 - [TEST_STEP][PASSED] - randomLastName = custom.RandomData.generateRandomLastName(): custom.RandomData.generateRandomLastName is PASSED
+
+26-05-2026T10:51:18 - [MESSAGE][PASSED] - custom.RandomData.generateRandomLastName is PASSED
+
+26-05-2026T10:51:18 - [TEST_STEP][PASSED] - randomPhone = custom.RandomData.generateRandomPhone(): custom.RandomData.generateRandomPhone is PASSED
+
+26-05-2026T10:51:18 - [MESSAGE][PASSED] - custom.RandomData.generateRandomPhone is PASSED
+
+26-05-2026T10:51:18 - [TEST_STEP][PASSED] - randomAddress = custom.RandomData.generateRandomAddress(): custom.RandomData.generateRandomAddress is PASSED
+
+26-05-2026T10:51:18 - [MESSAGE][PASSED] - custom.RandomData.generateRandomAddress is PASSED
+
+26-05-2026T10:51:18 - [TEST_STEP][PASSED] - randomCode = custom.RandomData.generateRandomCode(): custom.RandomData.generateRandomCode is PASSED
+
+26-05-2026T10:51:18 - [MESSAGE][PASSED] - custom.RandomData.generateRandomCode is PASSED
+
+26-05-2026T10:51:18 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+26-05-2026T10:51:18 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+26-05-2026T10:51:18 - [MESSAGE][INFO] - User set preference: ['moz:firefoxOptions', '{prefs={identity.fxaccounts.enabled=false, dom.security.credentialmanagement.identity.enabled=false, signon.rememberSignons=false, network.http.phishy-userpass-length=255, privacy.trackingprotection.enabled=false}}']
+
+26-05-2026T10:51:18 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T10:51:23 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+26-05-2026T10:51:23 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+26-05-2026T10:51:25 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+26-05-2026T10:51:25 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+26-05-2026T10:51:25 - [MESSAGE][PASSED] - Current window maximized
+
+26-05-2026T10:51:25 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T10:51:26 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T10:51:26 - [TEST_STEP][PASSED] - click(findTestObject("Home Page/Search/icon-search")): Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+26-05-2026T10:51:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+26-05-2026T10:51:26 - [TEST_STEP][PASSED] - setText(findTestObject("Home Page/Search/field-search"), "IPHONE 11 PRO 128 GB DEEP PURPLE"): Text 'IPHONE 11 PRO 128 GB DEEP PURPLE' is set on object 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T10:51:27 - [MESSAGE][PASSED] - Text 'IPHONE 11 PRO 128 GB DEEP PURPLE' is set on object 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T10:51:27 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T10:51:29 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T10:51:29 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-11-pro")): Object 'Object Repository/Home Page/Search/verify-product-iphone-11-pro' is visible
+
+26-05-2026T10:51:31 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/verify-product-iphone-11-pro' is visible
+
+26-05-2026T10:51:31 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/btn-product")): Object: 'Object Repository/Product and Cart/Add to cart/btn-product' is clicked on
+
+26-05-2026T10:51:41 - [MESSAGE][WARNING] - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Product and Cart/Add to cart/btn-product'. Try using Self-healing.
+
+26-05-2026T10:51:41 - [MESSAGE][INFO] - [WEBUI-SELF-HEALING] No working XPath is found.
+
+26-05-2026T10:51:41 - [MESSAGE][INFO] - [AI Self-Healing] Recovering element locator by using AI Self-Healing...
+
+26-05-2026T10:51:56 - [MESSAGE][INFO] - [AI Self-Healing] Found "3" possible locators:
+ [
+  {
+    "type": "CSS",
+    "value": "#waterfallWrapper1779767490489 .waterfall__item:nth-of-type(1) .product-name",
+    "semanticLocator": "first product name in the product grid (first product card)",
+    "confidence": 0.9,
+    "reason": "Matched parent container id pattern \u0027waterfallWrapper1779...\u0027 from recorded XPath and matched tag p with class \u0027product-name\u0027 (recorded XPath ended with /p). This CSS points to the first .waterfall__item product-name under the visible waterfallWrapper id."
+  },
+  {
+    "type": "XPATH",
+    "value": "//div[@id\u003d\u0027waterfallWrapper1779767490489\u0027]//div[contains(@class,\u0027sp-plp-card__name\u0027)]/p[@class\u003d\u0027product-name\u0027 and normalize-space() \u003d \u0027IPHONE 11 PRO 128 GB DEEP PURPLE\u0027]",
+    "semanticLocator": "product-name p element with exact text \u0027IPHONE 11 PRO 128 GB DEEP PURPLE\u0027 inside waterfallWrapper1779767490489",
+    "confidence": 0.8,
+    "reason": "Matched parent id \u0027waterfallWrapper1779767490489\u0027 (similar to recorded waterfallWrapper id in broken object\u0027s XPath) and matched tag p with class \u0027product-name\u0027 and exact visible text \u0027IPHONE 11 PRO 128 GB DEEP PURPLE\u0027 observed in the page source."
+  },
+  {
+    "type": "CSS",
+    "value": "#waterfallWrapper1779767490489 .waterfall__item .sp-plp-card__name \u003e p.product-name",
+    "semanticLocator": "product name element in any product card inside waterfallWrapper1779767490489 (non-indexed)",
+    "confidence": 0.5,
+    "reason": "Matched container id \u0027waterfallWrapper1779767490489\u0027 from page and tag/class p.product-name (recorded XPath referenced a p). This locator is more general (non-indexed) and may match multiple items, provided as a fallback if first-product-specific locators are unstable."
+  }
+]
+
+26-05-2026T10:51:56 - [MESSAGE][INFO] - [AI Self-Healing] Verifying locator: "#waterfallWrapper1779767490489 .waterfall__item:nth-of-type(1) .product-name"
+
+26-05-2026T10:51:57 - [MESSAGE][INFO] - [AI Self-Healing] Found valid locator: "#waterfallWrapper1779767490489 .waterfall__item:nth-of-type(1) .product-name"
+
+26-05-2026T10:51:57 - [MESSAGE][INFO] - [AI Self-Healing] Screenshot: C:/Users/AgungPriyadi/git/digibox-kh/Reports/Self-healing/Object Repository/Product and Cart/Add to cart/btn-product_XPATH.png
+
+26-05-2026T10:51:57 - [MESSAGE][WARNING] - Waiting for element timed out
+
+26-05-2026T10:51:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/btn-product' is clicked on
+
+26-05-2026T10:51:57 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/button_Add to Cart")): Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+26-05-2026T10:51:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+26-05-2026T10:51:59 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 10): Object 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is present
+
+26-05-2026T10:52:00 - [MESSAGE][PASSED] - Object 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is present
+
+26-05-2026T10:52:00 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/i_icon-cart")): Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+26-05-2026T10:52:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+26-05-2026T10:52:00 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Checkout/Address/Address Ship To/btn_checkout")): Object 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+26-05-2026T10:52:02 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+26-05-2026T10:52:02 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn_checkout")): Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T10:52:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T10:52:02 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Checkout guest/field_email"), 10): Object 'Object Repository/Checkout/Checkout guest/field_email' is visible
+
+26-05-2026T10:52:03 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Checkout guest/field_email' is visible
+
+26-05-2026T10:52:04 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Checkout guest/field_email"), randomEmail): Text 'agungpriyadioly@gmail.com' is set on object 'Object Repository/Checkout/Checkout guest/field_email'
+
+26-05-2026T10:52:04 - [MESSAGE][PASSED] - Text 'agungpriyadioly@gmail.com' is set on object 'Object Repository/Checkout/Checkout guest/field_email'
+
+26-05-2026T10:52:04 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Checkout guest/btn_continue")): Object: 'Object Repository/Checkout/Checkout guest/btn_continue' is clicked on
+
+26-05-2026T10:52:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Checkout guest/btn_continue' is clicked on
+
+26-05-2026T10:52:05 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Address/Address Ship To/field_First Name"), 10): Object 'Object Repository/Checkout/Address/Address Ship To/field_First Name' is visible
+
+26-05-2026T10:52:06 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/field_First Name' is visible
+
+26-05-2026T10:52:06 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_First Name"), randomFirstName): Text 'Agung' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_First Name'
+
+26-05-2026T10:52:08 - [MESSAGE][PASSED] - Text 'Agung' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_First Name'
+
+26-05-2026T10:52:08 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_Last Name"), randomLastName): Text 'Putri' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Last Name'
+
+26-05-2026T10:52:09 - [MESSAGE][PASSED] - Text 'Putri' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Last Name'
+
+26-05-2026T10:52:09 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_mobile phone"), randomPhone): Text '08927317295' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_mobile phone'
+
+26-05-2026T10:52:10 - [MESSAGE][PASSED] - Text '08927317295' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_mobile phone'
+
+26-05-2026T10:52:10 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_Address"), randomAddress): Text 'Jakarta Testing 7574' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Address'
+
+26-05-2026T10:52:10 - [MESSAGE][PASSED] - Text 'Jakarta Testing 7574' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Address'
+
+26-05-2026T10:52:10 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/input_ZipPostal Code"), randomCode): Text '158106' is set on object 'Object Repository/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+26-05-2026T10:52:12 - [MESSAGE][PASSED] - Text '158106' is set on object 'Object Repository/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+26-05-2026T10:52:12 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/input_Province")): Object: 'Object Repository/Checkout/Address/Address Ship To/input_Province' is clicked on
+
+26-05-2026T10:52:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/input_Province' is clicked on
+
+26-05-2026T10:52:13 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province"), STOP_ON_FAILURE): Object: 'Object Repository/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is clicked on
+
+26-05-2026T10:52:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is clicked on
+
+26-05-2026T10:52:13 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/input_Select Province")): Object: 'Object Repository/Checkout/Address/Address Ship To/input_Select Province' is clicked on
+
+26-05-2026T10:52:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/input_Select Province' is clicked on
+
+26-05-2026T10:52:14 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province")): Object: 'Object Repository/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is clicked on
+
+26-05-2026T10:52:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is clicked on
+
+26-05-2026T10:52:15 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/input_Districts")): Object: 'Object Repository/Checkout/Address/Address Ship To/input_Districts' is clicked on
+
+26-05-2026T10:52:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/input_Districts' is clicked on
+
+26-05-2026T10:52:15 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts")): Object: 'Object Repository/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is clicked on
+
+26-05-2026T10:52:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is clicked on
+
+26-05-2026T10:52:16 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn-save")): Object: 'Object Repository/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+26-05-2026T10:52:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+26-05-2026T10:52:17 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/Online Payment - WeChat")): Object: 'Object Repository/Checkout/Order Summary/Online Payment - WeChat' is clicked on
+
+26-05-2026T10:52:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/Online Payment - WeChat' is clicked on
+
+26-05-2026T10:52:17 - [TEST_STEP][PASSED] - check(findTestObject("Checkout/Order Summary/Checkbox__I accept")): Object 'Object Repository/Checkout/Order Summary/Checkbox__I accept' is checked
+
+26-05-2026T10:52:18 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/Checkbox__I accept' is checked
+
+26-05-2026T10:52:18 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn_checkout")): Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T10:52:28 - [MESSAGE][WARNING] - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Checkout/Address/Address Ship To/btn_checkout'. Try using Self-healing.
+
+26-05-2026T10:52:29 - [MESSAGE][WARNING] - [WEBUI-SELF-HEALING] Given xpath expression "xpath=(//button[@type='primary'])[2]" is invalid: TypeError: Document.evaluate: Result type mismatch
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: com.kms.katalon.selenium.driver.CFirefoxDriver
+Command: [70c2d9fe-695c-42ea-855e-17d5fb68d427, findElements {using=xpath, value=xpath=(//button[@type='primary'])[2]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 151.0.1, moz:accessibilityChecks: false, moz:buildID: 20260520211922, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25104, moz:profile: C:\Users\AGUNGP~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: {alert: ignore, beforeUnload: ignore, confirm: ignore, default: ignore, prompt: ignore}, userAgent: Mozilla/5.0 (Windows NT 10...., webSocketUrl: ws://127.0.0.1:50954/sessio...}
+Session ID: 70c2d9fe-695c-42ea-855e-17d5fb68d427
+
+26-05-2026T10:52:29 - [MESSAGE][ERROR] - Failed to execute candidate self-healer, trigger AI-SelfHealing: Given xpath expression "xpath=(//button[@type='primary'])[2]" is invalid: TypeError: Document.evaluate: Result type mismatch
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: com.kms.katalon.selenium.driver.CFirefoxDriver
+Command: [70c2d9fe-695c-42ea-855e-17d5fb68d427, findElements {using=xpath, value=xpath=(//button[@type='primary'])[2]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 151.0.1, moz:accessibilityChecks: false, moz:buildID: 20260520211922, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25104, moz:profile: C:\Users\AGUNGP~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: {alert: ignore, beforeUnload: ignore, confirm: ignore, default: ignore, prompt: ignore}, userAgent: Mozilla/5.0 (Windows NT 10...., webSocketUrl: ws://127.0.0.1:50954/sessio...}
+Session ID: 70c2d9fe-695c-42ea-855e-17d5fb68d427
+
+26-05-2026T10:52:29 - [MESSAGE][INFO] - [AI Self-Healing] Recovering element locator by using AI Self-Healing...
+
+26-05-2026T10:52:48 - [MESSAGE][INFO] - [AI Self-Healing] Found "3" possible locators:
+ [
+  {
+    "type": "XPATH",
+    "value": "//button[contains(@class,\u0027el-button--large\u0027) and contains(@class,\u0027el-button--primary\u0027) and contains(normalize-space(string(.)),\u0027Checkout\u0027)]",
+    "semanticLocator": "Primary large Checkout button in order summary (right column)",
+    "confidence": 0.86,
+    "reason": "Matched class\u003d\u0027el-button--primary el-button--large gt-button\u0027 from broken object attributes AND matched visible text \u0027Checkout\u0027 in the button label."
+  },
+  {
+    "type": "CSS",
+    "value": "button.el-button.action-btn--onpage.el-button--primary.el-button--large.gt-button",
+    "semanticLocator": "Primary large Checkout button (right order summary) by full class chain",
+    "confidence": 0.78,
+    "reason": "Matched class chain \u0027el-button el-button--primary el-button--large gt-button\u0027 from broken object attributes (plus action-btn--onpage present on the same element in the page)."
+  },
+  {
+    "type": "XPATH",
+    "value": "//div[contains(@class,\u0027right\u0027)]//button[contains(@class,\u0027action-btn\u0027) and contains(normalize-space(string(.)),\u0027Checkout\u0027)]",
+    "semanticLocator": "Checkout action button inside right column (order summary)",
+    "confidence": 0.55,
+    "reason": "Matched functional role and visible text \u0027Checkout\u0027 from broken object (button for checkout) and found a button with class containing \u0027action-btn\u0027 and text \u0027Checkout\u0027 in the page\u0027s right column."
+  }
+]
+
+26-05-2026T10:52:48 - [MESSAGE][INFO] - [AI Self-Healing] Verifying locator: "//button[contains(@class,'el-button--large') and contains(@class,'el-button--primary') and contains(normalize-space(string(.)),'Checkout')]"
+
+26-05-2026T10:52:48 - [MESSAGE][INFO] - [AI Self-Healing] Found valid locator: "//button[contains(@class,'el-button--large') and contains(@class,'el-button--primary') and contains(normalize-space(string(.)),'Checkout')]"
+
+26-05-2026T10:52:48 - [MESSAGE][INFO] - [AI Self-Healing] Screenshot: C:/Users/AgungPriyadi/git/digibox-kh/Reports/Self-healing/Object Repository/Checkout/Address/Address Ship To/btn_checkout_XPATH.png
+
+26-05-2026T10:52:48 - [MESSAGE][WARNING] - Waiting for element timed out
+
+26-05-2026T10:52:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T10:52:49 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Checkout/Order Summary/iframe_payment_online"), 7): Object 'Object Repository/Checkout/Order Summary/iframe_payment_online' is present
+
+26-05-2026T10:52:49 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/iframe_payment_online' is present
+
+26-05-2026T10:52:49 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/iframe_payment_online"), STOP_ON_FAILURE): Object: 'Object Repository/Checkout/Order Summary/iframe_payment_online' is clicked on
+
+26-05-2026T10:52:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/iframe_payment_online' is clicked on
+
+26-05-2026T10:52:53 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+26-05-2026T10:53:03 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+26-05-2026T10:53:03 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/button_Approve")): Object: 'Object Repository/Checkout/Order Summary/button_Approve' is clicked on
+
+26-05-2026T10:53:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/button_Approve' is clicked on
+
+26-05-2026T10:53:04 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Checkout/Order Summary/button_Continue shopping"), 10): Object 'Object Repository/Checkout/Order Summary/button_Continue shopping' is present
+
+26-05-2026T10:53:04 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/button_Continue shopping' is present
+
+26-05-2026T10:53:04 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Checkout/Order Summary/button_Continue shopping"), 0): Object 'Object Repository/Checkout/Order Summary/button_Continue shopping' is present
+
+26-05-2026T10:53:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+26-05-2026T10:53:04 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/button_Continue shopping' is present
+
+26-05-2026T10:53:04 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/button_Continue shopping")): Object: 'Object Repository/Checkout/Order Summary/button_Continue shopping' is clicked on
+
+26-05-2026T10:53:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/button_Continue shopping' is clicked on
+
+26-05-2026T10:53:05 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T10:53:06 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\1779767585868.png]]
+
+26-05-2026T10:53:06 - [TEST_STEP][PASSED] - comment("Email      : " + randomEmail): Email      : agungpriyadioly@gmail.com
+
+26-05-2026T10:53:06 - [MESSAGE][INFO] - Email      : agungpriyadioly@gmail.com
+
+26-05-2026T10:53:06 - [TEST_STEP][PASSED] - comment("First Name : " + randomFirstName): First Name : Agung
+
+26-05-2026T10:53:06 - [MESSAGE][INFO] - First Name : Agung
+
+26-05-2026T10:53:06 - [TEST_STEP][PASSED] - comment("Last Name  : " + randomLastName): Last Name  : Putri
+
+26-05-2026T10:53:06 - [MESSAGE][INFO] - Last Name  : Putri
+
+26-05-2026T10:53:06 - [TEST_STEP][PASSED] - comment("Phone      : " + randomPhone): Phone      : 08927317295
+
+26-05-2026T10:53:06 - [MESSAGE][INFO] - Phone      : 08927317295
+
+26-05-2026T10:53:06 - [TEST_STEP][PASSED] - comment("Address    : " + randomAddress): Address    : Jakarta Testing 7574
+
+26-05-2026T10:53:06 - [MESSAGE][INFO] - Address    : Jakarta Testing 7574
+
+26-05-2026T10:53:06 - [TEST_STEP][PASSED] - comment("Code    : " + randomCode): Code    : 158106
+
+26-05-2026T10:53:06 - [MESSAGE][INFO] - Code    : 158106
+
+26-05-2026T10:53:06 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T10:53:06 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\1779767586264.png]]
+
+26-05-2026T10:53:06 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T10:53:07 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T10:53:09 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Guest User/Ensure user can access track order page as a guest' .
+
+26-05-2026T10:53:09 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Guest User/Ensure user can access track order page as a guest' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest" time="82.358" classname="Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest" status="PASSED">
+         <system-out><![CDATA[26-05-2026T10:53:09 - [TEST_CASE][PASSED] - Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest: Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest
+
+26-05-2026T10:53:09 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T10:53:09 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+26-05-2026T10:53:09 - [MESSAGE][INFO] - User set preference: ['moz:firefoxOptions', '{prefs={identity.fxaccounts.enabled=false, dom.security.credentialmanagement.identity.enabled=false, signon.rememberSignons=false, network.http.phishy-userpass-length=255, privacy.trackingprotection.enabled=false}}']
+
+26-05-2026T10:53:09 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T10:53:14 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T10:53:14 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+26-05-2026T10:53:14 - [MESSAGE][PASSED] - Current window maximized
+
+26-05-2026T10:53:14 - [TEST_STEP][PASSED] - enableSmartWait(): null
+
+26-05-2026T10:53:14 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Home Page/header_digibox"), 10): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T10:53:15 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T10:53:15 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T10:53:15 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T10:53:15 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Iphone/menu-iphone"): null
+
+26-05-2026T10:53:15 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:15 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Iphone/menu-iphone' is visible
+
+26-05-2026T10:53:16 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/menu-iphone' is visible
+
+26-05-2026T10:53:16 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Iphone/menu-iphone' is clickable
+
+26-05-2026T10:53:16 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/menu-iphone' is clickable
+
+26-05-2026T10:53:16 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Iphone/menu-iphone' is clicked on
+
+26-05-2026T10:53:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Iphone/menu-iphone' is clicked on
+
+26-05-2026T10:53:16 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:16 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:16 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max"): null
+
+26-05-2026T10:53:16 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:16 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max' is visible
+
+26-05-2026T10:53:17 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max' is visible
+
+26-05-2026T10:53:17 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max' is clickable
+
+26-05-2026T10:53:18 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max' is clickable
+
+26-05-2026T10:53:18 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max' is clicked on
+
+26-05-2026T10:53:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max' is clicked on
+
+26-05-2026T10:53:18 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:18 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:18 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max"): null
+
+26-05-2026T10:53:18 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:18 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max' is visible
+
+26-05-2026T10:53:20 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max' is visible
+
+26-05-2026T10:53:20 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max' is clickable
+
+26-05-2026T10:53:20 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max' is clickable
+
+26-05-2026T10:53:20 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max' is clicked on
+
+26-05-2026T10:53:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max' is clicked on
+
+26-05-2026T10:53:21 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:21 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:21 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 Pro"): null
+
+26-05-2026T10:53:21 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:21 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 Pro' is visible
+
+26-05-2026T10:53:22 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 Pro' is visible
+
+26-05-2026T10:53:22 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 Pro' is clickable
+
+26-05-2026T10:53:22 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 Pro' is clickable
+
+26-05-2026T10:53:22 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 Pro' is clicked on
+
+26-05-2026T10:53:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 Pro' is clicked on
+
+26-05-2026T10:53:23 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:23 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:23 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13"): null
+
+26-05-2026T10:53:23 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:23 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13' is visible
+
+26-05-2026T10:53:24 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13' is visible
+
+26-05-2026T10:53:24 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13' is clickable
+
+26-05-2026T10:53:25 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13' is clickable
+
+26-05-2026T10:53:25 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13' is clicked on
+
+26-05-2026T10:53:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13' is clicked on
+
+26-05-2026T10:53:25 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:25 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:25 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 mini"): null
+
+26-05-2026T10:53:25 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:25 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 mini' is visible
+
+26-05-2026T10:53:26 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 mini' is visible
+
+26-05-2026T10:53:26 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 mini' is clickable
+
+26-05-2026T10:53:27 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 mini' is clickable
+
+26-05-2026T10:53:27 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 mini' is clicked on
+
+26-05-2026T10:53:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 13 mini' is clicked on
+
+26-05-2026T10:53:27 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:27 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 12"): null
+
+26-05-2026T10:53:27 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:27 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 12' is visible
+
+26-05-2026T10:53:28 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 12' is visible
+
+26-05-2026T10:53:28 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 12' is clickable
+
+26-05-2026T10:53:29 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 12' is clickable
+
+26-05-2026T10:53:29 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 12' is clicked on
+
+26-05-2026T10:53:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 12' is clicked on
+
+26-05-2026T10:53:29 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:29 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:29 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 11"): null
+
+26-05-2026T10:53:29 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:29 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 11' is visible
+
+26-05-2026T10:53:30 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 11' is visible
+
+26-05-2026T10:53:30 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 11' is clickable
+
+26-05-2026T10:53:31 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 11' is clickable
+
+26-05-2026T10:53:31 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 11' is clicked on
+
+26-05-2026T10:53:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Iphone/sub-menu-iPhone 11' is clicked on
+
+26-05-2026T10:53:31 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:31 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:31 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Ipad/menu-ipad"): null
+
+26-05-2026T10:53:31 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:31 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Ipad/menu-ipad' is visible
+
+26-05-2026T10:53:33 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Ipad/menu-ipad' is visible
+
+26-05-2026T10:53:33 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Ipad/menu-ipad' is clickable
+
+26-05-2026T10:53:33 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Ipad/menu-ipad' is clickable
+
+26-05-2026T10:53:33 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Ipad/menu-ipad' is clicked on
+
+26-05-2026T10:53:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Ipad/menu-ipad' is clicked on
+
+26-05-2026T10:53:33 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:33 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:33 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Ipad/sub-menu-iPad pro"): null
+
+26-05-2026T10:53:33 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:33 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad pro' is visible
+
+26-05-2026T10:53:35 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad pro' is visible
+
+26-05-2026T10:53:35 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad pro' is clickable
+
+26-05-2026T10:53:35 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad pro' is clickable
+
+26-05-2026T10:53:35 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Ipad/sub-menu-iPad pro' is clicked on
+
+26-05-2026T10:53:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Ipad/sub-menu-iPad pro' is clicked on
+
+26-05-2026T10:53:35 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:35 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:35 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Ipad/sub-menu-iPad Air"): null
+
+26-05-2026T10:53:35 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:35 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad Air' is visible
+
+26-05-2026T10:53:37 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad Air' is visible
+
+26-05-2026T10:53:37 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad Air' is clickable
+
+26-05-2026T10:53:37 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad Air' is clickable
+
+26-05-2026T10:53:37 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Ipad/sub-menu-iPad Air' is clicked on
+
+26-05-2026T10:53:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Ipad/sub-menu-iPad Air' is clicked on
+
+26-05-2026T10:53:37 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:37 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Ipad/sub-menu-iPad Mini"): null
+
+26-05-2026T10:53:37 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:37 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad Mini' is visible
+
+26-05-2026T10:53:39 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad Mini' is visible
+
+26-05-2026T10:53:39 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad Mini' is clickable
+
+26-05-2026T10:53:39 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad Mini' is clickable
+
+26-05-2026T10:53:39 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Ipad/sub-menu-iPad Mini' is clicked on
+
+26-05-2026T10:53:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Ipad/sub-menu-iPad Mini' is clicked on
+
+26-05-2026T10:53:39 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:39 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:39 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Ipad/sub-menu-iPad (Gen 10th)"): null
+
+26-05-2026T10:53:39 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:39 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad (Gen 10th)' is visible
+
+26-05-2026T10:53:41 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad (Gen 10th)' is visible
+
+26-05-2026T10:53:41 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad (Gen 10th)' is clickable
+
+26-05-2026T10:53:41 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad (Gen 10th)' is clickable
+
+26-05-2026T10:53:41 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Ipad/sub-menu-iPad (Gen 10th)' is clicked on
+
+26-05-2026T10:53:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Ipad/sub-menu-iPad (Gen 10th)' is clicked on
+
+26-05-2026T10:53:41 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:41 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:41 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Ipad/sub-menu-iPad"): null
+
+26-05-2026T10:53:41 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:41 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad' is visible
+
+26-05-2026T10:53:43 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad' is visible
+
+26-05-2026T10:53:43 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad' is clickable
+
+26-05-2026T10:53:43 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Ipad/sub-menu-iPad' is clickable
+
+26-05-2026T10:53:43 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Ipad/sub-menu-iPad' is clicked on
+
+26-05-2026T10:53:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Ipad/sub-menu-iPad' is clicked on
+
+26-05-2026T10:53:43 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:43 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:43 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Apple Watch/menu-Apple Watch"): null
+
+26-05-2026T10:53:43 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:43 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Apple Watch/menu-Apple Watch' is visible
+
+26-05-2026T10:53:45 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Apple Watch/menu-Apple Watch' is visible
+
+26-05-2026T10:53:45 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Apple Watch/menu-Apple Watch' is clickable
+
+26-05-2026T10:53:45 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Apple Watch/menu-Apple Watch' is clickable
+
+26-05-2026T10:53:45 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Apple Watch/menu-Apple Watch' is clicked on
+
+26-05-2026T10:53:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Apple Watch/menu-Apple Watch' is clicked on
+
+26-05-2026T10:53:45 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:45 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:45 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 7"): null
+
+26-05-2026T10:53:45 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:45 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 7' is visible
+
+26-05-2026T10:53:47 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 7' is visible
+
+26-05-2026T10:53:47 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 7' is clickable
+
+26-05-2026T10:53:47 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 7' is clickable
+
+26-05-2026T10:53:47 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 7' is clicked on
+
+26-05-2026T10:53:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 7' is clicked on
+
+26-05-2026T10:53:47 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:47 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:48 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 6"): null
+
+26-05-2026T10:53:48 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:48 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 6' is visible
+
+26-05-2026T10:53:49 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 6' is visible
+
+26-05-2026T10:53:49 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 6' is clickable
+
+26-05-2026T10:53:49 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 6' is clickable
+
+26-05-2026T10:53:49 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 6' is clicked on
+
+26-05-2026T10:53:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 6' is clicked on
+
+26-05-2026T10:53:50 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:50 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:50 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 3"): null
+
+26-05-2026T10:53:50 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:50 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 3' is visible
+
+26-05-2026T10:53:51 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 3' is visible
+
+26-05-2026T10:53:51 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 3' is clickable
+
+26-05-2026T10:53:51 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 3' is clickable
+
+26-05-2026T10:53:51 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 3' is clicked on
+
+26-05-2026T10:53:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch 3' is clicked on
+
+26-05-2026T10:53:52 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:52 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:52 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch SE"): null
+
+26-05-2026T10:53:52 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:52 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch SE' is visible
+
+26-05-2026T10:53:53 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch SE' is visible
+
+26-05-2026T10:53:53 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch SE' is clickable
+
+26-05-2026T10:53:53 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch SE' is clickable
+
+26-05-2026T10:53:53 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch SE' is clicked on
+
+26-05-2026T10:53:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch SE' is clicked on
+
+26-05-2026T10:53:54 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:54 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:54 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra"): null
+
+26-05-2026T10:53:54 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:54 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra' is visible
+
+26-05-2026T10:53:55 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra' is visible
+
+26-05-2026T10:53:55 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra' is clickable
+
+26-05-2026T10:53:55 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra' is clickable
+
+26-05-2026T10:53:55 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra' is clicked on
+
+26-05-2026T10:53:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra' is clicked on
+
+26-05-2026T10:53:56 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:56 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Mac/menu-Mac"): null
+
+26-05-2026T10:53:56 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:56 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Mac/menu-Mac' is visible
+
+26-05-2026T10:53:57 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Mac/menu-Mac' is visible
+
+26-05-2026T10:53:57 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Mac/menu-Mac' is clickable
+
+26-05-2026T10:53:57 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Mac/menu-Mac' is clickable
+
+26-05-2026T10:53:57 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Mac/menu-Mac' is clicked on
+
+26-05-2026T10:53:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Mac/menu-Mac' is clicked on
+
+26-05-2026T10:53:58 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:53:58 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:53:58 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Mac/sub-menu-MacBook Pro"): null
+
+26-05-2026T10:53:58 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:53:58 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Mac/sub-menu-MacBook Pro' is visible
+
+26-05-2026T10:53:59 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Mac/sub-menu-MacBook Pro' is visible
+
+26-05-2026T10:53:59 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Mac/sub-menu-MacBook Pro' is clickable
+
+26-05-2026T10:54:00 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Mac/sub-menu-MacBook Pro' is clickable
+
+26-05-2026T10:54:00 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Mac/sub-menu-MacBook Pro' is clicked on
+
+26-05-2026T10:54:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Mac/sub-menu-MacBook Pro' is clicked on
+
+26-05-2026T10:54:00 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:00 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:00 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Mac/sub-menu-MacBook Air"): null
+
+26-05-2026T10:54:00 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:54:00 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Mac/sub-menu-MacBook Air' is visible
+
+26-05-2026T10:54:01 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Mac/sub-menu-MacBook Air' is visible
+
+26-05-2026T10:54:01 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Mac/sub-menu-MacBook Air' is clickable
+
+26-05-2026T10:54:02 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Mac/sub-menu-MacBook Air' is clickable
+
+26-05-2026T10:54:02 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Mac/sub-menu-MacBook Air' is clicked on
+
+26-05-2026T10:54:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Mac/sub-menu-MacBook Air' is clicked on
+
+26-05-2026T10:54:02 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:02 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:02 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Airpods/menu-AirPods"): null
+
+26-05-2026T10:54:02 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:54:02 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Airpods/menu-AirPods' is visible
+
+26-05-2026T10:54:03 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Airpods/menu-AirPods' is visible
+
+26-05-2026T10:54:03 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Airpods/menu-AirPods' is clickable
+
+26-05-2026T10:54:04 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Airpods/menu-AirPods' is clickable
+
+26-05-2026T10:54:04 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Airpods/menu-AirPods' is clicked on
+
+26-05-2026T10:54:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Airpods/menu-AirPods' is clicked on
+
+26-05-2026T10:54:04 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:04 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:04 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods Max"): null
+
+26-05-2026T10:54:04 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:54:04 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods Max' is visible
+
+26-05-2026T10:54:05 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods Max' is visible
+
+26-05-2026T10:54:05 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods Max' is clickable
+
+26-05-2026T10:54:06 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods Max' is clickable
+
+26-05-2026T10:54:06 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods Max' is clicked on
+
+26-05-2026T10:54:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods Max' is clicked on
+
+26-05-2026T10:54:06 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:06 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:06 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods Pro"): null
+
+26-05-2026T10:54:06 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:54:06 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods Pro' is visible
+
+26-05-2026T10:54:07 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods Pro' is visible
+
+26-05-2026T10:54:07 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods Pro' is clickable
+
+26-05-2026T10:54:08 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods Pro' is clickable
+
+26-05-2026T10:54:08 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods Pro' is clicked on
+
+26-05-2026T10:54:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods Pro' is clicked on
+
+26-05-2026T10:54:08 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:08 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:08 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods 3rd Generation"): null
+
+26-05-2026T10:54:08 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:54:08 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods 3rd Generation' is visible
+
+26-05-2026T10:54:09 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods 3rd Generation' is visible
+
+26-05-2026T10:54:09 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods 3rd Generation' is clickable
+
+26-05-2026T10:54:10 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods 3rd Generation' is clickable
+
+26-05-2026T10:54:10 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods 3rd Generation' is clicked on
+
+26-05-2026T10:54:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Airpods/sub-menu-AirPods 3rd Generation' is clicked on
+
+26-05-2026T10:54:10 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:10 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:10 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Accessoris/menu-accessoris"): null
+
+26-05-2026T10:54:10 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:54:10 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Accessoris/menu-accessoris' is visible
+
+26-05-2026T10:54:11 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Accessoris/menu-accessoris' is visible
+
+26-05-2026T10:54:11 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Accessoris/menu-accessoris' is clickable
+
+26-05-2026T10:54:12 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Accessoris/menu-accessoris' is clickable
+
+26-05-2026T10:54:12 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Accessoris/menu-accessoris' is clicked on
+
+26-05-2026T10:54:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Accessoris/menu-accessoris' is clicked on
+
+26-05-2026T10:54:12 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:12 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:12 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Accessoris/sub-menu-Aksesoris iPhone"): null
+
+26-05-2026T10:54:12 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:54:12 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Accessoris/sub-menu-Aksesoris iPhone' is visible
+
+26-05-2026T10:54:13 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Accessoris/sub-menu-Aksesoris iPhone' is visible
+
+26-05-2026T10:54:13 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Accessoris/sub-menu-Aksesoris iPhone' is clickable
+
+26-05-2026T10:54:14 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Accessoris/sub-menu-Aksesoris iPhone' is clickable
+
+26-05-2026T10:54:14 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Accessoris/sub-menu-Aksesoris iPhone' is clicked on
+
+26-05-2026T10:54:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Accessoris/sub-menu-Aksesoris iPhone' is clicked on
+
+26-05-2026T10:54:14 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:14 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:14 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Accessoris/sub-menu-Aksesoris iPad"): null
+
+26-05-2026T10:54:14 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:54:14 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Accessoris/sub-menu-Aksesoris iPad' is visible
+
+26-05-2026T10:54:15 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Accessoris/sub-menu-Aksesoris iPad' is visible
+
+26-05-2026T10:54:15 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Accessoris/sub-menu-Aksesoris iPad' is clickable
+
+26-05-2026T10:54:16 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Accessoris/sub-menu-Aksesoris iPad' is clickable
+
+26-05-2026T10:54:16 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Accessoris/sub-menu-Aksesoris iPad' is clicked on
+
+26-05-2026T10:54:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Accessoris/sub-menu-Aksesoris iPad' is clicked on
+
+26-05-2026T10:54:16 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:16 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:16 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Accessoris/sub-menu-MacBook Accessories"): null
+
+26-05-2026T10:54:16 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:54:16 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Accessoris/sub-menu-MacBook Accessories' is visible
+
+26-05-2026T10:54:17 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Accessoris/sub-menu-MacBook Accessories' is visible
+
+26-05-2026T10:54:17 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Accessoris/sub-menu-MacBook Accessories' is clickable
+
+26-05-2026T10:54:18 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Accessoris/sub-menu-MacBook Accessories' is clickable
+
+26-05-2026T10:54:18 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Accessoris/sub-menu-MacBook Accessories' is clicked on
+
+26-05-2026T10:54:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Accessoris/sub-menu-MacBook Accessories' is clicked on
+
+26-05-2026T10:54:18 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:18 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:18 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Accessoris/sub-menu-Watch accessories"): null
+
+26-05-2026T10:54:18 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:54:18 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Accessoris/sub-menu-Watch accessories' is visible
+
+26-05-2026T10:54:19 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Accessoris/sub-menu-Watch accessories' is visible
+
+26-05-2026T10:54:19 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Accessoris/sub-menu-Watch accessories' is clickable
+
+26-05-2026T10:54:20 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Accessoris/sub-menu-Watch accessories' is clickable
+
+26-05-2026T10:54:20 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Accessoris/sub-menu-Watch accessories' is clicked on
+
+26-05-2026T10:54:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Accessoris/sub-menu-Watch accessories' is clicked on
+
+26-05-2026T10:54:20 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:20 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:20 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Promotion/menu-Promotion"): null
+
+26-05-2026T10:54:20 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:54:20 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Promotion/menu-Promotion' is visible
+
+26-05-2026T10:54:21 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Promotion/menu-Promotion' is visible
+
+26-05-2026T10:54:21 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Promotion/menu-Promotion' is clickable
+
+26-05-2026T10:54:22 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Promotion/menu-Promotion' is clickable
+
+26-05-2026T10:54:22 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Promotion/menu-Promotion' is clicked on
+
+26-05-2026T10:54:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Promotion/menu-Promotion' is clicked on
+
+26-05-2026T10:54:22 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:22 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:22 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Promotion/sub-menu-Digimania August 2022"): null
+
+26-05-2026T10:54:22 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:54:22 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Promotion/sub-menu-Digimania August 2022' is visible
+
+26-05-2026T10:54:22 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Promotion/sub-menu-Digimania August 2022' is visible
+
+26-05-2026T10:54:22 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Promotion/sub-menu-Digimania August 2022' is clickable
+
+26-05-2026T10:54:23 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Promotion/sub-menu-Digimania August 2022' is clickable
+
+26-05-2026T10:54:23 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Promotion/sub-menu-Digimania August 2022' is clicked on
+
+26-05-2026T10:54:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Promotion/sub-menu-Digimania August 2022' is clicked on
+
+26-05-2026T10:54:23 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:23 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:23 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Promotion/sub-menu-Flash Sale"): null
+
+26-05-2026T10:54:23 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:54:23 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Promotion/sub-menu-Flash Sale' is visible
+
+26-05-2026T10:54:24 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Promotion/sub-menu-Flash Sale' is visible
+
+26-05-2026T10:54:24 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Promotion/sub-menu-Flash Sale' is clickable
+
+26-05-2026T10:54:25 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Promotion/sub-menu-Flash Sale' is clickable
+
+26-05-2026T10:54:25 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Promotion/sub-menu-Flash Sale' is clicked on
+
+26-05-2026T10:54:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Promotion/sub-menu-Flash Sale' is clicked on
+
+26-05-2026T10:54:25 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:25 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:25 - [TEST_STEP][PASSED] - clickWhenReady("Home Page/Page Enterprice and Education/menu-Enterprise and Education"): null
+
+26-05-2026T10:54:25 - [TEST_STEP][PASSED] - obj = findTestObject(objectPath): null
+
+26-05-2026T10:54:25 - [TEST_STEP][PASSED] - waitForElementVisible(obj, 10): Object 'Object Repository/Home Page/Page Enterprice and Education/menu-Enterprise and Education' is visible
+
+26-05-2026T10:54:26 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Enterprice and Education/menu-Enterprise and Education' is visible
+
+26-05-2026T10:54:26 - [TEST_STEP][PASSED] - waitForElementClickable(obj, 10): Object 'Object Repository/Home Page/Page Enterprice and Education/menu-Enterprise and Education' is clickable
+
+26-05-2026T10:54:27 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Page Enterprice and Education/menu-Enterprise and Education' is clickable
+
+26-05-2026T10:54:27 - [TEST_STEP][PASSED] - click(obj): Object: 'Object Repository/Home Page/Page Enterprice and Education/menu-Enterprise and Education' is clicked on
+
+26-05-2026T10:54:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Page Enterprice and Education/menu-Enterprise and Education' is clicked on
+
+26-05-2026T10:54:27 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T10:54:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T10:54:27 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T10:54:28 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\1779767667498.png]]
+
+26-05-2026T10:54:28 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T10:54:29 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T10:54:31 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest' .
+
+26-05-2026T10:54:31 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest" time="10.665" classname="Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest" status="PASSED">
+         <system-out><![CDATA[26-05-2026T10:54:31 - [TEST_CASE][PASSED] - Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest: Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest
+
+26-05-2026T10:54:31 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T10:54:31 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+26-05-2026T10:54:31 - [MESSAGE][INFO] - User set preference: ['moz:firefoxOptions', '{prefs={identity.fxaccounts.enabled=false, dom.security.credentialmanagement.identity.enabled=false, signon.rememberSignons=false, network.http.phishy-userpass-length=255, privacy.trackingprotection.enabled=false}}']
+
+26-05-2026T10:54:31 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T10:54:37 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T10:54:37 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T10:54:37 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T10:54:37 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T10:54:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T10:54:38 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T10:54:39 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_103919\\WEB\\Guest User\\GuestUser_TestSuite\\20260526_103921\\1779767678326.png]]
+
+26-05-2026T10:54:39 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T10:54:40 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T10:54:42 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest' .
+
+26-05-2026T10:54:42 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[26-05-2026T10:50:31 - [TEST_SUITE][PASSED] - GuestUser_TestSuite: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

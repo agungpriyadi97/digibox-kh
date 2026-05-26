@@ -52,9 +52,9 @@ WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-
 WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
 
 // Checkout
-WebUI.verifyElementVisible(findTestObject('Checkout/Address/btn_checkout'))
+WebUI.verifyElementVisible(findTestObject('Checkout/Address/Address Ship To/btn_checkout'))
 
-WebUI.click(findTestObject('Checkout/Address/btn_checkout'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/btn_checkout'))
 
 // Input guest email
 WebUI.waitForElementVisible(findTestObject('Checkout/Checkout guest/field_email'), 10)
@@ -64,102 +64,102 @@ WebUI.setText(findTestObject('Checkout/Checkout guest/field_email'), randomEmail
 // Continue
 WebUI.click(findTestObject('Checkout/Checkout guest/btn_continue'))
 
-WebUI.waitForElementVisible(findTestObject('Checkout/Address/field_First Name'), 10)
+WebUI.waitForElementVisible(findTestObject('Checkout/Address/Address Ship To/field_First Name'), 10)
 
-WebUI.setText(findTestObject('Checkout/Address/field_First Name'), randomFirstName)
+WebUI.setText(findTestObject('Checkout/Address/Address Ship To/field_First Name'), randomFirstName)
 
-WebUI.setText(findTestObject('Checkout/Address/field_Last Name'), randomLastName)
+WebUI.setText(findTestObject('Checkout/Address/Address Ship To/field_Last Name'), randomLastName)
 
-WebUI.setText(findTestObject('Checkout/Address/field_mobile phone'), randomPhone)
+WebUI.setText(findTestObject('Checkout/Address/Address Ship To/field_mobile phone'), randomPhone)
 
-WebUI.setText(findTestObject('Checkout/Address/field_Address'), randomAddress)
+WebUI.setText(findTestObject('Checkout/Address/Address Ship To/field_Address'), randomAddress)
 
-WebUI.setText(findTestObject('Checkout/Address/input_ZipPostal Code'), randomCode)
+WebUI.setText(findTestObject('Checkout/Address/Address Ship To/input_ZipPostal Code'), randomCode)
 
-WebUI.click(findTestObject('Checkout/Address/input_Province'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/input_Province'))
 
-WebUI.click(findTestObject('Checkout/Address/li_Phnom Penh Capital_Province'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Checkout/Address/input_Select Province'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/input_Select Province'))
 
-WebUI.click(findTestObject('Checkout/Address/li_Khan Chamkar Mon_Select_Province'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province'))
 
-WebUI.click(findTestObject('Checkout/Address/input_Districts'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/input_Districts'))
 
-WebUI.click(findTestObject('Checkout/Address/li_Sangkat Tonle Basak_Districts'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts'))
 
-WebUI.click(findTestObject('Checkout/Address/btn-save'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/btn-save'))
 
 //<-- Add New Address -->
-WebUI.check(findTestObject('Checkout/Address/Billing address same as shipping'))
+WebUI.check(findTestObject('Checkout/Address/Address Billing/Billing address same as shipping'))
 
-WebUI.waitForElementVisible(findTestObject('Checkout/Address/Billing/field_First Name'), 10)
+WebUI.waitForElementVisible(findTestObject('Checkout/Address/Address Billing/field_First Name'), 10)
 
-WebUI.setText(findTestObject('Checkout/Address/Billing/field_First Name'), randomFirstName)
+WebUI.setText(findTestObject('Checkout/Address/Address Billing/field_First Name'), randomFirstName)
 
-WebUI.setText(findTestObject('Checkout/Address/Billing/field_Last Name'), randomLastName)
+WebUI.setText(findTestObject('Checkout/Address/Address Billing/field_Last Name'), randomLastName)
 
-WebUI.setText(findTestObject('Checkout/Address/Billing/field_mobile phone'), randomPhone)
+WebUI.setText(findTestObject('Checkout/Address/Address Billing/field_mobile phone'), randomPhone)
 
-WebUI.setText(findTestObject('Checkout/Address/Billing/field_Address'), randomAddress)
-
-WebUI.setText(findTestObject('Checkout/Address/Billing/input_ZipPostal Code'), randomCode)
+WebUI.setText(findTestObject('Checkout/Address/Address Billing/field_Address'), randomAddress)
 
 // Province
-WebUI.scrollToElement(findTestObject('Checkout/Address/Billing/input_Province'), 5)
+WebUI.scrollToElement(findTestObject('Checkout/Address/Address Billing/input_Province'), 5)
 
-WebUI.waitForElementClickable(findTestObject('Checkout/Address/Billing/input_Province'), 10)
+WebUI.waitForElementClickable(findTestObject('Checkout/Address/Address Billing/input_Province'), 10)
 
-WebUI.click(findTestObject('Checkout/Address/Billing/input_Province'))
+WebUI.click(findTestObject('Checkout/Address/Address Billing/input_Province'))
 
-WebUI.waitForElementVisible(findTestObject('Checkout/Address/li_Phnom Penh Capital_Province'), 10)
+WebUI.waitForElementVisible(findTestObject('Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province'), 10)
 
-WebUI.click(findTestObject('Checkout/Address/li_Phnom Penh Capital_Province'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province'))
 
 // City
-WebUI.waitForElementClickable(findTestObject('Checkout/Address/Billing/input_Select Province'), 10)
+WebUI.waitForElementClickable(findTestObject('Checkout/Address/Address Billing/input_Select Province'), 10)
 
-WebUI.click(findTestObject('Checkout/Address/Billing/input_Select Province'))
+WebUI.click(findTestObject('Checkout/Address/Address Billing/input_Select Province'))
 
-WebUI.waitForElementClickable(findTestObject('Checkout/Address/Billing/li_Khan Mean Chey_1'), 10)
+WebUI.waitForElementClickable(findTestObject('Checkout/Address/Address Billing/li_Khan Mean Chey_1'), 10)
 
-WebUI.mouseOver(findTestObject('Checkout/Address/Billing/li_Khan Mean Chey'))
+WebUI.mouseOver(findTestObject('Checkout/Address/Address Billing/li_Khan Mean Chey'))
 
-WebUI.click(findTestObject('Checkout/Address/Billing/li_Khan Mean Chey_1'))
+WebUI.click(findTestObject('Checkout/Address/Address Billing/li_Khan Mean Chey_1'))
 
 // District
-WebUI.waitForElementClickable(findTestObject('Checkout/Address/Billing/input_Districts'), 10)
+WebUI.waitForElementClickable(findTestObject('Checkout/Address/Address Billing/input_Districts'), 10)
 
-WebUI.click(findTestObject('Checkout/Address/Billing/input_Districts'))
+WebUI.click(findTestObject('Checkout/Address/Address Billing/input_Districts'))
 
-WebUI.waitForElementClickable(findTestObject('Checkout/Address/Billing/li_Sangkat Chak Angrae Kraom'), 10)
+WebUI.waitForElementClickable(findTestObject('Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom'), 10)
 
-WebUI.mouseOver(findTestObject('Checkout/Address/Billing/li_Sangkat Chak Angrae Kraom'))
+WebUI.mouseOver(findTestObject('Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom'))
 
-WebUI.click(findTestObject('Checkout/Address/Billing/li_Sangkat Chak Angrae Kraom_1'))
+WebUI.click(findTestObject('Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom_1'))
 
-WebUI.click(findTestObject('Checkout/Online Payment - WeChat'))
+WebUI.setText(findTestObject('Checkout/Address/Address Billing/input_ZipPostal Code'), randomCode)
 
-WebUI.check(findTestObject('Checkout/Checkbox__I accept'))
+WebUI.click(findTestObject('Checkout/Order Summary/Online Payment - WeChat'))
+
+WebUI.check(findTestObject('Checkout/Order Summary/Checkbox__I accept'))
 
 // Final checkout
-WebUI.click(findTestObject('Checkout/Address/btn_checkout'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/btn_checkout'))
 
-WebUI.waitForElementPresent(findTestObject('Checkout/iframe_payment_online'), 10)
+WebUI.waitForElementPresent(findTestObject('Checkout/Order Summary/iframe_payment_online'), 10)
 
 // Payment iframe
-WebUI.click(findTestObject('Checkout/iframe_payment_online'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Checkout/Order Summary/iframe_payment_online'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(10)
 
 //WebUI.delay(10)
-WebUI.click(findTestObject('Checkout/button_Approve'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Checkout/Order Summary/button_Approve'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Checkout/button_Continue shopping'), 10)
+WebUI.waitForElementPresent(findTestObject('Checkout/Order Summary/button_Continue shopping'), 10)
 
-WebUI.verifyElementPresent(findTestObject('Checkout/button_Continue shopping'), 0)
+WebUI.verifyElementPresent(findTestObject('Checkout/Order Summary/button_Continue shopping'), 0)
 
-WebUI.click(findTestObject('Checkout/button_Continue shopping'))
+WebUI.click(findTestObject('Checkout/Order Summary/button_Continue shopping'))
 
 // Screenshot
 WebUI.takeScreenshot()

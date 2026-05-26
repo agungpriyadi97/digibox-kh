@@ -23,6 +23,8 @@ WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
 WebUI.click(findTestObject('Registration/icon-acount'))
 
+CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
+
 WebUI.click(findTestObject('Registration/btn-create-new-account'))
 
 WebUI.setText(findTestObject('Registration/field-Email'), 'salahemailgmail.com')

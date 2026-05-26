@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()='iPhone']</value>
+         <value>//div[contains(@class,'gt-nav')]&#xd;
+//a[.//span[normalize-space()='iPhone']]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -52,9 +52,9 @@ WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-
 WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
 
 // Checkout
-WebUI.verifyElementVisible(findTestObject('Checkout/Address/btn_checkout'))
+WebUI.verifyElementVisible(findTestObject('Checkout/Address/Address Ship To/btn_checkout'))
 
-WebUI.click(findTestObject('Checkout/Address/btn_checkout'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/btn_checkout'))
 
 // Input guest email
 WebUI.waitForElementVisible(findTestObject('Checkout/Checkout guest/field_email'), 10)
@@ -65,37 +65,37 @@ WebUI.setText(findTestObject('Checkout/Checkout guest/field_email'), randomEmail
 WebUI.click(findTestObject('Checkout/Checkout guest/btn_continue'))
 
 // Fill address form with random data
-WebUI.waitForElementVisible(findTestObject('Checkout/Address/field_First Name'), 10)
+WebUI.waitForElementVisible(findTestObject('Checkout/Address/Address Ship To/field_First Name'), 10)
 
-WebUI.setText(findTestObject('Checkout/Address/field_First Name'), randomFirstName)
+WebUI.setText(findTestObject('Checkout/Address/Address Ship To/field_First Name'), randomFirstName)
 
-WebUI.setText(findTestObject('Checkout/Address/field_Last Name'), randomLastName)
+WebUI.setText(findTestObject('Checkout/Address/Address Ship To/field_Last Name'), randomLastName)
 
-WebUI.setText(findTestObject('Checkout/Address/field_mobile phone'), randomPhone)
+WebUI.setText(findTestObject('Checkout/Address/Address Ship To/field_mobile phone'), randomPhone)
 
-WebUI.setText(findTestObject('Checkout/Address/field_Address'), randomAddress)
+WebUI.setText(findTestObject('Checkout/Address/Address Ship To/field_Address'), randomAddress)
 
-WebUI.setText(findTestObject('Checkout/Address/input_ZipPostal Code'), randomCode)
+WebUI.setText(findTestObject('Checkout/Address/Address Ship To/input_ZipPostal Code'), randomCode)
 
-WebUI.click(findTestObject('Checkout/Address/input_Province'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/input_Province'))
 
-WebUI.click(findTestObject('Checkout/Address/li_Phnom Penh Capital_Province'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Checkout/Address/input_Select Province'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/input_Select Province'))
 
-WebUI.click(findTestObject('Checkout/Address/li_Khan Chamkar Mon_Select_Province'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province'))
 
-WebUI.click(findTestObject('Checkout/Address/input_Districts'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/input_Districts'))
 
-WebUI.click(findTestObject('Checkout/Address/li_Sangkat Tonle Basak_Districts'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts'))
 
-WebUI.click(findTestObject('Checkout/Address/btn-save'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/btn-save'))
 
-WebUI.scrollToElement(findTestObject('Checkout/Address/btn-change'), 2)
+WebUI.scrollToElement(findTestObject('Checkout/Address/Address Ship To/btn-change'), 2)
 
-WebUI.waitForElementVisible(findTestObject('Checkout/Address/btn-change'), 6)
+WebUI.waitForElementVisible(findTestObject('Checkout/Address/Address Ship To/btn-change'), 6)
 
-WebUI.click(findTestObject('Checkout/Address/btn-change'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/btn-change'), FailureHandling.STOP_ON_FAILURE)
 
 // Screenshot
 WebUI.takeScreenshot()
@@ -106,38 +106,38 @@ String updateAddress = CustomKeywords.'custom.RandomData.generateRandomAddress'(
 String updateCode = CustomKeywords.'custom.RandomData.generateRandomCode'()
 
 // clear old address
-WebUI.waitForElementVisible(findTestObject('Checkout/Address/field_Address'), 10)
+WebUI.waitForElementVisible(findTestObject('Checkout/Address/Address Ship To/field_Address'), 10)
 
-WebUI.clearText(findTestObject('Checkout/Address/field_Address'))
+WebUI.clearText(findTestObject('Checkout/Address/Address Ship To/field_Address'))
 
-WebUI.setText(findTestObject('Checkout/Address/field_Address'), updateAddress)
+WebUI.setText(findTestObject('Checkout/Address/Address Ship To/field_Address'), updateAddress)
 
 // update postal code
-WebUI.clearText(findTestObject('Checkout/Address/input_ZipPostal Code'))
+WebUI.clearText(findTestObject('Checkout/Address/Address Ship To/input_ZipPostal Code'))
 
-WebUI.setText(findTestObject('Checkout/Address/input_ZipPostal Code'), updateCode)
+WebUI.setText(findTestObject('Checkout/Address/Address Ship To/input_ZipPostal Code'), updateCode)
 
 //// update province (optional)
-//WebUI.click(findTestObject('Checkout/Address/input_Province'))
+//WebUI.click(findTestObject('Checkout/Address/Address Ship To/input_Province'))
 //
-//WebUI.click(findTestObject('Checkout/Address/li_Phnom Penh Capital_Province'))
+//WebUI.click(findTestObject('Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province'))
 //
 //// update city
-//WebUI.click(findTestObject('Checkout/Address/input_Select Province'))
+//WebUI.click(findTestObject('Checkout/Address/Address Ship To/input_Select Province'))
 //
-//WebUI.click(findTestObject('Checkout/Address/li_Khan Chamkar Mon_Select_Province'))
+//WebUI.click(findTestObject('Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province'))
 //
 //// update district
-//WebUI.click(findTestObject('Checkout/Address/input_Districts'))
+//WebUI.click(findTestObject('Checkout/Address/Address Ship To/input_Districts'))
 //
-//WebUI.click(findTestObject('Checkout/Address/li_Sangkat Tonle Basak_Districts'))
+//WebUI.click(findTestObject('Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts'))
 // save updated data
-WebUI.click(findTestObject('Checkout/Address/btn-save'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/btn-save'))
 
-WebUI.scrollToElement(findTestObject('Checkout/Address/btn-change'), 2)
+WebUI.scrollToElement(findTestObject('Checkout/Address/Address Ship To/btn-change'), 2)
 
 // verify update success
-WebUI.waitForElementVisible(findTestObject('Checkout/Address/btn-change'), 10)
+WebUI.waitForElementVisible(findTestObject('Checkout/Address/Address Ship To/btn-change'), 10)
 
 WebUI.takeScreenshot()
 

@@ -1,0 +1,32 @@
+1
+00:00:00,043 --> 00:00:05,256
+1. openBrowser(URL)
+
+2
+00:00:05,260 --> 00:00:05,778
+5. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+3
+00:00:05,786 --> 00:00:06,392
+9. click(findTestObject("Home Page/Search/icon-search"))
+
+4
+00:00:06,404 --> 00:00:06,834
+13. click(findTestObject("Home Page/Search/field-search"))
+
+5
+00:00:06,838 --> 00:00:07,276
+17. sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 11 PRO 128 GB DEEP PURPLE", ENTER))
+
+6
+00:00:07,280 --> 00:00:10,202
+21. verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-11-pro"))
+
+7
+00:00:10,209 --> 00:00:10,571
+25. takeScreenshot()
+
+8
+00:00:10,571 --> 00:00:11,351
+29. closeBrowser()
+

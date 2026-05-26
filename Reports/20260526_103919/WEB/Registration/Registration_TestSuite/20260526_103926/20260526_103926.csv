@@ -1,0 +1,33 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Registration_TestSuite,Firefox 151.0.1,,,26-05-2026 11:01:41,26-05-2026 11:08:23,6m - 41.686s,FAILED
+,,,,,,,
+Test Cases/WEB/Registration/Register with duplicate Account,Firefox 151.0.1,,,26-05-2026 11:02:51,26-05-2026 11:03:11,20.364s,FAILED
+openBrowser(URL),Firefox 151.0.1,,,26-05-2026 11:02:51,26-05-2026 11:02:58,7.052s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Firefox 151.0.1,,,26-05-2026 11:02:58,26-05-2026 11:02:58,0.460s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,26-05-2026 11:02:58,26-05-2026 11:02:59,0.452s,PASSED
+"click(findTestObject(""Registration/btn-create-new-account""))",Firefox 151.0.1,,,26-05-2026 11:02:59,26-05-2026 11:03:09,10.222s,FAILED
+Video,Firefox 151.0.1,,,26-05-2026 11:03:11,26-05-2026 11:03:11,0.001s,PASSED
+,,,,,,,
+Test Cases/WEB/Registration/Register with duplicate Email,Firefox 151.0.1,,,26-05-2026 11:04:19,26-05-2026 11:04:53,34.138s,FAILED
+openBrowser(URL),Firefox 151.0.1,,,26-05-2026 11:04:19,26-05-2026 11:04:39,19.323s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Firefox 151.0.1,,,26-05-2026 11:04:39,26-05-2026 11:04:39,0.570s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,26-05-2026 11:04:39,26-05-2026 11:04:40,1.087s,PASSED
+"click(findTestObject(""Registration/btn-create-new-account""))",Firefox 151.0.1,,,26-05-2026 11:04:40,26-05-2026 11:04:51,10.318s,FAILED
+Video,Firefox 151.0.1,,,26-05-2026 11:04:53,26-05-2026 11:04:53,0.011s,PASSED
+,,,,,,,
+Test Cases/WEB/Registration/Register with invalid data (email or password),Firefox 151.0.1,,,26-05-2026 11:06:16,26-05-2026 11:06:39,23.049s,FAILED
+openBrowser(URL),Firefox 151.0.1,,,26-05-2026 11:06:16,26-05-2026 11:06:25,9.154s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Firefox 151.0.1,,,26-05-2026 11:06:25,26-05-2026 11:06:26,0.409s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,26-05-2026 11:06:26,26-05-2026 11:06:27,1.149s,PASSED
+"click(findTestObject(""Registration/btn-create-new-account""))",Firefox 151.0.1,,,26-05-2026 11:06:27,26-05-2026 11:06:37,10.195s,FAILED
+Video,Firefox 151.0.1,,,26-05-2026 11:06:39,26-05-2026 11:06:39,0.001s,PASSED
+,,,,,,,
+Test Cases/WEB/Registration/Register with true data,Firefox 151.0.1,,,26-05-2026 11:07:56,26-05-2026 11:08:21,25.190s,FAILED
+randomEmail = custom.RandomData.generateRandomEmail(),Firefox 151.0.1,,,26-05-2026 11:07:56,26-05-2026 11:07:56,0.021s,PASSED
+randomUsername = custom.RandomData.generateRandomUsername(),Firefox 151.0.1,,,26-05-2026 11:07:56,26-05-2026 11:07:56,0.011s,PASSED
+openBrowser(URL),Firefox 151.0.1,,,26-05-2026 11:07:56,26-05-2026 11:08:06,10.315s,PASSED
+maximizeWindow(),Firefox 151.0.1,,,26-05-2026 11:08:06,26-05-2026 11:08:06,0.196s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Firefox 151.0.1,,,26-05-2026 11:08:06,26-05-2026 11:08:07,0.791s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,26-05-2026 11:08:07,26-05-2026 11:08:08,1.182s,PASSED
+"click(findTestObject(""Registration/btn-create-new-account""))",Firefox 151.0.1,,,26-05-2026 11:08:08,26-05-2026 11:08:19,10.362s,FAILED
+Video,Firefox 151.0.1,,,26-05-2026 11:08:21,26-05-2026 11:08:21,0.000s,PASSED

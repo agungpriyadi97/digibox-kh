@@ -1,0 +1,84 @@
+1
+00:00:00,073 --> 00:00:05,595
+1. openBrowser(URL)
+
+2
+00:00:05,614 --> 00:00:05,999
+5. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+3
+00:00:06,004 --> 00:00:06,591
+9. click(findTestObject("Registration/icon-acount"))
+
+4
+00:00:06,595 --> 00:00:09,016
+13. custom.BrowserHelper.closeFirefoxPopup()
+
+5
+00:00:09,024 --> 00:00:09,854
+17. setText(findTestObject("Registration/field-account"), "agungpriyadi")
+
+6
+00:00:09,863 --> 00:00:10,673
+21. setText(findTestObject("Registration/field-Password"), "Laskar123456")
+
+7
+00:00:10,673 --> 00:00:11,237
+25. click(findTestObject("Login/btn-sign in"))
+
+8
+00:00:11,243 --> 00:00:11,781
+29. click(findTestObject("Registration/icon-acount"))
+
+9
+00:00:11,790 --> 00:00:13,598
+33. verifyElementVisible(findTestObject("Home Page/verify-succes-acount-login"))
+
+10
+00:00:13,602 --> 00:00:14,750
+37. click(findTestObject("Home Page/Search/icon-search"))
+
+11
+00:00:14,759 --> 00:00:15,102
+41. click(findTestObject("Home Page/Search/field-search"))
+
+12
+00:00:15,110 --> 00:00:15,435
+45. sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 12 PRO MAX 128GB GOLD", ENTER))
+
+13
+00:00:15,444 --> 00:00:17,967
+49. verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-12 -pro"))
+
+14
+00:00:17,973 --> 00:00:18,748
+53. click(findTestObject("Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD"))
+
+15
+00:00:18,751 --> 00:00:21,087
+57. click(findTestObject("Product and Cart/Add to cart/button_Add to Cart"))
+
+16
+00:00:21,097 --> 00:00:21,532
+61. waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 7)
+
+17
+00:00:21,532 --> 00:00:21,972
+65. click(findTestObject("Product and Cart/Add to cart/i_icon-cart"))
+
+18
+00:00:21,974 --> 00:00:23,090
+69. verifyElementVisible(findTestObject("Checkout/Address/Address Ship To/btn_checkout"), STOP_ON_FAILURE)
+
+19
+00:00:23,099 --> 00:00:33,700
+73. click(findTestObject("Checkout/Address/Address Ship To/btn_checkout"))
+
+20
+00:00:33,728 --> 00:00:44,939
+77. click(findTestObject("Checkout/Order Summary/Online Payment - Cradit Card"))
+
+21
+00:00:44,939 --> 00:01:05,833
+81. check(findTestObject("Checkout/Order Summary/Checkbox__I accept"))
+

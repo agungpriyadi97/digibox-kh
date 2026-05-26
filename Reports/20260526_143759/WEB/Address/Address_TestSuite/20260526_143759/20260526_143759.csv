@@ -1,0 +1,257 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Address_TestSuite,Firefox 151.0.1,,,26-05-2026 14:38:18,26-05-2026 14:42:54,4m - 35.635s,PASSED
+,,,,,,,
+Test Cases/WEB/Address Management/Ensure My Address - add new address,Firefox 151.0.1,,,26-05-2026 14:38:18,26-05-2026 14:39:06,47.441s,PASSED
+randomFirstName = custom.RandomData.generateRandomFirstName(),Firefox 151.0.1,,,26-05-2026 14:38:18,26-05-2026 14:38:18,0.051s,PASSED
+randomEmail = custom.RandomData.generateRandomEmail(),Firefox 151.0.1,,,26-05-2026 14:38:18,26-05-2026 14:38:18,0.063s,PASSED
+randomLastName = custom.RandomData.generateRandomLastName(),Firefox 151.0.1,,,26-05-2026 14:38:18,26-05-2026 14:38:18,0.004s,PASSED
+randomPhone = custom.RandomData.generateRandomPhone(),Firefox 151.0.1,,,26-05-2026 14:38:18,26-05-2026 14:38:18,0.016s,PASSED
+randomAddress = custom.RandomData.generateRandomAddress(),Firefox 151.0.1,,,26-05-2026 14:38:18,26-05-2026 14:38:18,0.008s,PASSED
+randomCode = custom.RandomData.generateRandomCode(),Firefox 151.0.1,,,26-05-2026 14:38:18,26-05-2026 14:38:18,0.005s,PASSED
+openBrowser(URL),Firefox 151.0.1,,,26-05-2026 14:38:18,26-05-2026 14:38:24,5.145s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Firefox 151.0.1,,,26-05-2026 14:38:24,26-05-2026 14:38:24,0.347s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,26-05-2026 14:38:24,26-05-2026 14:38:25,0.588s,PASSED
+"setText(findTestObject(""Registration/field-account""), ""agungpriyadi"")",Firefox 151.0.1,,,26-05-2026 14:38:25,26-05-2026 14:38:35,10.522s,PASSED
+"setText(findTestObject(""Registration/field-Password""), ""Laskar123456"")",Firefox 151.0.1,,,26-05-2026 14:38:35,26-05-2026 14:38:36,1.131s,PASSED
+"click(findTestObject(""Login/btn-sign in""))",Firefox 151.0.1,,,26-05-2026 14:38:36,26-05-2026 14:38:37,0.798s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,26-05-2026 14:38:37,26-05-2026 14:38:38,0.581s,PASSED
+"click(findTestObject(""Address Management/Shipping Address/btn_My Address""))",Firefox 151.0.1,,,26-05-2026 14:38:38,26-05-2026 14:38:41,3.475s,PASSED
+"click(findTestObject(""Address Management/Add New Address/div_Add New Address""))",Firefox 151.0.1,,,26-05-2026 14:38:41,26-05-2026 14:38:43,1.922s,PASSED
+"waitForElementVisible(findTestObject(""Address Management/Add New Address/field_First Name""), 0)",Firefox 151.0.1,,,26-05-2026 14:38:43,26-05-2026 14:38:44,0.836s,PASSED
+"setText(findTestObject(""Address Management/Add New Address/field_First Name""), randomFirstName)",Firefox 151.0.1,,,26-05-2026 14:38:44,26-05-2026 14:38:45,1.021s,PASSED
+"waitForElementVisible(findTestObject(""Address Management/Add New Address/field_Last Name""), 0)",Firefox 151.0.1,,,26-05-2026 14:38:45,26-05-2026 14:38:46,0.830s,PASSED
+"setText(findTestObject(""Address Management/Add New Address/field_Last Name""), randomLastName)",Firefox 151.0.1,,,26-05-2026 14:38:46,26-05-2026 14:38:47,0.838s,PASSED
+"waitForElementVisible(findTestObject(""Address Management/Add New Address/field_Mobile Phone""), 0)",Firefox 151.0.1,,,26-05-2026 14:38:47,26-05-2026 14:38:47,0.488s,PASSED
+"setText(findTestObject(""Address Management/Add New Address/field_Mobile Phone""), randomPhone)",Firefox 151.0.1,,,26-05-2026 14:38:47,26-05-2026 14:38:48,0.937s,PASSED
+"waitForElementVisible(findTestObject(""Address Management/Add New Address/field_E-mail""), 0)",Firefox 151.0.1,,,26-05-2026 14:38:48,26-05-2026 14:38:48,0.534s,PASSED
+"setText(findTestObject(""Address Management/Add New Address/field_E-mail""), randomEmail)",Firefox 151.0.1,,,26-05-2026 14:38:48,26-05-2026 14:38:49,0.816s,PASSED
+"waitForElementVisible(findTestObject(""Address Management/Add New Address/field_Address""), 0)",Firefox 151.0.1,,,26-05-2026 14:38:49,26-05-2026 14:38:50,0.597s,PASSED
+"setText(findTestObject(""Address Management/Add New Address/field_Address""), randomAddress)",Firefox 151.0.1,,,26-05-2026 14:38:50,26-05-2026 14:38:51,1.132s,PASSED
+"click(findTestObject(""Address Management/Add New Address/dropdown_Province""))",Firefox 151.0.1,,,26-05-2026 14:38:51,26-05-2026 14:38:52,0.655s,PASSED
+"waitForElementVisible(findTestObject(""Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province""), 0)",Firefox 151.0.1,,,26-05-2026 14:38:52,26-05-2026 14:38:52,0.445s,PASSED
+"click(findTestObject(""Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province""))",Firefox 151.0.1,,,26-05-2026 14:38:52,26-05-2026 14:38:53,0.560s,PASSED
+"click(findTestObject(""Address Management/Add New Address/dropdown_Select Province""))",Firefox 151.0.1,,,26-05-2026 14:38:53,26-05-2026 14:38:53,0.472s,PASSED
+"waitForElementVisible(findTestObject(""Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality""), 0)",Firefox 151.0.1,,,26-05-2026 14:38:53,26-05-2026 14:38:54,0.973s,PASSED
+"click(findTestObject(""Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 14:38:54,26-05-2026 14:38:55,0.659s,PASSED
+"click(findTestObject(""Address Management/Add New Address/dropdown_Districts""))",Firefox 151.0.1,,,26-05-2026 14:38:55,26-05-2026 14:38:55,0.550s,PASSED
+"waitForElementVisible(findTestObject(""Address Management/Add New Address/Dropdown District/li_Sangkat Kandal""), 10)",Firefox 151.0.1,,,26-05-2026 14:38:55,26-05-2026 14:38:56,0.893s,PASSED
+"click(findTestObject(""Address Management/Add New Address/Dropdown District/li_Sangkat Kandal""))",Firefox 151.0.1,,,26-05-2026 14:38:56,26-05-2026 14:38:57,0.566s,PASSED
+"setText(findTestObject(""Address Management/Add New Address/field_ZipPostal Code""), randomCode)",Firefox 151.0.1,,,26-05-2026 14:38:57,26-05-2026 14:38:58,0.913s,PASSED
+"click(findTestObject(""Address Management/Add New Address/button_Save""))",Firefox 151.0.1,,,26-05-2026 14:38:58,26-05-2026 14:38:58,0.653s,PASSED
+"scrollToElement(findTestObject(""Address Management/Shipping Address/lbl_Shipping Address""), 3)",Firefox 151.0.1,,,26-05-2026 14:38:58,26-05-2026 14:38:59,0.415s,PASSED
+takeScreenshot(),Firefox 151.0.1,,,26-05-2026 14:38:59,26-05-2026 14:39:00,1.016s,PASSED
+"comment(""Email      : "" + randomEmail)",Firefox 151.0.1,,,26-05-2026 14:39:00,26-05-2026 14:39:00,0.078s,PASSED
+"comment(""First Name : "" + randomFirstName)",Firefox 151.0.1,,,26-05-2026 14:39:00,26-05-2026 14:39:00,0.016s,PASSED
+"comment(""Last Name  : "" + randomLastName)",Firefox 151.0.1,,,26-05-2026 14:39:00,26-05-2026 14:39:00,0.004s,PASSED
+"comment(""Phone      : "" + randomPhone)",Firefox 151.0.1,,,26-05-2026 14:39:00,26-05-2026 14:39:00,0.012s,PASSED
+"comment(""Address    : "" + randomAddress)",Firefox 151.0.1,,,26-05-2026 14:39:00,26-05-2026 14:39:00,0.014s,PASSED
+"comment(""Code    : "" + randomCode)",Firefox 151.0.1,,,26-05-2026 14:39:00,26-05-2026 14:39:00,0.004s,PASSED
+closeBrowser(),Firefox 151.0.1,,,26-05-2026 14:39:00,26-05-2026 14:39:03,3.064s,PASSED
+Video,Firefox 151.0.1,,,26-05-2026 14:39:05,26-05-2026 14:39:05,0.002s,PASSED
+,,,,,,,
+Test Cases/WEB/Address Management/Ensure My Address - Edit address,Firefox 151.0.1,,,26-05-2026 14:39:06,26-05-2026 14:39:43,37.885s,PASSED
+randomEmail = custom.RandomData.generateRandomEmail(),Firefox 151.0.1,,,26-05-2026 14:39:06,26-05-2026 14:39:06,0.017s,PASSED
+randomFirstName = custom.RandomData.generateRandomFirstName(),Firefox 151.0.1,,,26-05-2026 14:39:06,26-05-2026 14:39:06,0.032s,PASSED
+randomLastName = custom.RandomData.generateRandomLastName(),Firefox 151.0.1,,,26-05-2026 14:39:06,26-05-2026 14:39:06,0.019s,PASSED
+randomPhone = custom.RandomData.generateRandomPhone(),Firefox 151.0.1,,,26-05-2026 14:39:06,26-05-2026 14:39:06,0.013s,PASSED
+randomAddress = custom.RandomData.generateRandomAddress(),Firefox 151.0.1,,,26-05-2026 14:39:06,26-05-2026 14:39:06,0.014s,PASSED
+randomCode = custom.RandomData.generateRandomCode(),Firefox 151.0.1,,,26-05-2026 14:39:06,26-05-2026 14:39:07,0.010s,PASSED
+openBrowser(URL),Firefox 151.0.1,,,26-05-2026 14:39:07,26-05-2026 14:39:11,4.398s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Firefox 151.0.1,,,26-05-2026 14:39:11,26-05-2026 14:39:12,0.806s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,26-05-2026 14:39:12,26-05-2026 14:39:13,1.005s,PASSED
+"setText(findTestObject(""Registration/field-account""), ""agungpriyadi"")",Firefox 151.0.1,,,26-05-2026 14:39:13,26-05-2026 14:39:23,10.574s,PASSED
+"setText(findTestObject(""Registration/field-Password""), ""Laskar123456"")",Firefox 151.0.1,,,26-05-2026 14:39:23,26-05-2026 14:39:24,1.099s,PASSED
+"click(findTestObject(""Login/btn-sign in""))",Firefox 151.0.1,,,26-05-2026 14:39:24,26-05-2026 14:39:25,0.738s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,26-05-2026 14:39:25,26-05-2026 14:39:26,0.548s,PASSED
+"waitForElementVisible(findTestObject(""Address Management/Shipping Address/btn_My Address""), 4)",Firefox 151.0.1,,,26-05-2026 14:39:26,26-05-2026 14:39:28,1.977s,PASSED
+"click(findTestObject(""Address Management/Shipping Address/btn_My Address""))",Firefox 151.0.1,,,26-05-2026 14:39:28,26-05-2026 14:39:29,1.246s,PASSED
+editBtn = new com.kms.katalon.core.testobject.TestObject(),Firefox 151.0.1,,,26-05-2026 14:39:29,26-05-2026 14:39:29,0.012s,PASSED
+"editBtn.addProperty(""xpath"", EQUALS, ""(//button[contains(.,'Edit')])[1]"")",Firefox 151.0.1,,,26-05-2026 14:39:29,26-05-2026 14:39:29,0.021s,PASSED
+"click(findTestObject(""Address Management/Shipping Address/btn_Edit""))",Firefox 151.0.1,,,26-05-2026 14:39:29,26-05-2026 14:39:31,1.670s,PASSED
+"waitForElementVisible(findTestObject(""Address Management/Edit Address/Field_First Name""), 10)",Firefox 151.0.1,,,26-05-2026 14:39:31,26-05-2026 14:39:31,0.265s,PASSED
+"clearText(findTestObject(""Address Management/Edit Address/Field_First Name""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 14:39:31,26-05-2026 14:39:32,0.740s,PASSED
+"setText(findTestObject(""Address Management/Edit Address/Field_First Name""), randomFirstName)",Firefox 151.0.1,,,26-05-2026 14:39:32,26-05-2026 14:39:33,1.616s,PASSED
+"clearText(findTestObject(""Address Management/Edit Address/Field_Last Name""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 14:39:33,26-05-2026 14:39:34,0.487s,PASSED
+"setText(findTestObject(""Address Management/Edit Address/Field_Last Name""), randomLastName)",Firefox 151.0.1,,,26-05-2026 14:39:34,26-05-2026 14:39:35,0.886s,PASSED
+"clearText(findTestObject(""Address Management/Edit Address/Field_Mobile Phone""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 14:39:35,26-05-2026 14:39:35,0.333s,PASSED
+"setText(findTestObject(""Address Management/Edit Address/Field_Mobile Phone""), randomPhone)",Firefox 151.0.1,,,26-05-2026 14:39:35,26-05-2026 14:39:36,0.850s,PASSED
+"clearText(findTestObject(""Address Management/Edit Address/Field_E-mail""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 14:39:36,26-05-2026 14:39:36,0.547s,PASSED
+"setText(findTestObject(""Address Management/Edit Address/Field_E-mail""), randomEmail)",Firefox 151.0.1,,,26-05-2026 14:39:36,26-05-2026 14:39:37,0.728s,PASSED
+"clearText(findTestObject(""Address Management/Edit Address/Field_Address""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 14:39:37,26-05-2026 14:39:37,0.238s,PASSED
+"setText(findTestObject(""Address Management/Edit Address/Field_Address""), randomAddress)",Firefox 151.0.1,,,26-05-2026 14:39:37,26-05-2026 14:39:38,0.498s,PASSED
+"clearText(findTestObject(""Address Management/Edit Address/Field_ZipPostal Code""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 14:39:38,26-05-2026 14:39:38,0.425s,PASSED
+"setText(findTestObject(""Address Management/Edit Address/Field_ZipPostal Code""), randomCode)",Firefox 151.0.1,,,26-05-2026 14:39:38,26-05-2026 14:39:39,0.724s,PASSED
+"click(findTestObject(""Address Management/Edit Address/button_Save""))",Firefox 151.0.1,,,26-05-2026 14:39:39,26-05-2026 14:39:39,0.501s,PASSED
+"scrollToElement(findTestObject(""Address Management/Shipping Address/lbl_Shipping Address""), 10)",Firefox 151.0.1,,,26-05-2026 14:39:39,26-05-2026 14:39:40,0.416s,PASSED
+verifyName = new com.kms.katalon.core.testobject.TestObject(),Firefox 151.0.1,,,26-05-2026 14:39:40,26-05-2026 14:39:40,0.001s,PASSED
+"verifyName.addProperty(""xpath"", EQUALS, //*[contains(text(),'$randomFirstName')])",Firefox 151.0.1,,,26-05-2026 14:39:40,26-05-2026 14:39:40,0.017s,PASSED
+"verifyElementPresent(verifyName, 10)",Firefox 151.0.1,,,26-05-2026 14:39:40,26-05-2026 14:39:40,0.528s,PASSED
+takeScreenshot(),Firefox 151.0.1,,,26-05-2026 14:39:40,26-05-2026 14:39:41,0.236s,PASSED
+"comment(""Email      : "" + randomEmail)",Firefox 151.0.1,,,26-05-2026 14:39:41,26-05-2026 14:39:41,0.003s,PASSED
+"comment(""First Name : "" + randomFirstName)",Firefox 151.0.1,,,26-05-2026 14:39:41,26-05-2026 14:39:41,0.002s,PASSED
+"comment(""Last Name  : "" + randomLastName)",Firefox 151.0.1,,,26-05-2026 14:39:41,26-05-2026 14:39:41,0.001s,PASSED
+"comment(""Phone      : "" + randomPhone)",Firefox 151.0.1,,,26-05-2026 14:39:41,26-05-2026 14:39:41,0.001s,PASSED
+"comment(""Address    : "" + randomAddress)",Firefox 151.0.1,,,26-05-2026 14:39:41,26-05-2026 14:39:41,0.003s,PASSED
+"comment(""Code    : "" + randomCode)",Firefox 151.0.1,,,26-05-2026 14:39:41,26-05-2026 14:39:41,0.001s,PASSED
+closeBrowser(),Firefox 151.0.1,,,26-05-2026 14:39:41,26-05-2026 14:39:41,0.616s,PASSED
+closeBrowser(),Firefox 151.0.1,,,26-05-2026 14:39:41,26-05-2026 14:39:41,0.001s,NOT_RUN
+Video,Firefox 151.0.1,,,26-05-2026 14:39:43,26-05-2026 14:39:43,0.001s,PASSED
+,,,,,,,
+Test Cases/WEB/Address Management/Ensure My Address - Delete address,Firefox 151.0.1,,,26-05-2026 14:39:43,26-05-2026 14:40:10,26.853s,PASSED
+openBrowser(URL),Firefox 151.0.1,,,26-05-2026 14:39:43,26-05-2026 14:39:48,4.316s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Firefox 151.0.1,,,26-05-2026 14:39:48,26-05-2026 14:39:48,0.637s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,26-05-2026 14:39:48,26-05-2026 14:39:49,0.328s,PASSED
+"setText(findTestObject(""Registration/field-account""), ""agungpriyadi"")",Firefox 151.0.1,,,26-05-2026 14:39:49,26-05-2026 14:39:59,10.253s,PASSED
+"setText(findTestObject(""Registration/field-Password""), ""Laskar123456"")",Firefox 151.0.1,,,26-05-2026 14:39:59,26-05-2026 14:40:00,0.731s,PASSED
+"click(findTestObject(""Login/btn-sign in""))",Firefox 151.0.1,,,26-05-2026 14:40:00,26-05-2026 14:40:00,0.506s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,26-05-2026 14:40:00,26-05-2026 14:40:01,0.507s,PASSED
+"click(findTestObject(""Address Management/Shipping Address/btn_My Address""))",Firefox 151.0.1,,,26-05-2026 14:40:01,26-05-2026 14:40:03,2.662s,PASSED
+"click(findTestObject(""Address Management/Shipping Address/btn_Delete""))",Firefox 151.0.1,,,26-05-2026 14:40:03,26-05-2026 14:40:04,0.839s,PASSED
+btnOK = new com.kms.katalon.core.testobject.TestObject(),Firefox 151.0.1,,,26-05-2026 14:40:04,26-05-2026 14:40:04,0.002s,PASSED
+"btnOK.addProperty(""xpath"", EQUALS, ""//div[contains(@class,'el-message-box')]//span[normalize-space()='OK']"")",Firefox 151.0.1,,,26-05-2026 14:40:04,26-05-2026 14:40:04,0.002s,PASSED
+"waitForElementVisible(btnOK, 10)",Firefox 151.0.1,,,26-05-2026 14:40:04,26-05-2026 14:40:05,0.431s,PASSED
+"okElement = findWebElement(btnOK, 10)",Firefox 151.0.1,,,26-05-2026 14:40:05,26-05-2026 14:40:05,0.226s,PASSED
+"executeJavaScript(""arguments[0].click();"", Arrays.asList(okElement))",Firefox 151.0.1,,,26-05-2026 14:40:05,26-05-2026 14:40:05,0.020s,PASSED
+refresh(),Firefox 151.0.1,,,26-05-2026 14:40:05,26-05-2026 14:40:07,2.249s,PASSED
+waitForPageLoad(10),Firefox 151.0.1,,,26-05-2026 14:40:07,26-05-2026 14:40:07,0.032s,PASSED
+deletedEmail = new com.kms.katalon.core.testobject.TestObject(),Firefox 151.0.1,,,26-05-2026 14:40:07,26-05-2026 14:40:07,0.002s,PASSED
+"deletedEmail.addProperty(""xpath"", EQUALS, ""//*[contains(text(),'agung.priyadi@gtech.digital')]"")",Firefox 151.0.1,,,26-05-2026 14:40:07,26-05-2026 14:40:07,0.002s,PASSED
+takeScreenshot(),Firefox 151.0.1,,,26-05-2026 14:40:07,26-05-2026 14:40:08,0.349s,PASSED
+closeBrowser(),Firefox 151.0.1,,,26-05-2026 14:40:08,26-05-2026 14:40:08,0.609s,PASSED
+Video,Firefox 151.0.1,,,26-05-2026 14:40:10,26-05-2026 14:40:10,0.000s,PASSED
+,,,,,,,
+Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit,Firefox 151.0.1,,,26-05-2026 14:40:10,26-05-2026 14:40:46,35.700s,PASSED
+randomEmail = custom.RandomData.generateRandomEmail(),Firefox 151.0.1,,,26-05-2026 14:40:10,26-05-2026 14:40:10,0.003s,PASSED
+randomFirstName = custom.RandomData.generateRandomFirstName(),Firefox 151.0.1,,,26-05-2026 14:40:10,26-05-2026 14:40:10,0.003s,PASSED
+randomLastName = custom.RandomData.generateRandomLastName(),Firefox 151.0.1,,,26-05-2026 14:40:10,26-05-2026 14:40:10,0.002s,PASSED
+randomPhone = custom.RandomData.generateRandomPhone(),Firefox 151.0.1,,,26-05-2026 14:40:10,26-05-2026 14:40:10,0.002s,PASSED
+randomAddress = custom.RandomData.generateRandomAddress(),Firefox 151.0.1,,,26-05-2026 14:40:10,26-05-2026 14:40:10,0.003s,PASSED
+randomCode = custom.RandomData.generateRandomCode(),Firefox 151.0.1,,,26-05-2026 14:40:10,26-05-2026 14:40:10,0.001s,PASSED
+openBrowser(URL),Firefox 151.0.1,,,26-05-2026 14:40:10,26-05-2026 14:40:14,4.032s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Firefox 151.0.1,,,26-05-2026 14:40:14,26-05-2026 14:40:15,0.645s,PASSED
+"click(findTestObject(""Home Page/Search/icon-search""))",Firefox 151.0.1,,,26-05-2026 14:40:15,26-05-2026 14:40:15,0.320s,PASSED
+"sendKeys(findTestObject(""Home Page/Search/field-search""), Keys.chord(""IPHONE 12 PRO MAX 128GB GOLD"", ENTER))",Firefox 151.0.1,,,26-05-2026 14:40:15,26-05-2026 14:40:16,0.330s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/Search/verify-product-iphone-12 -pro""))",Firefox 151.0.1,,,26-05-2026 14:40:16,26-05-2026 14:40:19,2.865s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD""))",Firefox 151.0.1,,,26-05-2026 14:40:19,26-05-2026 14:40:19,0.298s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/button_Add to Cart""))",Firefox 151.0.1,,,26-05-2026 14:40:19,26-05-2026 14:40:21,2.499s,PASSED
+"waitForElementPresent(findTestObject(""Product and Cart/Add to cart/i_icon-cart""), 10)",Firefox 151.0.1,,,26-05-2026 14:40:21,26-05-2026 14:40:22,0.425s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/i_icon-cart""))",Firefox 151.0.1,,,26-05-2026 14:40:22,26-05-2026 14:40:23,0.823s,PASSED
+"verifyElementVisible(findTestObject(""Checkout/Address/Address Ship To/btn_checkout""))",Firefox 151.0.1,,,26-05-2026 14:40:23,26-05-2026 14:40:24,0.954s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/btn_checkout""))",Firefox 151.0.1,,,26-05-2026 14:40:24,26-05-2026 14:40:24,0.300s,PASSED
+"waitForElementVisible(findTestObject(""Checkout/Checkout guest/field_email""), 10)",Firefox 151.0.1,,,26-05-2026 14:40:24,26-05-2026 14:40:25,1.561s,PASSED
+"setText(findTestObject(""Checkout/Checkout guest/field_email""), randomEmail)",Firefox 151.0.1,,,26-05-2026 14:40:25,26-05-2026 14:40:26,0.499s,PASSED
+"click(findTestObject(""Checkout/Checkout guest/btn_continue""))",Firefox 151.0.1,,,26-05-2026 14:40:26,26-05-2026 14:40:26,0.512s,PASSED
+"waitForElementVisible(findTestObject(""Checkout/Address/Address Ship To/field_First Name""), 10)",Firefox 151.0.1,,,26-05-2026 14:40:26,26-05-2026 14:40:29,2.546s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Ship To/field_First Name""), randomFirstName)",Firefox 151.0.1,,,26-05-2026 14:40:29,26-05-2026 14:40:29,0.486s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Ship To/field_Last Name""), randomLastName)",Firefox 151.0.1,,,26-05-2026 14:40:29,26-05-2026 14:40:30,0.687s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Ship To/field_mobile phone""), randomPhone)",Firefox 151.0.1,,,26-05-2026 14:40:30,26-05-2026 14:40:31,0.688s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Ship To/field_Address""), randomAddress)",Firefox 151.0.1,,,26-05-2026 14:40:31,26-05-2026 14:40:32,0.686s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Ship To/input_ZipPostal Code""), randomCode)",Firefox 151.0.1,,,26-05-2026 14:40:32,26-05-2026 14:40:33,1.502s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/input_Province""))",Firefox 151.0.1,,,26-05-2026 14:40:33,26-05-2026 14:40:34,0.977s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 14:40:34,26-05-2026 14:40:35,0.617s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/input_Select Province""))",Firefox 151.0.1,,,26-05-2026 14:40:35,26-05-2026 14:40:35,0.496s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province""))",Firefox 151.0.1,,,26-05-2026 14:40:35,26-05-2026 14:40:36,1.026s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/input_Districts""))",Firefox 151.0.1,,,26-05-2026 14:40:36,26-05-2026 14:40:36,0.300s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts""))",Firefox 151.0.1,,,26-05-2026 14:40:36,26-05-2026 14:40:38,1.222s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/btn-save""))",Firefox 151.0.1,,,26-05-2026 14:40:38,26-05-2026 14:40:38,0.303s,PASSED
+"scrollToElement(findTestObject(""Checkout/Address/Address Ship To/btn-change""), 2)",Firefox 151.0.1,,,26-05-2026 14:40:38,26-05-2026 14:40:39,0.527s,PASSED
+"waitForElementVisible(findTestObject(""Checkout/Address/Address Ship To/btn-change""), 6)",Firefox 151.0.1,,,26-05-2026 14:40:39,26-05-2026 14:40:39,0.223s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/btn-change""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 14:40:39,26-05-2026 14:40:39,0.291s,PASSED
+takeScreenshot(),Firefox 151.0.1,,,26-05-2026 14:40:39,26-05-2026 14:40:39,0.436s,PASSED
+updateAddress = custom.RandomData.generateRandomAddress(),Firefox 151.0.1,,,26-05-2026 14:40:39,26-05-2026 14:40:39,0.002s,PASSED
+updateCode = custom.RandomData.generateRandomCode(),Firefox 151.0.1,,,26-05-2026 14:40:39,26-05-2026 14:40:39,0.003s,PASSED
+"waitForElementVisible(findTestObject(""Checkout/Address/Address Ship To/field_Address""), 10)",Firefox 151.0.1,,,26-05-2026 14:40:39,26-05-2026 14:40:40,0.219s,PASSED
+"clearText(findTestObject(""Checkout/Address/Address Ship To/field_Address""))",Firefox 151.0.1,,,26-05-2026 14:40:40,26-05-2026 14:40:40,0.225s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Ship To/field_Address""), updateAddress)",Firefox 151.0.1,,,26-05-2026 14:40:40,26-05-2026 14:40:41,0.794s,PASSED
+"clearText(findTestObject(""Checkout/Address/Address Ship To/input_ZipPostal Code""))",Firefox 151.0.1,,,26-05-2026 14:40:41,26-05-2026 14:40:41,0.426s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Ship To/input_ZipPostal Code""), updateCode)",Firefox 151.0.1,,,26-05-2026 14:40:41,26-05-2026 14:40:42,0.708s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/btn-save""))",Firefox 151.0.1,,,26-05-2026 14:40:42,26-05-2026 14:40:42,0.510s,PASSED
+"scrollToElement(findTestObject(""Checkout/Address/Address Ship To/btn-change""), 2)",Firefox 151.0.1,,,26-05-2026 14:40:42,26-05-2026 14:40:43,0.415s,PASSED
+"waitForElementVisible(findTestObject(""Checkout/Address/Address Ship To/btn-change""), 10)",Firefox 151.0.1,,,26-05-2026 14:40:43,26-05-2026 14:40:43,0.227s,PASSED
+takeScreenshot(),Firefox 151.0.1,,,26-05-2026 14:40:43,26-05-2026 14:40:43,0.237s,PASSED
+"comment(""Email      : "" + randomEmail)",Firefox 151.0.1,,,26-05-2026 14:40:43,26-05-2026 14:40:43,0.003s,PASSED
+"comment(""First Name : "" + randomFirstName)",Firefox 151.0.1,,,26-05-2026 14:40:43,26-05-2026 14:40:43,0.003s,PASSED
+"comment(""Last Name  : "" + randomLastName)",Firefox 151.0.1,,,26-05-2026 14:40:43,26-05-2026 14:40:43,0.002s,PASSED
+"comment(""Phone      : "" + randomPhone)",Firefox 151.0.1,,,26-05-2026 14:40:43,26-05-2026 14:40:43,0.002s,PASSED
+"comment(""Address    : "" + randomAddress)",Firefox 151.0.1,,,26-05-2026 14:40:43,26-05-2026 14:40:43,0.003s,PASSED
+"comment(""Code    : "" + randomCode)",Firefox 151.0.1,,,26-05-2026 14:40:43,26-05-2026 14:40:43,0.005s,PASSED
+"comment(""Updated Address : "" + updateAddress)",Firefox 151.0.1,,,26-05-2026 14:40:43,26-05-2026 14:40:43,0.003s,PASSED
+"comment(""Updated Code    : "" + updateCode)",Firefox 151.0.1,,,26-05-2026 14:40:43,26-05-2026 14:40:43,0.002s,PASSED
+closeBrowser(),Firefox 151.0.1,,,26-05-2026 14:40:43,26-05-2026 14:40:44,0.632s,PASSED
+Video,Firefox 151.0.1,,,26-05-2026 14:40:46,26-05-2026 14:40:46,0.001s,PASSED
+,,,,,,,
+Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address),Firefox 151.0.1,,,26-05-2026 14:41:37,26-05-2026 14:42:54,1m - 16.141s,PASSED
+randomEmail = custom.RandomData.generateRandomEmail(),Firefox 151.0.1,,,26-05-2026 14:41:37,26-05-2026 14:41:37,0.003s,PASSED
+randomFirstName = custom.RandomData.generateRandomFirstName(),Firefox 151.0.1,,,26-05-2026 14:41:37,26-05-2026 14:41:37,0.002s,PASSED
+randomLastName = custom.RandomData.generateRandomLastName(),Firefox 151.0.1,,,26-05-2026 14:41:37,26-05-2026 14:41:37,0.001s,PASSED
+randomPhone = custom.RandomData.generateRandomPhone(),Firefox 151.0.1,,,26-05-2026 14:41:37,26-05-2026 14:41:37,0.002s,PASSED
+randomAddress = custom.RandomData.generateRandomAddress(),Firefox 151.0.1,,,26-05-2026 14:41:37,26-05-2026 14:41:37,0.007s,PASSED
+randomCode = custom.RandomData.generateRandomCode(),Firefox 151.0.1,,,26-05-2026 14:41:37,26-05-2026 14:41:37,0.002s,PASSED
+openBrowser(URL),Firefox 151.0.1,,,26-05-2026 14:41:37,26-05-2026 14:41:43,5.968s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Firefox 151.0.1,,,26-05-2026 14:41:43,26-05-2026 14:41:44,0.298s,PASSED
+"click(findTestObject(""Home Page/Search/icon-search""))",Firefox 151.0.1,,,26-05-2026 14:41:44,26-05-2026 14:41:44,0.652s,PASSED
+"sendKeys(findTestObject(""Home Page/Search/field-search""), Keys.chord(""IPHONE 12 PRO MAX 128GB GOLD"", ENTER))",Firefox 151.0.1,,,26-05-2026 14:41:44,26-05-2026 14:41:45,0.307s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/Search/verify-product-iphone-12 -pro""))",Firefox 151.0.1,,,26-05-2026 14:41:45,26-05-2026 14:41:47,2.840s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD""))",Firefox 151.0.1,,,26-05-2026 14:41:47,26-05-2026 14:41:48,0.293s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/button_Add to Cart""))",Firefox 151.0.1,,,26-05-2026 14:41:48,26-05-2026 14:41:50,2.451s,PASSED
+"waitForElementPresent(findTestObject(""Product and Cart/Add to cart/i_icon-cart""), 10)",Firefox 151.0.1,,,26-05-2026 14:41:50,26-05-2026 14:41:51,0.415s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/i_icon-cart""))",Firefox 151.0.1,,,26-05-2026 14:41:51,26-05-2026 14:41:51,0.304s,PASSED
+"verifyElementVisible(findTestObject(""Checkout/Address/Address Ship To/btn_checkout""))",Firefox 151.0.1,,,26-05-2026 14:41:51,26-05-2026 14:41:52,1.038s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/btn_checkout""))",Firefox 151.0.1,,,26-05-2026 14:41:52,26-05-2026 14:41:52,0.295s,PASSED
+"waitForElementVisible(findTestObject(""Checkout/Checkout guest/field_email""), 10)",Firefox 151.0.1,,,26-05-2026 14:41:52,26-05-2026 14:41:54,1.687s,PASSED
+"setText(findTestObject(""Checkout/Checkout guest/field_email""), randomEmail)",Firefox 151.0.1,,,26-05-2026 14:41:54,26-05-2026 14:41:54,0.486s,PASSED
+"click(findTestObject(""Checkout/Checkout guest/btn_continue""))",Firefox 151.0.1,,,26-05-2026 14:41:54,26-05-2026 14:41:55,0.536s,PASSED
+"waitForElementVisible(findTestObject(""Checkout/Address/Address Ship To/field_First Name""), 10)",Firefox 151.0.1,,,26-05-2026 14:41:55,26-05-2026 14:41:56,1.134s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Ship To/field_First Name""), randomFirstName)",Firefox 151.0.1,,,26-05-2026 14:41:56,26-05-2026 14:41:58,1.531s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Ship To/field_Last Name""), randomLastName)",Firefox 151.0.1,,,26-05-2026 14:41:58,26-05-2026 14:41:58,0.721s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Ship To/field_mobile phone""), randomPhone)",Firefox 151.0.1,,,26-05-2026 14:41:58,26-05-2026 14:41:59,0.689s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Ship To/field_Address""), randomAddress)",Firefox 151.0.1,,,26-05-2026 14:41:59,26-05-2026 14:42:00,0.682s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Ship To/input_ZipPostal Code""), randomCode)",Firefox 151.0.1,,,26-05-2026 14:42:00,26-05-2026 14:42:01,1.484s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/input_Province""))",Firefox 151.0.1,,,26-05-2026 14:42:01,26-05-2026 14:42:02,0.502s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 14:42:02,26-05-2026 14:42:02,0.507s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/input_Select Province""))",Firefox 151.0.1,,,26-05-2026 14:42:02,26-05-2026 14:42:03,0.295s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province""))",Firefox 151.0.1,,,26-05-2026 14:42:03,26-05-2026 14:42:04,1.125s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/input_Districts""))",Firefox 151.0.1,,,26-05-2026 14:42:04,26-05-2026 14:42:04,0.291s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts""))",Firefox 151.0.1,,,26-05-2026 14:42:04,26-05-2026 14:42:05,1.122s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/btn-save""))",Firefox 151.0.1,,,26-05-2026 14:42:05,26-05-2026 14:42:05,0.292s,PASSED
+"check(findTestObject(""Checkout/Address/Address Billing/Billing address same as shipping""))",Firefox 151.0.1,,,26-05-2026 14:42:05,26-05-2026 14:42:06,0.602s,PASSED
+"waitForElementVisible(findTestObject(""Checkout/Address/Address Billing/field_First Name""), 10)",Firefox 151.0.1,,,26-05-2026 14:42:06,26-05-2026 14:42:06,0.231s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Billing/field_First Name""), randomFirstName)",Firefox 151.0.1,,,26-05-2026 14:42:06,26-05-2026 14:42:07,0.499s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Billing/field_Last Name""), randomLastName)",Firefox 151.0.1,,,26-05-2026 14:42:07,26-05-2026 14:42:07,0.731s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Billing/field_mobile phone""), randomPhone)",Firefox 151.0.1,,,26-05-2026 14:42:07,26-05-2026 14:42:08,0.718s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Billing/field_Address""), randomAddress)",Firefox 151.0.1,,,26-05-2026 14:42:08,26-05-2026 14:42:09,0.723s,PASSED
+"scrollToElement(findTestObject(""Checkout/Address/Address Billing/input_Province""), 5)",Firefox 151.0.1,,,26-05-2026 14:42:09,26-05-2026 14:42:09,0.426s,PASSED
+"waitForElementClickable(findTestObject(""Checkout/Address/Address Billing/input_Province""), 10)",Firefox 151.0.1,,,26-05-2026 14:42:09,26-05-2026 14:42:10,0.254s,PASSED
+"click(findTestObject(""Checkout/Address/Address Billing/input_Province""))",Firefox 151.0.1,,,26-05-2026 14:42:10,26-05-2026 14:42:10,0.307s,PASSED
+"waitForElementVisible(findTestObject(""Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province""), 10)",Firefox 151.0.1,,,26-05-2026 14:42:10,26-05-2026 14:42:10,0.422s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province""))",Firefox 151.0.1,,,26-05-2026 14:42:10,26-05-2026 14:42:11,0.305s,PASSED
+"waitForElementClickable(findTestObject(""Checkout/Address/Address Billing/input_Select Province""), 10)",Firefox 151.0.1,,,26-05-2026 14:42:11,26-05-2026 14:42:11,0.238s,PASSED
+"click(findTestObject(""Checkout/Address/Address Billing/input_Select Province""))",Firefox 151.0.1,,,26-05-2026 14:42:11,26-05-2026 14:42:11,0.293s,PASSED
+"waitForElementClickable(findTestObject(""Checkout/Address/Address Billing/li_Khan Mean Chey_1""), 10)",Firefox 151.0.1,,,26-05-2026 14:42:11,26-05-2026 14:42:12,0.859s,PASSED
+"mouseOver(findTestObject(""Checkout/Address/Address Billing/li_Khan Mean Chey""))",Firefox 151.0.1,,,26-05-2026 14:42:12,26-05-2026 14:42:12,0.398s,PASSED
+"click(findTestObject(""Checkout/Address/Address Billing/li_Khan Mean Chey_1""))",Firefox 151.0.1,,,26-05-2026 14:42:12,26-05-2026 14:42:13,0.318s,PASSED
+"waitForElementClickable(findTestObject(""Checkout/Address/Address Billing/input_Districts""), 10)",Firefox 151.0.1,,,26-05-2026 14:42:13,26-05-2026 14:42:13,0.248s,PASSED
+"click(findTestObject(""Checkout/Address/Address Billing/input_Districts""))",Firefox 151.0.1,,,26-05-2026 14:42:13,26-05-2026 14:42:13,0.301s,PASSED
+"waitForElementClickable(findTestObject(""Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom""), 10)",Firefox 151.0.1,,,26-05-2026 14:42:13,26-05-2026 14:42:14,0.943s,PASSED
+"mouseOver(findTestObject(""Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom""))",Firefox 151.0.1,,,26-05-2026 14:42:14,26-05-2026 14:42:15,0.338s,PASSED
+"click(findTestObject(""Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom_1""))",Firefox 151.0.1,,,26-05-2026 14:42:15,26-05-2026 14:42:15,0.369s,PASSED
+"setText(findTestObject(""Checkout/Address/Address Billing/input_ZipPostal Code""), randomCode)",Firefox 151.0.1,,,26-05-2026 14:42:15,26-05-2026 14:42:15,0.510s,PASSED
+"click(findTestObject(""Checkout/Order Summary/Online Payment - WeChat""))",Firefox 151.0.1,,,26-05-2026 14:42:15,26-05-2026 14:42:16,0.523s,PASSED
+"check(findTestObject(""Checkout/Order Summary/Checkbox__I accept""))",Firefox 151.0.1,,,26-05-2026 14:42:16,26-05-2026 14:42:16,0.504s,PASSED
+"click(findTestObject(""Checkout/Address/Address Ship To/btn_checkout""))",Firefox 151.0.1,,,26-05-2026 14:42:16,26-05-2026 14:42:36,19.631s,PASSED
+"waitForElementPresent(findTestObject(""Checkout/Order Summary/iframe_payment_online""), 10)",Firefox 151.0.1,,,26-05-2026 14:42:36,26-05-2026 14:42:36,0.422s,PASSED
+"click(findTestObject(""Checkout/Order Summary/iframe_payment_online""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 14:42:36,26-05-2026 14:42:39,2.359s,PASSED
+delay(10),Firefox 151.0.1,,,26-05-2026 14:42:39,26-05-2026 14:42:49,10.018s,PASSED
+"click(findTestObject(""Checkout/Order Summary/button_Approve""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 14:42:49,26-05-2026 14:42:49,0.340s,PASSED
+"waitForElementPresent(findTestObject(""Checkout/Order Summary/button_Continue shopping""), 10)",Firefox 151.0.1,,,26-05-2026 14:42:49,26-05-2026 14:42:50,0.812s,PASSED
+"verifyElementPresent(findTestObject(""Checkout/Order Summary/button_Continue shopping""), 0)",Firefox 151.0.1,,,26-05-2026 14:42:50,26-05-2026 14:42:50,0.228s,PASSED
+"click(findTestObject(""Checkout/Order Summary/button_Continue shopping""))",Firefox 151.0.1,,,26-05-2026 14:42:50,26-05-2026 14:42:51,0.300s,PASSED
+takeScreenshot(),Firefox 151.0.1,,,26-05-2026 14:42:51,26-05-2026 14:42:51,0.244s,PASSED
+"comment(""Email      : "" + randomEmail)",Firefox 151.0.1,,,26-05-2026 14:42:51,26-05-2026 14:42:51,0.003s,PASSED
+"comment(""First Name : "" + randomFirstName)",Firefox 151.0.1,,,26-05-2026 14:42:51,26-05-2026 14:42:51,0.002s,PASSED
+"comment(""Last Name  : "" + randomLastName)",Firefox 151.0.1,,,26-05-2026 14:42:51,26-05-2026 14:42:51,0.002s,PASSED
+"comment(""Phone      : "" + randomPhone)",Firefox 151.0.1,,,26-05-2026 14:42:51,26-05-2026 14:42:51,0.002s,PASSED
+"comment(""Address    : "" + randomAddress)",Firefox 151.0.1,,,26-05-2026 14:42:51,26-05-2026 14:42:51,0.002s,PASSED
+"comment(""Code    : "" + randomCode)",Firefox 151.0.1,,,26-05-2026 14:42:51,26-05-2026 14:42:51,0.003s,PASSED
+closeBrowser(),Firefox 151.0.1,,,26-05-2026 14:42:51,26-05-2026 14:42:51,0.601s,PASSED
+Video,Firefox 151.0.1,,,26-05-2026 14:42:54,26-05-2026 14:42:54,0.000s,PASSED

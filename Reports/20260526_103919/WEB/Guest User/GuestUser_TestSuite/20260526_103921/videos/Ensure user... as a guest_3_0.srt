@@ -1,0 +1,220 @@
+1
+00:00:00,079 --> 00:00:00,120
+1. randomEmail = custom.RandomData.generateRandomEmail()
+
+2
+00:00:00,121 --> 00:00:00,127
+5. randomFirstName = custom.RandomData.generateRandomFirstName()
+
+3
+00:00:00,128 --> 00:00:00,131
+9. randomLastName = custom.RandomData.generateRandomLastName()
+
+4
+00:00:00,132 --> 00:00:00,139
+13. randomPhone = custom.RandomData.generateRandomPhone()
+
+5
+00:00:00,140 --> 00:00:00,143
+17. randomAddress = custom.RandomData.generateRandomAddress()
+
+6
+00:00:00,146 --> 00:00:00,150
+21. randomCode = custom.RandomData.generateRandomCode()
+
+7
+00:00:00,152 --> 00:00:04,666
+25. openBrowser("")
+
+8
+00:00:04,688 --> 00:00:07,137
+29. navigateToUrl(URL)
+
+9
+00:00:07,144 --> 00:00:07,268
+33. maximizeWindow()
+
+10
+00:00:07,280 --> 00:00:07,937
+37. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+11
+00:00:07,942 --> 00:00:08,464
+41. click(findTestObject("Home Page/Search/icon-search"))
+
+12
+00:00:08,471 --> 00:00:09,254
+45. setText(findTestObject("Home Page/Search/field-search"), "IPHONE 11 PRO 128 GB DEEP PURPLE")
+
+13
+00:00:09,256 --> 00:00:10,714
+49. sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord(ENTER))
+
+14
+00:00:10,714 --> 00:00:13,183
+53. verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-11-pro"))
+
+15
+00:00:13,183 --> 00:00:39,197
+57. click(findTestObject("Product and Cart/Add to cart/btn-product"))
+
+16
+00:00:39,201 --> 00:00:41,512
+61. click(findTestObject("Product and Cart/Add to cart/button_Add to Cart"))
+
+17
+00:00:41,512 --> 00:00:41,960
+65. waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 10)
+
+18
+00:00:41,960 --> 00:00:42,351
+69. click(findTestObject("Product and Cart/Add to cart/i_icon-cart"))
+
+19
+00:00:42,361 --> 00:00:43,888
+73. verifyElementVisible(findTestObject("Checkout/Address/Address Ship To/btn_checkout"))
+
+20
+00:00:43,900 --> 00:00:44,234
+77. click(findTestObject("Checkout/Address/Address Ship To/btn_checkout"))
+
+21
+00:00:44,249 --> 00:00:45,552
+81. waitForElementVisible(findTestObject("Checkout/Checkout guest/field_email"), 10)
+
+22
+00:00:45,552 --> 00:00:46,209
+85. setText(findTestObject("Checkout/Checkout guest/field_email"), randomEmail)
+
+23
+00:00:46,209 --> 00:00:46,787
+89. click(findTestObject("Checkout/Checkout guest/btn_continue"))
+
+24
+00:00:46,787 --> 00:00:47,914
+93. waitForElementVisible(findTestObject("Checkout/Address/Address Ship To/field_First Name"), 10)
+
+25
+00:00:47,917 --> 00:00:49,803
+97. setText(findTestObject("Checkout/Address/Address Ship To/field_First Name"), randomFirstName)
+
+26
+00:00:49,805 --> 00:00:50,715
+101. setText(findTestObject("Checkout/Address/Address Ship To/field_Last Name"), randomLastName)
+
+27
+00:00:50,725 --> 00:00:51,561
+105. setText(findTestObject("Checkout/Address/Address Ship To/field_mobile phone"), randomPhone)
+
+28
+00:00:51,561 --> 00:00:52,404
+109. setText(findTestObject("Checkout/Address/Address Ship To/field_Address"), randomAddress)
+
+29
+00:00:52,410 --> 00:00:54,099
+113. setText(findTestObject("Checkout/Address/Address Ship To/input_ZipPostal Code"), randomCode)
+
+30
+00:00:54,110 --> 00:00:54,763
+117. click(findTestObject("Checkout/Address/Address Ship To/input_Province"))
+
+31
+00:00:54,767 --> 00:00:55,269
+121. click(findTestObject("Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province"), STOP_ON_FAILURE)
+
+32
+00:00:55,275 --> 00:00:55,667
+125. click(findTestObject("Checkout/Address/Address Ship To/input_Select Province"))
+
+33
+00:00:55,674 --> 00:00:56,761
+129. click(findTestObject("Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province"))
+
+34
+00:00:56,779 --> 00:00:57,132
+133. click(findTestObject("Checkout/Address/Address Ship To/input_Districts"))
+
+35
+00:00:57,142 --> 00:00:58,200
+137. click(findTestObject("Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts"))
+
+36
+00:00:58,212 --> 00:00:58,603
+141. click(findTestObject("Checkout/Address/Address Ship To/btn-save"))
+
+37
+00:00:58,603 --> 00:00:59,535
+145. click(findTestObject("Checkout/Order Summary/Online Payment - WeChat"))
+
+38
+00:00:59,549 --> 00:01:00,450
+149. check(findTestObject("Checkout/Order Summary/Checkbox__I accept"))
+
+39
+00:01:00,450 --> 00:01:30,613
+153. click(findTestObject("Checkout/Address/Address Ship To/btn_checkout"))
+
+40
+00:01:30,613 --> 00:01:30,972
+157. waitForElementPresent(findTestObject("Checkout/Order Summary/iframe_payment_online"), 7)
+
+41
+00:01:30,972 --> 00:01:35,251
+161. click(findTestObject("Checkout/Order Summary/iframe_payment_online"), STOP_ON_FAILURE)
+
+42
+00:01:35,253 --> 00:01:45,317
+165. delay(10)
+
+43
+00:01:45,333 --> 00:01:45,782
+169. click(findTestObject("Checkout/Order Summary/button_Approve"))
+
+44
+00:01:45,784 --> 00:01:46,061
+173. waitForElementPresent(findTestObject("Checkout/Order Summary/button_Continue shopping"), 10)
+
+45
+00:01:46,061 --> 00:01:46,463
+177. verifyElementPresent(findTestObject("Checkout/Order Summary/button_Continue shopping"), 0)
+
+46
+00:01:46,474 --> 00:01:47,407
+181. click(findTestObject("Checkout/Order Summary/button_Continue shopping"))
+
+47
+00:01:47,422 --> 00:01:47,723
+185. takeScreenshot()
+
+48
+00:01:47,723 --> 00:01:47,739
+189. comment("Email      : " + randomEmail)
+
+49
+00:01:47,739 --> 00:01:47,756
+193. comment("First Name : " + randomFirstName)
+
+50
+00:01:47,756 --> 00:01:47,767
+197. comment("Last Name  : " + randomLastName)
+
+51
+00:01:47,767 --> 00:01:47,773
+201. comment("Phone      : " + randomPhone)
+
+52
+00:01:47,773 --> 00:01:47,773
+205. comment("Address    : " + randomAddress)
+
+53
+00:01:47,789 --> 00:01:47,798
+209. comment("Code    : " + randomCode)
+
+54
+00:01:47,807 --> 00:01:48,086
+213. takeScreenshot()
+
+55
+00:01:48,098 --> 00:01:48,781
+217. closeBrowser()
+

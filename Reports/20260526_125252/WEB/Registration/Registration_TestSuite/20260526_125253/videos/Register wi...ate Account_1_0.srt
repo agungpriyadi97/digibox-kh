@@ -1,0 +1,48 @@
+1
+00:00:00,089 --> 00:00:09,455
+1. openBrowser(URL)
+
+2
+00:00:09,567 --> 00:00:10,550
+5. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+3
+00:00:10,564 --> 00:00:11,144
+9. click(findTestObject("Registration/icon-acount"))
+
+4
+00:00:11,146 --> 00:00:13,907
+13. custom.BrowserHelper.closeFirefoxPopup()
+
+5
+00:00:13,914 --> 00:00:14,364
+17. click(findTestObject("Registration/btn-create-new-account"))
+
+6
+00:00:14,372 --> 00:00:15,270
+21. setText(findTestObject("Registration/field-Email"), "agungpriyadi@gmail.com")
+
+7
+00:00:15,277 --> 00:00:16,228
+25. setText(findTestObject("Registration/field-account"), "agungpriyadi")
+
+8
+00:00:16,228 --> 00:00:17,151
+29. setText(findTestObject("Registration/field-Password"), "Laskar123456")
+
+9
+00:00:17,151 --> 00:00:17,752
+33. click(findTestObject("Registration/btn-sign-up"))
+
+10
+00:00:17,756 --> 00:00:18,457
+37. verifyElementText(findTestObject("Registration/verify-duplicate-account"), "The account has already exist.")
+
+11
+00:00:18,463 --> 00:00:18,994
+41. takeScreenshot()
+
+12
+00:00:18,994 --> 00:00:19,816
+45. closeBrowser()
+

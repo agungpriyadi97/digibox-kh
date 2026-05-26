@@ -1,0 +1,114 @@
+2026-05-26 14:54:10.348 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\AgungPriyadi\.katalon\packages\KS-11.1.3\configuration\org.eclipse.osgi\150\0\.cp\resources\logback\logback-execution.xml
+2026-05-26 14:54:10.352 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\AgungPriyadi\git\digibox-kh\Include\config\log.properties
+2026-05-26 14:54:13.148 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/WEB/Password/Password_TestSuite
+2026-05-26 14:54:13.539 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Agung Priyadi
+2026-05-26 14:54:13.539 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = digibox-kh
+2026-05-26 14:54:13.539 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = AgungPriyadi - NB-GDA-55026
+2026-05-26 14:54:13.539 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-05-26 14:54:13.539 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.110.65
+2026-05-26 14:54:13.539 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.1.3.0
+2026-05-26 14:54:14.003 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-26 14:54:14.003 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Password/Ensure user can update password using forget password feature
+2026-05-26 14:54:15.129 DEBUG e password using forget password feature - 1: return null
+2026-05-26 14:54:17.782 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Password/Ensure user can update password using forget password feature' .
+2026-05-26 14:54:17.790 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Password/Ensure user can update password using forget password feature
+2026-05-26 14:54:17.806 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-26 14:54:17.806 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Password/Ensure user cannot input invalid password length
+2026-05-26 14:54:18.285 DEBUG ser cannot input invalid password length - 1: openBrowser(URL)
+2026-05-26 14:54:19.713 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-05-26 14:54:19.998 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-26 14:54:25.727 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = e73629ee-3de2-48e3-a429-0764d51a6343
+2026-05-26 14:54:25.731 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-05-26 14:54:25.732 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-26 14:54:25.739 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-26 14:54:25.760 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-26 14:54:30.646 DEBUG ser cannot input invalid password length - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-26 14:54:31.791 DEBUG ser cannot input invalid password length - 3: click(findTestObject("Registration/icon-acount"))
+2026-05-26 14:54:32.616 DEBUG ser cannot input invalid password length - 4: click(findTestObject("Password/Page_Forgot Password/btn_Forgot passwords"))
+2026-05-26 14:54:33.760 DEBUG ser cannot input invalid password length - 5: setText(findTestObject("Password/Page_Forgot Password/txtField_Email"), "agungpriyadi")
+2026-05-26 14:54:34.816 DEBUG ser cannot input invalid password length - 6: click(findTestObject("Password/Page_Forgot Password/btn_Send validation code to email"), STOP_ON_FAILURE)
+2026-05-26 14:54:35.682 DEBUG ser cannot input invalid password length - 7: waitForElementVisible(findTestObject("Password/Page_Forgot Password/msg_ValidationCodeSuccess"), 10)
+2026-05-26 14:54:36.583 DEBUG ser cannot input invalid password length - 8: verifyElementText(findTestObject("Password/Page_Forgot Password/msg_ValidationCodeSuccess"), "Validation code sent successfully!")
+2026-05-26 14:54:36.957 DEBUG ser cannot input invalid password length - 9: setText(findTestObject("Password/Page_Forgot Password/txtField_Validation Code"), "123456")
+2026-05-26 14:54:37.820 DEBUG ser cannot input invalid password length - 10: setText(findTestObject("Password/Page_Forgot Password/txtField_New Password"), "123")
+2026-05-26 14:54:38.916 DEBUG ser cannot input invalid password length - 11: click(findTestObject("Password/Page_Forgot Password/btn_Reset Password"))
+2026-05-26 14:54:39.595 DEBUG ser cannot input invalid password length - 12: verifyTextPresent("Password length is 6-20 digits", false)
+2026-05-26 14:54:40.509 DEBUG ser cannot input invalid password length - 13: takeScreenshot()
+2026-05-26 14:54:43.394 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Password/Ensure user cannot input invalid password length' .
+2026-05-26 14:54:43.398 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Password/Ensure user cannot input invalid password length
+2026-05-26 14:54:43.407 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-26 14:54:43.407 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Password/Ensure user cannot reset password using invalid validation code
+2026-05-26 14:54:43.729 DEBUG t password using invalid validation code - 1: openBrowser(URL)
+2026-05-26 14:54:43.761 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-05-26 14:54:46.681 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-05-26 14:54:46.699 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-26 14:54:48.921 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 17dfd528-4b10-4411-9e44-fd1c2e600da4
+2026-05-26 14:54:48.922 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-05-26 14:54:48.923 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-26 14:54:48.924 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-26 14:54:48.926 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-26 14:54:51.078 DEBUG t password using invalid validation code - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-26 14:54:51.904 DEBUG t password using invalid validation code - 3: click(findTestObject("Registration/icon-acount"))
+2026-05-26 14:54:53.317 DEBUG t password using invalid validation code - 4: click(findTestObject("Password/Page_Forgot Password/btn_Forgot passwords"))
+2026-05-26 14:54:54.769 DEBUG t password using invalid validation code - 5: setText(findTestObject("Password/Page_Forgot Password/txtField_Email"), "agungpriyadi")
+2026-05-26 14:54:55.985 DEBUG t password using invalid validation code - 6: click(findTestObject("Password/Page_Forgot Password/btn_Send validation code to email"), STOP_ON_FAILURE)
+2026-05-26 14:54:56.675 DEBUG t password using invalid validation code - 7: waitForElementVisible(findTestObject("Password/Page_Forgot Password/msg_ValidationCodeSuccess"), 10)
+2026-05-26 14:54:57.423 DEBUG t password using invalid validation code - 8: verifyElementText(findTestObject("Password/Page_Forgot Password/msg_ValidationCodeSuccess"), "Validation code sent successfully!")
+2026-05-26 14:54:57.769 DEBUG t password using invalid validation code - 9: setText(findTestObject("Password/Page_Forgot Password/txtField_Validation Code"), "123456")
+2026-05-26 14:54:58.543 DEBUG t password using invalid validation code - 10: setText(findTestObject("Password/Page_Forgot Password/txtField_New Password"), "Laskar123456")
+2026-05-26 14:54:59.603 DEBUG t password using invalid validation code - 11: click(findTestObject("Password/Page_Forgot Password/btn_Reset Password"))
+2026-05-26 14:55:00.356 DEBUG t password using invalid validation code - 12: verifyTextPresent("Invalid code", false)
+2026-05-26 14:55:01.451 DEBUG t password using invalid validation code - 13: takeScreenshot()
+2026-05-26 14:55:04.086 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Password/Ensure user cannot reset password using invalid validation code' .
+2026-05-26 14:55:04.086 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Password/Ensure user cannot reset password using invalid validation code
+2026-05-26 14:55:04.101 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-26 14:55:04.101 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Password/Ensure user Empty Email Field on Forgot Password
+2026-05-26 14:55:04.493 DEBUG ser Empty Email Field on Forgot Password - 1: openBrowser(URL)
+2026-05-26 14:55:04.514 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-05-26 14:55:07.485 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-05-26 14:55:07.515 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-26 14:55:09.738 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = b416f3bc-0ecf-419a-ab5e-04913688316c
+2026-05-26 14:55:09.738 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-05-26 14:55:09.754 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-26 14:55:09.754 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-26 14:55:09.761 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-26 14:55:12.065 DEBUG ser Empty Email Field on Forgot Password - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-26 14:55:13.026 DEBUG ser Empty Email Field on Forgot Password - 3: click(findTestObject("Registration/icon-acount"))
+2026-05-26 14:55:14.190 DEBUG ser Empty Email Field on Forgot Password - 4: click(findTestObject("Password/Page_Forgot Password/btn_Forgot passwords"))
+2026-05-26 14:55:15.386 DEBUG ser Empty Email Field on Forgot Password - 5: setText(findTestObject("Password/Page_Forgot Password/txtField_Email"), "agungpriyadi")
+2026-05-26 14:55:16.697 DEBUG ser Empty Email Field on Forgot Password - 6: click(findTestObject("Password/Page_Forgot Password/btn_Send validation code to email"), STOP_ON_FAILURE)
+2026-05-26 14:55:17.320 DEBUG ser Empty Email Field on Forgot Password - 7: waitForElementVisible(findTestObject("Password/Page_Forgot Password/msg_ValidationCodeSuccess"), 10)
+2026-05-26 14:55:17.993 DEBUG ser Empty Email Field on Forgot Password - 8: verifyElementText(findTestObject("Password/Page_Forgot Password/msg_ValidationCodeSuccess"), "Validation code sent successfully!")
+2026-05-26 14:55:18.281 DEBUG ser Empty Email Field on Forgot Password - 9: setText(findTestObject("Password/Page_Forgot Password/txtField_New Password"), "")
+2026-05-26 14:55:19.171 DEBUG ser Empty Email Field on Forgot Password - 10: click(findTestObject("Password/Page_Forgot Password/btn_Reset Password"))
+2026-05-26 14:55:19.931 DEBUG ser Empty Email Field on Forgot Password - 11: verifyTextPresent("Required", false)
+2026-05-26 14:55:20.822 DEBUG ser Empty Email Field on Forgot Password - 12: takeScreenshot()
+2026-05-26 14:55:23.561 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Password/Ensure user Empty Email Field on Forgot Password' .
+2026-05-26 14:55:23.568 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Password/Ensure user Empty Email Field on Forgot Password
+2026-05-26 14:55:23.577 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-26 14:55:23.577 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Password/Ensure user Empty Validation Code
+2026-05-26 14:55:23.937 DEBUG t.Ensure user Empty Validation Code      - 1: openBrowser(URL)
+2026-05-26 14:55:23.940 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-05-26 14:55:26.810 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-05-26 14:55:26.841 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-26 14:55:28.990 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 03425dc8-1977-4b0c-90d6-1b859875f926
+2026-05-26 14:55:28.994 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-05-26 14:55:28.995 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-26 14:55:29.003 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-26 14:55:29.007 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-26 14:55:31.234 DEBUG t.Ensure user Empty Validation Code      - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-26 14:55:31.808 DEBUG t.Ensure user Empty Validation Code      - 3: click(findTestObject("Registration/icon-acount"))
+2026-05-26 14:55:32.452 DEBUG t.Ensure user Empty Validation Code      - 4: click(findTestObject("Password/Page_Forgot Password/btn_Forgot passwords"))
+2026-05-26 14:55:33.194 DEBUG t.Ensure user Empty Validation Code      - 5: setText(findTestObject("Password/Page_Forgot Password/txtField_Email"), "agungpriyadi")
+2026-05-26 14:55:33.902 DEBUG t.Ensure user Empty Validation Code      - 6: click(findTestObject("Password/Page_Forgot Password/btn_Send validation code to email"), STOP_ON_FAILURE)
+2026-05-26 14:55:35.012 DEBUG t.Ensure user Empty Validation Code      - 7: waitForElementVisible(findTestObject("Password/Page_Forgot Password/msg_ValidationCodeSuccess"), 10)
+2026-05-26 14:55:35.731 DEBUG t.Ensure user Empty Validation Code      - 8: verifyElementText(findTestObject("Password/Page_Forgot Password/msg_ValidationCodeSuccess"), "Validation code sent successfully!")
+2026-05-26 14:55:36.029 DEBUG t.Ensure user Empty Validation Code      - 9: setText(findTestObject("Password/Page_Forgot Password/txtField_New Password"), "Laskar123456")
+2026-05-26 14:55:37.001 DEBUG t.Ensure user Empty Validation Code      - 10: click(findTestObject("Password/Page_Forgot Password/btn_Reset Password"))
+2026-05-26 14:55:37.704 DEBUG t.Ensure user Empty Validation Code      - 11: verifyTextPresent("Required", false)
+2026-05-26 14:55:38.556 DEBUG t.Ensure user Empty Validation Code      - 12: takeScreenshot()
+2026-05-26 14:55:41.308 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Password/Ensure user Empty Validation Code' .
+2026-05-26 14:55:41.310 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Password/Ensure user Empty Validation Code
+2026-05-26 14:55:43.927 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-05-26 14:55:43.927 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/WEB/Password/Password_TestSuite
+2026-05-26 14:55:43.927 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

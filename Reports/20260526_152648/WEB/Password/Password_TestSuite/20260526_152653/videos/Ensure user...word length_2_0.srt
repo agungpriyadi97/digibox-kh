@@ -1,0 +1,52 @@
+1
+00:00:00,056 --> 00:00:04,340
+1. openBrowser(URL)
+
+2
+00:00:04,342 --> 00:00:04,743
+5. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+3
+00:00:04,745 --> 00:00:05,432
+9. click(findTestObject("Registration/icon-acount"))
+
+4
+00:00:05,433 --> 00:00:06,197
+13. click(findTestObject("Password/Page_Forgot Password/btn_Forgot passwords"))
+
+5
+00:00:06,198 --> 00:00:07,054
+17. setText(findTestObject("Password/Page_Forgot Password/txtField_Email"), "agungpriyadi")
+
+6
+00:00:07,055 --> 00:00:07,612
+21. click(findTestObject("Password/Page_Forgot Password/btn_Send validation code to email"), STOP_ON_FAILURE)
+
+7
+00:00:07,613 --> 00:00:08,349
+25. waitForElementVisible(findTestObject("Password/Page_Forgot Password/msg_ValidationCodeSuccess"), 10)
+
+8
+00:00:08,350 --> 00:00:08,606
+29. verifyElementText(findTestObject("Password/Page_Forgot Password/msg_ValidationCodeSuccess"), "Validation code sent successfully!")
+
+9
+00:00:08,608 --> 00:00:09,201
+33. setText(findTestObject("Password/Page_Forgot Password/txtField_Validation Code"), "123456")
+
+10
+00:00:09,203 --> 00:00:10,010
+37. setText(findTestObject("Password/Page_Forgot Password/txtField_New Password"), "123")
+
+11
+00:00:10,011 --> 00:00:10,524
+41. click(findTestObject("Password/Page_Forgot Password/btn_Reset Password"))
+
+12
+00:00:10,525 --> 00:00:11,028
+45. verifyTextPresent("Password length is 6-20 digits", false)
+
+13
+00:00:11,029 --> 00:00:11,311
+49. takeScreenshot()
+

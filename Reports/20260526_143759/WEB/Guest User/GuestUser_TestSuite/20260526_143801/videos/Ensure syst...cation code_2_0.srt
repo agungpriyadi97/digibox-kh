@@ -1,0 +1,52 @@
+1
+00:00:00,039 --> 00:00:05,160
+1. openBrowser(URL)
+
+2
+00:00:05,162 --> 00:00:05,453
+5. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+3
+00:00:05,456 --> 00:00:06,218
+9. click(findTestObject("Checkout/Track Order/track your order"))
+
+4
+00:00:06,220 --> 00:00:07,193
+13. setText(findTestObject("Guest User/Track Your Order/txtField_Email"), "agung.priyadi@gtech.digital")
+
+5
+00:00:07,194 --> 00:00:07,941
+17. setText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), "")
+
+6
+00:00:07,944 --> 00:00:08,455
+21. click(findTestObject("Guest User/Track Your Order/btn_Send"))
+
+7
+00:00:08,455 --> 00:00:09,157
+25. verifyTextPresent("The verification code has been sent, please check in the mailbox.", false)
+
+8
+00:00:09,158 --> 00:00:09,654
+29. setText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), "999999")
+
+9
+00:00:09,655 --> 00:00:10,086
+33. waitForElementPresent(findTestObject("Guest User/Track Your Order/btn_Continue"), 10)
+
+10
+00:00:10,087 --> 00:00:10,408
+37. click(findTestObject("Guest User/Track Your Order/btn_Continue"))
+
+11
+00:00:10,410 --> 00:00:11,007
+41. verifyTextPresent("Verification code error.", false)
+
+12
+00:00:11,008 --> 00:00:11,253
+45. takeScreenshot()
+
+13
+00:00:11,255 --> 00:00:11,991
+49. closeBrowser()
+

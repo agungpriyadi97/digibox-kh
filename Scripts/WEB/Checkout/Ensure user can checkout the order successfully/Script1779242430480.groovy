@@ -23,6 +23,8 @@ WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
 WebUI.click(findTestObject('Registration/icon-acount'))
 
+CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
+
 WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
 
 WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
@@ -49,27 +51,46 @@ WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-
 
 WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
 
-WebUI.verifyElementVisible(findTestObject('Checkout/Address/btn_checkout'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Checkout/Address/Address Ship To/btn_checkout'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Checkout/Address/btn_checkout'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/btn_checkout'))
 
-WebUI.click(findTestObject('Checkout/Online Payment - WeChat'))
+WebUI.click(findTestObject('Checkout/Order Summary/Online Payment - Cradit Card'))
 
-WebUI.check(findTestObject('Checkout/Checkbox__I accept'))
+WebUI.check(findTestObject('Checkout/Order Summary/Checkbox__I accept'))
 
-WebUI.click(findTestObject('Checkout/button_Checkout_Payment'))
+WebUI.click(findTestObject('Checkout/Order Summary/button_Checkout_Payment'))
 
-WebUI.waitForElementPresent(findTestObject('Checkout/iframe_payment_online'), 10)
+WebUI.waitForElementPresent(findTestObject('Checkout/Page Checkout/iframe_Credit Card'), 10)
 
-WebUI.click(findTestObject('Checkout/iframe_payment_online'), FailureHandling.STOP_ON_FAILURE)
+// Payment iframe
+WebUI.click(findTestObject('Checkout/Page Checkout/iframe_Credit Card'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Checkout/button_Approve'), 10)
+WebUI.delay(10)
 
-WebUI.click(findTestObject('Checkout/button_Approve'))
+WebUI.setText(findTestObject('Checkout/Page Checkout/field_cardNumber'), '5156 8399 3770 6777')
 
-WebUI.waitForElementPresent(findTestObject('Checkout/button_Continue shopping'), 10)
+WebUI.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Checkout/button_Continue shopping'))
+TestObject expiry = findTestObject('Checkout/Page Checkout/field_cardExp')
+
+WebUI.click(expiry)
+
+WebUI.sendKeys(expiry, '0')
+
+WebUI.sendKeys(expiry, '1')
+
+WebUI.sendKeys(expiry, '3')
+
+WebUI.sendKeys(expiry, '0')
+
+WebUI.setText(findTestObject('Checkout/Page Checkout/field_cvv2'), '993')
+
+WebUI.click(findTestObject('Checkout/Order Summary/button_Pay (1)'))
+
+WebUI.waitForElementPresent(findTestObject('Checkout/Order Summary/button_Continue shopping'), 10)
+
+WebUI.click(findTestObject('Checkout/Order Summary/button_Continue shopping'))
 
 WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/track your order'), 0)
 

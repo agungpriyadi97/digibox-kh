@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@type='primary']</value>
+         <value>//button[contains(@class,'add-to-cart')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>cf7ba1a7-e304-40c8-9012-fc40dd280efc</webElementGuid>
+      <webElementGuid>d628625c-9fef-44ef-883f-d333bb350cec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>primary</value>
-      <webElementGuid>8abcbd46-b586-4b31-8afe-dc74c61311e5</webElementGuid>
+      <webElementGuid>f7d62ea9-959e-45a7-8e5d-11307af1814a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>el-button el-button--primary gt-button add-btn add add-to-cart</value>
-      <webElementGuid>3d3ff223-a50f-4ce6-8d17-d392e86c6334</webElementGuid>
+      <webElementGuid>2f89683b-e60a-4eff-b2e1-eb0e01de1391</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -55,7 +55,7 @@
       <value>
                   Add to Cart
                 </value>
-      <webElementGuid>ea30abe6-1e2f-495a-a107-f1d8d062397a</webElementGuid>
+      <webElementGuid>87c27c05-671e-47e2-935a-4b0ca8dbb94d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;page-view&quot;)/div[@class=&quot;gt-layout page-layout_pc&quot;]/div[@class=&quot;page-view__child SP260429896958&quot;]/section[@class=&quot;page-pdp page-pdp SP260429896958&quot;]/section[@class=&quot;page-pdp_content&quot;]/div[@class=&quot;page-pdp_content__main&quot;]/div[@class=&quot;right&quot;]/section[@class=&quot;action-box&quot;]/div[1]/button[@class=&quot;el-button el-button--primary gt-button add-btn add add-to-cart&quot;]</value>
-      <webElementGuid>e8c2ec79-90c2-4778-8679-0c2029e36a5d</webElementGuid>
+      <webElementGuid>15765736-92e5-4e5c-99d2-fcd674ded0d7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@type='primary']</value>
-      <webElementGuid>1446dde3-4dc8-4ac6-8a3d-d5ec6bb77605</webElementGuid>
+      <webElementGuid>84a10931-ffc5-423d-a209-7c4d9e4eec4b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='page-view']/div/div[3]/section/section/div/div[2]/section[2]/div/button</value>
-      <webElementGuid>6d094762-4830-4b0b-93e3-dc419a3b1c17</webElementGuid>
+      <webElementGuid>ba018259-fc72-4068-b7bb-9cf1d40cb713</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Online Payment'])[1]/following::button[2]</value>
-      <webElementGuid>39d86174-09ce-4067-b9d3-afdf1f7a0fb6</webElementGuid>
+      <webElementGuid>eb055a39-d8ee-44a1-a96e-d98662b3e538</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Learn More'])[1]/following::button[2]</value>
-      <webElementGuid>516450f0-be95-411d-b7e2-1a476455fb89</webElementGuid>
+      <webElementGuid>8faef1bc-fb08-4bbe-b912-faf6bd5271c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +103,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Details'])[1]/preceding::button[1]</value>
-      <webElementGuid>4f598b8f-9d32-4cae-b194-858d1625812b</webElementGuid>
+      <webElementGuid>3f7d682d-aa13-4a41-8b3b-f2a9b666b853</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +111,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//section[2]/div/button</value>
-      <webElementGuid>80e9620c-4f72-4359-bf33-de51e7218d91</webElementGuid>
+      <webElementGuid>c7926e18-1a1a-4c29-814f-36890ac6b3a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -123,6 +123,6 @@
                 ' or . = '
                   Add to Cart
                 ')]</value>
-      <webElementGuid>15c1389c-b087-4691-ae45-4d3a2edb6419</webElementGuid>
+      <webElementGuid>0e919e28-d932-4b90-81a2-86574b63fbf9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,40 @@
+1
+00:00:00,038 --> 00:00:05,920
+1. openBrowser(URL)
+
+2
+00:00:05,923 --> 00:00:06,189
+5. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+3
+00:00:06,190 --> 00:00:06,939
+9. click(findTestObject("Registration/icon-acount"))
+
+4
+00:00:06,941 --> 00:00:17,208
+13. setText(findTestObject("Registration/field-account"), "agungpriyadi")
+
+5
+00:00:17,209 --> 00:00:17,931
+17. setText(findTestObject("Registration/field-Password"), "Laskar123456")
+
+6
+00:00:17,933 --> 00:00:18,447
+21. click(findTestObject("Login/btn-sign in"))
+
+7
+00:00:18,448 --> 00:00:18,948
+25. click(findTestObject("Registration/icon-acount"))
+
+8
+00:00:18,949 --> 00:00:21,440
+29. verifyElementVisible(findTestObject("Home Page/verify-succes-acount-login"))
+
+9
+00:00:21,441 --> 00:00:22,051
+33. takeScreenshot()
+
+10
+00:00:22,053 --> 00:00:22,666
+37. closeBrowser()
+

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Registration_TestSuite" time="58.252" tests="4" passed="4" failures="0" errors="0" incompleted="0" skipped="0">
+   <testsuite name="Registration_TestSuite" tests="4" passed="4" failures="0" errors="0" incompleted="0" skipped="0" time="58.252" timestamp="2026-05-26T08:42:40.035Z" hostname="AgungPriyadi - NB-GDA-55026" id="Test Suites/WEB/Registration/Registration_TestSuite" status="PASSED">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_152648\\WEB\\Registration\\Registration_TestSuite\\20260526_152655"/>
+         <property name="logFiles" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_152648\\WEB\\Registration\\Registration_TestSuite\\20260526_152655\\console0.log, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_152648\\WEB\\Registration\\Registration_TestSuite\\20260526_152655\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_152648\\WEB\\Registration\\Registration_TestSuite\\20260526_152655\\1779784973835.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_152648\\WEB\\Registration\\Registration_TestSuite\\20260526_152655\\1779784987167.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_152648\\WEB\\Registration\\Registration_TestSuite\\20260526_152655\\1779784999954.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_152648\\WEB\\Registration\\Registration_TestSuite\\20260526_152655\\1779785003295.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_152648\\WEB\\Registration\\Registration_TestSuite\\20260526_152655\\1779785015537.png"/>
+         <property name="executionBindingVariables" value="[]"/>
+         <property name="hostName" value="AgungPriyadi - NB-GDA-55026"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="11.1.3.0"/>
+         <property name="browser" value="Chrome 148.0.7778.179"/>
+         <property name="userFullName" value="Agung Priyadi"/>
+         <property name="hostAddress" value="192.168.110.65"/>
+         <property name="sessionId" value="876653689111e2945696560b007fa16b"/>
+         <property name="projectName" value="digibox-kh"/>
+         <property name="seleniumVersion" value="4.39.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/WEB/Registration/Register with duplicate Account" time="16.244" classname="Test Cases/WEB/Registration/Register with duplicate Account" status="PASSED">
+         <system-out><![CDATA[26-05-2026T15:42:40 - [TEST_CASE][PASSED] - Test Cases/WEB/Registration/Register with duplicate Account: Test Cases/WEB/Registration/Register with duplicate Account
+
+26-05-2026T15:42:40 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T15:42:41 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+26-05-2026T15:42:41 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T15:42:45 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T15:42:45 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T15:42:46 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T15:42:46 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T15:42:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T15:42:46 - [TEST_STEP][PASSED] - custom.BrowserHelper.closeFirefoxPopup(): custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T15:42:47 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T15:42:48 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+26-05-2026T15:42:48 - [MESSAGE][PASSED] - Keys 'ESCAPE + ' sent to object: 'tempBody'
+
+26-05-2026T15:42:48 - [MESSAGE][PASSED] - Execute JavaScript 'document.body.click();' successfully
+
+26-05-2026T15:42:49 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T15:42:49 - [MESSAGE][PASSED] - custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T15:42:49 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-create-new-account")): Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T15:42:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T15:42:49 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Email"), "agungpriyadi@gmail.com"): Text 'agungpriyadi@gmail.com' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T15:42:50 - [MESSAGE][PASSED] - Text 'agungpriyadi@gmail.com' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T15:42:50 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T15:42:51 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T15:42:51 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T15:42:52 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T15:42:52 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-sign-up")): Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T15:42:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T15:42:53 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Registration/verify-duplicate-account"), "The account has already exist."): Actual text and expected text of test object 'Object Repository/Registration/verify-duplicate-account' are matched.
+
+26-05-2026T15:42:53 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Registration/verify-duplicate-account' are matched.
+
+26-05-2026T15:42:53 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T15:42:54 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_152648\\WEB\\Registration\\Registration_TestSuite\\20260526_152655\\1779784973835.png]]
+
+26-05-2026T15:42:54 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T15:42:54 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T15:42:56 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Registration/Register with duplicate Account' .
+
+26-05-2026T15:42:56 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Registration/Register with duplicate Account' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Registration/Register with duplicate Email" time="13.286" classname="Test Cases/WEB/Registration/Register with duplicate Email" status="PASSED">
+         <system-out><![CDATA[26-05-2026T15:42:56 - [TEST_CASE][PASSED] - Test Cases/WEB/Registration/Register with duplicate Email: Test Cases/WEB/Registration/Register with duplicate Email
+
+26-05-2026T15:42:56 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T15:42:56 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+26-05-2026T15:42:56 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T15:42:59 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T15:42:59 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T15:42:59 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T15:42:59 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T15:43:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T15:43:00 - [TEST_STEP][PASSED] - custom.BrowserHelper.closeFirefoxPopup(): custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T15:43:01 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T15:43:01 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+26-05-2026T15:43:01 - [MESSAGE][PASSED] - Keys 'ESCAPE + ' sent to object: 'tempBody'
+
+26-05-2026T15:43:01 - [MESSAGE][PASSED] - Execute JavaScript 'document.body.click();' successfully
+
+26-05-2026T15:43:02 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T15:43:02 - [MESSAGE][PASSED] - custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T15:43:02 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-create-new-account")): Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T15:43:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T15:43:03 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Email"), "agung.priyadi@gtech.digital"): Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T15:43:04 - [MESSAGE][PASSED] - Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T15:43:04 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T15:43:05 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T15:43:05 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T15:43:05 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T15:43:05 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-sign-up")): Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T15:43:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T15:43:06 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Registration/verify-duplicate-email"), "The mobile or email already exist."): Actual text and expected text of test object 'Object Repository/Registration/verify-duplicate-email' are matched.
+
+26-05-2026T15:43:07 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Registration/verify-duplicate-email' are matched.
+
+26-05-2026T15:43:07 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T15:43:07 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_152648\\WEB\\Registration\\Registration_TestSuite\\20260526_152655\\1779784987167.png]]
+
+26-05-2026T15:43:07 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T15:43:07 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T15:43:09 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Registration/Register with duplicate Email' .
+
+26-05-2026T15:43:09 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Registration/Register with duplicate Email' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Registration/Register with invalid data (email or password)" time="16.207" classname="Test Cases/WEB/Registration/Register with invalid data (email or password)" status="PASSED">
+         <system-out><![CDATA[26-05-2026T15:43:09 - [TEST_CASE][PASSED] - Test Cases/WEB/Registration/Register with invalid data (email or password): Test Cases/WEB/Registration/Register with invalid data (email or password)
+
+26-05-2026T15:43:09 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T15:43:09 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+26-05-2026T15:43:09 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T15:43:12 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T15:43:12 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T15:43:13 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T15:43:13 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T15:43:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T15:43:13 - [TEST_STEP][PASSED] - custom.BrowserHelper.closeFirefoxPopup(): custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T15:43:14 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T15:43:14 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+26-05-2026T15:43:14 - [MESSAGE][PASSED] - Keys 'ESCAPE + ' sent to object: 'tempBody'
+
+26-05-2026T15:43:14 - [MESSAGE][PASSED] - Execute JavaScript 'document.body.click();' successfully
+
+26-05-2026T15:43:15 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T15:43:15 - [MESSAGE][PASSED] - custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T15:43:15 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-create-new-account")): Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T15:43:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T15:43:15 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Email"), "salahemailgmail.com"): Text 'salahemailgmail.com' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T15:43:17 - [MESSAGE][PASSED] - Text 'salahemailgmail.com' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T15:43:17 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), ""): Text '' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T15:43:17 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T15:43:17 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), ""): Text '' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T15:43:18 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T15:43:18 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-sign-up")): Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T15:43:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T15:43:19 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Registration/verify-Email"), "Please enter a valid email address"): Actual text and expected text of test object 'Object Repository/Registration/verify-Email' are matched.
+
+26-05-2026T15:43:19 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Registration/verify-Email' are matched.
+
+26-05-2026T15:43:19 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Registration/verify-required"), "Required"): Actual text and expected text of test object 'Object Repository/Registration/verify-required' are matched.
+
+26-05-2026T15:43:19 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Registration/verify-required' are matched.
+
+26-05-2026T15:43:19 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T15:43:20 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_152648\\WEB\\Registration\\Registration_TestSuite\\20260526_152655\\1779784999954.png]]
+
+26-05-2026T15:43:20 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Email"), "agung.priyadi@gtech.digital"): Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T15:43:20 - [MESSAGE][PASSED] - Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T15:43:20 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T15:43:21 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T15:43:21 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Las"): Text 'Las' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T15:43:22 - [MESSAGE][PASSED] - Text 'Las' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T15:43:22 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-sign-up")): Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T15:43:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T15:43:22 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Registration/verify-length"), "Password length is 6-20 digits"): Actual text and expected text of test object 'Object Repository/Registration/verify-length' are matched.
+
+26-05-2026T15:43:23 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Registration/verify-length' are matched.
+
+26-05-2026T15:43:23 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T15:43:23 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_152648\\WEB\\Registration\\Registration_TestSuite\\20260526_152655\\1779785003295.png]]
+
+26-05-2026T15:43:23 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T15:43:23 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T15:43:26 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Registration/Register with invalid data (email or password)' .
+
+26-05-2026T15:43:26 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Registration/Register with invalid data (email or password)' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Registration/Register with true data" time="12.256" classname="Test Cases/WEB/Registration/Register with true data" status="PASSED">
+         <system-out><![CDATA[26-05-2026T15:43:26 - [TEST_CASE][PASSED] - Test Cases/WEB/Registration/Register with true data: Test Cases/WEB/Registration/Register with true data
+
+26-05-2026T15:43:26 - [TEST_STEP][PASSED] - randomEmail = custom.RandomData.generateRandomEmail(): custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T15:43:26 - [MESSAGE][PASSED] - custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T15:43:26 - [TEST_STEP][PASSED] - randomUsername = custom.RandomData.generateRandomUsername(): custom.RandomData.generateRandomUsername is PASSED
+
+26-05-2026T15:43:26 - [MESSAGE][PASSED] - custom.RandomData.generateRandomUsername is PASSED
+
+26-05-2026T15:43:26 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T15:43:26 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+26-05-2026T15:43:26 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T15:43:28 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T15:43:28 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+26-05-2026T15:43:29 - [MESSAGE][PASSED] - Current window maximized
+
+26-05-2026T15:43:29 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T15:43:29 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T15:43:29 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T15:43:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T15:43:29 - [TEST_STEP][PASSED] - custom.BrowserHelper.closeFirefoxPopup(): custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T15:43:30 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T15:43:30 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+26-05-2026T15:43:30 - [MESSAGE][PASSED] - Keys 'ESCAPE + ' sent to object: 'tempBody'
+
+26-05-2026T15:43:30 - [MESSAGE][PASSED] - Execute JavaScript 'document.body.click();' successfully
+
+26-05-2026T15:43:31 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+26-05-2026T15:43:31 - [MESSAGE][PASSED] - custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+26-05-2026T15:43:31 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-create-new-account")): Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T15:43:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-create-new-account' is clicked on
+
+26-05-2026T15:43:32 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Email"), randomEmail): Text 'agungpriyadiglv@gmail.com' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T15:43:33 - [MESSAGE][PASSED] - Text 'agungpriyadiglv@gmail.com' is set on object 'Object Repository/Registration/field-Email'
+
+26-05-2026T15:43:33 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), randomUsername): Text 'agung0061317074' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T15:43:34 - [MESSAGE][PASSED] - Text 'agung0061317074' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T15:43:34 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T15:43:35 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T15:43:35 - [TEST_STEP][PASSED] - click(findTestObject("Registration/btn-sign-up")): Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T15:43:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/btn-sign-up' is clicked on
+
+26-05-2026T15:43:35 - [TEST_STEP][PASSED] - comment("Email used: " + randomEmail): Email used: agungpriyadiglv@gmail.com
+
+26-05-2026T15:43:35 - [MESSAGE][INFO] - Email used: agungpriyadiglv@gmail.com
+
+26-05-2026T15:43:35 - [TEST_STEP][PASSED] - comment("Username used: " + randomUsername): Username used: agung0061317074
+
+26-05-2026T15:43:35 - [MESSAGE][INFO] - Username used: agung0061317074
+
+26-05-2026T15:43:35 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T15:43:36 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_152648\\WEB\\Registration\\Registration_TestSuite\\20260526_152655\\1779785015537.png]]
+
+26-05-2026T15:43:36 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T15:43:36 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T15:43:38 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Registration/Register with true data' .
+
+26-05-2026T15:43:38 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Registration/Register with true data' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[26-05-2026T15:42:40 - [TEST_SUITE][PASSED] - Registration_TestSuite: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,68 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Password_TestSuite,Firefox 151.0.1,,,26-05-2026 10:59:02,26-05-2026 11:00:19,1m - 16.845s,PASSED
+,,,,,,,
+Test Cases/WEB/Password/Ensure user can update password using forget password feature,Firefox 151.0.1,,,26-05-2026 10:59:02,26-05-2026 10:59:05,2.298s,PASSED
+return null,Firefox 151.0.1,,,26-05-2026 10:59:03,26-05-2026 10:59:03,0.002s,PASSED
+Video,Firefox 151.0.1,,,26-05-2026 10:59:05,26-05-2026 10:59:05,0.002s,PASSED
+,,,,,,,
+Test Cases/WEB/Password/Ensure user cannot input invalid password length,Firefox 151.0.1,,,26-05-2026 10:59:05,26-05-2026 10:59:26,21.610s,PASSED
+openBrowser(URL),Firefox 151.0.1,,,26-05-2026 10:59:05,26-05-2026 10:59:16,10.884s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Firefox 151.0.1,,,26-05-2026 10:59:16,26-05-2026 10:59:17,0.853s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,26-05-2026 10:59:17,26-05-2026 10:59:17,0.584s,PASSED
+"click(findTestObject(""Password/Page_Forgot Password/btn_Forgot passwords""))",Firefox 151.0.1,,,26-05-2026 10:59:17,26-05-2026 10:59:18,0.749s,PASSED
+"setText(findTestObject(""Password/Page_Forgot Password/txtField_Email""), ""agungpriyadi"")",Firefox 151.0.1,,,26-05-2026 10:59:18,26-05-2026 10:59:19,0.926s,PASSED
+"click(findTestObject(""Password/Page_Forgot Password/btn_Send validation code to email""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 10:59:19,26-05-2026 10:59:19,0.530s,PASSED
+"waitForElementVisible(findTestObject(""Password/Page_Forgot Password/msg_ValidationCodeSuccess""), 10)",Firefox 151.0.1,,,26-05-2026 10:59:19,26-05-2026 10:59:20,0.775s,PASSED
+"verifyElementText(findTestObject(""Password/Page_Forgot Password/msg_ValidationCodeSuccess""), ""Validation code sent successfully!"")",Firefox 151.0.1,,,26-05-2026 10:59:20,26-05-2026 10:59:20,0.307s,PASSED
+"setText(findTestObject(""Password/Page_Forgot Password/txtField_Validation Code""), ""123456"")",Firefox 151.0.1,,,26-05-2026 10:59:20,26-05-2026 10:59:21,0.713s,PASSED
+"setText(findTestObject(""Password/Page_Forgot Password/txtField_New Password""), ""123"")",Firefox 151.0.1,,,26-05-2026 10:59:21,26-05-2026 10:59:22,0.934s,PASSED
+"click(findTestObject(""Password/Page_Forgot Password/btn_Reset Password""))",Firefox 151.0.1,,,26-05-2026 10:59:22,26-05-2026 10:59:23,0.645s,PASSED
+"verifyTextPresent(""Password length is 6-20 digits"", false)",Firefox 151.0.1,,,26-05-2026 10:59:23,26-05-2026 10:59:23,0.564s,PASSED
+takeScreenshot(),Firefox 151.0.1,,,26-05-2026 10:59:23,26-05-2026 10:59:24,0.762s,PASSED
+Video,Firefox 151.0.1,,,26-05-2026 10:59:26,26-05-2026 10:59:26,0.002s,PASSED
+,,,,,,,
+Test Cases/WEB/Password/Ensure user cannot reset password using invalid validation code,Firefox 151.0.1,,,26-05-2026 10:59:26,26-05-2026 10:59:45,18.757s,PASSED
+openBrowser(URL),Firefox 151.0.1,,,26-05-2026 10:59:27,26-05-2026 10:59:35,8.270s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Firefox 151.0.1,,,26-05-2026 10:59:35,26-05-2026 10:59:36,0.984s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,26-05-2026 10:59:36,26-05-2026 10:59:36,0.538s,PASSED
+"click(findTestObject(""Password/Page_Forgot Password/btn_Forgot passwords""))",Firefox 151.0.1,,,26-05-2026 10:59:36,26-05-2026 10:59:37,0.806s,PASSED
+"setText(findTestObject(""Password/Page_Forgot Password/txtField_Email""), ""agungpriyadi"")",Firefox 151.0.1,,,26-05-2026 10:59:37,26-05-2026 10:59:38,0.866s,PASSED
+"click(findTestObject(""Password/Page_Forgot Password/btn_Send validation code to email""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 10:59:38,26-05-2026 10:59:39,0.596s,PASSED
+"waitForElementVisible(findTestObject(""Password/Page_Forgot Password/msg_ValidationCodeSuccess""), 10)",Firefox 151.0.1,,,26-05-2026 10:59:39,26-05-2026 10:59:39,0.695s,PASSED
+"verifyElementText(findTestObject(""Password/Page_Forgot Password/msg_ValidationCodeSuccess""), ""Validation code sent successfully!"")",Firefox 151.0.1,,,26-05-2026 10:59:39,26-05-2026 10:59:40,0.296s,PASSED
+"setText(findTestObject(""Password/Page_Forgot Password/txtField_Validation Code""), ""123456"")",Firefox 151.0.1,,,26-05-2026 10:59:40,26-05-2026 10:59:40,0.657s,PASSED
+"setText(findTestObject(""Password/Page_Forgot Password/txtField_New Password""), ""Laskar123456"")",Firefox 151.0.1,,,26-05-2026 10:59:40,26-05-2026 10:59:41,0.913s,PASSED
+"click(findTestObject(""Password/Page_Forgot Password/btn_Reset Password""))",Firefox 151.0.1,,,26-05-2026 10:59:41,26-05-2026 10:59:42,0.619s,PASSED
+"verifyTextPresent(""Invalid code"", false)",Firefox 151.0.1,,,26-05-2026 10:59:42,26-05-2026 10:59:43,0.624s,PASSED
+takeScreenshot(),Firefox 151.0.1,,,26-05-2026 10:59:43,26-05-2026 10:59:43,0.334s,PASSED
+Video,Firefox 151.0.1,,,26-05-2026 10:59:45,26-05-2026 10:59:45,0.002s,PASSED
+,,,,,,,
+Test Cases/WEB/Password/Ensure user Empty Email Field on Forgot Password,Firefox 151.0.1,,,26-05-2026 10:59:45,26-05-2026 11:00:02,16.671s,PASSED
+openBrowser(URL),Firefox 151.0.1,,,26-05-2026 10:59:46,26-05-2026 10:59:52,6.669s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Firefox 151.0.1,,,26-05-2026 10:59:52,26-05-2026 10:59:53,1.015s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,26-05-2026 10:59:53,26-05-2026 10:59:54,0.513s,PASSED
+"click(findTestObject(""Password/Page_Forgot Password/btn_Forgot passwords""))",Firefox 151.0.1,,,26-05-2026 10:59:54,26-05-2026 10:59:55,1.242s,PASSED
+"setText(findTestObject(""Password/Page_Forgot Password/txtField_Email""), ""agungpriyadi"")",Firefox 151.0.1,,,26-05-2026 10:59:55,26-05-2026 10:59:56,0.839s,PASSED
+"click(findTestObject(""Password/Page_Forgot Password/btn_Send validation code to email""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 10:59:56,26-05-2026 10:59:56,0.619s,PASSED
+"waitForElementVisible(findTestObject(""Password/Page_Forgot Password/msg_ValidationCodeSuccess""), 10)",Firefox 151.0.1,,,26-05-2026 10:59:56,26-05-2026 10:59:57,0.603s,PASSED
+"verifyElementText(findTestObject(""Password/Page_Forgot Password/msg_ValidationCodeSuccess""), ""Validation code sent successfully!"")",Firefox 151.0.1,,,26-05-2026 10:59:57,26-05-2026 10:59:57,0.255s,PASSED
+"setText(findTestObject(""Password/Page_Forgot Password/txtField_New Password""), """")",Firefox 151.0.1,,,26-05-2026 10:59:57,26-05-2026 10:59:58,0.667s,PASSED
+"click(findTestObject(""Password/Page_Forgot Password/btn_Reset Password""))",Firefox 151.0.1,,,26-05-2026 10:59:58,26-05-2026 10:59:59,0.595s,PASSED
+"verifyTextPresent(""Required"", false)",Firefox 151.0.1,,,26-05-2026 10:59:59,26-05-2026 10:59:59,0.537s,PASSED
+takeScreenshot(),Firefox 151.0.1,,,26-05-2026 10:59:59,26-05-2026 11:00:00,0.441s,PASSED
+Video,Firefox 151.0.1,,,26-05-2026 11:00:02,26-05-2026 11:00:02,0.001s,PASSED
+,,,,,,,
+Test Cases/WEB/Password/Ensure user Empty Validation Code,Firefox 151.0.1,,,26-05-2026 11:00:02,26-05-2026 11:00:18,16.546s,PASSED
+openBrowser(URL),Firefox 151.0.1,,,26-05-2026 11:00:02,26-05-2026 11:00:09,6.698s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Firefox 151.0.1,,,26-05-2026 11:00:09,26-05-2026 11:00:09,0.638s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,26-05-2026 11:00:09,26-05-2026 11:00:10,0.894s,PASSED
+"click(findTestObject(""Password/Page_Forgot Password/btn_Forgot passwords""))",Firefox 151.0.1,,,26-05-2026 11:00:10,26-05-2026 11:00:12,1.212s,PASSED
+"setText(findTestObject(""Password/Page_Forgot Password/txtField_Email""), ""agungpriyadi"")",Firefox 151.0.1,,,26-05-2026 11:00:12,26-05-2026 11:00:12,0.839s,PASSED
+"click(findTestObject(""Password/Page_Forgot Password/btn_Send validation code to email""), STOP_ON_FAILURE)",Firefox 151.0.1,,,26-05-2026 11:00:12,26-05-2026 11:00:13,0.536s,PASSED
+"waitForElementVisible(findTestObject(""Password/Page_Forgot Password/msg_ValidationCodeSuccess""), 10)",Firefox 151.0.1,,,26-05-2026 11:00:13,26-05-2026 11:00:14,0.679s,PASSED
+"verifyElementText(findTestObject(""Password/Page_Forgot Password/msg_ValidationCodeSuccess""), ""Validation code sent successfully!"")",Firefox 151.0.1,,,26-05-2026 11:00:14,26-05-2026 11:00:14,0.306s,PASSED
+"setText(findTestObject(""Password/Page_Forgot Password/txtField_New Password""), ""Laskar123456"")",Firefox 151.0.1,,,26-05-2026 11:00:14,26-05-2026 11:00:15,0.689s,PASSED
+"click(findTestObject(""Password/Page_Forgot Password/btn_Reset Password""))",Firefox 151.0.1,,,26-05-2026 11:00:15,26-05-2026 11:00:15,0.589s,PASSED
+"verifyTextPresent(""Required"", false)",Firefox 151.0.1,,,26-05-2026 11:00:15,26-05-2026 11:00:16,0.537s,PASSED
+takeScreenshot(),Firefox 151.0.1,,,26-05-2026 11:00:16,26-05-2026 11:00:16,0.349s,PASSED
+Video,Firefox 151.0.1,,,26-05-2026 11:00:18,26-05-2026 11:00:18,0.003s,PASSED

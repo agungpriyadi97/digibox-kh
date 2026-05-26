@@ -1,0 +1,66 @@
+2026-05-26 15:41:48.903 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\AgungPriyadi\.katalon\packages\KS-11.1.3\configuration\org.eclipse.osgi\150\0\.cp\resources\logback\logback-execution.xml
+2026-05-26 15:41:48.907 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\AgungPriyadi\git\digibox-kh\Include\config\log.properties
+2026-05-26 15:41:49.822 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/WEB/Product And Cart/ProductCart_TestSuite
+2026-05-26 15:41:49.909 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Agung Priyadi
+2026-05-26 15:41:49.909 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = digibox-kh
+2026-05-26 15:41:49.910 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = AgungPriyadi - NB-GDA-55026
+2026-05-26 15:41:49.910 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-05-26 15:41:49.911 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.110.65
+2026-05-26 15:41:49.913 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.1.3.0
+2026-05-26 15:41:50.065 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-26 15:41:50.065 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Product and Cart/Ensure user can add - update - remove product to shopping cart
+2026-05-26 15:41:50.388 DEBUG update - remove product to shopping cart - 1: openBrowser(URL)
+2026-05-26 15:41:50.887 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-05-26 15:41:50.946 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-26 15:41:53.324 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = b5e51daf0ab6d63d8e22ec93fce89e2c
+2026-05-26 15:41:53.325 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-26 15:41:53.326 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-26 15:41:53.327 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-26 15:41:53.332 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-26 15:41:55.264 DEBUG update - remove product to shopping cart - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-26 15:41:55.618 DEBUG update - remove product to shopping cart - 3: click(findTestObject("Registration/icon-acount"))
+2026-05-26 15:41:56.290 DEBUG update - remove product to shopping cart - 4: setText(findTestObject("Registration/field-account"), "agungpriyadi")
+2026-05-26 15:41:57.384 DEBUG update - remove product to shopping cart - 5: setText(findTestObject("Registration/field-Password"), "Laskar123456")
+2026-05-26 15:41:58.216 DEBUG update - remove product to shopping cart - 6: click(findTestObject("Login/btn-sign in"))
+2026-05-26 15:41:58.733 DEBUG update - remove product to shopping cart - 7: click(findTestObject("Registration/icon-acount"))
+2026-05-26 15:41:59.243 DEBUG update - remove product to shopping cart - 8: verifyElementVisible(findTestObject("Home Page/verify-succes-acount-login"))
+2026-05-26 15:42:02.146 DEBUG update - remove product to shopping cart - 9: click(findTestObject("Home Page/Search/icon-search"))
+2026-05-26 15:42:02.439 DEBUG update - remove product to shopping cart - 10: click(findTestObject("Home Page/Search/field-search"))
+2026-05-26 15:42:02.742 DEBUG update - remove product to shopping cart - 11: sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 11 PRO 128 GB DEEP PURPLE", ENTER))
+2026-05-26 15:42:03.077 DEBUG update - remove product to shopping cart - 12: verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-11-pro"))
+2026-05-26 15:42:06.001 DEBUG update - remove product to shopping cart - 13: click(findTestObject("Product and Cart/Add to cart/btn-product"))
+2026-05-26 15:42:16.075 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Product and Cart/Add to cart/btn-product'. Try using Self-healing.
+2026-05-26 15:42:16.327 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Web element with id: 'Object Repository/Product and Cart/Add to cart/btn-product' located by 'By.xpath: //div[@id='waterfallWrapper1779780443095']/div/section/div/div/div/div[2]/p' not found
+2026-05-26 15:42:16.563 ERROR c.k.s.e.healers.SelfHealingPipeline      - ❌ Failed to execute candidate self-healer, trigger AI-SelfHealing: Web element with id: 'Object Repository/Product and Cart/Add to cart/btn-product' located by 'By.xpath: //div[@id='waterfallWrapper1779780443095']/div/section/div/div/div/div[2]/p' not found
+2026-05-26 15:42:16.565 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Recovering element locator by using AI Self-Healing...
+> Remove hidden elements: 171,773 -> 43,074 (-75.17%)
+> Remove next siblings: 43,074 -> 43,074 (-0%)
+> Remove redundant parents: 43,074 -> 42,915 (-0.09%)
+> Remove event handler attributes: 42,915 -> 42,915 (-0%)
+> Trim long attributes: 42,915 -> 38,809 (-2.4%)
+> Trim long text: 38,809 -> 35,314 (-2.04%)
+> Minify HTML syntax: 35,314 -> 32,335 (-1.74%)
+>>> Total: 171,217 -> 35,314 (-79.37%)
+2026-05-26 15:42:27.408 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Found "3" possible locators:\n [\n  {\n    "type": "XPATH",\n    "value": "//div[@id\u003d\u0027waterfallWrapper1779784924850\u0027]//p[@class\u003d\u0027product-name\u0027 and normalize-space(.)\u003d\u0027IPHONE 11 PRO 128 GB DEEP PURPLE\u0027]",\n    "semanticLocator": "product name \u0027IPHONE 11 PRO 128 GB DEEP PURPLE\u0027 in first PLP card",\n    "confidence": 0.92,\n    "reason": "Matched tag \u0027p\u0027 and class\u003d\u0027product-name\u0027 (same tag/structure as broken object\u0027s captured XPath) and matched visible text content \u0027IPHONE 11 PRO 128 GB DEEP PURPLE\u0027 which identifies the exact product item under the waterfall container (object\u0027s locator targeted a p under a waterfallWrapper)."\n  },\n  {\n    "type": "CSS",\n    "value": "#waterfallWrapper1779784924850 .waterfall__item.waterfallItem.normal .sp-plp-card__name \u003e p.product-name",\n    "semanticLocator": "first product-name p inside waterfallWrapper1779784924850",\n    "confidence": 0.68,\n    "reason": "Matched DOM structure pattern from broken object: a p element used for product name inside the waterfall wrapper. Uses current waterfall container id (waterfallWrapper1779784924850) and class chain (waterfall__item → sp-plp-card__name → p.product-name) to point to the same element type recorded in the broken object."\n  },\n  {\n    "type": "XPATH",\n    "value": "(//p[@class\u003d\u0027product-name\u0027 and contains(normalize-space(.),\u0027IPHONE 11 PRO\u0027)])[1]",\n    "semanticLocator": "first product-name p containing \u0027IPHONE 11 PRO\u0027 (fuzzy/text-focused)",\n    "confidence": 0.45,\n    "reason": "Matched visible text similarity: contains \u0027IPHONE 11 PRO\u0027 which aligns with the broken object\u0027s target text context and tag p with class\u003d\u0027product-name\u0027. Provided as a fallback fuzzy/text match when exact container id might differ."\n  }\n]
+2026-05-26 15:42:27.410 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Verifying locator: "//div[@id='waterfallWrapper1779784924850']//p[@class='product-name' and normalize-space(.)='IPHONE 11 PRO 128 GB DEEP PURPLE']"
+2026-05-26 15:42:27.647 INFO  c.k.s.e.healers.SelfHealingPipeline      - [AI Self-Healing] Found valid locator: "//div[@id='waterfallWrapper1779784924850']//p[@class='product-name' and normalize-space(.)='IPHONE 11 PRO 128 GB DEEP PURPLE']"
+2026-05-26 15:42:27.837 INFO  .c.w.m.WebUiElementFinderWithSelfHealing - [AI Self-Healing] Screenshot: C:/Users/AgungPriyadi/git/digibox-kh/Reports/Self-healing/Object Repository/Product and Cart/Add to cart/btn-product_XPATH.png
+2026-05-26 15:42:27.856 WARN  c.k.k.c.w.keyword.builtin.ClickKeyword   - Waiting for element timed out
+2026-05-26 15:42:27.892 DEBUG update - remove product to shopping cart - 14: click(findTestObject("Product and Cart/Add to cart/button_Add to Cart"))
+2026-05-26 15:42:30.339 DEBUG update - remove product to shopping cart - 15: click(findTestObject("Product and Cart/Add to cart/i_icon-cart"))
+2026-05-26 15:42:30.876 DEBUG update - remove product to shopping cart - 16: takeScreenshot()
+2026-05-26 15:42:31.397 DEBUG update - remove product to shopping cart - 17: click(findTestObject("Product and Cart/Add to cart/btn-trash"))
+2026-05-26 15:42:32.323 DEBUG update - remove product to shopping cart - 18: takeScreenshot()
+2026-05-26 15:42:32.804 DEBUG update - remove product to shopping cart - 19: click(findTestObject("Product and Cart/Add to cart/btn-confrim-yes"))
+2026-05-26 15:42:33.100 DEBUG update - remove product to shopping cart - 20: takeScreenshot()
+2026-05-26 15:42:33.416 DEBUG update - remove product to shopping cart - 21: closeBrowser()
+2026-05-26 15:42:35.970 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/WEB/Product and Cart/Ensure user can add - update - remove product to shopping cart' .
+2026-05-26 15:42:35.971 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Product and Cart/Ensure user can add - update - remove product to shopping cart
+2026-05-26 15:42:35.972 INFO  c.k.katalon.core.main.TestCaseExecutor   - 
+2026-05-26 15:42:35.973 INFO  c.k.katalon.core.main.TestCaseExecutor   - ===================== Self-healing Report ====================
+2026-05-26 15:42:35.973 INFO  c.k.katalon.core.main.TestCaseExecutor   - One of the failed test object locators has been recovered by Self-healing. Please refer to the Self-healing Insights tab for more details.
+2026-05-26 15:42:35.973 INFO  c.k.katalon.core.main.TestCaseExecutor   - To learn more about Self-healing, please read https://docs.katalon.com/katalon-studio/maintain-tests/self-healing-tests-in-katalon-studio
+2026-05-26 15:42:35.974 INFO  c.k.katalon.core.main.TestCaseExecutor   - ==============================================================
+2026-05-26 15:42:35.997 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-05-26 15:42:35.997 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/WEB/Product And Cart/ProductCart_TestSuite
+2026-05-26 15:42:35.997 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

@@ -1,0 +1,184 @@
+1
+00:00:00,078 --> 00:00:02,728
+1. openBrowser(URL)
+
+2
+00:00:02,730 --> 00:00:02,997
+5. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+3
+00:00:02,998 --> 00:00:03,340
+9. click(findTestObject("Registration/icon-acount"))
+
+4
+00:00:03,342 --> 00:00:05,684
+13. custom.BrowserHelper.closeFirefoxPopup()
+
+5
+00:00:05,685 --> 00:00:06,271
+17. setText(findTestObject("Registration/field-account"), "agungpriyadi")
+
+6
+00:00:06,272 --> 00:00:07,053
+21. setText(findTestObject("Registration/field-Password"), "Laskar123456")
+
+7
+00:00:07,056 --> 00:00:07,559
+25. click(findTestObject("Login/btn-sign in"))
+
+8
+00:00:07,560 --> 00:00:08,060
+29. click(findTestObject("Registration/icon-acount"))
+
+9
+00:00:08,061 --> 00:00:10,941
+33. verifyElementVisible(findTestObject("Home Page/verify-succes-acount-login"))
+
+10
+00:00:10,942 --> 00:00:11,232
+37. click(findTestObject("Home Page/Search/icon-search"))
+
+11
+00:00:11,234 --> 00:00:11,508
+41. click(findTestObject("Home Page/Search/field-search"))
+
+12
+00:00:11,509 --> 00:00:11,819
+45. sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 12 PRO MAX 128GB GOLD", ENTER))
+
+13
+00:00:11,820 --> 00:00:14,371
+49. verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-12 -pro"))
+
+14
+00:00:14,374 --> 00:00:14,674
+53. click(findTestObject("Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD"))
+
+15
+00:00:14,675 --> 00:00:17,041
+57. click(findTestObject("Product and Cart/Add to cart/button_Add to Cart"))
+
+16
+00:00:17,043 --> 00:00:17,494
+61. waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 7)
+
+17
+00:00:17,495 --> 00:00:17,805
+65. click(findTestObject("Product and Cart/Add to cart/i_icon-cart"))
+
+18
+00:00:17,806 --> 00:00:19,009
+69. verifyElementVisible(findTestObject("Checkout/Address/Address Ship To/btn_checkout"), STOP_ON_FAILURE)
+
+19
+00:00:19,010 --> 00:00:19,306
+73. click(findTestObject("Checkout/Address/Address Ship To/btn_checkout"))
+
+20
+00:00:19,307 --> 00:00:20,885
+77. click(findTestObject("Checkout/Order Summary/Online Payment - Cradit Card"))
+
+21
+00:00:20,886 --> 00:00:22,332
+81. check(findTestObject("Checkout/Order Summary/Checkbox__I accept"))
+
+22
+00:00:22,334 --> 00:00:23,163
+85. click(findTestObject("Checkout/Order Summary/button_Checkout_Payment"))
+
+23
+00:00:23,164 --> 00:00:27,096
+89. waitForElementPresent(findTestObject("Checkout/Page Checkout/iframe_Credit Card"), 10)
+
+24
+00:00:27,099 --> 00:00:27,726
+93. click(findTestObject("Checkout/Page Checkout/iframe_Credit Card"), STOP_ON_FAILURE)
+
+25
+00:00:27,727 --> 00:00:37,736
+97. delay(10)
+
+26
+00:00:37,737 --> 00:00:38,158
+101. setText(findTestObject("Checkout/Page Checkout/field_cardNumber"), "5156 8399 3770 6777")
+
+27
+00:00:38,159 --> 00:00:38,524
+105. setText(findTestObject("Checkout/Page Checkout/field_cardExp"), "01/30")
+
+28
+00:00:38,525 --> 00:00:38,874
+109. setText(findTestObject("Checkout/Page Checkout/field_cvv2"), "993")
+
+29
+00:00:38,875 --> 00:00:39,159
+113. click(findTestObject("Checkout/Order Summary/btn-closed-pay"))
+
+30
+00:00:39,161 --> 00:00:39,167
+117. waitForAlert(10)
+
+31
+00:00:39,168 --> 00:00:39,172
+121. alertText = getAlertText()
+
+32
+00:00:39,174 --> 00:00:39,176
+125. comment(alertText)
+
+33
+00:00:39,177 --> 00:00:39,183
+129. acceptAlert()
+
+34
+00:00:39,184 --> 00:00:40,317
+133. waitForElementVisible(findTestObject("Checkout/Track Order/track your order"), 7)
+
+35
+00:00:40,318 --> 00:00:40,600
+137. click(findTestObject("Checkout/Track Order/track your order"))
+
+36
+00:00:40,601 --> 00:00:41,543
+141. click(findTestObject("Checkout/Track Order/sp-order-list-item"))
+
+37
+00:00:41,544 --> 00:00:42,323
+145. scrollToElement(findTestObject("Checkout/Track Order/btn-cencel"), 10)
+
+38
+00:00:42,324 --> 00:00:43,041
+149. click(findTestObject("Checkout/Track Order/btn-cencel"))
+
+39
+00:00:43,042 --> 00:00:43,502
+153. waitForElementVisible(findTestObject("Checkout/Track Order/button_OK"), 7)
+
+40
+00:00:43,503 --> 00:00:43,789
+157. click(findTestObject("Checkout/Track Order/button_OK"))
+
+41
+00:00:43,790 --> 00:00:44,577
+161. waitForElementVisible(findTestObject("Checkout/Track Order/Message_Success"), 10)
+
+42
+00:00:44,578 --> 00:00:45,136
+165. verifyElementVisible(findTestObject("Checkout/Track Order/Message_Success"))
+
+43
+00:00:45,137 --> 00:00:45,377
+169. scrollToElement(findTestObject("Checkout/Track Order/text_order_status"), 5)
+
+44
+00:00:45,379 --> 00:00:45,618
+173. verifyElementText(findTestObject("Checkout/Track Order/text_order_status"), "CANCEL")
+
+45
+00:00:45,619 --> 00:00:45,878
+177. takeScreenshot()
+
+46
+00:00:45,879 --> 00:00:46,323
+181. closeBrowser()
+
