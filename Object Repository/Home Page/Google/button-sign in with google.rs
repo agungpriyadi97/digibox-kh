@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button-sign in with google</name>
+   <tag></tag>
+   <elementGuidId>d4f1854f-11fe-4240-b259-12740e94f737</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='g_id_onload']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[title=&quot;Tombol\ Login\ dengan\ Google&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>iframe[title=&quot;Tombol Login dengan Google&quot;]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>iframe</value>
+      <webElementGuid>550ffed4-c042-4507-bf83-8866fb1e818a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>https://accounts.google.com/gsi/button?logo_alignment=center&amp;theme=dark&amp;type=standard&amp;size=large&amp;width=580px&amp;text=signin_with&amp;is_fedcm_supported=true&amp;client_id=969741314920-ju9kng26ktvr41qfpng5pjmvno4uq7m8.apps.googleusercontent.com&amp;iframe_id=gsi_507734_161834&amp;cas=pEcNbcqtoWzTuPj82REeTyTWUYvncNJUpYS1Lx7ZuRU&amp;hl=en_US</value>
+      <webElementGuid>05729df8-844f-4bfd-bc28-5a81b9b74cfb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>L5Fo6c-PQbLGe</value>
+      <webElementGuid>4f1606d6-caa1-49eb-a29a-cfb70df8cab3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>allow</name>
+      <type>Main</type>
+      <value>identity-credentials-get</value>
+      <webElementGuid>15ccf5fc-35eb-466f-89f3-4b06ca9da843</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>gsi_507734_161834</value>
+      <webElementGuid>5128aa19-1218-4bfd-be57-d1b0c21b1ec3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Tombol Login dengan Google</value>
+      <webElementGuid>2dcdaed3-2ddc-4728-b3f1-8e3d86fc491e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-c393873864597107e0b6260e6e780b05</value>
+      <webElementGuid>e29d1211-5ec8-4132-80d3-744e94e0bf34</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@title = 'Tombol Login dengan Google']</value>
+      <webElementGuid>6786860c-dfce-4e61-addb-02bff306a0a7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@title = 'Tombol Login dengan Google']</value>
+      <webElementGuid>cce84b3b-b08c-4549-a182-f1a7bf666b3c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//iframe[@src = 'https://accounts.google.com/gsi/button?logo_alignment=center&amp;theme=dark&amp;type=standard&amp;size=large&amp;width=580px&amp;text=signin_with&amp;is_fedcm_supported=true&amp;client_id=969741314920-ju9kng26ktvr41qfpng5pjmvno4uq7m8.apps.googleusercontent.com&amp;iframe_id=gsi_507734_161834&amp;cas=pEcNbcqtoWzTuPj82REeTyTWUYvncNJUpYS1Lx7ZuRU&amp;hl=en_US' and @id = 'gsi_507734_161834' and @title = 'Tombol Login dengan Google']</value>
+      <webElementGuid>f5a246ee-90b5-48df-b7c6-3becb820b5bf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

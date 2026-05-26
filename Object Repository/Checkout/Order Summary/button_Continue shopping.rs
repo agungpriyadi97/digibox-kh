@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Continue shopping</name>
+   <tag></tag>
+   <elementGuidId>4465f81e-4194-4e15-b183-617eb418038b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[contains(@class,'btn-primary')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Continue shopping&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>719d73cb-d669-4205-8e8c-25b4c5ef781c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>primary</value>
+      <webElementGuid>18af94b4-5d44-4b02-b9bf-e3f470aea4fd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-full btn flex justify-center items-center w-full text-white text-s14 h-[56px] -tracking-[0.28px] leading-[18px] btn-primary w-full</value>
+      <webElementGuid>bc606f93-1ac6-40bf-9b82-92d46fbeffe9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Continue shopping</value>
+      <webElementGuid>1361b1c6-c88b-4a17-80bd-6c843e888eb9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;container&quot;)/div[@class=&quot;flex flex-col right-side w-full iframe_view&quot;]/div[@class=&quot;st-success-screen&quot;]/div[1]/div[1]/div[@class=&quot;custom-btn space-y-2&quot;]/button[@class=&quot;w-full btn flex justify-center items-center w-full text-white text-s14 h-[56px] -tracking-[0.28px] leading-[18px] btn-primary w-full&quot;]</value>
+      <webElementGuid>940668f8-126f-4ba4-9cff-30e6b100edbc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Checkout/Order Summary/iframe_Copyright 2023 Digibox. All rights reserved_aba_webservice</value>
+      <webElementGuid>0a786fac-6fdd-4b9d-bc56-d6bc0d24ec0c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@type='primary']</value>
+      <webElementGuid>8f954c7b-57d0-42c7-b82c-575ba6d9b8e5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//main[@id='container']/div[2]/div/div/div/div[3]/button[2]</value>
+      <webElementGuid>e75c20e9-a4e7-430e-af31-3d7cf0f94aad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Download Receipt'])[1]/following::button[1]</value>
+      <webElementGuid>d34ea1dc-49a9-4a3b-9cda-f58688c43b9b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Success'])[1]/following::button[2]</value>
+      <webElementGuid>b1243313-90f6-4d16-bc50-2f5d6230954f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[2]</value>
+      <webElementGuid>519ee340-8a24-4a17-84b9-c17f02e83a9a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'primary' and (text() = 'Continue shopping' or . = 'Continue shopping')]</value>
+      <webElementGuid>74982711-7bee-403e-9ab6-b5769b11c80f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
