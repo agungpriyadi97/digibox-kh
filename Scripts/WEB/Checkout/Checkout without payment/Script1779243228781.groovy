@@ -20,6 +20,8 @@ import org.openqa.selenium.Keys as Keys
 // Open browser
 WebUI.openBrowser('')
 
+CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
+
 WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
@@ -28,6 +30,8 @@ WebUI.maximizeWindow()
 WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
 WebUI.click(findTestObject('Registration/icon-acount'))
+
+CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
 
 WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
 

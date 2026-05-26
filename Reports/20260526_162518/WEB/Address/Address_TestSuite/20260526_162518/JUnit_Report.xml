@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Address_TestSuite" time="183.451" tests="5" passed="5" failures="0" errors="0" incompleted="0" skipped="0">
+   <testsuite name="Address_TestSuite" tests="5" passed="5" failures="0" errors="0" incompleted="0" skipped="0" time="183.451" timestamp="2026-05-26T09:25:39.837Z" hostname="AgungPriyadi - NB-GDA-55026" id="Test Suites/WEB/Address/Address_TestSuite" status="PASSED">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518"/>
+         <property name="logFiles" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518\\console0.log, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518\\1779787566273.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518\\1779787591018.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518\\1779787605648.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518\\1779787636239.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518\\1779787640411.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518\\1779787720456.png"/>
+         <property name="executionBindingVariables" value="[]"/>
+         <property name="hostName" value="AgungPriyadi - NB-GDA-55026"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="11.1.3.0"/>
+         <property name="browser" value="Chrome 148.0.7778.179"/>
+         <property name="userFullName" value="Agung Priyadi"/>
+         <property name="hostAddress" value="192.168.110.65"/>
+         <property name="sessionId" value="54b1327fba6908e0dec0ef6e938fccf6"/>
+         <property name="projectName" value="digibox-kh"/>
+         <property name="seleniumVersion" value="4.39.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/WEB/Address Management/Ensure My Address - add new address" time="29.268" classname="Test Cases/WEB/Address Management/Ensure My Address - add new address" status="PASSED">
+         <system-out><![CDATA[26-05-2026T16:25:40 - [TEST_CASE][PASSED] - Test Cases/WEB/Address Management/Ensure My Address - add new address: Test Cases/WEB/Address Management/Ensure My Address - add new address
+
+26-05-2026T16:25:40 - [TEST_STEP][PASSED] - randomFirstName = custom.RandomData.generateRandomFirstName(): custom.RandomData.generateRandomFirstName is PASSED
+
+26-05-2026T16:25:40 - [MESSAGE][PASSED] - custom.RandomData.generateRandomFirstName is PASSED
+
+26-05-2026T16:25:40 - [TEST_STEP][PASSED] - randomEmail = custom.RandomData.generateRandomEmail(): custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T16:25:40 - [MESSAGE][PASSED] - custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T16:25:40 - [TEST_STEP][PASSED] - randomLastName = custom.RandomData.generateRandomLastName(): custom.RandomData.generateRandomLastName is PASSED
+
+26-05-2026T16:25:40 - [MESSAGE][PASSED] - custom.RandomData.generateRandomLastName is PASSED
+
+26-05-2026T16:25:40 - [TEST_STEP][PASSED] - randomPhone = custom.RandomData.generateRandomPhone(): custom.RandomData.generateRandomPhone is PASSED
+
+26-05-2026T16:25:40 - [MESSAGE][PASSED] - custom.RandomData.generateRandomPhone is PASSED
+
+26-05-2026T16:25:40 - [TEST_STEP][PASSED] - randomAddress = custom.RandomData.generateRandomAddress(): custom.RandomData.generateRandomAddress is PASSED
+
+26-05-2026T16:25:40 - [MESSAGE][PASSED] - custom.RandomData.generateRandomAddress is PASSED
+
+26-05-2026T16:25:40 - [TEST_STEP][PASSED] - randomCode = custom.RandomData.generateRandomCode(): custom.RandomData.generateRandomCode is PASSED
+
+26-05-2026T16:25:40 - [MESSAGE][PASSED] - custom.RandomData.generateRandomCode is PASSED
+
+26-05-2026T16:25:40 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T16:25:40 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+26-05-2026T16:25:41 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T16:25:45 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T16:25:45 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T16:25:45 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T16:25:45 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T16:25:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T16:25:46 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T16:25:47 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T16:25:47 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T16:25:48 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T16:25:48 - [TEST_STEP][PASSED] - click(findTestObject("Login/btn-sign in")): Object: 'Object Repository/Login/btn-sign in' is clicked on
+
+26-05-2026T16:25:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/btn-sign in' is clicked on
+
+26-05-2026T16:25:48 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T16:25:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T16:25:49 - [TEST_STEP][PASSED] - click(findTestObject("Address Management/Shipping Address/btn_My Address")): Object: 'Object Repository/Address Management/Shipping Address/btn_My Address' is clicked on
+
+26-05-2026T16:25:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Address Management/Shipping Address/btn_My Address' is clicked on
+
+26-05-2026T16:25:52 - [TEST_STEP][PASSED] - click(findTestObject("Address Management/Add New Address/div_Add New Address")): Object: 'Object Repository/Address Management/Add New Address/div_Add New Address' is clicked on
+
+26-05-2026T16:25:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Address Management/Add New Address/div_Add New Address' is clicked on
+
+26-05-2026T16:25:53 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Address Management/Add New Address/field_First Name"), 0): Object 'Object Repository/Address Management/Add New Address/field_First Name' is visible
+
+26-05-2026T16:25:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+26-05-2026T16:25:54 - [MESSAGE][PASSED] - Object 'Object Repository/Address Management/Add New Address/field_First Name' is visible
+
+26-05-2026T16:25:54 - [TEST_STEP][PASSED] - setText(findTestObject("Address Management/Add New Address/field_First Name"), randomFirstName): Text 'Budi' is set on object 'Object Repository/Address Management/Add New Address/field_First Name'
+
+26-05-2026T16:25:55 - [MESSAGE][PASSED] - Text 'Budi' is set on object 'Object Repository/Address Management/Add New Address/field_First Name'
+
+26-05-2026T16:25:55 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Address Management/Add New Address/field_Last Name"), 0): Object 'Object Repository/Address Management/Add New Address/field_Last Name' is visible
+
+26-05-2026T16:25:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+26-05-2026T16:25:55 - [MESSAGE][PASSED] - Object 'Object Repository/Address Management/Add New Address/field_Last Name' is visible
+
+26-05-2026T16:25:55 - [TEST_STEP][PASSED] - setText(findTestObject("Address Management/Add New Address/field_Last Name"), randomLastName): Text 'Putri' is set on object 'Object Repository/Address Management/Add New Address/field_Last Name'
+
+26-05-2026T16:25:56 - [MESSAGE][PASSED] - Text 'Putri' is set on object 'Object Repository/Address Management/Add New Address/field_Last Name'
+
+26-05-2026T16:25:56 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Address Management/Add New Address/field_Mobile Phone"), 0): Object 'Object Repository/Address Management/Add New Address/field_Mobile Phone' is visible
+
+26-05-2026T16:25:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+26-05-2026T16:25:57 - [MESSAGE][PASSED] - Object 'Object Repository/Address Management/Add New Address/field_Mobile Phone' is visible
+
+26-05-2026T16:25:57 - [TEST_STEP][PASSED] - setText(findTestObject("Address Management/Add New Address/field_Mobile Phone"), randomPhone): Text '08933533990' is set on object 'Object Repository/Address Management/Add New Address/field_Mobile Phone'
+
+26-05-2026T16:25:57 - [MESSAGE][PASSED] - Text '08933533990' is set on object 'Object Repository/Address Management/Add New Address/field_Mobile Phone'
+
+26-05-2026T16:25:57 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Address Management/Add New Address/field_E-mail"), 0): Object 'Object Repository/Address Management/Add New Address/field_E-mail' is visible
+
+26-05-2026T16:25:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+26-05-2026T16:25:58 - [MESSAGE][PASSED] - Object 'Object Repository/Address Management/Add New Address/field_E-mail' is visible
+
+26-05-2026T16:25:58 - [TEST_STEP][PASSED] - setText(findTestObject("Address Management/Add New Address/field_E-mail"), randomEmail): Text 'agungpriyadimbn@gmail.com' is set on object 'Object Repository/Address Management/Add New Address/field_E-mail'
+
+26-05-2026T16:25:58 - [MESSAGE][PASSED] - Text 'agungpriyadimbn@gmail.com' is set on object 'Object Repository/Address Management/Add New Address/field_E-mail'
+
+26-05-2026T16:25:58 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Address Management/Add New Address/field_Address"), 0): Object 'Object Repository/Address Management/Add New Address/field_Address' is visible
+
+26-05-2026T16:25:58 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+26-05-2026T16:25:59 - [MESSAGE][PASSED] - Object 'Object Repository/Address Management/Add New Address/field_Address' is visible
+
+26-05-2026T16:25:59 - [TEST_STEP][PASSED] - setText(findTestObject("Address Management/Add New Address/field_Address"), randomAddress): Text 'Jakarta Testing 9639' is set on object 'Object Repository/Address Management/Add New Address/field_Address'
+
+26-05-2026T16:25:59 - [MESSAGE][PASSED] - Text 'Jakarta Testing 9639' is set on object 'Object Repository/Address Management/Add New Address/field_Address'
+
+26-05-2026T16:25:59 - [TEST_STEP][PASSED] - click(findTestObject("Address Management/Add New Address/dropdown_Province")): Object: 'Object Repository/Address Management/Add New Address/dropdown_Province' is clicked on
+
+26-05-2026T16:26:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Address Management/Add New Address/dropdown_Province' is clicked on
+
+26-05-2026T16:26:00 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province"), 0): Object 'Object Repository/Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province' is visible
+
+26-05-2026T16:26:00 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+26-05-2026T16:26:00 - [MESSAGE][PASSED] - Object 'Object Repository/Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province' is visible
+
+26-05-2026T16:26:00 - [TEST_STEP][PASSED] - click(findTestObject("Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province")): Object: 'Object Repository/Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province' is clicked on
+
+26-05-2026T16:26:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province' is clicked on
+
+26-05-2026T16:26:01 - [TEST_STEP][PASSED] - click(findTestObject("Address Management/Add New Address/dropdown_Select Province")): Object: 'Object Repository/Address Management/Add New Address/dropdown_Select Province' is clicked on
+
+26-05-2026T16:26:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Address Management/Add New Address/dropdown_Select Province' is clicked on
+
+26-05-2026T16:26:01 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality"), 0): Object 'Object Repository/Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality' is visible
+
+26-05-2026T16:26:01 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+26-05-2026T16:26:02 - [MESSAGE][PASSED] - Object 'Object Repository/Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality' is visible
+
+26-05-2026T16:26:02 - [TEST_STEP][PASSED] - click(findTestObject("Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality"), STOP_ON_FAILURE): Object: 'Object Repository/Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality' is clicked on
+
+26-05-2026T16:26:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality' is clicked on
+
+26-05-2026T16:26:02 - [TEST_STEP][PASSED] - click(findTestObject("Address Management/Add New Address/dropdown_Districts")): Object: 'Object Repository/Address Management/Add New Address/dropdown_Districts' is clicked on
+
+26-05-2026T16:26:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Address Management/Add New Address/dropdown_Districts' is clicked on
+
+26-05-2026T16:26:03 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Address Management/Add New Address/Dropdown District/li_Sangkat Kandal"), 10): Object 'Object Repository/Address Management/Add New Address/Dropdown District/li_Sangkat Kandal' is visible
+
+26-05-2026T16:26:04 - [MESSAGE][PASSED] - Object 'Object Repository/Address Management/Add New Address/Dropdown District/li_Sangkat Kandal' is visible
+
+26-05-2026T16:26:04 - [TEST_STEP][PASSED] - click(findTestObject("Address Management/Add New Address/Dropdown District/li_Sangkat Kandal")): Object: 'Object Repository/Address Management/Add New Address/Dropdown District/li_Sangkat Kandal' is clicked on
+
+26-05-2026T16:26:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Address Management/Add New Address/Dropdown District/li_Sangkat Kandal' is clicked on
+
+26-05-2026T16:26:04 - [TEST_STEP][PASSED] - setText(findTestObject("Address Management/Add New Address/field_ZipPostal Code"), randomCode): Text '158104' is set on object 'Object Repository/Address Management/Add New Address/field_ZipPostal Code'
+
+26-05-2026T16:26:05 - [MESSAGE][PASSED] - Text '158104' is set on object 'Object Repository/Address Management/Add New Address/field_ZipPostal Code'
+
+26-05-2026T16:26:05 - [TEST_STEP][PASSED] - click(findTestObject("Address Management/Add New Address/button_Save")): Object: 'Object Repository/Address Management/Add New Address/button_Save' is clicked on
+
+26-05-2026T16:26:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Address Management/Add New Address/button_Save' is clicked on
+
+26-05-2026T16:26:05 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Address Management/Shipping Address/lbl_Shipping Address"), 3): Scroll to object 'Object Repository/Address Management/Shipping Address/lbl_Shipping Address' successfully
+
+26-05-2026T16:26:06 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Address Management/Shipping Address/lbl_Shipping Address' successfully
+
+26-05-2026T16:26:06 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T16:26:06 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518\\1779787566273.png]]
+
+26-05-2026T16:26:06 - [TEST_STEP][PASSED] - comment("Email      : " + randomEmail): Email      : agungpriyadimbn@gmail.com
+
+26-05-2026T16:26:06 - [MESSAGE][INFO] - Email      : agungpriyadimbn@gmail.com
+
+26-05-2026T16:26:06 - [TEST_STEP][PASSED] - comment("First Name : " + randomFirstName): First Name : Budi
+
+26-05-2026T16:26:06 - [MESSAGE][INFO] - First Name : Budi
+
+26-05-2026T16:26:06 - [TEST_STEP][PASSED] - comment("Last Name  : " + randomLastName): Last Name  : Putri
+
+26-05-2026T16:26:06 - [MESSAGE][INFO] - Last Name  : Putri
+
+26-05-2026T16:26:06 - [TEST_STEP][PASSED] - comment("Phone      : " + randomPhone): Phone      : 08933533990
+
+26-05-2026T16:26:06 - [MESSAGE][INFO] - Phone      : 08933533990
+
+26-05-2026T16:26:06 - [TEST_STEP][PASSED] - comment("Address    : " + randomAddress): Address    : Jakarta Testing 9639
+
+26-05-2026T16:26:06 - [MESSAGE][INFO] - Address    : Jakarta Testing 9639
+
+26-05-2026T16:26:06 - [TEST_STEP][PASSED] - comment("Code    : " + randomCode): Code    : 158104
+
+26-05-2026T16:26:06 - [MESSAGE][INFO] - Code    : 158104
+
+26-05-2026T16:26:06 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T16:26:07 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T16:26:09 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Address Management/Ensure My Address - add new address' .
+
+26-05-2026T16:26:09 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Address Management/Ensure My Address - add new address' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Address Management/Ensure My Address - Edit address" time="24.479" classname="Test Cases/WEB/Address Management/Ensure My Address - Edit address" status="PASSED">
+         <system-out><![CDATA[26-05-2026T16:26:09 - [TEST_CASE][PASSED] - Test Cases/WEB/Address Management/Ensure My Address - Edit address: Test Cases/WEB/Address Management/Ensure My Address - Edit address
+
+26-05-2026T16:26:09 - [TEST_STEP][PASSED] - randomEmail = custom.RandomData.generateRandomEmail(): custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T16:26:09 - [MESSAGE][PASSED] - custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T16:26:09 - [TEST_STEP][PASSED] - randomFirstName = custom.RandomData.generateRandomFirstName(): custom.RandomData.generateRandomFirstName is PASSED
+
+26-05-2026T16:26:09 - [MESSAGE][PASSED] - custom.RandomData.generateRandomFirstName is PASSED
+
+26-05-2026T16:26:09 - [TEST_STEP][PASSED] - randomLastName = custom.RandomData.generateRandomLastName(): custom.RandomData.generateRandomLastName is PASSED
+
+26-05-2026T16:26:09 - [MESSAGE][PASSED] - custom.RandomData.generateRandomLastName is PASSED
+
+26-05-2026T16:26:09 - [TEST_STEP][PASSED] - randomPhone = custom.RandomData.generateRandomPhone(): custom.RandomData.generateRandomPhone is PASSED
+
+26-05-2026T16:26:09 - [MESSAGE][PASSED] - custom.RandomData.generateRandomPhone is PASSED
+
+26-05-2026T16:26:09 - [TEST_STEP][PASSED] - randomAddress = custom.RandomData.generateRandomAddress(): custom.RandomData.generateRandomAddress is PASSED
+
+26-05-2026T16:26:09 - [MESSAGE][PASSED] - custom.RandomData.generateRandomAddress is PASSED
+
+26-05-2026T16:26:09 - [TEST_STEP][PASSED] - randomCode = custom.RandomData.generateRandomCode(): custom.RandomData.generateRandomCode is PASSED
+
+26-05-2026T16:26:09 - [MESSAGE][PASSED] - custom.RandomData.generateRandomCode is PASSED
+
+26-05-2026T16:26:09 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T16:26:09 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+26-05-2026T16:26:09 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T16:26:12 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T16:26:12 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T16:26:12 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T16:26:12 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T16:26:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T16:26:12 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T16:26:14 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T16:26:14 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T16:26:14 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T16:26:14 - [TEST_STEP][PASSED] - click(findTestObject("Login/btn-sign in")): Object: 'Object Repository/Login/btn-sign in' is clicked on
+
+26-05-2026T16:26:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/btn-sign in' is clicked on
+
+26-05-2026T16:26:15 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T16:26:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T16:26:15 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Address Management/Shipping Address/btn_My Address"), 4): Object 'Object Repository/Address Management/Shipping Address/btn_My Address' is visible
+
+26-05-2026T16:26:19 - [MESSAGE][PASSED] - Object 'Object Repository/Address Management/Shipping Address/btn_My Address' is visible
+
+26-05-2026T16:26:19 - [TEST_STEP][PASSED] - click(findTestObject("Address Management/Shipping Address/btn_My Address")): Object: 'Object Repository/Address Management/Shipping Address/btn_My Address' is clicked on
+
+26-05-2026T16:26:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Address Management/Shipping Address/btn_My Address' is clicked on
+
+26-05-2026T16:26:19 - [TEST_STEP][PASSED] - editBtn = new com.kms.katalon.core.testobject.TestObject(): null
+
+26-05-2026T16:26:19 - [TEST_STEP][PASSED] - editBtn.addProperty("xpath", EQUALS, "(//button[contains(.,'Edit')])[1]"): null
+
+26-05-2026T16:26:19 - [TEST_STEP][PASSED] - click(findTestObject("Address Management/Shipping Address/btn_Edit")): Object: 'Object Repository/Address Management/Shipping Address/btn_Edit' is clicked on
+
+26-05-2026T16:26:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Address Management/Shipping Address/btn_Edit' is clicked on
+
+26-05-2026T16:26:20 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Address Management/Edit Address/Field_First Name"), 10): Object 'Object Repository/Address Management/Edit Address/Field_First Name' is visible
+
+26-05-2026T16:26:21 - [MESSAGE][PASSED] - Object 'Object Repository/Address Management/Edit Address/Field_First Name' is visible
+
+26-05-2026T16:26:21 - [TEST_STEP][PASSED] - clearText(findTestObject("Address Management/Edit Address/Field_First Name"), STOP_ON_FAILURE): Text of object 'Object Repository/Address Management/Edit Address/Field_First Name' is cleared
+
+26-05-2026T16:26:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/Address Management/Edit Address/Field_First Name' is cleared
+
+26-05-2026T16:26:21 - [TEST_STEP][PASSED] - setText(findTestObject("Address Management/Edit Address/Field_First Name"), randomFirstName): Text 'Budi' is set on object 'Object Repository/Address Management/Edit Address/Field_First Name'
+
+26-05-2026T16:26:22 - [MESSAGE][PASSED] - Text 'Budi' is set on object 'Object Repository/Address Management/Edit Address/Field_First Name'
+
+26-05-2026T16:26:22 - [TEST_STEP][PASSED] - clearText(findTestObject("Address Management/Edit Address/Field_Last Name"), STOP_ON_FAILURE): Text of object 'Object Repository/Address Management/Edit Address/Field_Last Name' is cleared
+
+26-05-2026T16:26:23 - [MESSAGE][PASSED] - Text of object 'Object Repository/Address Management/Edit Address/Field_Last Name' is cleared
+
+26-05-2026T16:26:23 - [TEST_STEP][PASSED] - setText(findTestObject("Address Management/Edit Address/Field_Last Name"), randomLastName): Text 'Saputra' is set on object 'Object Repository/Address Management/Edit Address/Field_Last Name'
+
+26-05-2026T16:26:24 - [MESSAGE][PASSED] - Text 'Saputra' is set on object 'Object Repository/Address Management/Edit Address/Field_Last Name'
+
+26-05-2026T16:26:24 - [TEST_STEP][PASSED] - clearText(findTestObject("Address Management/Edit Address/Field_Mobile Phone"), STOP_ON_FAILURE): Text of object 'Object Repository/Address Management/Edit Address/Field_Mobile Phone' is cleared
+
+26-05-2026T16:26:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/Address Management/Edit Address/Field_Mobile Phone' is cleared
+
+26-05-2026T16:26:24 - [TEST_STEP][PASSED] - setText(findTestObject("Address Management/Edit Address/Field_Mobile Phone"), randomPhone): Text '08652096251' is set on object 'Object Repository/Address Management/Edit Address/Field_Mobile Phone'
+
+26-05-2026T16:26:25 - [MESSAGE][PASSED] - Text '08652096251' is set on object 'Object Repository/Address Management/Edit Address/Field_Mobile Phone'
+
+26-05-2026T16:26:25 - [TEST_STEP][PASSED] - clearText(findTestObject("Address Management/Edit Address/Field_E-mail"), STOP_ON_FAILURE): Text of object 'Object Repository/Address Management/Edit Address/Field_E-mail' is cleared
+
+26-05-2026T16:26:26 - [MESSAGE][PASSED] - Text of object 'Object Repository/Address Management/Edit Address/Field_E-mail' is cleared
+
+26-05-2026T16:26:26 - [TEST_STEP][PASSED] - setText(findTestObject("Address Management/Edit Address/Field_E-mail"), randomEmail): Text 'agungpriyadijkf@gmail.com' is set on object 'Object Repository/Address Management/Edit Address/Field_E-mail'
+
+26-05-2026T16:26:27 - [MESSAGE][PASSED] - Text 'agungpriyadijkf@gmail.com' is set on object 'Object Repository/Address Management/Edit Address/Field_E-mail'
+
+26-05-2026T16:26:27 - [TEST_STEP][PASSED] - clearText(findTestObject("Address Management/Edit Address/Field_Address"), STOP_ON_FAILURE): Text of object 'Object Repository/Address Management/Edit Address/Field_Address' is cleared
+
+26-05-2026T16:26:27 - [MESSAGE][PASSED] - Text of object 'Object Repository/Address Management/Edit Address/Field_Address' is cleared
+
+26-05-2026T16:26:27 - [TEST_STEP][PASSED] - setText(findTestObject("Address Management/Edit Address/Field_Address"), randomAddress): Text 'Jakarta Testing 6535' is set on object 'Object Repository/Address Management/Edit Address/Field_Address'
+
+26-05-2026T16:26:28 - [MESSAGE][PASSED] - Text 'Jakarta Testing 6535' is set on object 'Object Repository/Address Management/Edit Address/Field_Address'
+
+26-05-2026T16:26:28 - [TEST_STEP][PASSED] - clearText(findTestObject("Address Management/Edit Address/Field_ZipPostal Code"), STOP_ON_FAILURE): Text of object 'Object Repository/Address Management/Edit Address/Field_ZipPostal Code' is cleared
+
+26-05-2026T16:26:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/Address Management/Edit Address/Field_ZipPostal Code' is cleared
+
+26-05-2026T16:26:28 - [TEST_STEP][PASSED] - setText(findTestObject("Address Management/Edit Address/Field_ZipPostal Code"), randomCode): Text '158107' is set on object 'Object Repository/Address Management/Edit Address/Field_ZipPostal Code'
+
+26-05-2026T16:26:29 - [MESSAGE][PASSED] - Text '158107' is set on object 'Object Repository/Address Management/Edit Address/Field_ZipPostal Code'
+
+26-05-2026T16:26:29 - [TEST_STEP][PASSED] - click(findTestObject("Address Management/Edit Address/button_Save")): Object: 'Object Repository/Address Management/Edit Address/button_Save' is clicked on
+
+26-05-2026T16:26:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Address Management/Edit Address/button_Save' is clicked on
+
+26-05-2026T16:26:29 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Address Management/Shipping Address/lbl_Shipping Address"), 10): Scroll to object 'Object Repository/Address Management/Shipping Address/lbl_Shipping Address' successfully
+
+26-05-2026T16:26:30 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Address Management/Shipping Address/lbl_Shipping Address' successfully
+
+26-05-2026T16:26:30 - [TEST_STEP][PASSED] - verifyName = new com.kms.katalon.core.testobject.TestObject(): null
+
+26-05-2026T16:26:30 - [TEST_STEP][PASSED] - verifyName.addProperty("xpath", EQUALS, //*[contains(text(),'$randomFirstName')]): null
+
+26-05-2026T16:26:30 - [TEST_STEP][PASSED] - verifyElementPresent(verifyName, 10): Object '' is present
+
+26-05-2026T16:26:31 - [MESSAGE][PASSED] - Object '' is present
+
+26-05-2026T16:26:31 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T16:26:31 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518\\1779787591018.png]]
+
+26-05-2026T16:26:31 - [TEST_STEP][PASSED] - comment("Email      : " + randomEmail): Email      : agungpriyadijkf@gmail.com
+
+26-05-2026T16:26:31 - [MESSAGE][INFO] - Email      : agungpriyadijkf@gmail.com
+
+26-05-2026T16:26:31 - [TEST_STEP][PASSED] - comment("First Name : " + randomFirstName): First Name : Budi
+
+26-05-2026T16:26:31 - [MESSAGE][INFO] - First Name : Budi
+
+26-05-2026T16:26:31 - [TEST_STEP][PASSED] - comment("Last Name  : " + randomLastName): Last Name  : Saputra
+
+26-05-2026T16:26:31 - [MESSAGE][INFO] - Last Name  : Saputra
+
+26-05-2026T16:26:31 - [TEST_STEP][PASSED] - comment("Phone      : " + randomPhone): Phone      : 08652096251
+
+26-05-2026T16:26:31 - [MESSAGE][INFO] - Phone      : 08652096251
+
+26-05-2026T16:26:31 - [TEST_STEP][PASSED] - comment("Address    : " + randomAddress): Address    : Jakarta Testing 6535
+
+26-05-2026T16:26:31 - [MESSAGE][INFO] - Address    : Jakarta Testing 6535
+
+26-05-2026T16:26:31 - [TEST_STEP][PASSED] - comment("Code    : " + randomCode): Code    : 158107
+
+26-05-2026T16:26:31 - [MESSAGE][INFO] - Code    : 158107
+
+26-05-2026T16:26:31 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T16:26:31 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T16:26:31 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+26-05-2026T16:26:31 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+26-05-2026T16:26:33 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Address Management/Ensure My Address - Edit address' .
+
+26-05-2026T16:26:33 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Address Management/Ensure My Address - Edit address' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Address Management/Ensure My Address - Delete address" time="14.958" classname="Test Cases/WEB/Address Management/Ensure My Address - Delete address" status="PASSED">
+         <system-out><![CDATA[26-05-2026T16:26:33 - [TEST_CASE][PASSED] - Test Cases/WEB/Address Management/Ensure My Address - Delete address: Test Cases/WEB/Address Management/Ensure My Address - Delete address
+
+26-05-2026T16:26:33 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T16:26:33 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+26-05-2026T16:26:33 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T16:26:36 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T16:26:36 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T16:26:36 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T16:26:36 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T16:26:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T16:26:37 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T16:26:38 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+26-05-2026T16:26:38 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T16:26:39 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+26-05-2026T16:26:39 - [TEST_STEP][PASSED] - click(findTestObject("Login/btn-sign in")): Object: 'Object Repository/Login/btn-sign in' is clicked on
+
+26-05-2026T16:26:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/btn-sign in' is clicked on
+
+26-05-2026T16:26:40 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T16:26:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+26-05-2026T16:26:40 - [TEST_STEP][PASSED] - click(findTestObject("Address Management/Shipping Address/btn_My Address")): Object: 'Object Repository/Address Management/Shipping Address/btn_My Address' is clicked on
+
+26-05-2026T16:26:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Address Management/Shipping Address/btn_My Address' is clicked on
+
+26-05-2026T16:26:43 - [TEST_STEP][PASSED] - click(findTestObject("Address Management/Shipping Address/btn_Delete")): Object: 'Object Repository/Address Management/Shipping Address/btn_Delete' is clicked on
+
+26-05-2026T16:26:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Address Management/Shipping Address/btn_Delete' is clicked on
+
+26-05-2026T16:26:44 - [TEST_STEP][PASSED] - btnOK = new com.kms.katalon.core.testobject.TestObject(): null
+
+26-05-2026T16:26:44 - [TEST_STEP][PASSED] - btnOK.addProperty("xpath", EQUALS, "//div[contains(@class,'el-message-box')]//span[normalize-space()='OK']"): null
+
+26-05-2026T16:26:44 - [TEST_STEP][PASSED] - waitForElementVisible(btnOK, 10): Object '' is visible
+
+26-05-2026T16:26:44 - [MESSAGE][PASSED] - Object '' is visible
+
+26-05-2026T16:26:44 - [TEST_STEP][PASSED] - okElement = findWebElement(btnOK, 10): Found web element by test object 
+
+26-05-2026T16:26:44 - [MESSAGE][PASSED] - Found web element by test object 
+
+26-05-2026T16:26:44 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click();", Arrays.asList(okElement)): Execute JavaScript 'arguments[0].click();' successfully
+
+26-05-2026T16:26:44 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click();' successfully
+
+26-05-2026T16:26:44 - [TEST_STEP][PASSED] - refresh(): Refresh successfully
+
+26-05-2026T16:26:45 - [MESSAGE][PASSED] - Refresh successfully
+
+26-05-2026T16:26:45 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+26-05-2026T16:26:45 - [MESSAGE][PASSED] - Wait for page load successfully
+
+26-05-2026T16:26:45 - [TEST_STEP][PASSED] - deletedEmail = new com.kms.katalon.core.testobject.TestObject(): null
+
+26-05-2026T16:26:45 - [TEST_STEP][PASSED] - deletedEmail.addProperty("xpath", EQUALS, "//*[contains(text(),'agung.priyadi@gtech.digital')]"): null
+
+26-05-2026T16:26:45 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T16:26:46 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518\\1779787605648.png]]
+
+26-05-2026T16:26:46 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T16:26:46 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T16:26:48 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Address Management/Ensure My Address - Delete address' .
+
+26-05-2026T16:26:48 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Address Management/Ensure My Address - Delete address' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit" time="34.445" classname="Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit" status="PASSED">
+         <system-out><![CDATA[26-05-2026T16:26:48 - [TEST_CASE][PASSED] - Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit: Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit
+
+26-05-2026T16:26:48 - [TEST_STEP][PASSED] - randomEmail = custom.RandomData.generateRandomEmail(): custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T16:26:48 - [MESSAGE][PASSED] - custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T16:26:48 - [TEST_STEP][PASSED] - randomFirstName = custom.RandomData.generateRandomFirstName(): custom.RandomData.generateRandomFirstName is PASSED
+
+26-05-2026T16:26:48 - [MESSAGE][PASSED] - custom.RandomData.generateRandomFirstName is PASSED
+
+26-05-2026T16:26:48 - [TEST_STEP][PASSED] - randomLastName = custom.RandomData.generateRandomLastName(): custom.RandomData.generateRandomLastName is PASSED
+
+26-05-2026T16:26:48 - [MESSAGE][PASSED] - custom.RandomData.generateRandomLastName is PASSED
+
+26-05-2026T16:26:48 - [TEST_STEP][PASSED] - randomPhone = custom.RandomData.generateRandomPhone(): custom.RandomData.generateRandomPhone is PASSED
+
+26-05-2026T16:26:48 - [MESSAGE][PASSED] - custom.RandomData.generateRandomPhone is PASSED
+
+26-05-2026T16:26:48 - [TEST_STEP][PASSED] - randomAddress = custom.RandomData.generateRandomAddress(): custom.RandomData.generateRandomAddress is PASSED
+
+26-05-2026T16:26:48 - [MESSAGE][PASSED] - custom.RandomData.generateRandomAddress is PASSED
+
+26-05-2026T16:26:48 - [TEST_STEP][PASSED] - randomCode = custom.RandomData.generateRandomCode(): custom.RandomData.generateRandomCode is PASSED
+
+26-05-2026T16:26:48 - [MESSAGE][PASSED] - custom.RandomData.generateRandomCode is PASSED
+
+26-05-2026T16:26:48 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T16:26:48 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+26-05-2026T16:26:48 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T16:26:51 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T16:26:51 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T16:26:51 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T16:26:51 - [TEST_STEP][PASSED] - click(findTestObject("Home Page/Search/icon-search")): Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+26-05-2026T16:26:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+26-05-2026T16:26:52 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 12 PRO MAX 128GB GOLD", ENTER)): Keys 'ENTER + IPHONE 12 PRO MAX 128GB GOLD' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T16:26:53 - [MESSAGE][PASSED] - Keys 'ENTER + IPHONE 12 PRO MAX 128GB GOLD' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T16:26:53 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-12 -pro")): Object 'Object Repository/Home Page/Search/verify-product-iphone-12 -pro' is visible
+
+26-05-2026T16:26:55 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/verify-product-iphone-12 -pro' is visible
+
+26-05-2026T16:26:55 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD")): Object: 'Object Repository/Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD' is clicked on
+
+26-05-2026T16:26:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD' is clicked on
+
+26-05-2026T16:26:56 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/button_Add to Cart")): Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+26-05-2026T16:26:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+26-05-2026T16:26:58 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 10): Object 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is present
+
+26-05-2026T16:26:59 - [MESSAGE][PASSED] - Object 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is present
+
+26-05-2026T16:26:59 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/i_icon-cart")): Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+26-05-2026T16:26:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+26-05-2026T16:26:59 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Checkout/Address/Address Ship To/btn_checkout")): Object 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+26-05-2026T16:27:01 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+26-05-2026T16:27:01 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn_checkout")): Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T16:27:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T16:27:01 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Checkout guest/field_email"), 10): Object 'Object Repository/Checkout/Checkout guest/field_email' is visible
+
+26-05-2026T16:27:03 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Checkout guest/field_email' is visible
+
+26-05-2026T16:27:03 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Checkout guest/field_email"), randomEmail): Text 'agungpriyadihjg@gmail.com' is set on object 'Object Repository/Checkout/Checkout guest/field_email'
+
+26-05-2026T16:27:03 - [MESSAGE][PASSED] - Text 'agungpriyadihjg@gmail.com' is set on object 'Object Repository/Checkout/Checkout guest/field_email'
+
+26-05-2026T16:27:03 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Checkout guest/btn_continue")): Object: 'Object Repository/Checkout/Checkout guest/btn_continue' is clicked on
+
+26-05-2026T16:27:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Checkout guest/btn_continue' is clicked on
+
+26-05-2026T16:27:04 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Address/Address Ship To/field_First Name"), 10): Object 'Object Repository/Checkout/Address/Address Ship To/field_First Name' is visible
+
+26-05-2026T16:27:06 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/field_First Name' is visible
+
+26-05-2026T16:27:06 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_First Name"), randomFirstName): Text 'Rina' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_First Name'
+
+26-05-2026T16:27:07 - [MESSAGE][PASSED] - Text 'Rina' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_First Name'
+
+26-05-2026T16:27:07 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_Last Name"), randomLastName): Text 'Santoso' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Last Name'
+
+26-05-2026T16:27:08 - [MESSAGE][PASSED] - Text 'Santoso' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Last Name'
+
+26-05-2026T16:27:08 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_mobile phone"), randomPhone): Text '08228624237' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_mobile phone'
+
+26-05-2026T16:27:08 - [MESSAGE][PASSED] - Text '08228624237' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_mobile phone'
+
+26-05-2026T16:27:08 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_Address"), randomAddress): Text 'Jakarta Testing 9057' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Address'
+
+26-05-2026T16:27:09 - [MESSAGE][PASSED] - Text 'Jakarta Testing 9057' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Address'
+
+26-05-2026T16:27:09 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/input_ZipPostal Code"), randomCode): Text '158104' is set on object 'Object Repository/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+26-05-2026T16:27:10 - [MESSAGE][PASSED] - Text '158104' is set on object 'Object Repository/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+26-05-2026T16:27:10 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/input_Province")): Object: 'Object Repository/Checkout/Address/Address Ship To/input_Province' is clicked on
+
+26-05-2026T16:27:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/input_Province' is clicked on
+
+26-05-2026T16:27:11 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province"), STOP_ON_FAILURE): Object: 'Object Repository/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is clicked on
+
+26-05-2026T16:27:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is clicked on
+
+26-05-2026T16:27:11 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/input_Select Province")): Object: 'Object Repository/Checkout/Address/Address Ship To/input_Select Province' is clicked on
+
+26-05-2026T16:27:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/input_Select Province' is clicked on
+
+26-05-2026T16:27:12 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province")): Object: 'Object Repository/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is clicked on
+
+26-05-2026T16:27:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is clicked on
+
+26-05-2026T16:27:13 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/input_Districts")): Object: 'Object Repository/Checkout/Address/Address Ship To/input_Districts' is clicked on
+
+26-05-2026T16:27:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/input_Districts' is clicked on
+
+26-05-2026T16:27:13 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts")): Object: 'Object Repository/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is clicked on
+
+26-05-2026T16:27:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is clicked on
+
+26-05-2026T16:27:14 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn-save")): Object: 'Object Repository/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+26-05-2026T16:27:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+26-05-2026T16:27:15 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Checkout/Address/Address Ship To/btn-change"), 2): Scroll to object 'Object Repository/Checkout/Address/Address Ship To/btn-change' successfully
+
+26-05-2026T16:27:15 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Checkout/Address/Address Ship To/btn-change' successfully
+
+26-05-2026T16:27:15 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Address/Address Ship To/btn-change"), 6): Object 'Object Repository/Checkout/Address/Address Ship To/btn-change' is visible
+
+26-05-2026T16:27:15 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/btn-change' is visible
+
+26-05-2026T16:27:15 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn-change"), STOP_ON_FAILURE): Object: 'Object Repository/Checkout/Address/Address Ship To/btn-change' is clicked on
+
+26-05-2026T16:27:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn-change' is clicked on
+
+26-05-2026T16:27:16 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T16:27:16 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518\\1779787636239.png]]
+
+26-05-2026T16:27:16 - [TEST_STEP][PASSED] - updateAddress = custom.RandomData.generateRandomAddress(): custom.RandomData.generateRandomAddress is PASSED
+
+26-05-2026T16:27:16 - [MESSAGE][PASSED] - custom.RandomData.generateRandomAddress is PASSED
+
+26-05-2026T16:27:16 - [TEST_STEP][PASSED] - updateCode = custom.RandomData.generateRandomCode(): custom.RandomData.generateRandomCode is PASSED
+
+26-05-2026T16:27:16 - [MESSAGE][PASSED] - custom.RandomData.generateRandomCode is PASSED
+
+26-05-2026T16:27:16 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Address/Address Ship To/field_Address"), 10): Object 'Object Repository/Checkout/Address/Address Ship To/field_Address' is visible
+
+26-05-2026T16:27:17 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/field_Address' is visible
+
+26-05-2026T16:27:17 - [TEST_STEP][PASSED] - clearText(findTestObject("Checkout/Address/Address Ship To/field_Address")): Text of object 'Object Repository/Checkout/Address/Address Ship To/field_Address' is cleared
+
+26-05-2026T16:27:17 - [MESSAGE][PASSED] - Text of object 'Object Repository/Checkout/Address/Address Ship To/field_Address' is cleared
+
+26-05-2026T16:27:17 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_Address"), updateAddress): Text 'Jakarta Testing 9747' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Address'
+
+26-05-2026T16:27:17 - [MESSAGE][PASSED] - Text 'Jakarta Testing 9747' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Address'
+
+26-05-2026T16:27:17 - [TEST_STEP][PASSED] - clearText(findTestObject("Checkout/Address/Address Ship To/input_ZipPostal Code")): Text of object 'Object Repository/Checkout/Address/Address Ship To/input_ZipPostal Code' is cleared
+
+26-05-2026T16:27:18 - [MESSAGE][PASSED] - Text of object 'Object Repository/Checkout/Address/Address Ship To/input_ZipPostal Code' is cleared
+
+26-05-2026T16:27:18 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/input_ZipPostal Code"), updateCode): Text '158102' is set on object 'Object Repository/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+26-05-2026T16:27:19 - [MESSAGE][PASSED] - Text '158102' is set on object 'Object Repository/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+26-05-2026T16:27:19 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn-save")): Object: 'Object Repository/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+26-05-2026T16:27:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+26-05-2026T16:27:19 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Checkout/Address/Address Ship To/btn-change"), 2): Scroll to object 'Object Repository/Checkout/Address/Address Ship To/btn-change' successfully
+
+26-05-2026T16:27:20 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Checkout/Address/Address Ship To/btn-change' successfully
+
+26-05-2026T16:27:20 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Address/Address Ship To/btn-change"), 10): Object 'Object Repository/Checkout/Address/Address Ship To/btn-change' is visible
+
+26-05-2026T16:27:20 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/btn-change' is visible
+
+26-05-2026T16:27:20 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T16:27:20 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518\\1779787640411.png]]
+
+26-05-2026T16:27:20 - [TEST_STEP][PASSED] - comment("Email      : " + randomEmail): Email      : agungpriyadihjg@gmail.com
+
+26-05-2026T16:27:20 - [MESSAGE][INFO] - Email      : agungpriyadihjg@gmail.com
+
+26-05-2026T16:27:20 - [TEST_STEP][PASSED] - comment("First Name : " + randomFirstName): First Name : Rina
+
+26-05-2026T16:27:20 - [MESSAGE][INFO] - First Name : Rina
+
+26-05-2026T16:27:20 - [TEST_STEP][PASSED] - comment("Last Name  : " + randomLastName): Last Name  : Santoso
+
+26-05-2026T16:27:20 - [MESSAGE][INFO] - Last Name  : Santoso
+
+26-05-2026T16:27:20 - [TEST_STEP][PASSED] - comment("Phone      : " + randomPhone): Phone      : 08228624237
+
+26-05-2026T16:27:20 - [MESSAGE][INFO] - Phone      : 08228624237
+
+26-05-2026T16:27:20 - [TEST_STEP][PASSED] - comment("Address    : " + randomAddress): Address    : Jakarta Testing 9057
+
+26-05-2026T16:27:20 - [MESSAGE][INFO] - Address    : Jakarta Testing 9057
+
+26-05-2026T16:27:20 - [TEST_STEP][PASSED] - comment("Code    : " + randomCode): Code    : 158104
+
+26-05-2026T16:27:20 - [MESSAGE][INFO] - Code    : 158104
+
+26-05-2026T16:27:20 - [TEST_STEP][PASSED] - comment("Updated Address : " + updateAddress): Updated Address : Jakarta Testing 9747
+
+26-05-2026T16:27:20 - [MESSAGE][INFO] - Updated Address : Jakarta Testing 9747
+
+26-05-2026T16:27:20 - [TEST_STEP][PASSED] - comment("Updated Code    : " + updateCode): Updated Code    : 158102
+
+26-05-2026T16:27:20 - [MESSAGE][INFO] - Updated Code    : 158102
+
+26-05-2026T16:27:20 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T16:27:21 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T16:27:23 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit' .
+
+26-05-2026T16:27:23 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address)" time="80.103" classname="Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address)" status="PASSED">
+         <system-out><![CDATA[26-05-2026T16:27:23 - [TEST_CASE][PASSED] - Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address): Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address)
+
+26-05-2026T16:27:23 - [TEST_STEP][PASSED] - randomEmail = custom.RandomData.generateRandomEmail(): custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T16:27:23 - [MESSAGE][PASSED] - custom.RandomData.generateRandomEmail is PASSED
+
+26-05-2026T16:27:23 - [TEST_STEP][PASSED] - randomFirstName = custom.RandomData.generateRandomFirstName(): custom.RandomData.generateRandomFirstName is PASSED
+
+26-05-2026T16:27:23 - [MESSAGE][PASSED] - custom.RandomData.generateRandomFirstName is PASSED
+
+26-05-2026T16:27:23 - [TEST_STEP][PASSED] - randomLastName = custom.RandomData.generateRandomLastName(): custom.RandomData.generateRandomLastName is PASSED
+
+26-05-2026T16:27:23 - [MESSAGE][PASSED] - custom.RandomData.generateRandomLastName is PASSED
+
+26-05-2026T16:27:23 - [TEST_STEP][PASSED] - randomPhone = custom.RandomData.generateRandomPhone(): custom.RandomData.generateRandomPhone is PASSED
+
+26-05-2026T16:27:23 - [MESSAGE][PASSED] - custom.RandomData.generateRandomPhone is PASSED
+
+26-05-2026T16:27:23 - [TEST_STEP][PASSED] - randomAddress = custom.RandomData.generateRandomAddress(): custom.RandomData.generateRandomAddress is PASSED
+
+26-05-2026T16:27:23 - [MESSAGE][PASSED] - custom.RandomData.generateRandomAddress is PASSED
+
+26-05-2026T16:27:23 - [TEST_STEP][PASSED] - randomCode = custom.RandomData.generateRandomCode(): custom.RandomData.generateRandomCode is PASSED
+
+26-05-2026T16:27:23 - [MESSAGE][PASSED] - custom.RandomData.generateRandomCode is PASSED
+
+26-05-2026T16:27:23 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T16:27:23 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+26-05-2026T16:27:23 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+26-05-2026T16:27:26 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+26-05-2026T16:27:26 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T16:27:26 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+26-05-2026T16:27:26 - [TEST_STEP][PASSED] - click(findTestObject("Home Page/Search/icon-search")): Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+26-05-2026T16:27:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+26-05-2026T16:27:26 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 12 PRO MAX 128GB GOLD", ENTER)): Keys 'ENTER + IPHONE 12 PRO MAX 128GB GOLD' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T16:27:27 - [MESSAGE][PASSED] - Keys 'ENTER + IPHONE 12 PRO MAX 128GB GOLD' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+26-05-2026T16:27:27 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-12 -pro")): Object 'Object Repository/Home Page/Search/verify-product-iphone-12 -pro' is visible
+
+26-05-2026T16:27:30 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/verify-product-iphone-12 -pro' is visible
+
+26-05-2026T16:27:30 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD")): Object: 'Object Repository/Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD' is clicked on
+
+26-05-2026T16:27:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD' is clicked on
+
+26-05-2026T16:27:30 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/button_Add to Cart")): Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+26-05-2026T16:27:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+26-05-2026T16:27:32 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Product and Cart/Add to cart/i_icon-cart"), 10): Object 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is present
+
+26-05-2026T16:27:33 - [MESSAGE][PASSED] - Object 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is present
+
+26-05-2026T16:27:33 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/i_icon-cart")): Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+26-05-2026T16:27:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+26-05-2026T16:27:33 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Checkout/Address/Address Ship To/btn_checkout")): Object 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+26-05-2026T16:27:34 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+26-05-2026T16:27:34 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn_checkout")): Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T16:27:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T16:27:35 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Checkout guest/field_email"), 10): Object 'Object Repository/Checkout/Checkout guest/field_email' is visible
+
+26-05-2026T16:27:36 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Checkout guest/field_email' is visible
+
+26-05-2026T16:27:36 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Checkout guest/field_email"), randomEmail): Text 'agungpriyadifls@gmail.com' is set on object 'Object Repository/Checkout/Checkout guest/field_email'
+
+26-05-2026T16:27:37 - [MESSAGE][PASSED] - Text 'agungpriyadifls@gmail.com' is set on object 'Object Repository/Checkout/Checkout guest/field_email'
+
+26-05-2026T16:27:37 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Checkout guest/btn_continue")): Object: 'Object Repository/Checkout/Checkout guest/btn_continue' is clicked on
+
+26-05-2026T16:27:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Checkout guest/btn_continue' is clicked on
+
+26-05-2026T16:27:37 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Address/Address Ship To/field_First Name"), 10): Object 'Object Repository/Checkout/Address/Address Ship To/field_First Name' is visible
+
+26-05-2026T16:27:38 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/field_First Name' is visible
+
+26-05-2026T16:27:38 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_First Name"), randomFirstName): Text 'Budi' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_First Name'
+
+26-05-2026T16:27:40 - [MESSAGE][PASSED] - Text 'Budi' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_First Name'
+
+26-05-2026T16:27:40 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_Last Name"), randomLastName): Text 'Putri' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Last Name'
+
+26-05-2026T16:27:41 - [MESSAGE][PASSED] - Text 'Putri' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Last Name'
+
+26-05-2026T16:27:41 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_mobile phone"), randomPhone): Text '08478364154' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_mobile phone'
+
+26-05-2026T16:27:42 - [MESSAGE][PASSED] - Text '08478364154' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_mobile phone'
+
+26-05-2026T16:27:42 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/field_Address"), randomAddress): Text 'Jakarta Testing 4063' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Address'
+
+26-05-2026T16:27:42 - [MESSAGE][PASSED] - Text 'Jakarta Testing 4063' is set on object 'Object Repository/Checkout/Address/Address Ship To/field_Address'
+
+26-05-2026T16:27:42 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Ship To/input_ZipPostal Code"), randomCode): Text '158109' is set on object 'Object Repository/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+26-05-2026T16:27:43 - [MESSAGE][PASSED] - Text '158109' is set on object 'Object Repository/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+26-05-2026T16:27:43 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/input_Province")): Object: 'Object Repository/Checkout/Address/Address Ship To/input_Province' is clicked on
+
+26-05-2026T16:27:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/input_Province' is clicked on
+
+26-05-2026T16:27:44 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province"), STOP_ON_FAILURE): Object: 'Object Repository/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is clicked on
+
+26-05-2026T16:27:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is clicked on
+
+26-05-2026T16:27:44 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/input_Select Province")): Object: 'Object Repository/Checkout/Address/Address Ship To/input_Select Province' is clicked on
+
+26-05-2026T16:27:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/input_Select Province' is clicked on
+
+26-05-2026T16:27:45 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province")): Object: 'Object Repository/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is clicked on
+
+26-05-2026T16:27:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is clicked on
+
+26-05-2026T16:27:46 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/input_Districts")): Object: 'Object Repository/Checkout/Address/Address Ship To/input_Districts' is clicked on
+
+26-05-2026T16:27:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/input_Districts' is clicked on
+
+26-05-2026T16:27:46 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts")): Object: 'Object Repository/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is clicked on
+
+26-05-2026T16:27:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is clicked on
+
+26-05-2026T16:27:47 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn-save")): Object: 'Object Repository/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+26-05-2026T16:27:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+26-05-2026T16:27:48 - [TEST_STEP][PASSED] - check(findTestObject("Checkout/Address/Address Billing/Billing address same as shipping")): Object 'Object Repository/Checkout/Address/Address Billing/Billing address same as shipping' is checked
+
+26-05-2026T16:27:48 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Billing/Billing address same as shipping' is checked
+
+26-05-2026T16:27:48 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Address/Address Billing/field_First Name"), 10): Object 'Object Repository/Checkout/Address/Address Billing/field_First Name' is visible
+
+26-05-2026T16:27:49 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Billing/field_First Name' is visible
+
+26-05-2026T16:27:49 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Billing/field_First Name"), randomFirstName): Text 'Budi' is set on object 'Object Repository/Checkout/Address/Address Billing/field_First Name'
+
+26-05-2026T16:27:50 - [MESSAGE][PASSED] - Text 'Budi' is set on object 'Object Repository/Checkout/Address/Address Billing/field_First Name'
+
+26-05-2026T16:27:50 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Billing/field_Last Name"), randomLastName): Text 'Putri' is set on object 'Object Repository/Checkout/Address/Address Billing/field_Last Name'
+
+26-05-2026T16:27:50 - [MESSAGE][PASSED] - Text 'Putri' is set on object 'Object Repository/Checkout/Address/Address Billing/field_Last Name'
+
+26-05-2026T16:27:50 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Billing/field_mobile phone"), randomPhone): Text '08478364154' is set on object 'Object Repository/Checkout/Address/Address Billing/field_mobile phone'
+
+26-05-2026T16:27:51 - [MESSAGE][PASSED] - Text '08478364154' is set on object 'Object Repository/Checkout/Address/Address Billing/field_mobile phone'
+
+26-05-2026T16:27:51 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Billing/field_Address"), randomAddress): Text 'Jakarta Testing 4063' is set on object 'Object Repository/Checkout/Address/Address Billing/field_Address'
+
+26-05-2026T16:27:52 - [MESSAGE][PASSED] - Text 'Jakarta Testing 4063' is set on object 'Object Repository/Checkout/Address/Address Billing/field_Address'
+
+26-05-2026T16:27:52 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Checkout/Address/Address Billing/input_Province"), 5): Scroll to object 'Object Repository/Checkout/Address/Address Billing/input_Province' successfully
+
+26-05-2026T16:27:52 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Checkout/Address/Address Billing/input_Province' successfully
+
+26-05-2026T16:27:52 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Checkout/Address/Address Billing/input_Province"), 10): Object 'Object Repository/Checkout/Address/Address Billing/input_Province' is clickable
+
+26-05-2026T16:27:53 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Billing/input_Province' is clickable
+
+26-05-2026T16:27:53 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Billing/input_Province")): Object: 'Object Repository/Checkout/Address/Address Billing/input_Province' is clicked on
+
+26-05-2026T16:27:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Billing/input_Province' is clicked on
+
+26-05-2026T16:27:53 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province"), 10): Object 'Object Repository/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is visible
+
+26-05-2026T16:27:53 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is visible
+
+26-05-2026T16:27:53 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province")): Object: 'Object Repository/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is clicked on
+
+26-05-2026T16:27:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is clicked on
+
+26-05-2026T16:27:54 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Checkout/Address/Address Billing/input_Select Province"), 10): Object 'Object Repository/Checkout/Address/Address Billing/input_Select Province' is clickable
+
+26-05-2026T16:27:54 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Billing/input_Select Province' is clickable
+
+26-05-2026T16:27:54 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Billing/input_Select Province")): Object: 'Object Repository/Checkout/Address/Address Billing/input_Select Province' is clicked on
+
+26-05-2026T16:27:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Billing/input_Select Province' is clicked on
+
+26-05-2026T16:27:54 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Checkout/Address/Address Billing/li_Khan Mean Chey_1"), 10): Object 'Object Repository/Checkout/Address/Address Billing/li_Khan Mean Chey_1' is clickable
+
+26-05-2026T16:27:55 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Billing/li_Khan Mean Chey_1' is clickable
+
+26-05-2026T16:27:55 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Checkout/Address/Address Billing/li_Khan Mean Chey")): Object: 'Object Repository/Checkout/Address/Address Billing/li_Khan Mean Chey' is hovered
+
+26-05-2026T16:27:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Billing/li_Khan Mean Chey' is hovered
+
+26-05-2026T16:27:56 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Billing/li_Khan Mean Chey_1")): Object: 'Object Repository/Checkout/Address/Address Billing/li_Khan Mean Chey_1' is clicked on
+
+26-05-2026T16:27:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Billing/li_Khan Mean Chey_1' is clicked on
+
+26-05-2026T16:27:56 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Checkout/Address/Address Billing/input_Districts"), 10): Object 'Object Repository/Checkout/Address/Address Billing/input_Districts' is clickable
+
+26-05-2026T16:27:56 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Billing/input_Districts' is clickable
+
+26-05-2026T16:27:56 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Billing/input_Districts")): Object: 'Object Repository/Checkout/Address/Address Billing/input_Districts' is clicked on
+
+26-05-2026T16:27:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Billing/input_Districts' is clicked on
+
+26-05-2026T16:27:56 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom"), 10): Object 'Object Repository/Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom' is clickable
+
+26-05-2026T16:27:57 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom' is clickable
+
+26-05-2026T16:27:57 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom")): Object: 'Object Repository/Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom' is hovered
+
+26-05-2026T16:27:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom' is hovered
+
+26-05-2026T16:27:58 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom_1")): Object: 'Object Repository/Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom_1' is clicked on
+
+26-05-2026T16:27:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Billing/li_Sangkat Chak Angrae Kraom_1' is clicked on
+
+26-05-2026T16:27:58 - [TEST_STEP][PASSED] - setText(findTestObject("Checkout/Address/Address Billing/input_ZipPostal Code"), randomCode): Text '158109' is set on object 'Object Repository/Checkout/Address/Address Billing/input_ZipPostal Code'
+
+26-05-2026T16:27:59 - [MESSAGE][PASSED] - Text '158109' is set on object 'Object Repository/Checkout/Address/Address Billing/input_ZipPostal Code'
+
+26-05-2026T16:27:59 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/Online Payment - WeChat")): Object: 'Object Repository/Checkout/Order Summary/Online Payment - WeChat' is clicked on
+
+26-05-2026T16:27:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/Online Payment - WeChat' is clicked on
+
+26-05-2026T16:27:59 - [TEST_STEP][PASSED] - check(findTestObject("Checkout/Order Summary/Checkbox__I accept")): Object 'Object Repository/Checkout/Order Summary/Checkbox__I accept' is checked
+
+26-05-2026T16:28:00 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/Checkbox__I accept' is checked
+
+26-05-2026T16:28:00 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Address/Address Ship To/btn_checkout")): Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T16:28:10 - [MESSAGE][WARNING] - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Checkout/Address/Address Ship To/btn_checkout'. Try using Self-healing.
+
+26-05-2026T16:28:10 - [MESSAGE][WARNING] - [WEBUI-SELF-HEALING] invalid selector: Unable to locate an element with the xpath expression xpath=(//button[@type='primary'])[2] because of the following error:
+TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Command: [54b1327fba6908e0dec0ef6e938fccf6, findElements {using=xpath, value=xpath=(//button[@type='primary'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\AGUNGP~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53465}, goog:processID: 10148, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53465/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: {alert: ignore, beforeUnload: ignore, confirm: ignore, default: ignore, file: ignore, prompt: ignore}, webSocketUrl: ws://localhost:26431/sessio..., webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 54b1327fba6908e0dec0ef6e938fccf6
+
+26-05-2026T16:28:10 - [MESSAGE][ERROR] - Failed to execute candidate self-healer, trigger AI-SelfHealing: invalid selector: Unable to locate an element with the xpath expression xpath=(//button[@type='primary'])[2] because of the following error:
+TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Command: [54b1327fba6908e0dec0ef6e938fccf6, findElements {using=xpath, value=xpath=(//button[@type='primary'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\AGUNGP~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53465}, goog:processID: 10148, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53465/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: {alert: ignore, beforeUnload: ignore, confirm: ignore, default: ignore, file: ignore, prompt: ignore}, webSocketUrl: ws://localhost:26431/sessio..., webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 54b1327fba6908e0dec0ef6e938fccf6
+
+26-05-2026T16:28:10 - [MESSAGE][INFO] - [AI Self-Healing] Recovering element locator by using AI Self-Healing...
+
+26-05-2026T16:28:25 - [MESSAGE][INFO] - [AI Self-Healing] Found "3" possible locators:
+ [
+  {
+    "type": "CSS",
+    "value": "button.el-button.action-btn--onpage.el-button--primary.el-button--large.gt-button",
+    "semanticLocator": "Order summary primary Checkout button (right column, large)",
+    "confidence": 0.9,
+    "reason": "Matched class\u003d\u0027el-button el-button--primary el-button--large gt-button\u0027 from broken object and page contains a button with the same full class chain and visible text \u0027Checkout\u0027 in the order summary."
+  },
+  {
+    "type": "XPATH",
+    "value": "//div[contains(@class,\u0027page-checkout_right_top_custom\u0027)]//button[.//span[normalize-space(text())\u003d\u0027Checkout\u0027]]",
+    "semanticLocator": "Order summary Checkout button by container and visible text",
+    "confidence": 0.75,
+    "reason": "Matched locators/classes from broken object (el-button, el-button--primary, gt-button) and matched visible text \u0027Checkout\u0027 (textContent similarity). Uses page container \u0027page-checkout_right_top_custom\u0027 to make locator unique."
+  },
+  {
+    "type": "XPATH",
+    "value": "//section[contains(@class,\u0027action\u0027)]//button[contains(@class,\u0027action-btn\u0027) and .//span[normalize-space(text())\u003d\u0027Checkout\u0027]]",
+    "semanticLocator": "Action section primary Checkout button (bottom action area)",
+    "confidence": 0.6,
+    "reason": "Matched class fragments \u0027el-button\u0027/\u0027action-btn\u0027 and visible text \u0027Checkout\u0027 from the broken object textContent; selects the checkout button in the action section which shares the \u0027el-button\u0027 + \u0027el-button--primary\u0027 role from the original object."
+  }
+]
+
+26-05-2026T16:28:25 - [MESSAGE][INFO] - [AI Self-Healing] Verifying locator: "button.el-button.action-btn--onpage.el-button--primary.el-button--large.gt-button"
+
+26-05-2026T16:28:25 - [MESSAGE][INFO] - [AI Self-Healing] Found valid locator: "button.el-button.action-btn--onpage.el-button--primary.el-button--large.gt-button"
+
+26-05-2026T16:28:25 - [MESSAGE][INFO] - [AI Self-Healing] Screenshot: C:/Users/AgungPriyadi/git/digibox-kh/Reports/Self-healing/Object Repository/Checkout/Address/Address Ship To/btn_checkout_XPATH.png
+
+26-05-2026T16:28:25 - [MESSAGE][WARNING] - Waiting for element timed out
+
+26-05-2026T16:28:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+26-05-2026T16:28:25 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Checkout/Order Summary/iframe_payment_online"), 10): Object 'Object Repository/Checkout/Order Summary/iframe_payment_online' is present
+
+26-05-2026T16:28:26 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/iframe_payment_online' is present
+
+26-05-2026T16:28:26 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/iframe_payment_online"), STOP_ON_FAILURE): Object: 'Object Repository/Checkout/Order Summary/iframe_payment_online' is clicked on
+
+26-05-2026T16:28:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/iframe_payment_online' is clicked on
+
+26-05-2026T16:28:28 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+26-05-2026T16:28:39 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+26-05-2026T16:28:39 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/button_Approve"), STOP_ON_FAILURE): Object: 'Object Repository/Checkout/Order Summary/button_Approve' is clicked on
+
+26-05-2026T16:28:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/button_Approve' is clicked on
+
+26-05-2026T16:28:39 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Checkout/Order Summary/button_Continue shopping"), 10): Object 'Object Repository/Checkout/Order Summary/button_Continue shopping' is present
+
+26-05-2026T16:28:39 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/button_Continue shopping' is present
+
+26-05-2026T16:28:39 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Checkout/Order Summary/button_Continue shopping"), 0): Object 'Object Repository/Checkout/Order Summary/button_Continue shopping' is present
+
+26-05-2026T16:28:39 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+26-05-2026T16:28:39 - [MESSAGE][PASSED] - Object 'Object Repository/Checkout/Order Summary/button_Continue shopping' is present
+
+26-05-2026T16:28:39 - [TEST_STEP][PASSED] - click(findTestObject("Checkout/Order Summary/button_Continue shopping")): Object: 'Object Repository/Checkout/Order Summary/button_Continue shopping' is clicked on
+
+26-05-2026T16:28:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkout/Order Summary/button_Continue shopping' is clicked on
+
+26-05-2026T16:28:40 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+26-05-2026T16:28:40 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260526_162518\\WEB\\Address\\Address_TestSuite\\20260526_162518\\1779787720456.png]]
+
+26-05-2026T16:28:40 - [TEST_STEP][PASSED] - comment("Email      : " + randomEmail): Email      : agungpriyadifls@gmail.com
+
+26-05-2026T16:28:40 - [MESSAGE][INFO] - Email      : agungpriyadifls@gmail.com
+
+26-05-2026T16:28:40 - [TEST_STEP][PASSED] - comment("First Name : " + randomFirstName): First Name : Budi
+
+26-05-2026T16:28:40 - [MESSAGE][INFO] - First Name : Budi
+
+26-05-2026T16:28:40 - [TEST_STEP][PASSED] - comment("Last Name  : " + randomLastName): Last Name  : Putri
+
+26-05-2026T16:28:40 - [MESSAGE][INFO] - Last Name  : Putri
+
+26-05-2026T16:28:40 - [TEST_STEP][PASSED] - comment("Phone      : " + randomPhone): Phone      : 08478364154
+
+26-05-2026T16:28:40 - [MESSAGE][INFO] - Phone      : 08478364154
+
+26-05-2026T16:28:40 - [TEST_STEP][PASSED] - comment("Address    : " + randomAddress): Address    : Jakarta Testing 4063
+
+26-05-2026T16:28:40 - [MESSAGE][INFO] - Address    : Jakarta Testing 4063
+
+26-05-2026T16:28:40 - [TEST_STEP][PASSED] - comment("Code    : " + randomCode): Code    : 158109
+
+26-05-2026T16:28:40 - [MESSAGE][INFO] - Code    : 158109
+
+26-05-2026T16:28:40 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+26-05-2026T16:28:41 - [MESSAGE][PASSED] - Browser is closed
+
+26-05-2026T16:28:43 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address)' .
+
+26-05-2026T16:28:43 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address)' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[26-05-2026T16:25:39 - [TEST_SUITE][PASSED] - Address_TestSuite: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -18,6 +18,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
+import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.webui.driver.DriverFactory
+
 import org.openqa.selenium.Keys
 
 import internal.GlobalVariable
@@ -29,6 +32,27 @@ public class BrowserHelper {
 		WebUI.sendKeys(null, Keys.chord(Keys.ESCAPE))
 		WebUI.executeJavaScript("document.body.click();", null)
 		WebUI.delay(1)
+	}
+	
+	@Keyword
+	def setupBrowserWindow() {
+
+		String browserName = DriverFactory.getExecutedBrowser().getName()
+
+		println("Running browser: " + browserName)
+
+		if (browserName.toUpperCase().contains('HEADLESS')) {
+
+			println("HEADLESS MODE DETECTED")
+
+			WebUI.setViewPortSize(1920, 1080)
+
+		} else {
+
+			println("NORMAL MODE DETECTED")
+
+			WebUI.maximizeWindow()
+		}
 	}
 
 }
