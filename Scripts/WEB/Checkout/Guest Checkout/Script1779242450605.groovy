@@ -35,6 +35,8 @@ WebUI.openBrowser('')
 
 CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
+WebUI.delay(2)
+
 WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
