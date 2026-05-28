@@ -1,106 +1,148 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement as WebElement
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import internal.GlobalVariable as GlobalVariable
 
+// OPEN BROWSER
 WebUI.openBrowser(GlobalVariable.URL)
 
+WebUI.maximizeWindow()
+
+// VERIFY HOME
 WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
+// LOGIN
 WebUI.click(findTestObject('Registration/icon-acount'))
 
 CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+WebUI.setText(findTestObject('Registration/field-account'), GlobalVariable.username)
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+WebUI.setEncryptedText(findTestObject('Registration/field-Password'), GlobalVariable.password)
 
 WebUI.click(findTestObject('Login/btn-sign in'))
 
+// VERIFY LOGIN
 WebUI.click(findTestObject('Registration/icon-acount'))
 
 WebUI.verifyElementVisible(findTestObject('Home Page/verify-succes-acount-login'))
 
+// SEARCH PRODUCT
 WebUI.click(findTestObject('Home Page/Search/icon-search'))
 
-WebUI.click(findTestObject('Home Page/Search/field-search'))
+WebUI.setText(findTestObject('Home Page/Search/field-search'), 'IPHONE')
 
-WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord('IPHONE 12 PRO MAX 128GB GOLD', Keys.ENTER))
+WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord(Keys.ENTER))
 
-WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-12 -pro'))
+// WAIT PRODUCT LIST
+WebUI.waitForElementVisible(findTestObject('Home Page/Search/list_product'), 10)
 
-WebUI.click(findTestObject('Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD'))
+// GET PRODUCT LIST
+List<WebElement> products = WebUiCommonHelper.findWebElements(findTestObject('Home Page/Search/list_product'), 10)
 
-WebUI.click(findTestObject('Product and Cart/Add to cart/button_Add to Cart'))
+boolean productFound = false
 
-WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-cart'), 7)
+// LOOP PRODUCT
+for (int i = 1; i <= products.size(); i++) {
+    TestObject dynamicProduct = new TestObject()
+
+    dynamicProduct.addProperty('xpath', ConditionType.EQUALS, ('(//div[contains(@class,\'sp-plp-card\')])[' + i) + ']')
+
+    WebUI.comment('Checking product index : ' + i)
+
+    WebUI.click(dynamicProduct)
+
+    // WAIT PDP PAGE
+    WebUI.waitForPageLoad(10)
+
+    // CHECK ADD TO CART BUTTON
+    boolean addToCartExist = WebUI.verifyElementPresent(findTestObject('Product and Cart/Add to cart/button_Add to Cart'), 
+        5, FailureHandling.OPTIONAL)
+
+    if (addToCartExist) {
+        WebUI.comment('Available product found')
+
+        WebUI.click(findTestObject('Product and Cart/Add to cart/button_Add to Cart'))
+
+        productFound = true
+
+        break
+    } else {
+        WebUI.comment('Product sold out')
+
+        WebUI.back()
+
+        WebUI.waitForPageLoad(10)
+    }
+}
+
+// FAIL IF NO PRODUCT AVAILABLE
+assert productFound : 'Semua product sold out'
+
+// OPEN CART
+WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-cart'), 10)
 
 WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
 
-WebUI.verifyElementVisible(findTestObject('Checkout/Address/Address Ship To/btn_checkout'), FailureHandling.STOP_ON_FAILURE)
+// CHECKOUT
+WebUI.verifyElementVisible(findTestObject('Checkout/Address/Address Ship To/btn_checkout'))
 
 WebUI.click(findTestObject('Checkout/Address/Address Ship To/btn_checkout'))
 
+// PAYMENT METHOD
 WebUI.click(findTestObject('Checkout/Order Summary/Online Payment - Cradit Card'))
 
 WebUI.check(findTestObject('Checkout/Order Summary/Checkbox__I accept'))
 
 WebUI.click(findTestObject('Checkout/Order Summary/button_Checkout_Payment'))
 
-WebUI.waitForElementPresent(findTestObject('Checkout/Page Checkout/iframe_Credit Card'), 10)
+// WAIT IFRAME
+WebUI.waitForElementPresent(findTestObject('Checkout/Page Checkout/iframe_Credit Card'), 15)
 
-// Payment iframe
-WebUI.click(findTestObject('Checkout/Page Checkout/iframe_Credit Card'), FailureHandling.STOP_ON_FAILURE)
+// SWITCH TO IFRAME
+WebUI.switchToFrame(findTestObject('Checkout/Page Checkout/iframe_Credit Card'), 10)
 
-WebUI.delay(10)
+// WAIT CARD FIELD
+WebUI.waitForElementVisible(findTestObject('Checkout/Page Checkout/field_cardNumber'), 10)
 
-WebUI.setText(findTestObject('Checkout/Page Checkout/field_cardNumber'), '5156 8399 3770 6777')
+// INPUT CARD
+WebUI.setText(findTestObject('Checkout/Page Checkout/field_cardNumber'), '5156839937706777')
 
-WebUI.delay(5, FailureHandling.STOP_ON_FAILURE)
-
+// INPUT EXP DATE
 TestObject expiry = findTestObject('Checkout/Page Checkout/field_cardExp')
 
 WebUI.click(expiry)
 
-WebUI.sendKeys(expiry, '0')
+WebUI.sendKeys(expiry, '0130')
 
-WebUI.sendKeys(expiry, '1')
-
-WebUI.sendKeys(expiry, '3')
-
-WebUI.sendKeys(expiry, '0')
-
+// INPUT CVV
 WebUI.setText(findTestObject('Checkout/Page Checkout/field_cvv2'), '993')
 
+// PAY
 WebUI.click(findTestObject('Checkout/Order Summary/button_Pay (1)'))
 
-WebUI.waitForElementPresent(findTestObject('Checkout/Order Summary/button_Continue shopping'), 10)
+// VERIFY SUCCESS
+WebUI.waitForElementPresent(findTestObject('Checkout/Order Summary/button_Continue shopping'), 15)
 
 WebUI.click(findTestObject('Checkout/Order Summary/button_Continue shopping'))
 
-WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/track your order'), 0)
+// TRACK ORDER
+WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/track your order'), 10)
 
 WebUI.click(findTestObject('Checkout/Track Order/track your order'))
 
 WebUI.click(findTestObject('Checkout/button_Order Details'))
 
-WebUI.scrollToElement(findTestObject('Checkout/Track Order/verify-order list'), 7)
+WebUI.scrollToElement(findTestObject('Checkout/Track Order/verify-order list'), 10)
 
+// SCREENSHOT
 WebUI.takeScreenshot()
 
+// CLOSE
 WebUI.closeBrowser()
 
