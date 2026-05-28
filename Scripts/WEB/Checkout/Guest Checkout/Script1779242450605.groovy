@@ -116,11 +116,13 @@ WebUI.delay(10)
 
 WebUI.click(findTestObject('Checkout/Order Summary/button_Approve'))
 
-WebUI.waitForElementPresent(findTestObject('Checkout/Order Summary/button_Continue shopping'), 10)
+WebUI.delay(10)
 
-WebUI.verifyElementPresent(findTestObject('Checkout/Order Summary/button_Continue shopping'), 0)
+WebUI.waitForElementPresent(findTestObject('Checkout/Order Summary/Online Payment - WeChat'), 10)
 
-WebUI.click(findTestObject('Checkout/Order Summary/button_Continue shopping'))
+WebUI.verifyElementPresent(findTestObject('Checkout/Order Summary/Checkbox__I accept'), 0)
+
+WebUI.click(findTestObject('Checkout/Order Summary/button_Checkout_Payment'))
 
 // Logs for report
 WebUI.comment('Email      : ' + randomEmail)
