@@ -35,7 +35,7 @@ WebUI.openBrowser('')
 
 CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
