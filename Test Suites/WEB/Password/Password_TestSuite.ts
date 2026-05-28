@@ -12,13 +12,6 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>cc2401e5-ca93-47d3-aa6f-df15647cc221</testSuiteGuid>
    <testCaseLink>
-      <guid>e50647b4-f873-46a8-926a-2ccd9777f73e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/WEB/Password/Ensure user can update password using forget password feature</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>7a0ab323-0d0f-4159-a2dd-4f79dacff8a0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
