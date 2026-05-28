@@ -33,6 +33,10 @@ String randomCode = CustomKeywords.'custom.RandomData.generateRandomCode'()
 // Open browser
 WebUI.openBrowser('')
 
+CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
+
+WebUI.delay(5)
+
 WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
