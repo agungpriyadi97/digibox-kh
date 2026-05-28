@@ -116,6 +116,8 @@ WebUI.delay(10)
 
 WebUI.click(findTestObject('Checkout/Order Summary/button_Approve'))
 
+WebUI.delay(10)
+
 WebUI.waitForElementPresent(findTestObject('Checkout/Order Summary/button_Continue shopping'), 10)
 
 WebUI.verifyElementPresent(findTestObject('Checkout/Order Summary/button_Continue shopping'), 0)
