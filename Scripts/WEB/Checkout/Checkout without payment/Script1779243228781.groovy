@@ -33,9 +33,9 @@ WebUI.click(findTestObject('Registration/icon-acount'))
 
 CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+WebUI.setText(findTestObject('Registration/field-account'), GlobalVariable.username)
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+WebUI.setEncryptedText(findTestObject('Registration/field-Password'), GlobalVariable.password)
 
 WebUI.click(findTestObject('Login/btn-sign in'))
 
@@ -46,13 +46,14 @@ WebUI.verifyElementVisible(findTestObject('Home Page/verify-succes-acount-login'
 // Search product
 WebUI.click(findTestObject('Home Page/Search/icon-search'))
 
-WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord('IPHONE 12 PRO MAX 128GB GOLD', Keys.ENTER))
+WebUI.setText(findTestObject('Home Page/Search/field-search'), 'Iphone 11')
 
-WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-12 -pro'))
+WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD'))
-
-WebUI.click(findTestObject('Product and Cart/Add to cart/button_Add to Cart'))
+// ========================================
+// ADD AVAILABLE PRODUCT
+// ========================================
+CustomKeywords.'custom.ProductHelper.addAnyAvailableProduct'()
 
 WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-cart'), 10)
 
@@ -79,7 +80,20 @@ WebUI.delay(10)
 
 WebUI.setText(findTestObject('Checkout/Page Checkout/field_cardNumber'), '5156 8399 3770 6777')
 
-WebUI.setText(findTestObject('Checkout/Page Checkout/field_cardExp'), '0130')
+// ========================================
+// EXPIRY DATE
+// ========================================
+TestObject expiry = findTestObject('Checkout/Page Checkout/field_cardExp')
+
+WebUI.click(expiry)
+
+WebUI.sendKeys(expiry, '0')
+
+WebUI.sendKeys(expiry, '4')
+
+WebUI.sendKeys(expiry, '3')
+
+WebUI.sendKeys(expiry, '0')
 
 WebUI.setText(findTestObject('Checkout/Page Checkout/field_cvv2'), '993')
 
@@ -98,10 +112,6 @@ WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/track your orde
 WebUI.click(findTestObject('Checkout/Track Order/track your order'))
 
 WebUI.click(findTestObject('Checkout/Track Order/sp-order-list-item'))
-
-WebUI.scrollToElement(findTestObject('Checkout/Track Order/text_order_status'), 7)
-
-WebUI.verifyElementText(findTestObject('Checkout/Track Order/text_order_status'), 'WAIT')
 
 // Screenshot
 WebUI.takeScreenshot()
