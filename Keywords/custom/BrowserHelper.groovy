@@ -18,7 +18,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.webui.driver.DriverFactory
 
 import org.openqa.selenium.Keys
