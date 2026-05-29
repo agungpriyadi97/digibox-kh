@@ -1,0 +1,433 @@
+2026-05-29 13:56:00.606 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\AgungPriyadi\.katalon\packages\KS-11.1.3\configuration\org.eclipse.osgi\150\0\.cp\resources\logback\logback-execution.xml
+2026-05-29 13:56:00.606 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\AgungPriyadi\git\digibox-kh\Include\config\log.properties
+2026-05-29 13:56:01.333 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/WEB/Guest User/GuestUser_TestSuite
+2026-05-29 13:56:01.541 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Agung Priyadi
+2026-05-29 13:56:01.541 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = digibox-kh
+2026-05-29 13:56:01.544 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = AgungPriyadi - NB-GDA-55026
+2026-05-29 13:56:01.544 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-05-29 13:56:01.544 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.110.25
+2026-05-29 13:56:01.560 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.1.3.0
+2026-05-29 13:56:02.324 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-29 13:56:02.324 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty
+2026-05-29 13:56:03.716 DEBUG ed when Verification Code field is empty - 1: openBrowser(URL)
+2026-05-29 13:56:05.484 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-05-29 13:56:05.497 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-05-29 13:56:05.705 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-29 13:56:10.471 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 1a10509c1e66da8d511c4aba866737df
+2026-05-29 13:56:10.481 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-29 13:56:10.483 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-29 13:56:10.483 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-29 13:56:10.501 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-29 13:56:13.971 DEBUG ed when Verification Code field is empty - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-29 13:56:14.886 DEBUG ed when Verification Code field is empty - 3: click(findTestObject("Checkout/Track Order/track your order"))
+2026-05-29 13:56:15.836 DEBUG ed when Verification Code field is empty - 4: setText(findTestObject("Guest User/Track Your Order/txtField_Email"), "agung.priyadi@gtech.digital")
+2026-05-29 13:56:17.614 DEBUG ed when Verification Code field is empty - 5: setText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), "")
+2026-05-29 13:56:18.939 DEBUG ed when Verification Code field is empty - 6: click(findTestObject("Guest User/Track Your Order/btn_Send"))
+2026-05-29 13:56:19.766 DEBUG ed when Verification Code field is empty - 7: verifyTextPresent("The verification code has been sent, please check in the mailbox.", false)
+2026-05-29 13:56:20.555 DEBUG ed when Verification Code field is empty - 8: verifyElementHasAttribute(findTestObject("Guest User/Track Your Order/btn_Continue"), "disabled", 5)
+2026-05-29 13:56:20.967 DEBUG ed when Verification Code field is empty - 9: takeScreenshot()
+2026-05-29 13:56:21.557 DEBUG ed when Verification Code field is empty - 10: closeBrowser()
+2026-05-29 13:56:24.949 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty
+2026-05-29 13:56:24.973 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-29 13:56:24.974 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code
+2026-05-29 13:56:25.233 DEBUG or message for invalid verification code - 1: openBrowser(URL)
+2026-05-29 13:56:25.238 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-05-29 13:56:25.240 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-05-29 13:56:25.253 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-29 13:56:26.636 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = daea2f27dad4452fd6d562762b77efb3
+2026-05-29 13:56:26.651 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-29 13:56:26.651 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-29 13:56:26.651 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-29 13:56:26.651 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-29 13:56:28.540 DEBUG or message for invalid verification code - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-29 13:56:29.027 DEBUG or message for invalid verification code - 3: click(findTestObject("Checkout/Track Order/track your order"))
+2026-05-29 13:56:30.084 DEBUG or message for invalid verification code - 4: setText(findTestObject("Guest User/Track Your Order/txtField_Email"), "agung.priyadi@gtech.digital")
+2026-05-29 13:56:31.848 DEBUG or message for invalid verification code - 5: setText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), "")
+2026-05-29 13:56:33.231 DEBUG or message for invalid verification code - 6: click(findTestObject("Guest User/Track Your Order/btn_Send"))
+2026-05-29 13:56:34.057 DEBUG or message for invalid verification code - 7: verifyTextPresent("The verification code has been sent, please check in the mailbox.", false)
+2026-05-29 13:56:34.855 DEBUG or message for invalid verification code - 8: setText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), "999999")
+2026-05-29 13:56:36.084 DEBUG or message for invalid verification code - 9: waitForElementPresent(findTestObject("Guest User/Track Your Order/btn_Continue"), 10)
+2026-05-29 13:56:36.575 DEBUG or message for invalid verification code - 10: click(findTestObject("Guest User/Track Your Order/btn_Continue"))
+2026-05-29 13:56:37.252 DEBUG or message for invalid verification code - 11: verifyTextPresent("Verification code error.", false)
+2026-05-29 13:56:37.983 DEBUG or message for invalid verification code - 12: takeScreenshot()
+2026-05-29 13:56:38.517 DEBUG or message for invalid verification code - 13: closeBrowser()
+2026-05-29 13:56:41.639 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code
+2026-05-29 13:56:41.655 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-29 13:56:41.656 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest
+2026-05-29 13:56:41.978 DEBUG r can not access profile page as a guest - 1: openBrowser(URL)
+2026-05-29 13:56:41.978 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-05-29 13:56:41.978 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-05-29 13:56:41.994 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-29 13:56:43.357 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 5404e8f3f31af08702203038eaf15091
+2026-05-29 13:56:43.358 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-29 13:56:43.362 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-29 13:56:43.363 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-29 13:56:43.364 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-29 13:56:45.226 DEBUG r can not access profile page as a guest - 2: custom.BrowserHelper.setupBrowserWindow()
+Running browser: HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-05-29 13:56:45.769 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-05-29 13:56:45.773 DEBUG r can not access profile page as a guest - 3: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-29 13:56:46.378 DEBUG r can not access profile page as a guest - 4: click(findTestObject("Registration/icon-acount"))
+2026-05-29 13:56:47.082 DEBUG r can not access profile page as a guest - 5: takeScreenshot()
+2026-05-29 13:56:48.169 DEBUG r can not access profile page as a guest - 6: closeBrowser()
+2026-05-29 13:56:51.425 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest
+2026-05-29 13:56:51.451 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-29 13:56:51.451 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest
+2026-05-29 13:56:52.378 DEBUG  explore the website commerce as a guest - 1: openBrowser("")
+2026-05-29 13:56:52.394 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-05-29 13:56:52.394 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-05-29 13:56:52.394 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-29 13:56:53.754 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 76f7abe4a2304d46df56cc67fc8a1461
+2026-05-29 13:56:53.756 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-29 13:56:53.762 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-29 13:56:53.763 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-29 13:56:53.764 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-29 13:56:53.817 DEBUG  explore the website commerce as a guest - 2: custom.BrowserHelper.setupBrowserWindow()
+Running browser: HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-05-29 13:56:53.925 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-05-29 13:56:53.935 DEBUG  explore the website commerce as a guest - 3: setViewPortSize(1920, 1080)
+2026-05-29 13:56:54.021 DEBUG  explore the website commerce as a guest - 4: enableSmartWait()
+2026-05-29 13:56:54.086 DEBUG  explore the website commerce as a guest - 5: navigateToUrl(URL)
+2026-05-29 13:56:55.959 DEBUG  explore the website commerce as a guest - 6: waitForElementVisible(findTestObject("Home Page/header_digibox"), 15)
+2026-05-29 13:56:57.165 DEBUG  explore the website commerce as a guest - 7: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-29 13:56:57.538 DEBUG  explore the website commerce as a guest - 8: clickWhenReady("Home Page/Page Iphone/menu-iphone")
+2026-05-29 13:56:57.548 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:56:57.571 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:56:57.918 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:56:58.298 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:56:58.808 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:56:58.808 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:56:59.558 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:00.683 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:00.970 DEBUG  explore the website commerce as a guest - 9: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max")
+2026-05-29 13:57:00.986 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:01.099 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:01.448 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:01.764 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:02.176 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:02.193 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:02.834 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:03.868 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:03.932 DEBUG  explore the website commerce as a guest - 10: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max")
+2026-05-29 13:57:03.940 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:03.944 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:04.986 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:05.288 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:05.547 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:05.549 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:05.844 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:06.855 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:06.888 DEBUG  explore the website commerce as a guest - 11: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 Pro")
+2026-05-29 13:57:06.901 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:06.920 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:07.437 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:07.709 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:08.063 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:08.067 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:08.588 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:09.603 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:09.651 DEBUG  explore the website commerce as a guest - 12: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13")
+2026-05-29 13:57:09.656 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:09.720 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:10.215 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:10.532 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:10.914 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:10.915 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:11.534 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:12.554 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:12.602 DEBUG  explore the website commerce as a guest - 13: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 mini")
+2026-05-29 13:57:12.615 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:12.635 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:13.094 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:13.391 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:13.787 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:13.792 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:14.401 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:15.436 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:15.484 DEBUG  explore the website commerce as a guest - 14: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 12")
+2026-05-29 13:57:15.538 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:15.554 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:15.922 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:16.247 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:16.649 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:16.652 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:17.262 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:18.273 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:18.306 DEBUG  explore the website commerce as a guest - 15: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 11")
+2026-05-29 13:57:18.323 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:18.350 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:18.855 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:19.176 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:19.513 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:19.517 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:20.047 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:21.068 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:21.130 DEBUG  explore the website commerce as a guest - 16: clickWhenReady("Home Page/Page Ipad/menu-ipad")
+2026-05-29 13:57:21.136 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:21.162 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:21.619 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:21.916 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:22.268 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:22.279 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:22.847 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:23.866 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:23.925 DEBUG  explore the website commerce as a guest - 17: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad pro")
+2026-05-29 13:57:23.930 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:23.962 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:24.298 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:24.628 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:24.994 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:24.999 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:25.566 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:26.603 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:26.632 DEBUG  explore the website commerce as a guest - 18: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad Air")
+2026-05-29 13:57:26.648 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:26.701 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:27.248 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:27.560 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:27.950 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:27.950 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:28.503 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:29.535 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:29.568 DEBUG  explore the website commerce as a guest - 19: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad Mini")
+2026-05-29 13:57:29.579 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:29.604 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:30.059 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:30.404 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:30.841 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:30.850 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:31.516 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:32.537 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:32.572 DEBUG  explore the website commerce as a guest - 20: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad (Gen 10th)")
+2026-05-29 13:57:32.583 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:32.614 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:33.076 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:33.361 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:33.771 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:33.776 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:34.415 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:35.440 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:35.475 DEBUG  explore the website commerce as a guest - 21: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad")
+2026-05-29 13:57:35.480 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:35.495 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:35.959 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:36.273 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:36.671 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:36.675 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:37.223 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:38.248 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:38.282 DEBUG  explore the website commerce as a guest - 22: clickWhenReady("Home Page/Page Apple Watch/menu-Apple Watch")
+2026-05-29 13:57:38.325 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:38.358 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:38.713 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:39.024 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:39.434 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:39.443 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:40.117 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:41.149 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:41.199 DEBUG  explore the website commerce as a guest - 23: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 7")
+2026-05-29 13:57:41.214 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:41.249 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:41.616 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:41.921 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:42.298 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:42.298 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:42.894 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:43.921 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:43.988 DEBUG  explore the website commerce as a guest - 24: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 6")
+2026-05-29 13:57:44.004 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:44.022 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:44.482 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:44.801 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:45.226 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:45.242 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:45.825 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:46.848 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:46.887 DEBUG  explore the website commerce as a guest - 25: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 3")
+2026-05-29 13:57:46.894 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:46.907 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:47.385 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:47.716 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:48.176 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:48.192 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:48.734 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:49.752 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:49.762 DEBUG  explore the website commerce as a guest - 26: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch SE")
+2026-05-29 13:57:49.763 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:49.771 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:50.234 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:50.471 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:50.719 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:50.720 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:50.999 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:52.016 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:52.023 DEBUG  explore the website commerce as a guest - 27: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra")
+2026-05-29 13:57:52.025 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:52.032 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:52.575 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:52.803 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:53.052 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:53.054 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:53.328 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:54.331 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:54.336 DEBUG  explore the website commerce as a guest - 28: clickWhenReady("Home Page/Page Mac/menu-Mac")
+2026-05-29 13:57:54.338 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:54.344 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:54.696 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:54.926 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:55.187 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:55.188 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:55.470 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:56.483 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:56.493 DEBUG  explore the website commerce as a guest - 29: clickWhenReady("Home Page/Page Mac/sub-menu-MacBook Pro")
+2026-05-29 13:57:56.495 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:56.500 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:56.960 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:57.198 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:57.444 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:57.446 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:57.727 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:57:58.745 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:57:58.751 DEBUG  explore the website commerce as a guest - 30: clickWhenReady("Home Page/Page Mac/sub-menu-MacBook Air")
+2026-05-29 13:57:58.754 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:57:58.762 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:57:59.193 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:57:59.425 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:57:59.677 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:57:59.679 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:57:59.955 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:00.973 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:00.980 DEBUG  explore the website commerce as a guest - 31: clickWhenReady("Home Page/Page Airpods/menu-AirPods")
+2026-05-29 13:58:00.982 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:58:00.988 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:58:01.441 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:58:01.681 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:58:01.925 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:58:01.927 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:58:02.211 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:03.229 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:03.235 DEBUG  explore the website commerce as a guest - 32: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods Max")
+2026-05-29 13:58:03.237 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:58:03.241 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:58:03.683 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:58:03.904 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:58:04.151 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:58:04.152 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:58:04.429 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:05.433 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:05.444 DEBUG  explore the website commerce as a guest - 33: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods Pro")
+2026-05-29 13:58:05.447 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:58:05.453 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:58:05.814 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:58:06.052 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:58:06.318 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:58:06.320 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:58:06.600 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:07.615 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:07.629 DEBUG  explore the website commerce as a guest - 34: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods 3rd Generation")
+2026-05-29 13:58:07.632 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:58:07.637 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:58:08.106 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:58:08.339 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:58:08.591 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:58:08.594 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:58:08.876 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:09.883 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:09.889 DEBUG  explore the website commerce as a guest - 35: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods 2nd Generation")
+2026-05-29 13:58:09.890 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:58:09.895 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:58:10.243 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:58:10.520 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:58:10.871 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:58:10.873 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:58:11.490 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:12.520 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:12.539 DEBUG  explore the website commerce as a guest - 36: clickWhenReady("Home Page/Page Accessoris/menu-accessoris")
+2026-05-29 13:58:12.554 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:58:12.570 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:58:13.150 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:58:13.494 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:58:13.880 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:58:13.889 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:58:14.495 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:15.519 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:15.549 DEBUG  explore the website commerce as a guest - 37: clickWhenReady("Home Page/Page Accessoris/sub-menu-Aksesoris iPhone")
+2026-05-29 13:58:15.551 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:58:15.584 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:58:16.001 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:58:16.279 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:58:16.533 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:58:16.534 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:58:16.809 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:17.820 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:17.873 DEBUG  explore the website commerce as a guest - 38: clickWhenReady("Home Page/Page Accessoris/sub-menu-Aksesoris iPad")
+2026-05-29 13:58:17.887 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:58:17.911 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:58:18.362 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:58:18.657 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:58:18.982 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:58:18.984 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:58:19.263 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:20.270 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:20.277 DEBUG  explore the website commerce as a guest - 39: clickWhenReady("Home Page/Page Accessoris/sub-menu-MacBook Accessories")
+2026-05-29 13:58:20.278 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:58:20.286 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:58:20.625 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:58:20.855 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:58:21.100 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:58:21.101 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:58:21.374 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:22.379 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:22.384 DEBUG  explore the website commerce as a guest - 40: clickWhenReady("Home Page/Page Accessoris/sub-menu-Watch accessories")
+2026-05-29 13:58:22.386 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:58:22.390 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:58:22.886 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:58:23.182 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:58:23.607 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:58:23.634 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:58:24.285 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:25.315 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:25.345 DEBUG  explore the website commerce as a guest - 41: clickWhenReady("Home Page/Page Promotion/menu-Promotion")
+2026-05-29 13:58:25.352 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:58:25.369 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:58:25.818 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:58:26.127 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:58:26.397 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:58:26.398 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:58:26.669 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:27.679 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:27.687 DEBUG  explore the website commerce as a guest - 42: clickWhenReady("Home Page/Page Promotion/sub-menu-Digimania August 2022")
+2026-05-29 13:58:27.688 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:58:27.693 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:58:27.931 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:58:28.166 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:58:28.415 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:58:28.417 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:58:28.697 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:29.700 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:29.711 DEBUG  explore the website commerce as a guest - 43: clickWhenReady("Home Page/Page Promotion/sub-menu-Flash Sale")
+2026-05-29 13:58:29.713 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:58:29.719 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:58:30.172 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:58:30.410 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:58:30.669 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:58:30.670 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:58:30.968 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:31.985 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:31.990 DEBUG  explore the website commerce as a guest - 44: clickWhenReady("Home Page/Page Enterprice and Education/menu-Enterprise and Education")
+2026-05-29 13:58:31.992 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-05-29 13:58:31.997 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-05-29 13:58:32.531 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-05-29 13:58:32.764 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-05-29 13:58:33.009 DEBUG  explore the website commerce as a guest - 5: try
+2026-05-29 13:58:33.011 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-05-29 13:58:33.285 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-05-29 13:58:34.292 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-05-29 13:58:34.298 DEBUG  explore the website commerce as a guest - 45: takeScreenshot()
+2026-05-29 13:58:34.687 DEBUG  explore the website commerce as a guest - 46: closeBrowser()
+2026-05-29 13:58:38.492 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest
+2026-05-29 13:58:38.825 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-05-29 13:58:38.825 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/WEB/Guest User/GuestUser_TestSuite
+2026-05-29 13:58:38.825 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
