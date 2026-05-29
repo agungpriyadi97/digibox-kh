@@ -32,6 +32,8 @@ String randomCode = CustomKeywords.'custom.RandomData.generateRandomCode'()
 // Open browser
 WebUI.openBrowser(GlobalVariable.URL)
 
+CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
+
 // Verify homepage
 WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 

@@ -21,6 +21,8 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 // Open browser
 WebUI.openBrowser(GlobalVariable.URL)
 
+CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
+
 // Verify homepage
 WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
