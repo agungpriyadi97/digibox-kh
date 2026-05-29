@@ -25,7 +25,7 @@ String randomUsername = CustomKeywords.'custom.RandomData.generateRandomUsername
 
 WebUI.openBrowser(GlobalVariable.URL)
 
-WebUI.maximizeWindow()
+CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
 WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
