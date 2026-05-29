@@ -6,80 +6,135 @@ stages:
   - test
 
 variables:
-  # Ensures the job continues through all browser types even if one fails
   CONTINUE_ON_FAILURE: "true"
-  # CRITICAL: Increase shared memory size for Chrome Headless in Docker
-  # This prevents the "Out of Memory" crashes on heavy pages like Mapclub
   GS_OPTIONS: "-Xmx2048m -Xms512m -Djava.shm.size=2g"
 
 katalon_mapclub_test:
   stage: test
+
   tags:
     - infra
-  # Extended timeout for sequential cross-browser execution
-  timeout: 12h  
+
+  timeout: 12h
+
   rules:
     - if: $CI_PIPELINE_SOURCE == "schedule"
     - if: $CI_PIPELINE_SOURCE == "web"
-  
+
   before_script:
-    # Force apt to ignore the unverified Edge repository so it doesn't return exit code 1
     - apt-get update -o Acquire::AllowInsecureRepositories=true -o Doomsday::Ignore=true -y || true
-    # Install FFmpeg cleanly from standard Ubuntu repos to enable video recording
-    - apt-get install -y --allow-unauthenticated ffmpeg
+    - apt-get install -y --allow-unauthenticated ffmpeg xvfb
     - ffmpeg -version
 
   script:
-    - curl ifconfig.me
+
+    - mkdir -p Videos
+    - mkdir -p Reports
+    - mkdir -p Screenshot
+
+    - export DISPLAY=:99
+
+    # Start virtual display
+    - Xvfb :99 -screen 0 1920x1080x24 &
+    - sleep 5
+
     - |
-      # --- MAPCLUB PATH RESOLUTION ---
       if [ -z "$TEST_PATH" ]; then
-        echo "Running default Mapclub Regression Collection..."
-        # Updated Path to the Web Test Suite Collection
+        echo "Running default Regression Collection..."
         export FINAL_PATH="Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxkh_Web"
-        # Since this is a Collection, we use the Collection argument
         export ARG_TYPE="-testSuiteCollectionPath"
       else
         echo "Running custom test: $TEST_PATH"
-        # Parses custom input like -testSuitePath=Test Suites/Folder/Suite
         export FINAL_PATH=$(echo "$TEST_PATH" | cut -d'=' -f2)
         export ARG_TYPE=$(echo "$TEST_PATH" | cut -d'=' -f1)
       fi
 
-      # --- SEQUENTIAL CROSS-BROWSER EXECUTION (Chrome & Firefox Only) ---
+    # ==========================
+    # CHROME EXECUTION + VIDEO
+    # ==========================
 
-      echo "Starting Execution 1/2: Chrome (Headless)..."
+    - echo "Starting Chrome recording..."
+
+    - |
+      ffmpeg \
+      -video_size 1920x1080 \
+      -framerate 25 \
+      -f x11grab \
+      -i :99 \
+      -codec:v libx264 \
+      -preset ultrafast \
+      -pix_fmt yuv420p \
+      Videos/chrome_execution.mp4 > /dev/null 2>&1 &
+      
+      export FFMPEG_PID=$!
+
+    - echo "Running Chrome test..."
+
+    - |
       katalonc.sh -noSplash -runMode=console \
         -projectPath="$CI_PROJECT_DIR/Automation digibox-kh.prj" \
-        -retry=0 -apiKey="$KATALON_API_KEY" \
+        -retry=0 \
+        -apiKey="$KATALON_API_KEY" \
         "$ARG_TYPE=$FINAL_PATH" \
         -browserType="Chrome (headless)" \
         -reportFolder="Reports/Chrome_Reports" \
         -reportFileName="Chrome_Report" \
-        --config -webui.autoUpdateDrivers=true || echo "Chrome tests completed."
+        --config -webui.autoUpdateDrivers=true || true
 
-      echo "Starting Execution 2/2: Firefox (Headless)..."
+    - echo "Stopping Chrome recording..."
+
+    - kill -INT $FFMPEG_PID || true
+
+    - sleep 5
+
+    # ==========================
+    # FIREFOX EXECUTION + VIDEO
+    # ==========================
+
+    - echo "Starting Firefox recording..."
+
+    - |
+      ffmpeg \
+      -video_size 1920x1080 \
+      -framerate 25 \
+      -f x11grab \
+      -i :99 \
+      -codec:v libx264 \
+      -preset ultrafast \
+      -pix_fmt yuv420p \
+      Videos/firefox_execution.mp4 > /dev/null 2>&1 &
+      
+      export FFMPEG_PID=$!
+
+    - echo "Running Firefox test..."
+
+    - |
       katalonc.sh -noSplash -runMode=console \
         -projectPath="$CI_PROJECT_DIR/Automation digibox-kh.prj" \
-        -retry=0 -apiKey="$KATALON_API_KEY" \
+        -retry=0 \
+        -apiKey="$KATALON_API_KEY" \
         "$ARG_TYPE=$FINAL_PATH" \
         -browserType="Firefox (headless)" \
         -reportFolder="Reports/Firefox_Reports" \
         -reportFileName="Firefox_Report" \
-        --config -webui.autoUpdateDrivers=true || echo "Firefox tests completed."
+        --config -webui.autoUpdateDrivers=true || true
 
-    # --- ARTIFACT PURGE & RETENTION CLEANUP (SAFE VERSION) ---
-    - echo "Cleaning up heavy video files from runner cache..."
-    # Menghapus rekaman video (.mp4) lama dari workspace runner lokal jika usianya sudah di atas 30 hari
-    - find Reports/ -type f -name "*.mp4" -mtime +30 -exec rm -f {} \; || true
-    # PERBAIKAN: Logika pembersihan file non-HTML yang salah sebelumnya telah dihapus.
-    # Seluruh manajemen retensi laporan (.html, .xml) kini diserahkan sepenuhnya ke fitur 'expire_in' milik GitLab di bawah ini.
+    - echo "Stopping Firefox recording..."
+
+    - kill -INT $FFMPEG_PID || true
+
+    - sleep 5
+
+    # Cleanup old files
+    - find Videos/ -type f -name "*.mp4" -mtime +30 -exec rm -f {} \; || true
+    - find Screenshot/ -type f -name "*.png" -mtime +30 -exec rm -f {} \; || true
 
   artifacts:
-    # 'always' ensures reports are uploaded even if tests fail
     when: always
+
     paths:
       - Reports/
       - Screenshot/
-    # Reports kept for a maximum of 2 months to align with your retention settings
+      - Videos/
+
     expire_in: 2 mos
