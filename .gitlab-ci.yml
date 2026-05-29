@@ -23,7 +23,7 @@ katalon_mapclub_test:
 
   before_script:
     - apt-get update -o Acquire::AllowInsecureRepositories=true -o Doomsday::Ignore=true -y || true
-    - apt-get install -y --allow-unauthenticated ffmpeg xvfb
+    - apt-get install -y --allow-unauthenticated ffmpeg
     - ffmpeg -version
 
   script:
@@ -31,12 +31,6 @@ katalon_mapclub_test:
     - mkdir -p Videos
     - mkdir -p Reports
     - mkdir -p Screenshot
-
-    - export DISPLAY=:99
-
-    # Start virtual display
-    - Xvfb :99 -screen 0 1920x1080x24 &
-    - sleep 5
 
     - |
       if [ -z "$TEST_PATH" ]; then
@@ -57,16 +51,20 @@ katalon_mapclub_test:
 
     - |
       ffmpeg \
+      -y \
       -video_size 1920x1080 \
       -framerate 25 \
       -f x11grab \
-      -i :99 \
+      -i :99.0 \
       -codec:v libx264 \
       -preset ultrafast \
+      -crf 32 \
       -pix_fmt yuv420p \
       Videos/chrome_execution.mp4 > /dev/null 2>&1 &
-      
+
       export FFMPEG_PID=$!
+
+    - sleep 3
 
     - echo "Running Chrome test..."
 
@@ -95,16 +93,20 @@ katalon_mapclub_test:
 
     - |
       ffmpeg \
+      -y \
       -video_size 1920x1080 \
       -framerate 25 \
       -f x11grab \
-      -i :99 \
+      -i :99.0 \
       -codec:v libx264 \
       -preset ultrafast \
+      -crf 32 \
       -pix_fmt yuv420p \
       Videos/firefox_execution.mp4 > /dev/null 2>&1 &
-      
+
       export FFMPEG_PID=$!
+
+    - sleep 3
 
     - echo "Running Firefox test..."
 
