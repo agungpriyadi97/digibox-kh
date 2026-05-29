@@ -26,13 +26,6 @@
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8bf0ed7c-a6c1-4294-979a-502cbfae069f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/WEB/Guest User/Ensure user can access track order page as a guest</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>1e47015d-f530-463d-ba6a-bc011407de7b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

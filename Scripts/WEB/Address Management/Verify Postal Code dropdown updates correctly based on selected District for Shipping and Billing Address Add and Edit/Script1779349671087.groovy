@@ -38,13 +38,14 @@ WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 // Search product
 WebUI.click(findTestObject('Home Page/Search/icon-search'))
 
-WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord('IPHONE 12 PRO MAX 128GB GOLD', Keys.ENTER))
+WebUI.setText(findTestObject('Home Page/Search/field-search'), 'Iphone 11')
 
-WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-12 -pro'))
+WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Product and Cart/Add to cart/btn-product - IPHONE 12 PRO MAX 128GB GOLD'))
-
-WebUI.click(findTestObject('Product and Cart/Add to cart/button_Add to Cart'))
+// ========================================
+// ADD AVAILABLE PRODUCT
+// ========================================
+CustomKeywords.'custom.ProductHelper.addAnyAvailableProduct'()
 
 WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-cart'), 10)
 

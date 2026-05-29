@@ -1,3 +1,54 @@
 {
-  "brokenTestObjects" : [ ]
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Product and Cart/Add to cart/button_Add to Cart",
+      "brokenLocator": "//button[contains(@class,\u0027add-to-cart\u0027)]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//button[@type\u003d\u0027primary\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Checkout/Address/Address Ship To/btn_checkout",
+      "brokenLocator": "//div[contains(@class,\u0027checkout-btn\u0027)]//button",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "xpath\u003d(//button[@type\u003d\u0027primary\u0027])[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Checkout/Address/Address Ship To/btn_checkout_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Checkout/Address/Address Ship To/btn_checkout",
+      "brokenLocator": "//div[contains(@class,\u0027checkout-btn\u0027)]//button",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//button[@type\u003d\u0027primary\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Checkout/Address/Address Ship To/btn_checkout_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Checkout/Order Summary/Online Payment - Cradit Card",
+      "brokenLocator": "//div[@id\u003d\u0027page-view\u0027]/div/div[3]/section/div/section[2]/section/div/div/div[2]/div/div",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Online Payment\u0027])[1]/following::div[3]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province",
+      "brokenLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Tboung Khmum Province\u0027])[2]/following::li[1]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//li[@value\u003d\u0027B00000001\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    }
+  ]
 }
