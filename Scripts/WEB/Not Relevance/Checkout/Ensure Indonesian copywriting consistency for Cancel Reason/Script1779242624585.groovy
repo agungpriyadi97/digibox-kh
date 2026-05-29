@@ -19,9 +19,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser(GlobalVariable.URL)
 
+CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
+
 WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
 WebUI.click(findTestObject('Registration/icon-acount'))
+
+CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
 
 WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
 
@@ -44,15 +48,63 @@ WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord(Keys.
 // ========================================
 CustomKeywords.'custom.ProductHelper.addAnyAvailableProduct'()
 
+WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-cart'), 7)
+
 WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
 
-WebUI.takeScreenshot()
+WebUI.verifyElementVisible(findTestObject('Checkout/Address/Address Ship To/btn_checkout'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Product and Cart/Add to cart/btn-trash'))
+WebUI.click(findTestObject('Checkout/Address/Address Ship To/btn_checkout'))
 
-WebUI.takeScreenshot()
+WebUI.click(findTestObject('Checkout/Order Summary/Online Payment - Cradit Card'))
 
-WebUI.click(findTestObject('Product and Cart/Add to cart/btn-confrim-yes'))
+WebUI.check(findTestObject('Checkout/Order Summary/Checkbox__I accept'))
+
+WebUI.click(findTestObject('Checkout/Order Summary/button_Checkout_Payment'))
+
+WebUI.waitForElementPresent(findTestObject('Checkout/Page Checkout/iframe_Credit Card'), 10)
+
+WebUI.click(findTestObject('Checkout/Page Checkout/iframe_Credit Card'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
+
+WebUI.setText(findTestObject('Checkout/Page Checkout/field_cardNumber'), '5156 8399 3770 6777')
+
+WebUI.setText(findTestObject('Checkout/Page Checkout/field_cardExp'), '01/30')
+
+WebUI.setText(findTestObject('Checkout/Page Checkout/field_cvv2'), '993')
+
+WebUI.click(findTestObject('Checkout/Order Summary/btn-closed-pay'))
+
+WebUI.waitForAlert(10)
+
+String alertText = WebUI.getAlertText()
+
+WebUI.comment(alertText)
+
+WebUI.acceptAlert()
+
+WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/track your order'), 7)
+
+WebUI.click(findTestObject('Checkout/Track Order/track your order'))
+
+WebUI.click(findTestObject('Checkout/Track Order/sp-order-list-item'))
+
+WebUI.scrollToElement(findTestObject('Checkout/Track Order/btn-cencel'), 10)
+
+WebUI.click(findTestObject('Checkout/Track Order/btn-cencel'))
+
+WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/button_OK'), 7)
+
+WebUI.click(findTestObject('Checkout/Track Order/button_OK'))
+
+WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/Message_Success'), 10)
+
+WebUI.verifyElementVisible(findTestObject('Checkout/Track Order/Message_Success'))
+
+WebUI.scrollToElement(findTestObject('Checkout/Track Order/text_order_status'), 5)
+
+WebUI.verifyElementText(findTestObject('Checkout/Track Order/text_order_status'), 'CANCEL')
 
 WebUI.takeScreenshot()
 

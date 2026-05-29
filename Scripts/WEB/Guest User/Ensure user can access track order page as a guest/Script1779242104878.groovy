@@ -42,17 +42,14 @@ WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 // Search product
 WebUI.click(findTestObject('Home Page/Search/icon-search'))
 
-WebUI.setText(findTestObject('Home Page/Search/field-search'), 'IPHONE 11 PRO 128 GB DEEP PURPLE')
+WebUI.setText(findTestObject('Home Page/Search/field-search'), 'Iphone 11')
 
 WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord(Keys.ENTER))
 
-// Verify product
-WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-11-pro'))
-
-// Add to cart
-WebUI.click(findTestObject('Product and Cart/Add to cart/btn-product'))
-
-WebUI.click(findTestObject('Product and Cart/Add to cart/button_Add to Cart'))
+// ========================================
+// ADD AVAILABLE PRODUCT
+// ========================================
+CustomKeywords.'custom.ProductHelper.addAnyAvailableProduct'()
 
 WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-cart'), 10)
 
