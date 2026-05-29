@@ -29,6 +29,8 @@ WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
 
 WebUI.click(findTestObject('Login/btn-sign in'))
 
+WebUI.delay(2)
+
 WebUI.takeScreenshot()
 
 WebUI.closeBrowser()
