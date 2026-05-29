@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ProductCart_TestSuite,Chrome 148.0.7778.179,,,29-05-2026 11:15:24,29-05-2026 11:20:57,5m - 32.485s,PASSED
+,,,,,,,
+Test Cases/WEB/Product and Cart/Ensure user can add - update - remove product to shopping cart,Chrome 148.0.7778.179,,,29-05-2026 11:15:25,29-05-2026 11:20:57,5m - 31.537s,PASSED
+openBrowser(URL),Chrome 148.0.7778.179,,,29-05-2026 11:15:27,29-05-2026 11:15:35,7.857s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Chrome 148.0.7778.179,,,29-05-2026 11:15:35,29-05-2026 11:15:38,3.302s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Chrome 148.0.7778.179,,,29-05-2026 11:15:38,29-05-2026 11:15:39,1.046s,PASSED
+"setText(findTestObject(""Registration/field-account""), ""agungpriyadi"")",Chrome 148.0.7778.179,,,29-05-2026 11:15:39,29-05-2026 11:15:41,1.885s,PASSED
+"setText(findTestObject(""Registration/field-Password""), ""Laskar123456"")",Chrome 148.0.7778.179,,,29-05-2026 11:15:41,29-05-2026 11:15:42,1.444s,PASSED
+"click(findTestObject(""Login/btn-sign in""))",Chrome 148.0.7778.179,,,29-05-2026 11:15:42,29-05-2026 11:15:43,0.820s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Chrome 148.0.7778.179,,,29-05-2026 11:15:43,29-05-2026 11:15:44,0.722s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/verify-succes-acount-login""))",Chrome 148.0.7778.179,,,29-05-2026 11:15:44,29-05-2026 11:15:45,1.008s,PASSED
+"click(findTestObject(""Home Page/Search/icon-search""))",Chrome 148.0.7778.179,,,29-05-2026 11:15:45,29-05-2026 11:15:46,1.442s,PASSED
+"setText(findTestObject(""Home Page/Search/field-search""), ""Iphone 11"")",Chrome 148.0.7778.179,,,29-05-2026 11:15:46,29-05-2026 11:15:48,1.485s,PASSED
+"sendKeys(findTestObject(""Home Page/Search/field-search""), Keys.chord(ENTER))",Chrome 148.0.7778.179,,,29-05-2026 11:15:48,29-05-2026 11:15:49,1.222s,PASSED
+custom.ProductHelper.addAnyAvailableProduct(),Chrome 148.0.7778.179,,,29-05-2026 11:15:49,29-05-2026 11:20:46,4m - 56.843s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/i_icon-cart""))",Chrome 148.0.7778.179,,,29-05-2026 11:20:46,29-05-2026 11:20:47,0.812s,PASSED
+takeScreenshot(),Chrome 148.0.7778.179,,,29-05-2026 11:20:47,29-05-2026 11:20:48,1.093s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/btn-trash""))",Chrome 148.0.7778.179,,,29-05-2026 11:20:48,29-05-2026 11:20:49,1.197s,PASSED
+takeScreenshot(),Chrome 148.0.7778.179,,,29-05-2026 11:20:49,29-05-2026 11:20:50,0.705s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/btn-confrim-yes""))",Chrome 148.0.7778.179,,,29-05-2026 11:20:50,29-05-2026 11:20:50,0.555s,PASSED
+takeScreenshot(),Chrome 148.0.7778.179,,,29-05-2026 11:20:50,29-05-2026 11:20:51,0.510s,PASSED
+closeBrowser(),Chrome 148.0.7778.179,,,29-05-2026 11:20:51,29-05-2026 11:20:52,1.406s,PASSED

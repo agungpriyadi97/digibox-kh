@@ -1,0 +1,428 @@
+2026-05-29 11:10:30.842 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\AgungPriyadi\.katalon\packages\KS-11.1.3\configuration\org.eclipse.osgi\150\0\.cp\resources\logback\logback-execution.xml
+2026-05-29 11:10:30.844 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\AgungPriyadi\git\digibox-kh\Include\config\log.properties
+2026-05-29 11:10:31.580 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/WEB/Home Page/HomePage_TestSuite
+2026-05-29 11:10:31.861 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Agung Priyadi
+2026-05-29 11:10:31.868 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = digibox-kh
+2026-05-29 11:10:31.870 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = AgungPriyadi - NB-GDA-55026
+2026-05-29 11:10:31.873 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-05-29 11:10:31.874 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.110.25
+2026-05-29 11:10:31.879 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.1.3.0
+2026-05-29 11:10:32.693 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-29 11:10:32.694 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Home Page/Home - Ensure Menu Login with data akun and password not valid
+2026-05-29 11:10:33.885 DEBUG in with data akun and password not valid - 1: openBrowser(URL)
+2026-05-29 11:10:35.791 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-05-29 11:10:35.807 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-05-29 11:10:35.949 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-29 11:10:40.629 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 43d0037e8d80b7d958233318a605fcda
+2026-05-29 11:10:40.629 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-29 11:10:40.629 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-29 11:10:40.644 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-29 11:10:40.660 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-29 11:10:41.702 DEBUG in with data akun and password not valid - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-29 11:10:44.839 DEBUG in with data akun and password not valid - 3: click(findTestObject("Registration/icon-acount"))
+2026-05-29 11:10:45.900 DEBUG in with data akun and password not valid - 4: setText(findTestObject("Registration/field-account"), "agungpriyadi2")
+2026-05-29 11:10:47.681 DEBUG in with data akun and password not valid - 5: setText(findTestObject("Registration/field-Password"), "Laskar1234560")
+2026-05-29 11:10:48.927 DEBUG in with data akun and password not valid - 6: click(findTestObject("Login/btn-sign in"))
+2026-05-29 11:10:49.832 DEBUG in with data akun and password not valid - 7: click(findTestObject("Registration/icon-acount"))
+2026-05-29 11:10:50.568 DEBUG in with data akun and password not valid - 8: verifyElementVisible(findTestObject("Home Page/verify-login-not-valid"))
+2026-05-29 11:10:50.926 DEBUG in with data akun and password not valid - 9: takeScreenshot()
+2026-05-29 11:10:51.606 DEBUG in with data akun and password not valid - 10: closeBrowser()
+2026-05-29 11:10:55.047 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Home Page/Home - Ensure Menu Login with data akun and password not valid
+2026-05-29 11:10:55.063 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-29 11:10:55.063 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Home Page/Home - Ensure Menu Login with data akun and password valid
+2026-05-29 11:10:55.325 DEBUG  Login with data akun and password valid - 1: openBrowser(URL)
+2026-05-29 11:10:55.341 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-05-29 11:10:55.342 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-05-29 11:10:55.356 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-29 11:10:56.795 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = fc77c73c575f1c5dbef93f9a6bd08fed
+2026-05-29 11:10:56.795 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-29 11:10:56.795 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-29 11:10:56.808 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-29 11:10:56.808 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-29 11:10:58.755 DEBUG  Login with data akun and password valid - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-29 11:10:59.210 DEBUG  Login with data akun and password valid - 3: click(findTestObject("Registration/icon-acount"))
+2026-05-29 11:11:00.025 DEBUG  Login with data akun and password valid - 4: setText(findTestObject("Registration/field-account"), "agungpriyadi")
+2026-05-29 11:11:01.687 DEBUG  Login with data akun and password valid - 5: setText(findTestObject("Registration/field-Password"), "Laskar123456")
+2026-05-29 11:11:03.093 DEBUG  Login with data akun and password valid - 6: click(findTestObject("Login/btn-sign in"))
+2026-05-29 11:11:03.803 DEBUG  Login with data akun and password valid - 7: click(findTestObject("Registration/icon-acount"))
+2026-05-29 11:11:04.494 DEBUG  Login with data akun and password valid - 8: verifyElementVisible(findTestObject("Home Page/verify-succes-acount-login"))
+2026-05-29 11:11:13.094 DEBUG  Login with data akun and password valid - 9: takeScreenshot()
+2026-05-29 11:11:14.007 DEBUG  Login with data akun and password valid - 10: closeBrowser()
+2026-05-29 11:11:17.362 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Home Page/Home - Ensure Menu Login with data akun and password valid
+2026-05-29 11:11:17.375 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-29 11:11:17.375 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Home Page/Home - Ensure Menu Search
+2026-05-29 11:11:17.692 DEBUG testcase.Home - Ensure Menu Search       - 1: openBrowser(URL)
+2026-05-29 11:11:17.702 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-05-29 11:11:17.703 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-05-29 11:11:17.719 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-29 11:11:19.027 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 937a5a20d8cf125611aeb5917b49e286
+2026-05-29 11:11:19.027 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-29 11:11:19.059 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-29 11:11:19.059 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-29 11:11:19.074 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-29 11:11:21.240 DEBUG testcase.Home - Ensure Menu Search       - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-29 11:11:22.188 DEBUG testcase.Home - Ensure Menu Search       - 3: click(findTestObject("Home Page/Search/icon-search"))
+2026-05-29 11:11:22.771 DEBUG testcase.Home - Ensure Menu Search       - 4: click(findTestObject("Home Page/Search/field-search"))
+2026-05-29 11:11:23.391 DEBUG testcase.Home - Ensure Menu Search       - 5: sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 11 PRO 128 GB DEEP PURPLE", ENTER))
+2026-05-29 11:11:24.408 DEBUG testcase.Home - Ensure Menu Search       - 6: verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-11-pro"))
+2026-05-29 11:11:27.547 DEBUG testcase.Home - Ensure Menu Search       - 7: takeScreenshot()
+2026-05-29 11:11:28.537 DEBUG testcase.Home - Ensure Menu Search       - 8: closeBrowser()
+2026-05-29 11:11:31.675 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Home Page/Home - Ensure Menu Search
+2026-05-29 11:11:31.678 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-05-29 11:11:31.678 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Home Page/Verify all product category menus are displayed correctly on the homepage
+2026-05-29 11:11:32.508 DEBUG  are displayed correctly on the homepage - 1: openBrowser("")
+2026-05-29 11:11:32.522 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-05-29 11:11:32.523 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-05-29 11:11:32.559 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-05-29 11:11:33.908 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 73cbcd23564725801688c0f86ce5c508
+2026-05-29 11:11:33.924 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-05-29 11:11:33.924 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-05-29 11:11:33.924 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-05-29 11:11:33.924 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-05-29 11:11:34.043 DEBUG  are displayed correctly on the homepage - 2: setViewPortSize(1920, 1080)
+2026-05-29 11:11:34.339 DEBUG  are displayed correctly on the homepage - 3: enableSmartWait()
+2026-05-29 11:11:34.371 DEBUG  are displayed correctly on the homepage - 4: navigateToUrl(URL)
+2026-05-29 11:11:36.258 DEBUG  are displayed correctly on the homepage - 5: waitForElementVisible(findTestObject("Home Page/header_digibox"), 15)
+2026-05-29 11:11:37.541 DEBUG  are displayed correctly on the homepage - 6: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-05-29 11:11:37.880 DEBUG  are displayed correctly on the homepage - 7: clickWhenReady("Home Page/Page Iphone/menu-iphone")
+2026-05-29 11:11:37.904 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:11:37.920 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:11:38.282 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:11:38.700 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:11:39.175 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:11:39.188 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:11:39.828 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:11:40.978 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:11:41.220 DEBUG  are displayed correctly on the homepage - 8: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max")
+2026-05-29 11:11:41.243 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:11:41.292 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:11:41.685 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:11:42.021 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:11:42.429 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:11:42.429 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:11:43.000 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:11:44.030 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:11:44.067 DEBUG  are displayed correctly on the homepage - 9: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max")
+2026-05-29 11:11:44.082 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:11:44.098 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:11:45.141 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:11:45.474 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:11:46.071 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:11:46.087 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:11:46.735 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:11:47.745 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:11:47.775 DEBUG  are displayed correctly on the homepage - 10: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 Pro")
+2026-05-29 11:11:47.788 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:11:47.822 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:11:48.368 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:11:48.690 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:11:49.124 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:11:49.129 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:11:49.703 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:11:50.721 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:11:50.756 DEBUG  are displayed correctly on the homepage - 11: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13")
+2026-05-29 11:11:50.771 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:11:50.790 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:11:51.242 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:11:51.547 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:11:52.055 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:11:52.061 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:11:52.515 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:11:53.552 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:11:53.650 DEBUG  are displayed correctly on the homepage - 12: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 mini")
+2026-05-29 11:11:53.655 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:11:53.678 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:11:54.093 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:11:54.389 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:11:54.803 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:11:54.804 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:11:55.335 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:11:56.357 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:11:56.392 DEBUG  are displayed correctly on the homepage - 13: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 12")
+2026-05-29 11:11:56.405 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:11:56.424 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:11:56.874 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:11:57.200 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:11:57.565 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:11:57.570 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:11:58.084 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:11:59.106 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:11:59.138 DEBUG  are displayed correctly on the homepage - 14: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 11")
+2026-05-29 11:11:59.140 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:11:59.143 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:11:59.559 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:11:59.947 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:00.298 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:00.313 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:00.835 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:01.853 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:01.905 DEBUG  are displayed correctly on the homepage - 15: clickWhenReady("Home Page/Page Ipad/menu-ipad")
+2026-05-29 11:12:01.914 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:01.934 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:02.372 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:02.687 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:03.041 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:03.044 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:03.673 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:04.699 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:04.732 DEBUG  are displayed correctly on the homepage - 16: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad pro")
+2026-05-29 11:12:04.739 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:04.754 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:05.209 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:05.537 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:05.938 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:05.944 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:06.572 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:07.609 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:07.656 DEBUG  are displayed correctly on the homepage - 17: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad Air")
+2026-05-29 11:12:07.667 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:07.678 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:08.139 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:08.468 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:08.837 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:08.840 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:09.446 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:10.470 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:10.513 DEBUG  are displayed correctly on the homepage - 18: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad Mini")
+2026-05-29 11:12:10.515 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:10.534 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:10.513 DEBUG  are displayed correctly on the homepage - 18: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad Mini")
+2026-05-29 11:12:10.515 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:10.534 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:10.968 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:11.281 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:11.700 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:11.704 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:12.327 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:13.356 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:13.390 DEBUG  are displayed correctly on the homepage - 19: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad (Gen 10th)")
+2026-05-29 11:12:13.402 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:13.430 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:13.883 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:14.195 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:14.613 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:14.621 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:15.202 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:16.221 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:16.250 DEBUG  are displayed correctly on the homepage - 20: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad")
+2026-05-29 11:12:16.257 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:16.274 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:16.756 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:17.067 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:17.502 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:17.505 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:17.992 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:19.023 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:19.062 DEBUG  are displayed correctly on the homepage - 21: clickWhenReady("Home Page/Page Apple Watch/menu-Apple Watch")
+2026-05-29 11:12:19.062 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:19.078 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:19.561 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:19.848 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:20.217 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:20.223 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:20.782 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:21.805 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:21.841 DEBUG  are displayed correctly on the homepage - 22: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 7")
+2026-05-29 11:12:21.855 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:21.902 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:22.369 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:22.684 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:23.044 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:23.061 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:23.573 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:24.603 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:24.674 DEBUG  are displayed correctly on the homepage - 23: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 6")
+2026-05-29 11:12:24.688 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:24.703 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:25.186 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:25.508 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:25.847 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:25.862 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:26.435 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:27.459 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:27.507 DEBUG  are displayed correctly on the homepage - 24: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 3")
+2026-05-29 11:12:27.517 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:27.532 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:27.953 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:28.270 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:28.675 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:28.686 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:29.216 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:30.249 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:30.298 DEBUG  are displayed correctly on the homepage - 25: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch SE")
+2026-05-29 11:12:30.317 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:30.335 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:30.813 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:31.112 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:31.451 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:31.451 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:32.066 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:33.087 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:33.126 DEBUG  are displayed correctly on the homepage - 26: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra")
+2026-05-29 11:12:33.140 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:33.169 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:33.603 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:33.896 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:34.303 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:34.309 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:34.867 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:35.877 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:35.925 DEBUG  are displayed correctly on the homepage - 27: clickWhenReady("Home Page/Page Mac/menu-Mac")
+2026-05-29 11:12:35.942 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:35.965 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:36.371 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:36.729 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:37.094 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:37.117 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:37.674 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:38.703 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:38.739 DEBUG  are displayed correctly on the homepage - 28: clickWhenReady("Home Page/Page Mac/sub-menu-MacBook Pro")
+2026-05-29 11:12:38.749 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:38.761 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:39.320 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:39.610 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:39.977 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:39.982 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:40.557 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:41.600 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:41.628 DEBUG  are displayed correctly on the homepage - 29: clickWhenReady("Home Page/Page Mac/sub-menu-MacBook Air")
+2026-05-29 11:12:41.647 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:41.671 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:42.119 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:42.451 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:42.821 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:42.832 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:43.420 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:44.466 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:44.535 DEBUG  are displayed correctly on the homepage - 30: clickWhenReady("Home Page/Page Airpods/menu-AirPods")
+2026-05-29 11:12:44.548 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:44.566 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:44.904 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:45.244 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:45.594 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:45.594 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:46.220 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:47.241 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:47.284 DEBUG  are displayed correctly on the homepage - 31: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods Max")
+2026-05-29 11:12:47.327 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:47.370 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:47.757 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:48.064 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:48.482 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:48.498 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:49.097 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:50.124 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:50.188 DEBUG  are displayed correctly on the homepage - 32: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods Pro")
+2026-05-29 11:12:50.193 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:50.222 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:50.698 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:51.539 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:51.990 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:51.992 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:52.554 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:53.570 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:53.591 DEBUG  are displayed correctly on the homepage - 33: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods 3rd Generation")
+2026-05-29 11:12:53.606 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:53.626 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:54.184 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:54.525 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:54.922 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:54.929 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:55.580 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:56.598 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:56.610 DEBUG  are displayed correctly on the homepage - 34: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods 2nd Generation")
+2026-05-29 11:12:56.610 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:56.623 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:12:57.363 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:12:57.690 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:12:58.089 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:12:58.090 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:12:58.666 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:12:59.681 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:12:59.710 DEBUG  are displayed correctly on the homepage - 35: clickWhenReady("Home Page/Page Accessoris/menu-accessoris")
+2026-05-29 11:12:59.720 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:12:59.725 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:13:00.153 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:13:00.484 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:13:00.885 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:13:00.890 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:13:01.468 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:13:02.491 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:13:02.559 DEBUG  are displayed correctly on the homepage - 36: clickWhenReady("Home Page/Page Accessoris/sub-menu-Aksesoris iPhone")
+2026-05-29 11:13:02.591 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:13:02.621 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:13:03.053 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:13:03.361 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:13:03.761 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:13:03.784 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:13:04.308 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:13:05.350 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:13:05.375 DEBUG  are displayed correctly on the homepage - 37: clickWhenReady("Home Page/Page Accessoris/sub-menu-Aksesoris iPad")
+2026-05-29 11:13:05.391 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:13:05.407 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:13:06.071 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:13:06.415 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:13:06.790 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:13:06.790 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:13:07.397 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:13:08.437 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:13:08.489 DEBUG  are displayed correctly on the homepage - 38: clickWhenReady("Home Page/Page Accessoris/sub-menu-MacBook Accessories")
+2026-05-29 11:13:08.504 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:13:08.524 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:13:08.967 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:13:09.365 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:13:09.774 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:13:09.774 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:13:10.395 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:13:11.425 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:13:11.461 DEBUG  are displayed correctly on the homepage - 39: clickWhenReady("Home Page/Page Accessoris/sub-menu-Watch accessories")
+2026-05-29 11:13:11.472 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:13:11.477 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:13:12.003 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:13:12.296 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:13:12.732 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:13:12.745 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:13:13.364 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:13:14.377 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:13:14.455 DEBUG  are displayed correctly on the homepage - 40: clickWhenReady("Home Page/Page Promotion/menu-Promotion")
+2026-05-29 11:13:14.474 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:13:14.501 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:13:14.994 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:13:15.272 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:13:15.625 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:13:15.646 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:13:16.208 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:13:17.234 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:13:17.266 DEBUG  are displayed correctly on the homepage - 41: clickWhenReady("Home Page/Page Promotion/sub-menu-Digimania August 2022")
+2026-05-29 11:13:17.266 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:13:17.281 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:13:17.608 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:13:17.897 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:13:18.275 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:13:18.275 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:13:18.907 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:13:19.939 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:13:19.972 DEBUG  are displayed correctly on the homepage - 42: clickWhenReady("Home Page/Page Promotion/sub-menu-Flash Sale")
+2026-05-29 11:13:19.983 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:13:20.000 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:13:20.468 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:13:20.784 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:13:21.185 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:13:21.201 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:13:21.779 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:13:22.811 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:13:22.841 DEBUG  are displayed correctly on the homepage - 43: clickWhenReady("Home Page/Page Enterprice and Education/menu-Enterprise and Education")
+2026-05-29 11:13:22.859 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-05-29 11:13:22.892 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-05-29 11:13:23.676 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-05-29 11:13:23.966 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-05-29 11:13:24.362 DEBUG  are displayed correctly on the homepage - 5: try
+2026-05-29 11:13:24.378 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-05-29 11:13:24.975 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-05-29 11:13:25.999 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-05-29 11:13:26.018 DEBUG  are displayed correctly on the homepage - 44: takeScreenshot()
+2026-05-29 11:13:26.749 DEBUG  are displayed correctly on the homepage - 45: closeBrowser()
+2026-05-29 11:13:30.773 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Home Page/Verify all product category menus are displayed correctly on the homepage
+2026-05-29 11:13:30.856 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-05-29 11:13:30.858 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/WEB/Home Page/HomePage_TestSuite
+2026-05-29 11:13:30.858 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
