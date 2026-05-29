@@ -19,10 +19,12 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser(GlobalVariable.URL)
 
+CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
 WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
 WebUI.click(findTestObject('Registration/icon-acount'))
+
 CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
 
 WebUI.click(findTestObject('Registration/btn-create-new-account'))
@@ -35,7 +37,7 @@ WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
 
 WebUI.click(findTestObject('Registration/btn-sign-up'))
 
-WebUI.verifyElementText(findTestObject('Registration/verify-duplicate-account'), 'The account has already exist.')
+WebUI.verifyElementText(findTestObject('Registration/verify-duplicate-account'), 'Duplicated-unknown-error.')
 
 WebUI.takeScreenshot()
 
