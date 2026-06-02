@@ -1,0 +1,100 @@
+1
+00:00:00,117 --> 00:00:00,154
+1. randomFirstName = custom.RandomData.generateRandomFirstName()
+
+2
+00:00:00,167 --> 00:00:00,205
+5. randomEmail = custom.RandomData.generateRandomEmail()
+
+3
+00:00:00,206 --> 00:00:00,211
+9. randomLastName = custom.RandomData.generateRandomLastName()
+
+4
+00:00:00,212 --> 00:00:00,222
+13. randomPhone = custom.RandomData.generateRandomPhone()
+
+5
+00:00:00,223 --> 00:00:00,227
+17. randomAddress = custom.RandomData.generateRandomAddress()
+
+6
+00:00:00,228 --> 00:00:00,233
+21. randomCode = custom.RandomData.generateRandomCode()
+
+7
+00:00:00,233 --> 00:00:05,672
+25. openBrowser(URL)
+
+8
+00:00:05,673 --> 00:00:06,127
+29. custom.BrowserHelper.setupBrowserWindow()
+
+9
+00:00:06,129 --> 00:00:06,460
+33. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+10
+00:00:06,461 --> 00:00:06,854
+37. click(findTestObject("Registration/icon-acount"))
+
+11
+00:00:06,855 --> 00:00:07,700
+41. setText(findTestObject("Registration/field-account"), "agungpriyadi")
+
+12
+00:00:07,701 --> 00:00:08,444
+45. setText(findTestObject("Registration/field-Password"), "Laskar123456")
+
+13
+00:00:08,445 --> 00:00:08,963
+49. click(findTestObject("Login/btn-sign in"))
+
+14
+00:00:08,965 --> 00:00:19,117
+53. click(findTestObject("Registration/icon-acount"))
+
+15
+00:00:19,118 --> 00:00:19,124
+1. status = testCaseContext.getTestCaseStatus()
+
+16
+00:00:19,126 --> 00:00:19,128
+5. if (status == "PASSED")
+
+17
+00:00:19,130 --> 00:00:19,132
+2. saveScreenshot("FAILED")
+
+18
+00:00:19,133 --> 00:00:19,135
+1. tcName = getTestCaseName()
+
+19
+00:00:19,136 --> 00:00:19,144
+1. return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _)
+
+20
+00:00:19,145 --> 00:00:19,158
+5. folderPath = Screenshot/$status/$tcName/
+
+21
+00:00:19,159 --> 00:00:19,168
+9. Files.createDirectories(Paths.get(folderPath))
+
+22
+00:00:19,169 --> 00:00:19,172
+13. screenshotPath = $folderPath$status_$this.getTimestamp().png
+
+23
+00:00:19,174 --> 00:00:19,191
+1. return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date())
+
+24
+00:00:19,192 --> 00:00:19,515
+17. takeScreenshot(screenshotPath)
+
+25
+00:00:19,516 --> 00:00:19,519
+21. println("Screenshot saved : " + screenshotPath)
+
