@@ -1,0 +1,76 @@
+1
+00:00:00,298 --> 00:00:09,910
+1. openBrowser(URL)
+
+2
+00:00:09,916 --> 00:00:10,561
+5. custom.BrowserHelper.setupBrowserWindow()
+
+3
+00:00:10,570 --> 00:00:10,953
+9. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+4
+00:00:10,962 --> 00:00:11,566
+13. click(findTestObject("Checkout/Track Order/track your order"))
+
+5
+00:00:11,569 --> 00:00:12,654
+17. setText(findTestObject("Guest User/Track Your Order/txtField_Email"), "agung.priyadi@gtech.digital")
+
+6
+00:00:12,665 --> 00:00:13,702
+21. setText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), "")
+
+7
+00:00:13,705 --> 00:00:14,408
+25. click(findTestObject("Guest User/Track Your Order/btn_Send"))
+
+8
+00:00:14,412 --> 00:00:15,405
+29. verifyTextPresent("The verification code has been sent, please check in the mailbox.", false)
+
+9
+00:00:15,410 --> 00:00:15,413
+1. status = testCaseContext.getTestCaseStatus()
+
+10
+00:00:15,417 --> 00:00:15,421
+5. if (status == "PASSED")
+
+11
+00:00:15,430 --> 00:00:15,433
+2. saveScreenshot("FAILED")
+
+12
+00:00:15,436 --> 00:00:15,438
+1. tcName = getTestCaseName()
+
+13
+00:00:15,453 --> 00:00:15,465
+1. return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _)
+
+14
+00:00:15,480 --> 00:00:15,483
+5. folderPath = Screenshot/$status/$tcName/
+
+15
+00:00:15,488 --> 00:00:15,504
+9. Files.createDirectories(Paths.get(folderPath))
+
+16
+00:00:15,513 --> 00:00:15,515
+13. screenshotPath = $folderPath$status_$this.getTimestamp().png
+
+17
+00:00:15,518 --> 00:00:15,526
+1. return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date())
+
+18
+00:00:15,536 --> 00:00:15,959
+17. takeScreenshot(screenshotPath)
+
+19
+00:00:15,969 --> 00:00:15,977
+21. println("Screenshot saved : " + screenshotPath)
+

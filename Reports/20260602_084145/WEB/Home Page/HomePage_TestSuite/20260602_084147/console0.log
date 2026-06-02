@@ -1,0 +1,431 @@
+2026-06-02 09:00:33.712 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\AgungPriyadi\.katalon\packages\KS-11.1.3\configuration\org.eclipse.osgi\150\0\.cp\resources\logback\logback-execution.xml
+2026-06-02 09:00:33.721 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\AgungPriyadi\git\digibox-kh\Include\config\log.properties
+2026-06-02 09:00:38.161 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/WEB/Home Page/HomePage_TestSuite
+2026-06-02 09:00:38.507 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Agung Priyadi
+2026-06-02 09:00:38.510 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = digibox-kh
+2026-06-02 09:00:38.514 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = AgungPriyadi - NB-GDA-55026
+2026-06-02 09:00:38.530 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-06-02 09:00:38.531 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.110.43
+2026-06-02 09:00:38.540 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.1.3.0
+2026-06-02 09:00:39.089 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-06-02 09:00:39.089 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Home Page/Home - Ensure Menu Login with data akun and password not valid
+2026-06-02 09:00:40.256 DEBUG in with data akun and password not valid - 1: openBrowser(URL)
+2026-06-02 09:00:42.549 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-06-02 09:00:42.980 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-06-02 09:00:48.437 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 43dac036-a303-4b46-a78b-1263c9bdcd41
+2026-06-02 09:00:48.439 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-06-02 09:00:48.441 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-06-02 09:00:48.447 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-06-02 09:00:48.507 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-06-02 09:00:53.062 DEBUG in with data akun and password not valid - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-06-02 09:00:54.748 DEBUG in with data akun and password not valid - 3: click(findTestObject("Registration/icon-acount"))
+2026-06-02 09:00:55.648 DEBUG in with data akun and password not valid - 4: setText(findTestObject("Registration/field-account"), "agungpriyadi2")
+2026-06-02 09:01:05.785 WARN  c.k.k.c.w.k.builtin.SetTextKeyword       - Waiting for element timed out
+2026-06-02 09:01:05.945 DEBUG in with data akun and password not valid - 5: setText(findTestObject("Registration/field-Password"), "Laskar1234560")
+2026-06-02 09:01:07.008 DEBUG in with data akun and password not valid - 6: click(findTestObject("Login/btn-sign in"))
+2026-06-02 09:01:07.651 DEBUG in with data akun and password not valid - 7: click(findTestObject("Registration/icon-acount"))
+2026-06-02 09:01:08.435 DEBUG in with data akun and password not valid - 8: verifyElementVisible(findTestObject("Home Page/verify-login-not-valid"))
+2026-06-02 09:01:08.771 DEBUG in with data akun and password not valid - 9: takeScreenshot()
+2026-06-02 09:01:11.449 DEBUG in with data akun and password not valid - 10: closeBrowser()
+2026-06-02 09:01:14.707 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_13.run(S0602_13.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+2026-06-02 09:01:14.707 ERROR c.k.k.core.context.internal.TestHooker   - ❌ com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_13.run(S0602_13.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n
+2026-06-02 09:01:17.119 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Home Page/Home - Ensure Menu Login with data akun and password not valid
+2026-06-02 09:01:17.134 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-06-02 09:01:17.134 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Home Page/Home - Ensure Menu Login with data akun and password valid
+2026-06-02 09:01:17.364 DEBUG  Login with data akun and password valid - 1: openBrowser(URL)
+2026-06-02 09:01:17.388 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-06-02 09:01:17.425 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-06-02 09:01:19.545 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 387cd17c-b966-442f-92d4-31bc3cfaf22d
+2026-06-02 09:01:19.547 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-06-02 09:01:19.554 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-06-02 09:01:19.555 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-06-02 09:01:19.557 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-06-02 09:01:22.199 DEBUG  Login with data akun and password valid - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-06-02 09:01:23.257 DEBUG  Login with data akun and password valid - 3: click(findTestObject("Registration/icon-acount"))
+2026-06-02 09:01:24.156 DEBUG  Login with data akun and password valid - 4: setText(findTestObject("Registration/field-account"), "agungpriyadi")
+2026-06-02 09:01:34.228 WARN  c.k.k.c.w.k.builtin.SetTextKeyword       - Waiting for element timed out
+2026-06-02 09:01:34.361 DEBUG  Login with data akun and password valid - 5: setText(findTestObject("Registration/field-Password"), "Laskar123456")
+2026-06-02 09:01:35.478 DEBUG  Login with data akun and password valid - 6: click(findTestObject("Login/btn-sign in"))
+2026-06-02 09:01:36.142 DEBUG  Login with data akun and password valid - 7: click(findTestObject("Registration/icon-acount"))
+2026-06-02 09:01:36.687 DEBUG  Login with data akun and password valid - 8: verifyElementVisible(findTestObject("Home Page/verify-succes-acount-login"))
+2026-06-02 09:01:38.496 DEBUG  Login with data akun and password valid - 9: takeScreenshot()
+2026-06-02 09:01:39.895 DEBUG  Login with data akun and password valid - 10: closeBrowser()
+2026-06-02 09:01:42.570 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_13.run(S0602_13.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+2026-06-02 09:01:42.589 ERROR c.k.k.core.context.internal.TestHooker   - ❌ com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_13.run(S0602_13.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n
+2026-06-02 09:01:44.800 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Home Page/Home - Ensure Menu Login with data akun and password valid
+2026-06-02 09:01:44.820 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-06-02 09:01:44.820 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Home Page/Home - Ensure Menu Search
+2026-06-02 09:01:45.154 DEBUG testcase.Home - Ensure Menu Search       - 1: openBrowser(URL)
+2026-06-02 09:01:45.159 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-06-02 09:01:45.203 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-06-02 09:01:47.374 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 3d93e4b0-8d34-4499-bd0e-f7e61da72aae
+2026-06-02 09:01:47.379 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-06-02 09:01:47.380 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-06-02 09:01:47.381 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-06-02 09:01:47.388 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-06-02 09:01:49.499 DEBUG testcase.Home - Ensure Menu Search       - 2: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-06-02 09:01:50.159 DEBUG testcase.Home - Ensure Menu Search       - 3: click(findTestObject("Home Page/Search/icon-search"))
+2026-06-02 09:01:51.257 DEBUG testcase.Home - Ensure Menu Search       - 4: click(findTestObject("Home Page/Search/field-search"))
+2026-06-02 09:01:51.643 DEBUG testcase.Home - Ensure Menu Search       - 5: sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord("IPHONE 11 PRO 128 GB DEEP PURPLE", ENTER))
+2026-06-02 09:01:51.928 DEBUG testcase.Home - Ensure Menu Search       - 6: verifyElementVisible(findTestObject("Home Page/Search/verify-product-iphone-11-pro"))
+2026-06-02 09:01:55.302 DEBUG testcase.Home - Ensure Menu Search       - 7: takeScreenshot()
+2026-06-02 09:01:55.552 DEBUG testcase.Home - Ensure Menu Search       - 8: closeBrowser()
+2026-06-02 09:01:56.332 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_13.run(S0602_13.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+2026-06-02 09:01:56.334 ERROR c.k.k.core.context.internal.TestHooker   - ❌ com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_13.run(S0602_13.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n
+2026-06-02 09:01:58.426 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Home Page/Home - Ensure Menu Search
+2026-06-02 09:01:58.430 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-06-02 09:01:58.430 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Home Page/Verify all product category menus are displayed correctly on the homepage
+2026-06-02 09:01:58.568 DEBUG  are displayed correctly on the homepage - 1: openBrowser("")
+2026-06-02 09:01:58.570 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-06-02 09:01:58.580 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-06-02 09:02:01.469 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 70cee22c-6ed3-4045-892d-efe7cd137577
+2026-06-02 09:02:01.470 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-06-02 09:02:01.471 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-06-02 09:02:01.471 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-06-02 09:02:01.472 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-06-02 09:02:01.505 DEBUG  are displayed correctly on the homepage - 2: setViewPortSize(1920, 1080)
+2026-06-02 09:02:02.297 DEBUG  are displayed correctly on the homepage - 3: enableSmartWait()
+2026-06-02 09:02:02.502 DEBUG  are displayed correctly on the homepage - 4: navigateToUrl(URL)
+2026-06-02 09:02:07.437 DEBUG  are displayed correctly on the homepage - 5: waitForElementVisible(findTestObject("Home Page/header_digibox"), 15)
+2026-06-02 09:02:09.363 DEBUG  are displayed correctly on the homepage - 6: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-06-02 09:02:09.908 DEBUG  are displayed correctly on the homepage - 7: clickWhenReady("Home Page/Page Iphone/menu-iphone")
+2026-06-02 09:02:09.931 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:09.960 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:10.294 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:10.843 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:11.460 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:11.474 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:12.057 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:13.187 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:13.439 DEBUG  are displayed correctly on the homepage - 8: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max")
+2026-06-02 09:02:13.447 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:13.459 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:14.098 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:14.367 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:14.655 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:14.658 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:15.029 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:16.043 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:16.065 DEBUG  are displayed correctly on the homepage - 9: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max")
+2026-06-02 09:02:16.078 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:16.093 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:16.659 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:17.636 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:17.934 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:17.934 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:18.379 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:19.395 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:19.448 DEBUG  are displayed correctly on the homepage - 10: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 Pro")
+2026-06-02 09:02:19.458 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:19.489 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:20.075 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:20.317 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:20.628 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:20.644 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:21.089 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:22.114 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:22.129 DEBUG  are displayed correctly on the homepage - 11: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13")
+2026-06-02 09:02:22.145 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:22.164 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:22.778 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:23.027 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:23.382 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:23.382 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:23.790 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:24.804 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:24.827 DEBUG  are displayed correctly on the homepage - 12: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 mini")
+2026-06-02 09:02:24.846 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:24.871 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:25.474 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:25.743 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:26.035 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:26.035 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:26.437 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:27.454 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:27.488 DEBUG  are displayed correctly on the homepage - 13: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 12")
+2026-06-02 09:02:27.498 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:27.507 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:28.089 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:28.337 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:28.741 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:28.772 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:29.193 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:30.237 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:30.304 DEBUG  are displayed correctly on the homepage - 14: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 11")
+2026-06-02 09:02:30.319 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:30.335 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:31.139 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:31.420 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:31.777 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:31.794 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:32.242 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:33.291 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:33.327 DEBUG  are displayed correctly on the homepage - 15: clickWhenReady("Home Page/Page Ipad/menu-ipad")
+2026-06-02 09:02:33.343 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:33.362 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:34.129 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:34.395 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:34.724 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:34.733 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:35.258 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:36.302 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:36.328 DEBUG  are displayed correctly on the homepage - 16: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad pro")
+2026-06-02 09:02:36.334 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:36.352 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:36.723 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:37.056 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:37.386 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:37.396 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:37.946 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:38.976 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:39.006 DEBUG  are displayed correctly on the homepage - 17: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad Air")
+2026-06-02 09:02:39.021 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:39.034 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:39.807 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:40.059 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:40.359 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:40.363 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:40.793 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:41.833 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:41.868 DEBUG  are displayed correctly on the homepage - 18: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad Mini")
+2026-06-02 09:02:41.886 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:41.910 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:42.586 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:42.838 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:43.145 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:43.155 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:43.691 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:44.715 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:44.770 DEBUG  are displayed correctly on the homepage - 19: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad (Gen 10th)")
+2026-06-02 09:02:44.770 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:44.802 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:45.396 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:45.673 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:45.963 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:45.974 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:46.400 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:47.423 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:47.454 DEBUG  are displayed correctly on the homepage - 20: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad")
+2026-06-02 09:02:47.459 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:47.474 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:48.162 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:48.438 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:48.724 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:48.743 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:49.160 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:50.189 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:50.227 DEBUG  are displayed correctly on the homepage - 21: clickWhenReady("Home Page/Page Apple Watch/menu-Apple Watch")
+2026-06-02 09:02:50.238 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:50.244 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:50.614 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:50.975 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:51.285 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:51.292 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:51.718 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:52.734 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:52.816 DEBUG  are displayed correctly on the homepage - 22: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 7")
+2026-06-02 09:02:52.846 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:52.871 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:53.696 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:53.955 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:54.246 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:54.256 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:54.625 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:55.642 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:55.673 DEBUG  are displayed correctly on the homepage - 23: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 6")
+2026-06-02 09:02:55.684 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:55.702 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:56.378 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:56.652 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:56.973 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:56.990 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:02:57.643 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:02:58.671 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:02:58.679 DEBUG  are displayed correctly on the homepage - 24: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 3")
+2026-06-02 09:02:58.704 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:02:58.711 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:02:59.099 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:02:59.362 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:02:59.755 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:02:59.772 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:00.278 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:01.319 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:01.357 DEBUG  are displayed correctly on the homepage - 25: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch SE")
+2026-06-02 09:03:01.372 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:01.401 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:02.067 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:02.323 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:02.690 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:02.704 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:03.227 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:04.258 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:04.335 DEBUG  are displayed correctly on the homepage - 26: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra")
+2026-06-02 09:03:04.345 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:04.359 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:05.000 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:05.427 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:05.721 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:05.725 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:06.069 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:07.090 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:07.112 DEBUG  are displayed correctly on the homepage - 27: clickWhenReady("Home Page/Page Mac/menu-Mac")
+2026-06-02 09:03:07.120 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:07.137 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:07.505 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:07.774 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:08.054 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:08.067 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:08.578 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:09.622 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:09.653 DEBUG  are displayed correctly on the homepage - 28: clickWhenReady("Home Page/Page Mac/sub-menu-MacBook Pro")
+2026-06-02 09:03:09.662 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:09.676 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:10.374 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:10.649 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:10.975 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:10.981 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:11.407 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:12.428 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:12.461 DEBUG  are displayed correctly on the homepage - 29: clickWhenReady("Home Page/Page Mac/sub-menu-MacBook Air")
+2026-06-02 09:03:12.479 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:12.505 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:13.362 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:13.617 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:14.005 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:14.011 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:14.457 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:15.491 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:15.526 DEBUG  are displayed correctly on the homepage - 30: clickWhenReady("Home Page/Page Airpods/menu-AirPods")
+2026-06-02 09:03:15.556 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:15.577 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:16.235 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:16.474 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:16.766 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:16.778 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:17.235 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:18.284 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:18.319 DEBUG  are displayed correctly on the homepage - 31: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods Max")
+2026-06-02 09:03:18.337 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:18.356 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:19.104 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:19.348 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:19.640 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:19.644 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:20.008 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:21.028 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:21.056 DEBUG  are displayed correctly on the homepage - 32: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods Pro")
+2026-06-02 09:03:21.069 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:21.093 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:21.859 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:22.106 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:22.421 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:22.435 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:22.846 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:23.858 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:23.889 DEBUG  are displayed correctly on the homepage - 33: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods 3rd Generation")
+2026-06-02 09:03:23.901 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:23.919 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:24.618 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:24.892 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:25.173 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:25.177 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:25.693 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:26.734 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:26.758 DEBUG  are displayed correctly on the homepage - 34: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods 2nd Generation")
+2026-06-02 09:03:26.765 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:26.785 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:27.163 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:27.410 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:27.720 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:27.727 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:28.108 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:29.140 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:29.164 DEBUG  are displayed correctly on the homepage - 35: clickWhenReady("Home Page/Page Accessoris/menu-accessoris")
+2026-06-02 09:03:29.177 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:29.187 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:29.554 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:29.823 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:30.119 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:30.135 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:30.568 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:31.593 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:31.627 DEBUG  are displayed correctly on the homepage - 36: clickWhenReady("Home Page/Page Accessoris/sub-menu-Aksesoris iPhone")
+2026-06-02 09:03:31.630 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:31.662 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:32.351 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:32.604 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:32.923 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:32.958 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:33.406 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:34.442 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:34.496 DEBUG  are displayed correctly on the homepage - 37: clickWhenReady("Home Page/Page Accessoris/sub-menu-Aksesoris iPad")
+2026-06-02 09:03:34.517 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:34.525 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:35.246 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:35.491 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:35.786 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:35.802 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:36.187 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:37.206 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:37.224 DEBUG  are displayed correctly on the homepage - 38: clickWhenReady("Home Page/Page Accessoris/sub-menu-MacBook Accessories")
+2026-06-02 09:03:37.235 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:37.238 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:37.928 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:38.177 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:38.474 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:38.585 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:39.020 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:40.040 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:40.076 DEBUG  are displayed correctly on the homepage - 39: clickWhenReady("Home Page/Page Accessoris/sub-menu-Watch accessories")
+2026-06-02 09:03:40.088 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:40.098 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:40.802 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:41.050 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:41.337 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:41.357 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:41.736 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:42.744 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:42.759 DEBUG  are displayed correctly on the homepage - 40: clickWhenReady("Home Page/Page Promotion/menu-Promotion")
+2026-06-02 09:03:42.769 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:42.779 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:43.458 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:43.737 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:44.089 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:44.098 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:44.492 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:45.506 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:45.540 DEBUG  are displayed correctly on the homepage - 41: clickWhenReady("Home Page/Page Promotion/sub-menu-Digimania August 2022")
+2026-06-02 09:03:45.553 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:45.573 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:45.835 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:46.084 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:46.356 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:46.368 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:46.769 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:47.793 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:47.832 DEBUG  are displayed correctly on the homepage - 42: clickWhenReady("Home Page/Page Promotion/sub-menu-Flash Sale")
+2026-06-02 09:03:47.848 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:47.873 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:48.203 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:48.507 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:48.860 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:48.874 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:49.289 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:50.311 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:50.340 DEBUG  are displayed correctly on the homepage - 43: clickWhenReady("Home Page/Page Enterprice and Education/menu-Enterprise and Education")
+2026-06-02 09:03:50.348 DEBUG  are displayed correctly on the homepage - 1: obj = findTestObject(objectPath)
+2026-06-02 09:03:50.355 DEBUG  are displayed correctly on the homepage - 2: waitForElementVisible(obj, 15)
+2026-06-02 09:03:50.740 DEBUG  are displayed correctly on the homepage - 3: scrollToElement(obj, 5)
+2026-06-02 09:03:51.219 DEBUG  are displayed correctly on the homepage - 4: waitForElementClickable(obj, 10)
+2026-06-02 09:03:51.502 DEBUG  are displayed correctly on the homepage - 5: try
+2026-06-02 09:03:51.509 DEBUG  are displayed correctly on the homepage - 1: click(obj)
+2026-06-02 09:03:51.901 DEBUG  are displayed correctly on the homepage - 8: delay(1)
+2026-06-02 09:03:52.922 DEBUG  are displayed correctly on the homepage - 9: waitForPageLoad(10)
+2026-06-02 09:03:52.954 DEBUG  are displayed correctly on the homepage - 44: takeScreenshot()
+2026-06-02 09:03:53.494 DEBUG  are displayed correctly on the homepage - 45: closeBrowser()
+2026-06-02 09:03:56.275 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_13.run(S0602_13.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+2026-06-02 09:03:56.279 ERROR c.k.k.core.context.internal.TestHooker   - ❌ com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_13.run(S0602_13.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n
+2026-06-02 09:03:59.210 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Home Page/Verify all product category menus are displayed correctly on the homepage
+2026-06-02 09:03:59.318 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-06-02 09:03:59.318 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/WEB/Home Page/HomePage_TestSuite
+2026-06-02 09:03:59.318 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

@@ -1,0 +1,108 @@
+1
+00:00:00,000 --> 00:00:00,005
+1. randomFirstName = custom.RandomData.generateRandomFirstName()
+
+2
+00:00:00,005 --> 00:00:00,005
+5. randomEmail = custom.RandomData.generateRandomEmail()
+
+3
+00:00:00,005 --> 00:00:00,005
+9. randomLastName = custom.RandomData.generateRandomLastName()
+
+4
+00:00:00,005 --> 00:00:00,005
+13. randomPhone = custom.RandomData.generateRandomPhone()
+
+5
+00:00:00,014 --> 00:00:00,016
+17. randomAddress = custom.RandomData.generateRandomAddress()
+
+6
+00:00:00,016 --> 00:00:00,016
+21. randomCode = custom.RandomData.generateRandomCode()
+
+7
+00:00:00,018 --> 00:00:23,296
+25. openBrowser(URL)
+
+8
+00:00:23,298 --> 00:00:23,648
+29. custom.BrowserHelper.setupBrowserWindow()
+
+9
+00:00:23,649 --> 00:00:23,891
+33. verifyElementVisible(findTestObject("Home Page/header_digibox"))
+
+10
+00:00:23,892 --> 00:00:24,295
+37. click(findTestObject("Registration/icon-acount"))
+
+11
+00:00:24,297 --> 00:00:25,593
+41. setText(findTestObject("Registration/field-account"), "agungpriyadi")
+
+12
+00:00:25,594 --> 00:00:26,694
+45. setText(findTestObject("Registration/field-Password"), "Laskar123456")
+
+13
+00:00:26,695 --> 00:00:27,208
+49. click(findTestObject("Login/btn-sign in"))
+
+14
+00:00:27,209 --> 00:00:27,706
+53. click(findTestObject("Registration/icon-acount"))
+
+15
+00:00:27,707 --> 00:00:38,169
+57. click(findTestObject("Address Management/Shipping Address/btn_My Address"))
+
+16
+00:00:38,170 --> 00:01:01,079
+61. click(findTestObject("Address Management/Add New Address/div_Add New Address"))
+
+17
+00:01:01,080 --> 00:01:01,081
+1. status = testCaseContext.getTestCaseStatus()
+
+18
+00:01:01,082 --> 00:01:01,082
+5. if (status == "PASSED")
+
+19
+00:01:01,083 --> 00:01:01,083
+2. saveScreenshot("FAILED")
+
+20
+00:01:01,085 --> 00:01:01,086
+1. tcName = getTestCaseName()
+
+21
+00:01:01,087 --> 00:01:01,087
+1. return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _)
+
+22
+00:01:01,088 --> 00:01:01,088
+5. folderPath = Screenshot/$status/$tcName/
+
+23
+00:01:01,090 --> 00:01:01,091
+9. Files.createDirectories(Paths.get(folderPath))
+
+24
+00:01:01,093 --> 00:01:01,093
+13. screenshotPath = $folderPath$status_$this.getTimestamp().png
+
+25
+00:01:01,094 --> 00:01:01,094
+1. return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date())
+
+26
+00:01:01,095 --> 00:01:01,351
+17. takeScreenshot(screenshotPath)
+
+27
+00:01:01,352 --> 00:01:01,353
+21. println("Screenshot saved : " + screenshotPath)
+
