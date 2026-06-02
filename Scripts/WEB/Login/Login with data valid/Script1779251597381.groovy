@@ -16,24 +16,120 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-WebUI.openBrowser(GlobalVariable.URL)
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+import internal.GlobalVariable
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+// ========================
+// OPEN BROWSER
+// ========================
+WebUI.openBrowser('')
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+WebUI.setViewPortSize(1920, 1080)
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+WebUI.enableSmartWait()
 
-WebUI.click(findTestObject('Login/btn-sign in'))
+WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
-WebUI.verifyElementVisible(findTestObject('Home Page/verify-succes-acount-login'))
+WebUI.waitForPageLoad(30)
 
+// ========================
+// VERIFY HOMEPAGE
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Home Page/header_digibox'),
+	30
+)
+
+WebUI.verifyElementVisible(
+	findTestObject('Home Page/header_digibox')
+)
+
+// ========================
+// OPEN LOGIN POPUP
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Registration/icon-acount'),
+	30
+)
+
+WebUI.enhancedClick(
+	findTestObject('Registration/icon-acount')
+)
+
+// ========================
+// INPUT VALID ACCOUNT
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Registration/field-account'),
+	30
+)
+
+WebUI.setText(
+	findTestObject('Registration/field-account'),
+	'agungpriyadi'
+)
+
+WebUI.setText(
+	findTestObject('Registration/field-Password'),
+	'Laskar123456'
+)
+
+// ========================
+// CLICK SIGN IN
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Login/btn-sign in'),
+	30
+)
+
+WebUI.enhancedClick(
+	findTestObject('Login/btn-sign in')
+)
+
+// ========================
+// WAIT LOGIN PROCESS
+// ========================
+WebUI.waitForPageLoad(30)
+
+WebUI.delay(5)
+
+// ========================
+// OPEN ACCOUNT MENU
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Registration/icon-acount'),
+	30
+)
+
+WebUI.enhancedClick(
+	findTestObject('Registration/icon-acount')
+)
+
+// ========================
+// VERIFY LOGIN SUCCESS
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Home Page/verify-succes-acount-login'),
+	30
+)
+
+WebUI.verifyElementVisible(
+	findTestObject('Home Page/verify-succes-acount-login')
+)
+
+WebUI.comment('Login success verified')
+
+// ========================
+// SCREENSHOT
+// ========================
 WebUI.takeScreenshot()
 
+// ========================
+// CLOSE BROWSER
+// ========================
 WebUI.closeBrowser()
-

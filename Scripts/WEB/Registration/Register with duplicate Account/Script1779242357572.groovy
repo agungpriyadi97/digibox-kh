@@ -17,29 +17,69 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.URL)
+// ==========================
+// OPEN BROWSER
+// ==========================
+WebUI.openBrowser('')
 
+// setup window FIRST (biar tidak ganggu load state)
 CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
+WebUI.navigateToUrl(GlobalVariable.URL)
+
+// ==========================
+// VERIFY HOME PAGE
+// ==========================
 WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
+// ==========================
+// OPEN ACCOUNT MENU
+// ==========================
 WebUI.click(findTestObject('Registration/icon-acount'))
 
+// handle popup kalau muncul (safe call)
 CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
 
+// ==========================
+// GO TO REGISTER PAGE
+// ==========================
 WebUI.click(findTestObject('Registration/btn-create-new-account'))
 
+// ==========================
+// INPUT DATA
+// ==========================
 WebUI.setText(findTestObject('Registration/field-Email'), 'agungpriyadi@gmail.com')
-
 WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
-
 WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
 
+// ==========================
+// SUBMIT REGISTER
+// ==========================
 WebUI.click(findTestObject('Registration/btn-sign-up'))
 
-WebUI.verifyElementText(findTestObject('Registration/verify-duplicate-account'), 'Duplicated-unknown-error.')
+// stabilizer ringan (cukup untuk CI kamu yang sebelumnya sukses)
+WebUI.delay(2)
 
+// ==========================
+// VERIFY DUPLICATE ERROR
+// ==========================
+boolean isDuplicateShown = WebUI.verifyTextPresent(
+    'Duplicated-unknown-error.',
+    false,
+    FailureHandling.OPTIONAL
+)
+
+if (!isDuplicateShown) {
+    WebUI.takeScreenshot()
+    WebUI.verifyFail("Duplicate account message NOT shown")
+}
+
+// ==========================
+// EVIDENCE
+// ==========================
 WebUI.takeScreenshot()
 
+// ==========================
+// CLOSE
+// ==========================
 WebUI.closeBrowser()
-

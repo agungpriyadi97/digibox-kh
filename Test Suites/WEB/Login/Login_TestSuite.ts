@@ -12,30 +12,30 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>15c68ceb-6f19-4bf8-b573-52ec78cdd7f2</testSuiteGuid>
    <testCaseLink>
-      <guid>2df6c52c-bc39-419e-99c0-1e4a7ea5dc99</guid>
+      <guid>af574c91-a7f0-4e8c-8623-6ee8651c6870</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Login/Login with data Invalid Account</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d8f5103d-daaa-4194-9327-591dceee7f48</guid>
+      <guid>a1b2e631-52b0-441a-b2a4-3c51ed131c8b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Login/Login with data Invalid Password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ada2ff65-a823-4a94-9f31-5b5061d303de</guid>
+      <guid>4c41a2c0-d5bf-494c-be8e-224883064f32</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Login/Login with data valid</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>686da361-bd97-4504-a2d2-7c72d4e911b4</guid>
+      <guid>6d16bb9d-1377-4504-b0ef-67933526906c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Login/Login with Empty Field Validation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

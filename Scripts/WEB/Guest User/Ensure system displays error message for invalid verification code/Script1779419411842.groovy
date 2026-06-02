@@ -17,33 +17,121 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.URL)
+// ========================
+// OPEN BROWSER
+// ========================
+WebUI.openBrowser('')
+
+WebUI.setViewPortSize(1920, 1080)
+
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.waitForPageLoad(30)
 
-WebUI.click(findTestObject('Checkout/Track Order/track your order'))
+// ========================
+// VERIFY HOMEPAGE
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Home Page/header_digibox'),
+	30
+)
 
-WebUI.setText(findTestObject('Guest User/Track Your Order/txtField_Email'), 'agung.priyadi@gtech.digital')
+// ========================
+// OPEN TRACK ORDER
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Checkout/Track Order/track your order'),
+	30
+)
 
-WebUI.setText(findTestObject('Guest User/Track Your Order/txtField_Verification Code'), '')
+WebUI.enhancedClick(
+	findTestObject('Checkout/Track Order/track your order')
+)
 
-WebUI.click(findTestObject('Guest User/Track Your Order/btn_Send'))
+WebUI.waitForPageLoad(30)
 
-WebUI.verifyTextPresent('The verification code has been sent, please check in the mailbox.', false)
+// ========================
+// INPUT EMAIL
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Guest User/Track Your Order/txtField_Email'),
+	30
+)
 
-WebUI.setText(findTestObject('Guest User/Track Your Order/txtField_Verification Code'), '999999')
+WebUI.setText(
+	findTestObject('Guest User/Track Your Order/txtField_Email'),
+	'agung.priyadi@gtech.digital'
+)
 
-WebUI.waitForElementPresent(findTestObject('Guest User/Track Your Order/btn_Continue'), 10)
+// ========================
+// SEND OTP
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Guest User/Track Your Order/btn_Send'),
+	30
+)
 
-// Leave verification code empty
-// Verify Continue button disabled
-WebUI.click(findTestObject('Guest User/Track Your Order/btn_Continue'))
+WebUI.enhancedClick(
+	findTestObject('Guest User/Track Your Order/btn_Send')
+)
 
-WebUI.verifyTextPresent('Verification code error.', false)
+// Tunggu notifikasi sukses
+WebUI.delay(3)
 
+WebUI.verifyTextPresent(
+	'The verification code has been sent, please check in the mailbox.',
+	false
+)
+
+// ========================
+// INPUT INVALID CODE
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Guest User/Track Your Order/txtField_Verification Code'),
+	30
+)
+
+WebUI.clearText(
+	findTestObject('Guest User/Track Your Order/txtField_Verification Code')
+)
+
+WebUI.setText(
+	findTestObject('Guest User/Track Your Order/txtField_Verification Code'),
+	'999999'
+)
+
+// ========================
+// CLICK CONTINUE
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Guest User/Track Your Order/btn_Continue'),
+	30
+)
+
+WebUI.enhancedClick(
+	findTestObject('Guest User/Track Your Order/btn_Continue')
+)
+
+// Tunggu validasi error muncul
+WebUI.delay(3)
+
+// ========================
+// VERIFY ERROR MESSAGE
+// ========================
+WebUI.verifyTextPresent(
+	'Verification code error.',
+	false
+)
+
+// ========================
+// SCREENSHOT
+// ========================
 WebUI.takeScreenshot()
 
+// ========================
+// CLOSE BROWSER
+// ========================
 WebUI.closeBrowser()
 

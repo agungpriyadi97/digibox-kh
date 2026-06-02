@@ -17,19 +17,94 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.URL)
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import internal.GlobalVariable
+import org.openqa.selenium.Keys
 
-WebUI.click(findTestObject('Home Page/Search/icon-search'))
+// ========================
+// OPEN BROWSER
+// ========================
+WebUI.openBrowser('')
 
-WebUI.click(findTestObject('Home Page/Search/field-search'))
+WebUI.setViewPortSize(1920, 1080)
 
-WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord('IPHONE 11 PRO 128 GB DEEP PURPLE', Keys.ENTER))
+WebUI.enableSmartWait()
 
-WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-11-pro'))
+WebUI.navigateToUrl(GlobalVariable.URL)
 
+CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
+
+WebUI.waitForPageLoad(30)
+
+// ========================
+// VERIFY HOMEPAGE
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Home Page/header_digibox'),
+	30
+)
+
+WebUI.verifyElementVisible(
+	findTestObject('Home Page/header_digibox')
+)
+
+// ========================
+// OPEN SEARCH
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Home Page/Search/icon-search'),
+	30
+)
+
+WebUI.enhancedClick(
+	findTestObject('Home Page/Search/icon-search')
+)
+
+// ========================
+// INPUT KEYWORD
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Home Page/Search/field-search'),
+	30
+)
+
+WebUI.setText(
+	findTestObject('Home Page/Search/field-search'),
+	'IPHONE 11 PRO 128 GB DEEP PURPLE'
+)
+
+WebUI.sendKeys(
+	findTestObject('Home Page/Search/field-search'),
+	Keys.chord(Keys.ENTER)
+)
+
+// ========================
+// WAIT SEARCH RESULT
+// ========================
+WebUI.waitForPageLoad(30)
+
+WebUI.delay(3)
+
+// ========================
+// VERIFY PRODUCT FOUND
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Home Page/Search/verify-product-iphone-11-pro'),
+	30
+)
+
+WebUI.verifyElementVisible(
+	findTestObject('Home Page/Search/verify-product-iphone-11-pro')
+)
+
+// ========================
+// SCREENSHOT
+// ========================
 WebUI.takeScreenshot()
 
+// ========================
+// CLOSE BROWSER
+// ========================
 WebUI.closeBrowser()
-

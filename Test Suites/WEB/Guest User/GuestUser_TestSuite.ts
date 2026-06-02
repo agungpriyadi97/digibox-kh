@@ -12,31 +12,31 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>a55045a6-8bfe-435d-82aa-29cad8b1f2df</testSuiteGuid>
    <testCaseLink>
-      <guid>946a9313-5ed1-44b7-ae84-3eceb05670a8</guid>
+      <guid>78a3ddf7-61f9-4200-9aca-82e61cb4e56c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>996a8831-8fd9-4eca-aa9f-0f1e96fc5ddb</guid>
+      <guid>d71f7c7c-5bd9-4411-9efa-5732c6b38f15</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bcf3db33-c92d-42eb-8165-da09833c9f5f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1a41c46e-0943-48e0-9996-2726e11ac632</guid>
+      <guid>bb1f5827-e4de-4a3b-9914-1aa3d599f434</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b3fccdb8-b7b7-43f5-af12-909c0d3cceb9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

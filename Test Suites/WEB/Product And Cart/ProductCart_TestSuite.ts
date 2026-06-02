@@ -12,7 +12,7 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>7079f393-f780-4874-b041-cd7ec2c895dc</testSuiteGuid>
    <testCaseLink>
-      <guid>2178bd67-18c8-426e-ab3f-94f616719fe0</guid>
+      <guid>3c634ccc-aa7c-4ceb-b3ad-cd36cc5575b9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Product and Cart/Ensure user can add - update - remove product to shopping cart</testCaseId>

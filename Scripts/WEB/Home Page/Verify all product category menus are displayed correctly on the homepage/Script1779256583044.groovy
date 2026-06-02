@@ -18,195 +18,158 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
-// ==========================
-// FUNCTION CLICK READY
-// ==========================
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+import internal.GlobalVariable
+
+// ==========================================
+// HELPER CLICK
+// ==========================================
 def clickWhenReady(String objectPath) {
 
 	TestObject obj = findTestObject(objectPath)
 
-	WebUI.waitForElementVisible(obj, 15)
+	WebUI.waitForElementPresent(obj, 20)
+
+	WebUI.waitForElementVisible(obj, 20)
 
 	WebUI.scrollToElement(obj, 5)
 
-	WebUI.waitForElementClickable(obj, 10)
+	WebUI.waitForElementClickable(obj, 20)
 
 	try {
+		WebUI.enhancedClick(obj)
+	}
+	catch (Exception e) {
 
-		WebUI.click(obj)
-
-	} catch (Exception e) {
-
-		println("Normal click gagal, pakai JS Click")
+		println("Enhanced Click gagal -> JS Click")
 
 		WebUI.executeJavaScript(
-				"arguments[0].click();",
-				Arrays.asList(
-						WebUiCommonHelper.findWebElement(obj, 10)
-						)
-				)
+			'arguments[0].click();',
+			Arrays.asList(
+				WebUiCommonHelper.findWebElement(obj, 20)
+			)
+		)
 	}
 
 	WebUI.delay(1)
 
-	WebUI.waitForPageLoad(10)
+	try {
+		WebUI.waitForPageLoad(10)
+	}
+	catch (Exception ignored) {
+		println("Page load timeout - lanjut")
+	}
 }
 
-
-// ==========================
+// ==========================================
 // START TEST
-// ==========================
-
+// ==========================================
 WebUI.openBrowser('')
 
-// PENTING untuk headless chrome
 WebUI.setViewPortSize(1920, 1080)
 
 WebUI.enableSmartWait()
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
+CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
-// ==========================
+WebUI.waitForPageLoad(30)
+
+// ==========================================
 // VERIFY HOMEPAGE
-// ==========================
-
+// ==========================================
 WebUI.waitForElementVisible(
-		findTestObject('Home Page/header_digibox'),
-		15
-		)
+	findTestObject('Home Page/header_digibox'),
+	30
+)
 
 WebUI.verifyElementVisible(
-		findTestObject('Home Page/header_digibox')
-		)
+	findTestObject('Home Page/header_digibox')
+)
 
-
-// ==========================
+// ==========================================
 // MENU IPHONE
-// ==========================
-
+// ==========================================
 clickWhenReady('Home Page/Page Iphone/menu-iphone')
-
 clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max')
-
 clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max')
-
 clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 13 Pro')
-
 clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 13')
-
 clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 13 mini')
-
 clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 12')
-
 clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 11')
 
-
-// ==========================
+// ==========================================
 // MENU IPAD
-// ==========================
-
+// ==========================================
 clickWhenReady('Home Page/Page Ipad/menu-ipad')
-
 clickWhenReady('Home Page/Page Ipad/sub-menu-iPad pro')
-
 clickWhenReady('Home Page/Page Ipad/sub-menu-iPad Air')
-
 clickWhenReady('Home Page/Page Ipad/sub-menu-iPad Mini')
-
 clickWhenReady('Home Page/Page Ipad/sub-menu-iPad (Gen 10th)')
-
 clickWhenReady('Home Page/Page Ipad/sub-menu-iPad')
 
-
-// ==========================
+// ==========================================
 // MENU APPLE WATCH
-// ==========================
-
+// ==========================================
 clickWhenReady('Home Page/Page Apple Watch/menu-Apple Watch')
-
 clickWhenReady('Home Page/Page Apple Watch/sub-menu-Apple Watch 7')
-
 clickWhenReady('Home Page/Page Apple Watch/sub-menu-Apple Watch 6')
-
 clickWhenReady('Home Page/Page Apple Watch/sub-menu-Apple Watch 3')
-
 clickWhenReady('Home Page/Page Apple Watch/sub-menu-Apple Watch SE')
-
 clickWhenReady('Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra')
 
-
-// ==========================
+// ==========================================
 // MENU MAC
-// ==========================
-
+// ==========================================
 clickWhenReady('Home Page/Page Mac/menu-Mac')
-
 clickWhenReady('Home Page/Page Mac/sub-menu-MacBook Pro')
-
 clickWhenReady('Home Page/Page Mac/sub-menu-MacBook Air')
 
-
-// ==========================
+// ==========================================
 // MENU AIRPODS
-// ==========================
-
+// ==========================================
 clickWhenReady('Home Page/Page Airpods/menu-AirPods')
-
 clickWhenReady('Home Page/Page Airpods/sub-menu-AirPods Max')
-
 clickWhenReady('Home Page/Page Airpods/sub-menu-AirPods Pro')
-
 clickWhenReady('Home Page/Page Airpods/sub-menu-AirPods 3rd Generation')
-
 clickWhenReady('Home Page/Page Airpods/sub-menu-AirPods 2nd Generation')
 
-
-// ==========================
+// ==========================================
 // MENU ACCESSORIES
-// ==========================
-
+// ==========================================
 clickWhenReady('Home Page/Page Accessoris/menu-accessoris')
-
 clickWhenReady('Home Page/Page Accessoris/sub-menu-Aksesoris iPhone')
-
 clickWhenReady('Home Page/Page Accessoris/sub-menu-Aksesoris iPad')
-
 clickWhenReady('Home Page/Page Accessoris/sub-menu-MacBook Accessories')
-
 clickWhenReady('Home Page/Page Accessoris/sub-menu-Watch accessories')
 
-
-// ==========================
+// ==========================================
 // MENU PROMOTION
-// ==========================
-
+// ==========================================
 clickWhenReady('Home Page/Page Promotion/menu-Promotion')
-
 clickWhenReady('Home Page/Page Promotion/sub-menu-Digimania August 2022')
-
 clickWhenReady('Home Page/Page Promotion/sub-menu-Flash Sale')
 
-
-// ==========================
+// ==========================================
 // MENU ENTERPRISE
-// ==========================
-
+// ==========================================
 clickWhenReady(
-		'Home Page/Page Enterprice and Education/menu-Enterprise and Education'
-		)
+	'Home Page/Page Enterprice and Education/menu-Enterprise and Education'
+)
 
-
-// ==========================
+// ==========================================
 // SCREENSHOT
-// ==========================
-
+// ==========================================
 WebUI.takeScreenshot()
 
-
-// ==========================
+// ==========================================
 // CLOSE BROWSER
-// ==========================
-
+// ==========================================
 WebUI.closeBrowser()

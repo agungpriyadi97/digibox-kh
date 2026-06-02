@@ -17,29 +17,71 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.URL)
+// ==========================
+// OPEN BROWSER
+// ==========================
+WebUI.openBrowser('')
 
+// setup window (WAJIB setelah open browser)
 CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
+WebUI.navigateToUrl(GlobalVariable.URL)
+
+// ==========================
+// VERIFY HOME PAGE
+// ==========================
 WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
+// ==========================
+// OPEN ACCOUNT MENU
+// ==========================
 WebUI.click(findTestObject('Registration/icon-acount'))
 
+// handle popup jika muncul (safe, tidak ganggu flow)
 CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
 
+// ==========================
+// GO TO REGISTER PAGE
+// ==========================
+WebUI.waitForElementClickable(findTestObject('Registration/btn-create-new-account'), 10)
 WebUI.click(findTestObject('Registration/btn-create-new-account'))
 
+// ==========================
+// INPUT DATA
+// ==========================
 WebUI.setText(findTestObject('Registration/field-Email'), 'agung.priyadi@gtech.digital')
-
 WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
-
 WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
 
+// ==========================
+// SUBMIT REGISTER
+// ==========================
+WebUI.waitForElementClickable(findTestObject('Registration/btn-sign-up'), 10)
 WebUI.click(findTestObject('Registration/btn-sign-up'))
 
-WebUI.verifyElementText(findTestObject('Registration/verify-duplicate-email'), 'The mobile or email already exist.')
+// stabilizer ringan (CI-friendly)
+WebUI.delay(2)
 
+// ==========================
+// VERIFY DUPLICATE EMAIL ERROR
+// ==========================
+boolean isDuplicateEmailShown = WebUI.verifyTextPresent(
+    'The mobile or email already exist.',
+    false,
+    FailureHandling.OPTIONAL
+)
+
+if (!isDuplicateEmailShown) {
+    WebUI.takeScreenshot()
+    WebUI.verifyFail("Duplicate email message NOT shown")
+}
+
+// ==========================
+// EVIDENCE
+// ==========================
 WebUI.takeScreenshot()
 
+// ==========================
+// CLOSE BROWSER
+// ==========================
 WebUI.closeBrowser()
-

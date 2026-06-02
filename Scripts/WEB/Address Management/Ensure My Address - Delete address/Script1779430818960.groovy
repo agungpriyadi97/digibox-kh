@@ -1,66 +1,165 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-// Open browser
-WebUI.openBrowser(GlobalVariable.URL)
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+import internal.GlobalVariable
+
+// ========================
+// OPEN BROWSER
+// ========================
+WebUI.openBrowser('')
+
+WebUI.setViewPortSize(1920, 1080)
+
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
-// Verify homepage
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.waitForPageLoad(30)
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+// ========================
+// VERIFY HOMEPAGE
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Home Page/header_digibox'),
+	30
+)
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+// ========================
+// LOGIN
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Registration/icon-acount'),
+	30
+)
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+WebUI.enhancedClick(
+	findTestObject('Registration/icon-acount')
+)
 
-WebUI.click(findTestObject('Login/btn-sign in'))
+WebUI.waitForElementVisible(
+	findTestObject('Registration/field-account'),
+	30
+)
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.setText(
+	findTestObject('Registration/field-account'),
+	'agungpriyadi'
+)
 
-WebUI.click(findTestObject('Address Management/Shipping Address/btn_My Address'))
+WebUI.setText(
+	findTestObject('Registration/field-Password'),
+	'Laskar123456'
+)
 
-WebUI.click(findTestObject('Address Management/Shipping Address/btn_Delete'))
+WebUI.waitForElementClickable(
+	findTestObject('Login/btn-sign in'),
+	30
+)
 
-TestObject btnOK = new TestObject()
+WebUI.enhancedClick(
+	findTestObject('Login/btn-sign in')
+)
 
-btnOK.addProperty('xpath', ConditionType.EQUALS, '//div[contains(@class,\'el-message-box\')]//span[normalize-space()=\'OK\']')
+WebUI.waitForPageLoad(30)
 
-WebUI.waitForElementVisible(btnOK, 10)
+// ========================
+// OPEN MY ADDRESS
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Registration/icon-acount'),
+	30
+)
 
-def okElement = WebUI.findWebElement(btnOK, 10)
+WebUI.enhancedClick(
+	findTestObject('Registration/icon-acount')
+)
 
-WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(okElement))
+WebUI.waitForElementClickable(
+	findTestObject('Address Management/Shipping Address/btn_My Address'),
+	30
+)
 
-// refresh supaya UI update
-WebUI.refresh()
+WebUI.enhancedClick(
+	findTestObject('Address Management/Shipping Address/btn_My Address')
+)
+
+WebUI.waitForPageLoad(30)
+
+// ========================
+// DELETE ADDRESS
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Address Management/Shipping Address/btn_Delete'),
+	30
+)
+
+WebUI.scrollToElement(
+	findTestObject('Address Management/Shipping Address/btn_Delete'),
+	5
+)
+
+WebUI.enhancedClick(
+	findTestObject('Address Management/Shipping Address/btn_Delete')
+)
+
+// ========================
+// POPUP CONFIRMATION OK
+// ========================
+TestObject btnOK = new TestObject('btnOK')
+
+btnOK.addProperty(
+	'xpath',
+	ConditionType.EQUALS,
+	"//div[contains(@class,'el-message-box')]//span[normalize-space()='OK']"
+)
+
+WebUI.waitForElementVisible(btnOK, 30)
+
+WebUI.waitForElementClickable(btnOK, 30)
+
+WebUI.enhancedClick(btnOK)
 
 WebUI.waitForPageLoad(10)
 
-// verify email deleted tidak ada lagi
-TestObject deletedEmail = new TestObject()
+// ========================
+// REFRESH PAGE
+// ========================
+WebUI.refresh()
 
-deletedEmail.addProperty('xpath', ConditionType.EQUALS, '//*[contains(text(),\'agung.priyadi@gtech.digital\')]')
+WebUI.waitForPageLoad(30)
 
+// ========================
+// VERIFY DATA DELETED
+// ========================
+TestObject deletedEmail = new TestObject('deletedEmail')
+
+deletedEmail.addProperty(
+	'xpath',
+	ConditionType.EQUALS,
+	"//*[contains(text(),'agung.priyadi@gtech.digital')]"
+)
+
+// Screenshot evidence
 WebUI.takeScreenshot()
 
-WebUI.closeBrowser()
+boolean isEmailStillExist = WebUI.verifyElementPresent(
+	deletedEmail,
+	5,
+	com.kms.katalon.core.model.FailureHandling.OPTIONAL
+)
 
+if (isEmailStillExist) {
+	WebUI.comment('FAILED - Email masih ditemukan setelah delete')
+	WebUI.takeScreenshot()
+	assert false : 'Email masih tampil setelah delete address'
+} else {
+	WebUI.comment('PASSED - Address berhasil dihapus')
+}
+
+// ========================
+// CLOSE BROWSER
+// ========================
+WebUI.closeBrowser()

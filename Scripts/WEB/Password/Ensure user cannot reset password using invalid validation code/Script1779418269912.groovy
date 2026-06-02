@@ -23,86 +23,100 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 // ==========================
 WebUI.openBrowser('')
 
+// optional helper (kalau stabilisasi window kamu penting)
 CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
-
-// stabil untuk headless & non-headless
-//if (DriverFactory.getExecutedBrowser().getName().contains('HEADLESS')) {
-//    WebUI.setViewPortSize(1920, 1080)
-//} else {
-//    WebUI.maximizeWindow()
-//}
 
 WebUI.enableSmartWait()
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.waitForPageLoad(10)
+WebUI.waitForPageLoad(20)
 
 // ==========================
-// VERIFY HOME
+// VERIFY HOME PAGE
 // ==========================
 WebUI.waitForElementVisible(findTestObject('Home Page/header_digibox'), 15)
 
 WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
 // ==========================
-// FORGOT PASSWORD
+// NAVIGATE TO FORGOT PASSWORD
 // ==========================
+WebUI.waitForElementClickable(findTestObject('Registration/icon-acount'), 10)
+
 WebUI.click(findTestObject('Registration/icon-acount'))
+
+WebUI.waitForElementClickable(findTestObject('Password/Page_Forgot Password/btn_Forgot passwords'), 10)
 
 WebUI.click(findTestObject('Password/Page_Forgot Password/btn_Forgot passwords'))
 
 // ==========================
-// INPUT EMAIL
+// INPUT EMAIL (CI SAFE)
 // ==========================
 WebUI.waitForElementVisible(findTestObject('Password/Page_Forgot Password/txtField_Email'), 10)
 
-WebUI.setText(findTestObject('Password/Page_Forgot Password/txtField_Email'), 'agungpriyadi')
+// dibuat valid biar CI konsisten
+def email = 'agung.priyadi@gtech.digital'
 
-WebUI.click(findTestObject('Password/Page_Forgot Password/btn_Send validation code to email'), FailureHandling.STOP_ON_FAILURE)
-
-// ==========================
-// VERIFY SUCCESS SEND CODE
-// ==========================
-WebUI.waitForElementVisible(findTestObject('Password/Page_Forgot Password/msg_ValidationCodeSuccess'), 10)
-
-WebUI.verifyElementText(findTestObject('Password/Page_Forgot Password/msg_ValidationCodeSuccess'), 'Validation code sent successfully!')
+WebUI.setText(findTestObject('Password/Page_Forgot Password/txtField_Email'), email)
 
 // ==========================
-// INPUT INVALID CODE
+// SEND VALIDATION CODE
+// ==========================
+WebUI.waitForElementClickable(findTestObject('Password/Page_Forgot Password/btn_Send validation code to email'), 10)
+
+WebUI.click(findTestObject('Password/Page_Forgot Password/btn_Send validation code to email'))
+
+// ==========================
+// VERIFY SUCCESS MESSAGE (ROBUST)
+// ==========================
+WebUI.delay(2)
+
+boolean successMsg = WebUI.verifyTextPresent('Validation code sent successfully!', false, FailureHandling.OPTIONAL)
+
+if (!(successMsg)) {
+    WebUI.takeScreenshot()
+
+    WebUI.comment('FAILED: Validation success message not found')
+
+    WebUI.verifyFail('Send validation code failed')
+}
+
+// ==========================
+// INPUT VALIDATION CODE
 // ==========================
 WebUI.waitForElementVisible(findTestObject('Password/Page_Forgot Password/txtField_Validation Code'), 10)
 
 WebUI.setText(findTestObject('Password/Page_Forgot Password/txtField_Validation Code'), '123456')
 
+// ==========================
+// INPUT PASSWORD
+// ==========================
+WebUI.waitForElementVisible(findTestObject('Password/Page_Forgot Password/txtField_New Password'), 10)
+
 WebUI.setText(findTestObject('Password/Page_Forgot Password/txtField_New Password'), 'Laskar123456')
+
+// ==========================
+// CLICK RESET PASSWORD
+// ==========================
+WebUI.waitForElementClickable(findTestObject('Password/Page_Forgot Password/btn_Reset Password'), 10)
 
 WebUI.click(findTestObject('Password/Page_Forgot Password/btn_Reset Password'))
 
 // ==========================
-// VERIFY INVALID CODE
+// VERIFY INVALID CODE (CI SAFE)
 // ==========================
-// kasih delay kecil supaya toast / error muncul
 WebUI.delay(3)
 
-// verify text dengan optional biar bisa debug
-boolean invalidCode = WebUI.verifyTextPresent('Invalid code', false, FailureHandling.OPTIONAL)
+boolean invalidCodeMsg = WebUI.verifyTextPresent('Invalid code', false, FailureHandling.OPTIONAL)
 
-if (invalidCode) {
-    println('SUCCESS - Invalid code message muncul')
-} else {
-    println('FAILED - Invalid code message tidak muncul')
-
-    WebUI.takeScreenshot()
-}
-
-// ==========================
-// SCREENSHOT
-// ==========================
 WebUI.takeScreenshot()
 
+// assertion yang benar untuk CI
+WebUI.verifyEqual(invalidCodeMsg, true)
+
 // ==========================
-// CLOSE
+// CLEANUP
 // ==========================
 WebUI.closeBrowser()
 

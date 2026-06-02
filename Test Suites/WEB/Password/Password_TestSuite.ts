@@ -12,28 +12,28 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>cc2401e5-ca93-47d3-aa6f-df15647cc221</testSuiteGuid>
    <testCaseLink>
-      <guid>7a0ab323-0d0f-4159-a2dd-4f79dacff8a0</guid>
+      <guid>4febb5d4-789c-4539-89c5-fb87ed77cd10</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Password/Ensure user cannot input invalid password length</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b2cadb06-934a-47c8-8cbe-d0e2f0c52b71</guid>
+      <guid>821a36df-377c-4723-8783-bc9eb9668ad1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Password/Ensure user cannot reset password using invalid validation code</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>fe8115af-0ef9-452f-a1db-cc9e2b479769</guid>
+      <guid>aff3372d-f29b-4774-abda-a2d1c84b4684</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Password/Ensure user Empty Email Field on Forgot Password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f16f6a91-424b-454e-93ae-de67fd1dc36c</guid>
+      <guid>4dbb0efe-23b0-40c6-be95-5fe559271cc4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Password/Ensure user Empty Validation Code</testCaseId>
