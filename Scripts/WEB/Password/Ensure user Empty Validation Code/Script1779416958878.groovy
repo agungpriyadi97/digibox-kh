@@ -17,27 +17,95 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.URL)
+// ==========================
+// OPEN BROWSER
+// ==========================
+WebUI.openBrowser('')
+
+WebUI.maximizeWindow()
+
+WebUI.navigateToUrl(GlobalVariable.URL)
+
+WebUI.waitForPageLoad(20)
+
+// ==========================
+// VERIFY HOME PAGE
+// ==========================
+WebUI.waitForElementVisible(findTestObject('Home Page/header_digibox'), 15)
 
 WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 
+// ==========================
+// NAVIGATE TO FORGOT PASSWORD
+// ==========================
+WebUI.waitForElementClickable(findTestObject('Registration/icon-acount'), 10)
+
 WebUI.click(findTestObject('Registration/icon-acount'))
+
+WebUI.waitForElementClickable(findTestObject('Password/Page_Forgot Password/btn_Forgot passwords'), 10)
 
 WebUI.click(findTestObject('Password/Page_Forgot Password/btn_Forgot passwords'))
 
-WebUI.setText(findTestObject('Password/Page_Forgot Password/txtField_Email'), 'agungpriyadi')
+// ==========================
+// INPUT EMAIL (CI SAFE)
+// ==========================
+WebUI.waitForElementVisible(findTestObject('Password/Page_Forgot Password/txtField_Email'), 10)
 
-WebUI.click(findTestObject('Password/Page_Forgot Password/btn_Send validation code to email'), FailureHandling.STOP_ON_FAILURE)
+// FIX: email harus valid supaya backend tidak drop request di CI
+WebUI.setText(findTestObject('Password/Page_Forgot Password/txtField_Email'), 'agung.priyadi@gtech.digital')
 
-WebUI.waitForElementVisible(findTestObject('Password/Page_Forgot Password/msg_ValidationCodeSuccess'), 10)
+// ==========================
+// SEND VALIDATION CODE
+// ==========================
+WebUI.waitForElementClickable(findTestObject('Password/Page_Forgot Password/btn_Send validation code to email'), 10)
 
-WebUI.verifyElementText(findTestObject('Password/Page_Forgot Password/msg_ValidationCodeSuccess'), 'Validation code sent successfully!')
+WebUI.click(findTestObject('Password/Page_Forgot Password/btn_Send validation code to email'))
+
+// ==========================
+// VERIFY SUCCESS MESSAGE (ROBUST)
+// ==========================
+WebUI.delay(2)
+
+boolean successMsg = WebUI.verifyTextPresent('Validation code sent successfully!', false, FailureHandling.OPTIONAL)
+
+if (!(successMsg)) {
+    WebUI.takeScreenshot()
+
+    WebUI.verifyFail('Validation code success message NOT found')
+}
+
+// ==========================
+// EMPTY VALIDATION CODE CASE
+// ==========================
+WebUI.waitForElementVisible(findTestObject('Password/Page_Forgot Password/txtField_New Password'), 10)
 
 WebUI.setText(findTestObject('Password/Page_Forgot Password/txtField_New Password'), 'Laskar123456')
 
+// jangan isi validation code (biarkan empty)
+WebUI.waitForElementVisible(findTestObject('Password/Page_Forgot Password/txtField_Validation Code'), 10)
+
+WebUI.setText(findTestObject('Password/Page_Forgot Password/txtField_Validation Code'), '')
+
+// ==========================
+// SUBMIT RESET PASSWORD
+// ==========================
+WebUI.waitForElementClickable(findTestObject('Password/Page_Forgot Password/btn_Reset Password'), 10)
+
 WebUI.click(findTestObject('Password/Page_Forgot Password/btn_Reset Password'))
 
-WebUI.verifyTextPresent('Required', false)
+// ==========================
+// VALIDATION CHECK
+// ==========================
+WebUI.delay(2)
+
+boolean requiredMsg = WebUI.verifyTextPresent('Required', false, FailureHandling.OPTIONAL)
 
 WebUI.takeScreenshot()
+
+WebUI.verifyEqual(requiredMsg, true)
+
+// ==========================
+// CLOSE
+// ==========================
+WebUI.closeBrowser()
 

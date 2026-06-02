@@ -16,20 +16,83 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.model.FailureHandling
 
-WebUI.openBrowser(GlobalVariable.URL)
+// ====================================
+// OPEN BROWSER
+// ====================================
+WebUI.openBrowser('')
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.setViewPortSize(1920, 1080)
 
-WebUI.setText(findTestObject('Registration/field-account'), '')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.setText(findTestObject('Registration/field-Password'), '')
+// ====================================
+// VERIFY HOMEPAGE
+// ====================================
+WebUI.waitForElementVisible(
+	findTestObject('Home Page/header_digibox'),
+	15
+)
 
-WebUI.click(findTestObject('Login/btn-sign in'))
+WebUI.verifyElementVisible(
+	findTestObject('Home Page/header_digibox')
+)
 
+// ====================================
+// OPEN LOGIN PAGE
+// ====================================
+WebUI.click(
+	findTestObject('Registration/icon-acount')
+)
+
+// ====================================
+// EMPTY USERNAME & PASSWORD
+// ====================================
+WebUI.setText(
+	findTestObject('Registration/field-account'),
+	''
+)
+
+WebUI.setText(
+	findTestObject('Registration/field-Password'),
+	''
+)
+
+// ====================================
+// CLICK SIGN IN
+// ====================================
+WebUI.click(
+	findTestObject('Login/btn-sign in')
+)
+
+// ====================================
+// WAIT RESPONSE
+// ====================================
+WebUI.delay(2)
+
+// ====================================
+// VERIFY STILL ON LOGIN PAGE
+// ====================================
+WebUI.verifyElementVisible(
+	findTestObject('Login/btn-sign in'),
+	FailureHandling.STOP_ON_FAILURE
+)
+
+// ====================================
+// SCREENSHOT
+// ====================================
 WebUI.takeScreenshot()
 
-WebUI.closeBrowser()
+// ====================================
+// LOG
+// ====================================
+WebUI.comment('Login validation with empty username and password executed')
 
+// ====================================
+// CLOSE BROWSER
+// ====================================
+WebUI.closeBrowser()

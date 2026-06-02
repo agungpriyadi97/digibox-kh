@@ -17,23 +17,118 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.URL)
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+import internal.GlobalVariable
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+// ========================
+// OPEN BROWSER
+// ========================
+WebUI.openBrowser('')
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+WebUI.setViewPortSize(1920, 1080)
 
-WebUI.click(findTestObject('Login/btn-sign in'))
+WebUI.enableSmartWait()
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.verifyElementVisible(findTestObject('Home Page/verify-succes-acount-login'))
+CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
+WebUI.waitForPageLoad(30)
+
+// ========================
+// VERIFY HOMEPAGE
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Home Page/header_digibox'),
+	30
+)
+
+WebUI.verifyElementVisible(
+	findTestObject('Home Page/header_digibox')
+)
+
+// ========================
+// OPEN LOGIN
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Registration/icon-acount'),
+	30
+)
+
+WebUI.enhancedClick(
+	findTestObject('Registration/icon-acount')
+)
+
+// ========================
+// INPUT VALID ACCOUNT
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Registration/field-account'),
+	30
+)
+
+WebUI.setText(
+	findTestObject('Registration/field-account'),
+	'agungpriyadi'
+)
+
+WebUI.setText(
+	findTestObject('Registration/field-Password'),
+	'Laskar123456'
+)
+
+// ========================
+// CLICK SIGN IN
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Login/btn-sign in'),
+	30
+)
+
+WebUI.enhancedClick(
+	findTestObject('Login/btn-sign in')
+)
+
+// ========================
+// WAIT LOGIN PROCESS
+// ========================
+WebUI.waitForPageLoad(30)
+
+WebUI.delay(5)
+
+// ========================
+// OPEN ACCOUNT MENU AGAIN
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Registration/icon-acount'),
+	30
+)
+
+WebUI.enhancedClick(
+	findTestObject('Registration/icon-acount')
+)
+
+// ========================
+// VERIFY LOGIN SUCCESS
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Home Page/verify-succes-acount-login'),
+	30
+)
+
+WebUI.verifyElementVisible(
+	findTestObject('Home Page/verify-succes-acount-login')
+)
+
+// ========================
+// SCREENSHOT
+// ========================
 WebUI.takeScreenshot()
 
+// ========================
+// CLOSE BROWSER
+// ========================
 WebUI.closeBrowser()
-

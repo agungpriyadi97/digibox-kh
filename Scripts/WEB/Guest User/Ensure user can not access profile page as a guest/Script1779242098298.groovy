@@ -17,15 +17,59 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.URL)
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import internal.GlobalVariable
+
+// ========================
+// OPEN BROWSER
+// ========================
+WebUI.openBrowser('')
+
+WebUI.setViewPortSize(1920, 1080)
+
+WebUI.enableSmartWait()
+
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.waitForPageLoad(30)
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+// ========================
+// VERIFY HOMEPAGE
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Home Page/header_digibox'),
+	30
+)
 
+WebUI.verifyElementVisible(
+	findTestObject('Home Page/header_digibox')
+)
+
+// ========================
+// OPEN ACCOUNT MENU
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Registration/icon-acount'),
+	30
+)
+
+WebUI.enhancedClick(
+	findTestObject('Registration/icon-acount')
+)
+
+WebUI.waitForPageLoad(10)
+
+WebUI.delay(2)
+
+// ========================
+// SCREENSHOT
+// ========================
 WebUI.takeScreenshot()
 
+// ========================
+// CLOSE BROWSER
+// ========================
 WebUI.closeBrowser()
-

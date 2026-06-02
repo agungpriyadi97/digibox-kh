@@ -17,23 +17,119 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.URL)
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+import internal.GlobalVariable
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi2')
+// ========================
+// OPEN BROWSER
+// ========================
+WebUI.openBrowser('')
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar1234560')
+WebUI.setViewPortSize(1920, 1080)
 
-WebUI.click(findTestObject('Login/btn-sign in'))
+WebUI.enableSmartWait()
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.verifyElementVisible(findTestObject('Home Page/verify-login-not-valid'))
+CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
+WebUI.waitForPageLoad(30)
+
+// ========================
+// VERIFY HOMEPAGE
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Home Page/header_digibox'),
+	30
+)
+
+WebUI.verifyElementVisible(
+	findTestObject('Home Page/header_digibox')
+)
+
+// ========================
+// OPEN LOGIN POPUP
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Registration/icon-acount'),
+	30
+)
+
+WebUI.enhancedClick(
+	findTestObject('Registration/icon-acount')
+)
+
+// ========================
+// INPUT INVALID ACCOUNT
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Registration/field-account'),
+	30
+)
+
+WebUI.setText(
+	findTestObject('Registration/field-account'),
+	'agungpriyadi2'
+)
+
+WebUI.setText(
+	findTestObject('Registration/field-Password'),
+	'Laskar1234560'
+)
+
+// ========================
+// CLICK SIGN IN
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Login/btn-sign in'),
+	30
+)
+
+WebUI.enhancedClick(
+	findTestObject('Login/btn-sign in')
+)
+
+// ========================
+// VERIFY LOGIN ERROR TOAST
+// ========================
+TestObject loginError = new TestObject()
+
+loginError.addProperty(
+	'xpath',
+	ConditionType.EQUALS,
+	"//div[@role='alert']//p[contains(text(),'Account or password is not correct')]"
+)
+
+boolean isVisible = WebUI.waitForElementVisible(
+	loginError,
+	10,
+	FailureHandling.OPTIONAL
+)
+
+WebUI.comment(
+	'Login Error Visible : ' + isVisible
+)
+
+// ========================
+// SCREENSHOT
+// ========================
 WebUI.takeScreenshot()
 
-WebUI.closeBrowser()
+// ========================
+// ASSERTION
+// ========================
+WebUI.verifyEqual(
+	isVisible,
+	true
+)
 
+// ========================
+// CLOSE BROWSER
+// ========================
+WebUI.closeBrowser()

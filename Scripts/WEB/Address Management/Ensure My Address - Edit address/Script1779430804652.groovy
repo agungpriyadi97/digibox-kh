@@ -1,118 +1,232 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+
+import internal.GlobalVariable
 
 String randomEmail = CustomKeywords.'custom.RandomData.generateRandomEmail'()
-
 String randomFirstName = CustomKeywords.'custom.RandomData.generateRandomFirstName'()
-
 String randomLastName = CustomKeywords.'custom.RandomData.generateRandomLastName'()
-
 String randomPhone = CustomKeywords.'custom.RandomData.generateRandomPhone'()
-
 String randomAddress = CustomKeywords.'custom.RandomData.generateRandomAddress'()
-
 String randomCode = CustomKeywords.'custom.RandomData.generateRandomCode'()
 
-// Open browser
-WebUI.openBrowser(GlobalVariable.URL)
+// ========================
+// OPEN BROWSER
+// ========================
+WebUI.openBrowser('')
+
+WebUI.setViewPortSize(1920, 1080)
+
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
-// Verify homepage
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.waitForPageLoad(30)
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+// ========================
+// VERIFY HOMEPAGE
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Home Page/header_digibox'),
+	30
+)
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+// ========================
+// LOGIN
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Registration/icon-acount'),
+	30
+)
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+WebUI.enhancedClick(
+	findTestObject('Registration/icon-acount')
+)
 
-WebUI.click(findTestObject('Login/btn-sign in'))
+WebUI.waitForElementVisible(
+	findTestObject('Registration/field-account'),
+	30
+)
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.setText(
+	findTestObject('Registration/field-account'),
+	'agungpriyadi'
+)
 
-WebUI.waitForElementVisible(findTestObject('Address Management/Shipping Address/btn_My Address'), 4)
+WebUI.setText(
+	findTestObject('Registration/field-Password'),
+	'Laskar123456'
+)
 
-WebUI.click(findTestObject('Address Management/Shipping Address/btn_My Address'))
+WebUI.waitForElementClickable(
+	findTestObject('Login/btn-sign in'),
+	30
+)
 
-// Click Edit first address
-TestObject editBtn = new TestObject()
+WebUI.enhancedClick(
+	findTestObject('Login/btn-sign in')
+)
 
-editBtn.addProperty('xpath', com.kms.katalon.core.testobject.ConditionType.EQUALS, '(//button[contains(.,\'Edit\')])[1]')
+WebUI.waitForPageLoad(30)
 
-WebUI.click(findTestObject('Address Management/Shipping Address/btn_Edit'))
+// ========================
+// OPEN MY ADDRESS
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Registration/icon-acount'),
+	30
+)
 
-WebUI.waitForElementVisible(findTestObject('Address Management/Edit Address/Field_First Name'), 10)
+WebUI.enhancedClick(
+	findTestObject('Registration/icon-acount')
+)
 
-WebUI.clearText(findTestObject('Address Management/Edit Address/Field_First Name'), FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementClickable(
+	findTestObject('Address Management/Shipping Address/btn_My Address'),
+	30
+)
 
-WebUI.setText(findTestObject('Address Management/Edit Address/Field_First Name'), randomFirstName)
+WebUI.enhancedClick(
+	findTestObject('Address Management/Shipping Address/btn_My Address')
+)
 
-WebUI.clearText(findTestObject('Address Management/Edit Address/Field_Last Name'), FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForPageLoad(30)
 
-WebUI.setText(findTestObject('Address Management/Edit Address/Field_Last Name'), randomLastName)
+// ========================
+// CLICK EDIT
+// ========================
+WebUI.waitForElementClickable(
+	findTestObject('Address Management/Shipping Address/btn_Edit'),
+	30
+)
 
-WebUI.clearText(findTestObject('Address Management/Edit Address/Field_Mobile Phone'), FailureHandling.STOP_ON_FAILURE)
+WebUI.scrollToElement(
+	findTestObject('Address Management/Shipping Address/btn_Edit'),
+	5
+)
 
-WebUI.setText(findTestObject('Address Management/Edit Address/Field_Mobile Phone'), randomPhone)
+WebUI.enhancedClick(
+	findTestObject('Address Management/Shipping Address/btn_Edit')
+)
 
-WebUI.clearText(findTestObject('Address Management/Edit Address/Field_E-mail'), FailureHandling.STOP_ON_FAILURE)
+// ========================
+// EDIT FORM
+// ========================
+WebUI.waitForElementVisible(
+	findTestObject('Address Management/Edit Address/Field_First Name'),
+	30
+)
 
-WebUI.setText(findTestObject('Address Management/Edit Address/Field_E-mail'), randomEmail)
+WebUI.clearText(
+	findTestObject('Address Management/Edit Address/Field_First Name')
+)
 
-WebUI.clearText(findTestObject('Address Management/Edit Address/Field_Address'), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(
+	findTestObject('Address Management/Edit Address/Field_First Name'),
+	randomFirstName
+)
 
-WebUI.setText(findTestObject('Address Management/Edit Address/Field_Address'), randomAddress)
+WebUI.clearText(
+	findTestObject('Address Management/Edit Address/Field_Last Name')
+)
 
-WebUI.clearText(findTestObject('Address Management/Edit Address/Field_ZipPostal Code'), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(
+	findTestObject('Address Management/Edit Address/Field_Last Name'),
+	randomLastName
+)
 
-WebUI.setText(findTestObject('Address Management/Edit Address/Field_ZipPostal Code'), randomCode)
+WebUI.clearText(
+	findTestObject('Address Management/Edit Address/Field_Mobile Phone')
+)
 
-WebUI.click(findTestObject('Address Management/Edit Address/button_Save'))
+WebUI.setText(
+	findTestObject('Address Management/Edit Address/Field_Mobile Phone'),
+	randomPhone
+)
 
-WebUI.scrollToElement(findTestObject('Address Management/Shipping Address/lbl_Shipping Address'), 10)
+WebUI.clearText(
+	findTestObject('Address Management/Edit Address/Field_E-mail')
+)
 
-// verify updated
-TestObject verifyName = new TestObject()
+WebUI.setText(
+	findTestObject('Address Management/Edit Address/Field_E-mail'),
+	randomEmail
+)
 
-verifyName.addProperty('xpath', com.kms.katalon.core.testobject.ConditionType.EQUALS, "//*[contains(text(),'$randomFirstName')]")
+WebUI.clearText(
+	findTestObject('Address Management/Edit Address/Field_Address')
+)
 
-WebUI.verifyElementPresent(verifyName, 10)
+WebUI.setText(
+	findTestObject('Address Management/Edit Address/Field_Address'),
+	randomAddress
+)
 
-// Screenshot
+WebUI.clearText(
+	findTestObject('Address Management/Edit Address/Field_ZipPostal Code')
+)
+
+WebUI.setText(
+	findTestObject('Address Management/Edit Address/Field_ZipPostal Code'),
+	randomCode
+)
+
+// ========================
+// SAVE
+// ========================
+WebUI.scrollToElement(
+	findTestObject('Address Management/Edit Address/button_Save'),
+	5
+)
+
+WebUI.waitForElementClickable(
+	findTestObject('Address Management/Edit Address/button_Save'),
+	30
+)
+
+WebUI.enhancedClick(
+	findTestObject('Address Management/Edit Address/button_Save')
+)
+
+WebUI.waitForPageLoad(30)
+
+// ========================
+// VERIFY UPDATED
+// ========================
+WebUI.scrollToElement(
+	findTestObject('Address Management/Shipping Address/lbl_Shipping Address'),
+	5
+)
+
+TestObject verifyName = new TestObject('verifyName')
+
+verifyName.addProperty(
+	'xpath',
+	ConditionType.EQUALS,
+	"//*[contains(text(),'${randomFirstName}')]"
+)
+
+WebUI.verifyElementPresent(
+	verifyName,
+	30
+)
+
+// ========================
+// SCREENSHOT
+// ========================
 WebUI.takeScreenshot()
 
 WebUI.comment('Email      : ' + randomEmail)
-
 WebUI.comment('First Name : ' + randomFirstName)
-
 WebUI.comment('Last Name  : ' + randomLastName)
-
 WebUI.comment('Phone      : ' + randomPhone)
-
 WebUI.comment('Address    : ' + randomAddress)
+WebUI.comment('Code       : ' + randomCode)
 
-WebUI.comment('Code    : ' + randomCode)
-
-// Close browser
+// ========================
+// CLOSE BROWSER
+// ========================
 WebUI.closeBrowser()
-
-// Close browser
-not_run: WebUI.closeBrowser()
-
