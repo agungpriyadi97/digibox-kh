@@ -1,0 +1,1336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ProductCart_TestSuite" time="293.644" tests="1" passed="1" failures="0" errors="0" incompleted="0" skipped="0">
+   <testsuite name="ProductCart_TestSuite" tests="1" passed="1" failures="0" errors="0" incompleted="0" skipped="0" time="293.644" timestamp="2026-06-02T10:51:33.432Z" hostname="AgungPriyadi - NB-GDA-55026" id="Test Suites/WEB/Product And Cart/ProductCart_TestSuite" status="PASSED">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260602_172824\\WEB\\Product And Cart\\ProductCart_TestSuite\\20260602_172829"/>
+         <property name="logFiles" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260602_172824\\WEB\\Product And Cart\\ProductCart_TestSuite\\20260602_172829\\console0.log, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260602_172824\\WEB\\Product And Cart\\ProductCart_TestSuite\\20260602_172829\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260602_172824\\WEB\\Product And Cart\\ProductCart_TestSuite\\20260602_172829\\1780397781557.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260602_172824\\WEB\\Product And Cart\\ProductCart_TestSuite\\20260602_172829\\1780397782878.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260602_172824\\WEB\\Product And Cart\\ProductCart_TestSuite\\20260602_172829\\1780397783643.png"/>
+         <property name="executionBindingVariables" value="[]"/>
+         <property name="hostName" value="AgungPriyadi - NB-GDA-55026"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="11.1.3.0"/>
+         <property name="browser" value="Chrome 148.0.7778.179"/>
+         <property name="userFullName" value="Agung Priyadi"/>
+         <property name="hostAddress" value="192.168.110.43"/>
+         <property name="sessionId" value="89dd1bb6a129c628d74edbc76c7aae1f"/>
+         <property name="projectName" value="digibox-kh"/>
+         <property name="seleniumVersion" value="4.39.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/WEB/Product and Cart/Ensure user can add - update - remove product to shopping cart" time="293.486" classname="Test Cases/WEB/Product and Cart/Ensure user can add - update - remove product to shopping cart" status="PASSED">
+         <system-out><![CDATA[02-06-2026T17:51:33 - [TEST_CASE][PASSED] - Test Cases/WEB/Product and Cart/Ensure user can add - update - remove product to shopping cart: Test Cases/WEB/Product and Cart/Ensure user can add - update - remove product to shopping cart
+
+02-06-2026T17:51:33 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+02-06-2026T17:51:34 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+02-06-2026T17:51:34 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+
+02-06-2026T17:51:34 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+02-06-2026T17:51:39 - [MESSAGE][PASSED] - Browser is opened with url: 'https://d-digibox-kh.blubox.id/'
+
+02-06-2026T17:51:39 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/header_digibox")): Object 'Object Repository/Home Page/header_digibox' is visible
+
+02-06-2026T17:51:39 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/header_digibox' is visible
+
+02-06-2026T17:51:39 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+02-06-2026T17:51:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+02-06-2026T17:51:40 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+02-06-2026T17:51:41 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/Registration/field-account'
+
+02-06-2026T17:51:41 - [TEST_STEP][PASSED] - setText(findTestObject("Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+02-06-2026T17:51:41 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/Registration/field-Password'
+
+02-06-2026T17:51:41 - [TEST_STEP][PASSED] - click(findTestObject("Login/btn-sign in")): Object: 'Object Repository/Login/btn-sign in' is clicked on
+
+02-06-2026T17:51:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/btn-sign in' is clicked on
+
+02-06-2026T17:51:42 - [TEST_STEP][PASSED] - click(findTestObject("Registration/icon-acount")): Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+02-06-2026T17:51:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration/icon-acount' is clicked on
+
+02-06-2026T17:51:43 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home Page/verify-succes-acount-login")): Object 'Object Repository/Home Page/verify-succes-acount-login' is visible
+
+02-06-2026T17:51:45 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/verify-succes-acount-login' is visible
+
+02-06-2026T17:51:45 - [TEST_STEP][PASSED] - click(findTestObject("Home Page/Search/icon-search")): Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+02-06-2026T17:51:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Search/icon-search' is clicked on
+
+02-06-2026T17:51:46 - [TEST_STEP][PASSED] - setText(findTestObject("Home Page/Search/field-search"), "Iphone 11"): Text 'Iphone 11' is set on object 'Object Repository/Home Page/Search/field-search'
+
+02-06-2026T17:51:46 - [MESSAGE][PASSED] - Text 'Iphone 11' is set on object 'Object Repository/Home Page/Search/field-search'
+
+02-06-2026T17:51:46 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Home Page/Search/field-search"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+02-06-2026T17:51:47 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Home Page/Search/field-search'
+
+02-06-2026T17:51:47 - [TEST_STEP][PASSED] - custom.ProductHelper.addAnyAvailableProduct(): custom.ProductHelper.addAnyAvailableProduct is PASSED
+
+02-06-2026T17:51:50 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:51:50 - [MESSAGE][INFO] - Total product found : 100
+
+02-06-2026T17:51:50 - [MESSAGE][INFO] - Checking product index : 1
+
+02-06-2026T17:51:50 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:51:51 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:51:51 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:51:51 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:52:01 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:52:01 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:52:01 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:52:01 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:52:03 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:52:03 - [MESSAGE][INFO] - Checking product index : 2
+
+02-06-2026T17:52:04 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:52:04 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:52:04 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:52:04 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:52:14 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:52:14 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:52:14 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:52:14 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:52:17 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:52:17 - [MESSAGE][INFO] - Checking product index : 3
+
+02-06-2026T17:52:17 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:52:17 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:52:17 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:52:17 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:52:28 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:52:28 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:52:28 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:52:28 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:52:30 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:52:30 - [MESSAGE][INFO] - Checking product index : 4
+
+02-06-2026T17:52:30 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:52:30 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:52:31 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:52:31 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:52:41 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:52:41 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:52:41 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:52:41 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:52:43 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:52:43 - [MESSAGE][INFO] - Checking product index : 5
+
+02-06-2026T17:52:43 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:52:44 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:52:44 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:52:44 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:52:54 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:52:54 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:52:54 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:52:54 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:52:57 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:52:57 - [MESSAGE][INFO] - Checking product index : 6
+
+02-06-2026T17:52:57 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:52:57 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:52:57 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:52:57 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:53:08 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:53:08 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:53:08 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:53:08 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:53:10 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:53:10 - [MESSAGE][INFO] - Checking product index : 7
+
+02-06-2026T17:53:10 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:53:11 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:53:11 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:53:11 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:53:21 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:53:21 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:53:21 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:53:21 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:53:23 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:53:23 - [MESSAGE][INFO] - Checking product index : 8
+
+02-06-2026T17:53:24 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:53:24 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:53:24 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:53:24 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:53:34 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:53:34 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:53:34 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:53:34 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:53:37 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:53:37 - [MESSAGE][INFO] - Checking product index : 9
+
+02-06-2026T17:53:37 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:53:37 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:53:38 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:53:38 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:53:48 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:53:48 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:53:48 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:53:48 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:53:50 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:53:50 - [MESSAGE][INFO] - Checking product index : 10
+
+02-06-2026T17:53:50 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:53:51 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:53:51 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:53:51 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:54:01 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:54:01 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:54:01 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:54:01 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:54:03 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:54:03 - [MESSAGE][INFO] - Checking product index : 11
+
+02-06-2026T17:54:04 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:54:04 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:54:04 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:54:04 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:54:14 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:54:14 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:54:14 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:54:14 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:54:17 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:54:17 - [MESSAGE][INFO] - Checking product index : 12
+
+02-06-2026T17:54:17 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:54:17 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:54:18 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:54:18 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:54:28 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:54:28 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:54:28 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:54:28 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:54:30 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:54:30 - [MESSAGE][INFO] - Checking product index : 13
+
+02-06-2026T17:54:30 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:54:31 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:54:31 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:54:31 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:54:41 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:54:41 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:54:41 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:54:41 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:54:44 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:54:44 - [MESSAGE][INFO] - Checking product index : 14
+
+02-06-2026T17:54:44 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:54:44 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:54:44 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:54:44 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:54:55 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:54:55 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:54:55 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:54:55 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:54:57 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:54:57 - [MESSAGE][INFO] - Checking product index : 15
+
+02-06-2026T17:54:57 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:54:58 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:54:58 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:54:58 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:55:08 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:55:08 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:55:08 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:55:08 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:55:11 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:55:11 - [MESSAGE][INFO] - Checking product index : 16
+
+02-06-2026T17:55:11 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:55:11 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:55:11 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:55:11 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:55:22 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:55:22 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:55:22 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:55:22 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:55:24 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:55:24 - [MESSAGE][INFO] - Checking product index : 17
+
+02-06-2026T17:55:24 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:55:24 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:55:25 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:55:25 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:55:35 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:55:35 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:55:35 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:55:35 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:55:37 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:55:37 - [MESSAGE][INFO] - Checking product index : 18
+
+02-06-2026T17:55:37 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:55:38 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:55:38 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:55:38 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:55:48 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:55:48 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:55:48 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:55:48 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:55:51 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:55:51 - [MESSAGE][INFO] - Checking product index : 19
+
+02-06-2026T17:55:51 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:55:51 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:55:51 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:55:51 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:56:02 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:56:02 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:56:02 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:56:02 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:56:04 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:56:04 - [MESSAGE][INFO] - Checking product index : 20
+
+02-06-2026T17:56:04 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:56:04 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:56:05 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:56:05 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:56:15 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' located by 'By.xpath: //button[contains(@class,'add-to-cart')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy57.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:439)
+	at custom.ProductHelper.addAnyAvailableProduct(ProductHelper.groovy:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Ensure user can add - update - remove product to shopping cart.run(Ensure user can add - update - remove product to shopping cart:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+02-06-2026T17:56:15 - [MESSAGE][INFO] - Product sold out
+
+02-06-2026T17:56:15 - [MESSAGE][PASSED] - Navigate back successfully
+
+02-06-2026T17:56:15 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:56:17 - [MESSAGE][PASSED] - Object 'Object Repository/Home Page/Search/list_product' is visible
+
+02-06-2026T17:56:17 - [MESSAGE][INFO] - Checking product index : 21
+
+02-06-2026T17:56:17 - [MESSAGE][PASSED] - Object '' is clickable
+
+02-06-2026T17:56:18 - [MESSAGE][PASSED] - Scroll to object '' successfully
+
+02-06-2026T17:56:18 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+02-06-2026T17:56:18 - [MESSAGE][PASSED] - Wait for page load successfully
+
+02-06-2026T17:56:20 - [MESSAGE][PASSED] - Object 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is visible
+
+02-06-2026T17:56:20 - [MESSAGE][INFO] - Available product found
+
+02-06-2026T17:56:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+02-06-2026T17:56:21 - [MESSAGE][PASSED] - custom.ProductHelper.addAnyAvailableProduct is PASSED
+
+02-06-2026T17:56:21 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/i_icon-cart")): Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+02-06-2026T17:56:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+02-06-2026T17:56:21 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+02-06-2026T17:56:22 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260602_172824\\WEB\\Product And Cart\\ProductCart_TestSuite\\20260602_172829\\1780397781557.png]]
+
+02-06-2026T17:56:22 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/btn-trash")): Object: 'Object Repository/Product and Cart/Add to cart/btn-trash' is clicked on
+
+02-06-2026T17:56:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/btn-trash' is clicked on
+
+02-06-2026T17:56:22 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+02-06-2026T17:56:23 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260602_172824\\WEB\\Product And Cart\\ProductCart_TestSuite\\20260602_172829\\1780397782878.png]]
+
+02-06-2026T17:56:23 - [TEST_STEP][PASSED] - click(findTestObject("Product and Cart/Add to cart/btn-confrim-yes")): Object: 'Object Repository/Product and Cart/Add to cart/btn-confrim-yes' is clicked on
+
+02-06-2026T17:56:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Product and Cart/Add to cart/btn-confrim-yes' is clicked on
+
+02-06-2026T17:56:23 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+02-06-2026T17:56:23 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260602_172824\\WEB\\Product And Cart\\ProductCart_TestSuite\\20260602_172829\\1780397783643.png]]
+
+02-06-2026T17:56:23 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+02-06-2026T17:56:24 - [MESSAGE][PASSED] - Browser is closed
+
+02-06-2026T17:56:24 - [TEST_STEP][ERROR] - Start listener action : afterTestCase: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+
+
+02-06-2026T17:56:24 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+02-06-2026T17:56:24 - [TEST_STEP][PASSED] - if (status == "PASSED"): null
+
+02-06-2026T17:56:24 - [TEST_STEP][PASSED] - saveScreenshot("PASSED"): null
+
+02-06-2026T17:56:24 - [TEST_STEP][PASSED] - tcName = getTestCaseName(): null
+
+02-06-2026T17:56:24 - [TEST_STEP][PASSED] - return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _): null
+
+02-06-2026T17:56:24 - [TEST_STEP][PASSED] - folderPath = Screenshot/$status/$tcName/: null
+
+02-06-2026T17:56:24 - [TEST_STEP][PASSED] - Files.createDirectories(Paths.get(folderPath)): null
+
+02-06-2026T17:56:24 - [TEST_STEP][PASSED] - screenshotPath = $folderPath$status_$this.getTimestamp().png: null
+
+02-06-2026T17:56:24 - [TEST_STEP][PASSED] - return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date()): null
+
+02-06-2026T17:56:24 - [TEST_STEP][ERROR] - takeScreenshot(screenshotPath): com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+
+
+02-06-2026T17:56:24 - [MESSAGE][FAILED] - Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+02-06-2026T17:56:24 - [MESSAGE][ERROR] - com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0602_47.run(S0602_47.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[02-06-2026T17:51:33 - [TEST_SUITE][PASSED] - ProductCart_TestSuite: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

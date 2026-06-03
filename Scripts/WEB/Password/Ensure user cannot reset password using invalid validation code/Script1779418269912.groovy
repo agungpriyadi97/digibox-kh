@@ -110,8 +110,6 @@ WebUI.delay(3)
 
 boolean invalidCodeMsg = WebUI.verifyTextPresent('Invalid code', false, FailureHandling.OPTIONAL)
 
-WebUI.takeScreenshot()
-
 // assertion yang benar untuk CI
 WebUI.verifyEqual(invalidCodeMsg, true)
 

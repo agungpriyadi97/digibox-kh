@@ -49,7 +49,9 @@ WebUI.click(findTestObject('Registration/btn-create-new-account'))
 // INPUT DATA
 // ==========================
 WebUI.setText(findTestObject('Registration/field-Email'), 'agungpriyadi@gmail.com')
+
 WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+
 WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
 
 // ==========================
@@ -63,23 +65,16 @@ WebUI.delay(2)
 // ==========================
 // VERIFY DUPLICATE ERROR
 // ==========================
-boolean isDuplicateShown = WebUI.verifyTextPresent(
-    'Duplicated-unknown-error.',
-    false,
-    FailureHandling.OPTIONAL
-)
+boolean isDuplicateShown = WebUI.verifyTextPresent('Duplicated-unknown-error.', false, FailureHandling.OPTIONAL)
 
-if (!isDuplicateShown) {
+if (!(isDuplicateShown)) {
     WebUI.takeScreenshot()
-    WebUI.verifyFail("Duplicate account message NOT shown")
-}
 
-// ==========================
-// EVIDENCE
-// ==========================
-WebUI.takeScreenshot()
+    WebUI.verifyFail('Duplicate account message NOT shown')
+}
 
 // ==========================
 // CLOSE
 // ==========================
 WebUI.closeBrowser()
+

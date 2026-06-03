@@ -46,15 +46,9 @@ CustomKeywords.'custom.ProductHelper.addAnyAvailableProduct'()
 
 WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
 
-WebUI.takeScreenshot()
-
 WebUI.click(findTestObject('Product and Cart/Add to cart/btn-trash'))
 
-WebUI.takeScreenshot()
-
 WebUI.click(findTestObject('Product and Cart/Add to cart/btn-confrim-yes'))
-
-WebUI.takeScreenshot()
 
 WebUI.closeBrowser()
 

@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ProductCart_TestSuite,Chrome 148.0.7778.179,,,02-06-2026 17:51:33,02-06-2026 17:56:27,4m - 53.665s,PASSED
+,,,,,,,
+Test Cases/WEB/Product and Cart/Ensure user can add - update - remove product to shopping cart,Chrome 148.0.7778.179,,,02-06-2026 17:51:33,02-06-2026 17:56:27,4m - 53.486s,PASSED
+openBrowser(URL),Chrome 148.0.7778.179,,,02-06-2026 17:51:33,02-06-2026 17:51:39,5.109s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Chrome 148.0.7778.179,,,02-06-2026 17:51:39,02-06-2026 17:51:39,0.372s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Chrome 148.0.7778.179,,,02-06-2026 17:51:39,02-06-2026 17:51:40,0.594s,PASSED
+"setText(findTestObject(""Registration/field-account""), ""agungpriyadi"")",Chrome 148.0.7778.179,,,02-06-2026 17:51:40,02-06-2026 17:51:41,1.091s,PASSED
+"setText(findTestObject(""Registration/field-Password""), ""Laskar123456"")",Chrome 148.0.7778.179,,,02-06-2026 17:51:41,02-06-2026 17:51:41,0.853s,PASSED
+"click(findTestObject(""Login/btn-sign in""))",Chrome 148.0.7778.179,,,02-06-2026 17:51:41,02-06-2026 17:51:42,0.532s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Chrome 148.0.7778.179,,,02-06-2026 17:51:42,02-06-2026 17:51:43,0.523s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/verify-succes-acount-login""))",Chrome 148.0.7778.179,,,02-06-2026 17:51:43,02-06-2026 17:51:45,2.864s,PASSED
+"click(findTestObject(""Home Page/Search/icon-search""))",Chrome 148.0.7778.179,,,02-06-2026 17:51:45,02-06-2026 17:51:46,0.315s,PASSED
+"setText(findTestObject(""Home Page/Search/field-search""), ""Iphone 11"")",Chrome 148.0.7778.179,,,02-06-2026 17:51:46,02-06-2026 17:51:46,0.578s,PASSED
+"sendKeys(findTestObject(""Home Page/Search/field-search""), Keys.chord(ENTER))",Chrome 148.0.7778.179,,,02-06-2026 17:51:46,02-06-2026 17:51:47,1.075s,PASSED
+custom.ProductHelper.addAnyAvailableProduct(),Chrome 148.0.7778.179,,,02-06-2026 17:51:47,02-06-2026 17:56:21,4m - 33.192s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/i_icon-cart""))",Chrome 148.0.7778.179,,,02-06-2026 17:56:21,02-06-2026 17:56:21,0.492s,PASSED
+takeScreenshot(),Chrome 148.0.7778.179,,,02-06-2026 17:56:21,02-06-2026 17:56:22,1.053s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/btn-trash""))",Chrome 148.0.7778.179,,,02-06-2026 17:56:22,02-06-2026 17:56:22,0.281s,PASSED
+takeScreenshot(),Chrome 148.0.7778.179,,,02-06-2026 17:56:22,02-06-2026 17:56:23,0.484s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/btn-confrim-yes""))",Chrome 148.0.7778.179,,,02-06-2026 17:56:23,02-06-2026 17:56:23,0.280s,PASSED
+takeScreenshot(),Chrome 148.0.7778.179,,,02-06-2026 17:56:23,02-06-2026 17:56:23,0.300s,PASSED
+closeBrowser(),Chrome 148.0.7778.179,,,02-06-2026 17:56:23,02-06-2026 17:56:24,0.627s,PASSED
+Start listener action : afterTestCase,Chrome 148.0.7778.179,,,02-06-2026 17:56:24,02-06-2026 17:56:24,0.077s,ERROR

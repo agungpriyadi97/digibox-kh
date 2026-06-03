@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ProductCart_TestSuite,Firefox 151.0.1,,,02-06-2026 18:19:35,02-06-2026 18:25:14,5m - 38.687s,PASSED
+,,,,,,,
+Test Cases/WEB/Product and Cart/Ensure user can add - update - remove product to shopping cart,Firefox 151.0.1,,,02-06-2026 18:19:35,02-06-2026 18:25:14,5m - 38.465s,PASSED
+openBrowser(URL),Firefox 151.0.1,,,02-06-2026 18:19:36,02-06-2026 18:19:43,7.045s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/header_digibox""))",Firefox 151.0.1,,,02-06-2026 18:19:43,02-06-2026 18:19:43,0.353s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,02-06-2026 18:19:43,02-06-2026 18:19:44,0.578s,PASSED
+"setText(findTestObject(""Registration/field-account""), ""agungpriyadi"")",Firefox 151.0.1,,,02-06-2026 18:19:44,02-06-2026 18:19:54,10.284s,PASSED
+"setText(findTestObject(""Registration/field-Password""), ""Laskar123456"")",Firefox 151.0.1,,,02-06-2026 18:19:54,02-06-2026 18:19:55,0.728s,PASSED
+"click(findTestObject(""Login/btn-sign in""))",Firefox 151.0.1,,,02-06-2026 18:19:55,02-06-2026 18:19:55,0.520s,PASSED
+"click(findTestObject(""Registration/icon-acount""))",Firefox 151.0.1,,,02-06-2026 18:19:55,02-06-2026 18:19:56,0.504s,PASSED
+"verifyElementVisible(findTestObject(""Home Page/verify-succes-acount-login""))",Firefox 151.0.1,,,02-06-2026 18:19:56,02-06-2026 18:19:58,2.441s,PASSED
+"click(findTestObject(""Home Page/Search/icon-search""))",Firefox 151.0.1,,,02-06-2026 18:19:58,02-06-2026 18:19:59,0.607s,PASSED
+"setText(findTestObject(""Home Page/Search/field-search""), ""Iphone 11"")",Firefox 151.0.1,,,02-06-2026 18:19:59,02-06-2026 18:19:59,0.492s,PASSED
+"sendKeys(findTestObject(""Home Page/Search/field-search""), Keys.chord(ENTER))",Firefox 151.0.1,,,02-06-2026 18:19:59,02-06-2026 18:20:00,1.063s,PASSED
+custom.ProductHelper.addAnyAvailableProduct(),Firefox 151.0.1,,,02-06-2026 18:20:00,02-06-2026 18:25:08,5m - 7.518s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/i_icon-cart""))",Firefox 151.0.1,,,02-06-2026 18:25:08,02-06-2026 18:25:08,0.499s,PASSED
+takeScreenshot(),Firefox 151.0.1,,,02-06-2026 18:25:08,02-06-2026 18:25:09,1.175s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/btn-trash""))",Firefox 151.0.1,,,02-06-2026 18:25:09,02-06-2026 18:25:10,0.300s,PASSED
+takeScreenshot(),Firefox 151.0.1,,,02-06-2026 18:25:10,02-06-2026 18:25:10,0.443s,PASSED
+"click(findTestObject(""Product and Cart/Add to cart/btn-confrim-yes""))",Firefox 151.0.1,,,02-06-2026 18:25:10,02-06-2026 18:25:10,0.290s,PASSED
+takeScreenshot(),Firefox 151.0.1,,,02-06-2026 18:25:10,02-06-2026 18:25:11,0.241s,PASSED
+closeBrowser(),Firefox 151.0.1,,,02-06-2026 18:25:11,02-06-2026 18:25:11,0.493s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,02-06-2026 18:25:11,02-06-2026 18:25:11,0.064s,ERROR
