@@ -2,118 +2,111 @@ package custom
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.openqa.selenium.WebElement
-
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 class ProductHelper {
 
-	@Keyword
-	def addAnyAvailableProduct() {
+    @Keyword
+    def addAnyAvailableProduct() {
 
-		// WAIT PRODUCT LIST
-		WebUI.waitForElementVisible(
-			findTestObject('Home Page/Search/list_product'),
-			15)
+        WebUI.waitForElementVisible(
+            findTestObject('Home Page/Search/list_product'),
+            15)
 
-		// GET PRODUCT LIST
-		List<WebElement> products =
-				WebUiCommonHelper.findWebElements(
-				findTestObject('Home Page/Search/list_product'),
-				15)
+        int totalProduct =
+            WebUiCommonHelper.findWebElements(
+                findTestObject('Home Page/Search/list_product'),
+                15
+            ).size()
 
-		int totalProduct = products.size()
+        WebUI.comment("Total product found : ${totalProduct}")
 
-		WebUI.comment("Total product found : " + totalProduct)
+        boolean productFound = false
 
-		boolean productFound = false
+        for (int i = 1; i <= totalProduct; i++) {
 
-		// LOOP PRODUCT
-		for (int i = 1; i <= totalProduct; i++) {
+            try {
 
-			try {
+                WebUI.comment("Checking product index : ${i}")
 
-				WebUI.comment("Checking product index : " + i)
+                TestObject dynamicProduct = new TestObject()
 
-				// DYNAMIC PRODUCT
-				TestObject dynamicProduct = new TestObject()
+                dynamicProduct.addProperty(
+                    'xpath',
+                    ConditionType.EQUALS,
+                    "(//div[contains(@class,'sp-plp-card')])[${i}]"
+                )
 
-				dynamicProduct.addProperty(
-					'xpath',
-					ConditionType.EQUALS,
-					"(//div[contains(@class,'sp-plp-card')])[" + i + "]")
+                WebUI.scrollToElement(dynamicProduct, 5)
 
-				// WAIT PRODUCT
-				WebUI.waitForElementClickable(
-					dynamicProduct,
-					10)
+                WebUI.click(dynamicProduct)
 
-				// SCROLL
-				WebUI.scrollToElement(
-					dynamicProduct,
-					5)
+                WebUI.waitForPageLoad(10)
 
-				// CLICK PRODUCT
-				WebUI.click(dynamicProduct)
+                boolean addToCartExist =
+                    WebUI.waitForElementVisible(
+                        findTestObject(
+                            'Product and Cart/Add to cart/button_Add to Cart'
+                        ),
+                        5,
+                        FailureHandling.OPTIONAL
+                    )
 
-				// WAIT PDP LOAD
-				WebUI.waitForPageLoad(10)
+                if (addToCartExist) {
 
-				// CHECK ADD TO CART BUTTON
-				boolean addToCartExist =
-						WebUI.verifyElementVisible(
-						findTestObject(
-						'Product and Cart/Add to cart/button_Add to Cart'),
-						FailureHandling.OPTIONAL)
+                    WebUI.comment("Available product found")
 
-				if (addToCartExist) {
+                    WebUI.click(
+                        findTestObject(
+                            'Product and Cart/Add to cart/button_Add to Cart'
+                        )
+                    )
 
-					WebUI.comment('Available product found')
+                    productFound = true
 
-					// CLICK ADD TO CART
-					WebUI.click(
-						findTestObject(
-						'Product and Cart/Add to cart/button_Add to Cart'))
+                    break
+                }
 
-					productFound = true
+                WebUI.comment("Product sold out")
 
-					break
+                WebUI.back()
 
-				} else {
+                WebUI.waitForPageLoad(10)
 
-					WebUI.comment('Product sold out')
+                WebUI.waitForElementVisible(
+                    findTestObject('Home Page/Search/list_product'),
+                    10)
 
-					WebUI.back()
+            } catch (Exception e) {
 
-					WebUI.waitForPageLoad(10)
+                WebUI.comment(
+                    "Failed product index ${i} : ${e.getMessage()}"
+                )
 
-					WebUI.waitForElementVisible(
-						findTestObject(
-						'Home Page/Search/list_product'),
-						10)
-				}
+                try {
 
-			} catch (Exception e) {
+                    WebUI.back()
 
-				WebUI.comment(
-					'Failed product index : '
-					+ i
-					+ ' | '
-					+ e.getMessage())
+                    WebUI.waitForPageLoad(10)
 
-				WebUI.back()
+                } catch (Exception ignored) {
+                }
+            }
+        }
 
-				WebUI.waitForPageLoad(10)
-			}
-		}
+        if (!productFound) {
 
-		// FINAL ASSERTION
-		assert productFound :
-				'Tidak ada product available'
-	}
+            WebUI.takeScreenshot()
+
+            KeywordUtil.markFailedAndStop(
+                "Tidak ada product available untuk ditambahkan ke cart"
+            )
+        }
+    }
 }
