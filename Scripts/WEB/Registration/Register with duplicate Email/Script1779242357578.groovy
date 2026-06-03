@@ -44,19 +44,23 @@ CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
 // GO TO REGISTER PAGE
 // ==========================
 WebUI.waitForElementClickable(findTestObject('Registration/btn-create-new-account'), 10)
+
 WebUI.click(findTestObject('Registration/btn-create-new-account'))
 
 // ==========================
 // INPUT DATA
 // ==========================
 WebUI.setText(findTestObject('Registration/field-Email'), 'agung.priyadi@gtech.digital')
+
 WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+
 WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
 
 // ==========================
 // SUBMIT REGISTER
 // ==========================
 WebUI.waitForElementClickable(findTestObject('Registration/btn-sign-up'), 10)
+
 WebUI.click(findTestObject('Registration/btn-sign-up'))
 
 // stabilizer ringan (CI-friendly)
@@ -65,23 +69,16 @@ WebUI.delay(2)
 // ==========================
 // VERIFY DUPLICATE EMAIL ERROR
 // ==========================
-boolean isDuplicateEmailShown = WebUI.verifyTextPresent(
-    'The mobile or email already exist.',
-    false,
-    FailureHandling.OPTIONAL
-)
+boolean isDuplicateEmailShown = WebUI.verifyTextPresent('The mobile or email already exist.', false, FailureHandling.OPTIONAL)
 
-if (!isDuplicateEmailShown) {
+if (!(isDuplicateEmailShown)) {
     WebUI.takeScreenshot()
-    WebUI.verifyFail("Duplicate email message NOT shown")
-}
 
-// ==========================
-// EVIDENCE
-// ==========================
-WebUI.takeScreenshot()
+    WebUI.verifyFail('Duplicate email message NOT shown')
+}
 
 // ==========================
 // CLOSE BROWSER
 // ==========================
 WebUI.closeBrowser()
+

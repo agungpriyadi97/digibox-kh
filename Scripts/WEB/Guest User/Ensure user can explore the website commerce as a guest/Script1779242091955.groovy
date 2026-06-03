@@ -140,11 +140,6 @@ clickWhenReady('Home Page/Page Promotion/sub-menu-Flash Sale')
 clickWhenReady('Home Page/Page Enterprice and Education/menu-Enterprise and Education')
 
 // ==========================
-// SCREENSHOT
-// ==========================
-WebUI.takeScreenshot()
-
-// ==========================
 // CLOSE BROWSER
 // ==========================
 WebUI.closeBrowser()

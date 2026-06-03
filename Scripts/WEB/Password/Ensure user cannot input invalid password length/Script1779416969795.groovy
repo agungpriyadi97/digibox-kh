@@ -106,8 +106,6 @@ WebUI.delay(2)
 
 boolean errorShown = WebUI.verifyTextPresent('Password length is 6-20 digits', false, FailureHandling.OPTIONAL)
 
-WebUI.takeScreenshot()
-
 WebUI.verifyEqual(errorShown, true)
 
 // =========================

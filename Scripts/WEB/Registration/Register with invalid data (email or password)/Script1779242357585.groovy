@@ -35,6 +35,7 @@ WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
 // OPEN REGISTER
 // ==========================
 WebUI.click(findTestObject('Registration/icon-acount'))
+
 CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
 
 WebUI.click(findTestObject('Registration/btn-create-new-account'))
@@ -43,7 +44,9 @@ WebUI.click(findTestObject('Registration/btn-create-new-account'))
 // SCENARIO 1: INVALID EMAIL + EMPTY FIELDS
 // ==========================
 WebUI.setText(findTestObject('Registration/field-Email'), 'salahemailgmail.com')
+
 WebUI.setText(findTestObject('Registration/field-account'), '')
+
 WebUI.setText(findTestObject('Registration/field-Password'), '')
 
 WebUI.click(findTestObject('Registration/btn-sign-up'))
@@ -51,51 +54,40 @@ WebUI.click(findTestObject('Registration/btn-sign-up'))
 WebUI.delay(2)
 
 // VALIDATE EMAIL ERROR
-boolean emailError = WebUI.verifyTextPresent(
-    'Please enter a valid email address',
-    false,
-    FailureHandling.OPTIONAL
-)
+boolean emailError = WebUI.verifyTextPresent('Please enter a valid email address', false, FailureHandling.OPTIONAL)
 
 // VALIDATE REQUIRED ERROR
-boolean requiredError = WebUI.verifyTextPresent(
-    'Required',
-    false,
-    FailureHandling.OPTIONAL
-)
+boolean requiredError = WebUI.verifyTextPresent('Required', false, FailureHandling.OPTIONAL)
 
-if (!emailError || !requiredError) {
+if (!(emailError) || !(requiredError)) {
     WebUI.takeScreenshot()
-    WebUI.verifyFail("Validation error (email/required) not displayed properly")
-}
 
-WebUI.takeScreenshot()
+    WebUI.verifyFail('Validation error (email/required) not displayed properly')
+}
 
 // ==========================
 // SCENARIO 2: PASSWORD LENGTH VALIDATION
 // ==========================
 WebUI.setText(findTestObject('Registration/field-Email'), 'agung.priyadi@gtech.digital')
+
 WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+
 WebUI.setText(findTestObject('Registration/field-Password'), 'Las')
 
 WebUI.click(findTestObject('Registration/btn-sign-up'))
 
 WebUI.delay(2)
 
-boolean passwordLengthError = WebUI.verifyTextPresent(
-    'Password length is 6-20 digits',
-    false,
-    FailureHandling.OPTIONAL
-)
+boolean passwordLengthError = WebUI.verifyTextPresent('Password length is 6-20 digits', false, FailureHandling.OPTIONAL)
 
-if (!passwordLengthError) {
+if (!(passwordLengthError)) {
     WebUI.takeScreenshot()
-    WebUI.verifyFail("Password length validation not shown")
-}
 
-WebUI.takeScreenshot()
+    WebUI.verifyFail('Password length validation not shown')
+}
 
 // ==========================
 // CLOSE
 // ==========================
 WebUI.closeBrowser()
+

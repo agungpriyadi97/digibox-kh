@@ -72,8 +72,6 @@ WebUI.delay(2)
 
 boolean requiredMsg = WebUI.verifyTextPresent('Required', false, FailureHandling.OPTIONAL)
 
-WebUI.takeScreenshot()
-
 WebUI.verifyEqual(requiredMsg, true)
 
 // ==========================

@@ -33,86 +33,51 @@ WebUI.waitForPageLoad(30)
 // ========================
 // VERIFY HOMEPAGE
 // ========================
-WebUI.waitForElementVisible(
-	findTestObject('Home Page/header_digibox'),
-	30
-)
+WebUI.waitForElementVisible(findTestObject('Home Page/header_digibox'), 30)
 
 // ========================
 // OPEN TRACK ORDER
 // ========================
-WebUI.waitForElementClickable(
-	findTestObject('Checkout/Track Order/track your order'),
-	30
-)
+WebUI.waitForElementClickable(findTestObject('Checkout/Track Order/track your order'), 30)
 
-WebUI.enhancedClick(
-	findTestObject('Checkout/Track Order/track your order')
-)
+WebUI.enhancedClick(findTestObject('Checkout/Track Order/track your order'))
 
 WebUI.waitForPageLoad(30)
 
 // ========================
 // INPUT EMAIL
 // ========================
-WebUI.waitForElementVisible(
-	findTestObject('Guest User/Track Your Order/txtField_Email'),
-	30
-)
+WebUI.waitForElementVisible(findTestObject('Guest User/Track Your Order/txtField_Email'), 30)
 
-WebUI.setText(
-	findTestObject('Guest User/Track Your Order/txtField_Email'),
-	'agung.priyadi@gtech.digital'
-)
+WebUI.setText(findTestObject('Guest User/Track Your Order/txtField_Email'), 'agung.priyadi@gtech.digital')
 
 // ========================
 // SEND OTP
 // ========================
-WebUI.waitForElementClickable(
-	findTestObject('Guest User/Track Your Order/btn_Send'),
-	30
-)
+WebUI.waitForElementClickable(findTestObject('Guest User/Track Your Order/btn_Send'), 30)
 
-WebUI.enhancedClick(
-	findTestObject('Guest User/Track Your Order/btn_Send')
-)
+WebUI.enhancedClick(findTestObject('Guest User/Track Your Order/btn_Send'))
 
 // Tunggu notifikasi sukses
 WebUI.delay(3)
 
-WebUI.verifyTextPresent(
-	'The verification code has been sent, please check in the mailbox.',
-	false
-)
+WebUI.verifyTextPresent('The verification code has been sent, please check in the mailbox.', false)
 
 // ========================
 // INPUT INVALID CODE
 // ========================
-WebUI.waitForElementVisible(
-	findTestObject('Guest User/Track Your Order/txtField_Verification Code'),
-	30
-)
+WebUI.waitForElementVisible(findTestObject('Guest User/Track Your Order/txtField_Verification Code'), 30)
 
-WebUI.clearText(
-	findTestObject('Guest User/Track Your Order/txtField_Verification Code')
-)
+WebUI.clearText(findTestObject('Guest User/Track Your Order/txtField_Verification Code'))
 
-WebUI.setText(
-	findTestObject('Guest User/Track Your Order/txtField_Verification Code'),
-	'999999'
-)
+WebUI.setText(findTestObject('Guest User/Track Your Order/txtField_Verification Code'), '999999')
 
 // ========================
 // CLICK CONTINUE
 // ========================
-WebUI.waitForElementClickable(
-	findTestObject('Guest User/Track Your Order/btn_Continue'),
-	30
-)
+WebUI.waitForElementClickable(findTestObject('Guest User/Track Your Order/btn_Continue'), 30)
 
-WebUI.enhancedClick(
-	findTestObject('Guest User/Track Your Order/btn_Continue')
-)
+WebUI.enhancedClick(findTestObject('Guest User/Track Your Order/btn_Continue'))
 
 // Tunggu validasi error muncul
 WebUI.delay(3)
@@ -120,15 +85,7 @@ WebUI.delay(3)
 // ========================
 // VERIFY ERROR MESSAGE
 // ========================
-WebUI.verifyTextPresent(
-	'Verification code error.',
-	false
-)
-
-// ========================
-// SCREENSHOT
-// ========================
-WebUI.takeScreenshot()
+WebUI.verifyTextPresent('Verification code error.', false)
 
 // ========================
 // CLOSE BROWSER

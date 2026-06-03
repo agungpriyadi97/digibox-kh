@@ -1,0 +1,476 @@
+2026-06-02 17:44:13.315 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\AgungPriyadi\.katalon\packages\KS-11.1.3\configuration\org.eclipse.osgi\150\0\.cp\resources\logback\logback-execution.xml
+2026-06-02 17:44:13.320 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\AgungPriyadi\git\digibox-kh\Include\config\log.properties
+2026-06-02 17:44:14.311 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/WEB/Guest User/GuestUser_TestSuite
+2026-06-02 17:44:14.374 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Agung Priyadi
+2026-06-02 17:44:14.375 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = digibox-kh
+2026-06-02 17:44:14.376 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = AgungPriyadi - NB-GDA-55026
+2026-06-02 17:44:14.376 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-06-02 17:44:14.376 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.110.43
+2026-06-02 17:44:14.377 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.1.3.0
+2026-06-02 17:44:14.488 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-06-02 17:44:14.488 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty
+2026-06-02 17:44:14.749 DEBUG ed when Verification Code field is empty - 1: openBrowser("")
+2026-06-02 17:44:15.146 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-06-02 17:44:15.157 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-06-02 17:44:15.207 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-06-02 17:44:17.842 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 86632ccd8ec4ad87ea55682e1327c304
+2026-06-02 17:44:17.843 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-06-02 17:44:17.845 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-06-02 17:44:17.846 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-06-02 17:44:17.853 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-06-02 17:44:17.918 DEBUG ed when Verification Code field is empty - 2: setViewPortSize(1920, 1080)
+2026-06-02 17:44:18.041 DEBUG ed when Verification Code field is empty - 3: navigateToUrl(URL)
+2026-06-02 17:44:20.293 DEBUG ed when Verification Code field is empty - 4: custom.BrowserHelper.setupBrowserWindow()
+Running browser: HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-06-02 17:44:20.411 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-06-02 17:44:20.416 DEBUG ed when Verification Code field is empty - 5: waitForPageLoad(30)
+2026-06-02 17:44:20.564 DEBUG ed when Verification Code field is empty - 6: waitForElementVisible(findTestObject("Home Page/header_digibox"), 30)
+2026-06-02 17:44:21.023 DEBUG ed when Verification Code field is empty - 7: waitForElementClickable(findTestObject("Checkout/Track Order/track your order"), 30)
+2026-06-02 17:44:21.576 DEBUG ed when Verification Code field is empty - 8: enhancedClick(findTestObject("Checkout/Track Order/track your order"))
+2026-06-02 17:44:21.937 DEBUG ed when Verification Code field is empty - 9: waitForPageLoad(30)
+2026-06-02 17:44:21.954 DEBUG ed when Verification Code field is empty - 10: waitForElementVisible(findTestObject("Guest User/Track Your Order/txtField_Email"), 30)
+2026-06-02 17:44:22.644 DEBUG ed when Verification Code field is empty - 11: setText(findTestObject("Guest User/Track Your Order/txtField_Email"), "agung.priyadi@gtech.digital")
+2026-06-02 17:44:23.345 DEBUG ed when Verification Code field is empty - 12: waitForElementVisible(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), 30)
+2026-06-02 17:44:23.818 DEBUG ed when Verification Code field is empty - 13: setText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), "")
+2026-06-02 17:44:24.419 DEBUG ed when Verification Code field is empty - 14: waitForElementClickable(findTestObject("Guest User/Track Your Order/btn_Send"), 30)
+2026-06-02 17:44:24.894 DEBUG ed when Verification Code field is empty - 15: enhancedClick(findTestObject("Guest User/Track Your Order/btn_Send"))
+2026-06-02 17:44:25.174 DEBUG ed when Verification Code field is empty - 16: delay(3)
+2026-06-02 17:44:28.201 DEBUG ed when Verification Code field is empty - 17: verifyTextPresent("The verification code has been sent, please check in the mailbox.", false)
+2026-06-02 17:44:28.495 DEBUG ed when Verification Code field is empty - 18: verifyElementHasAttribute(findTestObject("Guest User/Track Your Order/btn_Continue"), "disabled", 30)
+2026-06-02 17:44:28.774 DEBUG ed when Verification Code field is empty - 19: takeScreenshot()
+2026-06-02 17:44:29.111 DEBUG ed when Verification Code field is empty - 20: closeBrowser()
+2026-06-02 17:44:29.765 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_43.run(S0602_43.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+2026-06-02 17:44:29.770 ERROR c.k.k.core.context.internal.TestHooker   - ❌ com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_43.run(S0602_43.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n
+2026-06-02 17:44:31.858 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty
+2026-06-02 17:44:31.863 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-06-02 17:44:31.864 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code
+2026-06-02 17:44:31.938 DEBUG or message for invalid verification code - 1: openBrowser("")
+2026-06-02 17:44:31.940 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-06-02 17:44:31.941 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-06-02 17:44:31.943 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-06-02 17:44:33.343 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 6329393002e8686b4fc4c4a647c9cc88
+2026-06-02 17:44:33.344 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-06-02 17:44:33.345 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-06-02 17:44:33.346 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-06-02 17:44:33.348 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-06-02 17:44:33.379 DEBUG or message for invalid verification code - 2: setViewPortSize(1920, 1080)
+2026-06-02 17:44:33.479 DEBUG or message for invalid verification code - 3: navigateToUrl(URL)
+2026-06-02 17:44:37.063 DEBUG or message for invalid verification code - 4: custom.BrowserHelper.setupBrowserWindow()
+Running browser: HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-06-02 17:44:37.127 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-06-02 17:44:37.130 DEBUG or message for invalid verification code - 5: waitForPageLoad(30)
+2026-06-02 17:44:37.149 DEBUG or message for invalid verification code - 6: waitForElementVisible(findTestObject("Home Page/header_digibox"), 30)
+2026-06-02 17:44:37.448 DEBUG or message for invalid verification code - 7: waitForElementClickable(findTestObject("Checkout/Track Order/track your order"), 30)
+2026-06-02 17:44:37.747 DEBUG or message for invalid verification code - 8: enhancedClick(findTestObject("Checkout/Track Order/track your order"))
+2026-06-02 17:44:38.058 DEBUG or message for invalid verification code - 9: waitForPageLoad(30)
+2026-06-02 17:44:38.075 DEBUG or message for invalid verification code - 10: waitForElementVisible(findTestObject("Guest User/Track Your Order/txtField_Email"), 30)
+2026-06-02 17:44:38.748 DEBUG or message for invalid verification code - 11: setText(findTestObject("Guest User/Track Your Order/txtField_Email"), "agung.priyadi@gtech.digital")
+2026-06-02 17:44:39.408 DEBUG or message for invalid verification code - 12: waitForElementClickable(findTestObject("Guest User/Track Your Order/btn_Send"), 30)
+2026-06-02 17:44:39.907 DEBUG or message for invalid verification code - 13: enhancedClick(findTestObject("Guest User/Track Your Order/btn_Send"))
+2026-06-02 17:44:40.208 DEBUG or message for invalid verification code - 14: delay(3)
+2026-06-02 17:44:43.220 DEBUG or message for invalid verification code - 15: verifyTextPresent("The verification code has been sent, please check in the mailbox.", false)
+2026-06-02 17:44:43.491 DEBUG or message for invalid verification code - 16: waitForElementVisible(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), 30)
+2026-06-02 17:44:43.750 DEBUG or message for invalid verification code - 17: clearText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"))
+2026-06-02 17:44:44.042 DEBUG or message for invalid verification code - 18: setText(findTestObject("Guest User/Track Your Order/txtField_Verification Code"), "999999")
+2026-06-02 17:44:44.649 DEBUG or message for invalid verification code - 19: waitForElementClickable(findTestObject("Guest User/Track Your Order/btn_Continue"), 30)
+2026-06-02 17:44:45.134 DEBUG or message for invalid verification code - 20: enhancedClick(findTestObject("Guest User/Track Your Order/btn_Continue"))
+2026-06-02 17:44:45.432 DEBUG or message for invalid verification code - 21: delay(3)
+2026-06-02 17:44:48.444 DEBUG or message for invalid verification code - 22: verifyTextPresent("Verification code error.", false)
+2026-06-02 17:44:48.722 DEBUG or message for invalid verification code - 23: takeScreenshot()
+2026-06-02 17:44:49.035 DEBUG or message for invalid verification code - 24: closeBrowser()
+2026-06-02 17:44:49.726 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_43.run(S0602_43.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+2026-06-02 17:44:49.728 ERROR c.k.k.core.context.internal.TestHooker   - ❌ com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_43.run(S0602_43.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n
+2026-06-02 17:44:51.788 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code
+2026-06-02 17:44:51.791 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-06-02 17:44:51.791 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest
+2026-06-02 17:44:51.941 DEBUG  explore the website commerce as a guest - 1: openBrowser("")
+2026-06-02 17:44:51.943 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-06-02 17:44:51.943 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-06-02 17:44:51.945 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-06-02 17:44:53.438 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 67c2d0da29286a08a96acc41826e3df4
+2026-06-02 17:44:53.439 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-06-02 17:44:53.440 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-06-02 17:44:53.440 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-06-02 17:44:53.442 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-06-02 17:44:53.472 DEBUG  explore the website commerce as a guest - 2: custom.BrowserHelper.setupBrowserWindow()
+Running browser: HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-06-02 17:44:53.559 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-06-02 17:44:53.561 DEBUG  explore the website commerce as a guest - 3: setViewPortSize(1920, 1080)
+2026-06-02 17:44:53.606 DEBUG  explore the website commerce as a guest - 4: enableSmartWait()
+2026-06-02 17:44:53.620 DEBUG  explore the website commerce as a guest - 5: navigateToUrl(URL)
+2026-06-02 17:44:57.190 DEBUG  explore the website commerce as a guest - 6: waitForElementVisible(findTestObject("Home Page/header_digibox"), 15)
+2026-06-02 17:44:57.460 DEBUG  explore the website commerce as a guest - 7: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-06-02 17:44:57.732 DEBUG  explore the website commerce as a guest - 8: clickWhenReady("Home Page/Page Iphone/menu-iphone")
+2026-06-02 17:44:57.735 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:44:57.741 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:44:57.989 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:44:58.266 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:44:58.535 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:44:58.538 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:44:58.891 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:44:59.899 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:44:59.916 DEBUG  explore the website commerce as a guest - 9: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max")
+2026-06-02 17:44:59.918 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:44:59.923 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:00.486 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:00.720 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:00.972 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:00.973 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:01.279 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:02.286 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:02.294 DEBUG  explore the website commerce as a guest - 10: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max")
+2026-06-02 17:45:02.297 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:02.302 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:03.163 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:03.403 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:03.651 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:03.653 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:03.975 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:04.990 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:05.001 DEBUG  explore the website commerce as a guest - 11: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 Pro")
+2026-06-02 17:45:05.005 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:05.011 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:05.475 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:05.720 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:05.973 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:05.974 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:06.270 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:07.282 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:07.291 DEBUG  explore the website commerce as a guest - 12: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13")
+2026-06-02 17:45:07.294 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:07.299 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:07.644 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:07.895 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:08.165 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:08.168 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:08.471 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:09.491 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:09.502 DEBUG  explore the website commerce as a guest - 13: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 13 mini")
+2026-06-02 17:45:09.504 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:09.508 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:09.860 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:10.113 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:10.382 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:10.384 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:10.685 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:11.701 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:11.714 DEBUG  explore the website commerce as a guest - 14: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 12")
+2026-06-02 17:45:11.716 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:11.722 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:12.084 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:12.351 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:12.641 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:12.642 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:12.991 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:14.003 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:14.012 DEBUG  explore the website commerce as a guest - 15: clickWhenReady("Home Page/Page Iphone/sub-menu-iPhone 11")
+2026-06-02 17:45:14.017 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:14.023 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:14.473 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:14.706 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:14.977 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:14.980 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:15.277 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:16.289 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:16.303 DEBUG  explore the website commerce as a guest - 16: clickWhenReady("Home Page/Page Ipad/menu-ipad")
+2026-06-02 17:45:16.306 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:16.312 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:16.663 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:16.903 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:17.159 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:17.161 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:17.486 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:18.494 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:18.506 DEBUG  explore the website commerce as a guest - 17: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad pro")
+2026-06-02 17:45:18.509 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:18.517 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:18.978 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:19.210 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:19.458 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:19.459 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:19.741 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:20.752 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:20.759 DEBUG  explore the website commerce as a guest - 18: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad Air")
+2026-06-02 17:45:20.760 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:20.766 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:21.219 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:21.453 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:21.702 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:21.703 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:22.006 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:23.019 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:23.026 DEBUG  explore the website commerce as a guest - 19: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad Mini")
+2026-06-02 17:45:23.028 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:23.034 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:23.508 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:23.735 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:24.015 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:24.017 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:24.334 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:25.339 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:25.351 DEBUG  explore the website commerce as a guest - 20: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad (Gen 10th)")
+2026-06-02 17:45:25.354 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:25.359 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:25.821 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:26.059 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:26.321 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:26.326 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:26.618 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:27.623 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:27.634 DEBUG  explore the website commerce as a guest - 21: clickWhenReady("Home Page/Page Ipad/sub-menu-iPad")
+2026-06-02 17:45:27.636 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:27.643 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:27.993 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:28.251 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:28.520 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:28.522 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:28.814 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:29.829 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:29.842 DEBUG  explore the website commerce as a guest - 22: clickWhenReady("Home Page/Page Apple Watch/menu-Apple Watch")
+2026-06-02 17:45:29.844 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:29.849 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:30.197 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:30.434 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:30.688 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:30.690 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:30.988 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:32.000 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:32.009 DEBUG  explore the website commerce as a guest - 23: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 7")
+2026-06-02 17:45:32.011 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:32.017 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:32.466 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:32.715 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:32.958 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:32.960 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:33.253 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:34.263 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:34.270 DEBUG  explore the website commerce as a guest - 24: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 6")
+2026-06-02 17:45:34.272 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:34.276 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:34.647 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:34.897 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:35.140 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:35.142 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:35.449 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:36.456 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:36.468 DEBUG  explore the website commerce as a guest - 25: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch 3")
+2026-06-02 17:45:36.470 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:36.475 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:36.837 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:37.077 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:37.332 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:37.334 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:37.607 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:38.615 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:38.621 DEBUG  explore the website commerce as a guest - 26: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch SE")
+2026-06-02 17:45:38.623 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:38.627 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:39.084 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:39.318 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:39.560 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:39.561 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:39.841 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:40.848 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:40.856 DEBUG  explore the website commerce as a guest - 27: clickWhenReady("Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra")
+2026-06-02 17:45:40.858 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:40.865 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:41.218 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:41.458 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:41.707 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:41.708 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:42.009 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:43.024 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:43.031 DEBUG  explore the website commerce as a guest - 28: clickWhenReady("Home Page/Page Mac/menu-Mac")
+2026-06-02 17:45:43.033 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:43.038 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:43.491 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:43.726 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:43.971 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:43.973 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:44.253 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:45.264 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:45.270 DEBUG  explore the website commerce as a guest - 29: clickWhenReady("Home Page/Page Mac/sub-menu-MacBook Pro")
+2026-06-02 17:45:45.272 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:45.276 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:45.734 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:45.970 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:46.249 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:46.251 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:46.539 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:47.549 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:47.557 DEBUG  explore the website commerce as a guest - 30: clickWhenReady("Home Page/Page Mac/sub-menu-MacBook Air")
+2026-06-02 17:45:47.559 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:47.569 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:47.925 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:48.154 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:48.393 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:48.394 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:48.675 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:49.685 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:49.691 DEBUG  explore the website commerce as a guest - 31: clickWhenReady("Home Page/Page Airpods/menu-AirPods")
+2026-06-02 17:45:49.693 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:49.698 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:50.139 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:50.372 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:50.619 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:50.622 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:50.905 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:51.924 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:51.935 DEBUG  explore the website commerce as a guest - 32: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods Max")
+2026-06-02 17:45:51.937 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:51.941 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:52.290 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:52.529 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:52.788 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:52.789 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:53.099 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:54.104 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:54.111 DEBUG  explore the website commerce as a guest - 33: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods Pro")
+2026-06-02 17:45:54.115 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:54.118 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:54.570 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:54.804 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:55.045 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:55.047 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:55.357 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:56.373 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:56.387 DEBUG  explore the website commerce as a guest - 34: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods 3rd Generation")
+2026-06-02 17:45:56.389 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:56.400 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:56.744 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:56.979 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:57.223 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:57.225 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:57.519 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:45:58.535 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:45:58.542 DEBUG  explore the website commerce as a guest - 35: clickWhenReady("Home Page/Page Airpods/sub-menu-AirPods 2nd Generation")
+2026-06-02 17:45:58.545 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:45:58.552 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:45:58.888 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:45:59.125 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:45:59.374 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:45:59.376 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:45:59.660 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:46:00.672 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:46:00.684 DEBUG  explore the website commerce as a guest - 36: clickWhenReady("Home Page/Page Accessoris/menu-accessoris")
+2026-06-02 17:46:00.685 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:46:00.690 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:46:01.038 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:46:01.260 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:46:01.522 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:46:01.523 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:46:01.823 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:46:02.826 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:46:02.835 DEBUG  explore the website commerce as a guest - 37: clickWhenReady("Home Page/Page Accessoris/sub-menu-Aksesoris iPhone")
+2026-06-02 17:46:02.838 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:46:02.844 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:46:03.194 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:46:03.425 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:46:03.673 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:46:03.676 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:46:03.981 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:46:04.989 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:46:04.999 DEBUG  explore the website commerce as a guest - 38: clickWhenReady("Home Page/Page Accessoris/sub-menu-Aksesoris iPad")
+2026-06-02 17:46:05.001 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:46:05.004 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:46:05.355 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:46:05.583 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:46:05.832 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:46:05.834 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:46:06.142 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:46:07.153 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:46:07.160 DEBUG  explore the website commerce as a guest - 39: clickWhenReady("Home Page/Page Accessoris/sub-menu-MacBook Accessories")
+2026-06-02 17:46:07.162 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:46:07.167 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:46:07.719 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:46:07.947 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:46:08.186 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:46:08.188 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:46:08.471 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:46:09.485 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:46:09.491 DEBUG  explore the website commerce as a guest - 40: clickWhenReady("Home Page/Page Accessoris/sub-menu-Watch accessories")
+2026-06-02 17:46:09.492 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:46:09.500 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:46:09.948 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:46:10.186 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:46:10.428 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:46:10.430 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:46:10.707 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:46:11.711 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:46:11.723 DEBUG  explore the website commerce as a guest - 41: clickWhenReady("Home Page/Page Promotion/menu-Promotion")
+2026-06-02 17:46:11.725 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:46:11.734 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:46:12.086 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:46:12.326 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:46:12.584 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:46:12.586 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:46:12.865 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:46:13.878 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:46:13.887 DEBUG  explore the website commerce as a guest - 42: clickWhenReady("Home Page/Page Promotion/sub-menu-Digimania August 2022")
+2026-06-02 17:46:13.889 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:46:13.893 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:46:14.125 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:46:14.348 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:46:14.591 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:46:14.593 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:46:14.892 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:46:15.900 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:46:15.906 DEBUG  explore the website commerce as a guest - 43: clickWhenReady("Home Page/Page Promotion/sub-menu-Flash Sale")
+2026-06-02 17:46:15.908 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:46:15.913 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:46:16.254 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:46:16.490 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:46:16.741 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:46:16.742 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:46:17.047 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:46:18.051 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:46:18.057 DEBUG  explore the website commerce as a guest - 44: clickWhenReady("Home Page/Page Enterprice and Education/menu-Enterprise and Education")
+2026-06-02 17:46:18.059 DEBUG  explore the website commerce as a guest - 1: obj = findTestObject(objectPath)
+2026-06-02 17:46:18.064 DEBUG  explore the website commerce as a guest - 2: waitForElementVisible(obj, 15)
+2026-06-02 17:46:18.620 DEBUG  explore the website commerce as a guest - 3: scrollToElement(obj, 5)
+2026-06-02 17:46:18.853 DEBUG  explore the website commerce as a guest - 4: waitForElementClickable(obj, 10)
+2026-06-02 17:46:19.116 DEBUG  explore the website commerce as a guest - 5: try
+2026-06-02 17:46:19.119 DEBUG  explore the website commerce as a guest - 1: click(obj)
+2026-06-02 17:46:19.391 DEBUG  explore the website commerce as a guest - 8: delay(1)
+2026-06-02 17:46:20.397 DEBUG  explore the website commerce as a guest - 9: waitForPageLoad(10)
+2026-06-02 17:46:20.403 DEBUG  explore the website commerce as a guest - 45: takeScreenshot()
+2026-06-02 17:46:20.801 DEBUG  explore the website commerce as a guest - 46: closeBrowser()
+2026-06-02 17:46:21.512 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_43.run(S0602_43.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+2026-06-02 17:46:21.513 ERROR c.k.k.core.context.internal.TestHooker   - ❌ com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_43.run(S0602_43.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n
+2026-06-02 17:46:23.725 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest
+2026-06-02 17:46:23.727 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-06-02 17:46:23.727 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest
+2026-06-02 17:46:23.795 DEBUG r can not access profile page as a guest - 1: openBrowser("")
+2026-06-02 17:46:23.796 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-06-02 17:46:23.796 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-06-02 17:46:23.797 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-06-02 17:46:25.142 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 6b60a61f6b7ce89435c50edf53c45b9e
+2026-06-02 17:46:25.142 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 148.0.7778.179
+2026-06-02 17:46:25.143 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-06-02 17:46:25.143 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-06-02 17:46:25.144 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-06-02 17:46:25.167 DEBUG r can not access profile page as a guest - 2: setViewPortSize(1920, 1080)
+2026-06-02 17:46:25.256 DEBUG r can not access profile page as a guest - 3: enableSmartWait()
+2026-06-02 17:46:25.258 DEBUG r can not access profile page as a guest - 4: navigateToUrl(URL)
+2026-06-02 17:46:27.842 DEBUG r can not access profile page as a guest - 5: custom.BrowserHelper.setupBrowserWindow()
+Running browser: HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-06-02 17:46:27.894 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-06-02 17:46:27.897 DEBUG r can not access profile page as a guest - 6: waitForPageLoad(30)
+2026-06-02 17:46:27.935 DEBUG r can not access profile page as a guest - 7: waitForElementVisible(findTestObject("Home Page/header_digibox"), 30)
+2026-06-02 17:46:28.403 DEBUG r can not access profile page as a guest - 8: verifyElementVisible(findTestObject("Home Page/header_digibox"))
+2026-06-02 17:46:28.643 DEBUG r can not access profile page as a guest - 9: waitForElementClickable(findTestObject("Registration/icon-acount"), 30)
+2026-06-02 17:46:28.938 DEBUG r can not access profile page as a guest - 10: enhancedClick(findTestObject("Registration/icon-acount"))
+2026-06-02 17:46:29.232 DEBUG r can not access profile page as a guest - 11: waitForPageLoad(10)
+2026-06-02 17:46:29.261 DEBUG r can not access profile page as a guest - 12: delay(2)
+2026-06-02 17:46:31.270 DEBUG r can not access profile page as a guest - 13: takeScreenshot()
+2026-06-02 17:46:31.580 DEBUG r can not access profile page as a guest - 14: closeBrowser()
+2026-06-02 17:46:32.089 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_43.run(S0602_43.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+2026-06-02 17:46:32.090 ERROR c.k.k.core.context.internal.TestHooker   - ❌ com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:57)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:69)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0602_43.run(S0602_43.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n
+2026-06-02 17:46:34.184 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest
+2026-06-02 17:46:34.209 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-06-02 17:46:34.209 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/WEB/Guest User/GuestUser_TestSuite
+2026-06-02 17:46:34.209 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
