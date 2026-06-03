@@ -9,7 +9,7 @@ variables:
   # Ensures the job continues through all browser types even if one fails
   CONTINUE_ON_FAILURE: "true"
   # CRITICAL: Increase shared memory size for Chrome Headless in Docker
-  # This prevents the "Out of Memory" crashes on heavy pages like Mapclub
+  # This prevents the "Out of Memory" crashes on heavy pages like Digibox
   GS_OPTIONS: "-Xmx2048m -Xms512m -Djava.shm.size=2g"
 
 katalon_digiboxkh_test:
@@ -34,9 +34,9 @@ katalon_digiboxkh_test:
   script:
     - curl ifconfig.me
     - |
-      # --- MAPCLUB PATH RESOLUTION ---
+      # --- DIGIBOX PATH RESOLUTION ---
       if [ -z "$TEST_PATH" ]; then
-        echo "Running default Mapclub Regression Collection..."
+        echo "Running default Digibox Regression Collection..."
         # Updated Path to the Web Test Suite Collection
         export FINAL_PATH="Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxkh_Web"
         # Since this is a Collection, we use the Collection argument
