@@ -43,7 +43,7 @@ class AutoScreenshotListener {
 
 	/**
 	 * Mendapatkan timestamp saat ini dalam format yyyyMMdd_HHmmss
-	 * @return String timestam
+	 * @return String timestamp
 	 */
 	String getTimestamp() {
 		return new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date())
