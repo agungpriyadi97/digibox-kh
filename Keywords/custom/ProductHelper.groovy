@@ -16,12 +16,12 @@ class ProductHelper {
     def addAnyAvailableProduct() {
 
         WebUI.waitForElementVisible(
-            findTestObject('Home Page/Search/list_product'),
+            findTestObject('WEB/Home Page/Search/list_product'),
             15)
 
         int totalProduct =
             WebUiCommonHelper.findWebElements(
-                findTestObject('Home Page/Search/list_product'),
+                findTestObject('WEB/Home Page/Search/list_product'),
                 15
             ).size()
 
@@ -80,7 +80,7 @@ class ProductHelper {
                 WebUI.waitForPageLoad(10)
 
                 WebUI.waitForElementVisible(
-                    findTestObject('Home Page/Search/list_product'),
+                    findTestObject('WEB/Home Page/Search/list_product'),
                     10)
 
             } catch (Exception e) {

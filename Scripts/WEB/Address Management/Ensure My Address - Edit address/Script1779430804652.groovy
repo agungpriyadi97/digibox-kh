@@ -32,93 +32,93 @@ WebUI.waitForPageLoad(30)
 // ========================
 // VERIFY HOMEPAGE
 // ========================
-WebUI.waitForElementVisible(findTestObject('Home Page/header_digibox'), 30)
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/header_digibox'), 30)
 
 // ========================
 // LOGIN
 // ========================
-WebUI.waitForElementClickable(findTestObject('Registration/icon-acount'), 30)
+WebUI.waitForElementVisible(findTestObject('WEB/Registration/icon-acount'), 30)
 
-WebUI.enhancedClick(findTestObject('Registration/icon-acount'))
+WebUI.mouseOver(findTestObject('WEB/Registration/icon-acount'))
 
-WebUI.waitForElementVisible(findTestObject('Registration/field-account'), 30)
+WebUI.waitForElementVisible(findTestObject('WEB/Registration/field-account'), 30)
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+WebUI.setText(findTestObject('WEB/Registration/field-account'), 'agungpriyadi')
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+WebUI.setText(findTestObject('WEB/Registration/field-Password'), 'Laskar123456')
 
-WebUI.waitForElementClickable(findTestObject('Login/btn-sign in'), 30)
+WebUI.waitForElementClickable(findTestObject('WEB/Login/btn-sign in'), 30)
 
-WebUI.enhancedClick(findTestObject('Login/btn-sign in'))
+WebUI.enhancedClick(findTestObject('WEB/Login/btn-sign in'))
 
 WebUI.waitForPageLoad(30)
 
 // ========================
 // OPEN MY ADDRESS
 // ========================
-WebUI.waitForElementClickable(findTestObject('Registration/icon-acount'), 30)
+WebUI.waitForElementClickable(findTestObject('WEB/Registration/icon-acount'), 30)
 
-WebUI.enhancedClick(findTestObject('Registration/icon-acount'))
+WebUI.enhancedClick(findTestObject('WEB/Registration/icon-acount'))
 
-WebUI.waitForElementClickable(findTestObject('Address Management/Shipping Address/btn_My Address'), 30)
+WebUI.waitForElementClickable(findTestObject('WEB/Address Management/Shipping Address/btn_My Address'), 30)
 
-WebUI.enhancedClick(findTestObject('Address Management/Shipping Address/btn_My Address'))
+WebUI.enhancedClick(findTestObject('WEB/Address Management/Shipping Address/btn_My Address'))
 
 WebUI.waitForPageLoad(30)
 
 // ========================
 // CLICK EDIT
 // ========================
-WebUI.waitForElementClickable(findTestObject('Address Management/Shipping Address/btn_Edit'), 30)
+WebUI.waitForElementClickable(findTestObject('WEB/Address Management/Shipping Address/btn_Edit'), 30)
 
-WebUI.scrollToElement(findTestObject('Address Management/Shipping Address/btn_Edit'), 5)
+WebUI.scrollToElement(findTestObject('WEB/Address Management/Shipping Address/btn_Edit'), 5)
 
-WebUI.enhancedClick(findTestObject('Address Management/Shipping Address/btn_Edit'))
+WebUI.enhancedClick(findTestObject('WEB/Address Management/Shipping Address/btn_Edit'))
 
 // ========================
 // EDIT FORM
 // ========================
-WebUI.waitForElementVisible(findTestObject('Address Management/Edit Address/Field_First Name'), 30)
+WebUI.waitForElementVisible(findTestObject('WEB/Address Management/Edit Address/Field_First Name'), 30)
 
-WebUI.clearText(findTestObject('Address Management/Edit Address/Field_First Name'))
+WebUI.clearText(findTestObject('WEB/Address Management/Edit Address/Field_First Name'))
 
-WebUI.setText(findTestObject('Address Management/Edit Address/Field_First Name'), randomFirstName)
+WebUI.setText(findTestObject('WEB/Address Management/Edit Address/Field_First Name'), randomFirstName)
 
-WebUI.clearText(findTestObject('Address Management/Edit Address/Field_Last Name'))
+WebUI.clearText(findTestObject('WEB/Address Management/Edit Address/Field_Last Name'))
 
-WebUI.setText(findTestObject('Address Management/Edit Address/Field_Last Name'), randomLastName)
+WebUI.setText(findTestObject('WEB/Address Management/Edit Address/Field_Last Name'), randomLastName)
 
-WebUI.clearText(findTestObject('Address Management/Edit Address/Field_Mobile Phone'))
+WebUI.clearText(findTestObject('WEB/Address Management/Edit Address/Field_Mobile Phone'))
 
-WebUI.setText(findTestObject('Address Management/Edit Address/Field_Mobile Phone'), randomPhone)
+WebUI.setText(findTestObject('WEB/Address Management/Edit Address/Field_Mobile Phone'), randomPhone)
 
-WebUI.clearText(findTestObject('Address Management/Edit Address/Field_E-mail'))
+WebUI.clearText(findTestObject('WEB/Address Management/Edit Address/Field_E-mail'))
 
-WebUI.setText(findTestObject('Address Management/Edit Address/Field_E-mail'), randomEmail)
+WebUI.setText(findTestObject('WEB/Address Management/Edit Address/Field_E-mail'), randomEmail)
 
-WebUI.clearText(findTestObject('Address Management/Edit Address/Field_Address'))
+WebUI.clearText(findTestObject('WEB/Address Management/Edit Address/Field_Address'))
 
-WebUI.setText(findTestObject('Address Management/Edit Address/Field_Address'), randomAddress)
+WebUI.setText(findTestObject('WEB/Address Management/Edit Address/Field_Address'), randomAddress)
 
-WebUI.clearText(findTestObject('Address Management/Edit Address/Field_ZipPostal Code'))
+WebUI.clearText(findTestObject('WEB/Address Management/Edit Address/Field_ZipPostal Code'))
 
-WebUI.setText(findTestObject('Address Management/Edit Address/Field_ZipPostal Code'), randomCode)
+WebUI.setText(findTestObject('WEB/Address Management/Edit Address/Field_ZipPostal Code'), randomCode)
 
 // ========================
 // SAVE
 // ========================
-WebUI.scrollToElement(findTestObject('Address Management/Edit Address/button_Save'), 5)
+WebUI.scrollToElement(findTestObject('WEB/Address Management/Edit Address/button_Save'), 5)
 
-WebUI.waitForElementClickable(findTestObject('Address Management/Edit Address/button_Save'), 30)
+WebUI.waitForElementClickable(findTestObject('WEB/Address Management/Edit Address/button_Save'), 30)
 
-WebUI.enhancedClick(findTestObject('Address Management/Edit Address/button_Save'))
+WebUI.enhancedClick(findTestObject('WEB/Address Management/Edit Address/button_Save'))
 
 WebUI.waitForPageLoad(30)
 
 // ========================
 // VERIFY UPDATED
 // ========================
-WebUI.scrollToElement(findTestObject('Address Management/Shipping Address/lbl_Shipping Address'), 5)
+WebUI.scrollToElement(findTestObject('WEB/Address Management/Shipping Address/lbl_Shipping Address'), 5)
 
 TestObject verifyName = new TestObject('verifyName')
 

@@ -19,27 +19,27 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser(GlobalVariable.URL)
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/header_digibox'))
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.click(findTestObject('WEB/Registration/icon-acount'))
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+WebUI.setText(findTestObject('WEB/Registration/field-account'), 'agungpriyadi')
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+WebUI.setText(findTestObject('WEB/Registration/field-Password'), 'Laskar123456')
 
-WebUI.click(findTestObject('Login/btn-sign in'))
+WebUI.click(findTestObject('WEB/Login/btn-sign in'))
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.click(findTestObject('WEB/Registration/icon-acount'))
 
-WebUI.verifyElementVisible(findTestObject('Home Page/verify-succes-acount-login'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/verify-succes-acount-login'))
 
-WebUI.click(findTestObject('Home Page/Search/icon-search'))
+WebUI.click(findTestObject('WEB/Home Page/Search/icon-search'))
 
-WebUI.click(findTestObject('Home Page/Search/field-search'))
+WebUI.click(findTestObject('WEB/Home Page/Search/field-search'))
 
-WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord('iphone 11', Keys.ENTER))
+WebUI.sendKeys(findTestObject('WEB/Home Page/Search/field-search'), Keys.chord('iphone 11', Keys.ENTER))
 
-WebUI.verifyElementVisible(findTestObject('Home Page/Search/verify-product-iphone-11-pro'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/Search/verify-product-iphone-11-pro'))
 
 WebUI.takeScreenshot()
 

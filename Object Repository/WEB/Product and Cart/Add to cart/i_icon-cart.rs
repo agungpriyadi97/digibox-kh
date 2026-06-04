@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_icon-cart</name>
+   <tag></tag>
+   <elementGuidId>398cbfbc-5ddc-476a-8e47-e24f1ddb4694</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='page-view']/div/div[2]/div/div[3]/div/div[4]/a/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.iconfont.icon-cart</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;1 &quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>4178f212-bb88-49fd-85e0-1e8517a5c7f6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>iconfont icon-cart</value>
+      <webElementGuid>3bc28ecb-f84a-4876-bb0a-68214b6dbe25</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;page-view&quot;)/div[@class=&quot;gt-layout page-layout_pc&quot;]/div[@class=&quot;gt-header common-header&quot;]/div[@class=&quot;gt-header_container&quot;]/div[@class=&quot;gt-header_container_right&quot;]/div[@class=&quot;gt-header-right__wrapper&quot;]/div[@class=&quot;shop-cart gt-header-right__cart&quot;]/a[@class=&quot;router-link-exact-active router-link-active&quot;]/i[@class=&quot;iconfont icon-cart&quot;]</value>
+      <webElementGuid>8bd173be-6c86-426b-9180-4be7607287d3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='page-view']/div/div[2]/div/div[3]/div/div[4]/a/i</value>
+      <webElementGuid>ffd5d450-b376-41b0-9188-e01f029ed0da</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/i</value>
+      <webElementGuid>c43c775c-b3a7-40a3-a438-43192f3e1005</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -21,60 +21,60 @@ WebUI.openBrowser(GlobalVariable.URL)
 
 CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/header_digibox'))
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.click(findTestObject('WEB/Registration/icon-acount'))
 
 CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+WebUI.setText(findTestObject('WEB/Registration/field-account'), 'agungpriyadi')
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+WebUI.setText(findTestObject('WEB/Registration/field-Password'), 'Laskar123456')
 
-WebUI.click(findTestObject('Login/btn-sign in'))
+WebUI.click(findTestObject('WEB/Login/btn-sign in'))
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.click(findTestObject('WEB/Registration/icon-acount'))
 
-WebUI.verifyElementVisible(findTestObject('Home Page/verify-succes-acount-login'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/verify-succes-acount-login'))
 
-WebUI.click(findTestObject('Home Page/Search/icon-search'))
+WebUI.click(findTestObject('WEB/Home Page/Search/icon-search'))
 
-WebUI.setText(findTestObject('Home Page/Search/field-search'), 'Iphone 11')
+WebUI.setText(findTestObject('WEB/Home Page/Search/field-search'), 'Iphone 11')
 
-WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('WEB/Home Page/Search/field-search'), Keys.chord(Keys.ENTER))
 
 // ========================================
 // ADD AVAILABLE PRODUCT
 // ========================================
 CustomKeywords.'custom.ProductHelper.addAnyAvailableProduct'()
 
-WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-cart'), 7)
+WebUI.waitForElementPresent(findTestObject('WEB/Product and Cart/Add to cart/i_icon-cart'), 7)
 
-WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
+WebUI.click(findTestObject('WEB/Product and Cart/Add to cart/i_icon-cart'))
 
-WebUI.verifyElementVisible(findTestObject('Checkout/Address/Address Ship To/btn_checkout'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('WEB/Checkout/Address/Address Ship To/btn_checkout'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Checkout/Address/Address Ship To/btn_checkout'))
+WebUI.click(findTestObject('WEB/Checkout/Address/Address Ship To/btn_checkout'))
 
-WebUI.click(findTestObject('Checkout/Order Summary/Online Payment - Cradit Card'))
+WebUI.click(findTestObject('WEB/Checkout/Order Summary/Online Payment - Cradit Card'))
 
-WebUI.check(findTestObject('Checkout/Order Summary/Checkbox__I accept'))
+WebUI.check(findTestObject('WEB/Checkout/Order Summary/Checkbox__I accept'))
 
-WebUI.click(findTestObject('Checkout/Order Summary/button_Checkout_Payment'))
+WebUI.click(findTestObject('WEB/Checkout/Order Summary/button_Checkout_Payment'))
 
-WebUI.waitForElementPresent(findTestObject('Checkout/Page Checkout/iframe_Credit Card'), 10)
+WebUI.waitForElementPresent(findTestObject('WEB/Checkout/Page Checkout/iframe_Credit Card'), 10)
 
-WebUI.click(findTestObject('Checkout/Page Checkout/iframe_Credit Card'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('WEB/Checkout/Page Checkout/iframe_Credit Card'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(10)
 
-WebUI.setText(findTestObject('Checkout/Page Checkout/field_cardNumber'), '5156 8399 3770 6777')
+WebUI.setText(findTestObject('WEB/Checkout/Page Checkout/field_cardNumber'), '5156 8399 3770 6777')
 
-WebUI.setText(findTestObject('Checkout/Page Checkout/field_cardExp'), '01/30')
+WebUI.setText(findTestObject('WEB/Checkout/Page Checkout/field_cardExp'), '01/30')
 
-WebUI.setText(findTestObject('Checkout/Page Checkout/field_cvv2'), '993')
+WebUI.setText(findTestObject('WEB/Checkout/Page Checkout/field_cvv2'), '993')
 
-WebUI.click(findTestObject('Checkout/Order Summary/btn-closed-pay'))
+WebUI.click(findTestObject('WEB/Checkout/Order Summary/btn-closed-pay'))
 
 WebUI.waitForAlert(10)
 
@@ -84,27 +84,27 @@ WebUI.comment(alertText)
 
 WebUI.acceptAlert()
 
-WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/track your order'), 7)
+WebUI.waitForElementVisible(findTestObject('WEB/Checkout/Track Order/track your order'), 7)
 
-WebUI.click(findTestObject('Checkout/Track Order/track your order'))
+WebUI.click(findTestObject('WEB/Checkout/Track Order/track your order'))
 
-WebUI.click(findTestObject('Checkout/Track Order/sp-order-list-item'))
+WebUI.click(findTestObject('WEB/Checkout/Track Order/sp-order-list-item'))
 
-WebUI.scrollToElement(findTestObject('Checkout/Track Order/btn-cencel'), 10)
+WebUI.scrollToElement(findTestObject('WEB/Checkout/Track Order/btn-cencel'), 10)
 
-WebUI.click(findTestObject('Checkout/Track Order/btn-cencel'))
+WebUI.click(findTestObject('WEB/Checkout/Track Order/btn-cencel'))
 
-WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/button_OK'), 7)
+WebUI.waitForElementVisible(findTestObject('WEB/Checkout/Track Order/button_OK'), 7)
 
-WebUI.click(findTestObject('Checkout/Track Order/button_OK'))
+WebUI.click(findTestObject('WEB/Checkout/Track Order/button_OK'))
 
-WebUI.waitForElementVisible(findTestObject('Checkout/Track Order/Message_Success'), 10)
+WebUI.waitForElementVisible(findTestObject('WEB/Checkout/Track Order/Message_Success'), 10)
 
-WebUI.verifyElementVisible(findTestObject('Checkout/Track Order/Message_Success'))
+WebUI.verifyElementVisible(findTestObject('WEB/Checkout/Track Order/Message_Success'))
 
-WebUI.scrollToElement(findTestObject('Checkout/Track Order/text_order_status'), 5)
+WebUI.scrollToElement(findTestObject('WEB/Checkout/Track Order/text_order_status'), 5)
 
-WebUI.verifyElementText(findTestObject('Checkout/Track Order/text_order_status'), 'CANCEL')
+WebUI.verifyElementText(findTestObject('WEB/Checkout/Track Order/text_order_status'), 'CANCEL')
 
 WebUI.takeScreenshot()
 

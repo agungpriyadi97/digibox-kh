@@ -20,48 +20,48 @@ WebUI.waitForPageLoad(30)
 // ========================
 // VERIFY HOMEPAGE
 // ========================
-WebUI.waitForElementVisible(findTestObject('Home Page/header_digibox'), 30)
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/header_digibox'), 30)
 
 // ========================
 // LOGIN
 // ========================
-WebUI.waitForElementClickable(findTestObject('Registration/icon-acount'), 30)
+WebUI.waitForElementClickable(findTestObject('WEB/Registration/icon-acount'), 30)
 
-WebUI.enhancedClick(findTestObject('Registration/icon-acount'))
+WebUI.enhancedClick(findTestObject('WEB/Registration/icon-acount'))
 
-WebUI.waitForElementVisible(findTestObject('Registration/field-account'), 30)
+WebUI.waitForElementVisible(findTestObject('WEB/Registration/field-account'), 30)
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+WebUI.setText(findTestObject('WEB/Registration/field-account'), 'agungpriyadi')
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+WebUI.setText(findTestObject('WEB/Registration/field-Password'), 'Laskar123456')
 
-WebUI.waitForElementClickable(findTestObject('Login/btn-sign in'), 30)
+WebUI.waitForElementClickable(findTestObject('WEB/Login/btn-sign in'), 30)
 
-WebUI.enhancedClick(findTestObject('Login/btn-sign in'))
+WebUI.enhancedClick(findTestObject('WEB/Login/btn-sign in'))
 
 WebUI.waitForPageLoad(30)
 
 // ========================
 // OPEN MY ADDRESS
 // ========================
-WebUI.waitForElementClickable(findTestObject('Registration/icon-acount'), 30)
+WebUI.waitForElementClickable(findTestObject('WEB/Registration/icon-acount'), 30)
 
-WebUI.enhancedClick(findTestObject('Registration/icon-acount'))
+WebUI.enhancedClick(findTestObject('WEB/Registration/icon-acount'))
 
-WebUI.waitForElementClickable(findTestObject('Address Management/Shipping Address/btn_My Address'), 30)
+WebUI.waitForElementClickable(findTestObject('WEB/Address Management/Shipping Address/btn_My Address'), 30)
 
-WebUI.enhancedClick(findTestObject('Address Management/Shipping Address/btn_My Address'))
+WebUI.enhancedClick(findTestObject('WEB/Address Management/Shipping Address/btn_My Address'))
 
 WebUI.waitForPageLoad(30)
 
 // ========================
 // DELETE ADDRESS
 // ========================
-WebUI.waitForElementClickable(findTestObject('Address Management/Shipping Address/btn_Delete'), 30)
+WebUI.waitForElementClickable(findTestObject('WEB/Address Management/Shipping Address/btn_Delete'), 30)
 
-WebUI.scrollToElement(findTestObject('Address Management/Shipping Address/btn_Delete'), 5)
+WebUI.scrollToElement(findTestObject('WEB/Address Management/Shipping Address/btn_Delete'), 5)
 
-WebUI.enhancedClick(findTestObject('Address Management/Shipping Address/btn_Delete'))
+WebUI.enhancedClick(findTestObject('WEB/Address Management/Shipping Address/btn_Delete'))
 
 // ========================
 // POPUP CONFIRMATION OK

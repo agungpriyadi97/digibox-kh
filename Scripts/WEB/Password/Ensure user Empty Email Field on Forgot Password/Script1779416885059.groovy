@@ -30,40 +30,40 @@ WebUI.waitForPageLoad(20)
 // ==========================
 // VERIFY HOME
 // ==========================
-WebUI.waitForElementVisible(findTestObject('Home Page/header_digibox'), 15)
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/header_digibox'), 15)
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/header_digibox'))
 
 // ==========================
 // NAVIGATION
 // ==========================
-WebUI.waitForElementClickable(findTestObject('Registration/icon-acount'), 10)
+WebUI.waitForElementClickable(findTestObject('WEB/Registration/icon-acount'), 10)
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.click(findTestObject('WEB/Registration/icon-acount'))
 
-WebUI.waitForElementClickable(findTestObject('Password/Page_Forgot Password/btn_Forgot passwords'), 10)
+WebUI.waitForElementClickable(findTestObject('WEB/Password/Page_Forgot Password/btn_Forgot passwords'), 10)
 
-WebUI.click(findTestObject('Password/Page_Forgot Password/btn_Forgot passwords'))
+WebUI.click(findTestObject('WEB/Password/Page_Forgot Password/btn_Forgot passwords'))
 
 // ==========================
 // INPUT EMAIL (CI SAFE)
 // ==========================
-WebUI.waitForElementVisible(findTestObject('Password/Page_Forgot Password/txtField_Email'), 10)
+WebUI.waitForElementVisible(findTestObject('WEB/Password/Page_Forgot Password/txtField_Email'), 10)
 
 // dibuat valid biar tidak gagal backend di CI
-WebUI.setText(findTestObject('Password/Page_Forgot Password/txtField_Email'), '')
+WebUI.setText(findTestObject('WEB/Password/Page_Forgot Password/txtField_Email'), '')
 
 // ==========================
 // EMPTY PASSWORD CASE
 // ==========================
 // langsung kosong (sudah default)
-WebUI.waitForElementVisible(findTestObject('Password/Page_Forgot Password/txtField_New Password'), 10)
+WebUI.waitForElementVisible(findTestObject('WEB/Password/Page_Forgot Password/txtField_New Password'), 10)
 
-WebUI.setText(findTestObject('Password/Page_Forgot Password/txtField_New Password'), '')
+WebUI.setText(findTestObject('WEB/Password/Page_Forgot Password/txtField_New Password'), '')
 
-WebUI.waitForElementClickable(findTestObject('Password/Page_Forgot Password/btn_Reset Password'), 10)
+WebUI.waitForElementClickable(findTestObject('WEB/Password/Page_Forgot Password/btn_Reset Password'), 10)
 
-WebUI.click(findTestObject('Password/Page_Forgot Password/btn_Reset Password'))
+WebUI.click(findTestObject('WEB/Password/Page_Forgot Password/btn_Reset Password'))
 
 // ==========================
 // VALIDATION CHECK (CI SAFE)

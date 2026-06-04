@@ -35,37 +35,37 @@ WebUI.waitForPageLoad(20)
 // ==========================
 // VERIFY HOME PAGE
 // ==========================
-WebUI.waitForElementVisible(findTestObject('Home Page/header_digibox'), 15)
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/header_digibox'), 15)
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/header_digibox'))
 
 // ==========================
 // NAVIGATE TO FORGOT PASSWORD
 // ==========================
-WebUI.waitForElementClickable(findTestObject('Registration/icon-acount'), 10)
+WebUI.waitForElementClickable(findTestObject('WEB/Registration/icon-acount'), 10)
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.click(findTestObject('WEB/Registration/icon-acount'))
 
-WebUI.waitForElementClickable(findTestObject('Password/Page_Forgot Password/btn_Forgot passwords'), 10)
+WebUI.waitForElementClickable(findTestObject('WEB/Password/Page_Forgot Password/btn_Forgot passwords'), 10)
 
-WebUI.click(findTestObject('Password/Page_Forgot Password/btn_Forgot passwords'))
+WebUI.click(findTestObject('WEB/Password/Page_Forgot Password/btn_Forgot passwords'))
 
 // ==========================
 // INPUT EMAIL (CI SAFE)
 // ==========================
-WebUI.waitForElementVisible(findTestObject('Password/Page_Forgot Password/txtField_Email'), 10)
+WebUI.waitForElementVisible(findTestObject('WEB/Password/Page_Forgot Password/txtField_Email'), 10)
 
 // dibuat valid biar CI konsisten
 def email = 'agung.priyadi@gtech.digital'
 
-WebUI.setText(findTestObject('Password/Page_Forgot Password/txtField_Email'), email)
+WebUI.setText(findTestObject('WEB/Password/Page_Forgot Password/txtField_Email'), email)
 
 // ==========================
 // SEND VALIDATION CODE
 // ==========================
-WebUI.waitForElementClickable(findTestObject('Password/Page_Forgot Password/btn_Send validation code to email'), 10)
+WebUI.waitForElementClickable(findTestObject('WEB/Password/Page_Forgot Password/btn_Send validation code to email'), 10)
 
-WebUI.click(findTestObject('Password/Page_Forgot Password/btn_Send validation code to email'))
+WebUI.click(findTestObject('WEB/Password/Page_Forgot Password/btn_Send validation code to email'))
 
 // ==========================
 // VERIFY SUCCESS MESSAGE (ROBUST)
@@ -85,23 +85,23 @@ if (!(successMsg)) {
 // ==========================
 // INPUT VALIDATION CODE
 // ==========================
-WebUI.waitForElementVisible(findTestObject('Password/Page_Forgot Password/txtField_Validation Code'), 10)
+WebUI.waitForElementVisible(findTestObject('WEB/Password/Page_Forgot Password/txtField_Validation Code'), 10)
 
-WebUI.setText(findTestObject('Password/Page_Forgot Password/txtField_Validation Code'), '123456')
+WebUI.setText(findTestObject('WEB/Password/Page_Forgot Password/txtField_Validation Code'), '123456')
 
 // ==========================
 // INPUT PASSWORD
 // ==========================
-WebUI.waitForElementVisible(findTestObject('Password/Page_Forgot Password/txtField_New Password'), 10)
+WebUI.waitForElementVisible(findTestObject('WEB/Password/Page_Forgot Password/txtField_New Password'), 10)
 
-WebUI.setText(findTestObject('Password/Page_Forgot Password/txtField_New Password'), 'Laskar123456')
+WebUI.setText(findTestObject('WEB/Password/Page_Forgot Password/txtField_New Password'), 'Laskar123456')
 
 // ==========================
 // CLICK RESET PASSWORD
 // ==========================
-WebUI.waitForElementClickable(findTestObject('Password/Page_Forgot Password/btn_Reset Password'), 10)
+WebUI.waitForElementClickable(findTestObject('WEB/Password/Page_Forgot Password/btn_Reset Password'), 10)
 
-WebUI.click(findTestObject('Password/Page_Forgot Password/btn_Reset Password'))
+WebUI.click(findTestObject('WEB/Password/Page_Forgot Password/btn_Reset Password'))
 
 // ==========================
 // VERIFY INVALID CODE (CI SAFE)

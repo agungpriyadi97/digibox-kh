@@ -19,36 +19,36 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser(GlobalVariable.URL)
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/header_digibox'))
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.click(findTestObject('WEB/Registration/icon-acount'))
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+WebUI.setText(findTestObject('WEB/Registration/field-account'), 'agungpriyadi')
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+WebUI.setText(findTestObject('WEB/Registration/field-Password'), 'Laskar123456')
 
-WebUI.click(findTestObject('Login/btn-sign in'))
+WebUI.click(findTestObject('WEB/Login/btn-sign in'))
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.click(findTestObject('WEB/Registration/icon-acount'))
 
-WebUI.verifyElementVisible(findTestObject('Home Page/verify-succes-acount-login'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/verify-succes-acount-login'))
 
-WebUI.click(findTestObject('Home Page/Search/icon-search'))
+WebUI.click(findTestObject('WEB/Home Page/Search/icon-search'))
 
-WebUI.setText(findTestObject('Home Page/Search/field-search'), 'Iphone 11')
+WebUI.setText(findTestObject('WEB/Home Page/Search/field-search'), 'Iphone 11')
 
-WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('WEB/Home Page/Search/field-search'), Keys.chord(Keys.ENTER))
 
 // ========================================
 // ADD AVAILABLE PRODUCT
 // ========================================
 CustomKeywords.'custom.ProductHelper.addAnyAvailableProduct'()
 
-WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
+WebUI.click(findTestObject('WEB/Product and Cart/Add to cart/i_icon-cart'))
 
-WebUI.click(findTestObject('Product and Cart/Add to cart/btn-trash'))
+WebUI.click(findTestObject('WEB/Product and Cart/Add to cart/btn-trash'))
 
-WebUI.click(findTestObject('Product and Cart/Add to cart/btn-confrim-yes'))
+WebUI.click(findTestObject('WEB/Product and Cart/Add to cart/btn-confrim-yes'))
 
 WebUI.closeBrowser()
 

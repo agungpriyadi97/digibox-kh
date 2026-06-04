@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>icon_ShowPassword</name>
+   <tag></tag>
+   <elementGuidId>ad9e53bc-d36a-4385-ac92-4dc7e0e07b35</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='page-view']/div/div[3]/section/div[2]/form[2]/div/div[2]/div/div/span[2]/span/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.el-input__icon.el-icon-view.el-input__clear</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>form >> internal:has-text=&quot;Reset Password&quot;i >> i >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>6999343b-5243-4f4f-8b83-26986eec87f1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>el-input__icon el-icon-view el-input__clear</value>
+      <webElementGuid>5c13f3df-b0ea-48fc-893e-0d322fce8294</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;page-view&quot;)/div[@class=&quot;gt-layout page-layout_pc&quot;]/div[@class=&quot;digibox-reset-pwd-container page-view__child&quot;]/section[@class=&quot;reset-password-pages&quot;]/div[@class=&quot;reset-password-pages__right&quot;]/form[@class=&quot;el-form&quot;]/div[1]/div[@class=&quot;el-form-item gt-form-item is-required&quot;]/div[@class=&quot;el-form-item__content&quot;]/div[@class=&quot;reset-password-pages_password el-input el-input--prefix el-input--suffix gt-input gt-radius-undefined gt-border-undefined gt-borderColor-undefined&quot;]/span[@class=&quot;el-input__suffix&quot;]/span[@class=&quot;el-input__suffix-inner&quot;]/i[@class=&quot;el-input__icon el-icon-view el-input__clear&quot;]</value>
+      <webElementGuid>be2ed4f1-842e-49f2-87d1-7a5d081eb452</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='page-view']/div/div[3]/section/div[2]/form[2]/div/div[2]/div/div/span[2]/span/i</value>
+      <webElementGuid>46cf9690-4f03-4a74-ad92-845c6637543e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]/span/i</value>
+      <webElementGuid>341b833b-9fd3-4841-b5f2-de83d972edc0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -39,9 +39,9 @@ WebUI.waitForPageLoad(30)
 // ==========================================
 // VERIFY HOMEPAGE
 // ==========================================
-WebUI.waitForElementVisible(findTestObject('Home Page/header_digibox'), 30)
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/header_digibox'), 30)
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/header_digibox'))
 
 // ==========================================
 // MENU IPHONE

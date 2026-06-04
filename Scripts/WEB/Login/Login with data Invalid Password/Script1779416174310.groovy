@@ -36,35 +36,35 @@ WebUI.waitForPageLoad(30)
 // ========================
 // VERIFY HOMEPAGE
 // ========================
-WebUI.waitForElementVisible(findTestObject('Home Page/header_digibox'), 30)
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/header_digibox'), 30)
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/header_digibox'))
 
 // ========================
 // OPEN LOGIN
 // ========================
-WebUI.waitForElementClickable(findTestObject('Registration/icon-acount'), 30)
+WebUI.waitForElementClickable(findTestObject('WEB/Registration/icon-acount'), 30)
 
-WebUI.enhancedClick(findTestObject('Registration/icon-acount'))
+WebUI.enhancedClick(findTestObject('WEB/Registration/icon-acount'))
 
 // ========================
 // INPUT VALID USERNAME
 // ========================
-WebUI.waitForElementVisible(findTestObject('Registration/field-account'), 30)
+WebUI.waitForElementVisible(findTestObject('WEB/Registration/field-account'), 30)
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+WebUI.setText(findTestObject('WEB/Registration/field-account'), 'agungpriyadi')
 
 // ========================
 // INPUT INVALID PASSWORD
 // ========================
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar1234568')
+WebUI.setText(findTestObject('WEB/Registration/field-Password'), 'Laskar1234568')
 
 // ========================
 // CLICK SIGN IN
 // ========================
-WebUI.waitForElementClickable(findTestObject('Login/btn-sign in'), 30)
+WebUI.waitForElementClickable(findTestObject('WEB/Login/btn-sign in'), 30)
 
-WebUI.enhancedClick(findTestObject('Login/btn-sign in'))
+WebUI.enhancedClick(findTestObject('WEB/Login/btn-sign in'))
 
 // ========================
 // VERIFY ERROR MESSAGE

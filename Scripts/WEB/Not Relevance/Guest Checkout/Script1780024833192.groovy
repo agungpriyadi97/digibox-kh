@@ -38,91 +38,91 @@ CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 WebUI.navigateToUrl(GlobalVariable.URL)
 
 // Verify homepage
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/header_digibox'))
 
 // Search product
-WebUI.click(findTestObject('Home Page/Search/icon-search'))
+WebUI.click(findTestObject('WEB/Home Page/Search/icon-search'))
 
-WebUI.setText(findTestObject('Home Page/Search/field-search'), 'iphone 11')
+WebUI.setText(findTestObject('WEB/Home Page/Search/field-search'), 'iphone 11')
 
-WebUI.sendKeys(findTestObject('Home Page/Search/field-search'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('WEB/Home Page/Search/field-search'), Keys.chord(Keys.ENTER))
 
 // ========================================
 // ADD AVAILABLE PRODUCT
 // ========================================
 CustomKeywords.'custom.ProductHelper.addAnyAvailableProduct'()
 
-WebUI.click(findTestObject('Product and Cart/Add to cart/button_Add to Cart'))
+WebUI.click(findTestObject('WEB/Product and Cart/Add to cart/button_Add to Cart'))
 
-WebUI.waitForElementPresent(findTestObject('Product and Cart/Add to cart/i_icon-cart'), 10)
+WebUI.waitForElementPresent(findTestObject('WEB/Product and Cart/Add to cart/i_icon-cart'), 10)
 
 // Open cart
-WebUI.click(findTestObject('Product and Cart/Add to cart/i_icon-cart'))
+WebUI.click(findTestObject('WEB/Product and Cart/Add to cart/i_icon-cart'))
 
 // Checkout
-WebUI.verifyElementVisible(findTestObject('Checkout/Address/Address Ship To/btn_checkout'))
+WebUI.verifyElementVisible(findTestObject('WEB/Checkout/Address/Address Ship To/btn_checkout'))
 
-WebUI.click(findTestObject('Checkout/Address/Address Ship To/btn_checkout'))
+WebUI.click(findTestObject('WEB/Checkout/Address/Address Ship To/btn_checkout'))
 
 // Input guest email
-WebUI.waitForElementVisible(findTestObject('Checkout/Checkout guest/field_email'), 10)
+WebUI.waitForElementVisible(findTestObject('WEB/Checkout/Checkout guest/field_email'), 10)
 
-WebUI.setText(findTestObject('Checkout/Checkout guest/field_email'), randomEmail)
+WebUI.setText(findTestObject('WEB/Checkout/Checkout guest/field_email'), randomEmail)
 
 // Continue
-WebUI.click(findTestObject('Checkout/Checkout guest/btn_continue'))
+WebUI.click(findTestObject('WEB/Checkout/Checkout guest/btn_continue'))
 
 // Fill address form with random data
-WebUI.waitForElementVisible(findTestObject('Checkout/Address/Address Ship To/field_First Name'), 10)
+WebUI.waitForElementVisible(findTestObject('WEB/Checkout/Address/Address Ship To/field_First Name'), 10)
 
-WebUI.setText(findTestObject('Checkout/Address/Address Ship To/field_First Name'), randomFirstName)
+WebUI.setText(findTestObject('WEB/Checkout/Address/Address Ship To/field_First Name'), randomFirstName)
 
-WebUI.setText(findTestObject('Checkout/Address/Address Ship To/field_Last Name'), randomLastName)
+WebUI.setText(findTestObject('WEB/Checkout/Address/Address Ship To/field_Last Name'), randomLastName)
 
-WebUI.setText(findTestObject('Checkout/Address/Address Ship To/field_mobile phone'), randomPhone)
+WebUI.setText(findTestObject('WEB/Checkout/Address/Address Ship To/field_mobile phone'), randomPhone)
 
-WebUI.setText(findTestObject('Checkout/Address/Address Ship To/field_Address'), randomAddress)
+WebUI.setText(findTestObject('WEB/Checkout/Address/Address Ship To/field_Address'), randomAddress)
 
-WebUI.setText(findTestObject('Checkout/Address/Address Ship To/input_ZipPostal Code'), randomCode)
+WebUI.setText(findTestObject('WEB/Checkout/Address/Address Ship To/input_ZipPostal Code'), randomCode)
 
-WebUI.click(findTestObject('Checkout/Address/Address Ship To/input_Province'))
+WebUI.click(findTestObject('WEB/Checkout/Address/Address Ship To/input_Province'))
 
-WebUI.click(findTestObject('Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Checkout/Address/Address Ship To/input_Select Province'))
+WebUI.click(findTestObject('WEB/Checkout/Address/Address Ship To/input_Select Province'))
 
-WebUI.click(findTestObject('Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province'))
+WebUI.click(findTestObject('WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province'))
 
-WebUI.click(findTestObject('Checkout/Address/Address Ship To/input_Districts'))
+WebUI.click(findTestObject('WEB/Checkout/Address/Address Ship To/input_Districts'))
 
-WebUI.click(findTestObject('Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts'))
+WebUI.click(findTestObject('WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts'))
 
-WebUI.click(findTestObject('Checkout/Address/Address Ship To/btn-save'))
+WebUI.click(findTestObject('WEB/Checkout/Address/Address Ship To/btn-save'))
 
 // Select payment
-WebUI.click(findTestObject('Checkout/Order Summary/Online Payment - WeChat'))
+WebUI.click(findTestObject('WEB/Checkout/Order Summary/Online Payment - WeChat'))
 
 // Accept terms
-WebUI.check(findTestObject('Checkout/Order Summary/Checkbox__I accept'))
+WebUI.check(findTestObject('WEB/Checkout/Order Summary/Checkbox__I accept'))
 
-WebUI.click(findTestObject('Checkout/Order Summary/button_Checkout_Payment'))
+WebUI.click(findTestObject('WEB/Checkout/Order Summary/button_Checkout_Payment'))
 
-WebUI.waitForElementPresent(findTestObject('Checkout/Order Summary/iframe_payment_online'), 7)
+WebUI.waitForElementPresent(findTestObject('WEB/Checkout/Order Summary/iframe_payment_online'), 7)
 
 // Payment iframe
-WebUI.click(findTestObject('Checkout/Order Summary/iframe_payment_online'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('WEB/Checkout/Order Summary/iframe_payment_online'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(10)
 
-WebUI.click(findTestObject('Checkout/Order Summary/button_Approve'))
+WebUI.click(findTestObject('WEB/Checkout/Order Summary/button_Approve'))
 
 WebUI.delay(10)
 
-WebUI.waitForElementPresent(findTestObject('Checkout/Order Summary/button_Continue shopping'), 10)
+WebUI.waitForElementPresent(findTestObject('WEB/Checkout/Order Summary/button_Continue shopping'), 10)
 
-WebUI.verifyElementPresent(findTestObject('Checkout/Order Summary/button_Continue shopping'), 0)
+WebUI.verifyElementPresent(findTestObject('WEB/Checkout/Order Summary/button_Continue shopping'), 0)
 
-WebUI.click(findTestObject('Checkout/Order Summary/button_Continue shopping'))
+WebUI.click(findTestObject('WEB/Checkout/Order Summary/button_Continue shopping'))
 
 // Logs for report
 WebUI.comment('Email      : ' + randomEmail)
