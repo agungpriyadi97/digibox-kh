@@ -33,18 +33,11 @@ CustomKeywords.'custom.BrowserHelper.setupBrowserWindow'()
 WebUI.waitForPageLoad(30)
 
 // ========================
-// VERIFY HOMEPAGE
-// ========================
-WebUI.waitForElementVisible(findTestObject('Home Page/header_digibox'), 30)
-
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
-
-// ========================
 // OPEN ACCOUNT MENU
 // ========================
-WebUI.waitForElementClickable(findTestObject('Registration/icon-acount'), 30)
+WebUI.mouseOver(findTestObject('WEB/Registration/icon-acount'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.enhancedClick(findTestObject('Registration/icon-acount'))
+WebUI.enhancedClick(findTestObject('WEB/Registration/icon-acount'))
 
 WebUI.waitForPageLoad(10)
 

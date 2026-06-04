@@ -29,27 +29,27 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 // ==========================
 // VERIFY HOME PAGE
 // ==========================
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/header_digibox'))
 
 // ==========================
 // OPEN REGISTER
 // ==========================
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.click(findTestObject('WEB/Registration/icon-acount'))
 
 CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
 
-WebUI.click(findTestObject('Registration/btn-create-new-account'))
+WebUI.click(findTestObject('WEB/Registration/btn-create-new-account'))
 
 // ==========================
 // SCENARIO 1: INVALID EMAIL + EMPTY FIELDS
 // ==========================
-WebUI.setText(findTestObject('Registration/field-Email'), 'salahemailgmail.com')
+WebUI.setText(findTestObject('WEB/Registration/field-Email'), 'salahemailgmail.com')
 
-WebUI.setText(findTestObject('Registration/field-account'), '')
+WebUI.setText(findTestObject('WEB/Registration/field-account'), '')
 
-WebUI.setText(findTestObject('Registration/field-Password'), '')
+WebUI.setText(findTestObject('WEB/Registration/field-Password'), '')
 
-WebUI.click(findTestObject('Registration/btn-sign-up'))
+WebUI.click(findTestObject('WEB/Registration/btn-sign-up'))
 
 WebUI.delay(2)
 
@@ -68,13 +68,13 @@ if (!(emailError) || !(requiredError)) {
 // ==========================
 // SCENARIO 2: PASSWORD LENGTH VALIDATION
 // ==========================
-WebUI.setText(findTestObject('Registration/field-Email'), 'agung.priyadi@gtech.digital')
+WebUI.setText(findTestObject('WEB/Registration/field-Email'), 'agung.priyadi@gtech.digital')
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+WebUI.setText(findTestObject('WEB/Registration/field-account'), 'agungpriyadi')
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Las')
+WebUI.setText(findTestObject('WEB/Registration/field-Password'), 'Las')
 
-WebUI.click(findTestObject('Registration/btn-sign-up'))
+WebUI.click(findTestObject('WEB/Registration/btn-sign-up'))
 
 WebUI.delay(2)
 

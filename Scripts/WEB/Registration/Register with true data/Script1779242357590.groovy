@@ -39,34 +39,34 @@ WebUI.waitForPageLoad(20)
 // ==========================
 // VERIFY HOME
 // ==========================
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/header_digibox'))
 
 // ==========================
 // OPEN REGISTER
 // ==========================
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.click(findTestObject('WEB/Registration/icon-acount'))
 
 CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
 
-WebUI.waitForElementClickable(findTestObject('Registration/btn-create-new-account'), 10)
+WebUI.waitForElementClickable(findTestObject('WEB/Registration/btn-create-new-account'), 10)
 
-WebUI.click(findTestObject('Registration/btn-create-new-account'))
+WebUI.click(findTestObject('WEB/Registration/btn-create-new-account'))
 
 // ==========================
 // INPUT DATA
 // ==========================
-WebUI.setText(findTestObject('Registration/field-Email'), randomEmail)
+WebUI.setText(findTestObject('WEB/Registration/field-Email'), randomEmail)
 
-WebUI.setText(findTestObject('Registration/field-account'), randomUsername)
+WebUI.setText(findTestObject('WEB/Registration/field-account'), randomUsername)
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+WebUI.setText(findTestObject('WEB/Registration/field-Password'), 'Laskar123456')
 
 // ==========================
 // SUBMIT REGISTER
 // ==========================
-WebUI.waitForElementClickable(findTestObject('Registration/btn-sign-up'), 10)
+WebUI.waitForElementClickable(findTestObject('WEB/Registration/btn-sign-up'), 10)
 
-WebUI.click(findTestObject('Registration/btn-sign-up'))
+WebUI.click(findTestObject('WEB/Registration/btn-sign-up'))
 
 // stabilizer CI (UI async render)
 WebUI.delay(2)
@@ -75,7 +75,7 @@ WebUI.delay(2)
 // VERIFY RESULT (IMPORTANT)
 // ==========================
 // kalau sukses biasanya redirect / element berubah
-boolean isStillOnRegister = WebUI.verifyElementPresent(findTestObject('Registration/btn-sign-up'), 5, FailureHandling.OPTIONAL)
+boolean isStillOnRegister = WebUI.verifyElementPresent(findTestObject('WEB/Registration/btn-sign-up'), 5, FailureHandling.OPTIONAL)
 
 // fallback validation
 if (isStillOnRegister) {

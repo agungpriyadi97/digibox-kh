@@ -19,15 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser(GlobalVariable.URL)
 
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.click(findTestObject('WEB/Registration/icon-acount'))
 
-WebUI.click(findTestObject('Home Page/Google/button-sign in with google'))
+WebUI.click(findTestObject('WEB/Home Page/Google/button-sign in with google'))
 
 WebUI.switchToWindowTitle('Sign in - Google Accounts')
 
-WebUI.setText(findTestObject('Home Page/Google/input_email'), 'agungpriyadi97@gmail.com')
+WebUI.setText(findTestObject('WEB/Home Page/Google/input_email'), 'agungpriyadi97@gmail.com')
 
-WebUI.sendKeys(findTestObject('Home Page/Google/input_email'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('WEB/Home Page/Google/input_email'), Keys.chord(Keys.ENTER))
 
 WebUI.takeScreenshot()
 

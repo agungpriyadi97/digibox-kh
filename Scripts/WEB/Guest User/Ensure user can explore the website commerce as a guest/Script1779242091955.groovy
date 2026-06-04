@@ -37,9 +37,9 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 // ==========================
 // VERIFY HOMEPAGE
 // ==========================
-WebUI.waitForElementVisible(findTestObject('Home Page/header_digibox'), 15)
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/header_digibox'), 15)
 
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/header_digibox'))
 
 // ==========================
 // MENU IPHONE

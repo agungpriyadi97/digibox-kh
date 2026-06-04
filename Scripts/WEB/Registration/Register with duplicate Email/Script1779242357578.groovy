@@ -30,12 +30,12 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 // ==========================
 // VERIFY HOME PAGE
 // ==========================
-WebUI.verifyElementVisible(findTestObject('Home Page/header_digibox'))
+WebUI.verifyElementVisible(findTestObject('WEB/Home Page/header_digibox'))
 
 // ==========================
 // OPEN ACCOUNT MENU
 // ==========================
-WebUI.click(findTestObject('Registration/icon-acount'))
+WebUI.click(findTestObject('WEB/Registration/icon-acount'))
 
 // handle popup jika muncul (safe, tidak ganggu flow)
 CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
@@ -43,25 +43,25 @@ CustomKeywords.'custom.BrowserHelper.closeFirefoxPopup'()
 // ==========================
 // GO TO REGISTER PAGE
 // ==========================
-WebUI.waitForElementClickable(findTestObject('Registration/btn-create-new-account'), 10)
+WebUI.waitForElementClickable(findTestObject('WEB/Registration/btn-create-new-account'), 10)
 
-WebUI.click(findTestObject('Registration/btn-create-new-account'))
+WebUI.click(findTestObject('WEB/Registration/btn-create-new-account'))
 
 // ==========================
 // INPUT DATA
 // ==========================
-WebUI.setText(findTestObject('Registration/field-Email'), 'agung.priyadi@gtech.digital')
+WebUI.setText(findTestObject('WEB/Registration/field-Email'), 'agung.priyadi@gtech.digital')
 
-WebUI.setText(findTestObject('Registration/field-account'), 'agungpriyadi')
+WebUI.setText(findTestObject('WEB/Registration/field-account'), 'agungpriyadi')
 
-WebUI.setText(findTestObject('Registration/field-Password'), 'Laskar123456')
+WebUI.setText(findTestObject('WEB/Registration/field-Password'), 'Laskar123456')
 
 // ==========================
 // SUBMIT REGISTER
 // ==========================
-WebUI.waitForElementClickable(findTestObject('Registration/btn-sign-up'), 10)
+WebUI.waitForElementClickable(findTestObject('WEB/Registration/btn-sign-up'), 10)
 
-WebUI.click(findTestObject('Registration/btn-sign-up'))
+WebUI.click(findTestObject('WEB/Registration/btn-sign-up'))
 
 // stabilizer ringan (CI-friendly)
 WebUI.delay(2)
