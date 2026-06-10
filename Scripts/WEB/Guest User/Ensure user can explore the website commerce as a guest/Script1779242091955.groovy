@@ -41,129 +41,182 @@ WebUI.waitForElementVisible(findTestObject('WEB/Home Page/header_digibox'), 15)
 
 WebUI.verifyElementVisible(findTestObject('WEB/Home Page/header_digibox'))
 
-// ==========================
-// MENU IPHONE
-// ==========================
-clickWhenReady('Home Page/Page Iphone/menu-iphone')
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Iphone/menu-iphone'), 10)
 
-clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max')
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Iphone/menu-iphone'), FailureHandling.STOP_ON_FAILURE)
 
-clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max')
+WebUI.click(findTestObject('WEB/Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max'))
 
-clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 13 Pro')
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Iphone/menu-iphone'), 10)
 
-clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 13')
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Iphone/menu-iphone'), FailureHandling.STOP_ON_FAILURE)
 
-clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 13 mini')
+WebUI.click(findTestObject('WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max'))
 
-clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 12')
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Iphone/menu-iphone'), 10)
 
-clickWhenReady('Home Page/Page Iphone/sub-menu-iPhone 11')
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Iphone/menu-iphone'), FailureHandling.STOP_ON_FAILURE)
 
-// ==========================
-// MENU IPAD
-// ==========================
-clickWhenReady('Home Page/Page Ipad/menu-ipad')
+WebUI.click(findTestObject('WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro'))
 
-clickWhenReady('Home Page/Page Ipad/sub-menu-iPad pro')
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Iphone/menu-iphone'), 10)
 
-clickWhenReady('Home Page/Page Ipad/sub-menu-iPad Air')
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Iphone/menu-iphone'), FailureHandling.STOP_ON_FAILURE)
 
-clickWhenReady('Home Page/Page Ipad/sub-menu-iPad Mini')
+WebUI.click(findTestObject('WEB/Home Page/Page Iphone/sub-menu-iPhone 13'))
 
-clickWhenReady('Home Page/Page Ipad/sub-menu-iPad (Gen 10th)')
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Iphone/menu-iphone'), 10)
 
-clickWhenReady('Home Page/Page Ipad/sub-menu-iPad')
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Iphone/menu-iphone'), FailureHandling.STOP_ON_FAILURE)
 
-// ==========================
-// MENU APPLE WATCH
-// ==========================
-clickWhenReady('Home Page/Page Apple Watch/menu-Apple Watch')
+WebUI.click(findTestObject('WEB/Home Page/Page Iphone/sub-menu-iPhone 13 mini'))
 
-clickWhenReady('Home Page/Page Apple Watch/sub-menu-Apple Watch 7')
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Iphone/menu-iphone'), 10)
 
-clickWhenReady('Home Page/Page Apple Watch/sub-menu-Apple Watch 6')
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Iphone/menu-iphone'), FailureHandling.STOP_ON_FAILURE)
 
-clickWhenReady('Home Page/Page Apple Watch/sub-menu-Apple Watch 3')
+WebUI.click(findTestObject('WEB/Home Page/Page Iphone/sub-menu-iPhone 12'))
 
-clickWhenReady('Home Page/Page Apple Watch/sub-menu-Apple Watch SE')
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Iphone/menu-iphone'), 10)
 
-clickWhenReady('Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra')
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Iphone/menu-iphone'), FailureHandling.STOP_ON_FAILURE)
 
-// ==========================
-// MENU MAC
-// ==========================
-clickWhenReady('Home Page/Page Mac/menu-Mac')
+WebUI.click(findTestObject('WEB/Home Page/Page Iphone/sub-menu-iPhone 11'))
 
-clickWhenReady('Home Page/Page Mac/sub-menu-MacBook Pro')
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Ipad/menu-ipad'), 10)
 
-clickWhenReady('Home Page/Page Mac/sub-menu-MacBook Air')
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Ipad/menu-ipad'), FailureHandling.STOP_ON_FAILURE)
 
-// ==========================
-// MENU AIRPODS
-// ==========================
-clickWhenReady('Home Page/Page Airpods/menu-AirPods')
+WebUI.click(findTestObject('WEB/Home Page/Page Ipad/sub-menu-iPad pro'))
 
-clickWhenReady('Home Page/Page Airpods/sub-menu-AirPods Max')
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Ipad/menu-ipad'), 10)
 
-clickWhenReady('Home Page/Page Airpods/sub-menu-AirPods Pro')
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Ipad/menu-ipad'), FailureHandling.STOP_ON_FAILURE)
 
-clickWhenReady('Home Page/Page Airpods/sub-menu-AirPods 3rd Generation')
+WebUI.click(findTestObject('WEB/Home Page/Page Ipad/sub-menu-iPad Air'))
 
-clickWhenReady('Home Page/Page Airpods/sub-menu-AirPods 2nd Generation')
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Ipad/menu-ipad'), 10)
 
-// ==========================
-// MENU ACCESSORIES
-// ==========================
-clickWhenReady('Home Page/Page Accessoris/menu-accessoris')
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Ipad/menu-ipad'), FailureHandling.STOP_ON_FAILURE)
 
-clickWhenReady('Home Page/Page Accessoris/sub-menu-Aksesoris iPhone')
+WebUI.click(findTestObject('WEB/Home Page/Page Ipad/sub-menu-iPad mini'))
 
-clickWhenReady('Home Page/Page Accessoris/sub-menu-Aksesoris iPad')
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Ipad/menu-ipad'), 10)
 
-clickWhenReady('Home Page/Page Accessoris/sub-menu-MacBook Accessories')
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Ipad/menu-ipad'), FailureHandling.STOP_ON_FAILURE)
 
-clickWhenReady('Home Page/Page Accessoris/sub-menu-Watch accessories')
+WebUI.click(findTestObject('WEB/Home Page/Page Ipad/sub-menu-iPad (Gen 10th)'))
 
-// ==========================
-// MENU PROMOTION
-// ==========================
-clickWhenReady('Home Page/Page Promotion/menu-Promotion')
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Apple Watch/menu-Apple Watch'), 10)
 
-clickWhenReady('Home Page/Page Promotion/sub-menu-Digimania August 2022')
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Apple Watch/menu-Apple Watch'), FailureHandling.STOP_ON_FAILURE)
 
-clickWhenReady('Home Page/Page Promotion/sub-menu-Flash Sale')
+WebUI.click(findTestObject('WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 7'))
 
-// ==========================
-// MENU ENTERPRISE
-// ==========================
-clickWhenReady('Home Page/Page Enterprice and Education/menu-Enterprise and Education')
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Apple Watch/menu-Apple Watch'), 10)
 
-// ==========================
-// CLOSE BROWSER
-// ==========================
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Apple Watch/menu-Apple Watch'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 6'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Apple Watch/menu-Apple Watch'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Apple Watch/menu-Apple Watch'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 3'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Apple Watch/menu-Apple Watch'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Apple Watch/menu-Apple Watch'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch SE'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Apple Watch/menu-Apple Watch'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Apple Watch/menu-Apple Watch'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Mac/menu-Mac'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Mac/menu-Mac'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Mac/sub-menu-MacBook Pro'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Mac/menu-Mac'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Mac/menu-Mac'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Mac/sub-menu-MacBook Air'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Airpods/menu-AirPods'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Airpods/menu-AirPods'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Airpods/sub-menu-AirPods Max'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Airpods/menu-AirPods'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Airpods/menu-AirPods'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Airpods/sub-menu-AirPods Pro'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Airpods/menu-AirPods'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Airpods/menu-AirPods'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Airpods/sub-menu-AirPods 3rd Generation'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Airpods/menu-AirPods'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Airpods/menu-AirPods'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Airpods/sub-menu-AirPods 2nd Generation'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Accessoris/menu-accessoris'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Accessoris/menu-accessoris'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Accessoris/sub-menu-Aksesoris iPhone'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Accessoris/menu-accessoris'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Accessoris/menu-accessoris'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Accessoris/sub-menu-Aksesoris iPad'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Accessoris/menu-accessoris'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Accessoris/menu-accessoris'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Accessoris/sub-menu-MacBook Accessories'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Accessoris/menu-accessoris'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Accessoris/menu-accessoris'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Accessoris/sub-menu-Watch accessories'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Promotion/menu-Promotion'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Promotion/menu-Promotion'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Promotion/sub-menu-Digimania August 2022'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Promotion/menu-Promotion'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Promotion/menu-Promotion'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Promotion/sub-menu-Flash Sale'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education'), 
+    10)
+
+WebUI.mouseOver(findTestObject('WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education'))
+
+WebUI.waitForPageLoad(10)
+
 WebUI.closeBrowser()
-
-def clickWhenReady(String objectPath) {
-    TestObject obj = findTestObject(objectPath)
-
-    WebUI.waitForElementVisible(obj, 15)
-
-    WebUI.scrollToElement(obj, 5)
-
-    WebUI.waitForElementClickable(obj, 10)
-
-    try {
-        WebUI.click(obj)
-    }
-    catch (Exception e) {
-        println('Normal click gagal, pakai JS Click')
-
-        WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(WebUiCommonHelper.findWebElement(obj, 10)))
-    } 
-    
-    WebUI.delay(1)
-
-    WebUI.waitForPageLoad(10)
-}
 
