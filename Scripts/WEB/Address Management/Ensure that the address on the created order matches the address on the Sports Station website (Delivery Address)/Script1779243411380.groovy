@@ -64,16 +64,15 @@ WebUI.waitForPageLoad(30)
 
 WebUI.delay(3)
 
-// ========================
-// ADD AVAILABLE PRODUCT
-// ========================
-CustomKeywords.'custom.ProductHelper.addAnyAvailableProduct'()
+WebUI.click(findTestObject('WEB/Product and Cart/Add to cart/btn_product_PHONE 13 PRO MAX SIERRA BLUE'))
+
+WebUI.click(findTestObject('WEB/Product and Cart/Add to cart/button_Add to Cart'))
 
 WebUI.waitForElementPresent(findTestObject('WEB/Product and Cart/Add to cart/i_icon-cart'), 30)
 
 WebUI.waitForElementClickable(findTestObject('WEB/Product and Cart/Add to cart/i_icon-cart'), 30)
 
-WebUI.enhancedClick(findTestObject('WEB/Product and Cart/Add to cart/i_icon-cart'))
+WebUI.click(findTestObject('WEB/Product and Cart/Add to cart/i_icon-cart'))
 
 // ========================
 // CHECKOUT
@@ -128,7 +127,8 @@ WebUI.waitForElementClickable(findTestObject('WEB/Checkout/Address/Address Ship 
 
 WebUI.enhancedClick(findTestObject('WEB/Checkout/Address/Address Ship To/input_Select Province'))
 
-WebUI.waitForElementVisible(findTestObject('WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province'), 30)
+WebUI.waitForElementVisible(findTestObject('WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province'), 
+    30)
 
 WebUI.enhancedClick(findTestObject('WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province'))
 

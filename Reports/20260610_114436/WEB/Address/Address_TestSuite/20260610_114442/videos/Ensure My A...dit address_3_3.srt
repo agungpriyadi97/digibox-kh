@@ -1,0 +1,156 @@
+1
+00:00:00,005 --> 00:00:00,008
+1. randomEmail = custom.RandomData.generateRandomEmail()
+
+2
+00:00:00,011 --> 00:00:00,014
+5. randomFirstName = custom.RandomData.generateRandomFirstName()
+
+3
+00:00:00,017 --> 00:00:00,019
+9. randomLastName = custom.RandomData.generateRandomLastName()
+
+4
+00:00:00,020 --> 00:00:00,022
+13. randomPhone = custom.RandomData.generateRandomPhone()
+
+5
+00:00:00,023 --> 00:00:00,024
+17. randomAddress = custom.RandomData.generateRandomAddress()
+
+6
+00:00:00,029 --> 00:00:00,031
+21. randomCode = custom.RandomData.generateRandomCode()
+
+7
+00:00:00,032 --> 00:00:01,399
+25. openBrowser("")
+
+8
+00:00:01,400 --> 00:00:01,460
+29. setViewPortSize(1920, 1080)
+
+9
+00:00:01,462 --> 00:00:03,348
+33. navigateToUrl(URL)
+
+10
+00:00:03,349 --> 00:00:03,384
+37. custom.BrowserHelper.setupBrowserWindow()
+
+11
+00:00:03,385 --> 00:00:03,396
+41. waitForPageLoad(30)
+
+12
+00:00:03,397 --> 00:00:03,644
+45. waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30)
+
+13
+00:00:03,645 --> 00:00:03,880
+49. waitForElementVisible(findTestObject("WEB/Registration/icon-acount"), 30)
+
+14
+00:00:03,881 --> 00:00:04,699
+53. mouseOver(findTestObject("WEB/Registration/icon-acount"))
+
+15
+00:00:04,702 --> 00:00:34,857
+57. waitForElementVisible(findTestObject("WEB/Registration/field-account"), 30)
+
+16
+00:00:34,859 --> 00:00:45,083
+61. setText(findTestObject("WEB/Registration/field-account"), "agungpriyadi")
+
+17
+00:00:45,084 --> 00:00:45,084
+1. status = testCaseContext.getTestCaseStatus()
+
+18
+00:00:45,086 --> 00:00:45,086
+5. if (status == "PASSED")
+
+19
+00:00:45,087 --> 00:00:45,087
+2. saveScreenshot("FAILED")
+
+20
+00:00:45,088 --> 00:00:45,088
+1. try
+
+21
+00:00:45,089 --> 00:00:45,089
+1. tcName = getTestCaseName()
+
+22
+00:00:45,090 --> 00:00:45,090
+1. return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _)
+
+23
+00:00:45,091 --> 00:00:45,091
+5. folderPath = Screenshot/$status/$tcName/
+
+24
+00:00:45,091 --> 00:00:45,092
+9. Files.createDirectories(Paths.get(folderPath))
+
+25
+00:00:45,093 --> 00:00:45,094
+13. screenshotPath = $folderPath$status_$this.getTimestamp().png
+
+26
+00:00:45,094 --> 00:00:45,095
+1. return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date())
+
+27
+00:00:45,096 --> 00:00:45,451
+17. takeScreenshot(screenshotPath)
+
+28
+00:00:45,452 --> 00:00:45,453
+21. println("Screenshot saved : " + screenshotPath)
+
+29
+00:00:45,453 --> 00:00:45,454
+6. saveHtmlSource("FAILED")
+
+30
+00:00:45,455 --> 00:00:45,455
+1. try
+
+31
+00:00:45,456 --> 00:00:45,456
+1. tcName = getTestCaseName()
+
+32
+00:00:45,457 --> 00:00:45,457
+1. return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _)
+
+33
+00:00:45,458 --> 00:00:45,458
+5. folderPath = Screenshot/$status/$tcName/
+
+34
+00:00:45,460 --> 00:00:45,460
+9. Files.createDirectories(Paths.get(folderPath))
+
+35
+00:00:45,461 --> 00:00:45,461
+13. htmlPath = $folderPath$status_$this.getTimestamp().html
+
+36
+00:00:45,462 --> 00:00:45,463
+1. return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date())
+
+37
+00:00:45,464 --> 00:00:45,465
+17. html = getHtmlSource(OPTIONAL)
+
+38
+00:00:45,466 --> 00:00:45,467
+2. println("Failed to save HTML source: " + e.getMessage())
+
+39
+00:00:45,468 --> 00:00:45,468
+9. println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status)
+

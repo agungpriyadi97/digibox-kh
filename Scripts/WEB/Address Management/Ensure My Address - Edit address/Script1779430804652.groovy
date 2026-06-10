@@ -41,6 +41,8 @@ WebUI.waitForElementVisible(findTestObject('WEB/Registration/icon-acount'), 30)
 
 WebUI.mouseOver(findTestObject('WEB/Registration/icon-acount'))
 
+WebUI.click(findTestObject('WEB/Registration/icon-acount'))
+
 WebUI.waitForElementVisible(findTestObject('WEB/Registration/field-account'), 30)
 
 WebUI.setText(findTestObject('WEB/Registration/field-account'), 'agungpriyadi')
@@ -137,9 +139,4 @@ WebUI.comment('Phone      : ' + randomPhone)
 WebUI.comment('Address    : ' + randomAddress)
 
 WebUI.comment('Code       : ' + randomCode)
-
-// ========================
-// CLOSE BROWSER
-// ========================
-WebUI.closeBrowser()
 

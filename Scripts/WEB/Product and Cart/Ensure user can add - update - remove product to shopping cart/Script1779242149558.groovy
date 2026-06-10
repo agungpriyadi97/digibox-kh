@@ -35,14 +35,17 @@ WebUI.verifyElementVisible(findTestObject('WEB/Home Page/verify-succes-acount-lo
 
 WebUI.click(findTestObject('WEB/Home Page/Search/icon-search'))
 
-WebUI.setText(findTestObject('WEB/Home Page/Search/field-search'), 'Iphone 11')
+WebUI.setText(findTestObject('WEB/Home Page/Search/field-search'), 'IPHONE 13 PRO MAX SIERRA BLUE 128GB')
 
 WebUI.sendKeys(findTestObject('WEB/Home Page/Search/field-search'), Keys.chord(Keys.ENTER))
 
-// ========================================
-// ADD AVAILABLE PRODUCT
-// ========================================
-CustomKeywords.'custom.ProductHelper.addAnyAvailableProduct'()
+WebUI.waitForPageLoad(30)
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('WEB/Product and Cart/Add to cart/btn_product_PHONE 13 PRO MAX SIERRA BLUE'))
+
+WebUI.click(findTestObject('WEB/Product and Cart/Add to cart/button_Add to Cart'))
 
 WebUI.click(findTestObject('WEB/Product and Cart/Add to cart/i_icon-cart'))
 

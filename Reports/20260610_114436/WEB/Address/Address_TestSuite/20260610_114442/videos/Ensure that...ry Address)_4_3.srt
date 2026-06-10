@@ -1,0 +1,172 @@
+1
+00:00:00,001 --> 00:00:00,002
+1. randomEmail = custom.RandomData.generateRandomEmail()
+
+2
+00:00:00,004 --> 00:00:00,005
+5. randomFirstName = custom.RandomData.generateRandomFirstName()
+
+3
+00:00:00,006 --> 00:00:00,006
+9. randomLastName = custom.RandomData.generateRandomLastName()
+
+4
+00:00:00,007 --> 00:00:00,008
+13. randomPhone = custom.RandomData.generateRandomPhone()
+
+5
+00:00:00,010 --> 00:00:00,010
+17. randomAddress = custom.RandomData.generateRandomAddress()
+
+6
+00:00:00,011 --> 00:00:00,012
+21. randomCode = custom.RandomData.generateRandomCode()
+
+7
+00:00:00,013 --> 00:00:02,793
+25. openBrowser("")
+
+8
+00:00:02,794 --> 00:00:02,857
+29. setViewPortSize(1920, 1080)
+
+9
+00:00:02,858 --> 00:00:05,094
+33. navigateToUrl(URL)
+
+10
+00:00:05,096 --> 00:00:05,153
+37. custom.BrowserHelper.setupBrowserWindow()
+
+11
+00:00:05,154 --> 00:00:05,172
+41. waitForPageLoad(30)
+
+12
+00:00:05,173 --> 00:00:05,439
+45. waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30)
+
+13
+00:00:05,440 --> 00:00:05,733
+49. waitForElementClickable(findTestObject("WEB/Home Page/Search/icon-search"), 30)
+
+14
+00:00:05,734 --> 00:00:06,038
+53. enhancedClick(findTestObject("WEB/Home Page/Search/icon-search"))
+
+15
+00:00:06,039 --> 00:00:06,511
+57. waitForElementVisible(findTestObject("WEB/Home Page/Search/field-search"), 30)
+
+16
+00:00:06,513 --> 00:00:08,121
+61. setText(findTestObject("WEB/Home Page/Search/field-search"), "IPHONE 13 PRO MAX SIERRA BLUE 128GB")
+
+17
+00:00:08,132 --> 00:00:09,566
+65. sendKeys(findTestObject("WEB/Home Page/Search/field-search"), Keys.chord(ENTER))
+
+18
+00:00:09,568 --> 00:00:09,596
+69. waitForPageLoad(30)
+
+19
+00:00:09,599 --> 00:00:12,609
+73. delay(3)
+
+20
+00:00:12,611 --> 00:10:42,190
+77. custom.ProductHelper.addAnyAvailableProduct()
+
+21
+00:10:42,193 --> 00:10:42,194
+1. status = testCaseContext.getTestCaseStatus()
+
+22
+00:10:42,196 --> 00:10:42,196
+5. if (status == "PASSED")
+
+23
+00:10:42,197 --> 00:10:42,197
+2. saveScreenshot("FAILED")
+
+24
+00:10:42,198 --> 00:10:42,199
+1. try
+
+25
+00:10:42,200 --> 00:10:42,200
+1. tcName = getTestCaseName()
+
+26
+00:10:42,201 --> 00:10:42,202
+1. return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _)
+
+27
+00:10:42,203 --> 00:10:42,203
+5. folderPath = Screenshot/$status/$tcName/
+
+28
+00:10:42,207 --> 00:10:42,210
+9. Files.createDirectories(Paths.get(folderPath))
+
+29
+00:10:42,212 --> 00:10:42,212
+13. screenshotPath = $folderPath$status_$this.getTimestamp().png
+
+30
+00:10:42,213 --> 00:10:42,214
+1. return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date())
+
+31
+00:10:42,215 --> 00:10:42,503
+17. takeScreenshot(screenshotPath)
+
+32
+00:10:42,504 --> 00:10:42,504
+21. println("Screenshot saved : " + screenshotPath)
+
+33
+00:10:42,505 --> 00:10:42,505
+6. saveHtmlSource("FAILED")
+
+34
+00:10:42,506 --> 00:10:42,507
+1. try
+
+35
+00:10:42,508 --> 00:10:42,508
+1. tcName = getTestCaseName()
+
+36
+00:10:42,509 --> 00:10:42,509
+1. return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _)
+
+37
+00:10:42,510 --> 00:10:42,510
+5. folderPath = Screenshot/$status/$tcName/
+
+38
+00:10:42,512 --> 00:10:42,513
+9. Files.createDirectories(Paths.get(folderPath))
+
+39
+00:10:42,514 --> 00:10:42,514
+13. htmlPath = $folderPath$status_$this.getTimestamp().html
+
+40
+00:10:42,515 --> 00:10:42,516
+1. return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date())
+
+41
+00:10:42,517 --> 00:10:42,517
+17. html = getHtmlSource(OPTIONAL)
+
+42
+00:10:42,518 --> 00:10:42,520
+2. println("Failed to save HTML source: " + e.getMessage())
+
+43
+00:10:42,521 --> 00:10:42,521
+9. println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status)
+
