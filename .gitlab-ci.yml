@@ -1,174 +1,89 @@
 image:
-  name: katalonstudio/katalon:11.1.3
+  name: 'katalonstudio/katalon:11.1.3'
   entrypoint: [""]
 
 stages:
   - test
 
 variables:
-  GS_OPTIONS: "-Xmx4096m -Xms1024m -Djava.shm.size=4g"
+  CONTINUE_ON_FAILURE: "true"
+  GS_OPTIONS: "-Xmx2048m -Xms512m -Djava.shm.size=2g"
 
-katalon_digiboxkh:
+# OPTIMASI: Tambahkan definisi cache yang benar untuk apt-get
+cache:
+  key: "apt-cache-v1"
+  paths:
+    - var/cache/apt/archives/
 
+katalon_digiboxkh_test:
   stage: test
-
   tags:
     - infra
-
-  timeout: 12h
-
+  timeout: 12h  
   rules:
-    - if: '$CI_PIPELINE_SOURCE == "schedule"'
-    - if: '$CI_PIPELINE_SOURCE == "web"'
-    - if: '$CI_PIPELINE_SOURCE == "push"'
-
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_PIPELINE_SOURCE == "web"
+  
   before_script:
-
-    - echo "Cleaning previous reports..."
-    - rm -rf Reports || true
-    - rm -rf Screenshot || true
-
-    - mkdir -p Reports
-    - mkdir -p Screenshot
-
-    - apt-get update -y || true
-    - apt-get install -y ffmpeg xvfb || true
-
+    # 1. Bersihkan sisa report lama
+    - rm -rf Reports/* || true
+    
+    # 2. Cek apakah ffmpeg sudah terinstall, jika belum baru lakukan instalasi cepat
+    - |
+      if ! command -v ffmpeg &> /dev/null; then
+        echo "FFmpeg not found, installing..."
+        apt-get update -y && apt-get install -y --no-install-recommends ffmpeg
+      else
+        echo "FFmpeg is already installed inside the container."
+      fi
     - ffmpeg -version
-    - google-chrome --version || true
-    - firefox --version || true
 
   script:
-
+    - curl ifconfig.me
     - |
-
-      #########################################################
-      # Browser
-      #########################################################
-
-      if [ -z "$BROWSER" ]; then
-          BROWSER="Both"
-      fi
-
-      #########################################################
-      # Execution Profile
-      #########################################################
-
-      if [ -z "$EXECUTION_PROFILE" ]; then
-          EXECUTION_PROFILE="Development"
-      fi
-
-      #########################################################
-      # Resolve Test Path
-      #########################################################
-
       if [ -z "$TEST_PATH" ]; then
-
-          ARG_TYPE="-testSuiteCollectionPath"
-
-          FINAL_PATH="Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxkh_Web"
-
+        echo "Running default Digibox Regression Collection..."
+        export FINAL_PATH="Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxkh_Web"
+        export ARG_TYPE="-testSuiteCollectionPath"
       else
-
-          ARG_TYPE=$(echo "$TEST_PATH" | cut -d'=' -f1)
-
-          FINAL_PATH=$(echo "$TEST_PATH" | cut -d'=' -f2)
-
+        echo "Running custom test: $TEST_PATH"
+        export FINAL_PATH=$(echo "$TEST_PATH" | cut -d'=' -f2)
+        export ARG_TYPE=$(echo "$TEST_PATH" | cut -d'=' -f1)
       fi
 
-      #########################################################
-      # Information
-      #########################################################
+      # --- SEQUENTIAL CROSS-BROWSER EXECUTION ---
 
-      echo "====================================="
-      echo "Project  : Digibox KH"
-      echo "Browser  : $BROWSER"
-      echo "Profile  : $EXECUTION_PROFILE"
-      echo "Arg Type : $ARG_TYPE"
-      echo "Path     : $FINAL_PATH"
-      echo "====================================="
+      echo "Starting Execution 1/2: Chrome (Headless)..."
+      katalonc.sh -noSplash -runMode=console \
+        -projectPath="$CI_PROJECT_DIR/digibox-kh.prj" \
+        -orgID="$KATALON_ORG_ID" \
+        -apiKey="$KATALON_API_KEY" \
+        -retry=0 \
+        "$ARG_TYPE=$FINAL_PATH" \
+        -browserType="Chrome (headless)" \
+        -reportFolder="Reports/Chrome_Reports" \
+        -reportFileName="Chrome_Report" \
+        --config -webui.autoUpdateDrivers=true || echo "Chrome tests completed."
 
-      #########################################################
-      # Chrome
-      #########################################################
+      echo "Starting Execution 2/2: Firefox (Headless)..."
+      katalonc.sh -noSplash -runMode=console \
+        -projectPath="$CI_PROJECT_DIR/digibox-kh.prj" \
+        -orgID="$KATALON_ORG_ID" \
+        -apiKey="$KATALON_API_KEY" \
+        -retry=0 \
+        "$ARG_TYPE=$FINAL_PATH" \
+        -browserType="Firefox (headless)" \
+        -reportFolder="Reports/Firefox_Reports" \
+        -reportFileName="Firefox_Report" \
+        --config -webui.autoUpdateDrivers=true || echo "Firefox tests completed."
 
-      if [ "$BROWSER" = "Chrome" ] || [ "$BROWSER" = "Both" ]; then
-
-        echo ""
-        echo "========== Chrome =========="
-
-        katalonc.sh \
-          -noSplash \
-          -runMode=console \
-          -projectPath="$CI_PROJECT_DIR/digibox-kh.prj" \
-          -retry=0 \
-          -orgID="$KATALON_ORG_ID" \
-          -apiKey="$KATALON_API_KEY" \
-          "$ARG_TYPE=$FINAL_PATH" \
-          -executionProfile="$EXECUTION_PROFILE" \
-          -browserType="Chrome (headless)" \
-          -reportFolder="Reports/Chrome_Reports" \
-          -reportFileName="Chrome_Report" \
-          --config \
-          -webui.autoUpdateDrivers=true \
-          -webui.chrome.args="--disable-dev-shm-usage --disable-gpu --disable-blink-features=AutomationControlled --window-size=1920,1080 --no-sandbox" \
-          || echo "Chrome execution finished."
-
-      fi
-
-      #########################################################
-      # Firefox
-      #########################################################
-
-      if [ "$BROWSER" = "Firefox" ] || [ "$BROWSER" = "Both" ]; then
-
-        echo ""
-        echo "========== Firefox =========="
-
-        katalonc.sh \
-          -noSplash \
-          -runMode=console \
-          -projectPath="$CI_PROJECT_DIR/digibox-kh.prj" \
-          -retry=0 \
-          -orgID="$KATALON_ORG_ID" \
-          -apiKey="$KATALON_API_KEY" \
-          "$ARG_TYPE=$FINAL_PATH" \
-          -executionProfile="$EXECUTION_PROFILE" \
-          -browserType="Firefox (headless)" \
-          -reportFolder="Reports/Firefox_Reports" \
-          -reportFileName="Firefox_Report" \
-          --config \
-          -webui.autoUpdateDrivers=true \
-          || echo "Firefox execution finished."
-
-      fi
-
-      #########################################################
-      # Cleanup
-      #########################################################
-
-      find Reports -type f -name "*.mp4" -mtime +30 -delete || true
+    # --- ARTIFACT PURGE & RETENTION CLEANUP ---
+    - echo "Cleaning up heavy video files from runner cache..."
+    - find Reports/ -type f -name "*.mp4" -mtime +30 -exec rm -f {} \; || true
 
   artifacts:
-
     when: always
-
-    expire_in: 2 months
-
     paths:
       - Reports/
       - Screenshot/
-
-  cache:
-
-    key: katalon-cache
-
-    paths:
-      - Drivers/
-
-  after_script:
-
-    - echo ""
-    - echo "======================================"
-    - echo "Automation Finished"
-    - echo "======================================"
+    expire_in: 2 mos
