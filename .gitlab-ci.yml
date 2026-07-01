@@ -96,6 +96,8 @@ katalon_digiboxkh:
 
         echo ""
         echo "========== Chrome =========="
+        echo "ORG=$KATALON_ORG_ID"
+        echo "KEY=${#KATALON_API_KEY}"
 
         katalonc.sh \
           -noSplash \
