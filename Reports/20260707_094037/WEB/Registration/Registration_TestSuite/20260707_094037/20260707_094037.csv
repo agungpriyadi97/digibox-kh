@@ -1,0 +1,91 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Registration_TestSuite,Firefox 151.0.1,,,07-07-2026 09:40:54,07-07-2026 09:42:11,1m - 16.497s,PASSED
+,,,,,,,
+Test Cases/WEB/Registration/Register with duplicate Account,Firefox 151.0.1,,,07-07-2026 09:40:54,07-07-2026 09:41:13,18.623s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,07-07-2026 09:40:55,07-07-2026 09:40:59,3.811s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Firefox 151.0.1,,,07-07-2026 09:40:59,07-07-2026 09:40:59,0.412s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,07-07-2026 09:40:59,07-07-2026 09:41:02,2.635s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,07-07-2026 09:41:02,07-07-2026 09:41:02,0.360s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,07-07-2026 09:41:02,07-07-2026 09:41:02,0.378s,PASSED
+custom.BrowserHelper.closeFirefoxPopup(),Firefox 151.0.1,,,07-07-2026 09:41:02,07-07-2026 09:41:05,2.335s,PASSED
+"click(findTestObject(""WEB/Registration/btn-create-new-account""))",Firefox 151.0.1,,,07-07-2026 09:41:05,07-07-2026 09:41:05,0.316s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Email""), ""agungpriyadi@gmail.com"")",Firefox 151.0.1,,,07-07-2026 09:41:05,07-07-2026 09:41:06,0.759s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Firefox 151.0.1,,,07-07-2026 09:41:06,07-07-2026 09:41:07,0.719s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Firefox 151.0.1,,,07-07-2026 09:41:07,07-07-2026 09:41:07,0.715s,PASSED
+"click(findTestObject(""WEB/Registration/btn-sign-up""))",Firefox 151.0.1,,,07-07-2026 09:41:07,07-07-2026 09:41:08,0.526s,PASSED
+delay(2),Firefox 151.0.1,,,07-07-2026 09:41:08,07-07-2026 09:41:10,2.031s,PASSED
+"isDuplicateShown = verifyTextPresent(""Duplicated-unknown-error."", false, OPTIONAL)",Firefox 151.0.1,,,07-07-2026 09:41:10,07-07-2026 09:41:10,0.375s,PASSED
+if (!(isDuplicateShown)),Firefox 151.0.1,,,07-07-2026 09:41:10,07-07-2026 09:41:10,0.003s,PASSED
+closeBrowser(),Firefox 151.0.1,,,07-07-2026 09:41:10,07-07-2026 09:41:11,0.769s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,07-07-2026 09:41:11,07-07-2026 09:41:11,0.114s,FAILED
+,,,,,,,
+Test Cases/WEB/Registration/Register with duplicate Email,Firefox 151.0.1,,,07-07-2026 09:41:13,07-07-2026 09:41:30,16.656s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,07-07-2026 09:41:13,07-07-2026 09:41:15,1.897s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Firefox 151.0.1,,,07-07-2026 09:41:15,07-07-2026 09:41:15,0.406s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,07-07-2026 09:41:15,07-07-2026 09:41:18,2.324s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,07-07-2026 09:41:18,07-07-2026 09:41:18,0.275s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,07-07-2026 09:41:18,07-07-2026 09:41:19,0.637s,PASSED
+custom.BrowserHelper.closeFirefoxPopup(),Firefox 151.0.1,,,07-07-2026 09:41:19,07-07-2026 09:41:21,2.287s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/btn-create-new-account""), 10)",Firefox 151.0.1,,,07-07-2026 09:41:21,07-07-2026 09:41:21,0.318s,PASSED
+"click(findTestObject(""WEB/Registration/btn-create-new-account""))",Firefox 151.0.1,,,07-07-2026 09:41:21,07-07-2026 09:41:22,0.347s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Email""), ""agung.priyadi@gtech.digital"")",Firefox 151.0.1,,,07-07-2026 09:41:22,07-07-2026 09:41:22,0.707s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Firefox 151.0.1,,,07-07-2026 09:41:22,07-07-2026 09:41:23,0.716s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Firefox 151.0.1,,,07-07-2026 09:41:23,07-07-2026 09:41:24,0.721s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/btn-sign-up""), 10)",Firefox 151.0.1,,,07-07-2026 09:41:24,07-07-2026 09:41:24,0.446s,PASSED
+"click(findTestObject(""WEB/Registration/btn-sign-up""))",Firefox 151.0.1,,,07-07-2026 09:41:24,07-07-2026 09:41:25,0.344s,PASSED
+delay(2),Firefox 151.0.1,,,07-07-2026 09:41:25,07-07-2026 09:41:27,2.021s,PASSED
+"isDuplicateEmailShown = verifyTextPresent(""The mobile or email already exist."", false, OPTIONAL)",Firefox 151.0.1,,,07-07-2026 09:41:27,07-07-2026 09:41:27,0.307s,PASSED
+if (!(isDuplicateEmailShown)),Firefox 151.0.1,,,07-07-2026 09:41:27,07-07-2026 09:41:27,0.002s,PASSED
+closeBrowser(),Firefox 151.0.1,,,07-07-2026 09:41:27,07-07-2026 09:41:28,0.744s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,07-07-2026 09:41:28,07-07-2026 09:41:28,0.033s,FAILED
+,,,,,,,
+Test Cases/WEB/Registration/Register with invalid data (email or password),Firefox 151.0.1,,,07-07-2026 09:41:30,07-07-2026 09:41:50,20.642s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,07-07-2026 09:41:30,07-07-2026 09:41:32,1.972s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Firefox 151.0.1,,,07-07-2026 09:41:32,07-07-2026 09:41:32,0.418s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,07-07-2026 09:41:32,07-07-2026 09:41:34,2.160s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,07-07-2026 09:41:34,07-07-2026 09:41:35,0.284s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,07-07-2026 09:41:35,07-07-2026 09:41:35,0.364s,PASSED
+custom.BrowserHelper.closeFirefoxPopup(),Firefox 151.0.1,,,07-07-2026 09:41:35,07-07-2026 09:41:37,2.280s,PASSED
+"click(findTestObject(""WEB/Registration/btn-create-new-account""))",Firefox 151.0.1,,,07-07-2026 09:41:37,07-07-2026 09:41:38,0.311s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Email""), ""salahemailgmail.com"")",Firefox 151.0.1,,,07-07-2026 09:41:38,07-07-2026 09:41:38,0.693s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), """")",Firefox 151.0.1,,,07-07-2026 09:41:38,07-07-2026 09:41:39,0.735s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), """")",Firefox 151.0.1,,,07-07-2026 09:41:39,07-07-2026 09:41:40,0.687s,PASSED
+"click(findTestObject(""WEB/Registration/btn-sign-up""))",Firefox 151.0.1,,,07-07-2026 09:41:40,07-07-2026 09:41:40,0.509s,PASSED
+delay(2),Firefox 151.0.1,,,07-07-2026 09:41:40,07-07-2026 09:41:42,2.030s,PASSED
+"emailError = verifyTextPresent(""Please enter a valid email address"", false, OPTIONAL)",Firefox 151.0.1,,,07-07-2026 09:41:42,07-07-2026 09:41:43,0.297s,PASSED
+"requiredError = verifyTextPresent(""Required"", false, OPTIONAL)",Firefox 151.0.1,,,07-07-2026 09:41:43,07-07-2026 09:41:43,0.289s,PASSED
+if (!(emailError) || !(requiredError)),Firefox 151.0.1,,,07-07-2026 09:41:43,07-07-2026 09:41:43,0.002s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Email""), ""agung.priyadi@gtech.digital"")",Firefox 151.0.1,,,07-07-2026 09:41:43,07-07-2026 09:41:43,0.506s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Firefox 151.0.1,,,07-07-2026 09:41:43,07-07-2026 09:41:44,0.712s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Las"")",Firefox 151.0.1,,,07-07-2026 09:41:44,07-07-2026 09:41:45,0.710s,PASSED
+"click(findTestObject(""WEB/Registration/btn-sign-up""))",Firefox 151.0.1,,,07-07-2026 09:41:45,07-07-2026 09:41:45,0.524s,PASSED
+delay(2),Firefox 151.0.1,,,07-07-2026 09:41:45,07-07-2026 09:41:47,2.020s,PASSED
+"passwordLengthError = verifyTextPresent(""Password length is 6-20 digits"", false, OPTIONAL)",Firefox 151.0.1,,,07-07-2026 09:41:47,07-07-2026 09:41:48,0.290s,PASSED
+if (!(passwordLengthError)),Firefox 151.0.1,,,07-07-2026 09:41:48,07-07-2026 09:41:48,0.002s,PASSED
+closeBrowser(),Firefox 151.0.1,,,07-07-2026 09:41:48,07-07-2026 09:41:48,0.695s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,07-07-2026 09:41:48,07-07-2026 09:41:48,0.017s,FAILED
+,,,,,,,
+Test Cases/WEB/Registration/Register with true data,Firefox 151.0.1,,,07-07-2026 09:41:50,07-07-2026 09:42:11,20.369s,PASSED
+randomEmail = custom.RandomData.generateRandomEmail(),Firefox 151.0.1,,,07-07-2026 09:41:50,07-07-2026 09:41:51,0.034s,PASSED
+randomUsername = custom.RandomData.generateRandomUsername(),Firefox 151.0.1,,,07-07-2026 09:41:51,07-07-2026 09:41:51,0.015s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,07-07-2026 09:41:51,07-07-2026 09:41:52,1.750s,PASSED
+maximizeWindow(),Firefox 151.0.1,,,07-07-2026 09:41:52,07-07-2026 09:41:52,0.024s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,07-07-2026 09:41:52,07-07-2026 09:41:55,2.340s,PASSED
+waitForPageLoad(20),Firefox 151.0.1,,,07-07-2026 09:41:55,07-07-2026 09:41:55,0.062s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,07-07-2026 09:41:55,07-07-2026 09:41:55,0.250s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,07-07-2026 09:41:55,07-07-2026 09:41:55,0.362s,PASSED
+custom.BrowserHelper.closeFirefoxPopup(),Firefox 151.0.1,,,07-07-2026 09:41:55,07-07-2026 09:41:58,2.278s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/btn-create-new-account""), 10)",Firefox 151.0.1,,,07-07-2026 09:41:58,07-07-2026 09:41:58,0.241s,PASSED
+"click(findTestObject(""WEB/Registration/btn-create-new-account""))",Firefox 151.0.1,,,07-07-2026 09:41:58,07-07-2026 09:41:58,0.296s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Email""), randomEmail)",Firefox 151.0.1,,,07-07-2026 09:41:58,07-07-2026 09:41:59,0.688s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), randomUsername)",Firefox 151.0.1,,,07-07-2026 09:41:59,07-07-2026 09:42:00,0.711s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Firefox 151.0.1,,,07-07-2026 09:42:00,07-07-2026 09:42:00,0.714s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/btn-sign-up""), 10)",Firefox 151.0.1,,,07-07-2026 09:42:00,07-07-2026 09:42:01,0.432s,PASSED
+"click(findTestObject(""WEB/Registration/btn-sign-up""))",Firefox 151.0.1,,,07-07-2026 09:42:01,07-07-2026 09:42:01,0.302s,PASSED
+delay(2),Firefox 151.0.1,,,07-07-2026 09:42:01,07-07-2026 09:42:03,2.007s,PASSED
+"isStillOnRegister = verifyElementPresent(findTestObject(""WEB/Registration/btn-sign-up""), 5, OPTIONAL)",Firefox 151.0.1,,,07-07-2026 09:42:03,07-07-2026 09:42:08,5.125s,WARNING
+if (isStillOnRegister),Firefox 151.0.1,,,07-07-2026 09:42:08,07-07-2026 09:42:08,0.001s,PASSED
+"comment(""Email used: "" + randomEmail)",Firefox 151.0.1,,,07-07-2026 09:42:08,07-07-2026 09:42:08,0.010s,PASSED
+"comment(""Username used: "" + randomUsername)",Firefox 151.0.1,,,07-07-2026 09:42:08,07-07-2026 09:42:08,0.002s,PASSED
+closeBrowser(),Firefox 151.0.1,,,07-07-2026 09:42:08,07-07-2026 09:42:09,0.585s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,07-07-2026 09:42:09,07-07-2026 09:42:09,0.021s,FAILED

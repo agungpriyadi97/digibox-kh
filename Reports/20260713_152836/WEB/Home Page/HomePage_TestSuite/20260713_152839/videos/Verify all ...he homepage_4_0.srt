@@ -1,0 +1,184 @@
+1
+00:00:00,677 --> 00:00:01,894
+1. openBrowser("")
+
+2
+00:00:01,894 --> 00:00:02,006
+5. setViewPortSize(1920, 1080)
+
+3
+00:00:02,006 --> 00:00:02,006
+9. enableSmartWait()
+
+4
+00:00:02,006 --> 00:00:03,604
+13. navigateToUrl(URL)
+
+5
+00:00:03,606 --> 00:00:03,671
+17. custom.BrowserHelper.setupBrowserWindow()
+
+6
+00:00:03,677 --> 00:00:03,717
+21. waitForPageLoad(30)
+
+7
+00:00:03,721 --> 00:00:04,398
+25. waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30)
+
+8
+00:00:04,404 --> 00:00:04,768
+29. verifyElementVisible(findTestObject("WEB/Home Page/header_digibox"))
+
+9
+00:00:04,770 --> 00:00:05,366
+33. waitForElementClickable(findTestObject("WEB/Registration/icon-acount"), 30)
+
+10
+00:00:05,370 --> 00:00:05,833
+37. enhancedClick(findTestObject("WEB/Registration/icon-acount"))
+
+11
+00:00:05,839 --> 00:00:06,639
+41. waitForElementVisible(findTestObject("WEB/Registration/field-account"), 30)
+
+12
+00:00:06,646 --> 00:00:09,421
+45. setText(findTestObject("WEB/Registration/field-account"), "agungpriyadi")
+
+13
+00:00:09,436 --> 00:00:11,140
+49. setText(findTestObject("WEB/Registration/field-Password"), "Laskar123456")
+
+14
+00:00:11,144 --> 00:00:11,865
+53. waitForElementClickable(findTestObject("WEB/Login/btn-sign in"), 30)
+
+15
+00:00:11,870 --> 00:00:12,309
+57. enhancedClick(findTestObject("WEB/Login/btn-sign in"))
+
+16
+00:00:12,317 --> 00:00:12,349
+61. waitForPageLoad(30)
+
+17
+00:00:12,351 --> 00:00:12,814
+65. waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10)
+
+18
+00:00:12,816 --> 00:00:13,635
+69. mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE)
+
+19
+00:00:13,638 --> 00:00:15,970
+73. click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max"))
+
+20
+00:00:15,972 --> 00:00:16,896
+77. waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10)
+
+21
+00:00:16,898 --> 00:00:17,774
+81. mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE)
+
+22
+00:00:17,780 --> 00:00:18,448
+85. click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max"))
+
+23
+00:00:18,452 --> 00:00:20,249
+89. waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10)
+
+24
+00:00:20,249 --> 00:00:20,769
+93. mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE)
+
+25
+00:00:20,769 --> 00:00:21,337
+97. click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro"))
+
+26
+00:00:21,342 --> 00:00:23,149
+101. waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10)
+
+27
+00:00:23,164 --> 00:00:23,670
+105. mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE)
+
+28
+00:00:23,670 --> 00:00:24,149
+109. click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 13"))
+
+29
+00:00:24,152 --> 00:00:25,965
+113. waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10)
+
+30
+00:00:25,965 --> 00:00:26,421
+117. mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE)
+
+31
+00:00:26,421 --> 00:00:26,938
+121. click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 13 mini"))
+
+32
+00:00:26,945 --> 00:00:28,706
+125. waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10)
+
+33
+00:00:28,711 --> 00:00:29,186
+129. mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE)
+
+34
+00:00:29,186 --> 00:00:29,668
+133. click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 12"))
+
+35
+00:00:29,670 --> 00:00:31,431
+137. waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10)
+
+36
+00:00:31,431 --> 00:00:32,018
+141. mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE)
+
+37
+00:00:32,018 --> 00:00:32,539
+145. click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 11"))
+
+38
+00:00:32,539 --> 00:00:33,245
+149. waitForElementVisible(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), 10)
+
+39
+00:00:33,248 --> 00:00:34,510
+153. mouseOver(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), STOP_ON_FAILURE)
+
+40
+00:00:34,514 --> 00:00:35,019
+157. click(findTestObject("WEB/Home Page/Page Ipad/sub-menu-iPad pro"))
+
+41
+00:00:35,024 --> 00:00:36,753
+161. waitForElementVisible(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), 10)
+
+42
+00:00:36,753 --> 00:00:37,164
+165. mouseOver(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), STOP_ON_FAILURE)
+
+43
+00:00:37,164 --> 00:00:37,443
+169. click(findTestObject("WEB/Home Page/Page Ipad/sub-menu-iPad Air"))
+
+44
+00:00:37,443 --> 00:00:39,167
+173. waitForElementVisible(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), 10)
+
+45
+00:00:39,168 --> 00:00:39,515
+177. mouseOver(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), STOP_ON_FAILURE)
+
+46
+00:00:39,516 --> 00:00:39,794
+181. click(findTestObject("WEB/Home Page/Page Ipad/sub-menu-iPad mini"))
+

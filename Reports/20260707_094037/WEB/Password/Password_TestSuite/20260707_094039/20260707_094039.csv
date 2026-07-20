@@ -1,0 +1,118 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Password_TestSuite,Firefox 151.0.1,,,07-07-2026 09:43:21,07-07-2026 09:44:41,1m - 19.959s,PASSED
+,,,,,,,
+Test Cases/WEB/Password/Ensure user cannot input invalid password length,Firefox 151.0.1,,,07-07-2026 09:43:21,07-07-2026 09:43:44,22.805s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,07-07-2026 09:43:21,07-07-2026 09:43:26,4.892s,PASSED
+maximizeWindow(),Firefox 151.0.1,,,07-07-2026 09:43:26,07-07-2026 09:43:26,0.102s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,07-07-2026 09:43:26,07-07-2026 09:43:29,2.588s,PASSED
+waitForPageLoad(20),Firefox 151.0.1,,,07-07-2026 09:43:29,07-07-2026 09:43:29,0.224s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 15)",Firefox 151.0.1,,,07-07-2026 09:43:29,07-07-2026 09:43:30,0.459s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,07-07-2026 09:43:30,07-07-2026 09:43:30,0.368s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 10)",Firefox 151.0.1,,,07-07-2026 09:43:30,07-07-2026 09:43:30,0.329s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,07-07-2026 09:43:30,07-07-2026 09:43:31,0.422s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""), 10)",Firefox 151.0.1,,,07-07-2026 09:43:31,07-07-2026 09:43:31,0.695s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""))",Firefox 151.0.1,,,07-07-2026 09:43:31,07-07-2026 09:43:32,0.335s,PASSED
+"email = ""agung.priyadi@gtech.digital""",Firefox 151.0.1,,,07-07-2026 09:43:32,07-07-2026 09:43:32,0.003s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), 10)",Firefox 151.0.1,,,07-07-2026 09:43:32,07-07-2026 09:43:32,0.452s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), email)",Firefox 151.0.1,,,07-07-2026 09:43:32,07-07-2026 09:43:33,0.578s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Send validation code to email""), 10)",Firefox 151.0.1,,,07-07-2026 09:43:33,07-07-2026 09:43:33,0.457s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Send validation code to email""))",Firefox 151.0.1,,,07-07-2026 09:43:33,07-07-2026 09:43:34,0.329s,PASSED
+delay(2),Firefox 151.0.1,,,07-07-2026 09:43:34,07-07-2026 09:43:36,2.033s,PASSED
+"successMsgShown = verifyTextPresent(""Validation code sent successfully!"", false, OPTIONAL)",Firefox 151.0.1,,,07-07-2026 09:43:36,07-07-2026 09:43:36,0.319s,PASSED
+if (!(successMsgShown)),Firefox 151.0.1,,,07-07-2026 09:43:36,07-07-2026 09:43:36,0.002s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Validation Code""), 10)",Firefox 151.0.1,,,07-07-2026 09:43:36,07-07-2026 09:43:36,0.232s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Validation Code""), ""123456"")",Firefox 151.0.1,,,07-07-2026 09:43:36,07-07-2026 09:43:37,0.528s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), 10)",Firefox 151.0.1,,,07-07-2026 09:43:37,07-07-2026 09:43:37,0.434s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), ""123"")",Firefox 151.0.1,,,07-07-2026 09:43:37,07-07-2026 09:43:38,0.531s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""), 10)",Firefox 151.0.1,,,07-07-2026 09:43:38,07-07-2026 09:43:38,0.444s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""))",Firefox 151.0.1,,,07-07-2026 09:43:38,07-07-2026 09:43:38,0.310s,PASSED
+delay(2),Firefox 151.0.1,,,07-07-2026 09:43:38,07-07-2026 09:43:40,2.018s,PASSED
+"errorShown = verifyTextPresent(""Password length is 6-20 digits"", false, OPTIONAL)",Firefox 151.0.1,,,07-07-2026 09:43:40,07-07-2026 09:43:41,0.288s,PASSED
+"verifyEqual(errorShown, true)",Firefox 151.0.1,,,07-07-2026 09:43:41,07-07-2026 09:43:41,0.015s,PASSED
+closeBrowser(),Firefox 151.0.1,,,07-07-2026 09:43:41,07-07-2026 09:43:41,0.743s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,07-07-2026 09:43:41,07-07-2026 09:43:42,0.164s,FAILED
+,,,,,,,
+Test Cases/WEB/Password/Ensure user cannot reset password using invalid validation code,Firefox 151.0.1,,,07-07-2026 09:43:44,07-07-2026 09:44:05,21.644s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,07-07-2026 09:43:44,07-07-2026 09:43:47,2.876s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Firefox 151.0.1,,,07-07-2026 09:43:47,07-07-2026 09:43:47,0.424s,PASSED
+enableSmartWait(),Firefox 151.0.1,,,07-07-2026 09:43:47,07-07-2026 09:43:47,0.020s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,07-07-2026 09:43:47,07-07-2026 09:43:50,2.476s,PASSED
+waitForPageLoad(20),Firefox 151.0.1,,,07-07-2026 09:43:50,07-07-2026 09:43:50,0.033s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 15)",Firefox 151.0.1,,,07-07-2026 09:43:50,07-07-2026 09:43:50,0.345s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,07-07-2026 09:43:50,07-07-2026 09:43:50,0.267s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 10)",Firefox 151.0.1,,,07-07-2026 09:43:50,07-07-2026 09:43:51,0.777s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,07-07-2026 09:43:51,07-07-2026 09:43:51,0.412s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""), 10)",Firefox 151.0.1,,,07-07-2026 09:43:51,07-07-2026 09:43:52,0.670s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""))",Firefox 151.0.1,,,07-07-2026 09:43:52,07-07-2026 09:43:52,0.344s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), 10)",Firefox 151.0.1,,,07-07-2026 09:43:52,07-07-2026 09:43:53,0.443s,PASSED
+"email = ""agung.priyadi@gtech.digital""",Firefox 151.0.1,,,07-07-2026 09:43:53,07-07-2026 09:43:53,0.002s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), email)",Firefox 151.0.1,,,07-07-2026 09:43:53,07-07-2026 09:43:53,0.566s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Send validation code to email""), 10)",Firefox 151.0.1,,,07-07-2026 09:43:53,07-07-2026 09:43:54,0.457s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Send validation code to email""))",Firefox 151.0.1,,,07-07-2026 09:43:54,07-07-2026 09:43:54,0.345s,PASSED
+delay(2),Firefox 151.0.1,,,07-07-2026 09:43:54,07-07-2026 09:43:56,2.027s,PASSED
+"successMsg = verifyTextPresent(""Validation code sent successfully!"", false, OPTIONAL)",Firefox 151.0.1,,,07-07-2026 09:43:56,07-07-2026 09:43:57,0.316s,PASSED
+if (!(successMsg)),Firefox 151.0.1,,,07-07-2026 09:43:57,07-07-2026 09:43:57,0.002s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Validation Code""), 10)",Firefox 151.0.1,,,07-07-2026 09:43:57,07-07-2026 09:43:57,0.231s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Validation Code""), ""123456"")",Firefox 151.0.1,,,07-07-2026 09:43:57,07-07-2026 09:43:57,0.539s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), 10)",Firefox 151.0.1,,,07-07-2026 09:43:57,07-07-2026 09:43:58,0.439s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), ""Laskar123456"")",Firefox 151.0.1,,,07-07-2026 09:43:58,07-07-2026 09:43:58,0.505s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""), 10)",Firefox 151.0.1,,,07-07-2026 09:43:58,07-07-2026 09:43:59,0.443s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""))",Firefox 151.0.1,,,07-07-2026 09:43:59,07-07-2026 09:43:59,0.322s,PASSED
+delay(3),Firefox 151.0.1,,,07-07-2026 09:43:59,07-07-2026 09:44:02,3.009s,PASSED
+"invalidCodeMsg = verifyTextPresent(""Invalid code"", false, OPTIONAL)",Firefox 151.0.1,,,07-07-2026 09:44:02,07-07-2026 09:44:02,0.300s,PASSED
+"verifyEqual(invalidCodeMsg, true)",Firefox 151.0.1,,,07-07-2026 09:44:02,07-07-2026 09:44:02,0.004s,PASSED
+closeBrowser(),Firefox 151.0.1,,,07-07-2026 09:44:02,07-07-2026 09:44:03,0.788s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,07-07-2026 09:44:03,07-07-2026 09:44:03,0.035s,FAILED
+,,,,,,,
+Test Cases/WEB/Password/Ensure user Empty Email Field on Forgot Password,Firefox 151.0.1,,,07-07-2026 09:44:05,07-07-2026 09:44:21,15.529s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,07-07-2026 09:44:06,07-07-2026 09:44:08,2.630s,PASSED
+maximizeWindow(),Firefox 151.0.1,,,07-07-2026 09:44:08,07-07-2026 09:44:08,0.020s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,07-07-2026 09:44:08,07-07-2026 09:44:11,2.570s,PASSED
+waitForPageLoad(20),Firefox 151.0.1,,,07-07-2026 09:44:11,07-07-2026 09:44:11,0.022s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 15)",Firefox 151.0.1,,,07-07-2026 09:44:11,07-07-2026 09:44:11,0.656s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,07-07-2026 09:44:11,07-07-2026 09:44:12,0.236s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 10)",Firefox 151.0.1,,,07-07-2026 09:44:12,07-07-2026 09:44:12,0.282s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,07-07-2026 09:44:12,07-07-2026 09:44:12,0.372s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""), 10)",Firefox 151.0.1,,,07-07-2026 09:44:12,07-07-2026 09:44:13,0.655s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""))",Firefox 151.0.1,,,07-07-2026 09:44:13,07-07-2026 09:44:13,0.320s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), 10)",Firefox 151.0.1,,,07-07-2026 09:44:13,07-07-2026 09:44:14,0.436s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), """")",Firefox 151.0.1,,,07-07-2026 09:44:14,07-07-2026 09:44:14,0.567s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), 10)",Firefox 151.0.1,,,07-07-2026 09:44:14,07-07-2026 09:44:15,0.231s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), """")",Firefox 151.0.1,,,07-07-2026 09:44:15,07-07-2026 09:44:15,0.502s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""), 10)",Firefox 151.0.1,,,07-07-2026 09:44:15,07-07-2026 09:44:15,0.442s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""))",Firefox 151.0.1,,,07-07-2026 09:44:15,07-07-2026 09:44:16,0.305s,PASSED
+delay(2),Firefox 151.0.1,,,07-07-2026 09:44:16,07-07-2026 09:44:18,2.019s,PASSED
+"requiredMsg = verifyTextPresent(""Required"", false, OPTIONAL)",Firefox 151.0.1,,,07-07-2026 09:44:18,07-07-2026 09:44:18,0.290s,PASSED
+"verifyEqual(requiredMsg, true)",Firefox 151.0.1,,,07-07-2026 09:44:18,07-07-2026 09:44:18,0.003s,PASSED
+closeBrowser(),Firefox 151.0.1,,,07-07-2026 09:44:18,07-07-2026 09:44:19,0.741s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,07-07-2026 09:44:19,07-07-2026 09:44:19,0.031s,FAILED
+,,,,,,,
+Test Cases/WEB/Password/Ensure user Empty Validation Code,Firefox 151.0.1,,,07-07-2026 09:44:21,07-07-2026 09:44:41,19.711s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,07-07-2026 09:44:21,07-07-2026 09:44:24,2.797s,PASSED
+maximizeWindow(),Firefox 151.0.1,,,07-07-2026 09:44:24,07-07-2026 09:44:24,0.019s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,07-07-2026 09:44:24,07-07-2026 09:44:26,2.404s,PASSED
+waitForPageLoad(20),Firefox 151.0.1,,,07-07-2026 09:44:26,07-07-2026 09:44:26,0.043s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 15)",Firefox 151.0.1,,,07-07-2026 09:44:26,07-07-2026 09:44:27,0.674s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,07-07-2026 09:44:27,07-07-2026 09:44:27,0.232s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 10)",Firefox 151.0.1,,,07-07-2026 09:44:27,07-07-2026 09:44:27,0.247s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,07-07-2026 09:44:27,07-07-2026 09:44:28,0.366s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""), 10)",Firefox 151.0.1,,,07-07-2026 09:44:28,07-07-2026 09:44:28,0.649s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""))",Firefox 151.0.1,,,07-07-2026 09:44:28,07-07-2026 09:44:29,0.340s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), 10)",Firefox 151.0.1,,,07-07-2026 09:44:29,07-07-2026 09:44:29,0.450s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), ""agung.priyadi@gtech.digital"")",Firefox 151.0.1,,,07-07-2026 09:44:29,07-07-2026 09:44:30,0.565s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Send validation code to email""), 10)",Firefox 151.0.1,,,07-07-2026 09:44:30,07-07-2026 09:44:30,0.450s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Send validation code to email""))",Firefox 151.0.1,,,07-07-2026 09:44:30,07-07-2026 09:44:31,0.320s,PASSED
+delay(2),Firefox 151.0.1,,,07-07-2026 09:44:31,07-07-2026 09:44:33,2.012s,PASSED
+"successMsg = verifyTextPresent(""Validation code sent successfully!"", false, OPTIONAL)",Firefox 151.0.1,,,07-07-2026 09:44:33,07-07-2026 09:44:33,0.299s,PASSED
+if (!(successMsg)),Firefox 151.0.1,,,07-07-2026 09:44:33,07-07-2026 09:44:33,0.004s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), 10)",Firefox 151.0.1,,,07-07-2026 09:44:33,07-07-2026 09:44:33,0.228s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), ""Laskar123456"")",Firefox 151.0.1,,,07-07-2026 09:44:33,07-07-2026 09:44:34,0.545s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Validation Code""), 10)",Firefox 151.0.1,,,07-07-2026 09:44:34,07-07-2026 09:44:34,0.447s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Validation Code""), """")",Firefox 151.0.1,,,07-07-2026 09:44:34,07-07-2026 09:44:35,0.483s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""), 10)",Firefox 151.0.1,,,07-07-2026 09:44:35,07-07-2026 09:44:35,0.736s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""))",Firefox 151.0.1,,,07-07-2026 09:44:35,07-07-2026 09:44:36,0.311s,PASSED
+delay(2),Firefox 151.0.1,,,07-07-2026 09:44:36,07-07-2026 09:44:38,2.027s,PASSED
+"requiredMsg = verifyTextPresent(""Required"", false, OPTIONAL)",Firefox 151.0.1,,,07-07-2026 09:44:38,07-07-2026 09:44:38,0.300s,PASSED
+"verifyEqual(requiredMsg, true)",Firefox 151.0.1,,,07-07-2026 09:44:38,07-07-2026 09:44:38,0.002s,PASSED
+closeBrowser(),Firefox 151.0.1,,,07-07-2026 09:44:38,07-07-2026 09:44:39,0.612s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,07-07-2026 09:44:39,07-07-2026 09:44:39,0.021s,FAILED

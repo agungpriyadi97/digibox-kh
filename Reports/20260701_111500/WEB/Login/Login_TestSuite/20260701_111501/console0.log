@@ -1,0 +1,163 @@
+2026-07-01 11:17:16.959 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\AgungPriyadi\.katalon\packages\KS-11.1.3\configuration\org.eclipse.osgi\150\0\.cp\resources\logback\logback-execution.xml
+2026-07-01 11:17:16.959 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\AgungPriyadi\git\digibox-kh\Include\config\log.properties
+2026-07-01 11:17:18.443 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/WEB/Login/Login_TestSuite
+2026-07-01 11:17:18.821 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Agung Priyadi
+2026-07-01 11:17:18.826 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = digibox-kh
+2026-07-01 11:17:18.828 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = AgungPriyadi - NB-GDA-55026
+2026-07-01 11:17:18.829 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-07-01 11:17:18.830 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.110.88
+2026-07-01 11:17:18.833 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.1.3.0
+2026-07-01 11:17:19.838 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-07-01 11:17:19.838 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Login/Login with data Invalid Account
+2026-07-01 11:17:21.368 DEBUG t.Login with data Invalid Account        - 1: openBrowser("")
+2026-07-01 11:17:22.891 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-07-01 11:17:22.906 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-07-01 11:17:23.031 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-07-01 11:17:27.333 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 612f2c54089e4503c46c7e657378ac6d
+2026-07-01 11:17:27.342 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 149.0.7827.103
+2026-07-01 11:17:27.342 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-07-01 11:17:27.346 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-07-01 11:17:27.364 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-07-01 11:17:27.511 DEBUG t.Login with data Invalid Account        - 2: setViewPortSize(1920, 1080)
+2026-07-01 11:17:27.731 DEBUG t.Login with data Invalid Account        - 3: enableSmartWait()
+2026-07-01 11:17:27.779 DEBUG t.Login with data Invalid Account        - 4: navigateToUrl(URL)
+2026-07-01 11:17:29.045 DEBUG t.Login with data Invalid Account        - 5: custom.BrowserHelper.setupBrowserWindow()
+Running browser: HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-07-01 11:17:31.655 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-07-01 11:17:31.667 DEBUG t.Login with data Invalid Account        - 6: waitForPageLoad(30)
+2026-07-01 11:17:32.266 DEBUG t.Login with data Invalid Account        - 7: waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30)
+2026-07-01 11:17:32.950 DEBUG t.Login with data Invalid Account        - 8: verifyElementVisible(findTestObject("WEB/Home Page/header_digibox"))
+2026-07-01 11:17:33.353 DEBUG t.Login with data Invalid Account        - 9: waitForElementClickable(findTestObject("WEB/Registration/icon-acount"), 30)
+2026-07-01 11:17:33.882 DEBUG t.Login with data Invalid Account        - 10: enhancedClick(findTestObject("WEB/Registration/icon-acount"))
+2026-07-01 11:17:34.577 DEBUG t.Login with data Invalid Account        - 11: waitForElementVisible(findTestObject("WEB/Registration/field-account"), 30)
+2026-07-01 11:17:35.380 DEBUG t.Login with data Invalid Account        - 12: setText(findTestObject("WEB/Registration/field-account"), "agungpriyadi99982")
+2026-07-01 11:17:36.765 DEBUG t.Login with data Invalid Account        - 13: setText(findTestObject("WEB/Registration/field-Password"), "Laskar123456")
+2026-07-01 11:17:37.929 DEBUG t.Login with data Invalid Account        - 14: waitForElementClickable(findTestObject("WEB/Login/btn-sign in"), 30)
+2026-07-01 11:17:38.464 DEBUG t.Login with data Invalid Account        - 15: enhancedClick(findTestObject("WEB/Login/btn-sign in"))
+2026-07-01 11:17:38.947 DEBUG t.Login with data Invalid Account        - 16: loginError = new com.kms.katalon.core.testobject.TestObject()
+2026-07-01 11:17:38.957 DEBUG t.Login with data Invalid Account        - 17: loginError.addProperty("xpath", EQUALS, "//div[@role='alert']//p[contains(text(),'Account or password is not correct')]")
+2026-07-01 11:17:38.994 DEBUG t.Login with data Invalid Account        - 18: isVisible = waitForElementVisible(loginError, 15, OPTIONAL)
+2026-07-01 11:17:39.815 DEBUG t.Login with data Invalid Account        - 19: comment("Error Message Visible : " + isVisible)
+2026-07-01 11:17:39.894 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Error Message Visible : true
+2026-07-01 11:17:39.912 DEBUG t.Login with data Invalid Account        - 20: verifyEqual(isVisible, true)
+2026-07-01 11:17:39.971 DEBUG t.Login with data Invalid Account        - 21: closeBrowser()
+2026-07-01 11:17:41.381 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0701_49.run(S0701_49.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+Failed to save screenshot: Cannot take screenshot
+Test Case 'Test Cases/WEB/Login/Login with data Invalid Account' finished with status: PASSED
+2026-07-01 11:17:43.737 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Login/Login with data Invalid Account
+2026-07-01 11:17:43.753 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-07-01 11:17:43.753 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Login/Login with data Invalid Password
+2026-07-01 11:17:44.285 DEBUG t.Login with data Invalid Password       - 1: openBrowser("")
+2026-07-01 11:17:44.298 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-07-01 11:17:44.299 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-07-01 11:17:44.304 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-07-01 11:17:45.538 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 19e5d7c8c3c1cb45d99d97dee7044b25
+2026-07-01 11:17:45.555 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 149.0.7827.103
+2026-07-01 11:17:45.555 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-07-01 11:17:45.555 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-07-01 11:17:45.570 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-07-01 11:17:45.653 DEBUG t.Login with data Invalid Password       - 2: setViewPortSize(1920, 1080)
+2026-07-01 11:17:45.812 DEBUG t.Login with data Invalid Password       - 3: enableSmartWait()
+2026-07-01 11:17:45.838 DEBUG t.Login with data Invalid Password       - 4: navigateToUrl(URL)
+2026-07-01 11:17:48.336 DEBUG t.Login with data Invalid Password       - 5: custom.BrowserHelper.setupBrowserWindow()
+Running browser: HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-07-01 11:17:48.547 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-07-01 11:17:48.565 DEBUG t.Login with data Invalid Password       - 6: waitForPageLoad(30)
+2026-07-01 11:17:48.651 DEBUG t.Login with data Invalid Password       - 7: waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30)
+2026-07-01 11:17:49.309 DEBUG t.Login with data Invalid Password       - 8: verifyElementVisible(findTestObject("WEB/Home Page/header_digibox"))
+2026-07-01 11:17:49.662 DEBUG t.Login with data Invalid Password       - 9: waitForElementClickable(findTestObject("WEB/Registration/icon-acount"), 30)
+2026-07-01 11:17:50.088 DEBUG t.Login with data Invalid Password       - 10: enhancedClick(findTestObject("WEB/Registration/icon-acount"))
+2026-07-01 11:17:50.685 DEBUG t.Login with data Invalid Password       - 11: waitForElementVisible(findTestObject("WEB/Registration/field-account"), 30)
+2026-07-01 11:17:51.461 DEBUG t.Login with data Invalid Password       - 12: setText(findTestObject("WEB/Registration/field-account"), "agungpriyadi")
+2026-07-01 11:17:52.608 DEBUG t.Login with data Invalid Password       - 13: setText(findTestObject("WEB/Registration/field-Password"), "Laskar1234568")
+2026-07-01 11:17:53.816 DEBUG t.Login with data Invalid Password       - 14: waitForElementClickable(findTestObject("WEB/Login/btn-sign in"), 30)
+2026-07-01 11:17:54.326 DEBUG t.Login with data Invalid Password       - 15: enhancedClick(findTestObject("WEB/Login/btn-sign in"))
+2026-07-01 11:17:54.801 DEBUG t.Login with data Invalid Password       - 16: loginError = new com.kms.katalon.core.testobject.TestObject()
+2026-07-01 11:17:54.813 DEBUG t.Login with data Invalid Password       - 17: loginError.addProperty("xpath", EQUALS, "//div[@role='alert']//p[contains(text(),'Account or password is not correct')]")
+2026-07-01 11:17:54.828 DEBUG t.Login with data Invalid Password       - 18: isVisible = waitForElementVisible(loginError, 15, OPTIONAL)
+2026-07-01 11:17:55.705 DEBUG t.Login with data Invalid Password       - 19: comment("Error Message Visible : " + isVisible)
+2026-07-01 11:17:55.709 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Error Message Visible : true
+2026-07-01 11:17:55.713 DEBUG t.Login with data Invalid Password       - 20: verifyEqual(isVisible, true)
+2026-07-01 11:17:55.721 DEBUG t.Login with data Invalid Password       - 21: closeBrowser()
+2026-07-01 11:17:56.654 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0701_49.run(S0701_49.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+Failed to save screenshot: Cannot take screenshot
+Test Case 'Test Cases/WEB/Login/Login with data Invalid Password' finished with status: PASSED
+2026-07-01 11:17:58.887 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Login/Login with data Invalid Password
+2026-07-01 11:17:58.887 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-07-01 11:17:58.887 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Login/Login with data valid
+2026-07-01 11:17:59.227 DEBUG testcase.Login with data valid           - 1: openBrowser("")
+2026-07-01 11:17:59.230 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-07-01 11:17:59.232 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-07-01 11:17:59.247 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-07-01 11:18:00.354 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 2520f8c851a0eb1edca0a6ecb3af4799
+2026-07-01 11:18:00.354 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 149.0.7827.103
+2026-07-01 11:18:00.354 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-07-01 11:18:00.370 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-07-01 11:18:00.370 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-07-01 11:18:00.437 DEBUG testcase.Login with data valid           - 2: setViewPortSize(1920, 1080)
+2026-07-01 11:18:00.538 DEBUG testcase.Login with data valid           - 3: enableSmartWait()
+2026-07-01 11:18:00.538 DEBUG testcase.Login with data valid           - 4: navigateToUrl(URL)
+2026-07-01 11:18:02.977 DEBUG testcase.Login with data valid           - 5: custom.BrowserHelper.setupBrowserWindow()
+Running browser: HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-07-01 11:18:03.147 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-07-01 11:18:03.153 DEBUG testcase.Login with data valid           - 6: waitForPageLoad(30)
+2026-07-01 11:18:03.224 DEBUG testcase.Login with data valid           - 7: waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30)
+2026-07-01 11:18:04.014 DEBUG testcase.Login with data valid           - 8: verifyElementVisible(findTestObject("WEB/Home Page/header_digibox"))
+2026-07-01 11:18:04.363 DEBUG testcase.Login with data valid           - 9: waitForElementClickable(findTestObject("WEB/Registration/icon-acount"), 30)
+2026-07-01 11:18:04.749 DEBUG testcase.Login with data valid           - 10: enhancedClick(findTestObject("WEB/Registration/icon-acount"))
+2026-07-01 11:18:05.228 DEBUG testcase.Login with data valid           - 11: waitForElementVisible(findTestObject("WEB/Registration/field-account"), 30)
+2026-07-01 11:18:06.302 DEBUG testcase.Login with data valid           - 12: setText(findTestObject("WEB/Registration/field-account"), "agungpriyadi")
+2026-07-01 11:18:07.512 DEBUG testcase.Login with data valid           - 13: setText(findTestObject("WEB/Registration/field-Password"), "Laskar123456")
+2026-07-01 11:18:08.779 DEBUG testcase.Login with data valid           - 14: waitForElementClickable(findTestObject("WEB/Login/btn-sign in"), 30)
+2026-07-01 11:18:09.267 DEBUG testcase.Login with data valid           - 15: enhancedClick(findTestObject("WEB/Login/btn-sign in"))
+2026-07-01 11:18:09.758 DEBUG testcase.Login with data valid           - 16: waitForPageLoad(30)
+2026-07-01 11:18:09.783 DEBUG testcase.Login with data valid           - 17: delay(5)
+2026-07-01 11:18:14.823 DEBUG testcase.Login with data valid           - 18: waitForElementClickable(findTestObject("WEB/Registration/icon-acount"), 30)
+2026-07-01 11:18:15.199 DEBUG testcase.Login with data valid           - 19: enhancedClick(findTestObject("WEB/Registration/icon-acount"))
+2026-07-01 11:18:15.647 DEBUG testcase.Login with data valid           - 20: waitForElementVisible(findTestObject("WEB/Home Page/verify-succes-acount-login"), 30)
+2026-07-01 11:18:15.984 DEBUG testcase.Login with data valid           - 21: verifyElementVisible(findTestObject("WEB/Home Page/verify-succes-acount-login"))
+2026-07-01 11:18:16.274 DEBUG testcase.Login with data valid           - 22: comment("Login success verified")
+2026-07-01 11:18:16.277 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Login success verified
+2026-07-01 11:18:16.282 DEBUG testcase.Login with data valid           - 23: closeBrowser()
+2026-07-01 11:18:17.264 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0701_49.run(S0701_49.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+Failed to save screenshot: Cannot take screenshot
+Test Case 'Test Cases/WEB/Login/Login with data valid' finished with status: PASSED
+2026-07-01 11:18:19.563 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Login/Login with data valid
+2026-07-01 11:18:19.574 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-07-01 11:18:19.574 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Login/Login with Empty Field Validation
+2026-07-01 11:18:19.921 DEBUG t.Login with Empty Field Validation      - 1: openBrowser("")
+2026-07-01 11:18:19.921 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome (headless)' driver
+2026-07-01 11:18:19.921 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+2026-07-01 11:18:19.921 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-07-01 11:18:21.139 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = d17c12a4e9ec220da73f2f2a04a7063c
+2026-07-01 11:18:21.139 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 149.0.7827.103
+2026-07-01 11:18:21.139 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-07-01 11:18:21.139 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-07-01 11:18:21.139 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-07-01 11:18:21.190 DEBUG t.Login with Empty Field Validation      - 2: custom.BrowserHelper.setupBrowserWindow()
+Running browser: HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-07-01 11:18:21.296 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-07-01 11:18:21.305 DEBUG t.Login with Empty Field Validation      - 3: setViewPortSize(1920, 1080)
+2026-07-01 11:18:21.355 DEBUG t.Login with Empty Field Validation      - 4: navigateToUrl(URL)
+2026-07-01 11:18:23.366 DEBUG t.Login with Empty Field Validation      - 5: waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 15)
+2026-07-01 11:18:23.767 DEBUG t.Login with Empty Field Validation      - 6: verifyElementVisible(findTestObject("WEB/Home Page/header_digibox"))
+2026-07-01 11:18:24.565 DEBUG t.Login with Empty Field Validation      - 7: click(findTestObject("WEB/Registration/icon-acount"))
+2026-07-01 11:18:25.186 DEBUG t.Login with Empty Field Validation      - 8: setText(findTestObject("WEB/Registration/field-account"), "")
+2026-07-01 11:18:26.808 DEBUG t.Login with Empty Field Validation      - 9: setText(findTestObject("WEB/Registration/field-Password"), "")
+2026-07-01 11:18:27.834 DEBUG t.Login with Empty Field Validation      - 10: click(findTestObject("WEB/Login/btn-sign in"))
+2026-07-01 11:18:28.533 DEBUG t.Login with Empty Field Validation      - 11: delay(2)
+2026-07-01 11:18:30.557 DEBUG t.Login with Empty Field Validation      - 12: verifyElementVisible(findTestObject("WEB/Login/btn-sign in"), STOP_ON_FAILURE)
+2026-07-01 11:18:30.901 DEBUG t.Login with Empty Field Validation      - 13: comment("Login validation with empty username and password executed")
+2026-07-01 11:18:30.904 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Login validation with empty username and password executed
+2026-07-01 11:18:30.912 DEBUG t.Login with Empty Field Validation      - 14: closeBrowser()
+2026-07-01 11:18:31.772 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0701_49.run(S0701_49.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+Failed to save screenshot: Cannot take screenshot
+Test Case 'Test Cases/WEB/Login/Login with Empty Field Validation' finished with status: PASSED
+2026-07-01 11:18:33.955 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Login/Login with Empty Field Validation
+2026-07-01 11:18:34.034 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-07-01 11:18:34.034 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/WEB/Login/Login_TestSuite
+2026-07-01 11:18:34.034 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

@@ -1,0 +1,180 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+HomePage_TestSuite,Firefox 151.0.1,,,13-07-2026 15:02:31,13-07-2026 15:04:37,2m - 5.597s,PASSED
+,,,,,,,
+Test Cases/WEB/Home Page/Home - Ensure Menu Login with data akun and password not valid,Firefox 151.0.1,,,13-07-2026 15:02:32,13-07-2026 15:02:48,16.147s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,13-07-2026 15:02:32,13-07-2026 15:02:37,4.655s,PASSED
+"setViewPortSize(1920, 1080)",Firefox 151.0.1,,,13-07-2026 15:02:37,13-07-2026 15:02:37,0.474s,PASSED
+enableSmartWait(),Firefox 151.0.1,,,13-07-2026 15:02:37,13-07-2026 15:02:37,0.017s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,13-07-2026 15:02:37,13-07-2026 15:02:40,2.542s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Firefox 151.0.1,,,13-07-2026 15:02:40,13-07-2026 15:02:40,0.081s,PASSED
+waitForPageLoad(30),Firefox 151.0.1,,,13-07-2026 15:02:40,13-07-2026 15:02:40,0.100s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Firefox 151.0.1,,,13-07-2026 15:02:40,13-07-2026 15:02:41,0.758s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,13-07-2026 15:02:41,13-07-2026 15:02:41,0.245s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Firefox 151.0.1,,,13-07-2026 15:02:41,13-07-2026 15:02:41,0.271s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,13-07-2026 15:02:41,13-07-2026 15:02:41,0.351s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Firefox 151.0.1,,,13-07-2026 15:02:41,13-07-2026 15:02:42,0.551s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi2"")",Firefox 151.0.1,,,13-07-2026 15:02:42,13-07-2026 15:02:43,0.541s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar1234560"")",Firefox 151.0.1,,,13-07-2026 15:02:43,13-07-2026 15:02:43,0.724s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Firefox 151.0.1,,,13-07-2026 15:02:43,13-07-2026 15:02:44,0.445s,PASSED
+"enhancedClick(findTestObject(""WEB/Login/btn-sign in""))",Firefox 151.0.1,,,13-07-2026 15:02:44,13-07-2026 15:02:44,0.301s,PASSED
+loginError = new com.kms.katalon.core.testobject.TestObject(),Firefox 151.0.1,,,13-07-2026 15:02:44,13-07-2026 15:02:44,0.002s,PASSED
+"loginError.addProperty(""xpath"", EQUALS, ""//div[@role='alert']//p[contains(text(),'Account or password is not correct')]"")",Firefox 151.0.1,,,13-07-2026 15:02:44,13-07-2026 15:02:44,0.007s,PASSED
+"isVisible = waitForElementVisible(loginError, 10, OPTIONAL)",Firefox 151.0.1,,,13-07-2026 15:02:44,13-07-2026 15:02:45,0.731s,PASSED
+"comment(""Login Error Visible : "" + isVisible)",Firefox 151.0.1,,,13-07-2026 15:02:45,13-07-2026 15:02:45,0.020s,PASSED
+"verifyEqual(isVisible, true)",Firefox 151.0.1,,,13-07-2026 15:02:45,13-07-2026 15:02:45,0.010s,PASSED
+closeBrowser(),Firefox 151.0.1,,,13-07-2026 15:02:45,13-07-2026 15:02:46,0.760s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,13-07-2026 15:02:46,13-07-2026 15:02:46,0.112s,FAILED
+,,,,,,,
+Test Cases/WEB/Home Page/Home - Ensure Menu Login with data akun and password valid,Firefox 151.0.1,,,13-07-2026 15:02:48,13-07-2026 15:03:06,18.379s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,13-07-2026 15:02:48,13-07-2026 15:02:50,2.674s,PASSED
+"setViewPortSize(1920, 1080)",Firefox 151.0.1,,,13-07-2026 15:02:50,13-07-2026 15:02:51,0.352s,PASSED
+enableSmartWait(),Firefox 151.0.1,,,13-07-2026 15:02:51,13-07-2026 15:02:51,0.007s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,13-07-2026 15:02:51,13-07-2026 15:02:53,2.020s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Firefox 151.0.1,,,13-07-2026 15:02:53,13-07-2026 15:02:53,0.082s,PASSED
+waitForPageLoad(30),Firefox 151.0.1,,,13-07-2026 15:02:53,13-07-2026 15:02:53,0.027s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Firefox 151.0.1,,,13-07-2026 15:02:53,13-07-2026 15:02:53,0.317s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,13-07-2026 15:02:53,13-07-2026 15:02:54,0.252s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Firefox 151.0.1,,,13-07-2026 15:02:54,13-07-2026 15:02:54,0.556s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,13-07-2026 15:02:54,13-07-2026 15:02:54,0.304s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Firefox 151.0.1,,,13-07-2026 15:02:54,13-07-2026 15:02:55,0.630s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Firefox 151.0.1,,,13-07-2026 15:02:55,13-07-2026 15:02:56,0.536s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Firefox 151.0.1,,,13-07-2026 15:02:56,13-07-2026 15:02:56,0.721s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Firefox 151.0.1,,,13-07-2026 15:02:56,13-07-2026 15:02:57,0.437s,PASSED
+"enhancedClick(findTestObject(""WEB/Login/btn-sign in""))",Firefox 151.0.1,,,13-07-2026 15:02:57,13-07-2026 15:02:57,0.304s,PASSED
+waitForPageLoad(30),Firefox 151.0.1,,,13-07-2026 15:02:57,13-07-2026 15:02:57,0.011s,PASSED
+delay(5),Firefox 151.0.1,,,13-07-2026 15:02:57,13-07-2026 15:03:02,5.027s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Firefox 151.0.1,,,13-07-2026 15:03:02,13-07-2026 15:03:02,0.241s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,13-07-2026 15:03:02,13-07-2026 15:03:03,0.281s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/verify-succes-acount-login""), 30)",Firefox 151.0.1,,,13-07-2026 15:03:03,13-07-2026 15:03:03,0.629s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/verify-succes-acount-login""))",Firefox 151.0.1,,,13-07-2026 15:03:03,13-07-2026 15:03:03,0.226s,PASSED
+closeBrowser(),Firefox 151.0.1,,,13-07-2026 15:03:03,13-07-2026 15:03:04,0.603s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,13-07-2026 15:03:04,13-07-2026 15:03:04,0.020s,FAILED
+,,,,,,,
+Test Cases/WEB/Home Page/Home - Ensure Menu Search,Firefox 151.0.1,,,13-07-2026 15:03:06,13-07-2026 15:03:21,14.679s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,13-07-2026 15:03:06,13-07-2026 15:03:09,2.579s,PASSED
+"setViewPortSize(1920, 1080)",Firefox 151.0.1,,,13-07-2026 15:03:09,13-07-2026 15:03:09,0.337s,PASSED
+enableSmartWait(),Firefox 151.0.1,,,13-07-2026 15:03:09,13-07-2026 15:03:09,0.003s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,13-07-2026 15:03:09,13-07-2026 15:03:11,1.977s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Firefox 151.0.1,,,13-07-2026 15:03:11,13-07-2026 15:03:11,0.159s,PASSED
+waitForPageLoad(30),Firefox 151.0.1,,,13-07-2026 15:03:11,13-07-2026 15:03:11,0.054s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Firefox 151.0.1,,,13-07-2026 15:03:11,13-07-2026 15:03:12,0.256s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,13-07-2026 15:03:12,13-07-2026 15:03:12,0.235s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Home Page/Search/icon-search""), 30)",Firefox 151.0.1,,,13-07-2026 15:03:12,13-07-2026 15:03:12,0.565s,PASSED
+"enhancedClick(findTestObject(""WEB/Home Page/Search/icon-search""))",Firefox 151.0.1,,,13-07-2026 15:03:12,13-07-2026 15:03:13,0.295s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Search/field-search""), 30)",Firefox 151.0.1,,,13-07-2026 15:03:13,13-07-2026 15:03:13,0.229s,PASSED
+"setText(findTestObject(""WEB/Home Page/Search/field-search""), ""IPHONE 11 PRO 128 GB DEEP PURPLE"")",Firefox 151.0.1,,,13-07-2026 15:03:13,13-07-2026 15:03:13,0.555s,PASSED
+"sendKeys(findTestObject(""WEB/Home Page/Search/field-search""), Keys.chord(ENTER))",Firefox 151.0.1,,,13-07-2026 15:03:13,13-07-2026 15:03:14,0.467s,PASSED
+waitForPageLoad(30),Firefox 151.0.1,,,13-07-2026 15:03:14,13-07-2026 15:03:14,0.007s,PASSED
+delay(3),Firefox 151.0.1,,,13-07-2026 15:03:14,13-07-2026 15:03:17,3.005s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Search/verify-product-iphone-11-pro""), 30)",Firefox 151.0.1,,,13-07-2026 15:03:17,13-07-2026 15:03:18,0.957s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/Search/verify-product-iphone-11-pro""))",Firefox 151.0.1,,,13-07-2026 15:03:18,13-07-2026 15:03:18,0.234s,PASSED
+closeBrowser(),Firefox 151.0.1,,,13-07-2026 15:03:18,13-07-2026 15:03:19,0.633s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,13-07-2026 15:03:19,13-07-2026 15:03:19,0.021s,FAILED
+,,,,,,,
+Test Cases/WEB/Home Page/Verify all product category menus are displayed correctly on the homepage,Firefox 151.0.1,,,13-07-2026 15:03:21,13-07-2026 15:04:37,1m - 16.115s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,13-07-2026 15:03:21,13-07-2026 15:03:24,2.693s,PASSED
+"setViewPortSize(1920, 1080)",Firefox 151.0.1,,,13-07-2026 15:03:24,13-07-2026 15:03:24,0.335s,PASSED
+enableSmartWait(),Firefox 151.0.1,,,13-07-2026 15:03:24,13-07-2026 15:03:24,0.004s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,13-07-2026 15:03:24,13-07-2026 15:03:26,2.074s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Firefox 151.0.1,,,13-07-2026 15:03:26,13-07-2026 15:03:26,0.094s,PASSED
+waitForPageLoad(30),Firefox 151.0.1,,,13-07-2026 15:03:26,13-07-2026 15:03:26,0.022s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Firefox 151.0.1,,,13-07-2026 15:03:26,13-07-2026 15:03:26,0.275s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,13-07-2026 15:03:26,13-07-2026 15:03:27,0.235s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Firefox 151.0.1,,,13-07-2026 15:03:27,13-07-2026 15:03:27,0.641s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,13-07-2026 15:03:27,13-07-2026 15:03:28,0.329s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Firefox 151.0.1,,,13-07-2026 15:03:28,13-07-2026 15:03:28,0.663s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Firefox 151.0.1,,,13-07-2026 15:03:28,13-07-2026 15:03:29,0.510s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Firefox 151.0.1,,,13-07-2026 15:03:29,13-07-2026 15:03:30,0.715s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Firefox 151.0.1,,,13-07-2026 15:03:30,13-07-2026 15:03:30,0.435s,PASSED
+"enhancedClick(findTestObject(""WEB/Login/btn-sign in""))",Firefox 151.0.1,,,13-07-2026 15:03:30,13-07-2026 15:03:30,0.302s,PASSED
+waitForPageLoad(30),Firefox 151.0.1,,,13-07-2026 15:03:30,13-07-2026 15:03:30,0.006s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), 10)",Firefox 151.0.1,,,13-07-2026 15:03:30,13-07-2026 15:03:31,0.428s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:03:31,13-07-2026 15:03:31,0.379s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max""))",Firefox 151.0.1,,,13-07-2026 15:03:31,13-07-2026 15:03:31,0.299s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), 10)",Firefox 151.0.1,,,13-07-2026 15:03:31,13-07-2026 15:03:33,1.551s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:03:33,13-07-2026 15:03:34,0.918s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max""))",Firefox 151.0.1,,,13-07-2026 15:03:34,13-07-2026 15:03:34,0.289s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), 10)",Firefox 151.0.1,,,13-07-2026 15:03:34,13-07-2026 15:03:36,1.628s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:03:36,13-07-2026 15:03:36,0.349s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro""))",Firefox 151.0.1,,,13-07-2026 15:03:36,13-07-2026 15:03:36,0.302s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), 10)",Firefox 151.0.1,,,13-07-2026 15:03:36,13-07-2026 15:03:38,1.637s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:03:38,13-07-2026 15:03:38,0.338s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Iphone/sub-menu-iPhone 13""))",Firefox 151.0.1,,,13-07-2026 15:03:38,13-07-2026 15:03:39,0.292s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), 10)",Firefox 151.0.1,,,13-07-2026 15:03:39,13-07-2026 15:03:40,1.628s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:03:40,13-07-2026 15:03:41,0.339s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Iphone/sub-menu-iPhone 13 mini""))",Firefox 151.0.1,,,13-07-2026 15:03:41,13-07-2026 15:03:41,0.294s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), 10)",Firefox 151.0.1,,,13-07-2026 15:03:41,13-07-2026 15:03:43,1.629s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:03:43,13-07-2026 15:03:43,0.338s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Iphone/sub-menu-iPhone 12""))",Firefox 151.0.1,,,13-07-2026 15:03:43,13-07-2026 15:03:43,0.297s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), 10)",Firefox 151.0.1,,,13-07-2026 15:03:43,13-07-2026 15:03:44,0.624s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:03:44,13-07-2026 15:03:45,1.241s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Iphone/sub-menu-iPhone 11""))",Firefox 151.0.1,,,13-07-2026 15:03:45,13-07-2026 15:03:45,0.308s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), 10)",Firefox 151.0.1,,,13-07-2026 15:03:45,13-07-2026 15:03:47,1.634s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:03:47,13-07-2026 15:03:47,0.341s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Ipad/sub-menu-iPad pro""))",Firefox 151.0.1,,,13-07-2026 15:03:47,13-07-2026 15:03:48,0.287s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), 10)",Firefox 151.0.1,,,13-07-2026 15:03:48,13-07-2026 15:03:49,1.630s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:03:49,13-07-2026 15:03:50,0.336s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Ipad/sub-menu-iPad Air""))",Firefox 151.0.1,,,13-07-2026 15:03:50,13-07-2026 15:03:50,0.295s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), 10)",Firefox 151.0.1,,,13-07-2026 15:03:50,13-07-2026 15:03:52,1.734s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:03:52,13-07-2026 15:03:52,0.339s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Ipad/sub-menu-iPad mini""))",Firefox 151.0.1,,,13-07-2026 15:03:52,13-07-2026 15:03:52,0.285s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), 10)",Firefox 151.0.1,,,13-07-2026 15:03:52,13-07-2026 15:03:54,1.631s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:03:54,13-07-2026 15:03:54,0.343s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Ipad/sub-menu-iPad (Gen 10th)""))",Firefox 151.0.1,,,13-07-2026 15:03:54,13-07-2026 15:03:55,0.302s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), 10)",Firefox 151.0.1,,,13-07-2026 15:03:55,13-07-2026 15:03:55,0.629s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:03:55,13-07-2026 15:03:56,1.044s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 7""))",Firefox 151.0.1,,,13-07-2026 15:03:56,13-07-2026 15:03:57,0.295s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), 10)",Firefox 151.0.1,,,13-07-2026 15:03:57,13-07-2026 15:03:58,1.661s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:03:58,13-07-2026 15:03:59,0.335s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 6""))",Firefox 151.0.1,,,13-07-2026 15:03:59,13-07-2026 15:03:59,0.291s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), 10)",Firefox 151.0.1,,,13-07-2026 15:03:59,13-07-2026 15:04:00,1.524s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:00,13-07-2026 15:04:01,0.332s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 3""))",Firefox 151.0.1,,,13-07-2026 15:04:01,13-07-2026 15:04:01,0.290s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:01,13-07-2026 15:04:03,1.634s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:03,13-07-2026 15:04:03,0.338s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch SE""))",Firefox 151.0.1,,,13-07-2026 15:04:03,13-07-2026 15:04:03,0.287s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:03,13-07-2026 15:04:05,1.637s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:05,13-07-2026 15:04:05,0.336s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra""))",Firefox 151.0.1,,,13-07-2026 15:04:05,13-07-2026 15:04:05,0.290s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Mac/menu-Mac""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:05,13-07-2026 15:04:07,1.530s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Mac/menu-Mac""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:07,13-07-2026 15:04:07,0.345s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Mac/sub-menu-MacBook Pro""))",Firefox 151.0.1,,,13-07-2026 15:04:07,13-07-2026 15:04:08,0.291s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Mac/menu-Mac""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:08,13-07-2026 15:04:09,1.637s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Mac/menu-Mac""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:09,13-07-2026 15:04:10,0.341s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Mac/sub-menu-MacBook Air""))",Firefox 151.0.1,,,13-07-2026 15:04:10,13-07-2026 15:04:10,0.291s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:10,13-07-2026 15:04:12,1.630s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:12,13-07-2026 15:04:12,0.334s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Airpods/sub-menu-AirPods Max""))",Firefox 151.0.1,,,13-07-2026 15:04:12,13-07-2026 15:04:12,0.292s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:12,13-07-2026 15:04:14,1.628s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:14,13-07-2026 15:04:14,0.336s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Airpods/sub-menu-AirPods Pro""))",Firefox 151.0.1,,,13-07-2026 15:04:14,13-07-2026 15:04:14,0.303s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:14,13-07-2026 15:04:16,1.637s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:16,13-07-2026 15:04:16,0.339s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Airpods/sub-menu-AirPods 3rd Generation""))",Firefox 151.0.1,,,13-07-2026 15:04:16,13-07-2026 15:04:17,0.288s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:17,13-07-2026 15:04:18,1.535s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:18,13-07-2026 15:04:19,0.335s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Airpods/sub-menu-AirPods 2nd Generation""))",Firefox 151.0.1,,,13-07-2026 15:04:19,13-07-2026 15:04:19,0.301s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:19,13-07-2026 15:04:20,1.531s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:20,13-07-2026 15:04:21,0.335s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Accessoris/sub-menu-Aksesoris iPhone""))",Firefox 151.0.1,,,13-07-2026 15:04:21,13-07-2026 15:04:21,0.291s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:21,13-07-2026 15:04:23,1.528s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:23,13-07-2026 15:04:23,0.639s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Accessoris/sub-menu-Aksesoris iPad""))",Firefox 151.0.1,,,13-07-2026 15:04:23,13-07-2026 15:04:23,0.292s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:23,13-07-2026 15:04:25,1.636s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:25,13-07-2026 15:04:25,0.332s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Accessoris/sub-menu-MacBook Accessories""))",Firefox 151.0.1,,,13-07-2026 15:04:25,13-07-2026 15:04:26,0.290s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:26,13-07-2026 15:04:27,1.629s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:27,13-07-2026 15:04:28,0.334s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Accessoris/sub-menu-Watch accessories""))",Firefox 151.0.1,,,13-07-2026 15:04:28,13-07-2026 15:04:28,0.295s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Promotion/menu-Promotion""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:28,13-07-2026 15:04:29,0.629s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Promotion/menu-Promotion""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:29,13-07-2026 15:04:30,1.240s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Promotion/sub-menu-Digimania August 2022""))",Firefox 151.0.1,,,13-07-2026 15:04:30,13-07-2026 15:04:30,0.296s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Promotion/menu-Promotion""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:30,13-07-2026 15:04:32,1.431s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Promotion/menu-Promotion""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:32,13-07-2026 15:04:32,0.334s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Promotion/sub-menu-Flash Sale""))",Firefox 151.0.1,,,13-07-2026 15:04:32,13-07-2026 15:04:32,0.295s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education""), 10)",Firefox 151.0.1,,,13-07-2026 15:04:32,13-07-2026 15:04:33,0.625s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education""), STOP_ON_FAILURE)",Firefox 151.0.1,,,13-07-2026 15:04:33,13-07-2026 15:04:33,0.360s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education""))",Firefox 151.0.1,,,13-07-2026 15:04:33,13-07-2026 15:04:34,0.994s,PASSED
+waitForPageLoad(10),Firefox 151.0.1,,,13-07-2026 15:04:34,13-07-2026 15:04:34,0.006s,PASSED
+closeBrowser(),Firefox 151.0.1,,,13-07-2026 15:04:34,13-07-2026 15:04:35,0.582s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,13-07-2026 15:04:35,13-07-2026 15:04:35,0.018s,FAILED

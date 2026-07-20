@@ -1,0 +1,93 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login_TestSuite,Firefox 151.0.1,,,10-06-2026 14:57:38,10-06-2026 14:58:45,1m - 7.561s,PASSED
+,,,,,,,
+Test Cases/WEB/Login/Login with data Invalid Account,Firefox 151.0.1,,,10-06-2026 14:57:38,10-06-2026 14:57:56,17.965s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,10-06-2026 14:57:38,10-06-2026 14:57:44,5.665s,PASSED
+"setViewPortSize(1920, 1080)",Firefox 151.0.1,,,10-06-2026 14:57:44,10-06-2026 14:57:45,0.500s,PASSED
+enableSmartWait(),Firefox 151.0.1,,,10-06-2026 14:57:45,10-06-2026 14:57:45,0.023s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,10-06-2026 14:57:45,10-06-2026 14:57:47,2.660s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Firefox 151.0.1,,,10-06-2026 14:57:47,10-06-2026 14:57:48,0.192s,PASSED
+waitForPageLoad(30),Firefox 151.0.1,,,10-06-2026 14:57:48,10-06-2026 14:57:48,0.164s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Firefox 151.0.1,,,10-06-2026 14:57:48,10-06-2026 14:57:48,0.543s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,10-06-2026 14:57:48,10-06-2026 14:57:48,0.268s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Firefox 151.0.1,,,10-06-2026 14:57:48,10-06-2026 14:57:49,0.292s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,10-06-2026 14:57:49,10-06-2026 14:57:49,0.380s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Firefox 151.0.1,,,10-06-2026 14:57:49,10-06-2026 14:57:50,0.576s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi99982"")",Firefox 151.0.1,,,10-06-2026 14:57:50,10-06-2026 14:57:50,0.589s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Firefox 151.0.1,,,10-06-2026 14:57:50,10-06-2026 14:57:51,0.765s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Firefox 151.0.1,,,10-06-2026 14:57:51,10-06-2026 14:57:52,0.449s,PASSED
+"enhancedClick(findTestObject(""WEB/Login/btn-sign in""))",Firefox 151.0.1,,,10-06-2026 14:57:52,10-06-2026 14:57:52,0.331s,PASSED
+loginError = new com.kms.katalon.core.testobject.TestObject(),Firefox 151.0.1,,,10-06-2026 14:57:52,10-06-2026 14:57:52,0.003s,PASSED
+"loginError.addProperty(""xpath"", EQUALS, ""//div[@role='alert']//p[contains(text(),'Account or password is not correct')]"")",Firefox 151.0.1,,,10-06-2026 14:57:52,10-06-2026 14:57:52,0.007s,PASSED
+"isVisible = waitForElementVisible(loginError, 15, OPTIONAL)",Firefox 151.0.1,,,10-06-2026 14:57:52,10-06-2026 14:57:53,0.745s,PASSED
+"comment(""Error Message Visible : "" + isVisible)",Firefox 151.0.1,,,10-06-2026 14:57:53,10-06-2026 14:57:53,0.019s,PASSED
+"verifyEqual(isVisible, true)",Firefox 151.0.1,,,10-06-2026 14:57:53,10-06-2026 14:57:53,0.012s,PASSED
+closeBrowser(),Firefox 151.0.1,,,10-06-2026 14:57:53,10-06-2026 14:57:54,0.996s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,10-06-2026 14:57:54,10-06-2026 14:57:54,0.193s,FAILED
+,,,,,,,
+Test Cases/WEB/Login/Login with data Invalid Password,Firefox 151.0.1,,,10-06-2026 14:57:56,10-06-2026 14:58:10,14.381s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,10-06-2026 14:57:56,10-06-2026 14:58:00,3.456s,PASSED
+"setViewPortSize(1920, 1080)",Firefox 151.0.1,,,10-06-2026 14:58:00,10-06-2026 14:58:00,0.354s,PASSED
+enableSmartWait(),Firefox 151.0.1,,,10-06-2026 14:58:00,10-06-2026 14:58:00,0.006s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,10-06-2026 14:58:00,10-06-2026 14:58:02,2.351s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Firefox 151.0.1,,,10-06-2026 14:58:02,10-06-2026 14:58:02,0.130s,PASSED
+waitForPageLoad(30),Firefox 151.0.1,,,10-06-2026 14:58:02,10-06-2026 14:58:02,0.028s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Firefox 151.0.1,,,10-06-2026 14:58:02,10-06-2026 14:58:03,0.310s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,10-06-2026 14:58:03,10-06-2026 14:58:03,0.331s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Firefox 151.0.1,,,10-06-2026 14:58:03,10-06-2026 14:58:04,0.510s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,10-06-2026 14:58:04,10-06-2026 14:58:04,0.383s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Firefox 151.0.1,,,10-06-2026 14:58:04,10-06-2026 14:58:05,0.656s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Firefox 151.0.1,,,10-06-2026 14:58:05,10-06-2026 14:58:05,0.547s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar1234568"")",Firefox 151.0.1,,,10-06-2026 14:58:05,10-06-2026 14:58:06,0.742s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Firefox 151.0.1,,,10-06-2026 14:58:06,10-06-2026 14:58:06,0.451s,PASSED
+"enhancedClick(findTestObject(""WEB/Login/btn-sign in""))",Firefox 151.0.1,,,10-06-2026 14:58:06,10-06-2026 14:58:07,0.318s,PASSED
+loginError = new com.kms.katalon.core.testobject.TestObject(),Firefox 151.0.1,,,10-06-2026 14:58:07,10-06-2026 14:58:07,0.004s,PASSED
+"loginError.addProperty(""xpath"", EQUALS, ""//div[@role='alert']//p[contains(text(),'Account or password is not correct')]"")",Firefox 151.0.1,,,10-06-2026 14:58:07,10-06-2026 14:58:07,0.002s,PASSED
+"isVisible = waitForElementVisible(loginError, 15, OPTIONAL)",Firefox 151.0.1,,,10-06-2026 14:58:07,10-06-2026 14:58:07,0.736s,PASSED
+"comment(""Error Message Visible : "" + isVisible)",Firefox 151.0.1,,,10-06-2026 14:58:07,10-06-2026 14:58:07,0.004s,PASSED
+"verifyEqual(isVisible, true)",Firefox 151.0.1,,,10-06-2026 14:58:07,10-06-2026 14:58:07,0.002s,PASSED
+closeBrowser(),Firefox 151.0.1,,,10-06-2026 14:58:07,10-06-2026 14:58:08,0.788s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,10-06-2026 14:58:08,10-06-2026 14:58:08,0.030s,FAILED
+,,,,,,,
+Test Cases/WEB/Login/Login with data valid,Firefox 151.0.1,,,10-06-2026 14:58:10,10-06-2026 14:58:30,20.077s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,10-06-2026 14:58:10,10-06-2026 14:58:14,3.123s,PASSED
+"setViewPortSize(1920, 1080)",Firefox 151.0.1,,,10-06-2026 14:58:14,10-06-2026 14:58:14,0.371s,PASSED
+enableSmartWait(),Firefox 151.0.1,,,10-06-2026 14:58:14,10-06-2026 14:58:14,0.004s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,10-06-2026 14:58:14,10-06-2026 14:58:16,2.375s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Firefox 151.0.1,,,10-06-2026 14:58:16,10-06-2026 14:58:17,0.240s,PASSED
+waitForPageLoad(30),Firefox 151.0.1,,,10-06-2026 14:58:17,10-06-2026 14:58:17,0.034s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Firefox 151.0.1,,,10-06-2026 14:58:17,10-06-2026 14:58:17,0.301s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,10-06-2026 14:58:17,10-06-2026 14:58:17,0.263s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Firefox 151.0.1,,,10-06-2026 14:58:17,10-06-2026 14:58:18,0.670s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,10-06-2026 14:58:18,10-06-2026 14:58:18,0.373s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Firefox 151.0.1,,,10-06-2026 14:58:18,10-06-2026 14:58:19,0.651s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Firefox 151.0.1,,,10-06-2026 14:58:19,10-06-2026 14:58:19,0.556s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Firefox 151.0.1,,,10-06-2026 14:58:19,10-06-2026 14:58:20,0.749s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Firefox 151.0.1,,,10-06-2026 14:58:20,10-06-2026 14:58:21,0.448s,PASSED
+"enhancedClick(findTestObject(""WEB/Login/btn-sign in""))",Firefox 151.0.1,,,10-06-2026 14:58:21,10-06-2026 14:58:21,0.302s,PASSED
+waitForPageLoad(30),Firefox 151.0.1,,,10-06-2026 14:58:21,10-06-2026 14:58:21,0.009s,PASSED
+delay(5),Firefox 151.0.1,,,10-06-2026 14:58:21,10-06-2026 14:58:26,5.014s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Firefox 151.0.1,,,10-06-2026 14:58:26,10-06-2026 14:58:26,0.251s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,10-06-2026 14:58:26,10-06-2026 14:58:26,0.278s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/verify-succes-acount-login""), 30)",Firefox 151.0.1,,,10-06-2026 14:58:26,10-06-2026 14:58:27,0.749s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/verify-succes-acount-login""))",Firefox 151.0.1,,,10-06-2026 14:58:27,10-06-2026 14:58:27,0.226s,PASSED
+"comment(""Login success verified"")",Firefox 151.0.1,,,10-06-2026 14:58:27,10-06-2026 14:58:27,0.003s,PASSED
+closeBrowser(),Firefox 151.0.1,,,10-06-2026 14:58:27,10-06-2026 14:58:28,0.916s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,10-06-2026 14:58:28,10-06-2026 14:58:28,0.024s,FAILED
+,,,,,,,
+Test Cases/WEB/Login/Login with Empty Field Validation,Firefox 151.0.1,,,10-06-2026 14:58:30,10-06-2026 14:58:45,14.827s,PASSED
+"openBrowser("""")",Firefox 151.0.1,,,10-06-2026 14:58:31,10-06-2026 14:58:34,3.140s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Firefox 151.0.1,,,10-06-2026 14:58:34,10-06-2026 14:58:34,0.351s,PASSED
+"setViewPortSize(1920, 1080)",Firefox 151.0.1,,,10-06-2026 14:58:34,10-06-2026 14:58:34,0.053s,PASSED
+navigateToUrl(URL),Firefox 151.0.1,,,10-06-2026 14:58:34,10-06-2026 14:58:37,2.608s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 15)",Firefox 151.0.1,,,10-06-2026 14:58:37,10-06-2026 14:58:37,0.288s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Firefox 151.0.1,,,10-06-2026 14:58:37,10-06-2026 14:58:37,0.244s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Firefox 151.0.1,,,10-06-2026 14:58:37,10-06-2026 14:58:38,0.799s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), """")",Firefox 151.0.1,,,10-06-2026 14:58:38,10-06-2026 14:58:39,0.925s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), """")",Firefox 151.0.1,,,10-06-2026 14:58:39,10-06-2026 14:58:39,0.527s,PASSED
+"click(findTestObject(""WEB/Login/btn-sign in""))",Firefox 151.0.1,,,10-06-2026 14:58:39,10-06-2026 14:58:40,0.540s,PASSED
+delay(2),Firefox 151.0.1,,,10-06-2026 14:58:40,10-06-2026 14:58:42,2.014s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Login/btn-sign in""), STOP_ON_FAILURE)",Firefox 151.0.1,,,10-06-2026 14:58:42,10-06-2026 14:58:42,0.236s,PASSED
+"comment(""Login validation with empty username and password executed"")",Firefox 151.0.1,,,10-06-2026 14:58:42,10-06-2026 14:58:42,0.004s,PASSED
+closeBrowser(),Firefox 151.0.1,,,10-06-2026 14:58:42,10-06-2026 14:58:43,0.909s,PASSED
+Start listener action : afterTestCase,Firefox 151.0.1,,,10-06-2026 14:58:43,10-06-2026 14:58:43,0.031s,FAILED

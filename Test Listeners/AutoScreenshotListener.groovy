@@ -12,6 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.webui.driver.DriverFactory // Import DriverFactory ditambahkan
 
 import internal.GlobalVariable as GlobalVariable
 
@@ -65,13 +66,19 @@ class AutoScreenshotListener {
 	 */
 	void saveScreenshot(String status) {
 		try {
-			String tcName = getTestCaseName()
-			String folderPath = "Screenshot/${status}/${tcName}/"
-			// Buat folder jika belum ada
-			Files.createDirectories(Paths.get(folderPath))
-			String screenshotPath = "${folderPath}${status}_${getTimestamp()}.png"
-			WebUI.takeScreenshot(screenshotPath)
-			println("Screenshot saved : " + screenshotPath)
+			// Cek apakah WebDriver masih berjalan sebelum ambil screenshot
+			if (DriverFactory.hasWebDriverStarted()) {
+				String tcName = getTestCaseName()
+				String folderPath = "Screenshot/${status}/${tcName}/"
+				
+				// Buat folder jika belum ada
+				Files.createDirectories(Paths.get(folderPath))
+				String screenshotPath = "${folderPath}${status}_${getTimestamp()}.png"
+				WebUI.takeScreenshot(screenshotPath)
+				println("Screenshot saved : " + screenshotPath)
+			} else {
+				println("Browser is already closed. Skipped saving screenshot for: " + status)
+			}
 		} catch (Exception e) {
 			println("Failed to save screenshot: " + e.getMessage())
 		}
@@ -83,18 +90,23 @@ class AutoScreenshotListener {
 	 */
 	void saveHtmlSource(String status) {
 		try {
-			String tcName = getTestCaseName()
-			String folderPath = "Screenshot/${status}/${tcName}/"
-			Files.createDirectories(Paths.get(folderPath))
-			String htmlPath = "${folderPath}${status}_${getTimestamp()}.html"
-			
-			// Gunakan FailureHandling.OPTIONAL agar tidak throw exception jika browser sudah tertutup
-			String html = WebUI.getHtmlSource(FailureHandling.OPTIONAL)
-			if (html != null && !html.isEmpty()) {
-				Files.write(Paths.get(htmlPath), html.getBytes())
-				println("HTML source saved : " + htmlPath)
+			// Cek apakah WebDriver masih berjalan sebelum ambil HTML source
+			if (DriverFactory.hasWebDriverStarted()) {
+				String tcName = getTestCaseName()
+				String folderPath = "Screenshot/${status}/${tcName}/"
+				Files.createDirectories(Paths.get(folderPath))
+				String htmlPath = "${folderPath}${status}_${getTimestamp()}.html"
+				
+				// Gunakan FailureHandling.OPTIONAL agar tidak throw exception
+				String html = WebUI.getHtmlSource(FailureHandling.OPTIONAL)
+				if (html != null && !html.isEmpty()) {
+					Files.write(Paths.get(htmlPath), html.getBytes())
+					println("HTML source saved : " + htmlPath)
+				} else {
+					println("HTML source is empty. Skipped saving HTML.")
+				}
 			} else {
-				println("HTML source is empty or browser not available. Skipped saving HTML.")
+				println("Browser is already closed. Skipped saving HTML source for: " + status)
 			}
 		} catch (Exception e) {
 			println("Failed to save HTML source: " + e.getMessage())
@@ -113,7 +125,8 @@ class AutoScreenshotListener {
 			saveScreenshot("PASSED")
 			// Opsional: simpan HTML source juga untuk PASSED jika diperlukan (aktifkan baris di bawah)
 			// saveHtmlSource("PASSED")
-		} else if (status == "FAILED") {
+		} else if (status == "FAILED" || status == "ERROR") {
+			// Menambahkan status ERROR untuk berjaga-jaga jika terjadi error sistem
 			saveScreenshot("FAILED")
 			saveHtmlSource("FAILED")  // Simpan HTML source untuk debugging
 		}

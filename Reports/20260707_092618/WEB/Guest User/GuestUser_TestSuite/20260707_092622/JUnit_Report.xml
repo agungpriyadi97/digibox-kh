@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="GuestUser_TestSuite" time="115.471" tests="4" passed="4" failures="0" errors="0" incompleted="0" skipped="0">
+   <testsuite name="GuestUser_TestSuite" tests="4" passed="4" failures="0" errors="0" incompleted="0" skipped="0" time="115.471" timestamp="2026-07-07T02:32:32.369Z" hostname="AgungPriyadi - NB-GDA-55026" id="Test Suites/WEB/Guest User/GuestUser_TestSuite" status="PASSED">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260707_092618\\WEB\\Guest User\\GuestUser_TestSuite\\20260707_092622"/>
+         <property name="logFiles" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260707_092618\\WEB\\Guest User\\GuestUser_TestSuite\\20260707_092622\\console0.log, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260707_092618\\WEB\\Guest User\\GuestUser_TestSuite\\20260707_092622\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260707_092618\\WEB\\Guest User\\GuestUser_TestSuite\\20260707_092622\\Screenshot/PASSED/GuestUser_TestSuite/PASSED_20260707_093250.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260707_092618\\WEB\\Guest User\\GuestUser_TestSuite\\20260707_092622\\Screenshot/PASSED/GuestUser_TestSuite/PASSED_20260707_093303.png"/>
+         <property name="executionBindingVariables" value="[]"/>
+         <property name="hostName" value="AgungPriyadi - NB-GDA-55026"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="11.1.3.0"/>
+         <property name="browser" value="Chrome 149.0.7827.103"/>
+         <property name="userFullName" value="Agung Priyadi"/>
+         <property name="hostAddress" value="192.168.110.50"/>
+         <property name="sessionId" value="cb49523a85fbf1dc0ffe55f0a3b2a40a"/>
+         <property name="projectName" value="digibox-kh"/>
+         <property name="seleniumVersion" value="4.39.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty" time="20.321" classname="Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty" status="PASSED">
+         <system-out><![CDATA[07-07-2026T09:32:32 - [TEST_CASE][PASSED] - Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty: Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty
+
+07-07-2026T09:32:33 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+07-07-2026T09:32:35 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+07-07-2026T09:32:35 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+
+07-07-2026T09:32:35 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-07-2026T09:32:39 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+07-07-2026T09:32:39 - [TEST_STEP][PASSED] - setViewPortSize(1920, 1080): Viewport is set to new size with width = 1920 and height = 1080
+
+07-07-2026T09:32:40 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+07-07-2026T09:32:40 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+07-07-2026T09:32:43 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+07-07-2026T09:32:43 - [TEST_STEP][PASSED] - custom.BrowserHelper.setupBrowserWindow(): custom.BrowserHelper.setupBrowserWindow is PASSED
+
+07-07-2026T09:32:43 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+07-07-2026T09:32:43 - [MESSAGE][PASSED] - custom.BrowserHelper.setupBrowserWindow is PASSED
+
+07-07-2026T09:32:44 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+07-07-2026T09:32:44 - [MESSAGE][PASSED] - Wait for page load successfully
+
+07-07-2026T09:32:44 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30): Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+07-07-2026T09:32:45 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+07-07-2026T09:32:45 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Track Order/track your order"), 30): Object 'Object Repository/WEB/Checkout/Track Order/track your order' is clickable
+
+07-07-2026T09:32:45 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Track Order/track your order' is clickable
+
+07-07-2026T09:32:45 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Track Order/track your order")): Object: 'Object Repository/WEB/Checkout/Track Order/track your order' is clicked on
+
+07-07-2026T09:32:46 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Track Order/track your order' is clicked on
+
+07-07-2026T09:32:46 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+07-07-2026T09:32:46 - [MESSAGE][PASSED] - Wait for page load successfully
+
+07-07-2026T09:32:46 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Guest User/Track Your Order/txtField_Email"), 30): Object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Email' is visible
+
+07-07-2026T09:32:46 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Email' is visible
+
+07-07-2026T09:32:47 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Guest User/Track Your Order/txtField_Email"), "agung.priyadi@gtech.digital"): Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Email'
+
+07-07-2026T09:32:48 - [MESSAGE][PASSED] - Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Email'
+
+07-07-2026T09:32:48 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Guest User/Track Your Order/btn_Send"), 30): Object 'Object Repository/WEB/Guest User/Track Your Order/btn_Send' is clickable
+
+07-07-2026T09:32:48 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Guest User/Track Your Order/btn_Send' is clickable
+
+07-07-2026T09:32:48 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Guest User/Track Your Order/btn_Send")): Object: 'Object Repository/WEB/Guest User/Track Your Order/btn_Send' is clicked on
+
+07-07-2026T09:32:49 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Guest User/Track Your Order/btn_Send' is clicked on
+
+07-07-2026T09:32:49 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Guest User/Track Your Order/txtField_Verification Code"), 30): Object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Verification Code' is visible
+
+07-07-2026T09:32:49 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Verification Code' is visible
+
+07-07-2026T09:32:49 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Guest User/Track Your Order/txtField_Verification Code"), ""): Text '' is set on object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Verification Code'
+
+07-07-2026T09:32:50 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Verification Code'
+
+07-07-2026T09:32:50 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Guest User/Track Your Order/txtField_success_message"), 0): Object 'Object Repository/WEB/Guest User/Track Your Order/txtField_success_message' is visible
+
+07-07-2026T09:32:50 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+07-07-2026T09:32:50 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Guest User/Track Your Order/txtField_success_message' is visible
+
+07-07-2026T09:32:50 - [TEST_STEP][PASSED] - verifyElementHasAttribute(findTestObject("WEB/Guest User/Track Your Order/btn_Continue"), "disabled", 30): Object 'Object Repository/WEB/Guest User/Track Your Order/btn_Continue' has attribute 'disabled'
+
+07-07-2026T09:32:50 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Guest User/Track Your Order/btn_Continue' has attribute 'disabled'
+
+07-07-2026T09:32:50 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+07-07-2026T09:32:50 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+07-07-2026T09:32:50 - [TEST_STEP][PASSED] - if (status == "PASSED"): null
+
+07-07-2026T09:32:50 - [TEST_STEP][PASSED] - saveScreenshot("PASSED"): null
+
+07-07-2026T09:32:50 - [TEST_STEP][PASSED] - try: null
+
+07-07-2026T09:32:50 - [TEST_STEP][PASSED] - tcName = getTestCaseName(): null
+
+07-07-2026T09:32:50 - [TEST_STEP][PASSED] - return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _): null
+
+07-07-2026T09:32:50 - [TEST_STEP][PASSED] - folderPath = Screenshot/$status/$tcName/: null
+
+07-07-2026T09:32:50 - [TEST_STEP][PASSED] - Files.createDirectories(Paths.get(folderPath)): null
+
+07-07-2026T09:32:50 - [TEST_STEP][PASSED] - screenshotPath = $folderPath$status_$this.getTimestamp().png: null
+
+07-07-2026T09:32:50 - [TEST_STEP][PASSED] - return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date()): null
+
+07-07-2026T09:32:50 - [TEST_STEP][PASSED] - takeScreenshot(screenshotPath): Taking screenshot successfully
+
+07-07-2026T09:32:51 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260707_092618\\WEB\\Guest User\\GuestUser_TestSuite\\20260707_092622\\Screenshot/PASSED/GuestUser_TestSuite/PASSED_20260707_093250.png]]
+
+07-07-2026T09:32:51 - [TEST_STEP][PASSED] - println("Screenshot saved : " + screenshotPath): null
+
+07-07-2026T09:32:51 - [TEST_STEP][PASSED] - println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code" time="12.592" classname="Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code" status="PASSED">
+         <system-out><![CDATA[07-07-2026T09:32:53 - [TEST_CASE][PASSED] - Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code: Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code
+
+07-07-2026T09:32:53 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+07-07-2026T09:32:53 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+07-07-2026T09:32:53 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+07-07-2026T09:32:53 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+
+07-07-2026T09:32:53 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-07-2026T09:32:54 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+07-07-2026T09:32:54 - [TEST_STEP][PASSED] - setViewPortSize(1920, 1080): Viewport is set to new size with width = 1920 and height = 1080
+
+07-07-2026T09:32:54 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+07-07-2026T09:32:54 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+07-07-2026T09:32:56 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+07-07-2026T09:32:56 - [TEST_STEP][PASSED] - custom.BrowserHelper.setupBrowserWindow(): custom.BrowserHelper.setupBrowserWindow is PASSED
+
+07-07-2026T09:32:56 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+07-07-2026T09:32:56 - [MESSAGE][PASSED] - custom.BrowserHelper.setupBrowserWindow is PASSED
+
+07-07-2026T09:32:56 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+07-07-2026T09:32:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+07-07-2026T09:32:56 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30): Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+07-07-2026T09:32:57 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+07-07-2026T09:32:57 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Track Order/track your order"), 30): Object 'Object Repository/WEB/Checkout/Track Order/track your order' is clickable
+
+07-07-2026T09:32:57 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Track Order/track your order' is clickable
+
+07-07-2026T09:32:57 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Track Order/track your order")): Object: 'Object Repository/WEB/Checkout/Track Order/track your order' is clicked on
+
+07-07-2026T09:32:58 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Track Order/track your order' is clicked on
+
+07-07-2026T09:32:58 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+07-07-2026T09:32:58 - [MESSAGE][PASSED] - Wait for page load successfully
+
+07-07-2026T09:32:58 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Guest User/Track Your Order/txtField_Email"), 30): Object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Email' is visible
+
+07-07-2026T09:32:58 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Email' is visible
+
+07-07-2026T09:32:58 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Guest User/Track Your Order/txtField_Email"), "agung.priyadi@gtech.digital"): Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Email'
+
+07-07-2026T09:32:59 - [MESSAGE][PASSED] - Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Email'
+
+07-07-2026T09:32:59 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Guest User/Track Your Order/btn_Send"), 30): Object 'Object Repository/WEB/Guest User/Track Your Order/btn_Send' is clickable
+
+07-07-2026T09:32:59 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Guest User/Track Your Order/btn_Send' is clickable
+
+07-07-2026T09:32:59 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Guest User/Track Your Order/btn_Send")): Object: 'Object Repository/WEB/Guest User/Track Your Order/btn_Send' is clicked on
+
+07-07-2026T09:33:00 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Guest User/Track Your Order/btn_Send' is clicked on
+
+07-07-2026T09:33:00 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Guest User/Track Your Order/txtField_success_message"), 0): Object 'Object Repository/WEB/Guest User/Track Your Order/txtField_success_message' is visible
+
+07-07-2026T09:33:00 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+07-07-2026T09:33:00 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Guest User/Track Your Order/txtField_success_message' is visible
+
+07-07-2026T09:33:00 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Guest User/Track Your Order/txtField_Verification Code"), 30): Object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Verification Code' is visible
+
+07-07-2026T09:33:01 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Verification Code' is visible
+
+07-07-2026T09:33:01 - [TEST_STEP][PASSED] - clearText(findTestObject("WEB/Guest User/Track Your Order/txtField_Verification Code")): Text of object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Verification Code' is cleared
+
+07-07-2026T09:33:01 - [MESSAGE][PASSED] - Text of object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Verification Code' is cleared
+
+07-07-2026T09:33:01 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Guest User/Track Your Order/txtField_Verification Code"), "999999"): Text '999999' is set on object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Verification Code'
+
+07-07-2026T09:33:02 - [MESSAGE][PASSED] - Text '999999' is set on object 'Object Repository/WEB/Guest User/Track Your Order/txtField_Verification Code'
+
+07-07-2026T09:33:02 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Guest User/Track Your Order/btn_Continue"), 30): Object 'Object Repository/WEB/Guest User/Track Your Order/btn_Continue' is clickable
+
+07-07-2026T09:33:02 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Guest User/Track Your Order/btn_Continue' is clickable
+
+07-07-2026T09:33:02 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Guest User/Track Your Order/btn_Continue")): Object: 'Object Repository/WEB/Guest User/Track Your Order/btn_Continue' is clicked on
+
+07-07-2026T09:33:02 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Guest User/Track Your Order/btn_Continue' is clicked on
+
+07-07-2026T09:33:02 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Guest User/Track Your Order/txtField_error_invalid_code"), 0): Object 'Object Repository/WEB/Guest User/Track Your Order/txtField_error_invalid_code' is visible
+
+07-07-2026T09:33:02 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '10'
+
+07-07-2026T09:33:03 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Guest User/Track Your Order/txtField_error_invalid_code' is visible
+
+07-07-2026T09:33:03 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+07-07-2026T09:33:03 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+07-07-2026T09:33:03 - [TEST_STEP][PASSED] - if (status == "PASSED"): null
+
+07-07-2026T09:33:03 - [TEST_STEP][PASSED] - saveScreenshot("PASSED"): null
+
+07-07-2026T09:33:03 - [TEST_STEP][PASSED] - try: null
+
+07-07-2026T09:33:03 - [TEST_STEP][PASSED] - tcName = getTestCaseName(): null
+
+07-07-2026T09:33:03 - [TEST_STEP][PASSED] - return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _): null
+
+07-07-2026T09:33:03 - [TEST_STEP][PASSED] - folderPath = Screenshot/$status/$tcName/: null
+
+07-07-2026T09:33:03 - [TEST_STEP][PASSED] - Files.createDirectories(Paths.get(folderPath)): null
+
+07-07-2026T09:33:03 - [TEST_STEP][PASSED] - screenshotPath = $folderPath$status_$this.getTimestamp().png: null
+
+07-07-2026T09:33:03 - [TEST_STEP][PASSED] - return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date()): null
+
+07-07-2026T09:33:03 - [TEST_STEP][PASSED] - takeScreenshot(screenshotPath): Taking screenshot successfully
+
+07-07-2026T09:33:03 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260707_092618\\WEB\\Guest User\\GuestUser_TestSuite\\20260707_092622\\Screenshot/PASSED/GuestUser_TestSuite/PASSED_20260707_093303.png]]
+
+07-07-2026T09:33:03 - [TEST_STEP][PASSED] - println("Screenshot saved : " + screenshotPath): null
+
+07-07-2026T09:33:03 - [TEST_STEP][PASSED] - println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest" time="72.675" classname="Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest" status="PASSED">
+         <system-out><![CDATA[07-07-2026T09:33:05 - [TEST_CASE][PASSED] - Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest: Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest
+
+07-07-2026T09:33:05 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+07-07-2026T09:33:05 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+07-07-2026T09:33:06 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+07-07-2026T09:33:06 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+
+07-07-2026T09:33:06 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-07-2026T09:33:07 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+07-07-2026T09:33:07 - [TEST_STEP][PASSED] - custom.BrowserHelper.setupBrowserWindow(): custom.BrowserHelper.setupBrowserWindow is PASSED
+
+07-07-2026T09:33:07 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+07-07-2026T09:33:07 - [MESSAGE][PASSED] - custom.BrowserHelper.setupBrowserWindow is PASSED
+
+07-07-2026T09:33:07 - [TEST_STEP][PASSED] - setViewPortSize(1920, 1080): Viewport is set to new size with width = 1920 and height = 1080
+
+07-07-2026T09:33:07 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+07-07-2026T09:33:07 - [TEST_STEP][PASSED] - enableSmartWait(): null
+
+07-07-2026T09:33:07 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+07-07-2026T09:33:09 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+07-07-2026T09:33:09 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 15): Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+07-07-2026T09:33:09 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+07-07-2026T09:33:09 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("WEB/Home Page/header_digibox")): Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+07-07-2026T09:33:10 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+07-07-2026T09:33:10 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10): Object 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is visible
+
+07-07-2026T09:33:10 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is visible
+
+07-07-2026T09:33:10 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is hovered
+
+07-07-2026T09:33:10 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is hovered
+
+07-07-2026T09:33:10 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max")): Object: 'Object Repository/WEB/Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max' is clicked on
+
+07-07-2026T09:33:11 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max' is clicked on
+
+07-07-2026T09:33:11 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10): Object 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is visible
+
+07-07-2026T09:33:11 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is visible
+
+07-07-2026T09:33:11 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is hovered
+
+07-07-2026T09:33:12 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is hovered
+
+07-07-2026T09:33:12 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max")): Object: 'Object Repository/WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max' is clicked on
+
+07-07-2026T09:33:12 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max' is clicked on
+
+07-07-2026T09:33:12 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10): Object 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is visible
+
+07-07-2026T09:33:14 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is visible
+
+07-07-2026T09:33:14 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is hovered
+
+07-07-2026T09:33:14 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is hovered
+
+07-07-2026T09:33:14 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro")): Object: 'Object Repository/WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro' is clicked on
+
+07-07-2026T09:33:15 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro' is clicked on
+
+07-07-2026T09:33:15 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10): Object 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is visible
+
+07-07-2026T09:33:16 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is visible
+
+07-07-2026T09:33:16 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is hovered
+
+07-07-2026T09:33:17 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is hovered
+
+07-07-2026T09:33:17 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 13")): Object: 'Object Repository/WEB/Home Page/Page Iphone/sub-menu-iPhone 13' is clicked on
+
+07-07-2026T09:33:17 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Iphone/sub-menu-iPhone 13' is clicked on
+
+07-07-2026T09:33:17 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10): Object 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is visible
+
+07-07-2026T09:33:19 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is visible
+
+07-07-2026T09:33:19 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is hovered
+
+07-07-2026T09:33:19 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is hovered
+
+07-07-2026T09:33:19 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 13 mini")): Object: 'Object Repository/WEB/Home Page/Page Iphone/sub-menu-iPhone 13 mini' is clicked on
+
+07-07-2026T09:33:19 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Iphone/sub-menu-iPhone 13 mini' is clicked on
+
+07-07-2026T09:33:19 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10): Object 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is visible
+
+07-07-2026T09:33:21 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is visible
+
+07-07-2026T09:33:21 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is hovered
+
+07-07-2026T09:33:22 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is hovered
+
+07-07-2026T09:33:22 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 12")): Object: 'Object Repository/WEB/Home Page/Page Iphone/sub-menu-iPhone 12' is clicked on
+
+07-07-2026T09:33:22 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Iphone/sub-menu-iPhone 12' is clicked on
+
+07-07-2026T09:33:22 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10): Object 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is visible
+
+07-07-2026T09:33:22 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is visible
+
+07-07-2026T09:33:22 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is hovered
+
+07-07-2026T09:33:24 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Iphone/menu-iphone' is hovered
+
+07-07-2026T09:33:24 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 11")): Object: 'Object Repository/WEB/Home Page/Page Iphone/sub-menu-iPhone 11' is clicked on
+
+07-07-2026T09:33:24 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Iphone/sub-menu-iPhone 11' is clicked on
+
+07-07-2026T09:33:24 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), 10): Object 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is visible
+
+07-07-2026T09:33:26 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is visible
+
+07-07-2026T09:33:26 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is hovered
+
+07-07-2026T09:33:26 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is hovered
+
+07-07-2026T09:33:26 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Ipad/sub-menu-iPad pro")): Object: 'Object Repository/WEB/Home Page/Page Ipad/sub-menu-iPad pro' is clicked on
+
+07-07-2026T09:33:26 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Ipad/sub-menu-iPad pro' is clicked on
+
+07-07-2026T09:33:26 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), 10): Object 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is visible
+
+07-07-2026T09:33:28 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is visible
+
+07-07-2026T09:33:28 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is hovered
+
+07-07-2026T09:33:29 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is hovered
+
+07-07-2026T09:33:29 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Ipad/sub-menu-iPad Air")): Object: 'Object Repository/WEB/Home Page/Page Ipad/sub-menu-iPad Air' is clicked on
+
+07-07-2026T09:33:29 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Ipad/sub-menu-iPad Air' is clicked on
+
+07-07-2026T09:33:29 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), 10): Object 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is visible
+
+07-07-2026T09:33:31 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is visible
+
+07-07-2026T09:33:31 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is hovered
+
+07-07-2026T09:33:31 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is hovered
+
+07-07-2026T09:33:31 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Ipad/sub-menu-iPad mini")): Object: 'Object Repository/WEB/Home Page/Page Ipad/sub-menu-iPad mini' is clicked on
+
+07-07-2026T09:33:31 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Ipad/sub-menu-iPad mini' is clicked on
+
+07-07-2026T09:33:31 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), 10): Object 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is visible
+
+07-07-2026T09:33:33 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is visible
+
+07-07-2026T09:33:33 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is hovered
+
+07-07-2026T09:33:33 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Ipad/menu-ipad' is hovered
+
+07-07-2026T09:33:33 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Ipad/sub-menu-iPad (Gen 10th)")): Object: 'Object Repository/WEB/Home Page/Page Ipad/sub-menu-iPad (Gen 10th)' is clicked on
+
+07-07-2026T09:33:34 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Ipad/sub-menu-iPad (Gen 10th)' is clicked on
+
+07-07-2026T09:33:34 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), 10): Object 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is visible
+
+07-07-2026T09:33:35 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is visible
+
+07-07-2026T09:33:35 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is hovered
+
+07-07-2026T09:33:36 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is hovered
+
+07-07-2026T09:33:36 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 7")): Object: 'Object Repository/WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 7' is clicked on
+
+07-07-2026T09:33:36 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 7' is clicked on
+
+07-07-2026T09:33:36 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), 10): Object 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is visible
+
+07-07-2026T09:33:38 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is visible
+
+07-07-2026T09:33:38 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is hovered
+
+07-07-2026T09:33:38 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is hovered
+
+07-07-2026T09:33:38 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 6")): Object: 'Object Repository/WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 6' is clicked on
+
+07-07-2026T09:33:38 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 6' is clicked on
+
+07-07-2026T09:33:38 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), 10): Object 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is visible
+
+07-07-2026T09:33:40 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is visible
+
+07-07-2026T09:33:40 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is hovered
+
+07-07-2026T09:33:40 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is hovered
+
+07-07-2026T09:33:40 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 3")): Object: 'Object Repository/WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 3' is clicked on
+
+07-07-2026T09:33:41 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 3' is clicked on
+
+07-07-2026T09:33:41 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), 10): Object 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is visible
+
+07-07-2026T09:33:42 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is visible
+
+07-07-2026T09:33:42 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is hovered
+
+07-07-2026T09:33:43 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is hovered
+
+07-07-2026T09:33:43 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch SE")): Object: 'Object Repository/WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch SE' is clicked on
+
+07-07-2026T09:33:43 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch SE' is clicked on
+
+07-07-2026T09:33:43 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), 10): Object 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is visible
+
+07-07-2026T09:33:45 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is visible
+
+07-07-2026T09:33:45 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is hovered
+
+07-07-2026T09:33:45 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Apple Watch/menu-Apple Watch' is hovered
+
+07-07-2026T09:33:45 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra")): Object: 'Object Repository/WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra' is clicked on
+
+07-07-2026T09:33:46 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra' is clicked on
+
+07-07-2026T09:33:46 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Mac/menu-Mac"), 10): Object 'Object Repository/WEB/Home Page/Page Mac/menu-Mac' is visible
+
+07-07-2026T09:33:46 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Mac/menu-Mac' is visible
+
+07-07-2026T09:33:46 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Mac/menu-Mac"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Mac/menu-Mac' is hovered
+
+07-07-2026T09:33:47 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Mac/menu-Mac' is hovered
+
+07-07-2026T09:33:47 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Mac/sub-menu-MacBook Pro")): Object: 'Object Repository/WEB/Home Page/Page Mac/sub-menu-MacBook Pro' is clicked on
+
+07-07-2026T09:33:48 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Mac/sub-menu-MacBook Pro' is clicked on
+
+07-07-2026T09:33:48 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Mac/menu-Mac"), 10): Object 'Object Repository/WEB/Home Page/Page Mac/menu-Mac' is visible
+
+07-07-2026T09:33:49 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Mac/menu-Mac' is visible
+
+07-07-2026T09:33:49 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Mac/menu-Mac"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Mac/menu-Mac' is hovered
+
+07-07-2026T09:33:50 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Mac/menu-Mac' is hovered
+
+07-07-2026T09:33:50 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Mac/sub-menu-MacBook Air")): Object: 'Object Repository/WEB/Home Page/Page Mac/sub-menu-MacBook Air' is clicked on
+
+07-07-2026T09:33:50 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Mac/sub-menu-MacBook Air' is clicked on
+
+07-07-2026T09:33:50 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), 10): Object 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is visible
+
+07-07-2026T09:33:52 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is visible
+
+07-07-2026T09:33:52 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is hovered
+
+07-07-2026T09:33:52 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is hovered
+
+07-07-2026T09:33:52 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Airpods/sub-menu-AirPods Max")): Object: 'Object Repository/WEB/Home Page/Page Airpods/sub-menu-AirPods Max' is clicked on
+
+07-07-2026T09:33:52 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Airpods/sub-menu-AirPods Max' is clicked on
+
+07-07-2026T09:33:52 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), 10): Object 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is visible
+
+07-07-2026T09:33:54 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is visible
+
+07-07-2026T09:33:54 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is hovered
+
+07-07-2026T09:33:54 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is hovered
+
+07-07-2026T09:33:54 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Airpods/sub-menu-AirPods Pro")): Object: 'Object Repository/WEB/Home Page/Page Airpods/sub-menu-AirPods Pro' is clicked on
+
+07-07-2026T09:33:55 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Airpods/sub-menu-AirPods Pro' is clicked on
+
+07-07-2026T09:33:55 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), 10): Object 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is visible
+
+07-07-2026T09:33:56 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is visible
+
+07-07-2026T09:33:56 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is hovered
+
+07-07-2026T09:33:57 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is hovered
+
+07-07-2026T09:33:57 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Airpods/sub-menu-AirPods 3rd Generation")): Object: 'Object Repository/WEB/Home Page/Page Airpods/sub-menu-AirPods 3rd Generation' is clicked on
+
+07-07-2026T09:33:57 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Airpods/sub-menu-AirPods 3rd Generation' is clicked on
+
+07-07-2026T09:33:57 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), 10): Object 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is visible
+
+07-07-2026T09:33:59 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is visible
+
+07-07-2026T09:33:59 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is hovered
+
+07-07-2026T09:33:59 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Airpods/menu-AirPods' is hovered
+
+07-07-2026T09:33:59 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Airpods/sub-menu-AirPods 2nd Generation")): Object: 'Object Repository/WEB/Home Page/Page Airpods/sub-menu-AirPods 2nd Generation' is clicked on
+
+07-07-2026T09:33:59 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Airpods/sub-menu-AirPods 2nd Generation' is clicked on
+
+07-07-2026T09:33:59 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), 10): Object 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is visible
+
+07-07-2026T09:34:01 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is visible
+
+07-07-2026T09:34:01 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is hovered
+
+07-07-2026T09:34:01 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is hovered
+
+07-07-2026T09:34:01 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Accessoris/sub-menu-Aksesoris iPhone")): Object: 'Object Repository/WEB/Home Page/Page Accessoris/sub-menu-Aksesoris iPhone' is clicked on
+
+07-07-2026T09:34:02 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Accessoris/sub-menu-Aksesoris iPhone' is clicked on
+
+07-07-2026T09:34:02 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), 10): Object 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is visible
+
+07-07-2026T09:34:03 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is visible
+
+07-07-2026T09:34:03 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is hovered
+
+07-07-2026T09:34:04 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is hovered
+
+07-07-2026T09:34:04 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Accessoris/sub-menu-Aksesoris iPad")): Object: 'Object Repository/WEB/Home Page/Page Accessoris/sub-menu-Aksesoris iPad' is clicked on
+
+07-07-2026T09:34:04 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Accessoris/sub-menu-Aksesoris iPad' is clicked on
+
+07-07-2026T09:34:04 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), 10): Object 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is visible
+
+07-07-2026T09:34:06 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is visible
+
+07-07-2026T09:34:06 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is hovered
+
+07-07-2026T09:34:06 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is hovered
+
+07-07-2026T09:34:06 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Accessoris/sub-menu-MacBook Accessories")): Object: 'Object Repository/WEB/Home Page/Page Accessoris/sub-menu-MacBook Accessories' is clicked on
+
+07-07-2026T09:34:06 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Accessoris/sub-menu-MacBook Accessories' is clicked on
+
+07-07-2026T09:34:06 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), 10): Object 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is visible
+
+07-07-2026T09:34:07 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is visible
+
+07-07-2026T09:34:07 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is hovered
+
+07-07-2026T09:34:08 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Accessoris/menu-accessoris' is hovered
+
+07-07-2026T09:34:08 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Accessoris/sub-menu-Watch accessories")): Object: 'Object Repository/WEB/Home Page/Page Accessoris/sub-menu-Watch accessories' is clicked on
+
+07-07-2026T09:34:09 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Accessoris/sub-menu-Watch accessories' is clicked on
+
+07-07-2026T09:34:09 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Promotion/menu-Promotion"), 10): Object 'Object Repository/WEB/Home Page/Page Promotion/menu-Promotion' is visible
+
+07-07-2026T09:34:10 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Promotion/menu-Promotion' is visible
+
+07-07-2026T09:34:10 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Promotion/menu-Promotion"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Promotion/menu-Promotion' is hovered
+
+07-07-2026T09:34:11 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Promotion/menu-Promotion' is hovered
+
+07-07-2026T09:34:11 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Promotion/sub-menu-Digimania August 2022")): Object: 'Object Repository/WEB/Home Page/Page Promotion/sub-menu-Digimania August 2022' is clicked on
+
+07-07-2026T09:34:11 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Promotion/sub-menu-Digimania August 2022' is clicked on
+
+07-07-2026T09:34:11 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Promotion/menu-Promotion"), 10): Object 'Object Repository/WEB/Home Page/Page Promotion/menu-Promotion' is visible
+
+07-07-2026T09:34:12 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Promotion/menu-Promotion' is visible
+
+07-07-2026T09:34:12 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Promotion/menu-Promotion"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Promotion/menu-Promotion' is hovered
+
+07-07-2026T09:34:13 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Promotion/menu-Promotion' is hovered
+
+07-07-2026T09:34:13 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Promotion/sub-menu-Flash Sale")): Object: 'Object Repository/WEB/Home Page/Page Promotion/sub-menu-Flash Sale' is clicked on
+
+07-07-2026T09:34:13 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Promotion/sub-menu-Flash Sale' is clicked on
+
+07-07-2026T09:34:13 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education"), 10): Object 'Object Repository/WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education' is visible
+
+07-07-2026T09:34:14 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education' is visible
+
+07-07-2026T09:34:14 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education' is hovered
+
+07-07-2026T09:34:15 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education' is hovered
+
+07-07-2026T09:34:15 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education")): Object: 'Object Repository/WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education' is clicked on
+
+07-07-2026T09:34:15 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education' is clicked on
+
+07-07-2026T09:34:15 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+07-07-2026T09:34:15 - [MESSAGE][PASSED] - Wait for page load successfully
+
+07-07-2026T09:34:15 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+07-07-2026T09:34:16 - [MESSAGE][PASSED] - Browser is closed
+
+07-07-2026T09:34:16 - [TEST_STEP][FAILED] - Start listener action : afterTestCase: null
+
+07-07-2026T09:34:16 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+07-07-2026T09:34:16 - [TEST_STEP][PASSED] - if (status == "PASSED"): null
+
+07-07-2026T09:34:16 - [TEST_STEP][PASSED] - saveScreenshot("PASSED"): null
+
+07-07-2026T09:34:16 - [TEST_STEP][PASSED] - try: null
+
+07-07-2026T09:34:16 - [TEST_STEP][PASSED] - tcName = getTestCaseName(): null
+
+07-07-2026T09:34:16 - [TEST_STEP][PASSED] - return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _): null
+
+07-07-2026T09:34:16 - [TEST_STEP][PASSED] - folderPath = Screenshot/$status/$tcName/: null
+
+07-07-2026T09:34:16 - [TEST_STEP][PASSED] - Files.createDirectories(Paths.get(folderPath)): null
+
+07-07-2026T09:34:16 - [TEST_STEP][PASSED] - screenshotPath = $folderPath$status_$this.getTimestamp().png: null
+
+07-07-2026T09:34:16 - [TEST_STEP][FAILED] - return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date()): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0707_5.run(S0707_5.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+07-07-2026T09:34:16 - [TEST_STEP][FAILED] - takeScreenshot(screenshotPath): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0707_5.run(S0707_5.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+07-07-2026T09:34:16 - [MESSAGE][FAILED] - Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0707_5.run(S0707_5.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+07-07-2026T09:34:16 - [TEST_STEP][PASSED] - catch (Exception e): null
+
+07-07-2026T09:34:16 - [TEST_STEP][PASSED] - println("Failed to save screenshot: " + e.getMessage()): null
+
+07-07-2026T09:34:16 - [TEST_STEP][PASSED] - println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest" time="9.331" classname="Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest" status="PASSED">
+         <system-out><![CDATA[07-07-2026T09:34:18 - [TEST_CASE][PASSED] - Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest: Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest
+
+07-07-2026T09:34:18 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+07-07-2026T09:34:18 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+07-07-2026T09:34:18 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+
+07-07-2026T09:34:18 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-07-2026T09:34:19 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+07-07-2026T09:34:19 - [TEST_STEP][PASSED] - setViewPortSize(1920, 1080): Viewport is set to new size with width = 1920 and height = 1080
+
+07-07-2026T09:34:19 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+07-07-2026T09:34:19 - [TEST_STEP][PASSED] - enableSmartWait(): null
+
+07-07-2026T09:34:19 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+07-07-2026T09:34:21 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+07-07-2026T09:34:21 - [TEST_STEP][PASSED] - custom.BrowserHelper.setupBrowserWindow(): custom.BrowserHelper.setupBrowserWindow is PASSED
+
+07-07-2026T09:34:21 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+07-07-2026T09:34:21 - [MESSAGE][PASSED] - custom.BrowserHelper.setupBrowserWindow is PASSED
+
+07-07-2026T09:34:21 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+07-07-2026T09:34:21 - [MESSAGE][PASSED] - Wait for page load successfully
+
+07-07-2026T09:34:21 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Registration/icon-acount"), STOP_ON_FAILURE): Object: 'Object Repository/WEB/Registration/icon-acount' is hovered
+
+07-07-2026T09:34:22 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/icon-acount' is hovered
+
+07-07-2026T09:34:22 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Registration/icon-acount")): Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+07-07-2026T09:34:23 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+07-07-2026T09:34:23 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+07-07-2026T09:34:23 - [MESSAGE][PASSED] - Wait for page load successfully
+
+07-07-2026T09:34:23 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+07-07-2026T09:34:25 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+07-07-2026T09:34:25 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+07-07-2026T09:34:25 - [MESSAGE][PASSED] - Browser is closed
+
+07-07-2026T09:34:25 - [TEST_STEP][FAILED] - Start listener action : afterTestCase: null
+
+07-07-2026T09:34:25 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+07-07-2026T09:34:25 - [TEST_STEP][PASSED] - if (status == "PASSED"): null
+
+07-07-2026T09:34:25 - [TEST_STEP][PASSED] - saveScreenshot("PASSED"): null
+
+07-07-2026T09:34:25 - [TEST_STEP][PASSED] - try: null
+
+07-07-2026T09:34:25 - [TEST_STEP][PASSED] - tcName = getTestCaseName(): null
+
+07-07-2026T09:34:25 - [TEST_STEP][PASSED] - return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _): null
+
+07-07-2026T09:34:25 - [TEST_STEP][PASSED] - folderPath = Screenshot/$status/$tcName/: null
+
+07-07-2026T09:34:25 - [TEST_STEP][PASSED] - Files.createDirectories(Paths.get(folderPath)): null
+
+07-07-2026T09:34:25 - [TEST_STEP][PASSED] - screenshotPath = $folderPath$status_$this.getTimestamp().png: null
+
+07-07-2026T09:34:25 - [TEST_STEP][FAILED] - return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date()): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0707_5.run(S0707_5.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+07-07-2026T09:34:25 - [TEST_STEP][FAILED] - takeScreenshot(screenshotPath): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0707_5.run(S0707_5.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+07-07-2026T09:34:25 - [MESSAGE][FAILED] - Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0707_5.run(S0707_5.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+07-07-2026T09:34:25 - [TEST_STEP][PASSED] - catch (Exception e): null
+
+07-07-2026T09:34:25 - [TEST_STEP][PASSED] - println("Failed to save screenshot: " + e.getMessage()): null
+
+07-07-2026T09:34:25 - [TEST_STEP][PASSED] - println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[07-07-2026T09:32:32 - [TEST_SUITE][PASSED] - GuestUser_TestSuite: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,415 @@
+2026-07-07 09:49:39.756 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\AgungPriyadi\.katalon\packages\KS-11.1.3\configuration\org.eclipse.osgi\150\0\.cp\resources\logback\logback-execution.xml
+2026-07-07 09:49:39.760 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\AgungPriyadi\git\digibox-kh\Include\config\log.properties
+2026-07-07 09:49:41.089 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/WEB/Address/Address_TestSuite
+2026-07-07 09:49:41.185 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Agung Priyadi
+2026-07-07 09:49:41.186 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = digibox-kh
+2026-07-07 09:49:41.187 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = AgungPriyadi - NB-GDA-55026
+2026-07-07 09:49:41.188 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-07-07 09:49:41.189 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.110.50
+2026-07-07 09:49:41.190 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.1.3.0
+2026-07-07 09:49:41.431 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-07-07 09:49:41.432 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Address Management/Ensure My Address - add new address
+2026-07-07 09:49:41.817 DEBUG t.Ensure My Address - add new address    - 1: randomFirstName = custom.RandomData.generateRandomFirstName()
+2026-07-07 09:49:41.851 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomFirstName is PASSED
+2026-07-07 09:49:41.878 DEBUG t.Ensure My Address - add new address    - 2: randomEmail = custom.RandomData.generateRandomEmail()
+2026-07-07 09:49:41.958 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomEmail is PASSED
+2026-07-07 09:49:41.962 DEBUG t.Ensure My Address - add new address    - 3: randomLastName = custom.RandomData.generateRandomLastName()
+2026-07-07 09:49:41.965 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomLastName is PASSED
+2026-07-07 09:49:41.967 DEBUG t.Ensure My Address - add new address    - 4: randomPhone = custom.RandomData.generateRandomPhone()
+2026-07-07 09:49:42.003 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomPhone is PASSED
+2026-07-07 09:49:42.009 DEBUG t.Ensure My Address - add new address    - 5: randomAddress = custom.RandomData.generateRandomAddress()
+2026-07-07 09:49:42.012 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomAddress is PASSED
+2026-07-07 09:49:42.015 DEBUG t.Ensure My Address - add new address    - 6: randomCode = custom.RandomData.generateRandomCode()
+2026-07-07 09:49:42.017 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomCode is PASSED
+2026-07-07 09:49:42.020 DEBUG t.Ensure My Address - add new address    - 7: openBrowser("")
+2026-07-07 09:49:42.428 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-07-07 09:49:42.531 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-07-07 09:49:46.977 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = daa4ed1d-966f-4397-b6c6-44a6681789b6
+2026-07-07 09:49:46.979 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-07-07 09:49:46.980 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-07-07 09:49:46.981 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-07-07 09:49:46.988 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-07-07 09:49:47.069 DEBUG t.Ensure My Address - add new address    - 8: setViewPortSize(1920, 1080)
+2026-07-07 09:49:47.543 DEBUG t.Ensure My Address - add new address    - 9: navigateToUrl(URL)
+2026-07-07 09:49:49.933 DEBUG t.Ensure My Address - add new address    - 10: custom.BrowserHelper.setupBrowserWindow()
+Running browser: FIREFOX_HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-07-07 09:49:50.005 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-07-07 09:49:50.007 DEBUG t.Ensure My Address - add new address    - 11: waitForPageLoad(30)
+2026-07-07 09:49:50.104 DEBUG t.Ensure My Address - add new address    - 12: waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30)
+2026-07-07 09:49:50.762 DEBUG t.Ensure My Address - add new address    - 13: waitForElementClickable(findTestObject("WEB/Registration/icon-acount"), 30)
+2026-07-07 09:49:51.046 DEBUG t.Ensure My Address - add new address    - 14: click(findTestObject("WEB/Registration/icon-acount"))
+2026-07-07 09:49:51.418 DEBUG t.Ensure My Address - add new address    - 15: waitForElementVisible(findTestObject("WEB/Registration/field-account"), 30)
+2026-07-07 09:49:51.975 DEBUG t.Ensure My Address - add new address    - 16: setText(findTestObject("WEB/Registration/field-account"), "agungpriyadi")
+2026-07-07 09:49:52.506 DEBUG t.Ensure My Address - add new address    - 17: waitForElementVisible(findTestObject("WEB/Registration/field-Password"), 30)
+2026-07-07 09:49:52.939 DEBUG t.Ensure My Address - add new address    - 18: setText(findTestObject("WEB/Registration/field-Password"), "Laskar123456")
+2026-07-07 09:49:53.448 DEBUG t.Ensure My Address - add new address    - 19: waitForElementClickable(findTestObject("WEB/Login/btn-sign in"), 30)
+2026-07-07 09:49:53.893 DEBUG t.Ensure My Address - add new address    - 20: click(findTestObject("WEB/Login/btn-sign in"))
+2026-07-07 09:49:54.236 DEBUG t.Ensure My Address - add new address    - 21: waitForPageLoad(30)
+2026-07-07 09:49:54.248 DEBUG t.Ensure My Address - add new address    - 22: waitForElementVisible(findTestObject("WEB/Registration/icon-acount"), 30)
+2026-07-07 09:49:54.684 DEBUG t.Ensure My Address - add new address    - 23: mouseOver(findTestObject("WEB/Registration/icon-acount"))
+2026-07-07 09:49:55.077 DEBUG t.Ensure My Address - add new address    - 24: waitForElementClickable(findTestObject("WEB/Address Management/Shipping Address/btn_My Address"), 30)
+2026-07-07 09:49:56.769 DEBUG t.Ensure My Address - add new address    - 25: click(findTestObject("WEB/Address Management/Shipping Address/btn_My Address"))
+2026-07-07 09:49:57.930 DEBUG t.Ensure My Address - add new address    - 26: waitForElementClickable(findTestObject("WEB/Address Management/Add New Address/div_Add New Address"), 30)
+2026-07-07 09:49:58.777 DEBUG t.Ensure My Address - add new address    - 27: click(findTestObject("WEB/Address Management/Add New Address/div_Add New Address"))
+2026-07-07 09:49:59.384 DEBUG t.Ensure My Address - add new address    - 28: waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/field_First Name"), 30)
+2026-07-07 09:49:59.620 DEBUG t.Ensure My Address - add new address    - 29: setText(findTestObject("WEB/Address Management/Add New Address/field_First Name"), randomFirstName)
+2026-07-07 09:50:00.120 DEBUG t.Ensure My Address - add new address    - 30: waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/field_Last Name"), 30)
+2026-07-07 09:50:00.588 DEBUG t.Ensure My Address - add new address    - 31: setText(findTestObject("WEB/Address Management/Add New Address/field_Last Name"), randomLastName)
+2026-07-07 09:50:01.082 DEBUG t.Ensure My Address - add new address    - 32: waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/field_Mobile Phone"), 30)
+2026-07-07 09:50:01.927 DEBUG t.Ensure My Address - add new address    - 33: setText(findTestObject("WEB/Address Management/Add New Address/field_Mobile Phone"), randomPhone)
+2026-07-07 09:50:02.441 DEBUG t.Ensure My Address - add new address    - 34: waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/field_E-mail"), 30)
+2026-07-07 09:50:03.174 DEBUG t.Ensure My Address - add new address    - 35: setText(findTestObject("WEB/Address Management/Add New Address/field_E-mail"), randomEmail)
+2026-07-07 09:50:03.681 DEBUG t.Ensure My Address - add new address    - 36: waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/field_Address"), 30)
+2026-07-07 09:50:04.107 DEBUG t.Ensure My Address - add new address    - 37: setText(findTestObject("WEB/Address Management/Add New Address/field_Address"), randomAddress)
+2026-07-07 09:50:04.623 DEBUG t.Ensure My Address - add new address    - 38: waitForElementClickable(findTestObject("WEB/Address Management/Add New Address/dropdown_Province"), 30)
+2026-07-07 09:50:05.074 DEBUG t.Ensure My Address - add new address    - 39: click(findTestObject("WEB/Address Management/Add New Address/dropdown_Province"))
+2026-07-07 09:50:05.387 DEBUG t.Ensure My Address - add new address    - 40: waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province"), 30)
+2026-07-07 09:50:05.811 DEBUG t.Ensure My Address - add new address    - 41: click(findTestObject("WEB/Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province"))
+2026-07-07 09:50:06.118 DEBUG t.Ensure My Address - add new address    - 42: waitForElementClickable(findTestObject("WEB/Address Management/Add New Address/dropdown_Select Province"), 30)
+2026-07-07 09:50:06.355 DEBUG t.Ensure My Address - add new address    - 43: click(findTestObject("WEB/Address Management/Add New Address/dropdown_Select Province"))
+2026-07-07 09:50:06.650 DEBUG t.Ensure My Address - add new address    - 44: waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality"), 30)
+2026-07-07 09:50:07.594 DEBUG t.Ensure My Address - add new address    - 45: click(findTestObject("WEB/Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality"))
+2026-07-07 09:50:07.894 DEBUG t.Ensure My Address - add new address    - 46: waitForElementClickable(findTestObject("WEB/Address Management/Add New Address/dropdown_Districts"), 30)
+2026-07-07 09:50:08.130 DEBUG t.Ensure My Address - add new address    - 47: click(findTestObject("WEB/Address Management/Add New Address/dropdown_Districts"))
+2026-07-07 09:50:08.423 DEBUG t.Ensure My Address - add new address    - 48: waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/Dropdown District/li_Sangkat Kandal"), 30)
+2026-07-07 09:50:09.470 DEBUG t.Ensure My Address - add new address    - 49: click(findTestObject("WEB/Address Management/Add New Address/Dropdown District/li_Sangkat Kandal"))
+2026-07-07 09:50:09.783 DEBUG t.Ensure My Address - add new address    - 50: waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/field_ZipPostal Code"), 30)
+2026-07-07 09:50:10.015 DEBUG t.Ensure My Address - add new address    - 51: setText(findTestObject("WEB/Address Management/Add New Address/field_ZipPostal Code"), randomCode)
+2026-07-07 09:50:10.517 DEBUG t.Ensure My Address - add new address    - 52: scrollToElement(findTestObject("WEB/Address Management/Add New Address/button_Save"), 5)
+2026-07-07 09:50:10.947 DEBUG t.Ensure My Address - add new address    - 53: waitForElementClickable(findTestObject("WEB/Address Management/Add New Address/button_Save"), 30)
+2026-07-07 09:50:11.179 DEBUG t.Ensure My Address - add new address    - 54: click(findTestObject("WEB/Address Management/Add New Address/button_Save"))
+2026-07-07 09:50:11.475 DEBUG t.Ensure My Address - add new address    - 55: waitForPageLoad(30)
+2026-07-07 09:50:11.483 DEBUG t.Ensure My Address - add new address    - 56: scrollToElement(findTestObject("WEB/Address Management/Shipping Address/lbl_Shipping Address"), 5)
+2026-07-07 09:50:11.911 DEBUG t.Ensure My Address - add new address    - 57: comment("Email      : " + randomEmail)
+2026-07-07 09:50:11.924 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Email      : agungpriyadiomt@gmail.com
+2026-07-07 09:50:11.927 DEBUG t.Ensure My Address - add new address    - 58: comment("First Name : " + randomFirstName)
+2026-07-07 09:50:11.928 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - First Name : Sinta
+2026-07-07 09:50:11.930 DEBUG t.Ensure My Address - add new address    - 59: comment("Last Name  : " + randomLastName)
+2026-07-07 09:50:11.931 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Last Name  : Saputra
+2026-07-07 09:50:11.932 DEBUG t.Ensure My Address - add new address    - 60: comment("Phone      : " + randomPhone)
+2026-07-07 09:50:11.933 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Phone      : 08510153180
+2026-07-07 09:50:11.934 DEBUG t.Ensure My Address - add new address    - 61: comment("Address    : " + randomAddress)
+2026-07-07 09:50:11.936 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Address    : Jakarta Testing 6344
+2026-07-07 09:50:11.937 DEBUG t.Ensure My Address - add new address    - 62: comment("Code       : " + randomCode)
+2026-07-07 09:50:11.937 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Code       : 158107
+2026-07-07 09:50:11.939 DEBUG t.Ensure My Address - add new address    - 63: closeBrowser()
+2026-07-07 09:50:12.621 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0707_14.run(S0707_14.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+Failed to save screenshot: Cannot take screenshot
+Test Case 'Test Cases/WEB/Address Management/Ensure My Address - add new address' finished with status: PASSED
+2026-07-07 09:50:14.695 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Address Management/Ensure My Address - add new address
+2026-07-07 09:50:14.698 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-07-07 09:50:14.698 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Address Management/Ensure My Address - Delete address
+2026-07-07 09:50:14.776 DEBUG t.Ensure My Address - Delete address     - 1: openBrowser("")
+2026-07-07 09:50:14.778 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-07-07 09:50:14.783 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-07-07 09:50:16.950 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = fa1c8b4a-9c3e-45fa-bc6c-d3aca6892a6c
+2026-07-07 09:50:16.951 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-07-07 09:50:16.952 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-07-07 09:50:16.953 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-07-07 09:50:16.954 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-07-07 09:50:16.990 DEBUG t.Ensure My Address - Delete address     - 2: setViewPortSize(1920, 1080)
+2026-07-07 09:50:17.353 DEBUG t.Ensure My Address - Delete address     - 3: navigateToUrl(URL)
+2026-07-07 09:50:19.696 DEBUG t.Ensure My Address - Delete address     - 4: custom.BrowserHelper.setupBrowserWindow()
+Running browser: FIREFOX_HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-07-07 09:50:19.759 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-07-07 09:50:19.761 DEBUG t.Ensure My Address - Delete address     - 5: waitForPageLoad(30)
+2026-07-07 09:50:19.780 DEBUG t.Ensure My Address - Delete address     - 6: waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30)
+2026-07-07 09:50:20.038 DEBUG t.Ensure My Address - Delete address     - 7: waitForElementClickable(findTestObject("WEB/Registration/icon-acount"), 30)
+2026-07-07 09:50:20.691 DEBUG t.Ensure My Address - Delete address     - 8: enhancedClick(findTestObject("WEB/Registration/icon-acount"))
+2026-07-07 09:50:21.021 DEBUG t.Ensure My Address - Delete address     - 9: waitForElementVisible(findTestObject("WEB/Registration/field-account"), 30)
+2026-07-07 09:50:21.657 DEBUG t.Ensure My Address - Delete address     - 10: setText(findTestObject("WEB/Registration/field-account"), "agungpriyadi")
+2026-07-07 09:50:22.179 DEBUG t.Ensure My Address - Delete address     - 11: setText(findTestObject("WEB/Registration/field-Password"), "Laskar123456")
+2026-07-07 09:50:22.884 DEBUG t.Ensure My Address - Delete address     - 12: waitForElementClickable(findTestObject("WEB/Login/btn-sign in"), 30)
+2026-07-07 09:50:23.318 DEBUG t.Ensure My Address - Delete address     - 13: enhancedClick(findTestObject("WEB/Login/btn-sign in"))
+2026-07-07 09:50:23.614 DEBUG t.Ensure My Address - Delete address     - 14: waitForPageLoad(30)
+2026-07-07 09:50:23.620 DEBUG t.Ensure My Address - Delete address     - 15: waitForElementClickable(findTestObject("WEB/Registration/icon-acount"), 30)
+2026-07-07 09:50:24.056 DEBUG t.Ensure My Address - Delete address     - 16: enhancedClick(findTestObject("WEB/Registration/icon-acount"))
+2026-07-07 09:50:24.336 DEBUG t.Ensure My Address - Delete address     - 17: waitForElementClickable(findTestObject("WEB/Address Management/Shipping Address/btn_My Address"), 30)
+2026-07-07 09:50:27.071 DEBUG t.Ensure My Address - Delete address     - 18: enhancedClick(findTestObject("WEB/Address Management/Shipping Address/btn_My Address"))
+2026-07-07 09:50:27.905 DEBUG t.Ensure My Address - Delete address     - 19: waitForPageLoad(30)
+2026-07-07 09:50:27.910 DEBUG t.Ensure My Address - Delete address     - 20: waitForElementClickable(findTestObject("WEB/Address Management/Shipping Address/btn_Delete"), 30)
+2026-07-07 09:50:28.691 DEBUG t.Ensure My Address - Delete address     - 21: scrollToElement(findTestObject("WEB/Address Management/Shipping Address/btn_Delete"), 5)
+2026-07-07 09:50:29.313 DEBUG t.Ensure My Address - Delete address     - 22: enhancedClick(findTestObject("WEB/Address Management/Shipping Address/btn_Delete"))
+2026-07-07 09:50:29.596 DEBUG t.Ensure My Address - Delete address     - 23: btnOK = new com.kms.katalon.core.testobject.TestObject(btnOK)
+2026-07-07 09:50:29.598 DEBUG t.Ensure My Address - Delete address     - 24: btnOK.addProperty("xpath", EQUALS, "//div[contains(@class,'el-message-box')]//span[normalize-space()='OK']")
+2026-07-07 09:50:29.604 DEBUG t.Ensure My Address - Delete address     - 25: waitForElementVisible(btnOK, 30)
+2026-07-07 09:50:30.337 DEBUG t.Ensure My Address - Delete address     - 26: waitForElementClickable(btnOK, 30)
+2026-07-07 09:50:30.568 DEBUG t.Ensure My Address - Delete address     - 27: enhancedClick(btnOK)
+2026-07-07 09:50:30.850 DEBUG t.Ensure My Address - Delete address     - 28: waitForPageLoad(10)
+2026-07-07 09:50:30.856 DEBUG t.Ensure My Address - Delete address     - 29: refresh()
+2026-07-07 09:50:33.014 DEBUG t.Ensure My Address - Delete address     - 30: waitForPageLoad(30)
+2026-07-07 09:50:33.021 DEBUG t.Ensure My Address - Delete address     - 31: deletedEmail = new com.kms.katalon.core.testobject.TestObject(deletedEmail)
+2026-07-07 09:50:33.023 DEBUG t.Ensure My Address - Delete address     - 32: deletedEmail.addProperty("xpath", EQUALS, "//*[contains(text(),'agung.priyadi@gtech.digital')]")
+2026-07-07 09:50:33.027 DEBUG t.Ensure My Address - Delete address     - 33: isEmailStillExist = verifyElementPresent(deletedEmail, 5, OPTIONAL)
+2026-07-07 09:50:38.195 WARN  c.k.k.core.keyword.internal.KeywordMain  - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'deletedEmail' located by 'By.xpath: //*[contains(text(),'agung.priyadi@gtech.digital')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'deletedEmail' located by 'By.xpath: //*[contains(text(),'agung.priyadi@gtech.digital')]' not found\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:88)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1550)\r\n\tat Ensure My Address - Delete address.run(Ensure My Address - Delete address:95)\r\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)\r\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0707_14.run(S0707_14.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n)
+2026-07-07 09:50:38.198 DEBUG t.Ensure My Address - Delete address     - 34: if (isEmailStillExist)
+2026-07-07 09:50:38.198 DEBUG t.Ensure My Address - Delete address     - 35: else
+2026-07-07 09:50:38.201 DEBUG t.Ensure My Address - Delete address     - 1: comment("PASSED - Address berhasil dihapus")
+2026-07-07 09:50:38.202 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - PASSED - Address berhasil dihapus
+2026-07-07 09:50:38.204 DEBUG t.Ensure My Address - Delete address     - 36: closeBrowser()
+2026-07-07 09:50:39.078 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0707_14.run(S0707_14.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+Failed to save screenshot: Cannot take screenshot
+Test Case 'Test Cases/WEB/Address Management/Ensure My Address - Delete address' finished with status: PASSED
+2026-07-07 09:50:41.150 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Address Management/Ensure My Address - Delete address
+2026-07-07 09:50:41.152 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-07-07 09:50:41.152 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Address Management/Ensure My Address - Edit address
+2026-07-07 09:50:41.235 DEBUG t.Ensure My Address - Edit address       - 1: randomEmail = custom.RandomData.generateRandomEmail()
+2026-07-07 09:50:41.238 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomEmail is PASSED
+2026-07-07 09:50:41.241 DEBUG t.Ensure My Address - Edit address       - 2: randomFirstName = custom.RandomData.generateRandomFirstName()
+2026-07-07 09:50:41.242 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomFirstName is PASSED
+2026-07-07 09:50:41.244 DEBUG t.Ensure My Address - Edit address       - 3: randomLastName = custom.RandomData.generateRandomLastName()
+2026-07-07 09:50:41.245 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomLastName is PASSED
+2026-07-07 09:50:41.247 DEBUG t.Ensure My Address - Edit address       - 4: randomPhone = custom.RandomData.generateRandomPhone()
+2026-07-07 09:50:41.247 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomPhone is PASSED
+2026-07-07 09:50:41.249 DEBUG t.Ensure My Address - Edit address       - 5: randomAddress = custom.RandomData.generateRandomAddress()
+2026-07-07 09:50:41.250 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomAddress is PASSED
+2026-07-07 09:50:41.253 DEBUG t.Ensure My Address - Edit address       - 6: randomCode = custom.RandomData.generateRandomCode()
+2026-07-07 09:50:41.254 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomCode is PASSED
+2026-07-07 09:50:41.256 DEBUG t.Ensure My Address - Edit address       - 7: openBrowser("")
+2026-07-07 09:50:41.257 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-07-07 09:50:41.264 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-07-07 09:50:43.779 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = d6ca9bc8-6fea-4378-b739-1af23a615fa4
+2026-07-07 09:50:43.783 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-07-07 09:50:43.784 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-07-07 09:50:43.785 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-07-07 09:50:43.786 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-07-07 09:50:43.818 DEBUG t.Ensure My Address - Edit address       - 8: setViewPortSize(1920, 1080)
+2026-07-07 09:50:44.169 DEBUG t.Ensure My Address - Edit address       - 9: navigateToUrl(URL)
+2026-07-07 09:50:46.469 DEBUG t.Ensure My Address - Edit address       - 10: custom.BrowserHelper.setupBrowserWindow()
+Running browser: FIREFOX_HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-07-07 09:50:46.600 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-07-07 09:50:46.602 DEBUG t.Ensure My Address - Edit address       - 11: waitForPageLoad(30)
+2026-07-07 09:50:46.628 DEBUG t.Ensure My Address - Edit address       - 12: waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30)
+2026-07-07 09:50:46.902 DEBUG t.Ensure My Address - Edit address       - 13: waitForElementVisible(findTestObject("WEB/Registration/icon-acount"), 30)
+2026-07-07 09:50:47.369 DEBUG t.Ensure My Address - Edit address       - 14: mouseOver(findTestObject("WEB/Registration/icon-acount"))
+2026-07-07 09:50:47.729 DEBUG t.Ensure My Address - Edit address       - 15: click(findTestObject("WEB/Registration/icon-acount"))
+2026-07-07 09:50:48.089 DEBUG t.Ensure My Address - Edit address       - 16: waitForElementVisible(findTestObject("WEB/Registration/field-account"), 30)
+2026-07-07 09:50:48.747 DEBUG t.Ensure My Address - Edit address       - 17: setText(findTestObject("WEB/Registration/field-account"), "agungpriyadi")
+2026-07-07 09:50:49.253 DEBUG t.Ensure My Address - Edit address       - 18: setText(findTestObject("WEB/Registration/field-Password"), "Laskar123456")
+2026-07-07 09:50:49.949 DEBUG t.Ensure My Address - Edit address       - 19: waitForElementClickable(findTestObject("WEB/Login/btn-sign in"), 30)
+2026-07-07 09:50:50.383 DEBUG t.Ensure My Address - Edit address       - 20: enhancedClick(findTestObject("WEB/Login/btn-sign in"))
+2026-07-07 09:50:50.686 DEBUG t.Ensure My Address - Edit address       - 21: waitForPageLoad(30)
+2026-07-07 09:50:50.694 DEBUG t.Ensure My Address - Edit address       - 22: waitForElementClickable(findTestObject("WEB/Registration/icon-acount"), 30)
+2026-07-07 09:50:51.138 DEBUG t.Ensure My Address - Edit address       - 23: enhancedClick(findTestObject("WEB/Registration/icon-acount"))
+2026-07-07 09:50:51.413 DEBUG t.Ensure My Address - Edit address       - 24: waitForElementClickable(findTestObject("WEB/Address Management/Shipping Address/btn_My Address"), 30)
+2026-07-07 09:50:53.212 DEBUG t.Ensure My Address - Edit address       - 25: enhancedClick(findTestObject("WEB/Address Management/Shipping Address/btn_My Address"))
+2026-07-07 09:50:54.351 DEBUG t.Ensure My Address - Edit address       - 26: waitForPageLoad(30)
+2026-07-07 09:50:54.360 DEBUG t.Ensure My Address - Edit address       - 27: waitForElementClickable(findTestObject("WEB/Address Management/Shipping Address/btn_Edit"), 30)
+2026-07-07 09:50:55.209 DEBUG t.Ensure My Address - Edit address       - 28: scrollToElement(findTestObject("WEB/Address Management/Shipping Address/btn_Edit"), 5)
+2026-07-07 09:50:55.743 DEBUG t.Ensure My Address - Edit address       - 29: enhancedClick(findTestObject("WEB/Address Management/Shipping Address/btn_Edit"))
+2026-07-07 09:50:56.029 DEBUG t.Ensure My Address - Edit address       - 30: waitForElementVisible(findTestObject("WEB/Address Management/Edit Address/Field_First Name"), 30)
+2026-07-07 09:50:56.271 DEBUG t.Ensure My Address - Edit address       - 31: clearText(findTestObject("WEB/Address Management/Edit Address/Field_First Name"))
+2026-07-07 09:50:56.807 DEBUG t.Ensure My Address - Edit address       - 32: setText(findTestObject("WEB/Address Management/Edit Address/Field_First Name"), randomFirstName)
+2026-07-07 09:50:57.326 DEBUG t.Ensure My Address - Edit address       - 33: clearText(findTestObject("WEB/Address Management/Edit Address/Field_Last Name"))
+2026-07-07 09:50:57.955 DEBUG t.Ensure My Address - Edit address       - 34: setText(findTestObject("WEB/Address Management/Edit Address/Field_Last Name"), randomLastName)
+2026-07-07 09:50:59.058 DEBUG t.Ensure My Address - Edit address       - 35: clearText(findTestObject("WEB/Address Management/Edit Address/Field_Mobile Phone"))
+2026-07-07 09:50:59.483 DEBUG t.Ensure My Address - Edit address       - 36: setText(findTestObject("WEB/Address Management/Edit Address/Field_Mobile Phone"), randomPhone)
+2026-07-07 09:51:00.162 DEBUG t.Ensure My Address - Edit address       - 37: clearText(findTestObject("WEB/Address Management/Edit Address/Field_E-mail"))
+2026-07-07 09:51:00.585 DEBUG t.Ensure My Address - Edit address       - 38: setText(findTestObject("WEB/Address Management/Edit Address/Field_E-mail"), randomEmail)
+2026-07-07 09:51:01.299 DEBUG t.Ensure My Address - Edit address       - 39: clearText(findTestObject("WEB/Address Management/Edit Address/Field_Address"))
+2026-07-07 09:51:01.735 DEBUG t.Ensure My Address - Edit address       - 40: setText(findTestObject("WEB/Address Management/Edit Address/Field_Address"), randomAddress)
+2026-07-07 09:51:02.432 DEBUG t.Ensure My Address - Edit address       - 41: clearText(findTestObject("WEB/Address Management/Edit Address/Field_ZipPostal Code"))
+2026-07-07 09:51:02.870 DEBUG t.Ensure My Address - Edit address       - 42: setText(findTestObject("WEB/Address Management/Edit Address/Field_ZipPostal Code"), randomCode)
+2026-07-07 09:51:03.555 DEBUG t.Ensure My Address - Edit address       - 43: scrollToElement(findTestObject("WEB/Address Management/Edit Address/button_Save"), 5)
+2026-07-07 09:51:03.985 DEBUG t.Ensure My Address - Edit address       - 44: waitForElementClickable(findTestObject("WEB/Address Management/Edit Address/button_Save"), 30)
+2026-07-07 09:51:04.217 DEBUG t.Ensure My Address - Edit address       - 45: enhancedClick(findTestObject("WEB/Address Management/Edit Address/button_Save"))
+2026-07-07 09:51:04.508 DEBUG t.Ensure My Address - Edit address       - 46: waitForPageLoad(30)
+2026-07-07 09:51:04.514 DEBUG t.Ensure My Address - Edit address       - 47: scrollToElement(findTestObject("WEB/Address Management/Shipping Address/lbl_Shipping Address"), 5)
+2026-07-07 09:51:04.938 DEBUG t.Ensure My Address - Edit address       - 48: verifyName = new com.kms.katalon.core.testobject.TestObject(verifyName)
+2026-07-07 09:51:04.940 DEBUG t.Ensure My Address - Edit address       - 49: verifyName.addProperty("xpath", EQUALS, //*[contains(text(),'$randomFirstName')])
+2026-07-07 09:51:04.948 DEBUG t.Ensure My Address - Edit address       - 50: verifyElementPresent(verifyName, 30)
+2026-07-07 09:51:05.765 DEBUG t.Ensure My Address - Edit address       - 51: comment("Email      : " + randomEmail)
+2026-07-07 09:51:05.766 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Email      : agungpriyadilmm@gmail.com
+2026-07-07 09:51:05.767 DEBUG t.Ensure My Address - Edit address       - 52: comment("First Name : " + randomFirstName)
+2026-07-07 09:51:05.768 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - First Name : Rina
+2026-07-07 09:51:05.769 DEBUG t.Ensure My Address - Edit address       - 53: comment("Last Name  : " + randomLastName)
+2026-07-07 09:51:05.770 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Last Name  : Priyadi
+2026-07-07 09:51:05.771 DEBUG t.Ensure My Address - Edit address       - 54: comment("Phone      : " + randomPhone)
+2026-07-07 09:51:05.771 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Phone      : 08436547486
+2026-07-07 09:51:05.773 DEBUG t.Ensure My Address - Edit address       - 55: comment("Address    : " + randomAddress)
+2026-07-07 09:51:05.774 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Address    : Jakarta Testing 7655
+2026-07-07 09:51:05.776 DEBUG t.Ensure My Address - Edit address       - 56: comment("Code       : " + randomCode)
+2026-07-07 09:51:05.777 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Code       : 158105
+Screenshot saved : Screenshot/PASSED/Address_TestSuite/PASSED_20260707_095105.png
+Test Case 'Test Cases/WEB/Address Management/Ensure My Address - Edit address' finished with status: PASSED
+2026-07-07 09:51:08.535 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Address Management/Ensure My Address - Edit address
+2026-07-07 09:51:08.549 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-07-07 09:51:08.549 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address)
+2026-07-07 09:51:08.971 DEBUG ports Station website (Delivery Address) - 1: randomEmail = custom.RandomData.generateRandomEmail()
+2026-07-07 09:51:08.998 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomEmail is PASSED
+2026-07-07 09:51:09.031 DEBUG ports Station website (Delivery Address) - 2: randomFirstName = custom.RandomData.generateRandomFirstName()
+2026-07-07 09:51:09.036 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomFirstName is PASSED
+2026-07-07 09:51:09.051 DEBUG ports Station website (Delivery Address) - 3: randomLastName = custom.RandomData.generateRandomLastName()
+2026-07-07 09:51:09.097 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomLastName is PASSED
+2026-07-07 09:51:09.107 DEBUG ports Station website (Delivery Address) - 4: randomPhone = custom.RandomData.generateRandomPhone()
+2026-07-07 09:51:09.134 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomPhone is PASSED
+2026-07-07 09:51:09.148 DEBUG ports Station website (Delivery Address) - 5: randomAddress = custom.RandomData.generateRandomAddress()
+2026-07-07 09:51:09.152 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomAddress is PASSED
+2026-07-07 09:51:09.170 DEBUG ports Station website (Delivery Address) - 6: randomCode = custom.RandomData.generateRandomCode()
+2026-07-07 09:51:09.189 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-07-07 09:51:09.180 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomCode is PASSED
+2026-07-07 09:51:09.186 DEBUG ports Station website (Delivery Address) - 7: openBrowser("")
+2026-07-07 09:51:10.919 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-07-07 09:51:10.926 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-07-07 09:51:12.831 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 59ffa800-89de-4bf0-8112-f630efd1813c
+2026-07-07 09:51:12.832 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-07-07 09:51:12.832 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-07-07 09:51:12.832 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-07-07 09:51:12.834 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-07-07 09:51:12.849 DEBUG ports Station website (Delivery Address) - 8: setViewPortSize(1920, 1080)
+2026-07-07 09:51:13.162 DEBUG ports Station website (Delivery Address) - 9: navigateToUrl(URL)
+2026-07-07 09:51:15.389 DEBUG ports Station website (Delivery Address) - 10: custom.BrowserHelper.setupBrowserWindow()
+Running browser: FIREFOX_HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-07-07 09:51:15.494 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-07-07 09:51:15.497 DEBUG ports Station website (Delivery Address) - 11: waitForPageLoad(30)
+2026-07-07 09:51:15.519 DEBUG ports Station website (Delivery Address) - 12: waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30)
+2026-07-07 09:51:15.798 DEBUG ports Station website (Delivery Address) - 13: waitForElementClickable(findTestObject("WEB/Home Page/Search/icon-search"), 30)
+2026-07-07 09:51:16.093 DEBUG ports Station website (Delivery Address) - 14: enhancedClick(findTestObject("WEB/Home Page/Search/icon-search"))
+2026-07-07 09:51:16.592 DEBUG ports Station website (Delivery Address) - 15: waitForElementVisible(findTestObject("WEB/Home Page/Search/field-search"), 30)
+2026-07-07 09:51:16.829 DEBUG ports Station website (Delivery Address) - 16: setText(findTestObject("WEB/Home Page/Search/field-search"), "IPHONE 13 PRO MAX SIERRA BLUE 128GB")
+2026-07-07 09:51:17.347 DEBUG ports Station website (Delivery Address) - 17: sendKeys(findTestObject("WEB/Home Page/Search/field-search"), Keys.chord(ENTER))
+2026-07-07 09:51:17.805 DEBUG ports Station website (Delivery Address) - 18: waitForPageLoad(30)
+2026-07-07 09:51:17.812 DEBUG ports Station website (Delivery Address) - 19: delay(3)
+2026-07-07 09:51:20.825 DEBUG ports Station website (Delivery Address) - 20: click(findTestObject("WEB/Product and Cart/Add to cart/btn_product_PHONE 13 PRO MAX SIERRA BLUE"))
+2026-07-07 09:51:21.150 DEBUG ports Station website (Delivery Address) - 21: click(findTestObject("WEB/Product and Cart/Add to cart/button_Add to Cart"))
+2026-07-07 09:51:23.987 DEBUG ports Station website (Delivery Address) - 22: waitForElementPresent(findTestObject("WEB/Product and Cart/Add to cart/i_icon-cart"), 30)
+2026-07-07 09:51:24.412 DEBUG ports Station website (Delivery Address) - 23: waitForElementClickable(findTestObject("WEB/Product and Cart/Add to cart/i_icon-cart"), 30)
+2026-07-07 09:51:24.639 DEBUG ports Station website (Delivery Address) - 24: click(findTestObject("WEB/Product and Cart/Add to cart/i_icon-cart"))
+2026-07-07 09:51:25.347 DEBUG ports Station website (Delivery Address) - 25: waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/btn_checkout"), 30)
+2026-07-07 09:51:26.501 DEBUG ports Station website (Delivery Address) - 26: waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/btn_checkout"), 30)
+2026-07-07 09:51:26.735 DEBUG ports Station website (Delivery Address) - 27: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/btn_checkout"))
+2026-07-07 09:51:27.013 DEBUG ports Station website (Delivery Address) - 28: waitForPageLoad(30)
+2026-07-07 09:51:27.020 DEBUG ports Station website (Delivery Address) - 29: waitForElementVisible(findTestObject("WEB/Checkout/Checkout guest/field_email"), 30)
+2026-07-07 09:51:28.277 DEBUG ports Station website (Delivery Address) - 30: setText(findTestObject("WEB/Checkout/Checkout guest/field_email"), randomEmail)
+2026-07-07 09:51:28.776 DEBUG ports Station website (Delivery Address) - 31: waitForElementClickable(findTestObject("WEB/Checkout/Checkout guest/btn_continue"), 30)
+2026-07-07 09:51:29.210 DEBUG ports Station website (Delivery Address) - 32: enhancedClick(findTestObject("WEB/Checkout/Checkout guest/btn_continue"))
+2026-07-07 09:51:29.510 DEBUG ports Station website (Delivery Address) - 33: waitForPageLoad(30)
+2026-07-07 09:51:29.516 DEBUG ports Station website (Delivery Address) - 34: waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/field_First Name"), 30)
+2026-07-07 09:51:30.570 DEBUG ports Station website (Delivery Address) - 35: setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_First Name"), randomFirstName)
+2026-07-07 09:51:31.751 DEBUG ports Station website (Delivery Address) - 36: setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_Last Name"), randomLastName)
+2026-07-07 09:51:32.541 DEBUG ports Station website (Delivery Address) - 37: setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_mobile phone"), randomPhone)
+2026-07-07 09:51:33.229 DEBUG ports Station website (Delivery Address) - 38: setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_Address"), randomAddress)
+2026-07-07 09:51:33.931 DEBUG ports Station website (Delivery Address) - 39: setText(findTestObject("WEB/Checkout/Address/Address Ship To/input_ZipPostal Code"), randomCode)
+2026-07-07 09:51:35.135 DEBUG ports Station website (Delivery Address) - 40: waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/input_Province"), 30)
+2026-07-07 09:51:35.576 DEBUG ports Station website (Delivery Address) - 41: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/input_Province"))
+2026-07-07 09:51:35.873 DEBUG ports Station website (Delivery Address) - 42: waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province"), 30)
+2026-07-07 09:51:36.307 DEBUG ports Station website (Delivery Address) - 43: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province"))
+2026-07-07 09:51:36.594 DEBUG ports Station website (Delivery Address) - 44: waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/input_Select Province"), 30)
+2026-07-07 09:51:36.832 DEBUG ports Station website (Delivery Address) - 45: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/input_Select Province"))
+2026-07-07 09:51:37.107 DEBUG ports Station website (Delivery Address) - 46: waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province"), 30)
+2026-07-07 09:51:38.148 DEBUG ports Station website (Delivery Address) - 47: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province"))
+2026-07-07 09:51:38.434 DEBUG ports Station website (Delivery Address) - 48: waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/input_Districts"), 30)
+2026-07-07 09:51:38.682 DEBUG ports Station website (Delivery Address) - 49: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/input_Districts"))
+2026-07-07 09:51:38.956 DEBUG ports Station website (Delivery Address) - 50: waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts"), 30)
+2026-07-07 09:51:40.006 DEBUG ports Station website (Delivery Address) - 51: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts"))
+2026-07-07 09:51:40.290 DEBUG ports Station website (Delivery Address) - 52: scrollToElement(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"), 5)
+2026-07-07 09:51:40.514 DEBUG ports Station website (Delivery Address) - 53: waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"), 30)
+2026-07-07 09:51:40.742 DEBUG ports Station website (Delivery Address) - 54: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"))
+2026-07-07 09:51:41.334 DEBUG ports Station website (Delivery Address) - 55: waitForPageLoad(30)
+Screenshot saved : Screenshot/PASSED/Address_TestSuite/PASSED_20260707_095141.png
+Test Case 'Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address)' finished with status: PASSED
+2026-07-07 09:51:43.918 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address)
+2026-07-07 09:51:43.922 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-07-07 09:51:43.922 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit
+2026-07-07 09:51:44.028 DEBUG hipping and Billing Address Add and Edit - 1: randomEmail = custom.RandomData.generateRandomEmail()
+2026-07-07 09:51:44.029 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomEmail is PASSED
+2026-07-07 09:51:44.032 DEBUG hipping and Billing Address Add and Edit - 2: randomFirstName = custom.RandomData.generateRandomFirstName()
+2026-07-07 09:51:44.033 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomFirstName is PASSED
+2026-07-07 09:51:44.035 DEBUG hipping and Billing Address Add and Edit - 3: randomLastName = custom.RandomData.generateRandomLastName()
+2026-07-07 09:51:44.036 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomLastName is PASSED
+2026-07-07 09:51:44.039 DEBUG hipping and Billing Address Add and Edit - 4: randomPhone = custom.RandomData.generateRandomPhone()
+2026-07-07 09:51:44.040 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomPhone is PASSED
+2026-07-07 09:51:44.042 DEBUG hipping and Billing Address Add and Edit - 5: randomAddress = custom.RandomData.generateRandomAddress()
+2026-07-07 09:51:44.043 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomAddress is PASSED
+2026-07-07 09:51:44.047 DEBUG hipping and Billing Address Add and Edit - 6: randomCode = custom.RandomData.generateRandomCode()
+2026-07-07 09:51:44.047 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomCode is PASSED
+2026-07-07 09:51:44.049 DEBUG hipping and Billing Address Add and Edit - 7: openBrowser("")
+2026-07-07 09:51:44.050 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-07-07 09:51:45.434 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-07-07 09:51:45.447 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-07-07 09:51:48.593 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 0e509b8f-e7d1-4402-ad21-f79638825ea7
+2026-07-07 09:51:48.594 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-07-07 09:51:48.594 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-07-07 09:51:48.595 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-07-07 09:51:48.595 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-07-07 09:51:48.628 DEBUG hipping and Billing Address Add and Edit - 8: setViewPortSize(1920, 1080)
+2026-07-07 09:51:48.973 DEBUG hipping and Billing Address Add and Edit - 9: navigateToUrl(URL)
+2026-07-07 09:51:51.319 DEBUG hipping and Billing Address Add and Edit - 10: custom.BrowserHelper.setupBrowserWindow()
+Running browser: FIREFOX_HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-07-07 09:51:51.379 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-07-07 09:51:51.381 DEBUG hipping and Billing Address Add and Edit - 11: waitForPageLoad(30)
+2026-07-07 09:51:51.405 DEBUG hipping and Billing Address Add and Edit - 12: waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30)
+2026-07-07 09:51:51.646 DEBUG hipping and Billing Address Add and Edit - 13: waitForElementClickable(findTestObject("WEB/Home Page/Search/icon-search"), 30)
+2026-07-07 09:51:51.902 DEBUG hipping and Billing Address Add and Edit - 14: enhancedClick(findTestObject("WEB/Home Page/Search/icon-search"))
+2026-07-07 09:51:52.616 DEBUG hipping and Billing Address Add and Edit - 15: waitForElementVisible(findTestObject("WEB/Home Page/Search/field-search"), 30)
+2026-07-07 09:51:52.848 DEBUG hipping and Billing Address Add and Edit - 16: setText(findTestObject("WEB/Home Page/Search/field-search"), "IPHONE 13 PRO MAX SIERRA BLUE 128GB")
+2026-07-07 09:51:53.408 DEBUG hipping and Billing Address Add and Edit - 17: sendKeys(findTestObject("WEB/Home Page/Search/field-search"), Keys.chord(ENTER))
+2026-07-07 09:51:54.968 DEBUG hipping and Billing Address Add and Edit - 18: waitForPageLoad(30)
+2026-07-07 09:51:54.976 DEBUG hipping and Billing Address Add and Edit - 19: delay(3)
+2026-07-07 09:51:57.980 DEBUG hipping and Billing Address Add and Edit - 20: click(findTestObject("WEB/Product and Cart/Add to cart/btn_product_PHONE 13 PRO MAX SIERRA BLUE"))
+2026-07-07 09:51:58.282 DEBUG hipping and Billing Address Add and Edit - 21: click(findTestObject("WEB/Product and Cart/Add to cart/button_Add to Cart"))
+2026-07-07 09:52:01.178 DEBUG hipping and Billing Address Add and Edit - 22: waitForElementPresent(findTestObject("WEB/Product and Cart/Add to cart/i_icon-cart"), 30)
+2026-07-07 09:52:01.597 DEBUG hipping and Billing Address Add and Edit - 23: waitForElementClickable(findTestObject("WEB/Product and Cart/Add to cart/i_icon-cart"), 30)
+2026-07-07 09:52:01.826 DEBUG hipping and Billing Address Add and Edit - 24: enhancedClick(findTestObject("WEB/Product and Cart/Add to cart/i_icon-cart"))
+2026-07-07 09:52:02.519 DEBUG hipping and Billing Address Add and Edit - 25: waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/btn_checkout"), 30)
+2026-07-07 09:52:03.662 DEBUG hipping and Billing Address Add and Edit - 26: waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/btn_checkout"), 30)
+2026-07-07 09:52:03.886 DEBUG hipping and Billing Address Add and Edit - 27: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/btn_checkout"))
+2026-07-07 09:52:04.162 DEBUG hipping and Billing Address Add and Edit - 28: waitForPageLoad(30)
+2026-07-07 09:52:04.166 DEBUG hipping and Billing Address Add and Edit - 29: waitForElementVisible(findTestObject("WEB/Checkout/Checkout guest/field_email"), 30)
+2026-07-07 09:52:05.526 DEBUG hipping and Billing Address Add and Edit - 30: setText(findTestObject("WEB/Checkout/Checkout guest/field_email"), randomEmail)
+2026-07-07 09:52:06.003 DEBUG hipping and Billing Address Add and Edit - 31: waitForElementClickable(findTestObject("WEB/Checkout/Checkout guest/btn_continue"), 30)
+2026-07-07 09:52:06.433 DEBUG hipping and Billing Address Add and Edit - 32: enhancedClick(findTestObject("WEB/Checkout/Checkout guest/btn_continue"))
+2026-07-07 09:52:06.730 DEBUG hipping and Billing Address Add and Edit - 33: waitForPageLoad(30)
+2026-07-07 09:52:06.735 DEBUG hipping and Billing Address Add and Edit - 34: waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/field_First Name"), 30)
+2026-07-07 09:52:07.782 DEBUG hipping and Billing Address Add and Edit - 35: setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_First Name"), randomFirstName)
+2026-07-07 09:52:08.760 DEBUG hipping and Billing Address Add and Edit - 36: setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_Last Name"), randomLastName)
+2026-07-07 09:52:09.858 DEBUG hipping and Billing Address Add and Edit - 37: setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_mobile phone"), randomPhone)
+2026-07-07 09:52:10.549 DEBUG hipping and Billing Address Add and Edit - 38: setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_Address"), randomAddress)
+2026-07-07 09:52:11.230 DEBUG hipping and Billing Address Add and Edit - 39: setText(findTestObject("WEB/Checkout/Address/Address Ship To/input_ZipPostal Code"), randomCode)
+2026-07-07 09:52:12.411 DEBUG hipping and Billing Address Add and Edit - 40: waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/input_Province"), 30)
+2026-07-07 09:52:12.846 DEBUG hipping and Billing Address Add and Edit - 41: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/input_Province"))
+2026-07-07 09:52:13.138 DEBUG hipping and Billing Address Add and Edit - 42: waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province"), 30)
+2026-07-07 09:52:13.560 DEBUG hipping and Billing Address Add and Edit - 43: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province"))
+2026-07-07 09:52:13.842 DEBUG hipping and Billing Address Add and Edit - 44: waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/input_Select Province"), 30)
+2026-07-07 09:52:14.076 DEBUG hipping and Billing Address Add and Edit - 45: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/input_Select Province"))
+2026-07-07 09:52:14.354 DEBUG hipping and Billing Address Add and Edit - 46: waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province"), 30)
+2026-07-07 09:52:15.292 DEBUG hipping and Billing Address Add and Edit - 47: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province"))
+2026-07-07 09:52:15.578 DEBUG hipping and Billing Address Add and Edit - 48: waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/input_Districts"), 30)
+2026-07-07 09:52:15.810 DEBUG hipping and Billing Address Add and Edit - 49: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/input_Districts"))
+2026-07-07 09:52:16.084 DEBUG hipping and Billing Address Add and Edit - 50: waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts"), 30)
+2026-07-07 09:52:17.117 DEBUG hipping and Billing Address Add and Edit - 51: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts"))
+2026-07-07 09:52:17.399 DEBUG hipping and Billing Address Add and Edit - 52: scrollToElement(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"), 5)
+2026-07-07 09:52:17.625 DEBUG hipping and Billing Address Add and Edit - 53: waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"), 30)
+2026-07-07 09:52:17.869 DEBUG hipping and Billing Address Add and Edit - 54: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"))
+2026-07-07 09:52:18.358 DEBUG hipping and Billing Address Add and Edit - 55: waitForPageLoad(30)
+2026-07-07 09:52:18.363 DEBUG hipping and Billing Address Add and Edit - 56: scrollToElement(findTestObject("WEB/Checkout/Address/Address Ship To/btn-change"), 5)
+2026-07-07 09:52:18.888 DEBUG hipping and Billing Address Add and Edit - 57: waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/btn-change"), 30)
+2026-07-07 09:52:19.109 DEBUG hipping and Billing Address Add and Edit - 58: waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/btn-change"), 30)
+2026-07-07 09:52:19.336 DEBUG hipping and Billing Address Add and Edit - 59: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/btn-change"))
+2026-07-07 09:52:19.615 DEBUG hipping and Billing Address Add and Edit - 60: waitForPageLoad(30)
+2026-07-07 09:52:19.620 DEBUG hipping and Billing Address Add and Edit - 61: updateAddress = custom.RandomData.generateRandomAddress()
+2026-07-07 09:52:19.620 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomAddress is PASSED
+2026-07-07 09:52:19.622 DEBUG hipping and Billing Address Add and Edit - 62: updateCode = custom.RandomData.generateRandomCode()
+2026-07-07 09:52:19.623 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.RandomData.generateRandomCode is PASSED
+2026-07-07 09:52:19.624 DEBUG hipping and Billing Address Add and Edit - 63: waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/field_Address"), 30)
+2026-07-07 09:52:20.242 DEBUG hipping and Billing Address Add and Edit - 64: clearText(findTestObject("WEB/Checkout/Address/Address Ship To/field_Address"))
+2026-07-07 09:52:20.465 DEBUG hipping and Billing Address Add and Edit - 65: setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_Address"), updateAddress)
+2026-07-07 09:52:20.953 DEBUG hipping and Billing Address Add and Edit - 66: clearText(findTestObject("WEB/Checkout/Address/Address Ship To/input_ZipPostal Code"))
+2026-07-07 09:52:21.375 DEBUG hipping and Billing Address Add and Edit - 67: setText(findTestObject("WEB/Checkout/Address/Address Ship To/input_ZipPostal Code"), updateCode)
+2026-07-07 09:52:22.054 DEBUG hipping and Billing Address Add and Edit - 68: scrollToElement(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"), 5)
+2026-07-07 09:52:22.877 DEBUG hipping and Billing Address Add and Edit - 69: waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"), 30)
+2026-07-07 09:52:23.108 DEBUG hipping and Billing Address Add and Edit - 70: enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"))
+2026-07-07 09:52:23.399 DEBUG hipping and Billing Address Add and Edit - 71: waitForPageLoad(30)
+2026-07-07 09:52:23.404 DEBUG hipping and Billing Address Add and Edit - 72: scrollToElement(findTestObject("WEB/Checkout/Address/Address Ship To/btn-change"), 5)
+2026-07-07 09:52:23.826 DEBUG hipping and Billing Address Add and Edit - 73: waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/btn-change"), 30)
+Screenshot saved : Screenshot/PASSED/Address_TestSuite/PASSED_20260707_095224.png
+Test Case 'Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit' finished with status: PASSED
+2026-07-07 09:52:26.421 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit
+2026-07-07 09:52:27.229 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-07-07 09:52:27.229 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/WEB/Address/Address_TestSuite
+2026-07-07 09:52:27.229 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

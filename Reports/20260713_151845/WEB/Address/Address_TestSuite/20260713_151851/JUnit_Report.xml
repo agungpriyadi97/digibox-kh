@@ -1,0 +1,1617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Address_TestSuite" time="195.03" tests="5" passed="5" failures="0" errors="0" incompleted="0" skipped="0">
+   <testsuite name="Address_TestSuite" tests="5" passed="5" failures="0" errors="0" incompleted="0" skipped="0" time="195.03" timestamp="2026-07-13T08:27:53.475Z" hostname="AgungPriyadi - NB-GDA-55026" id="Test Suites/WEB/Address/Address_TestSuite" status="PASSED">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260713_151845\\WEB\\Address\\Address_TestSuite\\20260713_151851"/>
+         <property name="logFiles" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260713_151845\\WEB\\Address\\Address_TestSuite\\20260713_151851\\console0.log, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260713_151845\\WEB\\Address\\Address_TestSuite\\20260713_151851\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260713_151845\\WEB\\Address\\Address_TestSuite\\20260713_151851\\Screenshot/PASSED/Address_TestSuite/PASSED_20260713_152932.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260713_151845\\WEB\\Address\\Address_TestSuite\\20260713_151851\\Screenshot/PASSED/Address_TestSuite/PASSED_20260713_153015.png, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260713_151845\\WEB\\Address\\Address_TestSuite\\20260713_151851\\Screenshot/PASSED/Address_TestSuite/PASSED_20260713_153105.png"/>
+         <property name="executionBindingVariables" value="[]"/>
+         <property name="hostName" value="AgungPriyadi - NB-GDA-55026"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="11.1.3.0"/>
+         <property name="browser" value="Chrome 149.0.7827.103"/>
+         <property name="userFullName" value="Agung Priyadi"/>
+         <property name="hostAddress" value="192.168.110.73"/>
+         <property name="sessionId" value="ae25cf31bc8d6fdc2458ee5b98b486be"/>
+         <property name="projectName" value="digibox-kh"/>
+         <property name="seleniumVersion" value="4.39.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/WEB/Address Management/Ensure My Address - add new address" time="36.176" classname="Test Cases/WEB/Address Management/Ensure My Address - add new address" status="PASSED">
+         <system-out><![CDATA[13-07-2026T15:27:53 - [TEST_CASE][PASSED] - Test Cases/WEB/Address Management/Ensure My Address - add new address: Test Cases/WEB/Address Management/Ensure My Address - add new address
+
+13-07-2026T15:27:54 - [TEST_STEP][PASSED] - randomFirstName = custom.RandomData.generateRandomFirstName(): custom.RandomData.generateRandomFirstName is PASSED
+
+13-07-2026T15:27:54 - [MESSAGE][PASSED] - custom.RandomData.generateRandomFirstName is PASSED
+
+13-07-2026T15:27:54 - [TEST_STEP][PASSED] - randomEmail = custom.RandomData.generateRandomEmail(): custom.RandomData.generateRandomEmail is PASSED
+
+13-07-2026T15:27:54 - [MESSAGE][PASSED] - custom.RandomData.generateRandomEmail is PASSED
+
+13-07-2026T15:27:54 - [TEST_STEP][PASSED] - randomLastName = custom.RandomData.generateRandomLastName(): custom.RandomData.generateRandomLastName is PASSED
+
+13-07-2026T15:27:54 - [MESSAGE][PASSED] - custom.RandomData.generateRandomLastName is PASSED
+
+13-07-2026T15:27:54 - [TEST_STEP][PASSED] - randomPhone = custom.RandomData.generateRandomPhone(): custom.RandomData.generateRandomPhone is PASSED
+
+13-07-2026T15:27:54 - [MESSAGE][PASSED] - custom.RandomData.generateRandomPhone is PASSED
+
+13-07-2026T15:27:54 - [TEST_STEP][PASSED] - randomAddress = custom.RandomData.generateRandomAddress(): custom.RandomData.generateRandomAddress is PASSED
+
+13-07-2026T15:27:54 - [MESSAGE][PASSED] - custom.RandomData.generateRandomAddress is PASSED
+
+13-07-2026T15:27:54 - [TEST_STEP][PASSED] - randomCode = custom.RandomData.generateRandomCode(): custom.RandomData.generateRandomCode is PASSED
+
+13-07-2026T15:27:54 - [MESSAGE][PASSED] - custom.RandomData.generateRandomCode is PASSED
+
+13-07-2026T15:27:54 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-07-2026T15:27:55 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+13-07-2026T15:27:55 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+
+13-07-2026T15:27:55 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-07-2026T15:27:58 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-07-2026T15:27:58 - [TEST_STEP][PASSED] - setViewPortSize(1920, 1080): Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:27:58 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:27:58 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:28:01 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:28:01 - [TEST_STEP][PASSED] - custom.BrowserHelper.setupBrowserWindow(): custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:28:01 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:28:01 - [MESSAGE][PASSED] - custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:28:01 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:28:01 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:28:01 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30): Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:28:01 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:28:01 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Registration/icon-acount"), 30): Object 'Object Repository/WEB/Registration/icon-acount' is clickable
+
+13-07-2026T15:28:02 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Registration/icon-acount' is clickable
+
+13-07-2026T15:28:02 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/icon-acount")): Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:28:02 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:28:02 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Registration/field-account"), 30): Object 'Object Repository/WEB/Registration/field-account' is visible
+
+13-07-2026T15:28:03 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Registration/field-account' is visible
+
+13-07-2026T15:28:03 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:28:04 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:28:04 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Registration/field-Password"), 30): Object 'Object Repository/WEB/Registration/field-Password' is visible
+
+13-07-2026T15:28:04 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Registration/field-Password' is visible
+
+13-07-2026T15:28:04 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:28:05 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:28:05 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Login/btn-sign in"), 30): Object 'Object Repository/WEB/Login/btn-sign in' is clickable
+
+13-07-2026T15:28:06 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Login/btn-sign in' is clickable
+
+13-07-2026T15:28:06 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Login/btn-sign in")): Object: 'Object Repository/WEB/Login/btn-sign in' is clicked on
+
+13-07-2026T15:28:06 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Login/btn-sign in' is clicked on
+
+13-07-2026T15:28:06 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:28:06 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:28:06 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Registration/icon-acount"), 30): Object 'Object Repository/WEB/Registration/icon-acount' is visible
+
+13-07-2026T15:28:07 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Registration/icon-acount' is visible
+
+13-07-2026T15:28:07 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Registration/icon-acount")): Object: 'Object Repository/WEB/Registration/icon-acount' is hovered
+
+13-07-2026T15:28:07 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/icon-acount' is hovered
+
+13-07-2026T15:28:07 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Address Management/Shipping Address/btn_My Address"), 30): Object 'Object Repository/WEB/Address Management/Shipping Address/btn_My Address' is clickable
+
+13-07-2026T15:28:10 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Shipping Address/btn_My Address' is clickable
+
+13-07-2026T15:28:10 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Address Management/Shipping Address/btn_My Address")): Object: 'Object Repository/WEB/Address Management/Shipping Address/btn_My Address' is clicked on
+
+13-07-2026T15:28:11 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Address Management/Shipping Address/btn_My Address' is clicked on
+
+13-07-2026T15:28:11 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Address Management/Add New Address/div_Add New Address"), 30): Object 'Object Repository/WEB/Address Management/Add New Address/div_Add New Address' is clickable
+
+13-07-2026T15:28:12 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Add New Address/div_Add New Address' is clickable
+
+13-07-2026T15:28:12 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Address Management/Add New Address/div_Add New Address")): Object: 'Object Repository/WEB/Address Management/Add New Address/div_Add New Address' is clicked on
+
+13-07-2026T15:28:12 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Address Management/Add New Address/div_Add New Address' is clicked on
+
+13-07-2026T15:28:12 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/field_First Name"), 30): Object 'Object Repository/WEB/Address Management/Add New Address/field_First Name' is visible
+
+13-07-2026T15:28:13 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Add New Address/field_First Name' is visible
+
+13-07-2026T15:28:13 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Address Management/Add New Address/field_First Name"), randomFirstName): Text 'Budi' is set on object 'Object Repository/WEB/Address Management/Add New Address/field_First Name'
+
+13-07-2026T15:28:14 - [MESSAGE][PASSED] - Text 'Budi' is set on object 'Object Repository/WEB/Address Management/Add New Address/field_First Name'
+
+13-07-2026T15:28:14 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/field_Last Name"), 30): Object 'Object Repository/WEB/Address Management/Add New Address/field_Last Name' is visible
+
+13-07-2026T15:28:14 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Add New Address/field_Last Name' is visible
+
+13-07-2026T15:28:14 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Address Management/Add New Address/field_Last Name"), randomLastName): Text 'Saputra' is set on object 'Object Repository/WEB/Address Management/Add New Address/field_Last Name'
+
+13-07-2026T15:28:15 - [MESSAGE][PASSED] - Text 'Saputra' is set on object 'Object Repository/WEB/Address Management/Add New Address/field_Last Name'
+
+13-07-2026T15:28:15 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/field_Mobile Phone"), 30): Object 'Object Repository/WEB/Address Management/Add New Address/field_Mobile Phone' is visible
+
+13-07-2026T15:28:15 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Add New Address/field_Mobile Phone' is visible
+
+13-07-2026T15:28:15 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Address Management/Add New Address/field_Mobile Phone"), randomPhone): Text '08720411349' is set on object 'Object Repository/WEB/Address Management/Add New Address/field_Mobile Phone'
+
+13-07-2026T15:28:16 - [MESSAGE][PASSED] - Text '08720411349' is set on object 'Object Repository/WEB/Address Management/Add New Address/field_Mobile Phone'
+
+13-07-2026T15:28:16 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/field_E-mail"), 30): Object 'Object Repository/WEB/Address Management/Add New Address/field_E-mail' is visible
+
+13-07-2026T15:28:17 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Add New Address/field_E-mail' is visible
+
+13-07-2026T15:28:17 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Address Management/Add New Address/field_E-mail"), randomEmail): Text 'agungpriyadixty@gmail.com' is set on object 'Object Repository/WEB/Address Management/Add New Address/field_E-mail'
+
+13-07-2026T15:28:18 - [MESSAGE][PASSED] - Text 'agungpriyadixty@gmail.com' is set on object 'Object Repository/WEB/Address Management/Add New Address/field_E-mail'
+
+13-07-2026T15:28:18 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/field_Address"), 30): Object 'Object Repository/WEB/Address Management/Add New Address/field_Address' is visible
+
+13-07-2026T15:28:18 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Add New Address/field_Address' is visible
+
+13-07-2026T15:28:18 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Address Management/Add New Address/field_Address"), randomAddress): Text 'Jakarta Testing 4570' is set on object 'Object Repository/WEB/Address Management/Add New Address/field_Address'
+
+13-07-2026T15:28:19 - [MESSAGE][PASSED] - Text 'Jakarta Testing 4570' is set on object 'Object Repository/WEB/Address Management/Add New Address/field_Address'
+
+13-07-2026T15:28:19 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Address Management/Add New Address/dropdown_Province"), 30): Object 'Object Repository/WEB/Address Management/Add New Address/dropdown_Province' is clickable
+
+13-07-2026T15:28:19 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Add New Address/dropdown_Province' is clickable
+
+13-07-2026T15:28:19 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Address Management/Add New Address/dropdown_Province")): Object: 'Object Repository/WEB/Address Management/Add New Address/dropdown_Province' is clicked on
+
+13-07-2026T15:28:19 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Address Management/Add New Address/dropdown_Province' is clicked on
+
+13-07-2026T15:28:19 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province"), 30): Object 'Object Repository/WEB/Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province' is visible
+
+13-07-2026T15:28:20 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province' is visible
+
+13-07-2026T15:28:20 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province")): Object: 'Object Repository/WEB/Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province' is clicked on
+
+13-07-2026T15:28:20 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province' is clicked on
+
+13-07-2026T15:28:20 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Address Management/Add New Address/dropdown_Select Province"), 30): Object 'Object Repository/WEB/Address Management/Add New Address/dropdown_Select Province' is clickable
+
+13-07-2026T15:28:21 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Add New Address/dropdown_Select Province' is clickable
+
+13-07-2026T15:28:21 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Address Management/Add New Address/dropdown_Select Province")): Object: 'Object Repository/WEB/Address Management/Add New Address/dropdown_Select Province' is clicked on
+
+13-07-2026T15:28:21 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Address Management/Add New Address/dropdown_Select Province' is clicked on
+
+13-07-2026T15:28:21 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality"), 30): Object 'Object Repository/WEB/Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality' is visible
+
+13-07-2026T15:28:22 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality' is visible
+
+13-07-2026T15:28:22 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality")): Object: 'Object Repository/WEB/Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality' is clicked on
+
+13-07-2026T15:28:22 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality' is clicked on
+
+13-07-2026T15:28:22 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Address Management/Add New Address/dropdown_Districts"), 30): Object 'Object Repository/WEB/Address Management/Add New Address/dropdown_Districts' is clickable
+
+13-07-2026T15:28:22 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Add New Address/dropdown_Districts' is clickable
+
+13-07-2026T15:28:22 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Address Management/Add New Address/dropdown_Districts")): Object: 'Object Repository/WEB/Address Management/Add New Address/dropdown_Districts' is clicked on
+
+13-07-2026T15:28:23 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Address Management/Add New Address/dropdown_Districts' is clicked on
+
+13-07-2026T15:28:23 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/Dropdown District/li_Sangkat Kandal"), 30): Object 'Object Repository/WEB/Address Management/Add New Address/Dropdown District/li_Sangkat Kandal' is visible
+
+13-07-2026T15:28:24 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Add New Address/Dropdown District/li_Sangkat Kandal' is visible
+
+13-07-2026T15:28:24 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Address Management/Add New Address/Dropdown District/li_Sangkat Kandal")): Object: 'Object Repository/WEB/Address Management/Add New Address/Dropdown District/li_Sangkat Kandal' is clicked on
+
+13-07-2026T15:28:24 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Address Management/Add New Address/Dropdown District/li_Sangkat Kandal' is clicked on
+
+13-07-2026T15:28:24 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Address Management/Add New Address/field_ZipPostal Code"), 30): Object 'Object Repository/WEB/Address Management/Add New Address/field_ZipPostal Code' is visible
+
+13-07-2026T15:28:24 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Add New Address/field_ZipPostal Code' is visible
+
+13-07-2026T15:28:24 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Address Management/Add New Address/field_ZipPostal Code"), randomCode): Text '158103' is set on object 'Object Repository/WEB/Address Management/Add New Address/field_ZipPostal Code'
+
+13-07-2026T15:28:25 - [MESSAGE][PASSED] - Text '158103' is set on object 'Object Repository/WEB/Address Management/Add New Address/field_ZipPostal Code'
+
+13-07-2026T15:28:25 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("WEB/Address Management/Add New Address/button_Save"), 5): Scroll to object 'Object Repository/WEB/Address Management/Add New Address/button_Save' successfully
+
+13-07-2026T15:28:26 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/WEB/Address Management/Add New Address/button_Save' successfully
+
+13-07-2026T15:28:26 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Address Management/Add New Address/button_Save"), 30): Object 'Object Repository/WEB/Address Management/Add New Address/button_Save' is clickable
+
+13-07-2026T15:28:26 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Add New Address/button_Save' is clickable
+
+13-07-2026T15:28:26 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Address Management/Add New Address/button_Save")): Object: 'Object Repository/WEB/Address Management/Add New Address/button_Save' is clicked on
+
+13-07-2026T15:28:26 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Address Management/Add New Address/button_Save' is clicked on
+
+13-07-2026T15:28:26 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:28:26 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:28:26 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("WEB/Address Management/Shipping Address/lbl_Shipping Address"), 5): Scroll to object 'Object Repository/WEB/Address Management/Shipping Address/lbl_Shipping Address' successfully
+
+13-07-2026T15:28:27 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/WEB/Address Management/Shipping Address/lbl_Shipping Address' successfully
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - comment("Email      : " + randomEmail): Email      : agungpriyadixty@gmail.com
+
+13-07-2026T15:28:27 - [MESSAGE][INFO] - Email      : agungpriyadixty@gmail.com
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - comment("First Name : " + randomFirstName): First Name : Budi
+
+13-07-2026T15:28:27 - [MESSAGE][INFO] - First Name : Budi
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - comment("Last Name  : " + randomLastName): Last Name  : Saputra
+
+13-07-2026T15:28:27 - [MESSAGE][INFO] - Last Name  : Saputra
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - comment("Phone      : " + randomPhone): Phone      : 08720411349
+
+13-07-2026T15:28:27 - [MESSAGE][INFO] - Phone      : 08720411349
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - comment("Address    : " + randomAddress): Address    : Jakarta Testing 4570
+
+13-07-2026T15:28:27 - [MESSAGE][INFO] - Address    : Jakarta Testing 4570
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - comment("Code       : " + randomCode): Code       : 158103
+
+13-07-2026T15:28:27 - [MESSAGE][INFO] - Code       : 158103
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+13-07-2026T15:28:27 - [MESSAGE][PASSED] - Browser is closed
+
+13-07-2026T15:28:27 - [TEST_STEP][FAILED] - Start listener action : afterTestCase: null
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - if (status == "PASSED"): null
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - saveScreenshot("PASSED"): null
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - try: null
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - tcName = getTestCaseName(): null
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _): null
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - folderPath = Screenshot/$status/$tcName/: null
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - Files.createDirectories(Paths.get(folderPath)): null
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - screenshotPath = $folderPath$status_$this.getTimestamp().png: null
+
+13-07-2026T15:28:27 - [TEST_STEP][FAILED] - return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date()): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_87.run(S0713_87.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:28:27 - [TEST_STEP][FAILED] - takeScreenshot(screenshotPath): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_87.run(S0713_87.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:28:27 - [MESSAGE][FAILED] - Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_87.run(S0713_87.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - catch (Exception e): null
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - println("Failed to save screenshot: " + e.getMessage()): null
+
+13-07-2026T15:28:27 - [TEST_STEP][PASSED] - println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Address Management/Ensure My Address - Delete address" time="27.222" classname="Test Cases/WEB/Address Management/Ensure My Address - Delete address" status="PASSED">
+         <system-out><![CDATA[13-07-2026T15:28:30 - [TEST_CASE][PASSED] - Test Cases/WEB/Address Management/Ensure My Address - Delete address: Test Cases/WEB/Address Management/Ensure My Address - Delete address
+
+13-07-2026T15:28:30 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-07-2026T15:28:30 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+13-07-2026T15:28:30 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+
+13-07-2026T15:28:30 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-07-2026T15:28:31 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-07-2026T15:28:31 - [TEST_STEP][PASSED] - setViewPortSize(1920, 1080): Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:28:32 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:28:32 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:28:34 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:28:34 - [TEST_STEP][PASSED] - custom.BrowserHelper.setupBrowserWindow(): custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:28:34 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:28:34 - [MESSAGE][PASSED] - custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:28:34 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:28:34 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:28:34 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30): Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:28:34 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:28:34 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Registration/icon-acount"), 30): Object 'Object Repository/WEB/Registration/icon-acount' is clickable
+
+13-07-2026T15:28:35 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Registration/icon-acount' is clickable
+
+13-07-2026T15:28:35 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Registration/icon-acount")): Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:28:35 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:28:35 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Registration/field-account"), 30): Object 'Object Repository/WEB/Registration/field-account' is visible
+
+13-07-2026T15:28:36 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Registration/field-account' is visible
+
+13-07-2026T15:28:36 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:28:37 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:28:37 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:28:38 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:28:38 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Login/btn-sign in"), 30): Object 'Object Repository/WEB/Login/btn-sign in' is clickable
+
+13-07-2026T15:28:38 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Login/btn-sign in' is clickable
+
+13-07-2026T15:28:38 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Login/btn-sign in")): Object: 'Object Repository/WEB/Login/btn-sign in' is clicked on
+
+13-07-2026T15:28:38 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Login/btn-sign in' is clicked on
+
+13-07-2026T15:28:38 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:28:38 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:28:38 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Registration/icon-acount"), 30): Object 'Object Repository/WEB/Registration/icon-acount' is clickable
+
+13-07-2026T15:28:39 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Registration/icon-acount' is clickable
+
+13-07-2026T15:28:39 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Registration/icon-acount")): Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:28:39 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:28:39 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Address Management/Shipping Address/btn_My Address"), 30): Object 'Object Repository/WEB/Address Management/Shipping Address/btn_My Address' is clickable
+
+13-07-2026T15:28:42 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Shipping Address/btn_My Address' is clickable
+
+13-07-2026T15:28:42 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Address Management/Shipping Address/btn_My Address")): Object: 'Object Repository/WEB/Address Management/Shipping Address/btn_My Address' is clicked on
+
+13-07-2026T15:28:43 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Address Management/Shipping Address/btn_My Address' is clicked on
+
+13-07-2026T15:28:43 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:28:43 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:28:43 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Address Management/Shipping Address/btn_Delete"), 30): Object 'Object Repository/WEB/Address Management/Shipping Address/btn_Delete' is clickable
+
+13-07-2026T15:28:44 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Shipping Address/btn_Delete' is clickable
+
+13-07-2026T15:28:45 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("WEB/Address Management/Shipping Address/btn_Delete"), 5): Scroll to object 'Object Repository/WEB/Address Management/Shipping Address/btn_Delete' successfully
+
+13-07-2026T15:28:45 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/WEB/Address Management/Shipping Address/btn_Delete' successfully
+
+13-07-2026T15:28:45 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Address Management/Shipping Address/btn_Delete")): Object: 'Object Repository/WEB/Address Management/Shipping Address/btn_Delete' is clicked on
+
+13-07-2026T15:28:46 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Address Management/Shipping Address/btn_Delete' is clicked on
+
+13-07-2026T15:28:46 - [TEST_STEP][PASSED] - btnOK = new com.kms.katalon.core.testobject.TestObject(btnOK): null
+
+13-07-2026T15:28:46 - [TEST_STEP][PASSED] - btnOK.addProperty("xpath", EQUALS, "//div[contains(@class,'el-message-box')]//span[normalize-space()='OK']"): null
+
+13-07-2026T15:28:46 - [TEST_STEP][PASSED] - waitForElementVisible(btnOK, 30): Object 'btnOK' is visible
+
+13-07-2026T15:28:47 - [MESSAGE][PASSED] - Object 'btnOK' is visible
+
+13-07-2026T15:28:47 - [TEST_STEP][PASSED] - waitForElementClickable(btnOK, 30): Object 'btnOK' is clickable
+
+13-07-2026T15:28:47 - [MESSAGE][PASSED] - Object 'btnOK' is clickable
+
+13-07-2026T15:28:47 - [TEST_STEP][PASSED] - enhancedClick(btnOK): Object: 'btnOK' is clicked on
+
+13-07-2026T15:28:47 - [MESSAGE][PASSED] - Object: 'btnOK' is clicked on
+
+13-07-2026T15:28:47 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+13-07-2026T15:28:47 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:28:47 - [TEST_STEP][PASSED] - refresh(): Refresh successfully
+
+13-07-2026T15:28:49 - [MESSAGE][PASSED] - Refresh successfully
+
+13-07-2026T15:28:49 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:28:49 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:28:49 - [TEST_STEP][PASSED] - deletedEmail = new com.kms.katalon.core.testobject.TestObject(deletedEmail): null
+
+13-07-2026T15:28:49 - [TEST_STEP][PASSED] - deletedEmail.addProperty("xpath", EQUALS, "//*[contains(text(),'agung.priyadi@gtech.digital')]"): null
+
+13-07-2026T15:28:49 - [TEST_STEP][WARNING] - isEmailStillExist = verifyElementPresent(deletedEmail, 5, OPTIONAL): com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'deletedEmail' located by 'By.xpath: //*[contains(text(),'agung.priyadi@gtech.digital')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'deletedEmail' located by 'By.xpath: //*[contains(text(),'agung.priyadi@gtech.digital')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1550)
+	at Ensure My Address - Delete address.run(Ensure My Address - Delete address:95)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_87.run(S0713_87.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+13-07-2026T15:28:54 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'deletedEmail' located by 'By.xpath: //*[contains(text(),'agung.priyadi@gtech.digital')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'deletedEmail' located by 'By.xpath: //*[contains(text(),'agung.priyadi@gtech.digital')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1550)
+	at Ensure My Address - Delete address.run(Ensure My Address - Delete address:95)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_87.run(S0713_87.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+13-07-2026T15:28:54 - [TEST_STEP][PASSED] - if (isEmailStillExist): null
+
+13-07-2026T15:28:54 - [TEST_STEP][PASSED] - else: PASSED - Address berhasil dihapus
+
+13-07-2026T15:28:54 - [TEST_STEP][PASSED] - comment("PASSED - Address berhasil dihapus"): PASSED - Address berhasil dihapus
+
+13-07-2026T15:28:54 - [MESSAGE][INFO] - PASSED - Address berhasil dihapus
+
+13-07-2026T15:28:54 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+13-07-2026T15:28:55 - [MESSAGE][PASSED] - Browser is closed
+
+13-07-2026T15:28:55 - [TEST_STEP][FAILED] - Start listener action : afterTestCase: null
+
+13-07-2026T15:28:55 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+13-07-2026T15:28:55 - [TEST_STEP][PASSED] - if (status == "PASSED"): null
+
+13-07-2026T15:28:55 - [TEST_STEP][PASSED] - saveScreenshot("PASSED"): null
+
+13-07-2026T15:28:55 - [TEST_STEP][PASSED] - try: null
+
+13-07-2026T15:28:55 - [TEST_STEP][PASSED] - tcName = getTestCaseName(): null
+
+13-07-2026T15:28:55 - [TEST_STEP][PASSED] - return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _): null
+
+13-07-2026T15:28:55 - [TEST_STEP][PASSED] - folderPath = Screenshot/$status/$tcName/: null
+
+13-07-2026T15:28:55 - [TEST_STEP][PASSED] - Files.createDirectories(Paths.get(folderPath)): null
+
+13-07-2026T15:28:55 - [TEST_STEP][PASSED] - screenshotPath = $folderPath$status_$this.getTimestamp().png: null
+
+13-07-2026T15:28:55 - [TEST_STEP][FAILED] - return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date()): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_87.run(S0713_87.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:28:55 - [TEST_STEP][FAILED] - takeScreenshot(screenshotPath): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_87.run(S0713_87.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:28:55 - [MESSAGE][FAILED] - Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_87.run(S0713_87.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:28:55 - [TEST_STEP][PASSED] - catch (Exception e): null
+
+13-07-2026T15:28:55 - [TEST_STEP][PASSED] - println("Failed to save screenshot: " + e.getMessage()): null
+
+13-07-2026T15:28:55 - [TEST_STEP][PASSED] - println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Address Management/Ensure My Address - Edit address" time="37.427" classname="Test Cases/WEB/Address Management/Ensure My Address - Edit address" status="PASSED">
+         <system-out><![CDATA[13-07-2026T15:28:57 - [TEST_CASE][PASSED] - Test Cases/WEB/Address Management/Ensure My Address - Edit address: Test Cases/WEB/Address Management/Ensure My Address - Edit address
+
+13-07-2026T15:28:57 - [TEST_STEP][PASSED] - randomEmail = custom.RandomData.generateRandomEmail(): custom.RandomData.generateRandomEmail is PASSED
+
+13-07-2026T15:28:57 - [MESSAGE][PASSED] - custom.RandomData.generateRandomEmail is PASSED
+
+13-07-2026T15:28:57 - [TEST_STEP][PASSED] - randomFirstName = custom.RandomData.generateRandomFirstName(): custom.RandomData.generateRandomFirstName is PASSED
+
+13-07-2026T15:28:57 - [MESSAGE][PASSED] - custom.RandomData.generateRandomFirstName is PASSED
+
+13-07-2026T15:28:57 - [TEST_STEP][PASSED] - randomLastName = custom.RandomData.generateRandomLastName(): custom.RandomData.generateRandomLastName is PASSED
+
+13-07-2026T15:28:57 - [MESSAGE][PASSED] - custom.RandomData.generateRandomLastName is PASSED
+
+13-07-2026T15:28:57 - [TEST_STEP][PASSED] - randomPhone = custom.RandomData.generateRandomPhone(): custom.RandomData.generateRandomPhone is PASSED
+
+13-07-2026T15:28:57 - [MESSAGE][PASSED] - custom.RandomData.generateRandomPhone is PASSED
+
+13-07-2026T15:28:57 - [TEST_STEP][PASSED] - randomAddress = custom.RandomData.generateRandomAddress(): custom.RandomData.generateRandomAddress is PASSED
+
+13-07-2026T15:28:57 - [MESSAGE][PASSED] - custom.RandomData.generateRandomAddress is PASSED
+
+13-07-2026T15:28:57 - [TEST_STEP][PASSED] - randomCode = custom.RandomData.generateRandomCode(): custom.RandomData.generateRandomCode is PASSED
+
+13-07-2026T15:28:57 - [MESSAGE][PASSED] - custom.RandomData.generateRandomCode is PASSED
+
+13-07-2026T15:28:57 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-07-2026T15:28:57 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+13-07-2026T15:28:57 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+
+13-07-2026T15:28:57 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-07-2026T15:29:00 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-07-2026T15:29:00 - [TEST_STEP][PASSED] - setViewPortSize(1920, 1080): Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:29:00 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:29:00 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:29:06 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:29:06 - [TEST_STEP][PASSED] - custom.BrowserHelper.setupBrowserWindow(): custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:29:06 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:29:06 - [MESSAGE][PASSED] - custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:29:06 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:29:06 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:29:06 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30): Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:29:07 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:29:07 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Registration/icon-acount"), 30): Object 'Object Repository/WEB/Registration/icon-acount' is visible
+
+13-07-2026T15:29:07 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Registration/icon-acount' is visible
+
+13-07-2026T15:29:07 - [TEST_STEP][PASSED] - mouseOver(findTestObject("WEB/Registration/icon-acount")): Object: 'Object Repository/WEB/Registration/icon-acount' is hovered
+
+13-07-2026T15:29:07 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/icon-acount' is hovered
+
+13-07-2026T15:29:07 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/icon-acount")): Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:29:08 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:29:08 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Registration/field-account"), 30): Object 'Object Repository/WEB/Registration/field-account' is visible
+
+13-07-2026T15:29:09 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Registration/field-account' is visible
+
+13-07-2026T15:29:09 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:29:10 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:29:10 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:29:11 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:29:11 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Login/btn-sign in"), 30): Object 'Object Repository/WEB/Login/btn-sign in' is clickable
+
+13-07-2026T15:29:12 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Login/btn-sign in' is clickable
+
+13-07-2026T15:29:12 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Login/btn-sign in")): Object: 'Object Repository/WEB/Login/btn-sign in' is clicked on
+
+13-07-2026T15:29:12 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Login/btn-sign in' is clicked on
+
+13-07-2026T15:29:12 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:29:12 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:29:12 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Registration/icon-acount"), 30): Object 'Object Repository/WEB/Registration/icon-acount' is clickable
+
+13-07-2026T15:29:13 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Registration/icon-acount' is clickable
+
+13-07-2026T15:29:13 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Registration/icon-acount")): Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:29:13 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:29:13 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Address Management/Shipping Address/btn_My Address"), 30): Object 'Object Repository/WEB/Address Management/Shipping Address/btn_My Address' is clickable
+
+13-07-2026T15:29:15 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Shipping Address/btn_My Address' is clickable
+
+13-07-2026T15:29:15 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Address Management/Shipping Address/btn_My Address")): Object: 'Object Repository/WEB/Address Management/Shipping Address/btn_My Address' is clicked on
+
+13-07-2026T15:29:16 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Address Management/Shipping Address/btn_My Address' is clicked on
+
+13-07-2026T15:29:16 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:29:16 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:29:16 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Address Management/Shipping Address/btn_Edit"), 30): Object 'Object Repository/WEB/Address Management/Shipping Address/btn_Edit' is clickable
+
+13-07-2026T15:29:17 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Shipping Address/btn_Edit' is clickable
+
+13-07-2026T15:29:17 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("WEB/Address Management/Shipping Address/btn_Edit"), 5): Scroll to object 'Object Repository/WEB/Address Management/Shipping Address/btn_Edit' successfully
+
+13-07-2026T15:29:18 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/WEB/Address Management/Shipping Address/btn_Edit' successfully
+
+13-07-2026T15:29:18 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Address Management/Shipping Address/btn_Edit")): Object: 'Object Repository/WEB/Address Management/Shipping Address/btn_Edit' is clicked on
+
+13-07-2026T15:29:18 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Address Management/Shipping Address/btn_Edit' is clicked on
+
+13-07-2026T15:29:18 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Address Management/Edit Address/Field_First Name"), 30): Object 'Object Repository/WEB/Address Management/Edit Address/Field_First Name' is visible
+
+13-07-2026T15:29:18 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Edit Address/Field_First Name' is visible
+
+13-07-2026T15:29:18 - [TEST_STEP][PASSED] - clearText(findTestObject("WEB/Address Management/Edit Address/Field_First Name")): Text of object 'Object Repository/WEB/Address Management/Edit Address/Field_First Name' is cleared
+
+13-07-2026T15:29:19 - [MESSAGE][PASSED] - Text of object 'Object Repository/WEB/Address Management/Edit Address/Field_First Name' is cleared
+
+13-07-2026T15:29:19 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Address Management/Edit Address/Field_First Name"), randomFirstName): Text 'Rina' is set on object 'Object Repository/WEB/Address Management/Edit Address/Field_First Name'
+
+13-07-2026T15:29:20 - [MESSAGE][PASSED] - Text 'Rina' is set on object 'Object Repository/WEB/Address Management/Edit Address/Field_First Name'
+
+13-07-2026T15:29:20 - [TEST_STEP][PASSED] - clearText(findTestObject("WEB/Address Management/Edit Address/Field_Last Name")): Text of object 'Object Repository/WEB/Address Management/Edit Address/Field_Last Name' is cleared
+
+13-07-2026T15:29:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/WEB/Address Management/Edit Address/Field_Last Name' is cleared
+
+13-07-2026T15:29:21 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Address Management/Edit Address/Field_Last Name"), randomLastName): Text 'Santoso' is set on object 'Object Repository/WEB/Address Management/Edit Address/Field_Last Name'
+
+13-07-2026T15:29:22 - [MESSAGE][PASSED] - Text 'Santoso' is set on object 'Object Repository/WEB/Address Management/Edit Address/Field_Last Name'
+
+13-07-2026T15:29:22 - [TEST_STEP][PASSED] - clearText(findTestObject("WEB/Address Management/Edit Address/Field_Mobile Phone")): Text of object 'Object Repository/WEB/Address Management/Edit Address/Field_Mobile Phone' is cleared
+
+13-07-2026T15:29:22 - [MESSAGE][PASSED] - Text of object 'Object Repository/WEB/Address Management/Edit Address/Field_Mobile Phone' is cleared
+
+13-07-2026T15:29:22 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Address Management/Edit Address/Field_Mobile Phone"), randomPhone): Text '08254682530' is set on object 'Object Repository/WEB/Address Management/Edit Address/Field_Mobile Phone'
+
+13-07-2026T15:29:23 - [MESSAGE][PASSED] - Text '08254682530' is set on object 'Object Repository/WEB/Address Management/Edit Address/Field_Mobile Phone'
+
+13-07-2026T15:29:23 - [TEST_STEP][PASSED] - clearText(findTestObject("WEB/Address Management/Edit Address/Field_E-mail")): Text of object 'Object Repository/WEB/Address Management/Edit Address/Field_E-mail' is cleared
+
+13-07-2026T15:29:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/WEB/Address Management/Edit Address/Field_E-mail' is cleared
+
+13-07-2026T15:29:24 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Address Management/Edit Address/Field_E-mail"), randomEmail): Text 'agungpriyadisgo@gmail.com' is set on object 'Object Repository/WEB/Address Management/Edit Address/Field_E-mail'
+
+13-07-2026T15:29:26 - [MESSAGE][PASSED] - Text 'agungpriyadisgo@gmail.com' is set on object 'Object Repository/WEB/Address Management/Edit Address/Field_E-mail'
+
+13-07-2026T15:29:26 - [TEST_STEP][PASSED] - clearText(findTestObject("WEB/Address Management/Edit Address/Field_Address")): Text of object 'Object Repository/WEB/Address Management/Edit Address/Field_Address' is cleared
+
+13-07-2026T15:29:26 - [MESSAGE][PASSED] - Text of object 'Object Repository/WEB/Address Management/Edit Address/Field_Address' is cleared
+
+13-07-2026T15:29:26 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Address Management/Edit Address/Field_Address"), randomAddress): Text 'Jakarta Testing 1477' is set on object 'Object Repository/WEB/Address Management/Edit Address/Field_Address'
+
+13-07-2026T15:29:27 - [MESSAGE][PASSED] - Text 'Jakarta Testing 1477' is set on object 'Object Repository/WEB/Address Management/Edit Address/Field_Address'
+
+13-07-2026T15:29:27 - [TEST_STEP][PASSED] - clearText(findTestObject("WEB/Address Management/Edit Address/Field_ZipPostal Code")): Text of object 'Object Repository/WEB/Address Management/Edit Address/Field_ZipPostal Code' is cleared
+
+13-07-2026T15:29:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/WEB/Address Management/Edit Address/Field_ZipPostal Code' is cleared
+
+13-07-2026T15:29:28 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Address Management/Edit Address/Field_ZipPostal Code"), randomCode): Text '158106' is set on object 'Object Repository/WEB/Address Management/Edit Address/Field_ZipPostal Code'
+
+13-07-2026T15:29:29 - [MESSAGE][PASSED] - Text '158106' is set on object 'Object Repository/WEB/Address Management/Edit Address/Field_ZipPostal Code'
+
+13-07-2026T15:29:29 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("WEB/Address Management/Edit Address/button_Save"), 5): Scroll to object 'Object Repository/WEB/Address Management/Edit Address/button_Save' successfully
+
+13-07-2026T15:29:29 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/WEB/Address Management/Edit Address/button_Save' successfully
+
+13-07-2026T15:29:29 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Address Management/Edit Address/button_Save"), 30): Object 'Object Repository/WEB/Address Management/Edit Address/button_Save' is clickable
+
+13-07-2026T15:29:30 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Address Management/Edit Address/button_Save' is clickable
+
+13-07-2026T15:29:30 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Address Management/Edit Address/button_Save")): Object: 'Object Repository/WEB/Address Management/Edit Address/button_Save' is clicked on
+
+13-07-2026T15:29:30 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Address Management/Edit Address/button_Save' is clicked on
+
+13-07-2026T15:29:30 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:29:30 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:29:30 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("WEB/Address Management/Shipping Address/lbl_Shipping Address"), 5): Scroll to object 'Object Repository/WEB/Address Management/Shipping Address/lbl_Shipping Address' successfully
+
+13-07-2026T15:29:31 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/WEB/Address Management/Shipping Address/lbl_Shipping Address' successfully
+
+13-07-2026T15:29:31 - [TEST_STEP][PASSED] - verifyName = new com.kms.katalon.core.testobject.TestObject(verifyName): null
+
+13-07-2026T15:29:31 - [TEST_STEP][PASSED] - verifyName.addProperty("xpath", EQUALS, //*[contains(text(),'$randomFirstName')]): null
+
+13-07-2026T15:29:31 - [TEST_STEP][PASSED] - verifyElementPresent(verifyName, 30): Object 'verifyName' is present
+
+13-07-2026T15:29:32 - [MESSAGE][PASSED] - Object 'verifyName' is present
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - comment("Email      : " + randomEmail): Email      : agungpriyadisgo@gmail.com
+
+13-07-2026T15:29:32 - [MESSAGE][INFO] - Email      : agungpriyadisgo@gmail.com
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - comment("First Name : " + randomFirstName): First Name : Rina
+
+13-07-2026T15:29:32 - [MESSAGE][INFO] - First Name : Rina
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - comment("Last Name  : " + randomLastName): Last Name  : Santoso
+
+13-07-2026T15:29:32 - [MESSAGE][INFO] - Last Name  : Santoso
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - comment("Phone      : " + randomPhone): Phone      : 08254682530
+
+13-07-2026T15:29:32 - [MESSAGE][INFO] - Phone      : 08254682530
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - comment("Address    : " + randomAddress): Address    : Jakarta Testing 1477
+
+13-07-2026T15:29:32 - [MESSAGE][INFO] - Address    : Jakarta Testing 1477
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - comment("Code       : " + randomCode): Code       : 158106
+
+13-07-2026T15:29:32 - [MESSAGE][INFO] - Code       : 158106
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - if (status == "PASSED"): null
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - saveScreenshot("PASSED"): null
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - try: null
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - tcName = getTestCaseName(): null
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _): null
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - folderPath = Screenshot/$status/$tcName/: null
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - Files.createDirectories(Paths.get(folderPath)): null
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - screenshotPath = $folderPath$status_$this.getTimestamp().png: null
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date()): null
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - takeScreenshot(screenshotPath): Taking screenshot successfully
+
+13-07-2026T15:29:32 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260713_151845\\WEB\\Address\\Address_TestSuite\\20260713_151851\\Screenshot/PASSED/Address_TestSuite/PASSED_20260713_152932.png]]
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - println("Screenshot saved : " + screenshotPath): null
+
+13-07-2026T15:29:32 - [TEST_STEP][PASSED] - println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address)" time="43.101" classname="Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address)" status="PASSED">
+         <system-out><![CDATA[13-07-2026T15:29:34 - [TEST_CASE][PASSED] - Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address): Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address)
+
+13-07-2026T15:29:34 - [TEST_STEP][PASSED] - randomEmail = custom.RandomData.generateRandomEmail(): custom.RandomData.generateRandomEmail is PASSED
+
+13-07-2026T15:29:34 - [MESSAGE][PASSED] - custom.RandomData.generateRandomEmail is PASSED
+
+13-07-2026T15:29:35 - [TEST_STEP][PASSED] - randomFirstName = custom.RandomData.generateRandomFirstName(): custom.RandomData.generateRandomFirstName is PASSED
+
+13-07-2026T15:29:35 - [MESSAGE][PASSED] - custom.RandomData.generateRandomFirstName is PASSED
+
+13-07-2026T15:29:35 - [TEST_STEP][PASSED] - randomLastName = custom.RandomData.generateRandomLastName(): custom.RandomData.generateRandomLastName is PASSED
+
+13-07-2026T15:29:35 - [MESSAGE][PASSED] - custom.RandomData.generateRandomLastName is PASSED
+
+13-07-2026T15:29:35 - [TEST_STEP][PASSED] - randomPhone = custom.RandomData.generateRandomPhone(): custom.RandomData.generateRandomPhone is PASSED
+
+13-07-2026T15:29:35 - [MESSAGE][PASSED] - custom.RandomData.generateRandomPhone is PASSED
+
+13-07-2026T15:29:35 - [TEST_STEP][PASSED] - randomAddress = custom.RandomData.generateRandomAddress(): custom.RandomData.generateRandomAddress is PASSED
+
+13-07-2026T15:29:35 - [MESSAGE][PASSED] - custom.RandomData.generateRandomAddress is PASSED
+
+13-07-2026T15:29:35 - [TEST_STEP][PASSED] - randomCode = custom.RandomData.generateRandomCode(): custom.RandomData.generateRandomCode is PASSED
+
+13-07-2026T15:29:35 - [MESSAGE][PASSED] - custom.RandomData.generateRandomCode is PASSED
+
+13-07-2026T15:29:35 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-07-2026T15:29:35 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+13-07-2026T15:29:36 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+13-07-2026T15:29:36 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+
+13-07-2026T15:29:36 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-07-2026T15:29:38 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-07-2026T15:29:38 - [TEST_STEP][PASSED] - setViewPortSize(1920, 1080): Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:29:38 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:29:38 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:29:41 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:29:41 - [TEST_STEP][PASSED] - custom.BrowserHelper.setupBrowserWindow(): custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:29:41 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:29:41 - [MESSAGE][PASSED] - custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:29:41 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:29:41 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:29:41 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30): Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:29:41 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:29:41 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Home Page/Search/icon-search"), 30): Object 'Object Repository/WEB/Home Page/Search/icon-search' is clickable
+
+13-07-2026T15:29:42 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Search/icon-search' is clickable
+
+13-07-2026T15:29:42 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Home Page/Search/icon-search")): Object: 'Object Repository/WEB/Home Page/Search/icon-search' is clicked on
+
+13-07-2026T15:29:42 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Search/icon-search' is clicked on
+
+13-07-2026T15:29:42 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Search/field-search"), 30): Object 'Object Repository/WEB/Home Page/Search/field-search' is visible
+
+13-07-2026T15:29:43 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Search/field-search' is visible
+
+13-07-2026T15:29:43 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Home Page/Search/field-search"), "IPHONE 13 PRO MAX SIERRA BLUE 128GB"): Text 'IPHONE 13 PRO MAX SIERRA BLUE 128GB' is set on object 'Object Repository/WEB/Home Page/Search/field-search'
+
+13-07-2026T15:29:44 - [MESSAGE][PASSED] - Text 'IPHONE 13 PRO MAX SIERRA BLUE 128GB' is set on object 'Object Repository/WEB/Home Page/Search/field-search'
+
+13-07-2026T15:29:44 - [TEST_STEP][PASSED] - sendKeys(findTestObject("WEB/Home Page/Search/field-search"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/WEB/Home Page/Search/field-search'
+
+13-07-2026T15:29:45 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/WEB/Home Page/Search/field-search'
+
+13-07-2026T15:29:45 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:29:45 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:29:45 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+13-07-2026T15:29:48 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+13-07-2026T15:29:48 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Product and Cart/Add to cart/btn_product_PHONE 13 PRO MAX SIERRA BLUE")): Object: 'Object Repository/WEB/Product and Cart/Add to cart/btn_product_PHONE 13 PRO MAX SIERRA BLUE' is clicked on
+
+13-07-2026T15:29:49 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Product and Cart/Add to cart/btn_product_PHONE 13 PRO MAX SIERRA BLUE' is clicked on
+
+13-07-2026T15:29:49 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Product and Cart/Add to cart/button_Add to Cart")): Object: 'Object Repository/WEB/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+13-07-2026T15:29:52 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+13-07-2026T15:29:52 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("WEB/Product and Cart/Add to cart/i_icon-cart"), 30): Object 'Object Repository/WEB/Product and Cart/Add to cart/i_icon-cart' is present
+
+13-07-2026T15:29:53 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Product and Cart/Add to cart/i_icon-cart' is present
+
+13-07-2026T15:29:53 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Product and Cart/Add to cart/i_icon-cart"), 30): Object 'Object Repository/WEB/Product and Cart/Add to cart/i_icon-cart' is clickable
+
+13-07-2026T15:29:53 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Product and Cart/Add to cart/i_icon-cart' is clickable
+
+13-07-2026T15:29:53 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Product and Cart/Add to cart/i_icon-cart")): Object: 'Object Repository/WEB/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+13-07-2026T15:29:54 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+13-07-2026T15:29:54 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/btn_checkout"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+13-07-2026T15:29:55 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+13-07-2026T15:29:55 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/btn_checkout"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn_checkout' is clickable
+
+13-07-2026T15:29:56 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn_checkout' is clickable
+
+13-07-2026T15:29:56 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/btn_checkout")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+13-07-2026T15:29:56 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+13-07-2026T15:29:56 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:29:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:29:56 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Checkout guest/field_email"), 30): Object 'Object Repository/WEB/Checkout/Checkout guest/field_email' is visible
+
+13-07-2026T15:29:57 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Checkout guest/field_email' is visible
+
+13-07-2026T15:29:57 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Checkout/Checkout guest/field_email"), randomEmail): Text 'agungpriyadidrv@gmail.com' is set on object 'Object Repository/WEB/Checkout/Checkout guest/field_email'
+
+13-07-2026T15:29:59 - [MESSAGE][PASSED] - Text 'agungpriyadidrv@gmail.com' is set on object 'Object Repository/WEB/Checkout/Checkout guest/field_email'
+
+13-07-2026T15:29:59 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Checkout guest/btn_continue"), 30): Object 'Object Repository/WEB/Checkout/Checkout guest/btn_continue' is clickable
+
+13-07-2026T15:29:59 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Checkout guest/btn_continue' is clickable
+
+13-07-2026T15:29:59 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Checkout guest/btn_continue")): Object: 'Object Repository/WEB/Checkout/Checkout guest/btn_continue' is clicked on
+
+13-07-2026T15:29:59 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Checkout guest/btn_continue' is clicked on
+
+13-07-2026T15:29:59 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:29:59 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:29:59 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/field_First Name"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_First Name' is visible
+
+13-07-2026T15:30:01 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_First Name' is visible
+
+13-07-2026T15:30:01 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_First Name"), randomFirstName): Text 'Dewi' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_First Name'
+
+13-07-2026T15:30:02 - [MESSAGE][PASSED] - Text 'Dewi' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_First Name'
+
+13-07-2026T15:30:02 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_Last Name"), randomLastName): Text 'Santoso' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_Last Name'
+
+13-07-2026T15:30:03 - [MESSAGE][PASSED] - Text 'Santoso' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_Last Name'
+
+13-07-2026T15:30:03 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_mobile phone"), randomPhone): Text '08794468581' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_mobile phone'
+
+13-07-2026T15:30:05 - [MESSAGE][PASSED] - Text '08794468581' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_mobile phone'
+
+13-07-2026T15:30:05 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_Address"), randomAddress): Text 'Jakarta Testing 1070' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_Address'
+
+13-07-2026T15:30:06 - [MESSAGE][PASSED] - Text 'Jakarta Testing 1070' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_Address'
+
+13-07-2026T15:30:06 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Checkout/Address/Address Ship To/input_ZipPostal Code"), randomCode): Text '158102' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+13-07-2026T15:30:08 - [MESSAGE][PASSED] - Text '158102' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+13-07-2026T15:30:08 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/input_Province"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Province' is clickable
+
+13-07-2026T15:30:08 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Province' is clickable
+
+13-07-2026T15:30:08 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/input_Province")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Province' is clicked on
+
+13-07-2026T15:30:09 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Province' is clicked on
+
+13-07-2026T15:30:09 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is visible
+
+13-07-2026T15:30:09 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is visible
+
+13-07-2026T15:30:09 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is clicked on
+
+13-07-2026T15:30:10 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is clicked on
+
+13-07-2026T15:30:10 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/input_Select Province"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Select Province' is clickable
+
+13-07-2026T15:30:10 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Select Province' is clickable
+
+13-07-2026T15:30:10 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/input_Select Province")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Select Province' is clicked on
+
+13-07-2026T15:30:10 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Select Province' is clicked on
+
+13-07-2026T15:30:10 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is visible
+
+13-07-2026T15:30:11 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is visible
+
+13-07-2026T15:30:11 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is clicked on
+
+13-07-2026T15:30:12 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is clicked on
+
+13-07-2026T15:30:12 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/input_Districts"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Districts' is clickable
+
+13-07-2026T15:30:12 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Districts' is clickable
+
+13-07-2026T15:30:12 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/input_Districts")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Districts' is clicked on
+
+13-07-2026T15:30:12 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Districts' is clicked on
+
+13-07-2026T15:30:12 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is visible
+
+13-07-2026T15:30:13 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is visible
+
+13-07-2026T15:30:13 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is clicked on
+
+13-07-2026T15:30:13 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is clicked on
+
+13-07-2026T15:30:13 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"), 5): Scroll to object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' successfully
+
+13-07-2026T15:30:14 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' successfully
+
+13-07-2026T15:30:14 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' is clickable
+
+13-07-2026T15:30:14 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' is clickable
+
+13-07-2026T15:30:14 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+13-07-2026T15:30:15 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:30:15 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - if (status == "PASSED"): null
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - saveScreenshot("PASSED"): null
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - try: null
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - tcName = getTestCaseName(): null
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _): null
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - folderPath = Screenshot/$status/$tcName/: null
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - Files.createDirectories(Paths.get(folderPath)): null
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - screenshotPath = $folderPath$status_$this.getTimestamp().png: null
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date()): null
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - takeScreenshot(screenshotPath): Taking screenshot successfully
+
+13-07-2026T15:30:15 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260713_151845\\WEB\\Address\\Address_TestSuite\\20260713_151851\\Screenshot/PASSED/Address_TestSuite/PASSED_20260713_153015.png]]
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - println("Screenshot saved : " + screenshotPath): null
+
+13-07-2026T15:30:15 - [TEST_STEP][PASSED] - println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit" time="50.663" classname="Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit" status="PASSED">
+         <system-out><![CDATA[13-07-2026T15:30:17 - [TEST_CASE][PASSED] - Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit: Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit
+
+13-07-2026T15:30:18 - [TEST_STEP][PASSED] - randomEmail = custom.RandomData.generateRandomEmail(): custom.RandomData.generateRandomEmail is PASSED
+
+13-07-2026T15:30:18 - [MESSAGE][PASSED] - custom.RandomData.generateRandomEmail is PASSED
+
+13-07-2026T15:30:18 - [TEST_STEP][PASSED] - randomFirstName = custom.RandomData.generateRandomFirstName(): custom.RandomData.generateRandomFirstName is PASSED
+
+13-07-2026T15:30:18 - [MESSAGE][PASSED] - custom.RandomData.generateRandomFirstName is PASSED
+
+13-07-2026T15:30:18 - [TEST_STEP][PASSED] - randomLastName = custom.RandomData.generateRandomLastName(): custom.RandomData.generateRandomLastName is PASSED
+
+13-07-2026T15:30:18 - [MESSAGE][PASSED] - custom.RandomData.generateRandomLastName is PASSED
+
+13-07-2026T15:30:18 - [TEST_STEP][PASSED] - randomPhone = custom.RandomData.generateRandomPhone(): custom.RandomData.generateRandomPhone is PASSED
+
+13-07-2026T15:30:18 - [MESSAGE][PASSED] - custom.RandomData.generateRandomPhone is PASSED
+
+13-07-2026T15:30:18 - [TEST_STEP][PASSED] - randomAddress = custom.RandomData.generateRandomAddress(): custom.RandomData.generateRandomAddress is PASSED
+
+13-07-2026T15:30:18 - [MESSAGE][PASSED] - custom.RandomData.generateRandomAddress is PASSED
+
+13-07-2026T15:30:18 - [TEST_STEP][PASSED] - randomCode = custom.RandomData.generateRandomCode(): custom.RandomData.generateRandomCode is PASSED
+
+13-07-2026T15:30:18 - [MESSAGE][PASSED] - custom.RandomData.generateRandomCode is PASSED
+
+13-07-2026T15:30:18 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-07-2026T15:30:18 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+13-07-2026T15:30:19 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+13-07-2026T15:30:19 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+
+13-07-2026T15:30:19 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-07-2026T15:30:22 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-07-2026T15:30:22 - [TEST_STEP][PASSED] - setViewPortSize(1920, 1080): Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:30:22 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:30:22 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:30:25 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:30:25 - [TEST_STEP][PASSED] - custom.BrowserHelper.setupBrowserWindow(): custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:30:25 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:30:25 - [MESSAGE][PASSED] - custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:30:25 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:30:25 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:30:25 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30): Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:30:26 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:30:26 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Home Page/Search/icon-search"), 30): Object 'Object Repository/WEB/Home Page/Search/icon-search' is clickable
+
+13-07-2026T15:30:26 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Search/icon-search' is clickable
+
+13-07-2026T15:30:26 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Home Page/Search/icon-search")): Object: 'Object Repository/WEB/Home Page/Search/icon-search' is clicked on
+
+13-07-2026T15:30:27 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Home Page/Search/icon-search' is clicked on
+
+13-07-2026T15:30:27 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Home Page/Search/field-search"), 30): Object 'Object Repository/WEB/Home Page/Search/field-search' is visible
+
+13-07-2026T15:30:27 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/Search/field-search' is visible
+
+13-07-2026T15:30:27 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Home Page/Search/field-search"), "IPHONE 13 PRO MAX SIERRA BLUE 128GB"): Text 'IPHONE 13 PRO MAX SIERRA BLUE 128GB' is set on object 'Object Repository/WEB/Home Page/Search/field-search'
+
+13-07-2026T15:30:28 - [MESSAGE][PASSED] - Text 'IPHONE 13 PRO MAX SIERRA BLUE 128GB' is set on object 'Object Repository/WEB/Home Page/Search/field-search'
+
+13-07-2026T15:30:28 - [TEST_STEP][PASSED] - sendKeys(findTestObject("WEB/Home Page/Search/field-search"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/WEB/Home Page/Search/field-search'
+
+13-07-2026T15:30:29 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/WEB/Home Page/Search/field-search'
+
+13-07-2026T15:30:29 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:30:29 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:30:29 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+13-07-2026T15:30:32 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+13-07-2026T15:30:32 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Product and Cart/Add to cart/btn_product_PHONE 13 PRO MAX SIERRA BLUE")): Object: 'Object Repository/WEB/Product and Cart/Add to cart/btn_product_PHONE 13 PRO MAX SIERRA BLUE' is clicked on
+
+13-07-2026T15:30:33 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Product and Cart/Add to cart/btn_product_PHONE 13 PRO MAX SIERRA BLUE' is clicked on
+
+13-07-2026T15:30:33 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Product and Cart/Add to cart/button_Add to Cart")): Object: 'Object Repository/WEB/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+13-07-2026T15:30:36 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Product and Cart/Add to cart/button_Add to Cart' is clicked on
+
+13-07-2026T15:30:36 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("WEB/Product and Cart/Add to cart/i_icon-cart"), 30): Object 'Object Repository/WEB/Product and Cart/Add to cart/i_icon-cart' is present
+
+13-07-2026T15:30:37 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Product and Cart/Add to cart/i_icon-cart' is present
+
+13-07-2026T15:30:37 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Product and Cart/Add to cart/i_icon-cart"), 30): Object 'Object Repository/WEB/Product and Cart/Add to cart/i_icon-cart' is clickable
+
+13-07-2026T15:30:37 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Product and Cart/Add to cart/i_icon-cart' is clickable
+
+13-07-2026T15:30:37 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Product and Cart/Add to cart/i_icon-cart")): Object: 'Object Repository/WEB/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+13-07-2026T15:30:38 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Product and Cart/Add to cart/i_icon-cart' is clicked on
+
+13-07-2026T15:30:38 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/btn_checkout"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+13-07-2026T15:30:39 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn_checkout' is visible
+
+13-07-2026T15:30:39 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/btn_checkout"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn_checkout' is clickable
+
+13-07-2026T15:30:39 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn_checkout' is clickable
+
+13-07-2026T15:30:39 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/btn_checkout")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+13-07-2026T15:30:39 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/btn_checkout' is clicked on
+
+13-07-2026T15:30:39 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:30:39 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:30:39 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Checkout guest/field_email"), 30): Object 'Object Repository/WEB/Checkout/Checkout guest/field_email' is visible
+
+13-07-2026T15:30:41 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Checkout guest/field_email' is visible
+
+13-07-2026T15:30:41 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Checkout/Checkout guest/field_email"), randomEmail): Text 'agungpriyadibkt@gmail.com' is set on object 'Object Repository/WEB/Checkout/Checkout guest/field_email'
+
+13-07-2026T15:30:42 - [MESSAGE][PASSED] - Text 'agungpriyadibkt@gmail.com' is set on object 'Object Repository/WEB/Checkout/Checkout guest/field_email'
+
+13-07-2026T15:30:42 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Checkout guest/btn_continue"), 30): Object 'Object Repository/WEB/Checkout/Checkout guest/btn_continue' is clickable
+
+13-07-2026T15:30:42 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Checkout guest/btn_continue' is clickable
+
+13-07-2026T15:30:42 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Checkout guest/btn_continue")): Object: 'Object Repository/WEB/Checkout/Checkout guest/btn_continue' is clicked on
+
+13-07-2026T15:30:43 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Checkout guest/btn_continue' is clicked on
+
+13-07-2026T15:30:43 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:30:43 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:30:43 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/field_First Name"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_First Name' is visible
+
+13-07-2026T15:30:44 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_First Name' is visible
+
+13-07-2026T15:30:44 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_First Name"), randomFirstName): Text 'Sinta' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_First Name'
+
+13-07-2026T15:30:46 - [MESSAGE][PASSED] - Text 'Sinta' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_First Name'
+
+13-07-2026T15:30:46 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_Last Name"), randomLastName): Text 'Putri' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_Last Name'
+
+13-07-2026T15:30:47 - [MESSAGE][PASSED] - Text 'Putri' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_Last Name'
+
+13-07-2026T15:30:47 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_mobile phone"), randomPhone): Text '08104819925' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_mobile phone'
+
+13-07-2026T15:30:48 - [MESSAGE][PASSED] - Text '08104819925' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_mobile phone'
+
+13-07-2026T15:30:48 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_Address"), randomAddress): Text 'Jakarta Testing 8588' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_Address'
+
+13-07-2026T15:30:49 - [MESSAGE][PASSED] - Text 'Jakarta Testing 8588' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_Address'
+
+13-07-2026T15:30:49 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Checkout/Address/Address Ship To/input_ZipPostal Code"), randomCode): Text '158101' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+13-07-2026T15:30:51 - [MESSAGE][PASSED] - Text '158101' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+13-07-2026T15:30:51 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/input_Province"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Province' is clickable
+
+13-07-2026T15:30:51 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Province' is clickable
+
+13-07-2026T15:30:51 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/input_Province")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Province' is clicked on
+
+13-07-2026T15:30:52 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Province' is clicked on
+
+13-07-2026T15:30:52 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is visible
+
+13-07-2026T15:30:53 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is visible
+
+13-07-2026T15:30:53 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is clicked on
+
+13-07-2026T15:30:53 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province' is clicked on
+
+13-07-2026T15:30:53 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/input_Select Province"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Select Province' is clickable
+
+13-07-2026T15:30:53 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Select Province' is clickable
+
+13-07-2026T15:30:53 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/input_Select Province")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Select Province' is clicked on
+
+13-07-2026T15:30:54 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Select Province' is clicked on
+
+13-07-2026T15:30:54 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is visible
+
+13-07-2026T15:30:54 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is visible
+
+13-07-2026T15:30:54 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is clicked on
+
+13-07-2026T15:30:55 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province' is clicked on
+
+13-07-2026T15:30:55 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/input_Districts"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Districts' is clickable
+
+13-07-2026T15:30:55 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Districts' is clickable
+
+13-07-2026T15:30:55 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/input_Districts")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Districts' is clicked on
+
+13-07-2026T15:30:55 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/input_Districts' is clicked on
+
+13-07-2026T15:30:55 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is visible
+
+13-07-2026T15:30:56 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is visible
+
+13-07-2026T15:30:56 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is clicked on
+
+13-07-2026T15:30:57 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts' is clicked on
+
+13-07-2026T15:30:57 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"), 5): Scroll to object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' successfully
+
+13-07-2026T15:30:57 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' successfully
+
+13-07-2026T15:30:57 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' is clickable
+
+13-07-2026T15:30:57 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' is clickable
+
+13-07-2026T15:30:57 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+13-07-2026T15:30:58 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+13-07-2026T15:30:58 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:30:58 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:30:58 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("WEB/Checkout/Address/Address Ship To/btn-change"), 5): Scroll to object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-change' successfully
+
+13-07-2026T15:30:58 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-change' successfully
+
+13-07-2026T15:30:58 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/btn-change"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-change' is visible
+
+13-07-2026T15:30:59 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-change' is visible
+
+13-07-2026T15:30:59 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/btn-change"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-change' is clickable
+
+13-07-2026T15:30:59 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-change' is clickable
+
+13-07-2026T15:30:59 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/btn-change")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-change' is clicked on
+
+13-07-2026T15:30:59 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-change' is clicked on
+
+13-07-2026T15:30:59 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:30:59 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:30:59 - [TEST_STEP][PASSED] - updateAddress = custom.RandomData.generateRandomAddress(): custom.RandomData.generateRandomAddress is PASSED
+
+13-07-2026T15:30:59 - [MESSAGE][PASSED] - custom.RandomData.generateRandomAddress is PASSED
+
+13-07-2026T15:30:59 - [TEST_STEP][PASSED] - updateCode = custom.RandomData.generateRandomCode(): custom.RandomData.generateRandomCode is PASSED
+
+13-07-2026T15:30:59 - [MESSAGE][PASSED] - custom.RandomData.generateRandomCode is PASSED
+
+13-07-2026T15:30:59 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/field_Address"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_Address' is visible
+
+13-07-2026T15:31:00 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_Address' is visible
+
+13-07-2026T15:31:00 - [TEST_STEP][PASSED] - clearText(findTestObject("WEB/Checkout/Address/Address Ship To/field_Address")): Text of object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_Address' is cleared
+
+13-07-2026T15:31:00 - [MESSAGE][PASSED] - Text of object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_Address' is cleared
+
+13-07-2026T15:31:00 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Checkout/Address/Address Ship To/field_Address"), updateAddress): Text 'Jakarta Testing 7734' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_Address'
+
+13-07-2026T15:31:01 - [MESSAGE][PASSED] - Text 'Jakarta Testing 7734' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/field_Address'
+
+13-07-2026T15:31:01 - [TEST_STEP][PASSED] - clearText(findTestObject("WEB/Checkout/Address/Address Ship To/input_ZipPostal Code")): Text of object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_ZipPostal Code' is cleared
+
+13-07-2026T15:31:02 - [MESSAGE][PASSED] - Text of object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_ZipPostal Code' is cleared
+
+13-07-2026T15:31:02 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Checkout/Address/Address Ship To/input_ZipPostal Code"), updateCode): Text '158105' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+13-07-2026T15:31:03 - [MESSAGE][PASSED] - Text '158105' is set on object 'Object Repository/WEB/Checkout/Address/Address Ship To/input_ZipPostal Code'
+
+13-07-2026T15:31:03 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"), 5): Scroll to object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' successfully
+
+13-07-2026T15:31:04 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' successfully
+
+13-07-2026T15:31:04 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' is clickable
+
+13-07-2026T15:31:04 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' is clickable
+
+13-07-2026T15:31:04 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("WEB/Checkout/Address/Address Ship To/btn-save")): Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+13-07-2026T15:31:05 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-save' is clicked on
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - waitForPageLoad(30): Wait for page load successfully
+
+13-07-2026T15:31:05 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("WEB/Checkout/Address/Address Ship To/btn-change"), 5): Scroll to object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-change' successfully
+
+13-07-2026T15:31:05 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-change' successfully
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("WEB/Checkout/Address/Address Ship To/btn-change"), 30): Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-change' is visible
+
+13-07-2026T15:31:05 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Checkout/Address/Address Ship To/btn-change' is visible
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - if (status == "PASSED"): null
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - saveScreenshot("PASSED"): null
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - try: null
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - tcName = getTestCaseName(): null
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _): null
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - folderPath = Screenshot/$status/$tcName/: null
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - Files.createDirectories(Paths.get(folderPath)): null
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - screenshotPath = $folderPath$status_$this.getTimestamp().png: null
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date()): null
+
+13-07-2026T15:31:05 - [TEST_STEP][PASSED] - takeScreenshot(screenshotPath): Taking screenshot successfully
+
+13-07-2026T15:31:06 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260713_151845\\WEB\\Address\\Address_TestSuite\\20260713_151851\\Screenshot/PASSED/Address_TestSuite/PASSED_20260713_153105.png]]
+
+13-07-2026T15:31:06 - [TEST_STEP][PASSED] - println("Screenshot saved : " + screenshotPath): null
+
+13-07-2026T15:31:06 - [TEST_STEP][PASSED] - println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[13-07-2026T15:27:53 - [TEST_SUITE][PASSED] - Address_TestSuite: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

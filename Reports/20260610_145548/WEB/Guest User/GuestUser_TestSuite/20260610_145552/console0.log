@@ -1,0 +1,223 @@
+2026-06-10 15:04:39.049 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\AgungPriyadi\.katalon\packages\KS-11.1.3\configuration\org.eclipse.osgi\150\0\.cp\resources\logback\logback-execution.xml
+2026-06-10 15:04:39.051 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\AgungPriyadi\git\digibox-kh\Include\config\log.properties
+2026-06-10 15:04:41.850 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/WEB/Guest User/GuestUser_TestSuite
+2026-06-10 15:04:42.241 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Agung Priyadi
+2026-06-10 15:04:42.241 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = digibox-kh
+2026-06-10 15:04:42.241 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = AgungPriyadi - NB-GDA-55026
+2026-06-10 15:04:42.241 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-06-10 15:04:42.258 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.110.30
+2026-06-10 15:04:42.258 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.1.3.0
+2026-06-10 15:04:42.891 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-06-10 15:04:42.891 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty
+2026-06-10 15:04:44.848 DEBUG ed when Verification Code field is empty - 1: openBrowser("")
+2026-06-10 15:04:46.327 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-06-10 15:04:46.608 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-06-10 15:04:53.256 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 86df7130-9a07-46cb-a70d-58e667b301ae
+2026-06-10 15:04:53.265 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-06-10 15:04:53.266 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-06-10 15:04:53.268 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-06-10 15:04:53.282 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-06-10 15:04:53.499 DEBUG ed when Verification Code field is empty - 2: setViewPortSize(1920, 1080)
+2026-06-10 15:04:54.085 DEBUG ed when Verification Code field is empty - 3: navigateToUrl(URL)
+2026-06-10 15:04:59.481 DEBUG ed when Verification Code field is empty - 4: custom.BrowserHelper.setupBrowserWindow()
+Running browser: FIREFOX_HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-06-10 15:05:00.805 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-06-10 15:05:00.834 DEBUG ed when Verification Code field is empty - 5: waitForPageLoad(30)
+2026-06-10 15:05:01.383 DEBUG ed when Verification Code field is empty - 6: waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30)
+2026-06-10 15:05:02.353 DEBUG ed when Verification Code field is empty - 7: waitForElementClickable(findTestObject("WEB/Checkout/Track Order/track your order"), 30)
+2026-06-10 15:05:02.850 DEBUG ed when Verification Code field is empty - 8: enhancedClick(findTestObject("WEB/Checkout/Track Order/track your order"))
+2026-06-10 15:05:03.534 DEBUG ed when Verification Code field is empty - 9: waitForPageLoad(30)
+2026-06-10 15:05:03.583 DEBUG ed when Verification Code field is empty - 10: waitForElementVisible(findTestObject("WEB/Guest User/Track Your Order/txtField_Email"), 30)
+2026-06-10 15:05:03.960 DEBUG ed when Verification Code field is empty - 11: setText(findTestObject("WEB/Guest User/Track Your Order/txtField_Email"), "agung.priyadi@gtech.digital")
+2026-06-10 15:05:04.999 DEBUG ed when Verification Code field is empty - 12: waitForElementClickable(findTestObject("WEB/Guest User/Track Your Order/btn_Send"), 30)
+2026-06-10 15:05:05.490 DEBUG ed when Verification Code field is empty - 13: enhancedClick(findTestObject("WEB/Guest User/Track Your Order/btn_Send"))
+2026-06-10 15:05:06.037 DEBUG ed when Verification Code field is empty - 14: waitForElementVisible(findTestObject("WEB/Guest User/Track Your Order/txtField_Verification Code"), 30)
+2026-06-10 15:05:06.657 DEBUG ed when Verification Code field is empty - 15: setText(findTestObject("WEB/Guest User/Track Your Order/txtField_Verification Code"), "")
+2026-06-10 15:05:07.522 DEBUG ed when Verification Code field is empty - 16: waitForElementVisible(findTestObject("WEB/Guest User/Track Your Order/txtField_success_message"), 0)
+2026-06-10 15:05:07.540 WARN  c.k.k.c.webui.common.WebUiCommonHelper   - Timeout '0' is invalid. Using default page load timeout: '10'
+2026-06-10 15:05:07.816 DEBUG ed when Verification Code field is empty - 17: verifyElementHasAttribute(findTestObject("WEB/Guest User/Track Your Order/btn_Continue"), "disabled", 30)
+Screenshot saved : Screenshot/PASSED/GuestUser_TestSuite/PASSED_20260610_150508.png
+Test Case 'Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty' finished with status: PASSED
+2026-06-10 15:05:11.731 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure Continue button remains disabled when Verification Code field is empty
+2026-06-10 15:05:11.746 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-06-10 15:05:11.746 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code
+2026-06-10 15:05:12.419 DEBUG or message for invalid verification code - 1: openBrowser("")
+2026-06-10 15:05:12.429 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-06-10 15:05:15.321 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-06-10 15:05:15.357 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-06-10 15:05:17.883 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = d8b1aecf-fe45-42fd-bc12-9f3042d39858
+2026-06-10 15:05:17.897 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-06-10 15:05:17.912 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-06-10 15:05:17.913 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-06-10 15:05:17.926 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-06-10 15:05:18.054 DEBUG or message for invalid verification code - 2: setViewPortSize(1920, 1080)
+2026-06-10 15:05:18.554 DEBUG or message for invalid verification code - 3: navigateToUrl(URL)
+2026-06-10 15:05:21.002 DEBUG or message for invalid verification code - 4: custom.BrowserHelper.setupBrowserWindow()
+Running browser: FIREFOX_HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-06-10 15:05:21.930 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-06-10 15:05:21.939 DEBUG or message for invalid verification code - 5: waitForPageLoad(30)
+2026-06-10 15:05:22.085 DEBUG or message for invalid verification code - 6: waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 30)
+2026-06-10 15:05:23.161 DEBUG or message for invalid verification code - 7: waitForElementClickable(findTestObject("WEB/Checkout/Track Order/track your order"), 30)
+2026-06-10 15:05:23.763 DEBUG or message for invalid verification code - 8: enhancedClick(findTestObject("WEB/Checkout/Track Order/track your order"))
+2026-06-10 15:05:24.606 DEBUG or message for invalid verification code - 9: waitForPageLoad(30)
+2026-06-10 15:05:24.774 DEBUG or message for invalid verification code - 10: waitForElementVisible(findTestObject("WEB/Guest User/Track Your Order/txtField_Email"), 30)
+2026-06-10 15:05:25.184 DEBUG or message for invalid verification code - 11: setText(findTestObject("WEB/Guest User/Track Your Order/txtField_Email"), "agung.priyadi@gtech.digital")
+2026-06-10 15:05:26.246 DEBUG or message for invalid verification code - 12: waitForElementClickable(findTestObject("WEB/Guest User/Track Your Order/btn_Send"), 30)
+2026-06-10 15:05:26.817 DEBUG or message for invalid verification code - 13: enhancedClick(findTestObject("WEB/Guest User/Track Your Order/btn_Send"))
+2026-06-10 15:05:27.415 DEBUG or message for invalid verification code - 14: waitForElementVisible(findTestObject("WEB/Guest User/Track Your Order/txtField_success_message"), 0)
+2026-06-10 15:05:27.441 WARN  c.k.k.c.webui.common.WebUiCommonHelper   - Timeout '0' is invalid. Using default page load timeout: '10'
+2026-06-10 15:05:28.056 DEBUG or message for invalid verification code - 15: waitForElementVisible(findTestObject("WEB/Guest User/Track Your Order/txtField_Verification Code"), 30)
+2026-06-10 15:05:28.403 DEBUG or message for invalid verification code - 16: clearText(findTestObject("WEB/Guest User/Track Your Order/txtField_Verification Code"))
+2026-06-10 15:05:28.743 DEBUG or message for invalid verification code - 17: setText(findTestObject("WEB/Guest User/Track Your Order/txtField_Verification Code"), "999999")
+2026-06-10 15:05:29.587 DEBUG or message for invalid verification code - 18: waitForElementClickable(findTestObject("WEB/Guest User/Track Your Order/btn_Continue"), 30)
+2026-06-10 15:05:30.052 DEBUG or message for invalid verification code - 19: enhancedClick(findTestObject("WEB/Guest User/Track Your Order/btn_Continue"))
+2026-06-10 15:05:30.783 DEBUG or message for invalid verification code - 20: waitForElementVisible(findTestObject("WEB/Guest User/Track Your Order/txtField_error_invalid_code"), 0)
+2026-06-10 15:05:30.818 WARN  c.k.k.c.webui.common.WebUiCommonHelper   - Timeout '0' is invalid. Using default page load timeout: '10'
+Screenshot saved : Screenshot/PASSED/GuestUser_TestSuite/PASSED_20260610_150531.png
+Test Case 'Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code' finished with status: PASSED
+2026-06-10 15:05:34.117 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure system displays error message for invalid verification code
+2026-06-10 15:05:34.133 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-06-10 15:05:34.133 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest
+2026-06-10 15:05:35.072 DEBUG  explore the website commerce as a guest - 1: openBrowser("")
+2026-06-10 15:05:35.082 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-06-10 15:05:38.023 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-06-10 15:05:38.077 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-06-10 15:05:40.641 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 794f0d42-52d6-4b8a-aeb0-ab1ad1f70859
+2026-06-10 15:05:40.642 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-06-10 15:05:40.643 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-06-10 15:05:40.644 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-06-10 15:05:40.646 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-06-10 15:05:40.718 DEBUG  explore the website commerce as a guest - 2: custom.BrowserHelper.setupBrowserWindow()
+Running browser: FIREFOX_HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-06-10 15:05:41.113 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-06-10 15:05:41.118 DEBUG  explore the website commerce as a guest - 3: setViewPortSize(1920, 1080)
+2026-06-10 15:05:41.194 DEBUG  explore the website commerce as a guest - 4: enableSmartWait()
+2026-06-10 15:05:41.236 DEBUG  explore the website commerce as a guest - 5: navigateToUrl(URL)
+2026-06-10 15:05:44.764 DEBUG  explore the website commerce as a guest - 6: waitForElementVisible(findTestObject("WEB/Home Page/header_digibox"), 15)
+2026-06-10 15:05:46.022 DEBUG  explore the website commerce as a guest - 7: verifyElementVisible(findTestObject("WEB/Home Page/header_digibox"))
+2026-06-10 15:05:46.513 DEBUG  explore the website commerce as a guest - 8: waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10)
+2026-06-10 15:05:46.955 DEBUG  explore the website commerce as a guest - 9: mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE)
+2026-06-10 15:05:48.011 DEBUG  explore the website commerce as a guest - 10: click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max"))
+2026-06-10 15:05:48.866 DEBUG  explore the website commerce as a guest - 11: waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10)
+2026-06-10 15:05:49.434 DEBUG  explore the website commerce as a guest - 12: mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE)
+2026-06-10 15:05:50.069 DEBUG  explore the website commerce as a guest - 13: click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max"))
+2026-06-10 15:05:50.818 DEBUG  explore the website commerce as a guest - 14: waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10)
+2026-06-10 15:05:52.945 DEBUG  explore the website commerce as a guest - 15: mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE)
+2026-06-10 15:05:53.429 DEBUG  explore the website commerce as a guest - 16: click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro"))
+2026-06-10 15:05:53.868 DEBUG  explore the website commerce as a guest - 17: waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10)
+2026-06-10 15:05:54.521 DEBUG  explore the website commerce as a guest - 18: mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE)
+2026-06-10 15:05:55.943 DEBUG  explore the website commerce as a guest - 19: click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 13"))
+2026-06-10 15:05:56.371 DEBUG  explore the website commerce as a guest - 20: waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10)
+2026-06-10 15:05:57.035 DEBUG  explore the website commerce as a guest - 21: mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE)
+2026-06-10 15:05:58.509 DEBUG  explore the website commerce as a guest - 22: click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 13 mini"))
+2026-06-10 15:05:58.894 DEBUG  explore the website commerce as a guest - 23: waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10)
+2026-06-10 15:05:59.538 DEBUG  explore the website commerce as a guest - 24: mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE)
+2026-06-10 15:06:01.179 DEBUG  explore the website commerce as a guest - 25: click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 12"))
+2026-06-10 15:06:01.593 DEBUG  explore the website commerce as a guest - 26: waitForElementVisible(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), 10)
+2026-06-10 15:06:03.625 DEBUG  explore the website commerce as a guest - 27: mouseOver(findTestObject("WEB/Home Page/Page Iphone/menu-iphone"), STOP_ON_FAILURE)
+2026-06-10 15:06:04.096 DEBUG  explore the website commerce as a guest - 28: click(findTestObject("WEB/Home Page/Page Iphone/sub-menu-iPhone 11"))
+2026-06-10 15:06:04.664 DEBUG  explore the website commerce as a guest - 29: waitForElementVisible(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), 10)
+2026-06-10 15:06:05.653 DEBUG  explore the website commerce as a guest - 30: mouseOver(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), STOP_ON_FAILURE)
+2026-06-10 15:06:06.967 DEBUG  explore the website commerce as a guest - 31: click(findTestObject("WEB/Home Page/Page Ipad/sub-menu-iPad pro"))
+2026-06-10 15:06:07.393 DEBUG  explore the website commerce as a guest - 32: waitForElementVisible(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), 10)
+2026-06-10 15:06:08.012 DEBUG  explore the website commerce as a guest - 33: mouseOver(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), STOP_ON_FAILURE)
+2026-06-10 15:06:09.623 DEBUG  explore the website commerce as a guest - 34: click(findTestObject("WEB/Home Page/Page Ipad/sub-menu-iPad Air"))
+2026-06-10 15:06:10.069 DEBUG  explore the website commerce as a guest - 35: waitForElementVisible(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), 10)
+2026-06-10 15:06:10.762 DEBUG  explore the website commerce as a guest - 36: mouseOver(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), STOP_ON_FAILURE)
+2026-06-10 15:06:12.381 DEBUG  explore the website commerce as a guest - 37: click(findTestObject("WEB/Home Page/Page Ipad/sub-menu-iPad mini"))
+2026-06-10 15:06:12.817 DEBUG  explore the website commerce as a guest - 38: waitForElementVisible(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), 10)
+2026-06-10 15:06:13.414 DEBUG  explore the website commerce as a guest - 39: mouseOver(findTestObject("WEB/Home Page/Page Ipad/menu-ipad"), STOP_ON_FAILURE)
+2026-06-10 15:06:15.051 DEBUG  explore the website commerce as a guest - 40: click(findTestObject("WEB/Home Page/Page Ipad/sub-menu-iPad (Gen 10th)"))
+2026-06-10 15:06:15.493 DEBUG  explore the website commerce as a guest - 41: waitForElementVisible(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), 10)
+2026-06-10 15:06:16.130 DEBUG  explore the website commerce as a guest - 42: mouseOver(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), STOP_ON_FAILURE)
+2026-06-10 15:06:17.244 DEBUG  explore the website commerce as a guest - 43: click(findTestObject("WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 7"))
+2026-06-10 15:06:17.678 DEBUG  explore the website commerce as a guest - 44: waitForElementVisible(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), 10)
+2026-06-10 15:06:18.294 DEBUG  explore the website commerce as a guest - 45: mouseOver(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), STOP_ON_FAILURE)
+2026-06-10 15:06:19.803 DEBUG  explore the website commerce as a guest - 46: click(findTestObject("WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 6"))
+2026-06-10 15:06:20.258 DEBUG  explore the website commerce as a guest - 47: waitForElementVisible(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), 10)
+2026-06-10 15:06:20.865 DEBUG  explore the website commerce as a guest - 48: mouseOver(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), STOP_ON_FAILURE)
+2026-06-10 15:06:22.039 DEBUG  explore the website commerce as a guest - 49: click(findTestObject("WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 3"))
+2026-06-10 15:06:22.494 DEBUG  explore the website commerce as a guest - 50: waitForElementVisible(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), 10)
+2026-06-10 15:06:23.081 DEBUG  explore the website commerce as a guest - 51: mouseOver(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), STOP_ON_FAILURE)
+2026-06-10 15:06:24.709 DEBUG  explore the website commerce as a guest - 52: click(findTestObject("WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch SE"))
+2026-06-10 15:06:25.146 DEBUG  explore the website commerce as a guest - 53: waitForElementVisible(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), 10)
+2026-06-10 15:06:25.975 DEBUG  explore the website commerce as a guest - 54: mouseOver(findTestObject("WEB/Home Page/Page Apple Watch/menu-Apple Watch"), STOP_ON_FAILURE)
+2026-06-10 15:06:27.403 DEBUG  explore the website commerce as a guest - 55: click(findTestObject("WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra"))
+2026-06-10 15:06:27.806 DEBUG  explore the website commerce as a guest - 56: waitForElementVisible(findTestObject("WEB/Home Page/Page Mac/menu-Mac"), 10)
+2026-06-10 15:06:28.396 DEBUG  explore the website commerce as a guest - 57: mouseOver(findTestObject("WEB/Home Page/Page Mac/menu-Mac"), STOP_ON_FAILURE)
+2026-06-10 15:06:29.562 DEBUG  explore the website commerce as a guest - 58: click(findTestObject("WEB/Home Page/Page Mac/sub-menu-MacBook Pro"))
+2026-06-10 15:06:29.976 DEBUG  explore the website commerce as a guest - 59: waitForElementVisible(findTestObject("WEB/Home Page/Page Mac/menu-Mac"), 10)
+2026-06-10 15:06:30.568 DEBUG  explore the website commerce as a guest - 60: mouseOver(findTestObject("WEB/Home Page/Page Mac/menu-Mac"), STOP_ON_FAILURE)
+2026-06-10 15:06:32.160 DEBUG  explore the website commerce as a guest - 61: click(findTestObject("WEB/Home Page/Page Mac/sub-menu-MacBook Air"))
+2026-06-10 15:06:32.595 DEBUG  explore the website commerce as a guest - 62: waitForElementVisible(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), 10)
+2026-06-10 15:06:33.214 DEBUG  explore the website commerce as a guest - 63: mouseOver(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), STOP_ON_FAILURE)
+2026-06-10 15:06:34.696 DEBUG  explore the website commerce as a guest - 64: click(findTestObject("WEB/Home Page/Page Airpods/sub-menu-AirPods Max"))
+2026-06-10 15:06:35.117 DEBUG  explore the website commerce as a guest - 65: waitForElementVisible(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), 10)
+2026-06-10 15:06:35.907 DEBUG  explore the website commerce as a guest - 66: mouseOver(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), STOP_ON_FAILURE)
+2026-06-10 15:06:37.342 DEBUG  explore the website commerce as a guest - 67: click(findTestObject("WEB/Home Page/Page Airpods/sub-menu-AirPods Pro"))
+2026-06-10 15:06:37.738 DEBUG  explore the website commerce as a guest - 68: waitForElementVisible(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), 10)
+2026-06-10 15:06:38.336 DEBUG  explore the website commerce as a guest - 69: mouseOver(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), STOP_ON_FAILURE)
+2026-06-10 15:06:40.359 DEBUG  explore the website commerce as a guest - 70: click(findTestObject("WEB/Home Page/Page Airpods/sub-menu-AirPods 3rd Generation"))
+2026-06-10 15:06:41.236 DEBUG  explore the website commerce as a guest - 71: waitForElementVisible(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), 10)
+2026-06-10 15:06:41.869 DEBUG  explore the website commerce as a guest - 72: mouseOver(findTestObject("WEB/Home Page/Page Airpods/menu-AirPods"), STOP_ON_FAILURE)
+2026-06-10 15:06:42.414 DEBUG  explore the website commerce as a guest - 73: click(findTestObject("WEB/Home Page/Page Airpods/sub-menu-AirPods 2nd Generation"))
+2026-06-10 15:06:43.400 DEBUG  explore the website commerce as a guest - 74: waitForElementVisible(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), 10)
+2026-06-10 15:06:44.019 DEBUG  explore the website commerce as a guest - 75: mouseOver(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), STOP_ON_FAILURE)
+2026-06-10 15:06:45.426 DEBUG  explore the website commerce as a guest - 76: click(findTestObject("WEB/Home Page/Page Accessoris/sub-menu-Aksesoris iPhone"))
+2026-06-10 15:06:45.852 DEBUG  explore the website commerce as a guest - 77: waitForElementVisible(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), 10)
+2026-06-10 15:06:46.728 DEBUG  explore the website commerce as a guest - 78: mouseOver(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), STOP_ON_FAILURE)
+2026-06-10 15:06:48.062 DEBUG  explore the website commerce as a guest - 79: click(findTestObject("WEB/Home Page/Page Accessoris/sub-menu-Aksesoris iPad"))
+2026-06-10 15:06:48.469 DEBUG  explore the website commerce as a guest - 80: waitForElementVisible(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), 10)
+2026-06-10 15:06:49.102 DEBUG  explore the website commerce as a guest - 81: mouseOver(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), STOP_ON_FAILURE)
+2026-06-10 15:06:50.590 DEBUG  explore the website commerce as a guest - 82: click(findTestObject("WEB/Home Page/Page Accessoris/sub-menu-MacBook Accessories"))
+2026-06-10 15:06:51.026 DEBUG  explore the website commerce as a guest - 83: waitForElementVisible(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), 10)
+2026-06-10 15:06:51.631 DEBUG  explore the website commerce as a guest - 84: mouseOver(findTestObject("WEB/Home Page/Page Accessoris/menu-accessoris"), STOP_ON_FAILURE)
+2026-06-10 15:06:53.125 DEBUG  explore the website commerce as a guest - 85: click(findTestObject("WEB/Home Page/Page Accessoris/sub-menu-Watch accessories"))
+2026-06-10 15:06:53.688 DEBUG  explore the website commerce as a guest - 86: waitForElementVisible(findTestObject("WEB/Home Page/Page Promotion/menu-Promotion"), 10)
+2026-06-10 15:06:54.245 DEBUG  explore the website commerce as a guest - 87: mouseOver(findTestObject("WEB/Home Page/Page Promotion/menu-Promotion"), STOP_ON_FAILURE)
+2026-06-10 15:06:55.690 DEBUG  explore the website commerce as a guest - 88: click(findTestObject("WEB/Home Page/Page Promotion/sub-menu-Digimania August 2022"))
+2026-06-10 15:06:56.006 DEBUG  explore the website commerce as a guest - 89: waitForElementVisible(findTestObject("WEB/Home Page/Page Promotion/menu-Promotion"), 10)
+2026-06-10 15:06:57.543 DEBUG  explore the website commerce as a guest - 90: mouseOver(findTestObject("WEB/Home Page/Page Promotion/menu-Promotion"), STOP_ON_FAILURE)
+2026-06-10 15:06:57.882 DEBUG  explore the website commerce as a guest - 91: click(findTestObject("WEB/Home Page/Page Promotion/sub-menu-Flash Sale"))
+2026-06-10 15:06:58.192 DEBUG  explore the website commerce as a guest - 92: waitForElementVisible(findTestObject("WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education"), 10)
+2026-06-10 15:06:58.828 DEBUG  explore the website commerce as a guest - 93: mouseOver(findTestObject("WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education"), STOP_ON_FAILURE)
+2026-06-10 15:06:59.181 DEBUG  explore the website commerce as a guest - 94: click(findTestObject("WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education"))
+2026-06-10 15:06:59.799 DEBUG  explore the website commerce as a guest - 95: waitForPageLoad(10)
+2026-06-10 15:06:59.812 DEBUG  explore the website commerce as a guest - 96: closeBrowser()
+2026-06-10 15:07:00.542 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0610_98.run(S0610_98.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+Failed to save screenshot: Cannot take screenshot
+Test Case 'Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest' finished with status: PASSED
+2026-06-10 15:07:02.693 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure user can explore the website commerce as a guest
+2026-06-10 15:07:02.696 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-06-10 15:07:02.696 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest
+2026-06-10 15:07:02.835 DEBUG r can not access profile page as a guest - 1: openBrowser("")
+2026-06-10 15:07:02.837 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox (headless)' driver
+2026-06-10 15:07:02.845 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+2026-06-10 15:07:05.085 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 042e3af9-115d-4629-bee7-d952be058a2f
+2026-06-10 15:07:05.086 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 151.0.1
+2026-06-10 15:07:05.086 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-06-10 15:07:05.087 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-06-10 15:07:05.088 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-06-10 15:07:05.109 DEBUG r can not access profile page as a guest - 2: setViewPortSize(1920, 1080)
+2026-06-10 15:07:05.424 DEBUG r can not access profile page as a guest - 3: enableSmartWait()
+2026-06-10 15:07:05.426 DEBUG r can not access profile page as a guest - 4: navigateToUrl(URL)
+2026-06-10 15:07:07.474 DEBUG r can not access profile page as a guest - 5: custom.BrowserHelper.setupBrowserWindow()
+Running browser: FIREFOX_HEADLESS_DRIVER
+HEADLESS MODE DETECTED
+2026-06-10 15:07:07.516 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - custom.BrowserHelper.setupBrowserWindow is PASSED
+2026-06-10 15:07:07.519 DEBUG r can not access profile page as a guest - 6: waitForPageLoad(30)
+2026-06-10 15:07:07.542 DEBUG r can not access profile page as a guest - 7: mouseOver(findTestObject("WEB/Registration/icon-acount"), STOP_ON_FAILURE)
+2026-06-10 15:07:07.912 DEBUG r can not access profile page as a guest - 8: enhancedClick(findTestObject("WEB/Registration/icon-acount"))
+2026-06-10 15:07:08.741 DEBUG r can not access profile page as a guest - 9: waitForPageLoad(10)
+2026-06-10 15:07:08.750 DEBUG r can not access profile page as a guest - 10: delay(2)
+2026-06-10 15:07:10.791 DEBUG r can not access profile page as a guest - 11: closeBrowser()
+2026-06-10 15:07:11.943 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)\r\n\tat AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)\r\n\tat AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)\r\n\tat com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)\r\n\tat com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)\r\n\tat com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)\r\n\tat com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)\r\n\tat S0610_98.run(S0610_98.groovy:40)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\nCaused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened\nBuild info: version: '4.39.0', revision: '126f156aee'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: driver.version: unknown\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)\r\n\tat com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)\r\n\t... 20 more\r\n)
+Failed to save screenshot: Cannot take screenshot
+Test Case 'Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest' finished with status: PASSED
+2026-06-10 15:07:14.542 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/WEB/Guest User/Ensure user can not access profile page as a guest
+2026-06-10 15:07:15.168 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-06-10 15:07:15.168 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/WEB/Guest User/GuestUser_TestSuite
+2026-06-10 15:07:15.168 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

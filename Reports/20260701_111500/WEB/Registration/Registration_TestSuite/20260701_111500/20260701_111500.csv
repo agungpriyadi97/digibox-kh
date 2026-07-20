@@ -1,0 +1,91 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Registration_TestSuite,Chrome 149.0.7827.103,,,01-07-2026 11:15:22,01-07-2026 11:17:14,1m - 51.332s,PASSED
+,,,,,,,
+Test Cases/WEB/Registration/Register with duplicate Account,Chrome 149.0.7827.103,,,01-07-2026 11:15:23,01-07-2026 11:15:55,31.447s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,01-07-2026 11:15:24,01-07-2026 11:15:31,6.825s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,01-07-2026 11:15:31,01-07-2026 11:15:31,0.423s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,01-07-2026 11:15:31,01-07-2026 11:15:33,1.505s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,01-07-2026 11:15:33,01-07-2026 11:15:36,3.256s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,01-07-2026 11:15:36,01-07-2026 11:15:37,0.875s,PASSED
+custom.BrowserHelper.closeFirefoxPopup(),Chrome 149.0.7827.103,,,01-07-2026 11:15:37,01-07-2026 11:15:41,3.551s,PASSED
+"click(findTestObject(""WEB/Registration/btn-create-new-account""))",Chrome 149.0.7827.103,,,01-07-2026 11:15:41,01-07-2026 11:15:41,0.745s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Email""), ""agungpriyadi@gmail.com"")",Chrome 149.0.7827.103,,,01-07-2026 11:15:41,01-07-2026 11:15:45,3.247s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Chrome 149.0.7827.103,,,01-07-2026 11:15:45,01-07-2026 11:15:46,1.221s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Chrome 149.0.7827.103,,,01-07-2026 11:15:46,01-07-2026 11:15:47,1.218s,PASSED
+"click(findTestObject(""WEB/Registration/btn-sign-up""))",Chrome 149.0.7827.103,,,01-07-2026 11:15:47,01-07-2026 11:15:48,0.775s,PASSED
+delay(2),Chrome 149.0.7827.103,,,01-07-2026 11:15:48,01-07-2026 11:15:50,2.015s,PASSED
+"isDuplicateShown = verifyTextPresent(""Duplicated-unknown-error."", false, OPTIONAL)",Chrome 149.0.7827.103,,,01-07-2026 11:15:50,01-07-2026 11:15:50,0.528s,PASSED
+if (!(isDuplicateShown)),Chrome 149.0.7827.103,,,01-07-2026 11:15:50,01-07-2026 11:15:50,0.000s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,01-07-2026 11:15:50,01-07-2026 11:15:52,1.372s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,01-07-2026 11:15:52,01-07-2026 11:15:52,0.521s,FAILED
+,,,,,,,
+Test Cases/WEB/Registration/Register with duplicate Email,Chrome 149.0.7827.103,,,01-07-2026 11:15:55,01-07-2026 11:16:18,23.102s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,01-07-2026 11:15:55,01-07-2026 11:15:56,1.470s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,01-07-2026 11:15:56,01-07-2026 11:15:57,0.164s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,01-07-2026 11:15:57,01-07-2026 11:16:01,4.197s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,01-07-2026 11:16:01,01-07-2026 11:16:01,0.496s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,01-07-2026 11:16:01,01-07-2026 11:16:02,0.644s,PASSED
+custom.BrowserHelper.closeFirefoxPopup(),Chrome 149.0.7827.103,,,01-07-2026 11:16:02,01-07-2026 11:16:04,2.584s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/btn-create-new-account""), 10)",Chrome 149.0.7827.103,,,01-07-2026 11:16:04,01-07-2026 11:16:05,0.610s,PASSED
+"click(findTestObject(""WEB/Registration/btn-create-new-account""))",Chrome 149.0.7827.103,,,01-07-2026 11:16:05,01-07-2026 11:16:06,0.588s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Email""), ""agung.priyadi@gtech.digital"")",Chrome 149.0.7827.103,,,01-07-2026 11:16:06,01-07-2026 11:16:09,2.915s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Chrome 149.0.7827.103,,,01-07-2026 11:16:09,01-07-2026 11:16:10,1.129s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Chrome 149.0.7827.103,,,01-07-2026 11:16:10,01-07-2026 11:16:11,1.232s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/btn-sign-up""), 10)",Chrome 149.0.7827.103,,,01-07-2026 11:16:11,01-07-2026 11:16:11,0.513s,PASSED
+"click(findTestObject(""WEB/Registration/btn-sign-up""))",Chrome 149.0.7827.103,,,01-07-2026 11:16:11,01-07-2026 11:16:12,0.544s,PASSED
+delay(2),Chrome 149.0.7827.103,,,01-07-2026 11:16:12,01-07-2026 11:16:14,2.024s,PASSED
+"isDuplicateEmailShown = verifyTextPresent(""The mobile or email already exist."", false, OPTIONAL)",Chrome 149.0.7827.103,,,01-07-2026 11:16:14,01-07-2026 11:16:14,0.420s,PASSED
+if (!(isDuplicateEmailShown)),Chrome 149.0.7827.103,,,01-07-2026 11:16:14,01-07-2026 11:16:14,0.000s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,01-07-2026 11:16:14,01-07-2026 11:16:15,0.823s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,01-07-2026 11:16:15,01-07-2026 11:16:15,0.095s,FAILED
+,,,,,,,
+Test Cases/WEB/Registration/Register with invalid data (email or password),Chrome 149.0.7827.103,,,01-07-2026 11:16:18,01-07-2026 11:16:46,28.681s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,01-07-2026 11:16:18,01-07-2026 11:16:20,1.458s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,01-07-2026 11:16:20,01-07-2026 11:16:20,0.116s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,01-07-2026 11:16:20,01-07-2026 11:16:23,3.546s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,01-07-2026 11:16:23,01-07-2026 11:16:24,0.664s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,01-07-2026 11:16:24,01-07-2026 11:16:24,0.607s,PASSED
+custom.BrowserHelper.closeFirefoxPopup(),Chrome 149.0.7827.103,,,01-07-2026 11:16:24,01-07-2026 11:16:27,2.559s,PASSED
+"click(findTestObject(""WEB/Registration/btn-create-new-account""))",Chrome 149.0.7827.103,,,01-07-2026 11:16:27,01-07-2026 11:16:28,0.682s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Email""), ""salahemailgmail.com"")",Chrome 149.0.7827.103,,,01-07-2026 11:16:28,01-07-2026 11:16:31,3.065s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), """")",Chrome 149.0.7827.103,,,01-07-2026 11:16:31,01-07-2026 11:16:32,1.173s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), """")",Chrome 149.0.7827.103,,,01-07-2026 11:16:32,01-07-2026 11:16:33,1.266s,PASSED
+"click(findTestObject(""WEB/Registration/btn-sign-up""))",Chrome 149.0.7827.103,,,01-07-2026 11:16:33,01-07-2026 11:16:34,0.795s,PASSED
+delay(2),Chrome 149.0.7827.103,,,01-07-2026 11:16:34,01-07-2026 11:16:36,2.027s,PASSED
+"emailError = verifyTextPresent(""Please enter a valid email address"", false, OPTIONAL)",Chrome 149.0.7827.103,,,01-07-2026 11:16:36,01-07-2026 11:16:36,0.427s,PASSED
+"requiredError = verifyTextPresent(""Required"", false, OPTIONAL)",Chrome 149.0.7827.103,,,01-07-2026 11:16:36,01-07-2026 11:16:37,0.392s,PASSED
+if (!(emailError) || !(requiredError)),Chrome 149.0.7827.103,,,01-07-2026 11:16:37,01-07-2026 11:16:37,0.000s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Email""), ""agung.priyadi@gtech.digital"")",Chrome 149.0.7827.103,,,01-07-2026 11:16:37,01-07-2026 11:16:38,1.186s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Chrome 149.0.7827.103,,,01-07-2026 11:16:38,01-07-2026 11:16:39,1.137s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Las"")",Chrome 149.0.7827.103,,,01-07-2026 11:16:39,01-07-2026 11:16:40,1.201s,PASSED
+"click(findTestObject(""WEB/Registration/btn-sign-up""))",Chrome 149.0.7827.103,,,01-07-2026 11:16:40,01-07-2026 11:16:41,0.632s,PASSED
+delay(2),Chrome 149.0.7827.103,,,01-07-2026 11:16:41,01-07-2026 11:16:43,2.032s,PASSED
+"passwordLengthError = verifyTextPresent(""Password length is 6-20 digits"", false, OPTIONAL)",Chrome 149.0.7827.103,,,01-07-2026 11:16:43,01-07-2026 11:16:43,0.396s,PASSED
+if (!(passwordLengthError)),Chrome 149.0.7827.103,,,01-07-2026 11:16:43,01-07-2026 11:16:43,0.016s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,01-07-2026 11:16:43,01-07-2026 11:16:44,0.787s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,01-07-2026 11:16:44,01-07-2026 11:16:44,0.034s,FAILED
+,,,,,,,
+Test Cases/WEB/Registration/Register with true data,Chrome 149.0.7827.103,,,01-07-2026 11:16:46,01-07-2026 11:17:14,27.320s,PASSED
+randomEmail = custom.RandomData.generateRandomEmail(),Chrome 149.0.7827.103,,,01-07-2026 11:16:46,01-07-2026 11:16:46,0.028s,PASSED
+randomUsername = custom.RandomData.generateRandomUsername(),Chrome 149.0.7827.103,,,01-07-2026 11:16:46,01-07-2026 11:16:46,0.009s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,01-07-2026 11:16:46,01-07-2026 11:16:47,0.981s,PASSED
+maximizeWindow(),Chrome 149.0.7827.103,,,01-07-2026 11:16:47,01-07-2026 11:16:47,0.042s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,01-07-2026 11:16:47,01-07-2026 11:16:51,3.392s,PASSED
+waitForPageLoad(20),Chrome 149.0.7827.103,,,01-07-2026 11:16:51,01-07-2026 11:16:51,0.305s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,01-07-2026 11:16:51,01-07-2026 11:16:52,0.548s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,01-07-2026 11:16:52,01-07-2026 11:16:52,0.641s,PASSED
+custom.BrowserHelper.closeFirefoxPopup(),Chrome 149.0.7827.103,,,01-07-2026 11:16:52,01-07-2026 11:16:55,2.501s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/btn-create-new-account""), 10)",Chrome 149.0.7827.103,,,01-07-2026 11:16:55,01-07-2026 11:16:55,0.517s,PASSED
+"click(findTestObject(""WEB/Registration/btn-create-new-account""))",Chrome 149.0.7827.103,,,01-07-2026 11:16:55,01-07-2026 11:16:56,0.611s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Email""), randomEmail)",Chrome 149.0.7827.103,,,01-07-2026 11:16:56,01-07-2026 11:16:59,3.260s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), randomUsername)",Chrome 149.0.7827.103,,,01-07-2026 11:16:59,01-07-2026 11:17:00,1.176s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Chrome 149.0.7827.103,,,01-07-2026 11:17:00,01-07-2026 11:17:02,1.264s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/btn-sign-up""), 10)",Chrome 149.0.7827.103,,,01-07-2026 11:17:02,01-07-2026 11:17:02,0.746s,PASSED
+"click(findTestObject(""WEB/Registration/btn-sign-up""))",Chrome 149.0.7827.103,,,01-07-2026 11:17:02,01-07-2026 11:17:03,0.653s,PASSED
+delay(2),Chrome 149.0.7827.103,,,01-07-2026 11:17:03,01-07-2026 11:17:05,2.022s,PASSED
+"isStillOnRegister = verifyElementPresent(findTestObject(""WEB/Registration/btn-sign-up""), 5, OPTIONAL)",Chrome 149.0.7827.103,,,01-07-2026 11:17:05,01-07-2026 11:17:10,5.242s,WARNING
+if (isStillOnRegister),Chrome 149.0.7827.103,,,01-07-2026 11:17:10,01-07-2026 11:17:10,0.013s,PASSED
+"comment(""Email used: "" + randomEmail)",Chrome 149.0.7827.103,,,01-07-2026 11:17:10,01-07-2026 11:17:10,0.019s,PASSED
+"comment(""Username used: "" + randomUsername)",Chrome 149.0.7827.103,,,01-07-2026 11:17:10,01-07-2026 11:17:10,0.015s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,01-07-2026 11:17:10,01-07-2026 11:17:11,0.911s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,01-07-2026 11:17:11,01-07-2026 11:17:11,0.096s,FAILED

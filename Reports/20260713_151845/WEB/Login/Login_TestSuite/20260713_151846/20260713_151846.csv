@@ -1,0 +1,93 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login_TestSuite,Chrome 149.0.7827.103,,,13-07-2026 15:20:16,13-07-2026 15:21:15,59.324s,PASSED
+,,,,,,,
+Test Cases/WEB/Login/Login with data Invalid Account,Chrome 149.0.7827.103,,,13-07-2026 15:20:16,13-07-2026 15:20:29,13.190s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,13-07-2026 15:20:16,13-07-2026 15:20:18,2.211s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 149.0.7827.103,,,13-07-2026 15:20:18,13-07-2026 15:20:18,0.128s,PASSED
+enableSmartWait(),Chrome 149.0.7827.103,,,13-07-2026 15:20:18,13-07-2026 15:20:18,0.016s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,13-07-2026 15:20:18,13-07-2026 15:20:21,2.618s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,13-07-2026 15:20:21,13-07-2026 15:20:21,0.085s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:20:21,13-07-2026 15:20:21,0.122s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:20:21,13-07-2026 15:20:22,0.516s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,13-07-2026 15:20:22,13-07-2026 15:20:22,0.265s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:20:22,13-07-2026 15:20:22,0.317s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,13-07-2026 15:20:22,13-07-2026 15:20:23,0.328s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:20:23,13-07-2026 15:20:23,0.677s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi99982"")",Chrome 149.0.7827.103,,,13-07-2026 15:20:23,13-07-2026 15:20:24,0.681s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Chrome 149.0.7827.103,,,13-07-2026 15:20:24,13-07-2026 15:20:25,0.861s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:20:25,13-07-2026 15:20:25,0.505s,PASSED
+"enhancedClick(findTestObject(""WEB/Login/btn-sign in""))",Chrome 149.0.7827.103,,,13-07-2026 15:20:25,13-07-2026 15:20:26,0.284s,PASSED
+loginError = new com.kms.katalon.core.testobject.TestObject(),Chrome 149.0.7827.103,,,13-07-2026 15:20:26,13-07-2026 15:20:26,0.004s,PASSED
+"loginError.addProperty(""xpath"", EQUALS, ""//div[@role='alert']//p[contains(text(),'Account or password is not correct')]"")",Chrome 149.0.7827.103,,,13-07-2026 15:20:26,13-07-2026 15:20:26,0.008s,PASSED
+"isVisible = waitForElementVisible(loginError, 15, OPTIONAL)",Chrome 149.0.7827.103,,,13-07-2026 15:20:26,13-07-2026 15:20:26,0.763s,PASSED
+"comment(""Error Message Visible : "" + isVisible)",Chrome 149.0.7827.103,,,13-07-2026 15:20:26,13-07-2026 15:20:26,0.020s,PASSED
+"verifyEqual(isVisible, true)",Chrome 149.0.7827.103,,,13-07-2026 15:20:26,13-07-2026 15:20:26,0.011s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,13-07-2026 15:20:26,13-07-2026 15:20:27,0.255s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,13-07-2026 15:20:27,13-07-2026 15:20:27,0.124s,FAILED
+,,,,,,,
+Test Cases/WEB/Login/Login with data Invalid Password,Chrome 149.0.7827.103,,,13-07-2026 15:20:29,13-07-2026 15:20:40,11.222s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,13-07-2026 15:20:29,13-07-2026 15:20:30,1.283s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 149.0.7827.103,,,13-07-2026 15:20:30,13-07-2026 15:20:30,0.090s,PASSED
+enableSmartWait(),Chrome 149.0.7827.103,,,13-07-2026 15:20:30,13-07-2026 15:20:30,0.006s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,13-07-2026 15:20:30,13-07-2026 15:20:32,1.960s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,13-07-2026 15:20:32,13-07-2026 15:20:32,0.092s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:20:32,13-07-2026 15:20:32,0.029s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:20:32,13-07-2026 15:20:33,0.292s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,13-07-2026 15:20:33,13-07-2026 15:20:33,0.275s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:20:33,13-07-2026 15:20:34,0.495s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,13-07-2026 15:20:34,13-07-2026 15:20:34,0.328s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:20:34,13-07-2026 15:20:35,0.691s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Chrome 149.0.7827.103,,,13-07-2026 15:20:35,13-07-2026 15:20:35,0.628s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar1234568"")",Chrome 149.0.7827.103,,,13-07-2026 15:20:35,13-07-2026 15:20:36,0.836s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:20:36,13-07-2026 15:20:36,0.490s,PASSED
+"enhancedClick(findTestObject(""WEB/Login/btn-sign in""))",Chrome 149.0.7827.103,,,13-07-2026 15:20:36,13-07-2026 15:20:37,0.289s,PASSED
+loginError = new com.kms.katalon.core.testobject.TestObject(),Chrome 149.0.7827.103,,,13-07-2026 15:20:37,13-07-2026 15:20:37,0.003s,PASSED
+"loginError.addProperty(""xpath"", EQUALS, ""//div[@role='alert']//p[contains(text(),'Account or password is not correct')]"")",Chrome 149.0.7827.103,,,13-07-2026 15:20:37,13-07-2026 15:20:37,0.002s,PASSED
+"isVisible = waitForElementVisible(loginError, 15, OPTIONAL)",Chrome 149.0.7827.103,,,13-07-2026 15:20:37,13-07-2026 15:20:38,0.770s,PASSED
+"comment(""Error Message Visible : "" + isVisible)",Chrome 149.0.7827.103,,,13-07-2026 15:20:38,13-07-2026 15:20:38,0.004s,PASSED
+"verifyEqual(isVisible, true)",Chrome 149.0.7827.103,,,13-07-2026 15:20:38,13-07-2026 15:20:38,0.004s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,13-07-2026 15:20:38,13-07-2026 15:20:38,0.461s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,13-07-2026 15:20:38,13-07-2026 15:20:38,0.025s,FAILED
+,,,,,,,
+Test Cases/WEB/Login/Login with data valid,Chrome 149.0.7827.103,,,13-07-2026 15:20:40,13-07-2026 15:21:00,19.400s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,13-07-2026 15:20:40,13-07-2026 15:20:42,1.979s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 149.0.7827.103,,,13-07-2026 15:20:42,13-07-2026 15:20:42,0.160s,PASSED
+enableSmartWait(),Chrome 149.0.7827.103,,,13-07-2026 15:20:42,13-07-2026 15:20:42,0.000s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,13-07-2026 15:20:42,13-07-2026 15:20:45,2.542s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,13-07-2026 15:20:45,13-07-2026 15:20:45,0.113s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:20:45,13-07-2026 15:20:45,0.040s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:20:45,13-07-2026 15:20:45,0.338s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,13-07-2026 15:20:45,13-07-2026 15:20:46,0.493s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:20:46,13-07-2026 15:20:46,0.311s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,13-07-2026 15:20:46,13-07-2026 15:20:47,0.340s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:20:47,13-07-2026 15:20:47,0.727s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Chrome 149.0.7827.103,,,13-07-2026 15:20:47,13-07-2026 15:20:48,0.789s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Chrome 149.0.7827.103,,,13-07-2026 15:20:48,13-07-2026 15:20:49,0.906s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:20:49,13-07-2026 15:20:50,0.519s,PASSED
+"enhancedClick(findTestObject(""WEB/Login/btn-sign in""))",Chrome 149.0.7827.103,,,13-07-2026 15:20:50,13-07-2026 15:20:50,0.368s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:20:50,13-07-2026 15:20:50,0.016s,PASSED
+delay(5),Chrome 149.0.7827.103,,,13-07-2026 15:20:50,13-07-2026 15:20:55,5.020s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:20:55,13-07-2026 15:20:55,0.302s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,13-07-2026 15:20:55,13-07-2026 15:20:56,0.347s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/verify-succes-acount-login""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:20:56,13-07-2026 15:20:56,0.785s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/verify-succes-acount-login""))",Chrome 149.0.7827.103,,,13-07-2026 15:20:56,13-07-2026 15:20:57,0.278s,PASSED
+"comment(""Login success verified"")",Chrome 149.0.7827.103,,,13-07-2026 15:20:57,13-07-2026 15:20:57,0.006s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,13-07-2026 15:20:57,13-07-2026 15:20:57,0.707s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,13-07-2026 15:20:57,13-07-2026 15:20:57,0.056s,FAILED
+,,,,,,,
+Test Cases/WEB/Login/Login with Empty Field Validation,Chrome 149.0.7827.103,,,13-07-2026 15:21:00,13-07-2026 15:21:15,15.312s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,13-07-2026 15:21:00,13-07-2026 15:21:02,2.645s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,13-07-2026 15:21:02,13-07-2026 15:21:03,0.144s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 149.0.7827.103,,,13-07-2026 15:21:03,13-07-2026 15:21:03,0.078s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,13-07-2026 15:21:03,13-07-2026 15:21:05,2.801s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 15)",Chrome 149.0.7827.103,,,13-07-2026 15:21:05,13-07-2026 15:21:06,0.362s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,13-07-2026 15:21:06,13-07-2026 15:21:06,0.611s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,13-07-2026 15:21:06,13-07-2026 15:21:07,0.511s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), """")",Chrome 149.0.7827.103,,,13-07-2026 15:21:07,13-07-2026 15:21:08,1.253s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), """")",Chrome 149.0.7827.103,,,13-07-2026 15:21:08,13-07-2026 15:21:09,0.737s,PASSED
+"click(findTestObject(""WEB/Login/btn-sign in""))",Chrome 149.0.7827.103,,,13-07-2026 15:21:09,13-07-2026 15:21:09,0.610s,PASSED
+delay(2),Chrome 149.0.7827.103,,,13-07-2026 15:21:09,13-07-2026 15:21:11,2.013s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Login/btn-sign in""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,13-07-2026 15:21:11,13-07-2026 15:21:12,0.257s,PASSED
+"comment(""Login validation with empty username and password executed"")",Chrome 149.0.7827.103,,,13-07-2026 15:21:12,13-07-2026 15:21:12,0.007s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,13-07-2026 15:21:12,13-07-2026 15:21:13,0.968s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,13-07-2026 15:21:13,13-07-2026 15:21:13,0.047s,FAILED

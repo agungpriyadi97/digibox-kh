@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Registration_TestSuite" time="92.273" tests="4" passed="4" failures="0" errors="0" incompleted="0" skipped="0">
+   <testsuite name="Registration_TestSuite" tests="4" passed="4" failures="0" errors="0" incompleted="0" skipped="0" time="92.273" timestamp="2026-07-13T08:20:56.850Z" hostname="AgungPriyadi - NB-GDA-55026" id="Test Suites/WEB/Registration/Registration_TestSuite" status="PASSED">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260713_152034\\WEB\\Registration\\Registration_TestSuite\\20260713_152034"/>
+         <property name="logFiles" value="C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260713_152034\\WEB\\Registration\\Registration_TestSuite\\20260713_152034\\console0.log, C:\\Users\\AgungPriyadi\\git\\digibox-kh\\Reports\\20260713_152034\\WEB\\Registration\\Registration_TestSuite\\20260713_152034\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="executionBindingVariables" value="[]"/>
+         <property name="hostName" value="AgungPriyadi - NB-GDA-55026"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="11.1.3.0"/>
+         <property name="browser" value="Chrome 149.0.7827.103"/>
+         <property name="userFullName" value="Agung Priyadi"/>
+         <property name="hostAddress" value="192.168.110.73"/>
+         <property name="sessionId" value="210338429933ac942e97bb4a007a71c8"/>
+         <property name="projectName" value="digibox-kh"/>
+         <property name="seleniumVersion" value="4.39.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/WEB/Registration/Register with duplicate Account" time="23.504" classname="Test Cases/WEB/Registration/Register with duplicate Account" status="PASSED">
+         <system-out><![CDATA[13-07-2026T15:20:57 - [TEST_CASE][PASSED] - Test Cases/WEB/Registration/Register with duplicate Account: Test Cases/WEB/Registration/Register with duplicate Account
+
+13-07-2026T15:20:58 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-07-2026T15:20:58 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+13-07-2026T15:20:58 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+
+13-07-2026T15:20:58 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-07-2026T15:21:03 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-07-2026T15:21:03 - [TEST_STEP][PASSED] - custom.BrowserHelper.setupBrowserWindow(): custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:21:03 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:21:03 - [MESSAGE][PASSED] - custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:21:03 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:21:06 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:21:06 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("WEB/Home Page/header_digibox")): Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:21:07 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:21:07 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/icon-acount")): Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:21:08 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:21:08 - [TEST_STEP][PASSED] - custom.BrowserHelper.closeFirefoxPopup(): custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+13-07-2026T15:21:09 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+13-07-2026T15:21:09 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+13-07-2026T15:21:09 - [MESSAGE][PASSED] - Keys 'ESCAPE + ' sent to object: 'tempBody'
+
+13-07-2026T15:21:09 - [MESSAGE][PASSED] - Execute JavaScript 'document.body.click();' successfully
+
+13-07-2026T15:21:10 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+13-07-2026T15:21:10 - [MESSAGE][PASSED] - custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+13-07-2026T15:21:10 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/btn-create-new-account")): Object: 'Object Repository/WEB/Registration/btn-create-new-account' is clicked on
+
+13-07-2026T15:21:11 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/btn-create-new-account' is clicked on
+
+13-07-2026T15:21:11 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-Email"), "agungpriyadi@gmail.com"): Text 'agungpriyadi@gmail.com' is set on object 'Object Repository/WEB/Registration/field-Email'
+
+13-07-2026T15:21:12 - [MESSAGE][PASSED] - Text 'agungpriyadi@gmail.com' is set on object 'Object Repository/WEB/Registration/field-Email'
+
+13-07-2026T15:21:12 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:21:13 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:21:13 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:21:14 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:21:14 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/btn-sign-up")): Object: 'Object Repository/WEB/Registration/btn-sign-up' is clicked on
+
+13-07-2026T15:21:15 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/btn-sign-up' is clicked on
+
+13-07-2026T15:21:15 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+13-07-2026T15:21:17 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+13-07-2026T15:21:17 - [TEST_STEP][PASSED] - isDuplicateShown = verifyTextPresent("Duplicated-unknown-error.", false, OPTIONAL): Text 'Duplicated-unknown-error.' is present on page 
+
+13-07-2026T15:21:17 - [MESSAGE][PASSED] - Text 'Duplicated-unknown-error.' is present on page 
+
+13-07-2026T15:21:17 - [TEST_STEP][PASSED] - if (!(isDuplicateShown)): null
+
+13-07-2026T15:21:17 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+13-07-2026T15:21:18 - [MESSAGE][PASSED] - Browser is closed
+
+13-07-2026T15:21:18 - [TEST_STEP][FAILED] - Start listener action : afterTestCase: null
+
+13-07-2026T15:21:18 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+13-07-2026T15:21:18 - [TEST_STEP][PASSED] - if (status == "PASSED"): null
+
+13-07-2026T15:21:18 - [TEST_STEP][PASSED] - saveScreenshot("PASSED"): null
+
+13-07-2026T15:21:18 - [TEST_STEP][PASSED] - try: null
+
+13-07-2026T15:21:18 - [TEST_STEP][PASSED] - tcName = getTestCaseName(): null
+
+13-07-2026T15:21:18 - [TEST_STEP][PASSED] - return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _): null
+
+13-07-2026T15:21:18 - [TEST_STEP][PASSED] - folderPath = Screenshot/$status/$tcName/: null
+
+13-07-2026T15:21:18 - [TEST_STEP][PASSED] - Files.createDirectories(Paths.get(folderPath)): null
+
+13-07-2026T15:21:18 - [TEST_STEP][PASSED] - screenshotPath = $folderPath$status_$this.getTimestamp().png: null
+
+13-07-2026T15:21:18 - [TEST_STEP][FAILED] - return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date()): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_88.run(S0713_88.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:21:18 - [TEST_STEP][FAILED] - takeScreenshot(screenshotPath): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_88.run(S0713_88.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:21:18 - [MESSAGE][FAILED] - Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_88.run(S0713_88.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:21:18 - [TEST_STEP][PASSED] - catch (Exception e): null
+
+13-07-2026T15:21:18 - [TEST_STEP][PASSED] - println("Failed to save screenshot: " + e.getMessage()): null
+
+13-07-2026T15:21:18 - [TEST_STEP][PASSED] - println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Registration/Register with duplicate Email" time="19.989" classname="Test Cases/WEB/Registration/Register with duplicate Email" status="PASSED">
+         <system-out><![CDATA[13-07-2026T15:21:20 - [TEST_CASE][PASSED] - Test Cases/WEB/Registration/Register with duplicate Email: Test Cases/WEB/Registration/Register with duplicate Email
+
+13-07-2026T15:21:21 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-07-2026T15:21:21 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+13-07-2026T15:21:21 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+
+13-07-2026T15:21:21 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-07-2026T15:21:23 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-07-2026T15:21:23 - [TEST_STEP][PASSED] - custom.BrowserHelper.setupBrowserWindow(): custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:21:23 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:21:23 - [MESSAGE][PASSED] - custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:21:23 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:21:26 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:21:26 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("WEB/Home Page/header_digibox")): Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:21:26 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:21:26 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/icon-acount")): Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:21:27 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:21:27 - [TEST_STEP][PASSED] - custom.BrowserHelper.closeFirefoxPopup(): custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+13-07-2026T15:21:28 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+13-07-2026T15:21:28 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+13-07-2026T15:21:29 - [MESSAGE][PASSED] - Keys 'ESCAPE + ' sent to object: 'tempBody'
+
+13-07-2026T15:21:29 - [MESSAGE][PASSED] - Execute JavaScript 'document.body.click();' successfully
+
+13-07-2026T15:21:30 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+13-07-2026T15:21:30 - [MESSAGE][PASSED] - custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+13-07-2026T15:21:30 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Registration/btn-create-new-account"), 10): Object 'Object Repository/WEB/Registration/btn-create-new-account' is clickable
+
+13-07-2026T15:21:30 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Registration/btn-create-new-account' is clickable
+
+13-07-2026T15:21:30 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/btn-create-new-account")): Object: 'Object Repository/WEB/Registration/btn-create-new-account' is clicked on
+
+13-07-2026T15:21:31 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/btn-create-new-account' is clicked on
+
+13-07-2026T15:21:31 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-Email"), "agung.priyadi@gtech.digital"): Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/WEB/Registration/field-Email'
+
+13-07-2026T15:21:33 - [MESSAGE][PASSED] - Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/WEB/Registration/field-Email'
+
+13-07-2026T15:21:33 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:21:34 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:21:34 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:21:35 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:21:35 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Registration/btn-sign-up"), 10): Object 'Object Repository/WEB/Registration/btn-sign-up' is clickable
+
+13-07-2026T15:21:35 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Registration/btn-sign-up' is clickable
+
+13-07-2026T15:21:35 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/btn-sign-up")): Object: 'Object Repository/WEB/Registration/btn-sign-up' is clicked on
+
+13-07-2026T15:21:35 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/btn-sign-up' is clicked on
+
+13-07-2026T15:21:35 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+13-07-2026T15:21:37 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+13-07-2026T15:21:37 - [TEST_STEP][PASSED] - isDuplicateEmailShown = verifyTextPresent("The mobile or email already exist.", false, OPTIONAL): Text 'The mobile or email already exist.' is present on page 
+
+13-07-2026T15:21:38 - [MESSAGE][PASSED] - Text 'The mobile or email already exist.' is present on page 
+
+13-07-2026T15:21:38 - [TEST_STEP][PASSED] - if (!(isDuplicateEmailShown)): null
+
+13-07-2026T15:21:38 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+13-07-2026T15:21:38 - [MESSAGE][PASSED] - Browser is closed
+
+13-07-2026T15:21:38 - [TEST_STEP][FAILED] - Start listener action : afterTestCase: null
+
+13-07-2026T15:21:38 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+13-07-2026T15:21:38 - [TEST_STEP][PASSED] - if (status == "PASSED"): null
+
+13-07-2026T15:21:38 - [TEST_STEP][PASSED] - saveScreenshot("PASSED"): null
+
+13-07-2026T15:21:38 - [TEST_STEP][PASSED] - try: null
+
+13-07-2026T15:21:38 - [TEST_STEP][PASSED] - tcName = getTestCaseName(): null
+
+13-07-2026T15:21:38 - [TEST_STEP][PASSED] - return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _): null
+
+13-07-2026T15:21:38 - [TEST_STEP][PASSED] - folderPath = Screenshot/$status/$tcName/: null
+
+13-07-2026T15:21:38 - [TEST_STEP][PASSED] - Files.createDirectories(Paths.get(folderPath)): null
+
+13-07-2026T15:21:38 - [TEST_STEP][PASSED] - screenshotPath = $folderPath$status_$this.getTimestamp().png: null
+
+13-07-2026T15:21:38 - [TEST_STEP][FAILED] - return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date()): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_88.run(S0713_88.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:21:38 - [TEST_STEP][FAILED] - takeScreenshot(screenshotPath): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_88.run(S0713_88.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:21:38 - [MESSAGE][FAILED] - Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_88.run(S0713_88.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:21:38 - [TEST_STEP][PASSED] - catch (Exception e): null
+
+13-07-2026T15:21:38 - [TEST_STEP][PASSED] - println("Failed to save screenshot: " + e.getMessage()): null
+
+13-07-2026T15:21:38 - [TEST_STEP][PASSED] - println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Registration/Register with invalid data (email or password)" time="24.442" classname="Test Cases/WEB/Registration/Register with invalid data (email or password)" status="PASSED">
+         <system-out><![CDATA[13-07-2026T15:21:40 - [TEST_CASE][PASSED] - Test Cases/WEB/Registration/Register with invalid data (email or password): Test Cases/WEB/Registration/Register with invalid data (email or password)
+
+13-07-2026T15:21:40 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-07-2026T15:21:40 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+13-07-2026T15:21:40 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+
+13-07-2026T15:21:40 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-07-2026T15:21:43 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-07-2026T15:21:43 - [TEST_STEP][PASSED] - custom.BrowserHelper.setupBrowserWindow(): custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:21:43 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+13-07-2026T15:21:43 - [MESSAGE][PASSED] - custom.BrowserHelper.setupBrowserWindow is PASSED
+
+13-07-2026T15:21:43 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:21:46 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:21:46 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("WEB/Home Page/header_digibox")): Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:21:46 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:21:46 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/icon-acount")): Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:21:47 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:21:47 - [TEST_STEP][PASSED] - custom.BrowserHelper.closeFirefoxPopup(): custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+13-07-2026T15:21:48 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+13-07-2026T15:21:48 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+13-07-2026T15:21:48 - [MESSAGE][PASSED] - Keys 'ESCAPE + ' sent to object: 'tempBody'
+
+13-07-2026T15:21:48 - [MESSAGE][PASSED] - Execute JavaScript 'document.body.click();' successfully
+
+13-07-2026T15:21:49 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+13-07-2026T15:21:49 - [MESSAGE][PASSED] - custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+13-07-2026T15:21:49 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/btn-create-new-account")): Object: 'Object Repository/WEB/Registration/btn-create-new-account' is clicked on
+
+13-07-2026T15:21:49 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/btn-create-new-account' is clicked on
+
+13-07-2026T15:21:49 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-Email"), "salahemailgmail.com"): Text 'salahemailgmail.com' is set on object 'Object Repository/WEB/Registration/field-Email'
+
+13-07-2026T15:21:52 - [MESSAGE][PASSED] - Text 'salahemailgmail.com' is set on object 'Object Repository/WEB/Registration/field-Email'
+
+13-07-2026T15:21:52 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-account"), ""): Text '' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:21:53 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:21:53 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-Password"), ""): Text '' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:21:54 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:21:54 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/btn-sign-up")): Object: 'Object Repository/WEB/Registration/btn-sign-up' is clicked on
+
+13-07-2026T15:21:54 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/btn-sign-up' is clicked on
+
+13-07-2026T15:21:54 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+13-07-2026T15:21:56 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+13-07-2026T15:21:56 - [TEST_STEP][PASSED] - emailError = verifyTextPresent("Please enter a valid email address", false, OPTIONAL): Text 'Please enter a valid email address' is present on page 
+
+13-07-2026T15:21:57 - [MESSAGE][PASSED] - Text 'Please enter a valid email address' is present on page 
+
+13-07-2026T15:21:57 - [TEST_STEP][PASSED] - requiredError = verifyTextPresent("Required", false, OPTIONAL): Text 'Required' is present on page 
+
+13-07-2026T15:21:57 - [MESSAGE][PASSED] - Text 'Required' is present on page 
+
+13-07-2026T15:21:57 - [TEST_STEP][PASSED] - if (!(emailError) || !(requiredError)): null
+
+13-07-2026T15:21:57 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-Email"), "agung.priyadi@gtech.digital"): Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/WEB/Registration/field-Email'
+
+13-07-2026T15:21:58 - [MESSAGE][PASSED] - Text 'agung.priyadi@gtech.digital' is set on object 'Object Repository/WEB/Registration/field-Email'
+
+13-07-2026T15:21:58 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-account"), "agungpriyadi"): Text 'agungpriyadi' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:21:58 - [MESSAGE][PASSED] - Text 'agungpriyadi' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:21:59 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-Password"), "Las"): Text 'Las' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:21:59 - [MESSAGE][PASSED] - Text 'Las' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:21:59 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/btn-sign-up")): Object: 'Object Repository/WEB/Registration/btn-sign-up' is clicked on
+
+13-07-2026T15:22:00 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/btn-sign-up' is clicked on
+
+13-07-2026T15:22:00 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+13-07-2026T15:22:02 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+13-07-2026T15:22:02 - [TEST_STEP][PASSED] - passwordLengthError = verifyTextPresent("Password length is 6-20 digits", false, OPTIONAL): Text 'Password length is 6-20 digits' is present on page 
+
+13-07-2026T15:22:02 - [MESSAGE][PASSED] - Text 'Password length is 6-20 digits' is present on page 
+
+13-07-2026T15:22:02 - [TEST_STEP][PASSED] - if (!(passwordLengthError)): null
+
+13-07-2026T15:22:02 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+13-07-2026T15:22:03 - [MESSAGE][PASSED] - Browser is closed
+
+13-07-2026T15:22:03 - [TEST_STEP][FAILED] - Start listener action : afterTestCase: null
+
+13-07-2026T15:22:03 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+13-07-2026T15:22:03 - [TEST_STEP][PASSED] - if (status == "PASSED"): null
+
+13-07-2026T15:22:03 - [TEST_STEP][PASSED] - saveScreenshot("PASSED"): null
+
+13-07-2026T15:22:03 - [TEST_STEP][PASSED] - try: null
+
+13-07-2026T15:22:03 - [TEST_STEP][PASSED] - tcName = getTestCaseName(): null
+
+13-07-2026T15:22:03 - [TEST_STEP][PASSED] - return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _): null
+
+13-07-2026T15:22:03 - [TEST_STEP][PASSED] - folderPath = Screenshot/$status/$tcName/: null
+
+13-07-2026T15:22:03 - [TEST_STEP][PASSED] - Files.createDirectories(Paths.get(folderPath)): null
+
+13-07-2026T15:22:03 - [TEST_STEP][PASSED] - screenshotPath = $folderPath$status_$this.getTimestamp().png: null
+
+13-07-2026T15:22:03 - [TEST_STEP][FAILED] - return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date()): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_88.run(S0713_88.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:22:03 - [TEST_STEP][FAILED] - takeScreenshot(screenshotPath): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_88.run(S0713_88.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:22:03 - [MESSAGE][FAILED] - Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_88.run(S0713_88.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:22:03 - [TEST_STEP][PASSED] - catch (Exception e): null
+
+13-07-2026T15:22:03 - [TEST_STEP][PASSED] - println("Failed to save screenshot: " + e.getMessage()): null
+
+13-07-2026T15:22:03 - [TEST_STEP][PASSED] - println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/WEB/Registration/Register with true data" time="23.841" classname="Test Cases/WEB/Registration/Register with true data" status="PASSED">
+         <system-out><![CDATA[13-07-2026T15:22:05 - [TEST_CASE][PASSED] - Test Cases/WEB/Registration/Register with true data: Test Cases/WEB/Registration/Register with true data
+
+13-07-2026T15:22:05 - [TEST_STEP][PASSED] - randomEmail = custom.RandomData.generateRandomEmail(): custom.RandomData.generateRandomEmail is PASSED
+
+13-07-2026T15:22:05 - [MESSAGE][PASSED] - custom.RandomData.generateRandomEmail is PASSED
+
+13-07-2026T15:22:05 - [TEST_STEP][PASSED] - randomUsername = custom.RandomData.generateRandomUsername(): custom.RandomData.generateRandomUsername is PASSED
+
+13-07-2026T15:22:05 - [MESSAGE][PASSED] - custom.RandomData.generateRandomUsername is PASSED
+
+13-07-2026T15:22:05 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-07-2026T15:22:05 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+13-07-2026T15:22:05 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-dev-shm-usage, --no-sandbox, --disable-gpu, --window-size=1920,1080]']
+
+13-07-2026T15:22:05 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-07-2026T15:22:06 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-07-2026T15:22:06 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+13-07-2026T15:22:07 - [MESSAGE][PASSED] - Current window maximized
+
+13-07-2026T15:22:07 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:22:09 - [MESSAGE][PASSED] - Navigate to 'https://d-digibox-kh.blubox.id/' successfully
+
+13-07-2026T15:22:09 - [TEST_STEP][PASSED] - waitForPageLoad(20): Wait for page load successfully
+
+13-07-2026T15:22:09 - [MESSAGE][PASSED] - Wait for page load successfully
+
+13-07-2026T15:22:09 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("WEB/Home Page/header_digibox")): Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:22:09 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Home Page/header_digibox' is visible
+
+13-07-2026T15:22:09 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/icon-acount")): Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:22:10 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/icon-acount' is clicked on
+
+13-07-2026T15:22:10 - [TEST_STEP][PASSED] - custom.BrowserHelper.closeFirefoxPopup(): custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+13-07-2026T15:22:11 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+13-07-2026T15:22:11 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+13-07-2026T15:22:11 - [MESSAGE][PASSED] - Keys 'ESCAPE + ' sent to object: 'tempBody'
+
+13-07-2026T15:22:11 - [MESSAGE][PASSED] - Execute JavaScript 'document.body.click();' successfully
+
+13-07-2026T15:22:12 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+13-07-2026T15:22:12 - [MESSAGE][PASSED] - custom.BrowserHelper.closeFirefoxPopup is PASSED
+
+13-07-2026T15:22:12 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Registration/btn-create-new-account"), 10): Object 'Object Repository/WEB/Registration/btn-create-new-account' is clickable
+
+13-07-2026T15:22:13 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Registration/btn-create-new-account' is clickable
+
+13-07-2026T15:22:13 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/btn-create-new-account")): Object: 'Object Repository/WEB/Registration/btn-create-new-account' is clicked on
+
+13-07-2026T15:22:13 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/btn-create-new-account' is clicked on
+
+13-07-2026T15:22:13 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-Email"), randomEmail): Text 'agungpriyadidof@gmail.com' is set on object 'Object Repository/WEB/Registration/field-Email'
+
+13-07-2026T15:22:15 - [MESSAGE][PASSED] - Text 'agungpriyadidof@gmail.com' is set on object 'Object Repository/WEB/Registration/field-Email'
+
+13-07-2026T15:22:15 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-account"), randomUsername): Text 'agung9254488606' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:22:16 - [MESSAGE][PASSED] - Text 'agung9254488606' is set on object 'Object Repository/WEB/Registration/field-account'
+
+13-07-2026T15:22:16 - [TEST_STEP][PASSED] - setText(findTestObject("WEB/Registration/field-Password"), "Laskar123456"): Text 'Laskar123456' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:22:17 - [MESSAGE][PASSED] - Text 'Laskar123456' is set on object 'Object Repository/WEB/Registration/field-Password'
+
+13-07-2026T15:22:17 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("WEB/Registration/btn-sign-up"), 10): Object 'Object Repository/WEB/Registration/btn-sign-up' is clickable
+
+13-07-2026T15:22:18 - [MESSAGE][PASSED] - Object 'Object Repository/WEB/Registration/btn-sign-up' is clickable
+
+13-07-2026T15:22:18 - [TEST_STEP][PASSED] - click(findTestObject("WEB/Registration/btn-sign-up")): Object: 'Object Repository/WEB/Registration/btn-sign-up' is clicked on
+
+13-07-2026T15:22:18 - [MESSAGE][PASSED] - Object: 'Object Repository/WEB/Registration/btn-sign-up' is clicked on
+
+13-07-2026T15:22:18 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+13-07-2026T15:22:20 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+13-07-2026T15:22:20 - [TEST_STEP][WARNING] - isStillOnRegister = verifyElementPresent(findTestObject("WEB/Registration/btn-sign-up"), 5, OPTIONAL): com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/WEB/Registration/btn-sign-up' located by 'By.xpath: //span[text()='Sign Up']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/WEB/Registration/btn-sign-up' located by 'By.xpath: //span[text()='Sign Up']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1550)
+	at Register with true data.run(Register with true data:78)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_88.run(S0713_88.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+13-07-2026T15:22:25 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/WEB/Registration/btn-sign-up' located by 'By.xpath: //span[text()='Sign Up']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/WEB/Registration/btn-sign-up' located by 'By.xpath: //span[text()='Sign Up']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1550)
+	at Register with true data.run(Register with true data:78)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:203)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:115)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:504)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:495)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:474)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:466)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_88.run(S0713_88.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+)
+
+13-07-2026T15:22:25 - [TEST_STEP][PASSED] - if (isStillOnRegister): null
+
+13-07-2026T15:22:25 - [TEST_STEP][PASSED] - comment("Email used: " + randomEmail): Email used: agungpriyadidof@gmail.com
+
+13-07-2026T15:22:25 - [MESSAGE][INFO] - Email used: agungpriyadidof@gmail.com
+
+13-07-2026T15:22:25 - [TEST_STEP][PASSED] - comment("Username used: " + randomUsername): Username used: agung9254488606
+
+13-07-2026T15:22:25 - [MESSAGE][INFO] - Username used: agung9254488606
+
+13-07-2026T15:22:25 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+13-07-2026T15:22:26 - [MESSAGE][PASSED] - Browser is closed
+
+13-07-2026T15:22:26 - [TEST_STEP][FAILED] - Start listener action : afterTestCase: null
+
+13-07-2026T15:22:26 - [TEST_STEP][PASSED] - status = testCaseContext.getTestCaseStatus(): null
+
+13-07-2026T15:22:26 - [TEST_STEP][PASSED] - if (status == "PASSED"): null
+
+13-07-2026T15:22:26 - [TEST_STEP][PASSED] - saveScreenshot("PASSED"): null
+
+13-07-2026T15:22:26 - [TEST_STEP][PASSED] - try: null
+
+13-07-2026T15:22:26 - [TEST_STEP][PASSED] - tcName = getTestCaseName(): null
+
+13-07-2026T15:22:26 - [TEST_STEP][PASSED] - return com.kms.katalon.core.configuration.RunConfiguration.getExecutionSourceName().replace(Test Cases/, ).replaceAll([\\/:*?"<>|], _): null
+
+13-07-2026T15:22:26 - [TEST_STEP][PASSED] - folderPath = Screenshot/$status/$tcName/: null
+
+13-07-2026T15:22:26 - [TEST_STEP][PASSED] - Files.createDirectories(Paths.get(folderPath)): null
+
+13-07-2026T15:22:27 - [TEST_STEP][PASSED] - screenshotPath = $folderPath$status_$this.getTimestamp().png: null
+
+13-07-2026T15:22:27 - [TEST_STEP][FAILED] - return new java.text.SimpleDateFormat(yyyyMMdd_HHmmss).format(new java.util.Date()): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_88.run(S0713_88.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:22:27 - [TEST_STEP][FAILED] - takeScreenshot(screenshotPath): Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_88.run(S0713_88.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:22:27 - [MESSAGE][FAILED] - Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:93)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:99)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:3076)
+	at AutoScreenshotListener.saveScreenshot(AutoScreenshotListener.groovy:73)
+	at AutoScreenshotListener.afterTestCase(AutoScreenshotListener.groovy:113)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:47)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:366)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:206)
+	at S0713_88.run(S0713_88.groovy:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: driver.version: unknown
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:600)
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:585)
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:559)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+)
+
+13-07-2026T15:22:27 - [TEST_STEP][PASSED] - catch (Exception e): null
+
+13-07-2026T15:22:27 - [TEST_STEP][PASSED] - println("Failed to save screenshot: " + e.getMessage()): null
+
+13-07-2026T15:22:27 - [TEST_STEP][PASSED] - println(Test Case '$testCaseContext.getTestCaseId()' finished with status: $status): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[13-07-2026T15:20:56 - [TEST_SUITE][PASSED] - Registration_TestSuite: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

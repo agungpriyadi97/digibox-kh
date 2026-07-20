@@ -1,0 +1,118 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Password_TestSuite,Chrome 149.0.7827.103,,,07-07-2026 09:28:49,07-07-2026 09:29:59,1m - 10.181s,PASSED
+,,,,,,,
+Test Cases/WEB/Password/Ensure user cannot input invalid password length,Chrome 149.0.7827.103,,,07-07-2026 09:28:49,07-07-2026 09:29:10,20.734s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,07-07-2026 09:28:49,07-07-2026 09:28:53,3.216s,PASSED
+maximizeWindow(),Chrome 149.0.7827.103,,,07-07-2026 09:28:53,07-07-2026 09:28:53,0.055s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,07-07-2026 09:28:53,07-07-2026 09:28:55,1.963s,PASSED
+waitForPageLoad(20),Chrome 149.0.7827.103,,,07-07-2026 09:28:55,07-07-2026 09:28:55,0.136s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 15)",Chrome 149.0.7827.103,,,07-07-2026 09:28:55,07-07-2026 09:28:55,0.409s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,07-07-2026 09:28:55,07-07-2026 09:28:56,0.718s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:28:56,07-07-2026 09:28:56,0.335s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,07-07-2026 09:28:56,07-07-2026 09:28:57,0.359s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:28:57,07-07-2026 09:28:57,0.696s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""))",Chrome 149.0.7827.103,,,07-07-2026 09:28:57,07-07-2026 09:28:58,0.341s,PASSED
+"email = ""agung.priyadi@gtech.digital""",Chrome 149.0.7827.103,,,07-07-2026 09:28:58,07-07-2026 09:28:58,0.003s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:28:58,07-07-2026 09:28:58,0.458s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), email)",Chrome 149.0.7827.103,,,07-07-2026 09:28:58,07-07-2026 09:28:59,0.702s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Send validation code to email""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:28:59,07-07-2026 09:28:59,0.381s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Send validation code to email""))",Chrome 149.0.7827.103,,,07-07-2026 09:28:59,07-07-2026 09:28:59,0.311s,PASSED
+delay(2),Chrome 149.0.7827.103,,,07-07-2026 09:28:59,07-07-2026 09:29:02,2.034s,PASSED
+"successMsgShown = verifyTextPresent(""Validation code sent successfully!"", false, OPTIONAL)",Chrome 149.0.7827.103,,,07-07-2026 09:29:02,07-07-2026 09:29:02,0.294s,PASSED
+if (!(successMsgShown)),Chrome 149.0.7827.103,,,07-07-2026 09:29:02,07-07-2026 09:29:02,0.000s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Validation Code""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:02,07-07-2026 09:29:02,0.251s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Validation Code""), ""123456"")",Chrome 149.0.7827.103,,,07-07-2026 09:29:02,07-07-2026 09:29:03,0.599s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:03,07-07-2026 09:29:03,0.475s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), ""123"")",Chrome 149.0.7827.103,,,07-07-2026 09:29:03,07-07-2026 09:29:04,0.625s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:04,07-07-2026 09:29:04,0.494s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:04,07-07-2026 09:29:05,0.336s,PASSED
+delay(2),Chrome 149.0.7827.103,,,07-07-2026 09:29:05,07-07-2026 09:29:07,2.021s,PASSED
+"errorShown = verifyTextPresent(""Password length is 6-20 digits"", false, OPTIONAL)",Chrome 149.0.7827.103,,,07-07-2026 09:29:07,07-07-2026 09:29:07,0.278s,PASSED
+"verifyEqual(errorShown, true)",Chrome 149.0.7827.103,,,07-07-2026 09:29:07,07-07-2026 09:29:07,0.012s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,07-07-2026 09:29:07,07-07-2026 09:29:07,0.489s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,07-07-2026 09:29:07,07-07-2026 09:29:08,0.181s,FAILED
+,,,,,,,
+Test Cases/WEB/Password/Ensure user cannot reset password using invalid validation code,Chrome 149.0.7827.103,,,07-07-2026 09:29:10,07-07-2026 09:29:29,19.039s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,07-07-2026 09:29:10,07-07-2026 09:29:11,1.100s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,07-07-2026 09:29:11,07-07-2026 09:29:11,0.152s,PASSED
+enableSmartWait(),Chrome 149.0.7827.103,,,07-07-2026 09:29:11,07-07-2026 09:29:11,0.015s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,07-07-2026 09:29:11,07-07-2026 09:29:13,1.857s,PASSED
+waitForPageLoad(20),Chrome 149.0.7827.103,,,07-07-2026 09:29:13,07-07-2026 09:29:13,0.030s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 15)",Chrome 149.0.7827.103,,,07-07-2026 09:29:13,07-07-2026 09:29:13,0.297s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:13,07-07-2026 09:29:14,0.280s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:14,07-07-2026 09:29:14,0.611s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:14,07-07-2026 09:29:14,0.340s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:14,07-07-2026 09:29:15,0.746s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:15,07-07-2026 09:29:16,0.368s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:16,07-07-2026 09:29:16,0.452s,PASSED
+"email = ""agung.priyadi@gtech.digital""",Chrome 149.0.7827.103,,,07-07-2026 09:29:16,07-07-2026 09:29:16,0.002s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), email)",Chrome 149.0.7827.103,,,07-07-2026 09:29:16,07-07-2026 09:29:17,0.718s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Send validation code to email""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:17,07-07-2026 09:29:17,0.381s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Send validation code to email""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:17,07-07-2026 09:29:17,0.311s,PASSED
+delay(2),Chrome 149.0.7827.103,,,07-07-2026 09:29:17,07-07-2026 09:29:19,2.026s,PASSED
+"successMsg = verifyTextPresent(""Validation code sent successfully!"", false, OPTIONAL)",Chrome 149.0.7827.103,,,07-07-2026 09:29:19,07-07-2026 09:29:20,0.307s,PASSED
+if (!(successMsg)),Chrome 149.0.7827.103,,,07-07-2026 09:29:20,07-07-2026 09:29:20,0.003s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Validation Code""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:20,07-07-2026 09:29:20,0.255s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Validation Code""), ""123456"")",Chrome 149.0.7827.103,,,07-07-2026 09:29:20,07-07-2026 09:29:21,0.630s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:21,07-07-2026 09:29:21,0.475s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), ""Laskar123456"")",Chrome 149.0.7827.103,,,07-07-2026 09:29:21,07-07-2026 09:29:22,0.626s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:22,07-07-2026 09:29:22,0.487s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:22,07-07-2026 09:29:23,0.632s,PASSED
+delay(3),Chrome 149.0.7827.103,,,07-07-2026 09:29:23,07-07-2026 09:29:26,3.016s,PASSED
+"invalidCodeMsg = verifyTextPresent(""Invalid code"", false, OPTIONAL)",Chrome 149.0.7827.103,,,07-07-2026 09:29:26,07-07-2026 09:29:26,0.243s,PASSED
+"verifyEqual(invalidCodeMsg, true)",Chrome 149.0.7827.103,,,07-07-2026 09:29:26,07-07-2026 09:29:26,0.002s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,07-07-2026 09:29:26,07-07-2026 09:29:27,0.487s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,07-07-2026 09:29:27,07-07-2026 09:29:27,0.031s,FAILED
+,,,,,,,
+Test Cases/WEB/Password/Ensure user Empty Email Field on Forgot Password,Chrome 149.0.7827.103,,,07-07-2026 09:29:29,07-07-2026 09:29:42,13.349s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,07-07-2026 09:29:29,07-07-2026 09:29:30,1.096s,PASSED
+maximizeWindow(),Chrome 149.0.7827.103,,,07-07-2026 09:29:30,07-07-2026 09:29:30,0.032s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,07-07-2026 09:29:30,07-07-2026 09:29:32,1.995s,PASSED
+waitForPageLoad(20),Chrome 149.0.7827.103,,,07-07-2026 09:29:32,07-07-2026 09:29:32,0.026s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 15)",Chrome 149.0.7827.103,,,07-07-2026 09:29:32,07-07-2026 09:29:32,0.276s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:32,07-07-2026 09:29:33,0.287s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:33,07-07-2026 09:29:33,0.669s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:33,07-07-2026 09:29:34,0.411s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:34,07-07-2026 09:29:34,0.721s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:34,07-07-2026 09:29:35,0.326s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:35,07-07-2026 09:29:35,0.472s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), """")",Chrome 149.0.7827.103,,,07-07-2026 09:29:35,07-07-2026 09:29:36,0.592s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:36,07-07-2026 09:29:36,0.243s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), """")",Chrome 149.0.7827.103,,,07-07-2026 09:29:36,07-07-2026 09:29:37,0.601s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:37,07-07-2026 09:29:37,0.483s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:37,07-07-2026 09:29:37,0.339s,PASSED
+delay(2),Chrome 149.0.7827.103,,,07-07-2026 09:29:37,07-07-2026 09:29:39,2.005s,PASSED
+"requiredMsg = verifyTextPresent(""Required"", false, OPTIONAL)",Chrome 149.0.7827.103,,,07-07-2026 09:29:39,07-07-2026 09:29:40,0.272s,PASSED
+"verifyEqual(requiredMsg, true)",Chrome 149.0.7827.103,,,07-07-2026 09:29:40,07-07-2026 09:29:40,0.004s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,07-07-2026 09:29:40,07-07-2026 09:29:40,0.350s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,07-07-2026 09:29:40,07-07-2026 09:29:40,0.024s,FAILED
+,,,,,,,
+Test Cases/WEB/Password/Ensure user Empty Validation Code,Chrome 149.0.7827.103,,,07-07-2026 09:29:42,07-07-2026 09:29:59,16.740s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,07-07-2026 09:29:42,07-07-2026 09:29:43,0.977s,PASSED
+maximizeWindow(),Chrome 149.0.7827.103,,,07-07-2026 09:29:43,07-07-2026 09:29:43,0.032s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,07-07-2026 09:29:43,07-07-2026 09:29:45,1.768s,PASSED
+waitForPageLoad(20),Chrome 149.0.7827.103,,,07-07-2026 09:29:45,07-07-2026 09:29:45,0.025s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 15)",Chrome 149.0.7827.103,,,07-07-2026 09:29:45,07-07-2026 09:29:45,0.278s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:45,07-07-2026 09:29:45,0.264s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:45,07-07-2026 09:29:46,0.502s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:46,07-07-2026 09:29:46,0.320s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:46,07-07-2026 09:29:47,0.720s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Forgot passwords""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:47,07-07-2026 09:29:47,0.304s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:47,07-07-2026 09:29:48,0.463s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Email""), ""agung.priyadi@gtech.digital"")",Chrome 149.0.7827.103,,,07-07-2026 09:29:48,07-07-2026 09:29:48,0.623s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Send validation code to email""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:48,07-07-2026 09:29:49,0.478s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Send validation code to email""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:49,07-07-2026 09:29:49,0.298s,PASSED
+delay(2),Chrome 149.0.7827.103,,,07-07-2026 09:29:49,07-07-2026 09:29:51,2.018s,PASSED
+"successMsg = verifyTextPresent(""Validation code sent successfully!"", false, OPTIONAL)",Chrome 149.0.7827.103,,,07-07-2026 09:29:51,07-07-2026 09:29:51,0.277s,PASSED
+if (!(successMsg)),Chrome 149.0.7827.103,,,07-07-2026 09:29:51,07-07-2026 09:29:51,0.001s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:51,07-07-2026 09:29:52,0.239s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_New Password""), ""Laskar123456"")",Chrome 149.0.7827.103,,,07-07-2026 09:29:52,07-07-2026 09:29:52,0.570s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Validation Code""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:52,07-07-2026 09:29:53,0.458s,PASSED
+"setText(findTestObject(""WEB/Password/Page_Forgot Password/txtField_Validation Code""), """")",Chrome 149.0.7827.103,,,07-07-2026 09:29:53,07-07-2026 09:29:53,0.558s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:29:53,07-07-2026 09:29:54,0.472s,PASSED
+"click(findTestObject(""WEB/Password/Page_Forgot Password/btn_Reset Password""))",Chrome 149.0.7827.103,,,07-07-2026 09:29:54,07-07-2026 09:29:54,0.277s,PASSED
+delay(2),Chrome 149.0.7827.103,,,07-07-2026 09:29:54,07-07-2026 09:29:56,2.019s,PASSED
+"requiredMsg = verifyTextPresent(""Required"", false, OPTIONAL)",Chrome 149.0.7827.103,,,07-07-2026 09:29:56,07-07-2026 09:29:56,0.280s,PASSED
+"verifyEqual(requiredMsg, true)",Chrome 149.0.7827.103,,,07-07-2026 09:29:56,07-07-2026 09:29:56,0.002s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,07-07-2026 09:29:56,07-07-2026 09:29:57,0.388s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,07-07-2026 09:29:57,07-07-2026 09:29:57,0.022s,FAILED

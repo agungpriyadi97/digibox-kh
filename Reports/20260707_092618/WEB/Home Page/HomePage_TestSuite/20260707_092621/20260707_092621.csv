@@ -1,0 +1,180 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+HomePage_TestSuite,Chrome 149.0.7827.103,,,07-07-2026 09:30:03,07-07-2026 09:32:28,2m - 25.286s,PASSED
+,,,,,,,
+Test Cases/WEB/Home Page/Home - Ensure Menu Login with data akun and password not valid,Chrome 149.0.7827.103,,,07-07-2026 09:30:03,07-07-2026 09:30:19,15.841s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,07-07-2026 09:30:04,07-07-2026 09:30:07,3.046s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 149.0.7827.103,,,07-07-2026 09:30:07,07-07-2026 09:30:07,0.129s,PASSED
+enableSmartWait(),Chrome 149.0.7827.103,,,07-07-2026 09:30:07,07-07-2026 09:30:07,0.018s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,07-07-2026 09:30:07,07-07-2026 09:30:09,2.091s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,07-07-2026 09:30:09,07-07-2026 09:30:09,0.112s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,07-07-2026 09:30:09,07-07-2026 09:30:09,0.129s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:30:09,07-07-2026 09:30:09,0.381s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,07-07-2026 09:30:09,07-07-2026 09:30:10,0.576s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:30:10,07-07-2026 09:30:10,0.296s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,07-07-2026 09:30:10,07-07-2026 09:30:11,0.334s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:30:11,07-07-2026 09:30:11,0.690s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi2"")",Chrome 149.0.7827.103,,,07-07-2026 09:30:11,07-07-2026 09:30:12,0.667s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar1234560"")",Chrome 149.0.7827.103,,,07-07-2026 09:30:12,07-07-2026 09:30:13,0.879s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:30:13,07-07-2026 09:30:13,0.508s,PASSED
+"enhancedClick(findTestObject(""WEB/Login/btn-sign in""))",Chrome 149.0.7827.103,,,07-07-2026 09:30:13,07-07-2026 09:30:14,0.291s,PASSED
+loginError = new com.kms.katalon.core.testobject.TestObject(),Chrome 149.0.7827.103,,,07-07-2026 09:30:14,07-07-2026 09:30:14,0.002s,PASSED
+"loginError.addProperty(""xpath"", EQUALS, ""//div[@role='alert']//p[contains(text(),'Account or password is not correct')]"")",Chrome 149.0.7827.103,,,07-07-2026 09:30:14,07-07-2026 09:30:14,0.009s,PASSED
+"isVisible = waitForElementVisible(loginError, 10, OPTIONAL)",Chrome 149.0.7827.103,,,07-07-2026 09:30:14,07-07-2026 09:30:15,0.845s,PASSED
+"comment(""Login Error Visible : "" + isVisible)",Chrome 149.0.7827.103,,,07-07-2026 09:30:15,07-07-2026 09:30:15,0.074s,PASSED
+"verifyEqual(isVisible, true)",Chrome 149.0.7827.103,,,07-07-2026 09:30:15,07-07-2026 09:30:15,0.066s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,07-07-2026 09:30:15,07-07-2026 09:30:16,1.164s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,07-07-2026 09:30:16,07-07-2026 09:30:17,0.866s,FAILED
+,,,,,,,
+Test Cases/WEB/Home Page/Home - Ensure Menu Login with data akun and password valid,Chrome 149.0.7827.103,,,07-07-2026 09:30:19,07-07-2026 09:30:40,21.444s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,07-07-2026 09:30:19,07-07-2026 09:30:21,1.430s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 149.0.7827.103,,,07-07-2026 09:30:21,07-07-2026 09:30:21,0.165s,PASSED
+enableSmartWait(),Chrome 149.0.7827.103,,,07-07-2026 09:30:21,07-07-2026 09:30:21,0.032s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,07-07-2026 09:30:21,07-07-2026 09:30:23,1.848s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,07-07-2026 09:30:23,07-07-2026 09:30:23,0.142s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,07-07-2026 09:30:23,07-07-2026 09:30:23,0.077s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:30:23,07-07-2026 09:30:23,0.343s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,07-07-2026 09:30:23,07-07-2026 09:30:24,0.655s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:30:24,07-07-2026 09:30:24,0.399s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,07-07-2026 09:30:24,07-07-2026 09:30:25,0.558s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:30:25,07-07-2026 09:30:26,0.672s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Chrome 149.0.7827.103,,,07-07-2026 09:30:26,07-07-2026 09:30:27,1.241s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Chrome 149.0.7827.103,,,07-07-2026 09:30:27,07-07-2026 09:30:28,1.219s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:30:28,07-07-2026 09:30:29,0.485s,PASSED
+"enhancedClick(findTestObject(""WEB/Login/btn-sign in""))",Chrome 149.0.7827.103,,,07-07-2026 09:30:29,07-07-2026 09:30:29,0.456s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,07-07-2026 09:30:29,07-07-2026 09:30:29,0.032s,PASSED
+delay(5),Chrome 149.0.7827.103,,,07-07-2026 09:30:29,07-07-2026 09:30:34,5.047s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:30:34,07-07-2026 09:30:35,0.522s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,07-07-2026 09:30:35,07-07-2026 09:30:35,0.468s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/verify-succes-acount-login""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:30:35,07-07-2026 09:30:36,0.359s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/verify-succes-acount-login""))",Chrome 149.0.7827.103,,,07-07-2026 09:30:36,07-07-2026 09:30:36,0.474s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,07-07-2026 09:30:36,07-07-2026 09:30:38,2.102s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,07-07-2026 09:30:38,07-07-2026 09:30:38,0.075s,FAILED
+,,,,,,,
+Test Cases/WEB/Home Page/Home - Ensure Menu Search,Chrome 149.0.7827.103,,,07-07-2026 09:30:40,07-07-2026 09:30:56,15.195s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,07-07-2026 09:30:41,07-07-2026 09:30:42,1.301s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 149.0.7827.103,,,07-07-2026 09:30:42,07-07-2026 09:30:42,0.128s,PASSED
+enableSmartWait(),Chrome 149.0.7827.103,,,07-07-2026 09:30:42,07-07-2026 09:30:42,0.001s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,07-07-2026 09:30:42,07-07-2026 09:30:44,1.821s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,07-07-2026 09:30:44,07-07-2026 09:30:44,0.160s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,07-07-2026 09:30:44,07-07-2026 09:30:44,0.111s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:30:44,07-07-2026 09:30:45,0.820s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,07-07-2026 09:30:45,07-07-2026 09:30:46,0.361s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Home Page/Search/icon-search""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:30:46,07-07-2026 09:30:46,0.395s,PASSED
+"enhancedClick(findTestObject(""WEB/Home Page/Search/icon-search""))",Chrome 149.0.7827.103,,,07-07-2026 09:30:46,07-07-2026 09:30:46,0.486s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Search/field-search""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:30:46,07-07-2026 09:30:47,0.326s,PASSED
+"setText(findTestObject(""WEB/Home Page/Search/field-search""), ""IPHONE 11 PRO 128 GB DEEP PURPLE"")",Chrome 149.0.7827.103,,,07-07-2026 09:30:47,07-07-2026 09:30:48,1.328s,PASSED
+"sendKeys(findTestObject(""WEB/Home Page/Search/field-search""), Keys.chord(ENTER))",Chrome 149.0.7827.103,,,07-07-2026 09:30:48,07-07-2026 09:30:49,0.566s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,07-07-2026 09:30:49,07-07-2026 09:30:49,0.036s,PASSED
+delay(3),Chrome 149.0.7827.103,,,07-07-2026 09:30:49,07-07-2026 09:30:52,3.016s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Search/verify-product-iphone-11-pro""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:30:52,07-07-2026 09:30:52,0.469s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/Search/verify-product-iphone-11-pro""))",Chrome 149.0.7827.103,,,07-07-2026 09:30:52,07-07-2026 09:30:53,0.437s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,07-07-2026 09:30:53,07-07-2026 09:30:53,0.782s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,07-07-2026 09:30:53,07-07-2026 09:30:53,0.088s,FAILED
+,,,,,,,
+Test Cases/WEB/Home Page/Verify all product category menus are displayed correctly on the homepage,Chrome 149.0.7827.103,,,07-07-2026 09:30:56,07-07-2026 09:32:28,1m - 32.430s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,07-07-2026 09:30:56,07-07-2026 09:30:58,1.205s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 149.0.7827.103,,,07-07-2026 09:30:58,07-07-2026 09:30:58,0.097s,PASSED
+enableSmartWait(),Chrome 149.0.7827.103,,,07-07-2026 09:30:58,07-07-2026 09:30:58,0.007s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,07-07-2026 09:30:58,07-07-2026 09:31:00,1.772s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,07-07-2026 09:31:00,07-07-2026 09:31:00,0.066s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,07-07-2026 09:31:00,07-07-2026 09:31:00,0.069s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:31:00,07-07-2026 09:31:00,0.395s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:00,07-07-2026 09:31:01,0.630s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:31:01,07-07-2026 09:31:01,0.405s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:01,07-07-2026 09:31:02,0.573s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:31:02,07-07-2026 09:31:02,0.743s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Chrome 149.0.7827.103,,,07-07-2026 09:31:02,07-07-2026 09:31:04,1.196s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Chrome 149.0.7827.103,,,07-07-2026 09:31:04,07-07-2026 09:31:05,1.321s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Chrome 149.0.7827.103,,,07-07-2026 09:31:05,07-07-2026 09:31:06,0.554s,PASSED
+"enhancedClick(findTestObject(""WEB/Login/btn-sign in""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:06,07-07-2026 09:31:06,0.455s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,07-07-2026 09:31:06,07-07-2026 09:31:06,0.036s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:06,07-07-2026 09:31:07,0.504s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:07,07-07-2026 09:31:07,0.668s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Iphone/sub-menu-iPhone 14 Pro Max""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:07,07-07-2026 09:31:08,0.609s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:08,07-07-2026 09:31:09,1.223s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:09,07-07-2026 09:31:10,0.584s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro Max""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:10,07-07-2026 09:31:10,0.612s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:10,07-07-2026 09:31:11,0.809s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:11,07-07-2026 09:31:12,1.118s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Iphone/sub-menu-iPhone 13 Pro""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:12,07-07-2026 09:31:13,0.559s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:13,07-07-2026 09:31:15,1.870s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:15,07-07-2026 09:31:15,0.475s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Iphone/sub-menu-iPhone 13""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:15,07-07-2026 09:31:16,0.564s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:16,07-07-2026 09:31:16,0.754s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:16,07-07-2026 09:31:18,1.269s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Iphone/sub-menu-iPhone 13 mini""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:18,07-07-2026 09:31:18,0.514s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:18,07-07-2026 09:31:20,1.818s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:20,07-07-2026 09:31:20,0.490s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Iphone/sub-menu-iPhone 12""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:20,07-07-2026 09:31:21,0.463s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:21,07-07-2026 09:31:23,1.894s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Iphone/menu-iphone""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:23,07-07-2026 09:31:23,0.492s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Iphone/sub-menu-iPhone 11""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:23,07-07-2026 09:31:24,0.592s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:24,07-07-2026 09:31:26,1.869s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:26,07-07-2026 09:31:26,0.506s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Ipad/sub-menu-iPad pro""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:26,07-07-2026 09:31:27,0.495s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:27,07-07-2026 09:31:29,1.871s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:29,07-07-2026 09:31:29,0.478s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Ipad/sub-menu-iPad Air""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:29,07-07-2026 09:31:30,0.560s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:30,07-07-2026 09:31:31,1.809s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:31,07-07-2026 09:31:32,0.520s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Ipad/sub-menu-iPad mini""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:32,07-07-2026 09:31:33,0.599s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:33,07-07-2026 09:31:34,1.843s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Ipad/menu-ipad""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:34,07-07-2026 09:31:35,0.466s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Ipad/sub-menu-iPad (Gen 10th)""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:35,07-07-2026 09:31:35,0.568s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:35,07-07-2026 09:31:37,1.684s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:37,07-07-2026 09:31:38,0.588s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 7""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:38,07-07-2026 09:31:38,0.551s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:38,07-07-2026 09:31:40,1.838s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:40,07-07-2026 09:31:41,0.515s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 6""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:41,07-07-2026 09:31:41,0.535s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:41,07-07-2026 09:31:43,1.576s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:43,07-07-2026 09:31:43,0.506s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch 3""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:43,07-07-2026 09:31:44,0.482s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:44,07-07-2026 09:31:46,1.852s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:46,07-07-2026 09:31:46,0.470s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch SE""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:46,07-07-2026 09:31:47,0.819s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:47,07-07-2026 09:31:48,0.638s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Apple Watch/menu-Apple Watch""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:48,07-07-2026 09:31:49,1.390s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Apple Watch/sub-menu-Apple Watch Ultra""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:49,07-07-2026 09:31:50,0.589s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Mac/menu-Mac""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:50,07-07-2026 09:31:50,0.675s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Mac/menu-Mac""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:50,07-07-2026 09:31:51,1.210s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Mac/sub-menu-MacBook Pro""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:51,07-07-2026 09:31:52,0.553s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Mac/menu-Mac""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:52,07-07-2026 09:31:53,0.814s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Mac/menu-Mac""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:53,07-07-2026 09:31:54,1.206s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Mac/sub-menu-MacBook Air""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:54,07-07-2026 09:31:54,0.457s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:54,07-07-2026 09:31:56,1.818s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:56,07-07-2026 09:31:57,0.481s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Airpods/sub-menu-AirPods Max""))",Chrome 149.0.7827.103,,,07-07-2026 09:31:57,07-07-2026 09:31:57,0.512s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:31:57,07-07-2026 09:31:59,1.812s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:31:59,07-07-2026 09:32:00,0.517s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Airpods/sub-menu-AirPods Pro""))",Chrome 149.0.7827.103,,,07-07-2026 09:32:00,07-07-2026 09:32:00,0.586s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:32:00,07-07-2026 09:32:02,1.802s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:32:02,07-07-2026 09:32:03,0.492s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Airpods/sub-menu-AirPods 3rd Generation""))",Chrome 149.0.7827.103,,,07-07-2026 09:32:03,07-07-2026 09:32:03,0.545s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:32:03,07-07-2026 09:32:05,1.743s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Airpods/menu-AirPods""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:32:05,07-07-2026 09:32:05,0.463s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Airpods/sub-menu-AirPods 2nd Generation""))",Chrome 149.0.7827.103,,,07-07-2026 09:32:05,07-07-2026 09:32:06,0.518s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:32:06,07-07-2026 09:32:06,0.702s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:32:06,07-07-2026 09:32:08,1.227s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Accessoris/sub-menu-Aksesoris iPhone""))",Chrome 149.0.7827.103,,,07-07-2026 09:32:08,07-07-2026 09:32:08,0.510s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:32:08,07-07-2026 09:32:10,1.818s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:32:10,07-07-2026 09:32:11,0.487s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Accessoris/sub-menu-Aksesoris iPad""))",Chrome 149.0.7827.103,,,07-07-2026 09:32:11,07-07-2026 09:32:11,0.514s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:32:11,07-07-2026 09:32:13,1.793s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:32:13,07-07-2026 09:32:13,0.500s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Accessoris/sub-menu-MacBook Accessories""))",Chrome 149.0.7827.103,,,07-07-2026 09:32:13,07-07-2026 09:32:14,0.533s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:32:14,07-07-2026 09:32:14,0.630s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Accessoris/menu-accessoris""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:32:14,07-07-2026 09:32:16,1.508s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Accessoris/sub-menu-Watch accessories""))",Chrome 149.0.7827.103,,,07-07-2026 09:32:16,07-07-2026 09:32:17,0.958s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Promotion/menu-Promotion""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:32:17,07-07-2026 09:32:19,1.851s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Promotion/menu-Promotion""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:32:19,07-07-2026 09:32:19,0.470s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Promotion/sub-menu-Digimania August 2022""))",Chrome 149.0.7827.103,,,07-07-2026 09:32:19,07-07-2026 09:32:20,0.509s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Promotion/menu-Promotion""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:32:20,07-07-2026 09:32:21,1.697s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Promotion/menu-Promotion""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:32:21,07-07-2026 09:32:22,0.558s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Promotion/sub-menu-Flash Sale""))",Chrome 149.0.7827.103,,,07-07-2026 09:32:22,07-07-2026 09:32:23,0.523s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education""), 10)",Chrome 149.0.7827.103,,,07-07-2026 09:32:23,07-07-2026 09:32:23,0.789s,PASSED
+"mouseOver(findTestObject(""WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education""), STOP_ON_FAILURE)",Chrome 149.0.7827.103,,,07-07-2026 09:32:23,07-07-2026 09:32:24,0.542s,PASSED
+"click(findTestObject(""WEB/Home Page/Page Enterprice and Education/menu-Enterprise and Education""))",Chrome 149.0.7827.103,,,07-07-2026 09:32:24,07-07-2026 09:32:25,0.675s,PASSED
+waitForPageLoad(10),Chrome 149.0.7827.103,,,07-07-2026 09:32:25,07-07-2026 09:32:25,0.034s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,07-07-2026 09:32:25,07-07-2026 09:32:25,0.840s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,07-07-2026 09:32:25,07-07-2026 09:32:26,0.103s,FAILED

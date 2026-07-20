@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ProductCart_TestSuite,Chrome 148.0.7778.217,,,10-06-2026 14:39:18,10-06-2026 14:40:00,42.459s,PASSED
+,,,,,,,
+Test Cases/WEB/Product and Cart/Ensure user can add - update - remove product to shopping cart,Chrome 148.0.7778.217,,,10-06-2026 14:39:18,10-06-2026 14:40:00,41.502s,PASSED
+openBrowser(URL),Chrome 148.0.7778.217,,,10-06-2026 14:39:20,10-06-2026 14:39:28,7.645s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/header_digibox""))",Chrome 148.0.7778.217,,,10-06-2026 14:39:28,10-06-2026 14:39:32,4.267s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Chrome 148.0.7778.217,,,10-06-2026 14:39:32,10-06-2026 14:39:33,0.706s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Chrome 148.0.7778.217,,,10-06-2026 14:39:33,10-06-2026 14:39:35,1.906s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Chrome 148.0.7778.217,,,10-06-2026 14:39:35,10-06-2026 14:39:36,1.416s,PASSED
+"click(findTestObject(""WEB/Login/btn-sign in""))",Chrome 148.0.7778.217,,,10-06-2026 14:39:36,10-06-2026 14:39:37,0.757s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Chrome 148.0.7778.217,,,10-06-2026 14:39:37,10-06-2026 14:39:38,0.792s,PASSED
+"verifyElementVisible(findTestObject(""WEB/Home Page/verify-succes-acount-login""))",Chrome 148.0.7778.217,,,10-06-2026 14:39:38,10-06-2026 14:39:40,2.098s,PASSED
+"click(findTestObject(""WEB/Home Page/Search/icon-search""))",Chrome 148.0.7778.217,,,10-06-2026 14:39:40,10-06-2026 14:39:41,1.285s,PASSED
+"setText(findTestObject(""WEB/Home Page/Search/field-search""), ""IPHONE 13 PRO MAX SIERRA BLUE 128GB"")",Chrome 148.0.7778.217,,,10-06-2026 14:39:41,10-06-2026 14:39:43,1.950s,PASSED
+"sendKeys(findTestObject(""WEB/Home Page/Search/field-search""), Keys.chord(ENTER))",Chrome 148.0.7778.217,,,10-06-2026 14:39:43,10-06-2026 14:39:45,1.516s,PASSED
+waitForPageLoad(30),Chrome 148.0.7778.217,,,10-06-2026 14:39:45,10-06-2026 14:39:45,0.519s,PASSED
+delay(3),Chrome 148.0.7778.217,,,10-06-2026 14:39:45,10-06-2026 14:39:48,3.154s,PASSED
+"click(findTestObject(""WEB/Product and Cart/Add to cart/btn_product_PHONE 13 PRO MAX SIERRA BLUE""))",Chrome 148.0.7778.217,,,10-06-2026 14:39:48,10-06-2026 14:39:49,0.743s,PASSED
+"click(findTestObject(""WEB/Product and Cart/Add to cart/button_Add to Cart""))",Chrome 148.0.7778.217,,,10-06-2026 14:39:49,10-06-2026 14:39:52,3.316s,PASSED
+"click(findTestObject(""WEB/Product and Cart/Add to cart/i_icon-cart""))",Chrome 148.0.7778.217,,,10-06-2026 14:39:52,10-06-2026 14:39:53,0.784s,PASSED
+"click(findTestObject(""WEB/Product and Cart/Add to cart/btn-trash""))",Chrome 148.0.7778.217,,,10-06-2026 14:39:53,10-06-2026 14:39:55,1.526s,PASSED
+"click(findTestObject(""WEB/Product and Cart/Add to cart/btn-confrim-yes""))",Chrome 148.0.7778.217,,,10-06-2026 14:39:55,10-06-2026 14:39:55,0.775s,PASSED
+closeBrowser(),Chrome 148.0.7778.217,,,10-06-2026 14:39:55,10-06-2026 14:39:57,1.554s,PASSED
+Start listener action : afterTestCase,Chrome 148.0.7778.217,,,10-06-2026 14:39:57,10-06-2026 14:39:58,0.584s,FAILED

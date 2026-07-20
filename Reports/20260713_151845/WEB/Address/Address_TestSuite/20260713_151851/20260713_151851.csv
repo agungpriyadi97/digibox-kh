@@ -1,0 +1,300 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Address_TestSuite,Chrome 149.0.7827.103,,,13-07-2026 15:27:53,13-07-2026 15:31:09,3m - 15.994s,PASSED
+,,,,,,,
+Test Cases/WEB/Address Management/Ensure My Address - add new address,Chrome 149.0.7827.103,,,13-07-2026 15:27:53,13-07-2026 15:28:30,36.176s,PASSED
+randomFirstName = custom.RandomData.generateRandomFirstName(),Chrome 149.0.7827.103,,,13-07-2026 15:27:54,13-07-2026 15:27:54,0.155s,PASSED
+randomEmail = custom.RandomData.generateRandomEmail(),Chrome 149.0.7827.103,,,13-07-2026 15:27:54,13-07-2026 15:27:54,0.114s,PASSED
+randomLastName = custom.RandomData.generateRandomLastName(),Chrome 149.0.7827.103,,,13-07-2026 15:27:54,13-07-2026 15:27:54,0.010s,PASSED
+randomPhone = custom.RandomData.generateRandomPhone(),Chrome 149.0.7827.103,,,13-07-2026 15:27:54,13-07-2026 15:27:54,0.052s,PASSED
+randomAddress = custom.RandomData.generateRandomAddress(),Chrome 149.0.7827.103,,,13-07-2026 15:27:54,13-07-2026 15:27:54,0.008s,PASSED
+randomCode = custom.RandomData.generateRandomCode(),Chrome 149.0.7827.103,,,13-07-2026 15:27:54,13-07-2026 15:27:54,0.009s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,13-07-2026 15:27:54,13-07-2026 15:27:58,3.892s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 149.0.7827.103,,,13-07-2026 15:27:58,13-07-2026 15:27:58,0.133s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,13-07-2026 15:27:58,13-07-2026 15:28:01,2.208s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,13-07-2026 15:28:01,13-07-2026 15:28:01,0.114s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:28:01,13-07-2026 15:28:01,0.151s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:01,13-07-2026 15:28:01,0.505s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:01,13-07-2026 15:28:02,0.488s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:02,13-07-2026 15:28:02,0.426s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:02,13-07-2026 15:28:03,0.702s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Chrome 149.0.7827.103,,,13-07-2026 15:28:03,13-07-2026 15:28:04,0.918s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-Password""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:04,13-07-2026 15:28:04,0.505s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Chrome 149.0.7827.103,,,13-07-2026 15:28:04,13-07-2026 15:28:05,0.916s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:05,13-07-2026 15:28:06,0.432s,PASSED
+"click(findTestObject(""WEB/Login/btn-sign in""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:06,13-07-2026 15:28:06,0.395s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:28:06,13-07-2026 15:28:06,0.015s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/icon-acount""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:06,13-07-2026 15:28:07,0.500s,PASSED
+"mouseOver(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:07,13-07-2026 15:28:07,0.516s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Address Management/Shipping Address/btn_My Address""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:07,13-07-2026 15:28:10,2.670s,PASSED
+"click(findTestObject(""WEB/Address Management/Shipping Address/btn_My Address""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:10,13-07-2026 15:28:11,0.930s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Address Management/Add New Address/div_Add New Address""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:11,13-07-2026 15:28:12,1.081s,PASSED
+"click(findTestObject(""WEB/Address Management/Add New Address/div_Add New Address""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:12,13-07-2026 15:28:12,0.564s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Address Management/Add New Address/field_First Name""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:12,13-07-2026 15:28:13,0.272s,PASSED
+"setText(findTestObject(""WEB/Address Management/Add New Address/field_First Name""), randomFirstName)",Chrome 149.0.7827.103,,,13-07-2026 15:28:13,13-07-2026 15:28:14,1.095s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Address Management/Add New Address/field_Last Name""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:14,13-07-2026 15:28:14,0.578s,PASSED
+"setText(findTestObject(""WEB/Address Management/Add New Address/field_Last Name""), randomLastName)",Chrome 149.0.7827.103,,,13-07-2026 15:28:14,13-07-2026 15:28:15,0.665s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Address Management/Add New Address/field_Mobile Phone""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:15,13-07-2026 15:28:15,0.502s,PASSED
+"setText(findTestObject(""WEB/Address Management/Add New Address/field_Mobile Phone""), randomPhone)",Chrome 149.0.7827.103,,,13-07-2026 15:28:15,13-07-2026 15:28:16,0.762s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Address Management/Add New Address/field_E-mail""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:16,13-07-2026 15:28:17,0.471s,PASSED
+"setText(findTestObject(""WEB/Address Management/Add New Address/field_E-mail""), randomEmail)",Chrome 149.0.7827.103,,,13-07-2026 15:28:17,13-07-2026 15:28:18,0.829s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Address Management/Add New Address/field_Address""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:18,13-07-2026 15:28:18,0.285s,PASSED
+"setText(findTestObject(""WEB/Address Management/Add New Address/field_Address""), randomAddress)",Chrome 149.0.7827.103,,,13-07-2026 15:28:18,13-07-2026 15:28:19,0.828s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Address Management/Add New Address/dropdown_Province""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:19,13-07-2026 15:28:19,0.403s,PASSED
+"click(findTestObject(""WEB/Address Management/Add New Address/dropdown_Province""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:19,13-07-2026 15:28:19,0.365s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:19,13-07-2026 15:28:20,0.485s,PASSED
+"click(findTestObject(""WEB/Address Management/Add New Address/Dropdown Province/li_Banteay Meanchey Province""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:20,13-07-2026 15:28:20,0.366s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Address Management/Add New Address/dropdown_Select Province""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:20,13-07-2026 15:28:21,0.310s,PASSED
+"click(findTestObject(""WEB/Address Management/Add New Address/dropdown_Select Province""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:21,13-07-2026 15:28:21,0.377s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:21,13-07-2026 15:28:22,0.909s,PASSED
+"click(findTestObject(""WEB/Address Management/Add New Address/Dropdown Select Province/li_Paoy Paet Municipality""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:22,13-07-2026 15:28:22,0.320s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Address Management/Add New Address/dropdown_Districts""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:22,13-07-2026 15:28:22,0.271s,PASSED
+"click(findTestObject(""WEB/Address Management/Add New Address/dropdown_Districts""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:22,13-07-2026 15:28:23,0.344s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Address Management/Add New Address/Dropdown District/li_Sangkat Kandal""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:23,13-07-2026 15:28:24,0.890s,PASSED
+"click(findTestObject(""WEB/Address Management/Add New Address/Dropdown District/li_Sangkat Kandal""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:24,13-07-2026 15:28:24,0.353s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Address Management/Add New Address/field_ZipPostal Code""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:24,13-07-2026 15:28:24,0.251s,PASSED
+"setText(findTestObject(""WEB/Address Management/Add New Address/field_ZipPostal Code""), randomCode)",Chrome 149.0.7827.103,,,13-07-2026 15:28:24,13-07-2026 15:28:25,0.747s,PASSED
+"scrollToElement(findTestObject(""WEB/Address Management/Add New Address/button_Save""), 5)",Chrome 149.0.7827.103,,,13-07-2026 15:28:25,13-07-2026 15:28:26,0.496s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Address Management/Add New Address/button_Save""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:26,13-07-2026 15:28:26,0.265s,PASSED
+"click(findTestObject(""WEB/Address Management/Add New Address/button_Save""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:26,13-07-2026 15:28:26,0.367s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:28:26,13-07-2026 15:28:26,0.012s,PASSED
+"scrollToElement(findTestObject(""WEB/Address Management/Shipping Address/lbl_Shipping Address""), 5)",Chrome 149.0.7827.103,,,13-07-2026 15:28:26,13-07-2026 15:28:27,0.457s,PASSED
+"comment(""Email      : "" + randomEmail)",Chrome 149.0.7827.103,,,13-07-2026 15:28:27,13-07-2026 15:28:27,0.030s,PASSED
+"comment(""First Name : "" + randomFirstName)",Chrome 149.0.7827.103,,,13-07-2026 15:28:27,13-07-2026 15:28:27,0.006s,PASSED
+"comment(""Last Name  : "" + randomLastName)",Chrome 149.0.7827.103,,,13-07-2026 15:28:27,13-07-2026 15:28:27,0.006s,PASSED
+"comment(""Phone      : "" + randomPhone)",Chrome 149.0.7827.103,,,13-07-2026 15:28:27,13-07-2026 15:28:27,0.006s,PASSED
+"comment(""Address    : "" + randomAddress)",Chrome 149.0.7827.103,,,13-07-2026 15:28:27,13-07-2026 15:28:27,0.005s,PASSED
+"comment(""Code       : "" + randomCode)",Chrome 149.0.7827.103,,,13-07-2026 15:28:27,13-07-2026 15:28:27,0.006s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,13-07-2026 15:28:27,13-07-2026 15:28:27,0.460s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,13-07-2026 15:28:27,13-07-2026 15:28:27,0.229s,FAILED
+,,,,,,,
+Test Cases/WEB/Address Management/Ensure My Address - Delete address,Chrome 149.0.7827.103,,,13-07-2026 15:28:30,13-07-2026 15:28:57,27.222s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,13-07-2026 15:28:30,13-07-2026 15:28:31,1.725s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 149.0.7827.103,,,13-07-2026 15:28:31,13-07-2026 15:28:32,0.115s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,13-07-2026 15:28:32,13-07-2026 15:28:34,2.268s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,13-07-2026 15:28:34,13-07-2026 15:28:34,0.081s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:28:34,13-07-2026 15:28:34,0.026s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:34,13-07-2026 15:28:34,0.357s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:34,13-07-2026 15:28:35,0.607s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:35,13-07-2026 15:28:35,0.343s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:35,13-07-2026 15:28:36,0.680s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Chrome 149.0.7827.103,,,13-07-2026 15:28:36,13-07-2026 15:28:37,0.772s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Chrome 149.0.7827.103,,,13-07-2026 15:28:37,13-07-2026 15:28:38,0.875s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:38,13-07-2026 15:28:38,0.480s,PASSED
+"enhancedClick(findTestObject(""WEB/Login/btn-sign in""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:38,13-07-2026 15:28:38,0.307s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:28:38,13-07-2026 15:28:38,0.011s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:38,13-07-2026 15:28:39,0.473s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:39,13-07-2026 15:28:39,0.279s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Address Management/Shipping Address/btn_My Address""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:39,13-07-2026 15:28:42,2.854s,PASSED
+"enhancedClick(findTestObject(""WEB/Address Management/Shipping Address/btn_My Address""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:42,13-07-2026 15:28:43,0.946s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:28:43,13-07-2026 15:28:43,0.166s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Address Management/Shipping Address/btn_Delete""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:43,13-07-2026 15:28:45,1.425s,PASSED
+"scrollToElement(findTestObject(""WEB/Address Management/Shipping Address/btn_Delete""), 5)",Chrome 149.0.7827.103,,,13-07-2026 15:28:45,13-07-2026 15:28:45,0.273s,PASSED
+"enhancedClick(findTestObject(""WEB/Address Management/Shipping Address/btn_Delete""))",Chrome 149.0.7827.103,,,13-07-2026 15:28:45,13-07-2026 15:28:46,0.804s,PASSED
+btnOK = new com.kms.katalon.core.testobject.TestObject(btnOK),Chrome 149.0.7827.103,,,13-07-2026 15:28:46,13-07-2026 15:28:46,0.005s,PASSED
+"btnOK.addProperty(""xpath"", EQUALS, ""//div[contains(@class,'el-message-box')]//span[normalize-space()='OK']"")",Chrome 149.0.7827.103,,,13-07-2026 15:28:46,13-07-2026 15:28:46,0.015s,PASSED
+"waitForElementVisible(btnOK, 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:46,13-07-2026 15:28:47,0.915s,PASSED
+"waitForElementClickable(btnOK, 30)",Chrome 149.0.7827.103,,,13-07-2026 15:28:47,13-07-2026 15:28:47,0.281s,PASSED
+enhancedClick(btnOK),Chrome 149.0.7827.103,,,13-07-2026 15:28:47,13-07-2026 15:28:47,0.333s,PASSED
+waitForPageLoad(10),Chrome 149.0.7827.103,,,13-07-2026 15:28:47,13-07-2026 15:28:47,0.012s,PASSED
+refresh(),Chrome 149.0.7827.103,,,13-07-2026 15:28:47,13-07-2026 15:28:49,1.594s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:28:49,13-07-2026 15:28:49,0.025s,PASSED
+deletedEmail = new com.kms.katalon.core.testobject.TestObject(deletedEmail),Chrome 149.0.7827.103,,,13-07-2026 15:28:49,13-07-2026 15:28:49,0.004s,PASSED
+"deletedEmail.addProperty(""xpath"", EQUALS, ""//*[contains(text(),'agung.priyadi@gtech.digital')]"")",Chrome 149.0.7827.103,,,13-07-2026 15:28:49,13-07-2026 15:28:49,0.003s,PASSED
+"isEmailStillExist = verifyElementPresent(deletedEmail, 5, OPTIONAL)",Chrome 149.0.7827.103,,,13-07-2026 15:28:49,13-07-2026 15:28:54,5.091s,WARNING
+if (isEmailStillExist),Chrome 149.0.7827.103,,,13-07-2026 15:28:54,13-07-2026 15:28:54,0.001s,PASSED
+else,Chrome 149.0.7827.103,,,13-07-2026 15:28:54,13-07-2026 15:28:54,0.013s,PASSED
+closeBrowser(),Chrome 149.0.7827.103,,,13-07-2026 15:28:54,13-07-2026 15:28:55,0.666s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,13-07-2026 15:28:55,13-07-2026 15:28:55,0.081s,FAILED
+,,,,,,,
+Test Cases/WEB/Address Management/Ensure My Address - Edit address,Chrome 149.0.7827.103,,,13-07-2026 15:28:57,13-07-2026 15:29:34,37.427s,PASSED
+randomEmail = custom.RandomData.generateRandomEmail(),Chrome 149.0.7827.103,,,13-07-2026 15:28:57,13-07-2026 15:28:57,0.013s,PASSED
+randomFirstName = custom.RandomData.generateRandomFirstName(),Chrome 149.0.7827.103,,,13-07-2026 15:28:57,13-07-2026 15:28:57,0.009s,PASSED
+randomLastName = custom.RandomData.generateRandomLastName(),Chrome 149.0.7827.103,,,13-07-2026 15:28:57,13-07-2026 15:28:57,0.006s,PASSED
+randomPhone = custom.RandomData.generateRandomPhone(),Chrome 149.0.7827.103,,,13-07-2026 15:28:57,13-07-2026 15:28:57,0.007s,PASSED
+randomAddress = custom.RandomData.generateRandomAddress(),Chrome 149.0.7827.103,,,13-07-2026 15:28:57,13-07-2026 15:28:57,0.007s,PASSED
+randomCode = custom.RandomData.generateRandomCode(),Chrome 149.0.7827.103,,,13-07-2026 15:28:57,13-07-2026 15:28:57,0.006s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,13-07-2026 15:28:57,13-07-2026 15:29:00,2.770s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 149.0.7827.103,,,13-07-2026 15:29:00,13-07-2026 15:29:00,0.141s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,13-07-2026 15:29:00,13-07-2026 15:29:06,5.638s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,13-07-2026 15:29:06,13-07-2026 15:29:06,0.105s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:29:06,13-07-2026 15:29:06,0.064s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:06,13-07-2026 15:29:07,0.846s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/icon-acount""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:07,13-07-2026 15:29:07,0.314s,PASSED
+"mouseOver(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:07,13-07-2026 15:29:07,0.476s,PASSED
+"click(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:07,13-07-2026 15:29:08,0.878s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Registration/field-account""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:08,13-07-2026 15:29:09,0.799s,PASSED
+"setText(findTestObject(""WEB/Registration/field-account""), ""agungpriyadi"")",Chrome 149.0.7827.103,,,13-07-2026 15:29:09,13-07-2026 15:29:10,1.069s,PASSED
+"setText(findTestObject(""WEB/Registration/field-Password""), ""Laskar123456"")",Chrome 149.0.7827.103,,,13-07-2026 15:29:10,13-07-2026 15:29:11,1.103s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Login/btn-sign in""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:11,13-07-2026 15:29:12,0.458s,PASSED
+"enhancedClick(findTestObject(""WEB/Login/btn-sign in""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:12,13-07-2026 15:29:12,0.432s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:29:12,13-07-2026 15:29:12,0.036s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Registration/icon-acount""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:12,13-07-2026 15:29:13,0.434s,PASSED
+"enhancedClick(findTestObject(""WEB/Registration/icon-acount""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:13,13-07-2026 15:29:13,0.355s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Address Management/Shipping Address/btn_My Address""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:13,13-07-2026 15:29:15,1.743s,PASSED
+"enhancedClick(findTestObject(""WEB/Address Management/Shipping Address/btn_My Address""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:15,13-07-2026 15:29:16,1.284s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:29:16,13-07-2026 15:29:16,0.099s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Address Management/Shipping Address/btn_Edit""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:16,13-07-2026 15:29:17,1.021s,PASSED
+"scrollToElement(findTestObject(""WEB/Address Management/Shipping Address/btn_Edit""), 5)",Chrome 149.0.7827.103,,,13-07-2026 15:29:17,13-07-2026 15:29:18,0.378s,PASSED
+"enhancedClick(findTestObject(""WEB/Address Management/Shipping Address/btn_Edit""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:18,13-07-2026 15:29:18,0.362s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Address Management/Edit Address/Field_First Name""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:18,13-07-2026 15:29:18,0.271s,PASSED
+"clearText(findTestObject(""WEB/Address Management/Edit Address/Field_First Name""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:18,13-07-2026 15:29:19,0.636s,PASSED
+"setText(findTestObject(""WEB/Address Management/Edit Address/Field_First Name""), randomFirstName)",Chrome 149.0.7827.103,,,13-07-2026 15:29:19,13-07-2026 15:29:20,1.197s,PASSED
+"clearText(findTestObject(""WEB/Address Management/Edit Address/Field_Last Name""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:20,13-07-2026 15:29:21,0.964s,PASSED
+"setText(findTestObject(""WEB/Address Management/Edit Address/Field_Last Name""), randomLastName)",Chrome 149.0.7827.103,,,13-07-2026 15:29:21,13-07-2026 15:29:22,1.000s,PASSED
+"clearText(findTestObject(""WEB/Address Management/Edit Address/Field_Mobile Phone""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:22,13-07-2026 15:29:22,0.435s,PASSED
+"setText(findTestObject(""WEB/Address Management/Edit Address/Field_Mobile Phone""), randomPhone)",Chrome 149.0.7827.103,,,13-07-2026 15:29:22,13-07-2026 15:29:23,0.992s,PASSED
+"clearText(findTestObject(""WEB/Address Management/Edit Address/Field_E-mail""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:23,13-07-2026 15:29:24,0.549s,PASSED
+"setText(findTestObject(""WEB/Address Management/Edit Address/Field_E-mail""), randomEmail)",Chrome 149.0.7827.103,,,13-07-2026 15:29:24,13-07-2026 15:29:26,1.722s,PASSED
+"clearText(findTestObject(""WEB/Address Management/Edit Address/Field_Address""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:26,13-07-2026 15:29:26,0.340s,PASSED
+"setText(findTestObject(""WEB/Address Management/Edit Address/Field_Address""), randomAddress)",Chrome 149.0.7827.103,,,13-07-2026 15:29:26,13-07-2026 15:29:27,1.155s,PASSED
+"clearText(findTestObject(""WEB/Address Management/Edit Address/Field_ZipPostal Code""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:27,13-07-2026 15:29:28,0.377s,PASSED
+"setText(findTestObject(""WEB/Address Management/Edit Address/Field_ZipPostal Code""), randomCode)",Chrome 149.0.7827.103,,,13-07-2026 15:29:28,13-07-2026 15:29:29,1.399s,PASSED
+"scrollToElement(findTestObject(""WEB/Address Management/Edit Address/button_Save""), 5)",Chrome 149.0.7827.103,,,13-07-2026 15:29:29,13-07-2026 15:29:29,0.476s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Address Management/Edit Address/button_Save""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:29,13-07-2026 15:29:30,0.454s,PASSED
+"enhancedClick(findTestObject(""WEB/Address Management/Edit Address/button_Save""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:30,13-07-2026 15:29:30,0.434s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:29:30,13-07-2026 15:29:30,0.029s,PASSED
+"scrollToElement(findTestObject(""WEB/Address Management/Shipping Address/lbl_Shipping Address""), 5)",Chrome 149.0.7827.103,,,13-07-2026 15:29:30,13-07-2026 15:29:31,0.437s,PASSED
+verifyName = new com.kms.katalon.core.testobject.TestObject(verifyName),Chrome 149.0.7827.103,,,13-07-2026 15:29:31,13-07-2026 15:29:31,0.008s,PASSED
+"verifyName.addProperty(""xpath"", EQUALS, //*[contains(text(),'$randomFirstName')])",Chrome 149.0.7827.103,,,13-07-2026 15:29:31,13-07-2026 15:29:31,0.023s,PASSED
+"verifyElementPresent(verifyName, 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:31,13-07-2026 15:29:32,0.666s,PASSED
+"comment(""Email      : "" + randomEmail)",Chrome 149.0.7827.103,,,13-07-2026 15:29:32,13-07-2026 15:29:32,0.007s,PASSED
+"comment(""First Name : "" + randomFirstName)",Chrome 149.0.7827.103,,,13-07-2026 15:29:32,13-07-2026 15:29:32,0.007s,PASSED
+"comment(""Last Name  : "" + randomLastName)",Chrome 149.0.7827.103,,,13-07-2026 15:29:32,13-07-2026 15:29:32,0.007s,PASSED
+"comment(""Phone      : "" + randomPhone)",Chrome 149.0.7827.103,,,13-07-2026 15:29:32,13-07-2026 15:29:32,0.009s,PASSED
+"comment(""Address    : "" + randomAddress)",Chrome 149.0.7827.103,,,13-07-2026 15:29:32,13-07-2026 15:29:32,0.006s,PASSED
+"comment(""Code       : "" + randomCode)",Chrome 149.0.7827.103,,,13-07-2026 15:29:32,13-07-2026 15:29:32,0.003s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,13-07-2026 15:29:32,13-07-2026 15:29:32,0.464s,PASSED
+,,,,,,,
+Test Cases/WEB/Address Management/Ensure that the address on the created order matches the address on the Sports Station website (Delivery Address),Chrome 149.0.7827.103,,,13-07-2026 15:29:34,13-07-2026 15:30:17,43.101s,PASSED
+randomEmail = custom.RandomData.generateRandomEmail(),Chrome 149.0.7827.103,,,13-07-2026 15:29:34,13-07-2026 15:29:35,0.012s,PASSED
+randomFirstName = custom.RandomData.generateRandomFirstName(),Chrome 149.0.7827.103,,,13-07-2026 15:29:35,13-07-2026 15:29:35,0.007s,PASSED
+randomLastName = custom.RandomData.generateRandomLastName(),Chrome 149.0.7827.103,,,13-07-2026 15:29:35,13-07-2026 15:29:35,0.005s,PASSED
+randomPhone = custom.RandomData.generateRandomPhone(),Chrome 149.0.7827.103,,,13-07-2026 15:29:35,13-07-2026 15:29:35,0.006s,PASSED
+randomAddress = custom.RandomData.generateRandomAddress(),Chrome 149.0.7827.103,,,13-07-2026 15:29:35,13-07-2026 15:29:35,0.004s,PASSED
+randomCode = custom.RandomData.generateRandomCode(),Chrome 149.0.7827.103,,,13-07-2026 15:29:35,13-07-2026 15:29:35,0.004s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,13-07-2026 15:29:35,13-07-2026 15:29:38,3.223s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 149.0.7827.103,,,13-07-2026 15:29:38,13-07-2026 15:29:38,0.116s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,13-07-2026 15:29:38,13-07-2026 15:29:41,2.768s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,13-07-2026 15:29:41,13-07-2026 15:29:41,0.122s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:29:41,13-07-2026 15:29:41,0.046s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:41,13-07-2026 15:29:41,0.652s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Home Page/Search/icon-search""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:41,13-07-2026 15:29:42,0.340s,PASSED
+"enhancedClick(findTestObject(""WEB/Home Page/Search/icon-search""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:42,13-07-2026 15:29:42,0.456s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Search/field-search""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:42,13-07-2026 15:29:43,0.309s,PASSED
+"setText(findTestObject(""WEB/Home Page/Search/field-search""), ""IPHONE 13 PRO MAX SIERRA BLUE 128GB"")",Chrome 149.0.7827.103,,,13-07-2026 15:29:43,13-07-2026 15:29:44,1.064s,PASSED
+"sendKeys(findTestObject(""WEB/Home Page/Search/field-search""), Keys.chord(ENTER))",Chrome 149.0.7827.103,,,13-07-2026 15:29:44,13-07-2026 15:29:45,1.480s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:29:45,13-07-2026 15:29:45,0.017s,PASSED
+delay(3),Chrome 149.0.7827.103,,,13-07-2026 15:29:45,13-07-2026 15:29:48,3.022s,PASSED
+"click(findTestObject(""WEB/Product and Cart/Add to cart/btn_product_PHONE 13 PRO MAX SIERRA BLUE""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:48,13-07-2026 15:29:49,0.489s,PASSED
+"click(findTestObject(""WEB/Product and Cart/Add to cart/button_Add to Cart""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:49,13-07-2026 15:29:52,3.712s,PASSED
+"waitForElementPresent(findTestObject(""WEB/Product and Cart/Add to cart/i_icon-cart""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:52,13-07-2026 15:29:53,0.519s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Product and Cart/Add to cart/i_icon-cart""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:53,13-07-2026 15:29:53,0.439s,PASSED
+"click(findTestObject(""WEB/Product and Cart/Add to cart/i_icon-cart""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:53,13-07-2026 15:29:54,0.669s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Address/Address Ship To/btn_checkout""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:54,13-07-2026 15:29:55,1.294s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Checkout/Address/Address Ship To/btn_checkout""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:55,13-07-2026 15:29:56,0.465s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/btn_checkout""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:56,13-07-2026 15:29:56,0.441s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:29:56,13-07-2026 15:29:56,0.031s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Checkout guest/field_email""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:56,13-07-2026 15:29:57,0.787s,PASSED
+"setText(findTestObject(""WEB/Checkout/Checkout guest/field_email""), randomEmail)",Chrome 149.0.7827.103,,,13-07-2026 15:29:57,13-07-2026 15:29:59,1.563s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Checkout/Checkout guest/btn_continue""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:59,13-07-2026 15:29:59,0.340s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Checkout guest/btn_continue""))",Chrome 149.0.7827.103,,,13-07-2026 15:29:59,13-07-2026 15:29:59,0.402s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:29:59,13-07-2026 15:29:59,0.024s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Address/Address Ship To/field_First Name""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:29:59,13-07-2026 15:30:01,1.219s,PASSED
+"setText(findTestObject(""WEB/Checkout/Address/Address Ship To/field_First Name""), randomFirstName)",Chrome 149.0.7827.103,,,13-07-2026 15:30:01,13-07-2026 15:30:02,1.835s,PASSED
+"setText(findTestObject(""WEB/Checkout/Address/Address Ship To/field_Last Name""), randomLastName)",Chrome 149.0.7827.103,,,13-07-2026 15:30:02,13-07-2026 15:30:03,1.093s,PASSED
+"setText(findTestObject(""WEB/Checkout/Address/Address Ship To/field_mobile phone""), randomPhone)",Chrome 149.0.7827.103,,,13-07-2026 15:30:03,13-07-2026 15:30:05,1.084s,PASSED
+"setText(findTestObject(""WEB/Checkout/Address/Address Ship To/field_Address""), randomAddress)",Chrome 149.0.7827.103,,,13-07-2026 15:30:05,13-07-2026 15:30:06,1.323s,PASSED
+"setText(findTestObject(""WEB/Checkout/Address/Address Ship To/input_ZipPostal Code""), randomCode)",Chrome 149.0.7827.103,,,13-07-2026 15:30:06,13-07-2026 15:30:08,1.687s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Checkout/Address/Address Ship To/input_Province""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:08,13-07-2026 15:30:08,0.527s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/input_Province""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:08,13-07-2026 15:30:09,0.790s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:09,13-07-2026 15:30:09,0.465s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:09,13-07-2026 15:30:10,0.378s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Checkout/Address/Address Ship To/input_Select Province""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:10,13-07-2026 15:30:10,0.362s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/input_Select Province""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:10,13-07-2026 15:30:10,0.345s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:10,13-07-2026 15:30:11,0.784s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:11,13-07-2026 15:30:12,0.377s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Checkout/Address/Address Ship To/input_Districts""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:12,13-07-2026 15:30:12,0.307s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/input_Districts""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:12,13-07-2026 15:30:12,0.323s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:12,13-07-2026 15:30:13,0.907s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:13,13-07-2026 15:30:13,0.328s,PASSED
+"scrollToElement(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-save""), 5)",Chrome 149.0.7827.103,,,13-07-2026 15:30:13,13-07-2026 15:30:14,0.267s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-save""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:14,13-07-2026 15:30:14,0.340s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-save""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:14,13-07-2026 15:30:15,0.469s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:30:15,13-07-2026 15:30:15,0.012s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,13-07-2026 15:30:15,13-07-2026 15:30:15,0.567s,PASSED
+,,,,,,,
+Test Cases/WEB/Address Management/Verify Postal Code dropdown updates correctly based on selected District for Shipping and Billing Address Add and Edit,Chrome 149.0.7827.103,,,13-07-2026 15:30:17,13-07-2026 15:31:08,50.663s,PASSED
+randomEmail = custom.RandomData.generateRandomEmail(),Chrome 149.0.7827.103,,,13-07-2026 15:30:18,13-07-2026 15:30:18,0.006s,PASSED
+randomFirstName = custom.RandomData.generateRandomFirstName(),Chrome 149.0.7827.103,,,13-07-2026 15:30:18,13-07-2026 15:30:18,0.005s,PASSED
+randomLastName = custom.RandomData.generateRandomLastName(),Chrome 149.0.7827.103,,,13-07-2026 15:30:18,13-07-2026 15:30:18,0.004s,PASSED
+randomPhone = custom.RandomData.generateRandomPhone(),Chrome 149.0.7827.103,,,13-07-2026 15:30:18,13-07-2026 15:30:18,0.004s,PASSED
+randomAddress = custom.RandomData.generateRandomAddress(),Chrome 149.0.7827.103,,,13-07-2026 15:30:18,13-07-2026 15:30:18,0.008s,PASSED
+randomCode = custom.RandomData.generateRandomCode(),Chrome 149.0.7827.103,,,13-07-2026 15:30:18,13-07-2026 15:30:18,0.005s,PASSED
+"openBrowser("""")",Chrome 149.0.7827.103,,,13-07-2026 15:30:18,13-07-2026 15:30:22,4.114s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 149.0.7827.103,,,13-07-2026 15:30:22,13-07-2026 15:30:22,0.322s,PASSED
+navigateToUrl(URL),Chrome 149.0.7827.103,,,13-07-2026 15:30:22,13-07-2026 15:30:25,3.067s,PASSED
+custom.BrowserHelper.setupBrowserWindow(),Chrome 149.0.7827.103,,,13-07-2026 15:30:25,13-07-2026 15:30:25,0.106s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:30:25,13-07-2026 15:30:25,0.032s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/header_digibox""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:25,13-07-2026 15:30:26,0.625s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Home Page/Search/icon-search""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:26,13-07-2026 15:30:26,0.327s,PASSED
+"enhancedClick(findTestObject(""WEB/Home Page/Search/icon-search""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:26,13-07-2026 15:30:27,0.346s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Home Page/Search/field-search""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:27,13-07-2026 15:30:27,0.256s,PASSED
+"setText(findTestObject(""WEB/Home Page/Search/field-search""), ""IPHONE 13 PRO MAX SIERRA BLUE 128GB"")",Chrome 149.0.7827.103,,,13-07-2026 15:30:27,13-07-2026 15:30:28,0.994s,PASSED
+"sendKeys(findTestObject(""WEB/Home Page/Search/field-search""), Keys.chord(ENTER))",Chrome 149.0.7827.103,,,13-07-2026 15:30:28,13-07-2026 15:30:29,1.630s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:30:29,13-07-2026 15:30:29,0.018s,PASSED
+delay(3),Chrome 149.0.7827.103,,,13-07-2026 15:30:29,13-07-2026 15:30:32,3.006s,PASSED
+"click(findTestObject(""WEB/Product and Cart/Add to cart/btn_product_PHONE 13 PRO MAX SIERRA BLUE""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:32,13-07-2026 15:30:33,0.558s,PASSED
+"click(findTestObject(""WEB/Product and Cart/Add to cart/button_Add to Cart""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:33,13-07-2026 15:30:36,3.185s,PASSED
+"waitForElementPresent(findTestObject(""WEB/Product and Cart/Add to cart/i_icon-cart""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:36,13-07-2026 15:30:37,0.490s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Product and Cart/Add to cart/i_icon-cart""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:37,13-07-2026 15:30:37,0.333s,PASSED
+"enhancedClick(findTestObject(""WEB/Product and Cart/Add to cart/i_icon-cart""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:37,13-07-2026 15:30:38,0.711s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Address/Address Ship To/btn_checkout""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:38,13-07-2026 15:30:39,0.802s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Checkout/Address/Address Ship To/btn_checkout""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:39,13-07-2026 15:30:39,0.485s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/btn_checkout""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:39,13-07-2026 15:30:39,0.382s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:30:39,13-07-2026 15:30:39,0.016s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Checkout guest/field_email""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:39,13-07-2026 15:30:41,1.520s,PASSED
+"setText(findTestObject(""WEB/Checkout/Checkout guest/field_email""), randomEmail)",Chrome 149.0.7827.103,,,13-07-2026 15:30:41,13-07-2026 15:30:42,0.895s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Checkout/Checkout guest/btn_continue""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:42,13-07-2026 15:30:42,0.433s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Checkout guest/btn_continue""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:42,13-07-2026 15:30:43,0.414s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:30:43,13-07-2026 15:30:43,0.014s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Address/Address Ship To/field_First Name""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:43,13-07-2026 15:30:44,1.206s,PASSED
+"setText(findTestObject(""WEB/Checkout/Address/Address Ship To/field_First Name""), randomFirstName)",Chrome 149.0.7827.103,,,13-07-2026 15:30:44,13-07-2026 15:30:46,1.935s,PASSED
+"setText(findTestObject(""WEB/Checkout/Address/Address Ship To/field_Last Name""), randomLastName)",Chrome 149.0.7827.103,,,13-07-2026 15:30:46,13-07-2026 15:30:47,1.032s,PASSED
+"setText(findTestObject(""WEB/Checkout/Address/Address Ship To/field_mobile phone""), randomPhone)",Chrome 149.0.7827.103,,,13-07-2026 15:30:47,13-07-2026 15:30:48,1.133s,PASSED
+"setText(findTestObject(""WEB/Checkout/Address/Address Ship To/field_Address""), randomAddress)",Chrome 149.0.7827.103,,,13-07-2026 15:30:48,13-07-2026 15:30:49,1.443s,PASSED
+"setText(findTestObject(""WEB/Checkout/Address/Address Ship To/input_ZipPostal Code""), randomCode)",Chrome 149.0.7827.103,,,13-07-2026 15:30:49,13-07-2026 15:30:51,1.455s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Checkout/Address/Address Ship To/input_Province""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:51,13-07-2026 15:30:51,0.483s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/input_Province""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:51,13-07-2026 15:30:52,0.804s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:52,13-07-2026 15:30:53,0.477s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/li_Phnom Penh Capital_Province""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:53,13-07-2026 15:30:53,0.384s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Checkout/Address/Address Ship To/input_Select Province""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:53,13-07-2026 15:30:53,0.312s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/input_Select Province""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:53,13-07-2026 15:30:54,0.387s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:54,13-07-2026 15:30:54,0.530s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/li_Khan Chamkar Mon_Select_Province""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:54,13-07-2026 15:30:55,0.515s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Checkout/Address/Address Ship To/input_Districts""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:55,13-07-2026 15:30:55,0.351s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/input_Districts""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:55,13-07-2026 15:30:55,0.360s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:55,13-07-2026 15:30:56,0.812s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/li_Sangkat Tonle Basak_Districts""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:56,13-07-2026 15:30:57,0.460s,PASSED
+"scrollToElement(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-save""), 5)",Chrome 149.0.7827.103,,,13-07-2026 15:30:57,13-07-2026 15:30:57,0.338s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-save""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:57,13-07-2026 15:30:57,0.317s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-save""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:57,13-07-2026 15:30:58,0.540s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:30:58,13-07-2026 15:30:58,0.020s,PASSED
+"scrollToElement(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-change""), 5)",Chrome 149.0.7827.103,,,13-07-2026 15:30:58,13-07-2026 15:30:58,0.499s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-change""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:58,13-07-2026 15:30:59,0.269s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-change""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:59,13-07-2026 15:30:59,0.313s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-change""))",Chrome 149.0.7827.103,,,13-07-2026 15:30:59,13-07-2026 15:30:59,0.387s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:30:59,13-07-2026 15:30:59,0.016s,PASSED
+updateAddress = custom.RandomData.generateRandomAddress(),Chrome 149.0.7827.103,,,13-07-2026 15:30:59,13-07-2026 15:30:59,0.005s,PASSED
+updateCode = custom.RandomData.generateRandomCode(),Chrome 149.0.7827.103,,,13-07-2026 15:30:59,13-07-2026 15:30:59,0.006s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Address/Address Ship To/field_Address""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:30:59,13-07-2026 15:31:00,0.603s,PASSED
+"clearText(findTestObject(""WEB/Checkout/Address/Address Ship To/field_Address""))",Chrome 149.0.7827.103,,,13-07-2026 15:31:00,13-07-2026 15:31:00,0.308s,PASSED
+"setText(findTestObject(""WEB/Checkout/Address/Address Ship To/field_Address""), updateAddress)",Chrome 149.0.7827.103,,,13-07-2026 15:31:00,13-07-2026 15:31:01,1.077s,PASSED
+"clearText(findTestObject(""WEB/Checkout/Address/Address Ship To/input_ZipPostal Code""))",Chrome 149.0.7827.103,,,13-07-2026 15:31:01,13-07-2026 15:31:02,0.350s,PASSED
+"setText(findTestObject(""WEB/Checkout/Address/Address Ship To/input_ZipPostal Code""), updateCode)",Chrome 149.0.7827.103,,,13-07-2026 15:31:02,13-07-2026 15:31:03,1.396s,PASSED
+"scrollToElement(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-save""), 5)",Chrome 149.0.7827.103,,,13-07-2026 15:31:03,13-07-2026 15:31:04,0.459s,PASSED
+"waitForElementClickable(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-save""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:31:04,13-07-2026 15:31:04,0.627s,PASSED
+"enhancedClick(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-save""))",Chrome 149.0.7827.103,,,13-07-2026 15:31:04,13-07-2026 15:31:05,0.347s,PASSED
+waitForPageLoad(30),Chrome 149.0.7827.103,,,13-07-2026 15:31:05,13-07-2026 15:31:05,0.015s,PASSED
+"scrollToElement(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-change""), 5)",Chrome 149.0.7827.103,,,13-07-2026 15:31:05,13-07-2026 15:31:05,0.489s,PASSED
+"waitForElementVisible(findTestObject(""WEB/Checkout/Address/Address Ship To/btn-change""), 30)",Chrome 149.0.7827.103,,,13-07-2026 15:31:05,13-07-2026 15:31:05,0.255s,PASSED
+Start listener action : afterTestCase,Chrome 149.0.7827.103,,,13-07-2026 15:31:05,13-07-2026 15:31:06,0.383s,PASSED
