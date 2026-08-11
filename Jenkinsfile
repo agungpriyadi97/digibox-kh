@@ -58,6 +58,9 @@ Contoh override manual:
 
         PROJECT_FILE = 'digibox-kh.prj'
 
+        // 🌟 Memaksa Katalon CLI membaca folder profil user AgungPriyadi
+        USERPROFILE = 'C:\\Users\\AgungPriyadi'
+
         // Default Target Path Digibox KH
         DEFAULT_TEST = 'Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxkh_Web'
 
@@ -97,6 +100,9 @@ Contoh override manual:
                 script {
 
                     bat '''
+                    taskkill /F /IM katalonc.exe /T 2>nul || exit 0
+                    taskkill /F /IM java.exe /T 2>nul || exit 0
+                    if exist "C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\config\\.metadata\\.lock" del /f /q "C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\config\\.metadata\\.lock" 2>nul || exit 0
                     if exist Reports rmdir /s /q Reports
                     if exist Screenshot rmdir /s /q Screenshot
                     if exist summary.json del /f /q summary.json
