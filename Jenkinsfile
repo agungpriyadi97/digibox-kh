@@ -38,18 +38,18 @@ pipeline {
 
         string(
             name: 'SUITE',
-            defaultValue: 'Test Suites/WEB/Checkout/Post Payment Validation',
-            description: 'Nama Test Suite dari Telegram'
+            defaultValue: 'Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxkh_Web',
+            description: 'Nama Test Suite / Collection dari Telegram'
         )
 
         string(
             name: 'TEST_PATH',
             defaultValue: '',
             description: '''
-Kosong = Gunakan parameter SUITE / Default Test Suite
+Kosong = Gunakan parameter SUITE / Default Test Suite Collection
 
 Contoh override manual:
--testSuitePath=Test Suites/WEB/Checkout/Post Payment Validation
+-testSuiteCollectionPath=Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxkh_Web
 '''
         )
     }
@@ -58,7 +58,7 @@ Contoh override manual:
 
         PROJECT_FILE = 'digibox-kh.prj'
 
-        // Default Target Path (Test Suite Post Payment Validation)
+        // Default Target Path Digibox KH
         DEFAULT_TEST = 'Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxkh_Web'
 
         KATALON_EXE = 'C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\katalonc.exe'
