@@ -60,11 +60,6 @@ Contoh override manual:
 
         PROJECT_FILE = 'digibox-kh.prj'
 
-        // 🌟 Folder tujuan di OneDrive / SharePoint
-        PROJECT_FOLDER = 'Digibox.kh'
-
-        ONEDRIVE_ATTACHMENTS = 'C:\\Users\\AgungPriyadi\\OneDrive - agung - (G)Tech Digital\\Attachments'
-
         USERPROFILE = 'C:\\Users\\AgungPriyadi'
 
         DEFAULT_TEST = 'Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxkh_Web'
@@ -74,9 +69,6 @@ Contoh override manual:
         KATALON_API_KEY = credentials('katalon-api-key')
 
         KATALON_ORG_ID = '2078893'
-
-        // 🌟 Tembak langsung ke webhook n8n Google Sheets
-        N8N_SHEETS_WEBHOOK = 'http://localhost:5678/webhook/79204498-fdea-41d3-a8a2-21b002f8b724'
     }
 
     stages {
@@ -106,10 +98,11 @@ Contoh override manual:
                     if exist Reports rmdir /s /q Reports
                     if exist Screenshot rmdir /s /q Screenshot
                     if exist summary.json del /f /q summary.json
+                    if exist test_results.json del /f /q test_results.json
                     if exist error_log.txt del /f /q error_log.txt
-                    if exist failed_tests.json del /f /q failed_tests.json
                     '''
 
+                    // 1. Penanganan Mapping ENV Telegram ke Execution Profile Katalon
                     if (params.ENV?.trim()) {
                         def envInput = params.ENV.toLowerCase()
                         if (envInput == 'prod' || envInput == 'production') {
@@ -125,6 +118,7 @@ Contoh override manual:
                         env.TARGET_PROFILE = params.PROFILE ?: 'Development'
                     }
 
+                    // 2. Penanganan Mapping SUITE / TEST_PATH & Deteksi Otomatis Collection vs Suite
                     if (params.TEST_PATH?.trim()) {
                         def value = params.TEST_PATH.split("=")
                         env.ARG_TYPE = value[0]
@@ -142,6 +136,7 @@ Contoh override manual:
                         env.FINAL_PATH = env.DEFAULT_TEST
                     }
 
+                    // Deteksi otomatis tipe argumen Katalon CLI
                     if (!params.TEST_PATH?.trim()) {
                         if (env.FINAL_PATH.contains("Collection") || env.FINAL_PATH.contains("Web_Test_Suite_Collection")) {
                             env.ARG_TYPE = "-testSuiteCollectionPath"
@@ -150,6 +145,7 @@ Contoh override manual:
                         }
                     }
 
+                    // Menyusun argumen ekstra
                     if (env.ARG_TYPE == "-testSuiteCollectionPath") {
                         env.EXTRA_ARGS = ""
                     } else {
@@ -240,13 +236,6 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                 testResults: 'Reports/**/*.xml'
             )
 
-            // 🌟 OTOMATIS COPY FILE REPORT HTML KE ONEDRIVE / SHAREPOINT
-            script {
-                bat """
-                powershell -Command "\$dateStr = (Get-Date).ToString('dd-MM-yyyy'); \$browserName = if ('${params.BROWSER}' -like '*Firefox*') { 'Firefox Headless' } else { 'Chrome Headless' }; \$destDir = '${env.ONEDRIVE_ATTACHMENTS}\\${env.PROJECT_FOLDER}\\\$dateStr\\\$browserName'; if (-not (Test-Path \$destDir)) { New-Item -ItemType Directory -Path \$destDir -Force | Out-Null }; Get-ChildItem -Path 'Reports' -Filter '*.html' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { Copy-Item -Path \$_.FullName -Destination \$destDir -Force }"
-                """
-            }
-
             // --- NOTIFIKASI SELESAI + RINGKASAN TEST CASE ---
             script {
                 def currentStatus = currentBuild.currentResult ?: 'UNKNOWN'
@@ -263,32 +252,24 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
             echo "======================================"
         }
 
-        success {
-            echo "Automation SUCCESS"
-        }
-
         unstable {
-            echo "Automation UNSTABLE - Preparing Zip, AI Error Log & Sending to Google Sheets..."
+            echo "Automation UNSTABLE - Preparing Report Zip & AI Google Sheets Payload..."
             script {
                 bat """
-                powershell -Command "if (Test-Path 'Failure_Report.zip') { Remove-Item 'Failure_Report.zip' }; \$f = @(); if (Test-Path 'Reports') { \$f += 'Reports' }; if (Test-Path 'Screenshot') { \$f += 'Screenshot' }; if (\$f.Count -gt 0) { Compress-Archive -Path \$f -DestinationPath 'Failure_Report.zip' -Force }; \$errs = @(); \$tcList = @(); \$i = 1; Get-ChildItem -Path 'Reports' -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { [xml]\$x = Get-Content \$_.FullName; foreach(\$ts in \$x.SelectNodes('//testsuite')){ \$tsName = \$ts.name; foreach(\$tc in \$ts.SelectNodes('.//testcase[failure or error]')){ \$node = if(\$tc.failure){\$tc.failure}else{\$tc.error}; \$msg = \$node.message; if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$node.innerText }; if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$tc.'system-err' }; if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = 'No detailed error message found in XML.' }; \$errs += ('[Test Case]: ' + \$tc.name + [Environment]::NewLine + '[Error]: ' + \$msg); \$tcList += @{ number = [string]\$i; testSuiteName = \$tsName; testCaseName = [string]\$tc.name; status = 'failed'; errorMessage = [string]\$msg; reportUrl = '${env.BUILD_URL}' }; \$i++ } } }; if (\$errs.Count -eq 0) { \$errs += 'No detailed XML stacktrace found.' }; Set-Content -Path 'error_log.txt' -Value (\$errs -join ([Environment]::NewLine + '---' + [Environment]::NewLine)); \$jsonPayload = @{ projectName = '${env.PROJECT_NAME}'; jobName = '${env.JOB_NAME}'; buildUrl = '${env.BUILD_URL}'; buildNumber = ${env.BUILD_NUMBER}; testCases = \$tcList } | ConvertTo-Json -Depth 5; Set-Content -Path 'failed_tests.json' -Value \$jsonPayload"
-                
-                powershell -Command "curl.exe -X POST 'http://localhost:5678/webhook/jenkins-report' -F 'chat_id=8122375919' -F 'file=@Failure_Report.zip' -F 'error_log=@error_log.txt'"
-                
-                powershell -Command "Invoke-RestMethod -Uri '${env.N8N_SHEETS_WEBHOOK}' -Method Post -ContentType 'application/json' -InFile 'failed_tests.json'"
+                powershell -Command "if (Test-Path 'Failure_Report.zip') { Remove-Item 'Failure_Report.zip' }; \$f = @(); if (Test-Path 'Reports') { \$f += 'Reports' }; if (Test-Path 'Screenshot') { \$f += 'Screenshot' }; if (\$f.Count -gt 0) { Compress-Archive -Path \$f -DestinationPath 'Failure_Report.zip' -Force }; \$errs = @(); \$cases = @(); Get-ChildItem -Path 'Reports' -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { [xml]\$x = Get-Content \$_.FullName; foreach(\$ts in \$x.SelectNodes('//testsuite')){ \$tsName = \$ts.name; foreach(\$tc in \$ts.SelectNodes('.//testcase[failure or error]')){ \$node = if(\$tc.failure){\$tc.failure}else{\$tc.error}; \$msg = \$node.message; if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$node.innerText }; if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$tc.'system-err' }; if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = 'No detailed error message found in XML.' }; \$errs += ('[Test Case]: ' + \$tc.name + [Environment]::NewLine + '[Error]: ' + \$msg); \$cases += @{ testSuiteName = \$tsName; testCaseName = \$tc.name; status = 'Failed'; errorMessage = \$msg; reportUrl = '${env.BUILD_URL}' } } } }; if (\$errs.Count -eq 0) { \$errs += 'No detailed XML stacktrace found.' }; Set-Content -Path 'error_log.txt' -Value (\$errs -join ([Environment]::NewLine + '---' + [Environment]::NewLine)); \$payload = @{ projectName = '${env.PROJECT_NAME}'; jobName = '${env.JOB_NAME}'; buildUrl = '${env.BUILD_URL}'; buildNumber = ${env.BUILD_NUMBER}; testCases = \$cases } | ConvertTo-Json -Depth 5; Set-Content -Path 'test_results.json' -Value \$payload"
+                curl -X POST "http://localhost:5678/webhook/jenkins-report" -F "chat_id=8122375919" -F "file=@Failure_Report.zip" -F "error_log=@error_log.txt"
+                curl -X POST "http://localhost:5678/webhook/jenkins-test-results" -H "Content-Type: application/json" -d @test_results.json
                 """
             }
         }
 
         failure {
-            echo "Automation FAILED - Preparing Zip, AI Error Log & Sending to Google Sheets..."
+            echo "Automation FAILED - Preparing Report Zip & AI Google Sheets Payload..."
             script {
                 bat """
-                powershell -Command "if (Test-Path 'Failure_Report.zip') { Remove-Item 'Failure_Report.zip' }; \$f = @(); if (Test-Path 'Reports') { \$f += 'Reports' }; if (Test-Path 'Screenshot') { \$f += 'Screenshot' }; if (\$f.Count -gt 0) { Compress-Archive -Path \$f -DestinationPath 'Failure_Report.zip' -Force }; \$errs = @(); \$tcList = @(); \$i = 1; Get-ChildItem -Path 'Reports' -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { [xml]\$x = Get-Content \$_.FullName; foreach(\$ts in \$x.SelectNodes('//testsuite')){ \$tsName = \$ts.name; foreach(\$tc in \$ts.SelectNodes('.//testcase[failure or error]')){ \$node = if(\$tc.failure){\$tc.failure}else{\$tc.error}; \$msg = \$node.message; if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$node.innerText }; if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$tc.'system-err' }; if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = 'No detailed error message found in XML.' }; \$errs += ('[Test Case]: ' + \$tc.name + [Environment]::NewLine + '[Error]: ' + \$msg); \$tcList += @{ number = [string]\$i; testSuiteName = \$tsName; testCaseName = [string]\$tc.name; status = 'failed'; errorMessage = [string]\$msg; reportUrl = '${env.BUILD_URL}' }; \$i++ } } }; if (\$errs.Count -eq 0) { \$errs += 'No detailed XML stacktrace found.' }; Set-Content -Path 'error_log.txt' -Value (\$errs -join ([Environment]::NewLine + '---' + [Environment]::NewLine)); \$jsonPayload = @{ projectName = '${env.PROJECT_NAME}'; jobName = '${env.JOB_NAME}'; buildUrl = '${env.BUILD_URL}'; buildNumber = ${env.BUILD_NUMBER}; testCases = \$tcList } | ConvertTo-Json -Depth 5; Set-Content -Path 'failed_tests.json' -Value \$jsonPayload"
-                
-                powershell -Command "curl.exe -X POST 'http://localhost:5678/webhook/jenkins-report' -F 'chat_id=8122375919' -F 'file=@Failure_Report.zip' -F 'error_log=@error_log.txt'"
-                
-                powershell -Command "Invoke-RestMethod -Uri '${env.N8N_SHEETS_WEBHOOK}' -Method Post -ContentType 'application/json' -InFile 'failed_tests.json'"
+                powershell -Command "if (Test-Path 'Failure_Report.zip') { Remove-Item 'Failure_Report.zip' }; \$f = @(); if (Test-Path 'Reports') { \$f += 'Reports' }; if (Test-Path 'Screenshot') { \$f += 'Screenshot' }; if (\$f.Count -gt 0) { Compress-Archive -Path \$f -DestinationPath 'Failure_Report.zip' -Force }; \$errs = @(); \$cases = @(); Get-ChildItem -Path 'Reports' -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { [xml]\$x = Get-Content \$_.FullName; foreach(\$ts in \$x.SelectNodes('//testsuite')){ \$tsName = \$ts.name; foreach(\$tc in \$ts.SelectNodes('.//testcase[failure or error]')){ \$node = if(\$tc.failure){\$tc.failure}else{\$tc.error}; \$msg = \$node.message; if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$node.innerText }; if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$tc.'system-err' }; if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = 'No detailed error message found in XML.' }; \$errs += ('[Test Case]: ' + \$tc.name + [Environment]::NewLine + '[Error]: ' + \$msg); \$cases += @{ testSuiteName = \$tsName; testCaseName = \$tc.name; status = 'Failed'; errorMessage = \$msg; reportUrl = '${env.BUILD_URL}' } } } }; if (\$errs.Count -eq 0) { \$errs += 'No detailed XML stacktrace found.' }; Set-Content -Path 'error_log.txt' -Value (\$errs -join ([Environment]::NewLine + '---' + [Environment]::NewLine)); \$payload = @{ projectName = '${env.PROJECT_NAME}'; jobName = '${env.JOB_NAME}'; buildUrl = '${env.BUILD_URL}'; buildNumber = ${env.BUILD_NUMBER}; testCases = \$cases } | ConvertTo-Json -Depth 5; Set-Content -Path 'test_results.json' -Value \$payload"
+                curl -X POST "http://localhost:5678/webhook/jenkins-report" -F "chat_id=8122375919" -F "file=@Failure_Report.zip" -F "error_log=@error_log.txt"
+                curl -X POST "http://localhost:5678/webhook/jenkins-test-results" -H "Content-Type: application/json" -d @test_results.json
                 """
             }
         }
