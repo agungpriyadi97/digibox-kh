@@ -8,7 +8,6 @@ pipeline {
     }
 
     parameters {
-
         choice(
             name: 'BROWSER',
             choices: [
@@ -55,25 +54,18 @@ Contoh override manual:
     }
 
     environment {
-
         PROJECT_NAME = 'Digibox-kh'
-
         PROJECT_FILE = 'digibox-kh.prj'
-
         USERPROFILE = 'C:\\Users\\AgungPriyadi'
-
         DEFAULT_TEST = 'Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxkh_Web'
-
         KATALON_EXE = 'C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\katalonc.exe'
-
         KATALON_API_KEY = credentials('katalon-api-key')
-
         KATALON_ORG_ID = '2078893'
+        N8N_SHEETS_WEBHOOK = 'http://localhost:5678/webhook/79204498-fdea-41d3-a8a2-21b002f8b724'
     }
 
     stages {
 
-        // --- NOTIFIKASI MULAI ---
         stage('Notify Start') {
             steps {
                 script {
@@ -94,15 +86,19 @@ Contoh override manual:
                     bat '''
                     taskkill /F /IM katalonc.exe /T 2>nul || exit 0
                     taskkill /F /IM java.exe /T 2>nul || exit 0
+                    taskkill /F /IM chromedriver.exe /T 2>nul || exit 0
                     if exist "C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\config\\.metadata\\.lock" del /f /q "C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\config\\.metadata\\.lock" 2>nul || exit 0
+                    
+                    :: Bersihkan folder eksekusi lama agar hasil test case tidak terakumulasi
                     if exist Reports rmdir /s /q Reports
                     if exist Screenshot rmdir /s /q Screenshot
                     if exist summary.json del /f /q summary.json
                     if exist test_results.json del /f /q test_results.json
                     if exist error_log.txt del /f /q error_log.txt
+                    if exist failed_tests.json del /f /q failed_tests.json
+                    if exist Failure_Report.zip del /f /q Failure_Report.zip
                     '''
 
-                    // 1. Penanganan Mapping ENV Telegram ke Execution Profile Katalon
                     if (params.ENV?.trim()) {
                         def envInput = params.ENV.toLowerCase()
                         if (envInput == 'prod' || envInput == 'production') {
@@ -118,7 +114,6 @@ Contoh override manual:
                         env.TARGET_PROFILE = params.PROFILE ?: 'Development'
                     }
 
-                    // 2. Penanganan Mapping SUITE / TEST_PATH & Deteksi Otomatis Collection vs Suite
                     if (params.TEST_PATH?.trim()) {
                         def value = params.TEST_PATH.split("=")
                         env.ARG_TYPE = value[0]
@@ -136,7 +131,6 @@ Contoh override manual:
                         env.FINAL_PATH = env.DEFAULT_TEST
                     }
 
-                    // Deteksi otomatis tipe argumen Katalon CLI
                     if (!params.TEST_PATH?.trim()) {
                         if (env.FINAL_PATH.contains("Collection") || env.FINAL_PATH.contains("Web_Test_Suite_Collection")) {
                             env.ARG_TYPE = "-testSuiteCollectionPath"
@@ -145,7 +139,6 @@ Contoh override manual:
                         }
                     }
 
-                    // Menyusun argumen ekstra
                     if (env.ARG_TYPE == "-testSuiteCollectionPath") {
                         env.EXTRA_ARGS = ""
                     } else {
@@ -236,13 +229,67 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                 testResults: 'Reports/**/*.xml'
             )
 
-            // --- NOTIFIKASI SELESAI + RINGKASAN TEST CASE ---
             script {
                 def currentStatus = currentBuild.currentResult ?: 'UNKNOWN'
                 
                 bat """
-                powershell -Command "\$p=0;\$f=0;\$s=0; Get-ChildItem -Path 'Reports' -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { [xml]\$x = Get-Content \$_.FullName; foreach(\$ts in \$x.SelectNodes('//testsuite')){ \$t=[int]\$ts.tests; \$fail=[int]\$ts.failures + [int]\$ts.errors; \$skip=[int]\$ts.skipped; \$pass=\$t - (\$fail + \$skip); if(\$pass -gt 0){\$p+=\$pass}; \$f+=\$fail; \$s+=\$skip } }; \$json = '{\\"job\\":\\"${env.JOB_NAME}\\",\\"projectName\\":\\"${env.PROJECT_NAME}\\",\\"buildNumber\\":${env.BUILD_NUMBER},\\"status\\":\\"${currentStatus}\\",\\"phase\\":\\"COMPLETED\\",\\"passed\\":' + \$p + ',\\"failed\\":' + \$f + ',\\"skipped\\":' + \$s + '}'; Set-Content -Path 'summary.json' -Value \$json"
-                curl -X POST "http://localhost:5678/webhook/jenkins" -H "Content-Type: application/json" -d @summary.json
+                powershell -NoProfile -ExecutionPolicy Bypass -Command "\
+                    try { \
+                        \$dateStr = (Get-Date).ToString('dd-MM-yyyy'); \
+                        \$browser = if ('${params.BROWSER}' -like '*Firefox*') { 'Firefox Headless' } else { 'Chrome Headless' }; \
+                        \$targetBase = 'C:\\Users\\AgungPriyadi\\OneDrive - (G)Tech Digital\\Attachments\\Digibox.kh'; \
+                        if (-not (Test-Path \$targetBase)) { \
+                            \$found = Get-ChildItem -Path 'C:\\Users\\AgungPriyadi' -Filter 'Digibox.kh' -Recurse -Directory -ErrorAction SilentlyContinue | Select-Object -First 1; \
+                            if (\$found) { \$targetBase = \$found.FullName } \
+                        }; \
+                        \$dest = Join-Path (Join-Path \$targetBase \$dateStr) \$browser; \
+                        if (-not (Test-Path \$dest)) { New-Item -ItemType Directory -Path \$dest -Force | Out-Null }; \
+                        \$reports = Get-ChildItem -Path 'Reports' -Filter '*.html' -Recurse -ErrorAction SilentlyContinue; \
+                        if (\$reports) { \
+                            \$reports | ForEach-Object { \
+                                \$curr = \$_.Directory; \
+                                \$modName = ''; \
+                                while (\$curr -and \$curr.Name -ne 'Reports' -and \$curr.FullName -ne \$env:WORKSPACE) { \
+                                    if (\$curr.Name -notmatch '^\\d{8}_\\d{6}\$' -and \$curr.Name -ne 'Test Suites') { \$modName = \$curr.Name; break }; \
+                                    \$curr = \$curr.Parent \
+                                }; \
+                                if (-not \$modName) { \$modName = if ('${env.PROJECT_NAME}') { '${env.PROJECT_NAME}' } else { 'Test_Report' } }; \
+                                \$safeName = (\$modName -replace '[^a-zA-Z0-9_\\- ]', '_').Trim(); \
+                                \$destFile = Join-Path \$dest (\$safeName + '.html'); \
+                                Copy-Item -Path \$_.FullName -Destination \$destFile -Force; \
+                                Write-Host ('Copied HTML: ' + \$safeName + '.html') \
+                            } \
+                        } \
+                    } catch { Write-Host ('Error copy OneDrive: ' + \$_.Exception.Message) }; \
+                    \$p=0; \$f=0; \$s=0; \
+                    \$latestFolder = Get-ChildItem -Path 'Reports' -Directory -Recurse | Where-Object { \$_.Name -match '^\\d{8}_\\d{6}\$' } | Sort-Object LastWriteTime -Descending | Select-Object -First 1; \
+                    \$searchRoot = if (\$latestFolder) { \$latestFolder.FullName } else { 'Reports' }; \
+                    Get-ChildItem -Path \$searchRoot -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { \
+                        [xml]\$x = Get-Content \$_.FullName; \
+                        foreach(\$ts in \$x.SelectNodes('//testsuite')){ \
+                            \$t=[int]\$ts.tests; \
+                            \$fail=[int]\$ts.failures + [int]\$ts.errors; \
+                            \$skip=[int]\$ts.skipped; \
+                            \$pass=\$t - (\$fail + \$skip); \
+                            if(\$pass -gt 0){\$p+=\$pass}; \
+                            \$f+=\$fail; \
+                            \$s+=\$skip \
+                        } \
+                    }; \
+                    \$body = @{ \
+                        job = '${env.JOB_NAME}'; \
+                        projectName = '${env.PROJECT_NAME}'; \
+                        buildNumber = [int]${env.BUILD_NUMBER}; \
+                        status = '${currentStatus}'; \
+                        phase = 'COMPLETED'; \
+                        passed = \$p; \
+                        failed = \$f; \
+                        skipped = \$s \
+                    } | ConvertTo-Json; \
+                    Set-Content -Path 'summary.json' -Value \$body; \
+                    Invoke-RestMethod -Uri 'http://localhost:5678/webhook/jenkins' -Method Post -ContentType 'application/json' -Body \$body; \
+                    Write-Host 'SUCCESS: Finished Webhook sent to n8n' \
+                "
                 """
             }
 
@@ -252,25 +299,38 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
             echo "======================================"
         }
 
-unstable {
-            echo "Automation UNSTABLE - Preparing Zip, AI Error Log & Sending to Google Sheets..."
+        unstable {
+            echo "Automation UNSTABLE - Preparing Compact Zip, AI Error Log & Sending to Google Sheets..."
             script {
                 bat """
                 powershell -NoProfile -ExecutionPolicy Bypass -Command "\
                     try { \
-                        \$tempZip = Join-Path \$env:TEMP 'DigiboxVN_Failures'; \
+                        \$tempZip = Join-Path \$env:TEMP 'DigiboxKH_Failures'; \
                         if (Test-Path \$tempZip) { Remove-Item \$tempZip -Recurse -Force -ErrorAction SilentlyContinue }; \
-                        New-Item -ItemType Directory -Path \$tempZip -Force | Out-Null; \
-                        if (Test-Path 'Reports') { Copy-Item -Path 'Reports' -Destination \$tempZip -Recurse -Force -ErrorAction SilentlyContinue }; \
-                        if (Test-Path 'Screenshot') { Copy-Item -Path 'Screenshot' -Destination \$tempZip -Recurse -Force -ErrorAction SilentlyContinue }; \
+                        New-Item -ItemType Directory -Path (Join-Path \$tempZip 'Reports') -Force | Out-Null; \
+                        Get-ChildItem -Path 'Reports' -Recurse -File -ErrorAction SilentlyContinue | Where-Object { \$_.Extension -in '.html', '.xml', '.log', '.properties' } | ForEach-Object { \
+                            \$rel = \$_.FullName.Substring((Get-Item 'Reports').FullName.Length); \
+                            \$targetFile = Join-Path (Join-Path \$tempZip 'Reports') \$rel; \
+                            \$targetDir = Split-Path \$targetFile -Parent; \
+                            if (-not (Test-Path \$targetDir)) { New-Item -ItemType Directory -Path \$targetDir -Force | Out-Null }; \
+                            Copy-Item -Path \$_.FullName -Destination \$targetFile -Force; \
+                        }; \
+                        if (Test-Path 'Screenshot') { \
+                            New-Item -ItemType Directory -Path (Join-Path \$tempZip 'Screenshot') -Force | Out-Null; \
+                            Get-ChildItem -Path 'Screenshot' -Filter '*.png' -Recurse -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 10 | ForEach-Object { \
+                                Copy-Item -Path \$_.FullName -Destination (Join-Path \$tempZip 'Screenshot') -Force; \
+                            }; \
+                        }; \
                         if (Test-Path 'Failure_Report.zip') { Remove-Item 'Failure_Report.zip' -Force -ErrorAction SilentlyContinue }; \
-                        Compress-Archive -Path (Join-Path \$tempZip '*') -DestinationPath 'Failure_Report.zip' -Force -ErrorAction SilentlyContinue; \
+                        Compress-Archive -Path (Join-Path \$tempZip '*') -DestinationPath 'Failure_Report.zip' -CompressionLevel Optimal -Force -ErrorAction SilentlyContinue; \
                         Remove-Item \$tempZip -Recurse -Force -ErrorAction SilentlyContinue; \
                     } catch { Write-Host ('Error creating zip: ' + \$_.Exception.Message) }; \
                     \$errs = @(); \
                     \$tcList = @(); \
                     \$i = 1; \
-                    Get-ChildItem -Path 'Reports' -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { \
+                    \$latestFolder = Get-ChildItem -Path 'Reports' -Directory -Recurse | Where-Object { \$_.Name -match '^\\d{8}_\\d{6}\$' } | Sort-Object LastWriteTime -Descending | Select-Object -First 1; \
+                    \$searchRoot = if (\$latestFolder) { \$latestFolder.FullName } else { 'Reports' }; \
+                    Get-ChildItem -Path \$searchRoot -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { \
                         [xml]\$x = Get-Content \$_.FullName; \
                         foreach(\$ts in \$x.SelectNodes('//testsuite')){ \
                             \$tsName = \$ts.name; \
@@ -288,7 +348,7 @@ unstable {
                     }; \
                     if (\$errs.Count -eq 0) { \$errs += 'No detailed XML stacktrace found.' }; \
                     Set-Content -Path 'error_log.txt' -Value (\$errs -join ([Environment]::NewLine + '---' + [Environment]::NewLine)); \
-                    \$jsonPayload = @{ projectName = '${env.PROJECT_NAME}'; jobName = '${env.JOB_NAME}'; buildUrl = '${env.BUILD_URL}'; buildNumber = ${env.BUILD_NUMBER}; testCases = \$tcList } | ConvertTo-Json -Depth 5; \
+                    \$jsonPayload = @{ projectName = '${env.PROJECT_NAME}'; jobName = '${env.JOB_NAME}'; buildUrl = '${env.BUILD_URL}'; buildNumber = [int]${env.BUILD_NUMBER}; testCases = \$tcList } | ConvertTo-Json -Depth 5; \
                     Set-Content -Path 'failed_tests.json' -Value \$jsonPayload; \
                 "
 
@@ -300,24 +360,37 @@ unstable {
         }
 
         failure {
-            echo "Automation FAILED - Preparing Zip, AI Error Log & Sending to Google Sheets..."
+            echo "Automation FAILED - Preparing Compact Zip, AI Error Log & Sending to Google Sheets..."
             script {
                 bat """
                 powershell -NoProfile -ExecutionPolicy Bypass -Command "\
                     try { \
-                        \$tempZip = Join-Path \$env:TEMP 'DigiboxVN_Failures'; \
+                        \$tempZip = Join-Path \$env:TEMP 'DigiboxKH_Failures'; \
                         if (Test-Path \$tempZip) { Remove-Item \$tempZip -Recurse -Force -ErrorAction SilentlyContinue }; \
-                        New-Item -ItemType Directory -Path \$tempZip -Force | Out-Null; \
-                        if (Test-Path 'Reports') { Copy-Item -Path 'Reports' -Destination \$tempZip -Recurse -Force -ErrorAction SilentlyContinue }; \
-                        if (Test-Path 'Screenshot') { Copy-Item -Path 'Screenshot' -Destination \$tempZip -Recurse -Force -ErrorAction SilentlyContinue }; \
+                        New-Item -ItemType Directory -Path (Join-Path \$tempZip 'Reports') -Force | Out-Null; \
+                        Get-ChildItem -Path 'Reports' -Recurse -File -ErrorAction SilentlyContinue | Where-Object { \$_.Extension -in '.html', '.xml', '.log', '.properties' } | ForEach-Object { \
+                            \$rel = \$_.FullName.Substring((Get-Item 'Reports').FullName.Length); \
+                            \$targetFile = Join-Path (Join-Path \$tempZip 'Reports') \$rel; \
+                            \$targetDir = Split-Path \$targetFile -Parent; \
+                            if (-not (Test-Path \$targetDir)) { New-Item -ItemType Directory -Path \$targetDir -Force | Out-Null }; \
+                            Copy-Item -Path \$_.FullName -Destination \$targetFile -Force; \
+                        }; \
+                        if (Test-Path 'Screenshot') { \
+                            New-Item -ItemType Directory -Path (Join-Path \$tempZip 'Screenshot') -Force | Out-Null; \
+                            Get-ChildItem -Path 'Screenshot' -Filter '*.png' -Recurse -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 10 | ForEach-Object { \
+                                Copy-Item -Path \$_.FullName -Destination (Join-Path \$tempZip 'Screenshot') -Force; \
+                            }; \
+                        }; \
                         if (Test-Path 'Failure_Report.zip') { Remove-Item 'Failure_Report.zip' -Force -ErrorAction SilentlyContinue }; \
-                        Compress-Archive -Path (Join-Path \$tempZip '*') -DestinationPath 'Failure_Report.zip' -Force -ErrorAction SilentlyContinue; \
+                        Compress-Archive -Path (Join-Path \$tempZip '*') -DestinationPath 'Failure_Report.zip' -CompressionLevel Optimal -Force -ErrorAction SilentlyContinue; \
                         Remove-Item \$tempZip -Recurse -Force -ErrorAction SilentlyContinue; \
                     } catch { Write-Host ('Error creating zip: ' + \$_.Exception.Message) }; \
                     \$errs = @(); \
                     \$tcList = @(); \
                     \$i = 1; \
-                    Get-ChildItem -Path 'Reports' -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { \
+                    \$latestFolder = Get-ChildItem -Path 'Reports' -Directory -Recurse | Where-Object { \$_.Name -match '^\\d{8}_\\d{6}\$' } | Sort-Object LastWriteTime -Descending | Select-Object -First 1; \
+                    \$searchRoot = if (\$latestFolder) { \$latestFolder.FullName } else { 'Reports' }; \
+                    Get-ChildItem -Path \$searchRoot -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { \
                         [xml]\$x = Get-Content \$_.FullName; \
                         foreach(\$ts in \$x.SelectNodes('//testsuite')){ \
                             \$tsName = \$ts.name; \
@@ -335,7 +408,7 @@ unstable {
                     }; \
                     if (\$errs.Count -eq 0) { \$errs += 'No detailed XML stacktrace found.' }; \
                     Set-Content -Path 'error_log.txt' -Value (\$errs -join ([Environment]::NewLine + '---' + [Environment]::NewLine)); \
-                    \$jsonPayload = @{ projectName = '${env.PROJECT_NAME}'; jobName = '${env.JOB_NAME}'; buildUrl = '${env.BUILD_URL}'; buildNumber = ${env.BUILD_NUMBER}; testCases = \$tcList } | ConvertTo-Json -Depth 5; \
+                    \$jsonPayload = @{ projectName = '${env.PROJECT_NAME}'; jobName = '${env.JOB_NAME}'; buildUrl = '${env.BUILD_URL}'; buildNumber = [int]${env.BUILD_NUMBER}; testCases = \$tcList } | ConvertTo-Json -Depth 5; \
                     Set-Content -Path 'failed_tests.json' -Value \$jsonPayload; \
                 "
 
@@ -345,7 +418,5 @@ unstable {
                 """
             }
         }
-
     }
-
 }
