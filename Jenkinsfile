@@ -11,11 +11,11 @@ pipeline {
         choice(
             name: 'BROWSER',
             choices: [
+                'Both',
                 'Chrome (headless)',
-                'Firefox (headless)',
-                'Both'
+                'Firefox (headless)'
             ],
-            description: 'Pilih Browser (Abaikan jika memanggil Test Suite Collection)'
+            description: 'Pilih Browser (Both = Menjalankan Chrome lalu Firefox)'
         )
 
         choice(
@@ -83,7 +83,7 @@ Contoh override manual:
         stage('Prepare') {
             steps {
                 script {
-                    // Bersihkan semua proses Katalon, Java, Driver yang mungkin masih menggantung di background laptop
+                    // Bersihkan semua proses Katalon, Java, dan Driver di background
                     bat '''
                     taskkill /F /IM katalon.exe /T 2>nul || exit 0
                     taskkill /F /IM katalonc.exe /T 2>nul || exit 0
@@ -105,7 +105,7 @@ Contoh override manual:
                     "
                     '''
 
-                    // Mapping Execution Profile (default & development)
+                    // Mapping Execution Profile
                     if (params.ENV?.trim()) {
                         def envInput = params.ENV.toLowerCase()
                         if (envInput == 'dev' || envInput == 'development') {
@@ -168,7 +168,6 @@ Contoh override manual:
                 anyOf {
                     expression { params.BROWSER == 'Chrome (headless)' }
                     expression { params.BROWSER == 'Both' }
-                    expression { env.ARG_TYPE == '-testSuiteCollectionPath' }
                 }
             }
             steps {
@@ -191,12 +190,9 @@ Contoh override manual:
 
         stage('Run Firefox') {
             when {
-                allOf {
-                    expression { env.ARG_TYPE == '-testSuitePath' }
-                    anyOf {
-                        expression { params.BROWSER == 'Firefox (headless)' }
-                        expression { params.BROWSER == 'Both' }
-                    }
+                anyOf {
+                    expression { params.BROWSER == 'Firefox (headless)' }
+                    expression { params.BROWSER == 'Both' }
                 }
             }
             steps {
@@ -391,7 +387,7 @@ Contoh override manual:
                         if (Test-Path 'Failure_Report.zip') { Remove-Item 'Failure_Report.zip' -Force -ErrorAction SilentlyContinue }; \
                         Compress-Archive -Path (Join-Path \$tempZip '*') -DestinationPath 'Failure_Report.zip' -CompressionLevel Optimal -Force -ErrorAction SilentlyContinue; \
                         Remove-Item \$tempZip -Recurse -Force -ErrorAction SilentlyContinue; \
-                    } catch { Write-Host ('Error creating zip: ' + \$_.Exception.Message) }; \
+                    } catch { Write-Host ('Error practical zip: ' + \$_.Exception.Message) }; \
                     \$errs = @(); \
                     \$tcList = @(); \
                     \$i = 1; \
