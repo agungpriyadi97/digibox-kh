@@ -173,20 +173,14 @@ Contoh override manual:
             }
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'UNSTABLE') {
-                    bat """
-"${env.KATALON_EXE}" ^
--noSplash ^
--runMode=console ^
--projectPath="%WORKSPACE%\\${env.PROJECT_FILE}" ^
--retry=0 ^
--apiKey="${env.KATALON_API_KEY}" ^
--orgID="${env.KATALON_ORG_ID}" ^
-${env.ARG_TYPE}="${env.FINAL_PATH}" ^
-${env.EXTRA_ARGS_CHROME} ^
---config ^
--webui.autoUpdateDrivers=true ^
--webui.chrome.args="--disable-blink-features=AutomationControlled --disable-dev-shm-usage --disable-gpu --no-sandbox --window-size=1920,1080"
-"""
+                    script {
+                        def cmd = "\"${env.KATALON_EXE}\" -clean -noSplash -runMode=console -projectPath=\"%WORKSPACE%\\${env.PROJECT_FILE}\" -retry=0 -apiKey=\"${env.KATALON_API_KEY}\" -orgID=\"${env.KATALON_ORG_ID}\" ${env.ARG_TYPE}=\"${env.FINAL_PATH}\""
+                        if (env.EXTRA_ARGS_CHROME) {
+                            cmd += " ${env.EXTRA_ARGS_CHROME}"
+                        }
+                        cmd += " --config -webui.autoUpdateDrivers=true -webui.chrome.args=\"--disable-blink-features=AutomationControlled --disable-dev-shm-usage --disable-gpu --no-sandbox --window-size=1920,1080\""
+                        bat cmd
+                    }
                 }
                 bat '''
                 taskkill /F /IM chromedriver.exe /T 2>nul || exit 0
@@ -207,19 +201,14 @@ ${env.EXTRA_ARGS_CHROME} ^
             }
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'UNSTABLE') {
-                    bat """
-"${env.KATALON_EXE}" ^
--noSplash ^
--runMode=console ^
--projectPath="%WORKSPACE%\\${env.PROJECT_FILE}" ^
--retry=0 ^
--apiKey="${env.KATALON_API_KEY}" ^
--orgID="${env.KATALON_ORG_ID}" ^
-${env.ARG_TYPE}="${env.FINAL_PATH}" ^
-${env.EXTRA_ARGS_FIREFOX} ^
---config ^
--webui.autoUpdateDrivers=true
-"""
+                    script {
+                        def cmd = "\"${env.KATALON_EXE}\" -clean -noSplash -runMode=console -projectPath=\"%WORKSPACE%\\${env.PROJECT_FILE}\" -retry=0 -apiKey=\"${env.KATALON_API_KEY}\" -orgID=\"${env.KATALON_ORG_ID}\" ${env.ARG_TYPE}=\"${env.FINAL_PATH}\""
+                        if (env.EXTRA_ARGS_FIREFOX) {
+                            cmd += " ${env.EXTRA_ARGS_FIREFOX}"
+                        }
+                        cmd += " --config -webui.autoUpdateDrivers=true"
+                        bat cmd
+                    }
                 }
                 bat '''
                 taskkill /F /IM geckodriver.exe /T 2>nul || exit 0
