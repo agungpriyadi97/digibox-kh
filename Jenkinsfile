@@ -83,9 +83,12 @@ Contoh override manual:
         stage('Prepare') {
             steps {
                 script {
+                    // Bersihkan semua proses Katalon, Java, Driver yang mungkin masih menggantung di background laptop
                     bat '''
+                    taskkill /F /IM katalon.exe /T 2>nul || exit 0
                     taskkill /F /IM katalonc.exe /T 2>nul || exit 0
                     taskkill /F /IM java.exe /T 2>nul || exit 0
+                    taskkill /F /IM javaw.exe /T 2>nul || exit 0
                     taskkill /F /IM chromedriver.exe /T 2>nul || exit 0
                     taskkill /F /IM geckodriver.exe /T 2>nul || exit 0
                     if exist "C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\config\\.metadata\\.lock" del /f /q "C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\config\\.metadata\\.lock" 2>nul || exit 0
@@ -102,7 +105,7 @@ Contoh override manual:
                     "
                     '''
 
-                    // Mapping Profile sesuai profil yang ada (default & development)
+                    // Mapping Execution Profile (default & development)
                     if (params.ENV?.trim()) {
                         def envInput = params.ENV.toLowerCase()
                         if (envInput == 'dev' || envInput == 'development') {
@@ -114,6 +117,7 @@ Contoh override manual:
                         env.TARGET_PROFILE = params.PROFILE ?: 'default'
                     }
 
+                    // Mapping Target Test Suite / Collection
                     if (params.TEST_PATH?.trim()) {
                         def value = params.TEST_PATH.split("=")
                         env.ARG_TYPE = value[0]
@@ -272,16 +276,20 @@ ${env.EXTRA_ARGS_FIREFOX} ^
                         } \
                     } catch { Write-Host ('Error copy OneDrive: ' + \$_.Exception.Message) }; \
                     \$p=0; \$f=0; \$s=0; \
-                    Get-ChildItem -Path 'Reports' -Filter 'JUnit_Report.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { \
-                        [xml]\$x = Get-Content \$_.FullName; \
-                        foreach(\$ts in \$x.SelectNodes('//testsuite')){ \
-                            \$t=[int]\$ts.tests; \
-                            \$fail=[int]\$ts.failures + [int]\$ts.errors; \
-                            \$skip=[int]\$ts.skipped; \
-                            \$pass=\$t - (\$fail + \$skip); \
-                            if(\$pass -gt 0){\$p+=\$pass}; \
-                            \$f+=\$fail; \
-                            \$s+=\$skip \
+                    \$xmlFiles = Get-ChildItem -Path 'Reports' -Filter 'JUnit_Report.xml' -Recurse -ErrorAction SilentlyContinue; \
+                    if (-not \$xmlFiles) { \$xmlFiles = Get-ChildItem -Path 'Reports' -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | Where-Object { \$_.Name -ne 'TESTS-TestSuites.xml' } }; \
+                    if (\$xmlFiles) { \
+                        \$xmlFiles | ForEach-Object { \
+                            [xml]\$x = Get-Content \$_.FullName; \
+                            foreach(\$ts in \$x.SelectNodes('//testsuite')){ \
+                                \$t=[int]\$ts.tests; \
+                                \$fail=[int]\$ts.failures + [int]\$ts.errors; \
+                                \$skip=[int]\$ts.skipped; \
+                                \$pass=\$t - (\$fail + \$skip); \
+                                if(\$pass -gt 0){\$p+=\$pass}; \
+                                \$f+=\$fail; \
+                                \$s+=\$skip \
+                            } \
                         } \
                     }; \
                     \$body = @{ \
@@ -336,19 +344,23 @@ ${env.EXTRA_ARGS_FIREFOX} ^
                     \$errs = @(); \
                     \$tcList = @(); \
                     \$i = 1; \
-                    Get-ChildItem -Path 'Reports' -Filter 'JUnit_Report.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { \
-                        [xml]\$x = Get-Content \$_.FullName; \
-                        foreach(\$ts in \$x.SelectNodes('//testsuite')){ \
-                            \$tsName = \$ts.name; \
-                            foreach(\$tc in \$ts.SelectNodes('.//testcase[failure or error]')){ \
-                                \$node = if(\$tc.failure){\$tc.failure}else{\$tc.error}; \
-                                \$msg = \$node.message; \
-                                if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$node.innerText }; \
-                                if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$tc.'system-err' }; \
-                                if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = 'No detailed error message found in XML.' }; \
-                                \$errs += ('[Test Case]: ' + \$tc.name + [Environment]::NewLine + '[Error]: ' + \$msg); \
-                                \$tcList += @{ number = [string]\$i; testSuiteName = \$tsName; testCaseName = [string]\$tc.name; status = 'failed'; errorMessage = [string]\$msg; reportUrl = '${env.BUILD_URL}' }; \
-                                \$i++ \
+                    \$xmlFiles = Get-ChildItem -Path 'Reports' -Filter 'JUnit_Report.xml' -Recurse -ErrorAction SilentlyContinue; \
+                    if (-not \$xmlFiles) { \$xmlFiles = Get-ChildItem -Path 'Reports' -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | Where-Object { \$_.Name -ne 'TESTS-TestSuites.xml' } }; \
+                    if (\$xmlFiles) { \
+                        \$xmlFiles | ForEach-Object { \
+                            [xml]\$x = Get-Content \$_.FullName; \
+                            foreach(\$ts in \$x.SelectNodes('//testsuite')){ \
+                                \$tsName = \$ts.name; \
+                                foreach(\$tc in \$ts.SelectNodes('.//testcase[failure or error]')){ \
+                                    \$node = if(\$tc.failure){\$tc.failure}else{\$tc.error}; \
+                                    \$msg = \$node.message; \
+                                    if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$node.innerText }; \
+                                    if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$tc.'system-err' }; \
+                                    if([string]::IsNullOrWhiteSpace(\$msg) -or \$msg -eq 'false'){ continue }; \
+                                    \$errs += ('[Test Case]: ' + \$tc.name + [Environment]::NewLine + '[Error]: ' + \$msg); \
+                                    \$tcList += @{ number = [string]\$i; testSuiteName = \$tsName; testCaseName = [string]\$tc.name; status = 'failed'; errorMessage = [string]\$msg; reportUrl = '${env.BUILD_URL}' }; \
+                                    \$i++ \
+                                } \
                             } \
                         } \
                     }; \
@@ -394,19 +406,23 @@ ${env.EXTRA_ARGS_FIREFOX} ^
                     \$errs = @(); \
                     \$tcList = @(); \
                     \$i = 1; \
-                    Get-ChildItem -Path 'Reports' -Filter 'JUnit_Report.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { \
-                        [xml]\$x = Get-Content \$_.FullName; \
-                        foreach(\$ts in \$x.SelectNodes('//testsuite')){ \
-                            \$tsName = \$ts.name; \
-                            foreach(\$tc in \$ts.SelectNodes('.//testcase[failure or error]')){ \
-                                \$node = if(\$tc.failure){\$tc.failure}else{\$tc.error}; \
-                                \$msg = \$node.message; \
-                                if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$node.innerText }; \
-                                if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$tc.'system-err' }; \
-                                if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = 'No detailed error message found in XML.' }; \
-                                \$errs += ('[Test Case]: ' + \$tc.name + [Environment]::NewLine + '[Error]: ' + \$msg); \
-                                \$tcList += @{ number = [string]\$i; testSuiteName = \$tsName; testCaseName = [string]\$tc.name; status = 'failed'; errorMessage = [string]\$msg; reportUrl = '${env.BUILD_URL}' }; \
-                                \$i++ \
+                    \$xmlFiles = Get-ChildItem -Path 'Reports' -Filter 'JUnit_Report.xml' -Recurse -ErrorAction SilentlyContinue; \
+                    if (-not \$xmlFiles) { \$xmlFiles = Get-ChildItem -Path 'Reports' -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | Where-Object { \$_.Name -ne 'TESTS-TestSuites.xml' } }; \
+                    if (\$xmlFiles) { \
+                        \$xmlFiles | ForEach-Object { \
+                            [xml]\$x = Get-Content \$_.FullName; \
+                            foreach(\$ts in \$x.SelectNodes('//testsuite')){ \
+                                \$tsName = \$ts.name; \
+                                foreach(\$tc in \$ts.SelectNodes('.//testcase[failure or error]')){ \
+                                    \$node = if(\$tc.failure){\$tc.failure}else{\$tc.error}; \
+                                    \$msg = \$node.message; \
+                                    if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$node.innerText }; \
+                                    if([string]::IsNullOrWhiteSpace(\$msg)){ \$msg = \$tc.'system-err' }; \
+                                    if([string]::IsNullOrWhiteSpace(\$msg) -or \$msg -eq 'false'){ continue }; \
+                                    \$errs += ('[Test Case]: ' + \$tc.name + [Environment]::NewLine + '[Error]: ' + \$msg); \
+                                    \$tcList += @{ number = [string]\$i; testSuiteName = \$tsName; testCaseName = [string]\$tc.name; status = 'failed'; errorMessage = [string]\$msg; reportUrl = '${env.BUILD_URL}' }; \
+                                    \$i++ \
+                                } \
                             } \
                         } \
                     }; \
