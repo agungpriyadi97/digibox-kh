@@ -15,16 +15,14 @@ pipeline {
                 'Firefox (headless)',
                 'Both'
             ],
-            description: 'Pilih Browser untuk Pengujian'
+            description: 'Pilih Browser (Abaikan jika memanggil Test Suite Collection)'
         )
 
         choice(
             name: 'PROFILE',
             choices: [
-                'Development',
-                'QA',
-                'UAT',
-                'Production'
+                'default',
+                'development'
             ],
             description: 'Execution Profile'
         )
@@ -32,7 +30,7 @@ pipeline {
         string(
             name: 'ENV',
             defaultValue: 'staging',
-            description: 'Target Environment dari Telegram (staging, uat, prod)'
+            description: 'Target Environment dari Telegram'
         )
 
         string(
@@ -91,30 +89,29 @@ Contoh override manual:
                     taskkill /F /IM chromedriver.exe /T 2>nul || exit 0
                     taskkill /F /IM geckodriver.exe /T 2>nul || exit 0
                     if exist "C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\config\\.metadata\\.lock" del /f /q "C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\config\\.metadata\\.lock" 2>nul || exit 0
-                    
-                    :: Bersihkan folder Reports & file temporary sebelum run baru
-                    if exist Reports rmdir /s /q Reports
-                    if exist Screenshot rmdir /s /q Screenshot
-                    if exist summary.json del /f /q summary.json
-                    if exist test_results.json del /f /q test_results.json
-                    if exist error_log.txt del /f /q error_log.txt
-                    if exist failed_tests.json del /f /q failed_tests.json
-                    if exist Failure_Report.zip del /f /q Failure_Report.zip
                     '''
 
+                    bat '''
+                    powershell -NoProfile -ExecutionPolicy Bypass -Command "\
+                        if (Test-Path 'Reports') { Remove-Item -Path 'Reports' -Recurse -Force -ErrorAction SilentlyContinue }; \
+                        if (Test-Path 'Screenshot') { Remove-Item -Path 'Screenshot' -Recurse -Force -ErrorAction SilentlyContinue }; \
+                        if (Test-Path 'summary.json') { Remove-Item 'summary.json' -Force -ErrorAction SilentlyContinue }; \
+                        if (Test-Path 'failed_tests.json') { Remove-Item 'failed_tests.json' -Force -ErrorAction SilentlyContinue }; \
+                        if (Test-Path 'error_log.txt') { Remove-Item 'error_log.txt' -Force -ErrorAction SilentlyContinue }; \
+                        if (Test-Path 'Failure_Report.zip') { Remove-Item 'Failure_Report.zip' -Force -ErrorAction SilentlyContinue }; \
+                    "
+                    '''
+
+                    // Mapping Profile sesuai profil yang ada (default & development)
                     if (params.ENV?.trim()) {
                         def envInput = params.ENV.toLowerCase()
-                        if (envInput == 'prod' || envInput == 'production') {
-                            env.TARGET_PROFILE = 'Production'
-                        } else if (envInput == 'uat') {
-                            env.TARGET_PROFILE = 'UAT'
-                        } else if (envInput == 'qa') {
-                            env.TARGET_PROFILE = 'QA'
+                        if (envInput == 'dev' || envInput == 'development') {
+                            env.TARGET_PROFILE = 'development'
                         } else {
-                            env.TARGET_PROFILE = 'Development'
+                            env.TARGET_PROFILE = 'default'
                         }
                     } else {
-                        env.TARGET_PROFILE = params.PROFILE ?: 'Development'
+                        env.TARGET_PROFILE = params.PROFILE ?: 'default'
                     }
 
                     if (params.TEST_PATH?.trim()) {
@@ -142,6 +139,14 @@ Contoh override manual:
                         }
                     }
 
+                    if (env.ARG_TYPE == "-testSuiteCollectionPath") {
+                        env.EXTRA_ARGS_CHROME = ""
+                        env.EXTRA_ARGS_FIREFOX = ""
+                    } else {
+                        env.EXTRA_ARGS_CHROME = "-executionProfile=\"${env.TARGET_PROFILE}\" -browserType=\"Chrome (headless)\""
+                        env.EXTRA_ARGS_FIREFOX = "-executionProfile=\"${env.TARGET_PROFILE}\" -browserType=\"Firefox (headless)\""
+                    }
+
                     echo "====================================="
                     echo "PROJECT : ${env.PROJECT_FILE}"
                     echo "PROFILE : ${env.TARGET_PROFILE}"
@@ -154,14 +159,12 @@ Contoh override manual:
             }
         }
 
-        // ========================================================
-        // STAGE 1: EKSEKUSI CHROME (Urutan Pertama)
-        // ========================================================
         stage('Run Chrome') {
             when {
                 anyOf {
                     expression { params.BROWSER == 'Chrome (headless)' }
                     expression { params.BROWSER == 'Both' }
+                    expression { env.ARG_TYPE == '-testSuiteCollectionPath' }
                 }
             }
             steps {
@@ -175,14 +178,12 @@ Contoh override manual:
 -apiKey="${env.KATALON_API_KEY}" ^
 -orgID="${env.KATALON_ORG_ID}" ^
 ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
--executionProfile="${env.TARGET_PROFILE}" ^
--browserType="Chrome (headless)" ^
+${env.EXTRA_ARGS_CHROME} ^
 --config ^
 -webui.autoUpdateDrivers=true ^
 -webui.chrome.args="--disable-blink-features=AutomationControlled --disable-dev-shm-usage --disable-gpu --no-sandbox --window-size=1920,1080"
 """
                 }
-                // Cleanup proses Chrome setelah selesai agar resource bersih sebelum Firefox
                 bat '''
                 taskkill /F /IM chromedriver.exe /T 2>nul || exit 0
                 taskkill /F /IM chrome.exe /T 2>nul || exit 0
@@ -190,14 +191,14 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
             }
         }
 
-        // ========================================================
-        // STAGE 2: EKSEKUSI FIREFOX (Urutan Kedua)
-        // ========================================================
         stage('Run Firefox') {
             when {
-                anyOf {
-                    expression { params.BROWSER == 'Firefox (headless)' }
-                    expression { params.BROWSER == 'Both' }
+                allOf {
+                    expression { env.ARG_TYPE == '-testSuitePath' }
+                    anyOf {
+                        expression { params.BROWSER == 'Firefox (headless)' }
+                        expression { params.BROWSER == 'Both' }
+                    }
                 }
             }
             steps {
@@ -211,13 +212,11 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
 -apiKey="${env.KATALON_API_KEY}" ^
 -orgID="${env.KATALON_ORG_ID}" ^
 ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
--executionProfile="${env.TARGET_PROFILE}" ^
--browserType="Firefox (headless)" ^
+${env.EXTRA_ARGS_FIREFOX} ^
 --config ^
 -webui.autoUpdateDrivers=true
 """
                 }
-                // Cleanup proses Firefox setelah selesai
                 bat '''
                 taskkill /F /IM geckodriver.exe /T 2>nul || exit 0
                 taskkill /F /IM firefox.exe /T 2>nul || exit 0
@@ -234,7 +233,6 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                 allowEmptyArchive: true
             )
 
-            // Mengunci pembacaan hanya pada file standar JUnit_Report.xml
             junit(
                 allowEmptyResults: true,
                 testResults: 'Reports/**/JUnit_Report.xml'
@@ -327,7 +325,7 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                         }; \
                         if (Test-Path 'Screenshot') { \
                             New-Item -ItemType Directory -Path (Join-Path \$tempZip 'Screenshot') -Force | Out-Null; \
-                            Get-ChildItem -Path 'Screenshot' -Filter '*.png' -Recurse -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 10 | ForEach-Object { \
+                            Get-ChildItem -Path 'Screenshot' -Filter '*.png' -Recurse -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 5 | ForEach-Object { \
                                 Copy-Item -Path \$_.FullName -Destination (Join-Path \$tempZip 'Screenshot') -Force; \
                             }; \
                         }; \
@@ -385,7 +383,7 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                         }; \
                         if (Test-Path 'Screenshot') { \
                             New-Item -ItemType Directory -Path (Join-Path \$tempZip 'Screenshot') -Force | Out-Null; \
-                            Get-ChildItem -Path 'Screenshot' -Filter '*.png' -Recurse -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 10 | ForEach-Object { \
+                            Get-ChildItem -Path 'Screenshot' -Filter '*.png' -Recurse -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 5 | ForEach-Object { \
                                 Copy-Item -Path \$_.FullName -Destination (Join-Path \$tempZip 'Screenshot') -Force; \
                             }; \
                         }; \
