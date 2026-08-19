@@ -56,6 +56,8 @@ Contoh override manual:
     environment {
         PROJECT_NAME = 'Digibox-kh'
         PROJECT_FILE = 'digibox-kh.prj'
+        PROJECT_FOLDER = 'Digibox.kh'
+        ONEDRIVE_ATTACHMENTS = 'C:\\Users\\AgungPriyadi\\OneDrive - (G)Tech Digital\\Attachments'
         USERPROFILE = 'C:\\Users\\AgungPriyadi'
         DEFAULT_TEST = 'Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxkh_Web'
         KATALON_EXE = 'C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\katalonc.exe'
@@ -89,7 +91,7 @@ Contoh override manual:
                     taskkill /F /IM chromedriver.exe /T 2>nul || exit 0
                     if exist "C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\config\\.metadata\\.lock" del /f /q "C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\config\\.metadata\\.lock" 2>nul || exit 0
                     
-                    :: Bersihkan folder eksekusi lama agar hasil test case tidak terakumulasi
+                    :: Bersihkan laporan & file lama sebelum eksekusi baru
                     if exist Reports rmdir /s /q Reports
                     if exist Screenshot rmdir /s /q Screenshot
                     if exist summary.json del /f /q summary.json
@@ -229,6 +231,7 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                 testResults: 'Reports/**/*.xml'
             )
 
+            // 🌟 COPY HTML REPORT KE ONEDRIVE & HITUNG KESELURUHAN TEST CASE (SEMUA MODUL)
             script {
                 def currentStatus = currentBuild.currentResult ?: 'UNKNOWN'
                 
@@ -237,11 +240,8 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                     try { \
                         \$dateStr = (Get-Date).ToString('dd-MM-yyyy'); \
                         \$browser = if ('${params.BROWSER}' -like '*Firefox*') { 'Firefox Headless' } else { 'Chrome Headless' }; \
-                        \$targetBase = 'C:\\Users\\AgungPriyadi\\OneDrive - (G)Tech Digital\\Attachments\\Digibox.kh'; \
-                        if (-not (Test-Path \$targetBase)) { \
-                            \$found = Get-ChildItem -Path 'C:\\Users\\AgungPriyadi' -Filter 'Digibox.kh' -Recurse -Directory -ErrorAction SilentlyContinue | Select-Object -First 1; \
-                            if (\$found) { \$targetBase = \$found.FullName } \
-                        }; \
+                        \$targetBase = 'C:\\Users\\AgungPriyadi\\OneDrive - (G)Tech Digital\\Attachments\\${env.PROJECT_FOLDER}'; \
+                        if (-not (Test-Path \$targetBase)) { \$found = Get-ChildItem -Path 'C:\\Users\\AgungPriyadi' -Filter '${env.PROJECT_FOLDER}' -Recurse -Directory -ErrorAction SilentlyContinue | Select-Object -First 1; if (\$found) { \$targetBase = \$found.FullName } }; \
                         \$dest = Join-Path (Join-Path \$targetBase \$dateStr) \$browser; \
                         if (-not (Test-Path \$dest)) { New-Item -ItemType Directory -Path \$dest -Force | Out-Null }; \
                         \$reports = Get-ChildItem -Path 'Reports' -Filter '*.html' -Recurse -ErrorAction SilentlyContinue; \
@@ -253,7 +253,7 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                                     if (\$curr.Name -notmatch '^\\d{8}_\\d{6}\$' -and \$curr.Name -ne 'Test Suites') { \$modName = \$curr.Name; break }; \
                                     \$curr = \$curr.Parent \
                                 }; \
-                                if (-not \$modName) { \$modName = if ('${env.PROJECT_NAME}') { '${env.PROJECT_NAME}' } else { 'Test_Report' } }; \
+                                if (-not \$modName) { \$modName = if ('${params.SUITE}') { (Split-Path '${params.SUITE}' -Leaf) } else { 'Test_Report' } }; \
                                 \$safeName = (\$modName -replace '[^a-zA-Z0-9_\\- ]', '_').Trim(); \
                                 \$destFile = Join-Path \$dest (\$safeName + '.html'); \
                                 Copy-Item -Path \$_.FullName -Destination \$destFile -Force; \
@@ -262,9 +262,7 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                         } \
                     } catch { Write-Host ('Error copy OneDrive: ' + \$_.Exception.Message) }; \
                     \$p=0; \$f=0; \$s=0; \
-                    \$latestFolder = Get-ChildItem -Path 'Reports' -Directory -Recurse | Where-Object { \$_.Name -match '^\\d{8}_\\d{6}\$' } | Sort-Object LastWriteTime -Descending | Select-Object -First 1; \
-                    \$searchRoot = if (\$latestFolder) { \$latestFolder.FullName } else { 'Reports' }; \
-                    Get-ChildItem -Path \$searchRoot -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { \
+                    Get-ChildItem -Path 'Reports' -Filter 'JUnit_Report.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { \
                         [xml]\$x = Get-Content \$_.FullName; \
                         foreach(\$ts in \$x.SelectNodes('//testsuite')){ \
                             \$t=[int]\$ts.tests; \
@@ -308,7 +306,7 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                         \$tempZip = Join-Path \$env:TEMP 'DigiboxKH_Failures'; \
                         if (Test-Path \$tempZip) { Remove-Item \$tempZip -Recurse -Force -ErrorAction SilentlyContinue }; \
                         New-Item -ItemType Directory -Path (Join-Path \$tempZip 'Reports') -Force | Out-Null; \
-                        Get-ChildItem -Path 'Reports' -Recurse -File -ErrorAction SilentlyContinue | Where-Object { \$_.Extension -in '.html', '.xml', '.log', '.properties' } | ForEach-Object { \
+                        Get-ChildItem -Path 'Reports' -Recurse -File -ErrorAction SilentlyContinue | Where-Object { \$_.Extension -in '.html', '.xml' } | ForEach-Object { \
                             \$rel = \$_.FullName.Substring((Get-Item 'Reports').FullName.Length); \
                             \$targetFile = Join-Path (Join-Path \$tempZip 'Reports') \$rel; \
                             \$targetDir = Split-Path \$targetFile -Parent; \
@@ -328,9 +326,7 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                     \$errs = @(); \
                     \$tcList = @(); \
                     \$i = 1; \
-                    \$latestFolder = Get-ChildItem -Path 'Reports' -Directory -Recurse | Where-Object { \$_.Name -match '^\\d{8}_\\d{6}\$' } | Sort-Object LastWriteTime -Descending | Select-Object -First 1; \
-                    \$searchRoot = if (\$latestFolder) { \$latestFolder.FullName } else { 'Reports' }; \
-                    Get-ChildItem -Path \$searchRoot -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { \
+                    Get-ChildItem -Path 'Reports' -Filter 'JUnit_Report.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { \
                         [xml]\$x = Get-Content \$_.FullName; \
                         foreach(\$ts in \$x.SelectNodes('//testsuite')){ \
                             \$tsName = \$ts.name; \
@@ -368,7 +364,7 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                         \$tempZip = Join-Path \$env:TEMP 'DigiboxKH_Failures'; \
                         if (Test-Path \$tempZip) { Remove-Item \$tempZip -Recurse -Force -ErrorAction SilentlyContinue }; \
                         New-Item -ItemType Directory -Path (Join-Path \$tempZip 'Reports') -Force | Out-Null; \
-                        Get-ChildItem -Path 'Reports' -Recurse -File -ErrorAction SilentlyContinue | Where-Object { \$_.Extension -in '.html', '.xml', '.log', '.properties' } | ForEach-Object { \
+                        Get-ChildItem -Path 'Reports' -Recurse -File -ErrorAction SilentlyContinue | Where-Object { \$_.Extension -in '.html', '.xml' } | ForEach-Object { \
                             \$rel = \$_.FullName.Substring((Get-Item 'Reports').FullName.Length); \
                             \$targetFile = Join-Path (Join-Path \$tempZip 'Reports') \$rel; \
                             \$targetDir = Split-Path \$targetFile -Parent; \
@@ -388,9 +384,7 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                     \$errs = @(); \
                     \$tcList = @(); \
                     \$i = 1; \
-                    \$latestFolder = Get-ChildItem -Path 'Reports' -Directory -Recurse | Where-Object { \$_.Name -match '^\\d{8}_\\d{6}\$' } | Sort-Object LastWriteTime -Descending | Select-Object -First 1; \
-                    \$searchRoot = if (\$latestFolder) { \$latestFolder.FullName } else { 'Reports' }; \
-                    Get-ChildItem -Path \$searchRoot -Filter '*.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { \
+                    Get-ChildItem -Path 'Reports' -Filter 'JUnit_Report.xml' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { \
                         [xml]\$x = Get-Content \$_.FullName; \
                         foreach(\$ts in \$x.SelectNodes('//testsuite')){ \
                             \$tsName = \$ts.name; \
