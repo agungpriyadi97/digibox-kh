@@ -91,7 +91,7 @@ Contoh override manual:
                     taskkill /F /IM chromedriver.exe /T 2>nul || exit 0
                     if exist "C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\config\\.metadata\\.lock" del /f /q "C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\config\\.metadata\\.lock" 2>nul || exit 0
                     
-                    :: Bersihkan laporan & file lama sebelum eksekusi baru
+                    :: Bersihkan folder Reports & file payload lama sebelum run baru
                     if exist Reports rmdir /s /q Reports
                     if exist Screenshot rmdir /s /q Screenshot
                     if exist summary.json del /f /q summary.json
@@ -226,12 +226,12 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                 allowEmptyArchive: true
             )
 
+            // 🌟 Kunci hanya membaca JUnit_Report.xml agar Jenkins tidak salah deteksi UNSTABLE
             junit(
                 allowEmptyResults: true,
-                testResults: 'Reports/**/*.xml'
+                testResults: 'Reports/**/JUnit_Report.xml'
             )
 
-            // 🌟 COPY HTML REPORT KE ONEDRIVE & HITUNG KESELURUHAN TEST CASE (SEMUA MODUL)
             script {
                 def currentStatus = currentBuild.currentResult ?: 'UNKNOWN'
                 
@@ -241,7 +241,10 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                         \$dateStr = (Get-Date).ToString('dd-MM-yyyy'); \
                         \$browser = if ('${params.BROWSER}' -like '*Firefox*') { 'Firefox Headless' } else { 'Chrome Headless' }; \
                         \$targetBase = 'C:\\Users\\AgungPriyadi\\OneDrive - (G)Tech Digital\\Attachments\\${env.PROJECT_FOLDER}'; \
-                        if (-not (Test-Path \$targetBase)) { \$found = Get-ChildItem -Path 'C:\\Users\\AgungPriyadi' -Filter '${env.PROJECT_FOLDER}' -Recurse -Directory -ErrorAction SilentlyContinue | Select-Object -First 1; if (\$found) { \$targetBase = \$found.FullName } }; \
+                        if (-not (Test-Path \$targetBase)) { \
+                            \$found = Get-ChildItem -Path 'C:\\Users\\AgungPriyadi' -Filter '${env.PROJECT_FOLDER}' -Recurse -Directory -ErrorAction SilentlyContinue | Select-Object -First 1; \
+                            if (\$found) { \$targetBase = \$found.FullName } \
+                        }; \
                         \$dest = Join-Path (Join-Path \$targetBase \$dateStr) \$browser; \
                         if (-not (Test-Path \$dest)) { New-Item -ItemType Directory -Path \$dest -Force | Out-Null }; \
                         \$reports = Get-ChildItem -Path 'Reports' -Filter '*.html' -Recurse -ErrorAction SilentlyContinue; \
@@ -297,6 +300,10 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
             echo "======================================"
         }
 
+        success {
+            echo "Automation SUCCESS"
+        }
+
         unstable {
             echo "Automation UNSTABLE - Preparing Compact Zip, AI Error Log & Sending to Google Sheets..."
             script {
@@ -350,7 +357,7 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
 
                 curl.exe -X POST "http://localhost:5678/webhook/jenkins-report" -F "chat_id=8122375919" -F "file=@Failure_Report.zip" -F "error_log=@error_log.txt"
 
-                powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-RestMethod -Uri '${env.N8N_SHEETS_WEBHOOK}' -Method Post -ContentType 'application/json' -InFile 'failed_tests.json'"
+                powershell -NoProfile -ExecutionPolicy Bypass -Command "if ((Get-Content 'failed_tests.json' | ConvertFrom-Json).testCases.Count -gt 0) { Invoke-RestMethod -Uri '${env.N8N_SHEETS_WEBHOOK}' -Method Post -ContentType 'application/json' -InFile 'failed_tests.json' }"
                 """
             }
         }
@@ -408,7 +415,7 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
 
                 curl.exe -X POST "http://localhost:5678/webhook/jenkins-report" -F "chat_id=8122375919" -F "file=@Failure_Report.zip" -F "error_log=@error_log.txt"
 
-                powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-RestMethod -Uri '${env.N8N_SHEETS_WEBHOOK}' -Method Post -ContentType 'application/json' -InFile 'failed_tests.json'"
+                powershell -NoProfile -ExecutionPolicy Bypass -Command "if ((Get-Content 'failed_tests.json' | ConvertFrom-Json).testCases.Count -gt 0) { Invoke-RestMethod -Uri '${env.N8N_SHEETS_WEBHOOK}' -Method Post -ContentType 'application/json' -InFile 'failed_tests.json' }"
                 """
             }
         }
