@@ -83,7 +83,6 @@ Contoh override manual:
         stage('Prepare') {
             steps {
                 script {
-                    // Bersihkan semua proses Katalon, Java, dan Driver di background
                     bat '''
                     taskkill /F /IM katalon.exe /T 2>nul || exit 0
                     taskkill /F /IM katalonc.exe /T 2>nul || exit 0
@@ -143,14 +142,6 @@ Contoh override manual:
                         }
                     }
 
-                    if (env.ARG_TYPE == "-testSuiteCollectionPath") {
-                        env.EXTRA_ARGS_CHROME = ""
-                        env.EXTRA_ARGS_FIREFOX = ""
-                    } else {
-                        env.EXTRA_ARGS_CHROME = "-executionProfile=\"${env.TARGET_PROFILE}\" -browserType=\"Chrome (headless)\""
-                        env.EXTRA_ARGS_FIREFOX = "-executionProfile=\"${env.TARGET_PROFILE}\" -browserType=\"Firefox (headless)\""
-                    }
-
                     echo "====================================="
                     echo "PROJECT : ${env.PROJECT_FILE}"
                     echo "PROFILE : ${env.TARGET_PROFILE}"
@@ -167,17 +158,14 @@ Contoh override manual:
             when {
                 anyOf {
                     expression { params.BROWSER == 'Chrome (headless)' }
+                    expression { params.BROWSER == 'Chrome' }
                     expression { params.BROWSER == 'Both' }
                 }
             }
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'UNSTABLE') {
                     script {
-                        def cmd = "\"${env.KATALON_EXE}\" -clean -noSplash -runMode=console -projectPath=\"%WORKSPACE%\\${env.PROJECT_FILE}\" -retry=0 -apiKey=\"${env.KATALON_API_KEY}\" -orgID=\"${env.KATALON_ORG_ID}\" ${env.ARG_TYPE}=\"${env.FINAL_PATH}\""
-                        if (env.EXTRA_ARGS_CHROME) {
-                            cmd += " ${env.EXTRA_ARGS_CHROME}"
-                        }
-                        cmd += " --config -webui.autoUpdateDrivers=true -webui.chrome.args=\"--disable-blink-features=AutomationControlled --disable-dev-shm-usage --disable-gpu --no-sandbox --window-size=1920,1080\""
+                        def cmd = "\"${env.KATALON_EXE}\" -clean -noSplash -runMode=console -projectPath=\"%WORKSPACE%\\${env.PROJECT_FILE}\" -retry=0 -apiKey=\"${env.KATALON_API_KEY}\" -orgID=\"${env.KATALON_ORG_ID}\" ${env.ARG_TYPE}=\"${env.FINAL_PATH}\" -executionProfile=\"${env.TARGET_PROFILE}\" -browserType=\"Chrome (headless)\" -reportFolder=\"Reports/Chrome_Reports\" -reportFileName=\"Chrome_Report\" --config -webui.autoUpdateDrivers=true -webui.chrome.args=\"--disable-blink-features=AutomationControlled --disable-dev-shm-usage --disable-gpu --no-sandbox --window-size=1920,1080\""
                         bat cmd
                     }
                 }
@@ -192,17 +180,14 @@ Contoh override manual:
             when {
                 anyOf {
                     expression { params.BROWSER == 'Firefox (headless)' }
+                    expression { params.BROWSER == 'Firefox' }
                     expression { params.BROWSER == 'Both' }
                 }
             }
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'UNSTABLE') {
                     script {
-                        def cmd = "\"${env.KATALON_EXE}\" -clean -noSplash -runMode=console -projectPath=\"%WORKSPACE%\\${env.PROJECT_FILE}\" -retry=0 -apiKey=\"${env.KATALON_API_KEY}\" -orgID=\"${env.KATALON_ORG_ID}\" ${env.ARG_TYPE}=\"${env.FINAL_PATH}\""
-                        if (env.EXTRA_ARGS_FIREFOX) {
-                            cmd += " ${env.EXTRA_ARGS_FIREFOX}"
-                        }
-                        cmd += " --config -webui.autoUpdateDrivers=true"
+                        def cmd = "\"${env.KATALON_EXE}\" -clean -noSplash -runMode=console -projectPath=\"%WORKSPACE%\\${env.PROJECT_FILE}\" -retry=0 -apiKey=\"${env.KATALON_API_KEY}\" -orgID=\"${env.KATALON_ORG_ID}\" ${env.ARG_TYPE}=\"${env.FINAL_PATH}\" -executionProfile=\"${env.TARGET_PROFILE}\" -browserType=\"Firefox (headless)\" -reportFolder=\"Reports/Firefox_Reports\" -reportFileName=\"Firefox_Report\" --config -webui.autoUpdateDrivers=true"
                         bat cmd
                     }
                 }
@@ -249,7 +234,7 @@ Contoh override manual:
                                 \$curr = \$_.Directory; \
                                 \$modName = ''; \
                                 while (\$curr -and \$curr.Name -ne 'Reports' -and \$curr.FullName -ne \$env:WORKSPACE) { \
-                                    if (\$curr.Name -notmatch '^\\d{8}_\\d{6}\$' -and \$curr.Name -ne 'Test Suites') { \$modName = \$curr.Name; break }; \
+                                    if (\$curr.Name -notmatch '^\\d{8}_\\d{6}\$' -and \$curr.Name -ne 'Test Suites' -and \$curr.Name -ne 'Chrome_Reports' -and \$curr.Name -ne 'Firefox_Reports') { \$modName = \$curr.Name; break }; \
                                     \$curr = \$curr.Parent \
                                 }; \
                                 if (-not \$modName) { \$modName = if ('${params.SUITE}') { (Split-Path '${params.SUITE}' -Leaf) } else { 'Test_Report' } }; \
@@ -387,7 +372,7 @@ Contoh override manual:
                         if (Test-Path 'Failure_Report.zip') { Remove-Item 'Failure_Report.zip' -Force -ErrorAction SilentlyContinue }; \
                         Compress-Archive -Path (Join-Path \$tempZip '*') -DestinationPath 'Failure_Report.zip' -CompressionLevel Optimal -Force -ErrorAction SilentlyContinue; \
                         Remove-Item \$tempZip -Recurse -Force -ErrorAction SilentlyContinue; \
-                    } catch { Write-Host ('Error practical zip: ' + \$_.Exception.Message) }; \
+                    } catch { Write-Host ('Error creating zip: ' + \$_.Exception.Message) }; \
                     \$errs = @(); \
                     \$tcList = @(); \
                     \$i = 1; \
