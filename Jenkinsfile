@@ -15,7 +15,7 @@ pipeline {
                 'Firefox (headless)',
                 'Both'
             ],
-            description: 'Pilih Browser (Abaikan jika memanggil Test Suite Collection)'
+            description: 'Pilih Browser untuk Pengujian'
         )
 
         choice(
@@ -89,9 +89,10 @@ Contoh override manual:
                     taskkill /F /IM katalonc.exe /T 2>nul || exit 0
                     taskkill /F /IM java.exe /T 2>nul || exit 0
                     taskkill /F /IM chromedriver.exe /T 2>nul || exit 0
+                    taskkill /F /IM geckodriver.exe /T 2>nul || exit 0
                     if exist "C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\config\\.metadata\\.lock" del /f /q "C:\\Users\\AgungPriyadi\\.katalon\\packages\\KS-11.1.3\\config\\.metadata\\.lock" 2>nul || exit 0
                     
-                    :: Bersihkan folder Reports & file payload lama sebelum run baru
+                    :: Bersihkan folder Reports & file temporary sebelum run baru
                     if exist Reports rmdir /s /q Reports
                     if exist Screenshot rmdir /s /q Screenshot
                     if exist summary.json del /f /q summary.json
@@ -141,12 +142,6 @@ Contoh override manual:
                         }
                     }
 
-                    if (env.ARG_TYPE == "-testSuiteCollectionPath") {
-                        env.EXTRA_ARGS = ""
-                    } else {
-                        env.EXTRA_ARGS = "-executionProfile=\"${env.TARGET_PROFILE}\" -browserType=\"Chrome (headless)\""
-                    }
-
                     echo "====================================="
                     echo "PROJECT : ${env.PROJECT_FILE}"
                     echo "PROFILE : ${env.TARGET_PROFILE}"
@@ -159,12 +154,14 @@ Contoh override manual:
             }
         }
 
+        // ========================================================
+        // STAGE 1: EKSEKUSI CHROME (Urutan Pertama)
+        // ========================================================
         stage('Run Chrome') {
             when {
                 anyOf {
                     expression { params.BROWSER == 'Chrome (headless)' }
                     expression { params.BROWSER == 'Both' }
-                    expression { env.ARG_TYPE == '-testSuiteCollectionPath' }
                 }
             }
             steps {
@@ -178,23 +175,29 @@ Contoh override manual:
 -apiKey="${env.KATALON_API_KEY}" ^
 -orgID="${env.KATALON_ORG_ID}" ^
 ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
-${env.EXTRA_ARGS} ^
+-executionProfile="${env.TARGET_PROFILE}" ^
+-browserType="Chrome (headless)" ^
 --config ^
 -webui.autoUpdateDrivers=true ^
 -webui.chrome.args="--disable-blink-features=AutomationControlled --disable-dev-shm-usage --disable-gpu --no-sandbox --window-size=1920,1080"
 """
                 }
+                // Cleanup proses Chrome setelah selesai agar resource bersih sebelum Firefox
+                bat '''
+                taskkill /F /IM chromedriver.exe /T 2>nul || exit 0
+                taskkill /F /IM chrome.exe /T 2>nul || exit 0
+                '''
             }
         }
 
+        // ========================================================
+        // STAGE 2: EKSEKUSI FIREFOX (Urutan Kedua)
+        // ========================================================
         stage('Run Firefox') {
             when {
-                allOf {
-                    expression { env.ARG_TYPE == '-testSuitePath' }
-                    anyOf {
-                        expression { params.BROWSER == 'Firefox (headless)' }
-                        expression { params.BROWSER == 'Both' }
-                    }
+                anyOf {
+                    expression { params.BROWSER == 'Firefox (headless)' }
+                    expression { params.BROWSER == 'Both' }
                 }
             }
             steps {
@@ -214,6 +217,11 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
 -webui.autoUpdateDrivers=true
 """
                 }
+                // Cleanup proses Firefox setelah selesai
+                bat '''
+                taskkill /F /IM geckodriver.exe /T 2>nul || exit 0
+                taskkill /F /IM firefox.exe /T 2>nul || exit 0
+                '''
             }
         }
     }
@@ -226,7 +234,7 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                 allowEmptyArchive: true
             )
 
-            // 🌟 Kunci hanya membaca JUnit_Report.xml agar Jenkins tidak salah deteksi UNSTABLE
+            // Mengunci pembacaan hanya pada file standar JUnit_Report.xml
             junit(
                 allowEmptyResults: true,
                 testResults: 'Reports/**/JUnit_Report.xml'
@@ -239,17 +247,18 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                 powershell -NoProfile -ExecutionPolicy Bypass -Command "\
                     try { \
                         \$dateStr = (Get-Date).ToString('dd-MM-yyyy'); \
-                        \$browser = if ('${params.BROWSER}' -like '*Firefox*') { 'Firefox Headless' } else { 'Chrome Headless' }; \
                         \$targetBase = 'C:\\Users\\AgungPriyadi\\OneDrive - (G)Tech Digital\\Attachments\\${env.PROJECT_FOLDER}'; \
                         if (-not (Test-Path \$targetBase)) { \
                             \$found = Get-ChildItem -Path 'C:\\Users\\AgungPriyadi' -Filter '${env.PROJECT_FOLDER}' -Recurse -Directory -ErrorAction SilentlyContinue | Select-Object -First 1; \
                             if (\$found) { \$targetBase = \$found.FullName } \
                         }; \
-                        \$dest = Join-Path (Join-Path \$targetBase \$dateStr) \$browser; \
-                        if (-not (Test-Path \$dest)) { New-Item -ItemType Directory -Path \$dest -Force | Out-Null }; \
                         \$reports = Get-ChildItem -Path 'Reports' -Filter '*.html' -Recurse -ErrorAction SilentlyContinue; \
                         if (\$reports) { \
                             \$reports | ForEach-Object { \
+                                \$fullPath = \$_.FullName; \
+                                \$browserFolder = if (\$fullPath -match 'Firefox') { 'Firefox Headless' } else { 'Chrome Headless' }; \
+                                \$dest = Join-Path (Join-Path \$targetBase \$dateStr) \$browserFolder; \
+                                if (-not (Test-Path \$dest)) { New-Item -ItemType Directory -Path \$dest -Force | Out-Null }; \
                                 \$curr = \$_.Directory; \
                                 \$modName = ''; \
                                 while (\$curr -and \$curr.Name -ne 'Reports' -and \$curr.FullName -ne \$env:WORKSPACE) { \
@@ -259,8 +268,8 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
                                 if (-not \$modName) { \$modName = if ('${params.SUITE}') { (Split-Path '${params.SUITE}' -Leaf) } else { 'Test_Report' } }; \
                                 \$safeName = (\$modName -replace '[^a-zA-Z0-9_\\- ]', '_').Trim(); \
                                 \$destFile = Join-Path \$dest (\$safeName + '.html'); \
-                                Copy-Item -Path \$_.FullName -Destination \$destFile -Force; \
-                                Write-Host ('Copied HTML: ' + \$safeName + '.html') \
+                                Copy-Item -Path \$fullPath -Destination \$destFile -Force; \
+                                Write-Host ('Copied HTML (' + \$browserFolder + '): ' + \$safeName + '.html') \
                             } \
                         } \
                     } catch { Write-Host ('Error copy OneDrive: ' + \$_.Exception.Message) }; \
@@ -298,10 +307,6 @@ ${env.ARG_TYPE}="${env.FINAL_PATH}" ^
             echo "======================================"
             echo "Automation Finished"
             echo "======================================"
-        }
-
-        success {
-            echo "Automation SUCCESS"
         }
 
         unstable {
